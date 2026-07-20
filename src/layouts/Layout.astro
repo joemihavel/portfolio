@@ -11,6 +11,9 @@ const {
   title = "Joel Mihavel — Designer, Builder, 0→1",
   description = "Product designer with 4+ years across b2b and b2c startups. Founding Product Designer at Flent.",
 } = Astro.props;
+
+// Absolute URL for this page, for canonical + og:url. Needs `site` in astro.config.
+const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -22,9 +25,12 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://api.open-meteo.com" />
     <!-- Cross-fades between pages instead of a full white reload. -->
