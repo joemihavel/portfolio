@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ComingSoon from "../components/ComingSoon.astro";
+---
+
+<Layout
+  title="Work — Joel Mihavel"
+  description="Selected product design work. Coming soon."
+>
+  <div class="flex min-h-dvh flex-col">
+    <Header current="work" />
+    <main class="flex flex-1 flex-col">
+      <ComingSoon
+        word="work"
+        pronunciation="/wɜːrk/"
+        lines={[
+          "Case studies, shipped product, and the messy middle;",
+          "Currently being written down rather than done.",
+        ]}
+      />
+    </main>
+    <Footer />
+  </div>
+</Layout>

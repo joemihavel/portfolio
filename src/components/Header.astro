@@ -1,0 +1,386 @@
+---
+// Header: wordmark, click-to-cycle city with live time + temperature, theme
+// switcher, section nav. Matches Figma frame #51:52666.
+import { CITIES } from "../data/cities";
+import { SURPRISE_THEMES } from "../data/themes";
+
+const { current = "home" } = Astro.props;
+
+const nav = [
+  { label: "Home", href: "/", key: "home" },
+  { label: "Work", href: "/work", key: "work" },
+  { label: "Play", href: "/play", key: "play" },
+];
+---
+
+<!-- Persisted across view transitions so the clock keeps ticking and the city
+     stays put. The active nav item is therefore updated client-side below. -->
+<header
+  transition:persist="site-header"
+  class="mx-auto flex h-auto w-full max-w-[1440px] flex-wrap items-center justify-between gap-y-3 px-6 py-5 text-[15px] uppercase md:px-12 lg:h-[76px] lg:flex-nowrap lg:px-[100px] lg:py-6"
+>
+  <!-- Wordmark -->
+  <a href="/" class="bracket shrink-0 text-bracket">
+    <span class="text-ink">JOEL</span>
+    <span class="text-faint"> MIHAVEL</span>
+  </a>
+
+  <!-- City picker + live time + temperature. -->
+  <div class="hidden items-center gap-4 md:flex">
+    <div class="relative" id="city-picker">
+      <span class="bracket text-ink">
+        <button
+          type="button"
+          id="city-btn"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-label="Choose city"
+          class="cursor-pointer underline underline-offset-2 transition-opacity hover:opacity-60"
+          >Bangalore</button
+        >
+      </span>
+      <ul
+        id="city-list"
+        role="listbox"
+        aria-label="Cities"
+        hidden
+        class="border-hairline bg-background absolute top-full left-0 z-50 mt-3 min-w-[190px] border py-1"
+      >
+        {
+          CITIES.map((c, i) => (
+            <li
+              role="option"
+              data-i={i}
+              tabindex="-1"
+              aria-selected={i === 0 ? "true" : "false"}
+              style={`--opt-i:${i}`}
+              class="city-opt text-muted hover:text-ink focus:text-ink aria-selected:text-ink cursor-pointer px-3 py-1.5 text-[13px] uppercase outline-none"
+            >
+              {c.name}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="text-muted-2 flex items-center gap-2">
+      <span id="local-time">--:-- --</span>
+      <span id="local-weather" class="tabular-nums">✿ --°C</span>
+    </div>
+  </div>
+
+  <!-- Theme switcher: light / dark / surprise me -->
+  <div class="flex items-center gap-4" id="theme-switch">
+    <span class="bracket" data-wrap="light">
+      <button
+        type="button"
+        data-theme-btn="light"
+        aria-label="Light theme"
+        class="cursor-pointer">✺</button
+      >
+    </span>
+    <span data-wrap="dark">
+      <button
+        type="button"
+        data-theme-btn="dark"
+        aria-label="Dark theme"
+        class="cursor-pointer">⏾</button
+      >
+    </span>
+    <span data-wrap="surprise">
+      <button
+        type="button"
+        data-theme-btn="surprise"
+        aria-label="Surprise me — random colour theme"
+        class="cursor-pointer">ッ</button
+      >
+    </span>
+  </div>
+
+  <!-- Section nav. Uniform markup so the active item can be re-pointed
+       client-side after a view transition. -->
+  <nav class="flex items-center gap-4" id="site-nav">
+    {
+      nav.map((item) => (
+        <span
+          data-nav-key={item.key}
+          class:list={["nav-item", item.key === current && "is-current"]}
+        >
+          <a href={item.href}>
+            <span class="swap">
+              <span>{item.label}</span>
+              <span aria-hidden="true">{item.label}</span>
+            </span>
+          </a>
+        </span>
+      ))
+    }
+  </nav>
+</header>
+
+<style>
+  .nav-item {
+    color: var(--pixel-primary);
+    transition: color 0.25s ease;
+  }
+  .nav-item:hover {
+    color: var(--text-primary);
+  }
+  .nav-item.is-current {
+    color: var(--text-primary);
+  }
+  .nav-item.is-current::before {
+    content: "[";
+    color: var(--pixel-primary);
+    margin-right: 0.4em;
+  }
+  .nav-item.is-current::after {
+    content: "]";
+    color: var(--pixel-primary);
+    margin-left: 0.4em;
+  }
+  .nav-item.is-current a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* City options cascade in when the list opens. */
+  #city-list:not([hidden]) .city-opt {
+    animation: opt-in 0.26s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    animation-delay: calc(var(--opt-i) * 26ms);
+  }
+
+  /* Theme icons acknowledge the click. */
+  [data-theme-btn] {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  [data-theme-btn]:hover {
+    transform: scale(1.18);
+  }
+  [data-theme-btn].pop {
+    animation: theme-pop 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  @keyframes theme-pop {
+    0% {
+      transform: scale(1) rotate(0);
+    }
+    45% {
+      transform: scale(1.4) rotate(18deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #city-list:not([hidden]) .city-opt,
+    [data-theme-btn].pop {
+      animation: none;
+    }
+    [data-theme-btn] {
+      transition: none;
+    }
+  }
+</style>
+
+<script define:vars={{ CITIES, SURPRISE_THEMES }}>
+  /* ---------------------------------------------------------------- city */
+  const timeEl = document.getElementById("local-time");
+  const wxEl = document.getElementById("local-weather");
+  const cityBtn = document.getElementById("city-btn");
+
+  let idx = Number(localStorage.getItem("cityIdx") || 0);
+  if (!Number.isInteger(idx) || idx < 0 || idx >= CITIES.length) idx = 0;
+
+  // WMO weather codes → a glyph in the spirit of the original ✿.
+  const glyph = (c) => {
+    if (c === 0) return "☀";
+    if (c <= 3) return "☁";
+    if (c <= 48) return "≈";
+    if (c <= 67) return "☂";
+    if (c <= 77) return "❅";
+    if (c <= 82) return "☂";
+    if (c <= 86) return "❅";
+    return "⚡";
+  };
+
+  let timeFmt;
+  const drawTime = () => {
+    if (timeEl && timeFmt) timeEl.textContent = timeFmt.format(new Date()).toUpperCase();
+  };
+
+  async function loadWeather(city) {
+    const key = `wx:${city.name}`;
+    try {
+      const hit = JSON.parse(sessionStorage.getItem(key) || "null");
+      // Temperature moves slowly; 15 min of cache avoids refetching on every cycle.
+      if (hit && Date.now() - hit.at < 9e5) return hit;
+    } catch {}
+
+    const url =
+      `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}` +
+      `&longitude=${city.lon}&current=temperature_2m,weather_code`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`weather ${res.status}`);
+    const j = await res.json();
+    const out = {
+      t: Math.round(j.current.temperature_2m),
+      c: j.current.weather_code,
+      at: Date.now(),
+    };
+    try {
+      sessionStorage.setItem(key, JSON.stringify(out));
+    } catch {}
+    return out;
+  }
+
+  async function render() {
+    const city = CITIES[idx];
+    if (cityBtn) cityBtn.textContent = city.name;
+    timeFmt = new Intl.DateTimeFormat("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: city.tz,
+    });
+    drawTime();
+
+    if (!wxEl) return;
+    wxEl.textContent = "· ·";
+    try {
+      const w = await loadWeather(city);
+      // A slow response for a city we already cycled past must not overwrite.
+      if (CITIES[idx].name !== city.name) return;
+      wxEl.textContent = `${glyph(w.c)} ${w.t}°C`;
+    } catch {
+      if (CITIES[idx].name === city.name) wxEl.textContent = "—";
+    }
+  }
+
+  /* ------------------------------------------------------ city dropdown */
+  const picker = document.getElementById("city-picker");
+  const list = document.getElementById("city-list");
+  const options = list ? [...list.querySelectorAll("[role='option']")] : [];
+
+  let open = false;
+
+  const markSelected = () => {
+    options.forEach((li, i) =>
+      li.setAttribute("aria-selected", i === idx ? "true" : "false")
+    );
+  };
+
+  const setOpen = (next) => {
+    if (!list || !cityBtn) return;
+    open = next;
+    list.hidden = !next;
+    cityBtn.setAttribute("aria-expanded", String(next));
+    // Focus the current city so arrow keys start from where you are.
+    if (next) options[idx]?.focus();
+  };
+
+  const choose = (i) => {
+    if (i < 0 || i >= CITIES.length) return;
+    idx = i;
+    localStorage.setItem("cityIdx", String(idx));
+    markSelected();
+    render();
+  };
+
+  cityBtn?.addEventListener("click", () => setOpen(!open));
+
+  options.forEach((li, i) =>
+    li.addEventListener("click", () => {
+      choose(i);
+      setOpen(false);
+      cityBtn?.focus();
+    })
+  );
+
+  list?.addEventListener("keydown", (e) => {
+    const at = options.indexOf(document.activeElement);
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      const d = e.key === "ArrowDown" ? 1 : -1;
+      options[(at + d + options.length) % options.length]?.focus();
+    } else if (e.key === "Home" || e.key === "End") {
+      e.preventDefault();
+      options[e.key === "Home" ? 0 : options.length - 1]?.focus();
+    } else if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      choose(at);
+      setOpen(false);
+      cityBtn?.focus();
+    } else if (e.key === "Escape" || e.key === "Tab") {
+      setOpen(false);
+      cityBtn?.focus();
+    }
+  });
+
+  // Clicking anywhere else dismisses it.
+  document.addEventListener("click", (e) => {
+    if (open && picker && !picker.contains(e.target)) setOpen(false);
+  });
+
+  markSelected();
+  render();
+  setInterval(drawTime, 20_000);
+
+  /* ------------------------------------------------------- nav active state */
+  // The header persists across view transitions, so the server-rendered active
+  // item would go stale. Re-point it from the URL after each navigation.
+  const syncNav = () => {
+    const path = location.pathname.replace(/\/+$/, "") || "/";
+    const key = path === "/" ? "home" : path.slice(1).split("/")[0];
+    document.querySelectorAll("[data-nav-key]").forEach((el) => {
+      el.classList.toggle("is-current", el.getAttribute("data-nav-key") === key);
+    });
+  };
+  document.addEventListener("astro:page-load", syncNav);
+  syncNav();
+
+  /* --------------------------------------------------------------- theme */
+  const root = document.documentElement;
+  const meta = document.querySelector('meta[name="theme-color"]');
+
+  const paintActive = () => {
+    const t = root.dataset.theme || "light";
+    const mode = t === "light" ? "light" : t === "dark" ? "dark" : "surprise";
+    document.querySelectorAll("[data-wrap]").forEach((el) => {
+      const on = el.dataset.wrap === mode;
+      el.classList.toggle("bracket", on);
+      el.classList.toggle("text-accent", on);
+      el.querySelector("button")?.classList.toggle("underline", on);
+      el.querySelector("button")?.classList.toggle("underline-offset-2", on);
+      el.classList.toggle("text-bracket", !on);
+    });
+    if (meta) meta.content = getComputedStyle(root).getPropertyValue("--background").trim();
+  };
+
+  const apply = (t) => {
+    root.dataset.theme = t;
+    localStorage.setItem("theme", t);
+    paintActive();
+  };
+
+  document.querySelectorAll("[data-theme-btn]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Retrigger the pop each click, not just the first.
+      btn.classList.remove("pop");
+      void btn.offsetWidth;
+      btn.classList.add("pop");
+
+      const kind = btn.dataset.themeBtn;
+      if (kind === "surprise") {
+        // Always land on a theme different from the current one.
+        const pool = SURPRISE_THEMES.filter((t) => t !== root.dataset.theme);
+        apply(pool[Math.floor(Math.random() * pool.length)]);
+      } else {
+        apply(kind);
+      }
+    });
+  });
+
+  paintActive();
+</script>

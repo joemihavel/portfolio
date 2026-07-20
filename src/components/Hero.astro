@@ -1,0 +1,166 @@
+---
+// Hero: serif stack on the left, dictionary-entry definition on the right.
+// Matches Figma frame #51:52681.
+//
+import NyanTrail from "./NyanTrail.astro";
+
+// "0→1" gets its own treatment: the arrow advances on hover, because the line
+// literally means progression. The other two ripple letter by letter.
+const words = [
+  { text: "designer", kind: "wave" as const },
+  { text: "builder", kind: "wave" as const },
+  { text: "0→1", kind: "arrow" as const },
+];
+
+const links = [
+  { label: "X", href: "https://x.com/JoeMihavel" },
+  { label: "GitHub", href: "https://github.com/joemihavel" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/joel-mihavel/" },
+];
+---
+
+<section
+  class="mx-auto w-full max-w-[1440px] px-6 pt-16 md:px-12 lg:px-[100px] lg:pt-[140px]"
+>
+  <div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-[97px]">
+    <!-- Serif word stack -->
+    <h1 class="flex shrink-0 flex-col gap-2 lg:w-[228px]">
+      {
+        words.map((w, i) => (
+          <span
+            data-reveal="up"
+            style={`--reveal-d:${i * 90}ms`}
+            class="font-serif text-[clamp(2.5rem,8vw,60px)] leading-[1.1] tracking-[-0.02em] text-ink"
+          >
+            {/* aria-label carries the word; the pieces are decorative split-ups
+                so screen readers don't announce it letter by letter. */}
+            {w.kind === "wave" ? (
+              <span class="wave" aria-label={w.text}>
+                {w.text.split("").map((ch, ci) => (
+                  <span aria-hidden="true" style={`--i:${ci}`}>
+                    {ch}
+                  </span>
+                ))}
+              </span>
+            ) : (
+              <span class="zto" aria-label="zero to one">
+                <span aria-hidden="true">0</span>
+                <span class="zto-arrow" aria-hidden="true">→</span>
+                <span class="zto-one" aria-hidden="true">1</span>
+              </span>
+            )}
+          </span>
+        ))
+      }
+    </h1>
+
+    <!-- Dictionary entry -->
+    <div class="lg:max-w-[526px] lg:pt-[15px]">
+      <p
+        data-reveal="up"
+        style="--reveal-d:300ms"
+        class="flex flex-wrap items-baseline gap-x-2"
+      >
+        <span class="text-[clamp(1.75rem,5vw,39px)] leading-tight text-ink">jo·el</span>
+        <span class="text-faint">/ˈdʒoʊ.əl/</span>
+        <span class="text-muted">noun</span>
+      </p>
+      <p
+        data-reveal="up"
+        style="--reveal-d:400ms"
+        class="mt-2 text-[15px] leading-[1.85] text-ink"
+      >
+        Designer, builder, and perpetual tinkerer;<br />
+        Founding Product Designer; at{" "}
+        <a
+          href="https://flent.in/"
+          target="_blank"
+          rel="noreferrer"
+          class="accent-link">flenthomes</a
+        ><br />
+        See also:{" "}
+        {
+          links.map((l, i) => (
+            <>
+              <a
+                href={l.href}
+                target="_blank"
+                rel="noreferrer"
+                class="link-draw link-draw-on"
+              >
+                {l.label}
+              </a>
+              {i < links.length - 1 && <span class="text-muted"> · </span>}
+            </>
+          ))
+        }
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Outside the section on purpose: the rainbow is full-bleed in the frame
+     (x: 0), so it must escape the section's 100px gutter. -->
+<NyanTrail />
+
+<style>
+  /* Letters ripple upward in sequence. Vertical only — moving glyphs
+     horizontally would reflow a proportional serif and make it jitter. */
+  .wave > span {
+    display: inline-block;
+    transition:
+      transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1),
+      color 0.36s ease;
+    /* Same delay drives both, so colour travels with the lift as one ripple. */
+    transition-delay: calc(var(--i) * 28ms);
+  }
+  .wave:hover > span {
+    transform: translateY(-0.13em);
+    color: var(--accent-hover, var(--accent));
+  }
+
+  /* Preserve the space in words that contain one (none today, but the split
+     would otherwise collapse it). */
+  .wave > span:empty::before {
+    content: "\00a0";
+  }
+
+  /* 0 holds, the arrow advances, the 1 steps further out — the gap opens in
+     the direction the line is about. */
+  .zto > span {
+    display: inline-block;
+    transition:
+      transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1),
+      color 0.36s ease;
+  }
+  .zto > span:nth-child(2) {
+    transition-delay: 50ms;
+  }
+  .zto > span:nth-child(3) {
+    transition-delay: 100ms;
+  }
+  .zto:hover > span {
+    color: var(--accent-hover, var(--accent));
+  }
+  .zto:hover .zto-arrow {
+    transform: translateX(0.1em);
+  }
+  .zto:hover .zto-one {
+    transform: translateX(0.22em);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wave > span,
+    .zto > span {
+      transition: none;
+    }
+    .wave:hover > span,
+    .zto:hover .zto-arrow,
+    .zto:hover .zto-one {
+      transform: none;
+    }
+  }
+</style>
+
+

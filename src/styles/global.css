@@ -1,0 +1,496 @@
+@import "tailwindcss";
+
+@import "@fontsource-variable/geist/index.css";
+@import "@fontsource/averia-serif-libre/400.css";
+
+/* ---------------------------------------------------------------------------
+   Theme palettes. Light and Dark are the two explicit modes; the remaining
+   eight are what the ッ ("surprise me") button rotates through.
+   --------------------------------------------------------------------------- */
+
+:root,
+[data-theme="light"] {
+  --border-subtle: #c4c4c4;
+  --border: #d6d6d6;
+  --text-muted: #7a7a7a;
+  --text-tertiary: #a8a8a8;
+  --text-secondary: #e6e6e6;
+  --text-primary: #000000;
+  --surface-border: #dcdcdc;
+  --icon-secondary: #bebebe;
+  --icon-muted: #8e8e8e;
+  --pixel-secondary: #828282;
+  --pixel-primary: #5b5b5b;
+  --star: #d7d7d7;
+  --ui-secondary: #8f8d8d;
+  --accent: #ff0000;
+  --background: #ffffff;
+  --pixel-accent: #525252;
+}
+
+[data-theme="dark"] {
+  --border-subtle: #4d4d4d;
+  --border: #5c5c5c;
+  --text-muted: #9b9b9b;
+  --text-tertiary: #bdbdbd;
+  --text-secondary: #e0e0e0;
+  --text-primary: #ffffff;
+  --surface-border: #d4d4d4;
+  --icon-secondary: #afafaf;
+  --icon-muted: #a6a6a6;
+  --pixel-secondary: #9e9e9e;
+  --pixel-primary: #c7c7c7;
+  --star: #d0d0d0;
+  --ui-secondary: #a5a5a5;
+  --accent: #ff5a5a;
+  --background: #111111;
+  --pixel-accent: #d3d3d3;
+}
+
+[data-theme="tomato"] {
+  --border-subtle: #e98c84;
+  --border: #f1a49d;
+  --text-muted: #8b2e29;
+  --text-tertiary: #65211d;
+  --text-secondary: #ffd3cf;
+  --text-primary: #231f20;
+  --surface-border: #f6b6af;
+  --icon-secondary: #d8756d;
+  --icon-muted: #94413a;
+  --star: #f4aea7;
+  --accent: #231f20;
+  /* Hover accent. Only defined where --accent equals --text-primary, so a
+     colour hover would otherwise be invisible; the rest fall back to --accent.
+     Text here is near-black, so lifting to white is the readable contrast. */
+  --accent-hover: #ffffff;
+  --background: #ff4b3e;
+  --pixel-accent: #3a1815;
+
+  /* Swapped from the table: against #FF4B3E the specified browns (#7C312B,
+     #86312C, #4E1D19) land at 2.5–2.7:1, well under the ~3.8:1 that secondary
+     text holds in every other theme. Darkened to match that baseline. These
+     three tokens are text-only here — the pixel art reads from --icon-*,
+     --border-*, --star and --text-*, so the artwork is unaffected. */
+  --pixel-secondary: #3f1713;
+  --pixel-primary: #35120f;
+  --ui-secondary: #431915;
+}
+
+[data-theme="sky"] {
+  --border-subtle: #d8f1ff;
+  --border: #bfe9ff;
+  --text-muted: #2f4762;
+  --text-tertiary: #24405a;
+  --text-secondary: #eaf8ff;
+  --text-primary: #36132d;
+  --surface-border: #d2f0ff;
+  --icon-secondary: #9fd7f7;
+  --icon-muted: #44617a;
+  --pixel-secondary: #345069;
+  --pixel-primary: #253a50;
+  --star: #cdeeff;
+  --ui-secondary: #48657d;
+  --accent: #36132d;
+  --accent-hover: #0d3b66; /* ink blue — reads apart from the purple text */
+  --background: #79c8f5;
+  --pixel-accent: #203345;
+}
+
+[data-theme="cream"] {
+  --border-subtle: #e5ddc4;
+  --border: #eae3cc;
+  --text-muted: #646187;
+  --text-tertiary: #57546f;
+  --text-secondary: #f8f3e8;
+  --text-primary: #4b4c73;
+  --surface-border: #efe8d3;
+  --icon-secondary: #d9cfb4;
+  --icon-muted: #706c90;
+  --pixel-secondary: #615c82;
+  --pixel-primary: #4c4765;
+  --star: #f1ead8;
+  --ui-secondary: #6a6789;
+  --accent: #4b4c73;
+  --accent-hover: #b3541e; /* rust — warm counterpoint to the slate text */
+  --background: #f5efd8;
+  --pixel-accent: #423e56;
+}
+
+[data-theme="lavender"] {
+  --border-subtle: #ddd0f7;
+  --border: #e7dbff;
+  --text-muted: #5e546d;
+  --text-tertiary: #52495f;
+  --text-secondary: #f5eeff;
+  --text-primary: #4a454d;
+  --surface-border: #ece4ff;
+  --icon-secondary: #cdb6ff;
+  --icon-muted: #70687d;
+  --pixel-secondary: #665e73;
+  --pixel-primary: #4e4659;
+  --star: #e8deff;
+  --ui-secondary: #6f667a;
+  --accent: #4a454d;
+  --accent-hover: #6b21a8; /* saturated purple — on-theme, unlike the grey text */
+  --background: #d8c3ff;
+  --pixel-accent: #433d4d;
+}
+
+[data-theme="electric"] {
+  --border-subtle: #7c90ff;
+  --border: #90a4ff;
+  --text-muted: #e5e5e5;
+  --text-tertiary: #ffffff;
+  --text-secondary: #eaf0ff;
+  --text-primary: #ffffff;
+  --surface-border: #9fb1ff;
+  --icon-secondary: #6479ff;
+  --icon-muted: #d0d7ff;
+  --pixel-secondary: #c4ccff;
+  --pixel-primary: #b7c0ff;
+  --star: #97aaff;
+  --ui-secondary: #ced5ff;
+  --accent: #ffd400;
+  --background: #1838ff;
+  --pixel-accent: #aab5ff;
+}
+
+[data-theme="olive"] {
+  --border-subtle: #b9bb8c;
+  --border: #c9cb9d;
+  --text-muted: #ece6d5;
+  --text-tertiary: #f5f1e6;
+  --text-secondary: #fbf8f0;
+  --text-primary: #f2ecd9;
+  --surface-border: #d8d9af;
+  --icon-secondary: #989a63;
+  --icon-muted: #ddd6c2;
+  --pixel-secondary: #d3ccb7;
+  --pixel-primary: #c9c2ad;
+  --star: #d3d5a7;
+  --ui-secondary: #d9d2bf;
+  --accent: #f2ecd9;
+  --accent-hover: #e3c567; /* gold — warmer and deeper than the cream text */
+  --background: #50551c;
+  --pixel-accent: #c4bca5;
+}
+
+[data-theme="burgundy"] {
+  --border-subtle: #b27b93;
+  --border: #c090a6;
+  --text-muted: #9fd8ff;
+  --text-tertiary: #c8e9ff;
+  --text-secondary: #eaf7ff;
+  --text-primary: #8ed1ff;
+  --surface-border: #d0a6b8;
+  --icon-secondary: #96576f;
+  --icon-muted: #c1e4ff;
+  --pixel-secondary: #b0ddff;
+  --pixel-primary: #9bd1f7;
+  --star: #c99eb2;
+  --ui-secondary: #bee2ff;
+  --accent: #8ed1ff;
+  --accent-hover: #f2b441; /* amber against wine — opposite the blue text */
+  --background: #51001a;
+  --pixel-accent: #88c8f4;
+}
+
+[data-theme="matrix"] {
+  --border-subtle: #4fcb8d;
+  --border: #68d69d;
+  --text-muted: #b9ffd6;
+  --text-tertiary: #d8ffe9;
+  --text-secondary: #effff8;
+  --text-primary: #d8ffe9;
+  --surface-border: #7adea7;
+  --icon-secondary: #2fa86b;
+  --icon-muted: #a0f5c5;
+  --pixel-secondary: #90eab7;
+  --pixel-primary: #7ddba8;
+  --star: #72dca3;
+  --ui-secondary: #9ef4c4;
+  --accent: #3cff9f;
+  --background: #081a11;
+  --pixel-accent: #69d99e;
+}
+
+/* Map the palette onto Tailwind utilities (text-ink, bg-background, …). */
+@theme inline {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Averia Serif Libre", ui-serif, Georgia, serif;
+
+  --color-ink: var(--text-primary);
+  --color-muted: var(--pixel-secondary);
+  --color-muted-2: var(--ui-secondary);
+  --color-faint: var(--text-tertiary);
+  --color-bracket: var(--pixel-primary);
+  --color-rule: var(--star);
+  --color-hairline: var(--text-secondary);
+  --color-footer: var(--pixel-accent);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    background: var(--background);
+  }
+
+  body {
+    background: var(--background);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    /* The cat overhangs the stage by half its width and springs a little past
+       its mark; on narrow viewports that can cross the edge. `clip` (not
+       `hidden` — that would create a scroll container and break sticky) stops
+       a horizontal scrollbar without clipping the cat inside its own section. */
+    overflow-x: clip;
+    /* Theme swaps should feel like a crossfade, not a jump. */
+    transition:
+      background-color 0.35s ease,
+      color 0.35s ease;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--background);
+  }
+}
+
+@layer components {
+  /* [ bracketed ] label used throughout the header */
+  .bracket::before {
+    content: "[";
+    color: var(--pixel-primary);
+    margin-right: 0.4em;
+  }
+  .bracket::after {
+    content: "]";
+    color: var(--pixel-primary);
+    margin-left: 0.4em;
+  }
+
+  /* In several palettes --accent equals --text-primary, so colour alone can't
+     mark a link. Underline keeps accent links identifiable in every theme. */
+  .accent-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+  .accent-link:hover {
+    text-decoration-color: var(--accent);
+  }
+
+  /* Inlined pixel art inherits theme colours through these vars. */
+  .pixel-art {
+    --c-border-subtle: var(--border-subtle);
+    --c-border: var(--border);
+    --c-text-muted: var(--text-muted);
+    --c-text-tertiary: var(--text-tertiary);
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-12px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-drift {
+  animation: drift 1.6s ease-in-out infinite alternate;
+}
+
+.animate-twinkle {
+  animation: twinkle 2.4s ease-in-out infinite;
+}
+
+/* ---------------------------------------------------------------------------
+   Reveal system.
+
+   Content is visible by default. The hidden state only applies once `.reveals`
+   is on <html>, and a failsafe in the layout strips that class if the observer
+   never boots — so a script error can't leave the page permanently blank.
+   --------------------------------------------------------------------------- */
+
+html.reveals [data-reveal] {
+  opacity: 0;
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    clip-path 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--reveal-d, 0ms);
+}
+
+html.reveals [data-reveal="up"] {
+  transform: translateY(14px);
+}
+html.reveals [data-reveal="fade"] {
+  transform: none;
+}
+/* Hairline rules wipe out from their left edge. */
+html.reveals [data-reveal="line"] {
+  opacity: 1;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--reveal-d, 0ms);
+}
+/* Wipes open rather than fading — used for the about visual.
+   The clip goes on the CHILD, never on the observed element itself: clipping an
+   element to zero area makes IntersectionObserver report it as not visible, so
+   it would never be told to reveal and would stay hidden forever. */
+html.reveals [data-reveal="clip"] {
+  opacity: 1;
+}
+html.reveals [data-reveal="clip"] > * {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--reveal-d, 0ms);
+}
+html.reveals [data-reveal="clip"].shown > * {
+  clip-path: inset(0 0 0 0);
+}
+
+html.reveals [data-reveal].shown {
+  opacity: 1;
+  transform: none;
+}
+
+@layer components {
+  /* Underline that draws in from the left instead of switching on. */
+  .link-draw {
+    position: relative;
+    text-decoration: none;
+  }
+  .link-draw::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(var(--u, 0));
+    transform-origin: left center;
+    transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .link-draw:hover::after,
+  .link-draw:focus-visible::after {
+    --u: 1;
+  }
+  /* Links that are underlined at rest retract-then-redraw from the left. */
+  .link-draw-on {
+    --u: 1;
+  }
+  .link-draw-on:hover::after,
+  .link-draw-on:focus-visible::after {
+    animation: link-redraw 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  @keyframes link-redraw {
+    0% {
+      transform: scaleX(1);
+      transform-origin: right center;
+    }
+    45% {
+      transform: scaleX(0);
+      transform-origin: right center;
+    }
+    46% {
+      transform: scaleX(0);
+      transform-origin: left center;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left center;
+    }
+  }
+
+  /* Letter swap: the label rides up and a copy follows it in. Whole-word, not
+     per-letter — a display serif jitters when letters move independently. */
+  .swap {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+  }
+  .swap > span {
+    display: block;
+    transition: transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .swap > span:last-child {
+    position: absolute;
+    inset: 0;
+    transform: translateY(100%);
+  }
+  .swap:hover > span:first-child,
+  a:focus-visible .swap > span:first-child,
+  button:focus-visible .swap > span:first-child {
+    transform: translateY(-100%);
+  }
+  .swap:hover > span:last-child,
+  a:focus-visible .swap > span:last-child,
+  button:focus-visible .swap > span:last-child {
+    transform: translateY(0);
+  }
+}
+
+/* Dropdown options cascade in when the list opens. */
+@keyframes opt-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-drift,
+  .animate-twinkle {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  body {
+    transition: none;
+  }
+  /* Reveals become instant; nothing is left hidden. */
+  html.reveals [data-reveal],
+  html.reveals [data-reveal].shown,
+  html.reveals [data-reveal="clip"] > *,
+  html.reveals [data-reveal="clip"].shown > * {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    transition: none !important;
+  }
+  .swap > span,
+  .link-draw::after {
+    transition: none !important;
+  }
+}

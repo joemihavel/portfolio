@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ComingSoon from "../components/ComingSoon.astro";
+---
+
+<Layout
+  title="Play — Joel Mihavel"
+  description="Side projects, experiments, and things built for no good reason. Coming soon."
+>
+  <div class="flex min-h-dvh flex-col">
+    <Header current="play" />
+    <main class="flex flex-1 flex-col">
+      <ComingSoon
+        word="play"
+        pronunciation="/pleɪ/"
+        lines={[
+          "Experiments, side quests, and things built for no good reason;",
+          "Tinkering that hasn't earned a case study yet.",
+        ]}
+      />
+    </main>
+    <Footer />
+  </div>
+</Layout>

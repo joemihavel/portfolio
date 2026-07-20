@@ -1,0 +1,45 @@
+---
+// Footer. Matches Figma frame #51:53177 (48px/100px/64px padding, 1px top rule).
+// Wordmark inlined so it takes the theme's text colour.
+import joeSvg from "../assets/joe-wordmark.svg?raw";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 lg:mt-40">
+  <!-- The rule is its own element rather than a border, so it can wipe in. -->
+  <div data-reveal="line" class="bg-hairline h-px w-full"></div>
+
+  <div
+    class="mx-auto flex w-full max-w-[1440px] flex-col gap-8 px-6 pt-12 pb-16 md:px-12 lg:px-[100px]"
+  >
+    <div
+      role="img"
+      aria-label="joe"
+      data-reveal="up"
+      style="--reveal-d:120ms"
+      class="h-[52px] w-[87px] lg:h-[72px] lg:w-[120px] [&>svg]:h-full [&>svg]:w-full"
+      set:html={joeSvg}
+    />
+
+    <div
+      data-reveal="up"
+      style="--reveal-d:200ms"
+      class="flex flex-wrap items-end justify-between gap-6"
+    >
+      <div class="flex flex-col justify-center gap-2">
+        <p class="text-[15px] text-footer">
+          Designed and Built with Figma, Claude and Procrastination
+        </p>
+        <div class="flex gap-2 text-[13px]">
+          <span class="text-muted-2 uppercase">All rights reserved</span>
+          <span class="text-muted">© {year}</span>
+        </div>
+      </div>
+
+      <!-- "Download Resume" removed. It was hidden in the Figma frame too
+           (#51:53185 sits at opacity 0), and there is no resume.pdf yet. -->
+
+    </div>
+  </div>
+</footer>

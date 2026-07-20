@@ -1,0 +1,52 @@
+---
+// Placeholder body for sections that aren't built yet. Reuses the dictionary-
+// entry idiom from the hero so it reads as part of the same site.
+interface Props {
+  word: string;
+  pronunciation: string;
+  lines: string[];
+}
+
+const { word, pronunciation, lines } = Astro.props;
+---
+
+<section
+  class="mx-auto flex w-full max-w-[1440px] flex-1 flex-col px-6 pt-16 pb-24 md:px-12 lg:px-[100px] lg:pt-[140px] lg:pb-40"
+>
+  <div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-[97px]">
+    <h1 class="flex shrink-0 flex-col gap-2 lg:w-[228px]">
+      <span
+        data-reveal="up"
+        class="font-serif text-[clamp(2.5rem,8vw,60px)] leading-[1.1] tracking-[-0.02em] text-ink"
+        >{word}</span
+      >
+    </h1>
+
+    <div class="lg:max-w-[526px] lg:pt-[15px]">
+      <p
+        data-reveal="up"
+        style="--reveal-d:110ms"
+        class="flex flex-wrap items-baseline gap-x-2"
+      >
+        <span class="text-[clamp(1.75rem,5vw,39px)] leading-tight text-ink">{word}</span>
+        <span class="text-faint">{pronunciation}</span>
+        <span class="text-muted">noun</span>
+      </p>
+      <p
+        data-reveal="up"
+        style="--reveal-d:200ms"
+        class="mt-2 text-[15px] leading-[1.85] text-ink"
+      >
+        {lines.map((l) => (<>{l}<br /></>))}
+      </p>
+
+      <p
+        data-reveal="up"
+        style="--reveal-d:320ms"
+        class="bracket mt-8 inline-block text-[15px] uppercase text-bracket"
+      >
+        <span class="animate-twinkle text-accent">Coming soon</span>
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,444 @@
+---
+// Nyan Cat lays the rainbow down as it flies in, then parks and bobs.
+// Drag or click it and the trail retracts with it; it then walks back home.
+//
+// One custom property drives everything: --p, the cat's progress 0→1 across the
+// stage. The trail is a clip on the rainbow, the cat's left offset is derived
+// from the same value, and stars reveal when the cat's nose passes them.
+import rainbowSvg from "../assets/rainbow.svg?raw";
+import nyanSvg from "../assets/nyan-cat.svg?raw";
+
+// All geometry lives in one module shared with the SVG build script.
+// The rainbow bleeds off the LEFT edge of the screen (x: 0 in the frame) and is
+// measured against the viewport, not the centred 1440 frame — above 1440 the
+// frame gains side margins, which would strand it in a gutter.
+import {
+  CAT_W,
+  CAT_H,
+  CAT_Y,
+  RAINBOW_Y,
+  RAINBOW_H,
+  TRACK_W,
+  REST_P,
+  STAGE_WIDTH_CSS,
+  CAT_PCT,
+  HALF_CAT,
+  REST_NOSE,
+} from "../data/nyan-geometry.mjs";
+
+// Vertical placement. In the frame the rainbow is y 585–645 and the cat
+// y 565.3–657.7, so the band runs through the cat's middle — the cat's centre
+// sits just 3.5 units above the band's.
+//
+// Anchoring on centres rather than edges matters: the exported SVG has 9.6
+// units of transparent padding above the first painted row, and its canvas is
+// slightly taller than the placed node. Aligning canvas edges therefore drops
+// the art ~9px low. Centre-to-centre is immune to both.
+
+const ART_TOP = 9.6; // first painted row in the exported canvas
+const ART_BOTTOM = 96; // body paints to the original canvas edge
+const CANVAS_H = 107.6; // after the paw rows were appended
+
+// Where the artwork's centre falls within the element box.
+const ART_CENTER = (((ART_TOP + ART_BOTTOM) / 2) / CANVAS_H) * 100; // 49.07%
+// How far the cat's centre sits from the band's, as % of band height.
+const CENTER_OFFSET =
+  ((CAT_Y + CAT_H / 2 - (RAINBOW_Y + RAINBOW_H / 2)) / RAINBOW_H) * 100; // -5.83%
+const CAT_TOP = 50 + CENTER_OFFSET; // 44.17% of band height
+
+// Star positions from the design (#51:53139–53144), converted to track-relative
+// percentages. `at` is the progress value where the cat's nose reaches it,
+// capped just under its resting nose position so every star is lit at rest.
+const rel = (x: number) => (x / TRACK_W) * 100;
+const revealAt = (x: number) => Math.min(REST_NOSE - 0.004, (x - CAT_W / 2) / TRACK_W);
+
+const STARS = [
+  { x: 1102.86, top: "-67%" },
+  { x: 1327, top: "-60%" },
+  { x: 1106.22, top: "126%" },
+  { x: 1217, top: "-107%" },
+  { x: 1244, top: "177%" },
+  { x: 1358, top: "163%" },
+].map((s) => ({ left: rel(s.x), top: s.top, at: revealAt(s.x) }));
+---
+
+<!-- The stage runs wider than the viewport so there is track to walk forward
+     into. Nothing ever *renders* past the screen (maxP() caps the cat, and the
+     trail is clipped to the cat), but the box itself would still widen the
+     document. Clip it here so it cannot. -->
+<div class="mt-14 w-full overflow-x-clip lg:mt-24">
+  <div
+    id="nyan-stage"
+    class="relative"
+    style={`width:${STAGE_WIDTH_CSS}; --p:0; --cat-w:${CAT_PCT}%; --half-cat:${HALF_CAT}%; --cat-top:${CAT_TOP}%; --art-center:-${ART_CENTER}%`}
+  >
+    <!-- Trail. Clipped from the right; the clip edge is what "draws" it. -->
+    <div id="nyan-trail" class="w-full [&>svg]:h-auto [&>svg]:w-full" aria-hidden="true" set:html={rainbowSvg} />
+
+    <!-- Stars, revealed as the cat's nose passes each one. -->
+    {
+      STARS.map((s) => (
+        <span
+          class="nyan-star absolute hidden text-[18px] leading-none text-rule lg:block"
+          style={`left:${s.left}%;top:${s.top}`}
+          data-at={s.at}
+          aria-hidden="true"
+        >
+          ✦
+        </span>
+      ))
+    }
+
+    <!-- Cat. Outer element carries position; inner carries the idle bob so the
+         two transforms don't fight. -->
+    <button
+      type="button"
+      id="nyan-cat"
+      aria-label="Nyan Cat — drag or click to push it along its rainbow"
+      class="absolute w-[var(--cat-w)] cursor-grab touch-none active:cursor-grabbing"
+      style="left:calc(var(--p) * 100% - var(--half-cat)); top:var(--cat-top); transform:translateY(var(--art-center))"
+    >
+      <span id="nyan-bob" class="block [&>svg]:h-auto [&>svg]:w-full" set:html={nyanSvg} />
+    </button>
+  </div>
+</div>
+
+<style>
+  /* The trail's right edge is the drawing head. --pq is --p quantised to the
+     4.8px pixel grid, so the reveal steps column by column like a console
+     rendering scanlines rather than sliding smoothly. */
+  #nyan-trail {
+    clip-path: inset(0 calc(100% - var(--pq, var(--p)) * 100%) 0 0);
+  }
+
+  /* The rainbow scrolls backwards under the cat. One period is 38.4 user units
+     of 4.8 — so steps(8) advances exactly one pixel per step and the motion
+     stays on the pixel grid instead of sliding smoothly. The rect overhangs a
+     period each side, so a full period of travel loops seamlessly. */
+  :global(.rb-scroll) {
+    animation: rb-scroll 0.5s steps(8, end) infinite;
+  }
+
+  @keyframes rb-scroll {
+    to {
+      transform: translateX(-38.4px);
+    }
+  }
+
+  /* Tail wags in whole-pixel jumps, pivoting along the body edge it meets. */
+  :global(.nyan-tail) {
+    animation: nyan-tail 0.5s steps(1, end) infinite;
+  }
+
+  @keyframes nyan-tail {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(5.8px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5.8px);
+    }
+  }
+
+  /* Paws tuck and extend a pixel at a time. All four share one keyframe and are
+     phase-shifted by negative delays, giving a staggered trot rather than four
+     legs moving as one. */
+  :global(.nyan-paw) {
+    animation: nyan-paw 0.5s infinite;
+  }
+  :global(.nyan-paw-1) {
+    animation-delay: 0s;
+  }
+  :global(.nyan-paw-2) {
+    animation-delay: -0.125s;
+  }
+  :global(.nyan-paw-3) {
+    animation-delay: -0.25s;
+  }
+  :global(.nyan-paw-4) {
+    animation-delay: -0.375s;
+  }
+
+  /* Discrete stops — no interpolation, so the legs snap between pixel rows. */
+  @keyframes nyan-paw {
+    0%,
+    49.9% {
+      transform: translateY(0);
+    }
+    50%,
+    100% {
+      transform: translateY(-5.8px);
+    }
+  }
+
+  /* Whole-cat bob, one pixel up and down, in sync with the tail. */
+  #nyan-bob {
+    animation: nyan-bob 0.5s steps(1, end) infinite;
+  }
+
+  @keyframes nyan-bob {
+    0%,
+    50% {
+      transform: translateY(0);
+    }
+    25%,
+    75% {
+      transform: translateY(-5.8px);
+    }
+  }
+
+  .nyan-star {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  /* Pop, then settle into the design's twinkle. */
+  .nyan-star.lit {
+    animation:
+      nyan-pop 0.4s cubic-bezier(0.2, 1.6, 0.4, 1) forwards,
+      twinkle 2.4s ease-in-out 0.4s infinite;
+  }
+
+  @keyframes nyan-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.2) rotate(-40deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #nyan-bob,
+    :global(.rb-scroll),
+    :global(.nyan-tail),
+    :global(.nyan-paw) {
+      animation: none;
+    }
+    .nyan-star.lit {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+
+<script>
+  import { TRACK_W, REST_P, HALF_CAT, MIN_P } from "../data/nyan-geometry.mjs";
+
+  // Re-created on every navigation back to the home page, so setup runs per
+  // page-load. `stop` cancels the previous run's animation frame — without it,
+  // navigating away mid-walk leaves a loop painting a detached element.
+  let stop: (() => void) | null = null;
+
+  const init = () => {
+    stop?.();
+    stop = null;
+
+    const stage = document.getElementById("nyan-stage");
+    const cat = document.getElementById("nyan-cat");
+    if (!stage || !cat) return;
+    const stars = [...stage.querySelectorAll<HTMLElement>(".nyan-star")];
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // The track is TRACK_W units of 4.8px pixels. Snapping the clip to that
+    // grid is what sells the 8-bit draw.
+    const COLS = Math.round(TRACK_W / 4.8);
+    const REST = REST_P;
+
+    // Furthest forward the cat can be pushed while staying fully on screen.
+    // Measured rather than precomputed: the stage's width now depends on the
+    // centred frame, so this varies with viewport and must survive resizes.
+    const maxP = () => {
+      const r = stage.getBoundingClientRect();
+      if (!r.width) return REST;
+      const halfCatPx = (HALF_CAT / 100) * r.width;
+      return Math.max(REST, (document.documentElement.clientWidth - r.left - halfCatPx) / r.width);
+    };
+
+    let p = 0;
+    let v = 0;
+    let dragging = false;
+    let raf = 0;
+
+    const paint = () => {
+      stage.style.setProperty("--p", String(p));
+      stage.style.setProperty("--pq", String(Math.round(p * COLS) / COLS));
+      // Nose position, used to decide which stars have been passed.
+      const nose = p + HALF_CAT / 100;
+      for (const s of stars) {
+        const at = Number(s.dataset.at);
+        if (nose >= at) s.classList.add("lit");
+        else s.classList.remove("lit");
+      }
+    };
+
+    /* ------------------------------------------------------------- intro */
+    const KEY = "nyanIntroPlayed";
+    const alreadyPlayed = (() => {
+      try {
+        return sessionStorage.getItem(KEY) === "1";
+      } catch {
+        return false;
+      }
+    })();
+
+    const settle = () => {
+      try {
+        sessionStorage.setItem(KEY, "1");
+      } catch {}
+    };
+
+    /* --------------------------------------------------- walk + run loop */
+    // No spring. Once any shove momentum has bled off, the cat simply walks
+    // back to its spot at the same steady pace it walked in with — a cat that
+    // pings back elastically reads as a rubber band, not an animal.
+    const DUR = 6500; // full walk-in across the track
+    const WALK = REST / (DUR / 1000); // track-fractions per second
+    const TAU = 0.18; // how quickly a shove's momentum decays
+
+    let last = 0;
+    const frame = (now: number) => {
+      const dt = Math.min((now - last) / 1000, 1 / 30);
+      last = now;
+
+      if (!dragging) {
+        if (Math.abs(v) > 0.02) {
+          // Still sliding from a shove — coast, shedding speed.
+          p += v * dt;
+          v *= Math.exp(-dt / TAU);
+        } else {
+          // Then walk home at a constant pace, stopping exactly on the mark.
+          v = 0;
+          const gap = REST - p;
+          const step = WALK * dt;
+          p = Math.abs(gap) <= step ? REST : p + Math.sign(gap) * step;
+        }
+        const cap = maxP();
+        if (p > cap) {
+          p = cap;
+          v = Math.min(v, 0);
+        }
+        if (p < MIN_P) {
+          p = MIN_P;
+          v = Math.max(v, 0);
+        }
+      }
+
+      paint();
+
+      if (!dragging && p === REST && v === 0) {
+        raf = 0;
+        return;
+      }
+      raf = requestAnimationFrame(frame);
+    };
+
+    const run = () => {
+      if (raf) return;
+      last = performance.now();
+      raf = requestAnimationFrame(frame);
+    };
+
+    /* --------------------------------------------------------- interaction */
+    let startX = 0;
+    let startP = 0;
+    let width = 0;
+    let moved = 0;
+
+    cat.addEventListener("pointerdown", (e) => {
+      if (reduced) return;
+      dragging = true;
+      moved = 0;
+      startX = e.clientX;
+      startP = p;
+      width = stage.getBoundingClientRect().width || 1;
+      v = 0;
+      // Must not throw — an exception here would abort before run(), leaving
+      // dragging=true with no loop painting, i.e. a dead drag.
+      try {
+        cat.setPointerCapture(e.pointerId);
+      } catch {}
+      run();
+    });
+
+    cat.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      moved = Math.max(moved, Math.abs(dx));
+      // Free scrub in both directions: back along the trail, or forward past
+      // the resting spot into the extra track. maxP() keeps it on screen.
+      p = Math.min(maxP(), Math.max(MIN_P, startP + dx / width));
+      paint(); // paint here too so the drag tracks even if the loop stalls
+    });
+
+    const release = (e: PointerEvent) => {
+      if (!dragging) return;
+      dragging = false;
+      try {
+        cat.releasePointerCapture(e.pointerId);
+      } catch {}
+      // A tap (no meaningful drag) is a shove: kick it backwards and let the
+      // spring haul it home.
+      if (moved < 4) v = -0.7;
+      run();
+    };
+
+    cat.addEventListener("pointerup", release);
+    cat.addEventListener("pointercancel", release);
+    // Keyboard parity for the click interaction.
+    cat.addEventListener("keydown", (e) => {
+      if (reduced) return;
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        v = -0.7;
+        run();
+      }
+    });
+
+    /* ------------------------------------------------------------- start */
+    if (reduced || alreadyPlayed) {
+      p = REST;
+      v = 0;
+      paint();
+      settle();
+    } else {
+      // Walks in at a steady pace — linear, not eased, because a walk has
+      // constant speed. Same WALK rate the return uses, so the cat moves
+      // identically whether it is arriving or coming back.
+      //
+      let t0 = 0;
+      const intro = (now: number) => {
+        if (!t0) t0 = now;
+        const t = Math.min((now - t0) / DUR, 1);
+        p = t * REST;
+        paint();
+        // Tracked in `raf` so navigating away mid-walk can cancel it.
+        if (t < 1) raf = requestAnimationFrame(intro);
+        else {
+          raf = 0;
+          p = REST;
+          v = 0;
+          paint();
+          settle();
+        }
+      };
+
+      raf = requestAnimationFrame(intro);
+    }
+
+    stop = () => {
+      if (raf) cancelAnimationFrame(raf);
+      raf = 0;
+    };
+  };
+
+  document.addEventListener("astro:page-load", init);
+</script>

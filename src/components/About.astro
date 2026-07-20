@@ -1,0 +1,161 @@
+---
+// About + work history. Matches Figma frames #51:53146 → #51:53176.
+const roles = [
+  {
+    company: "Flent",
+    logo: "/images/logo-flent.png",
+    role: "Founding Product Designer",
+    period: "Present",
+    url: "https://flent.in/",
+  },
+  {
+    company: "Attentions AI",
+    logo: "/images/logo-attentions.png",
+    role: "Sr. Product Designer",
+    period: "2024-2025",
+    url: "https://attentions.ai/",
+  },
+  {
+    company: "Huemn",
+    logo: "/images/logo-huemn.png",
+    role: "Sr. Product Designer",
+    period: "2023-2024",
+    url: "https://huemn.com/user/login",
+  },
+  {
+    company: "Aimedis",
+    logo: "/images/logo-aimedis.png",
+    role: "Product Designer",
+    period: "2022-2023",
+    url: "https://www.aimedis.com/",
+  },
+];
+---
+
+<section
+  id="about"
+  class="mx-auto w-full max-w-[1440px] px-6 pt-24 md:px-12 lg:px-[100px] lg:pt-[180px]"
+>
+  <div class="flex flex-col gap-10 lg:flex-row lg:justify-end lg:gap-16">
+    <!-- Visual. Was a 25MB GIF in Figma; re-encoded to video (~1MB) since GIF
+         has no interframe compression. Poster shows until the first frame decodes. -->
+    <div class="lg:flex-1" data-reveal="clip">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="none"
+        poster="/images/about-visual-poster.jpg"
+        width="1280"
+        height="720"
+        aria-hidden="true"
+        class="h-full w-full rounded-sm object-cover"
+      >
+        <source src="/images/about-visual.webm" type="video/webm" />
+        <source src="/images/about-visual.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Copy + work history -->
+    <div class="flex flex-col gap-12 lg:flex-1">
+      <div class="flex flex-col gap-2.5">
+        <h2 data-reveal="up" class="text-[15px] text-muted">ABOUT ME</h2>
+        <p
+          data-reveal="up"
+          style="--reveal-d:90ms"
+          class="max-w-[512px] text-[15px] leading-[1.85] text-ink"
+        >
+          I'm a product designer with 4+ years across b2b and b2c startups. i've
+          been part of early teams where the design function was basically just
+          me, which means i've had to build, ship, and figure things out fast.
+          lately i've been using ai to close the gap between design and
+          engineering.
+        </p>
+      </div>
+
+      <ul class="flex w-full max-w-[680px] flex-col">
+        {
+          roles.map((r, i) => (
+            <li
+              data-reveal="up"
+              style={`--reveal-d:${i * 70}ms`}
+              class="work-row grid grid-cols-[1fr_auto] items-center gap-x-6 gap-y-0.5 pb-[18px] lg:grid-cols-[200px_190px_1fr]"
+            >
+              {/* Row 1 col 1 on mobile and desktop */}
+              {/* Logo and name are one link, for a bigger target than the
+                  text alone. */}
+              <a
+                href={r.url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${r.company} — opens in a new tab`}
+                class="col-start-1 row-start-1 flex items-center gap-4"
+              >
+                <img
+                  src={r.logo}
+                  alt=""
+                  aria-hidden="true"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  decoding="async"
+                  class="size-8 shrink-0 rounded-full object-cover"
+                />
+                <span class="work-name text-[15px] leading-[1.85] text-ink">
+                  {r.company}
+                </span>
+              </a>
+
+              {/* Drops to its own full-width row on mobile, indented past the logo */}
+              <span
+                class="col-span-2 col-start-1 row-start-2 pl-12 text-[15px] text-muted lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:pl-0"
+              >
+                {r.role}
+              </span>
+
+              <span
+                class="col-start-2 row-start-1 text-right text-[15px] text-muted lg:col-start-3"
+              >
+                {r.period}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Rows respond to hover: the logo lifts slightly, the name shifts, and the
+     year steps toward it. Subtle — the list should feel alive, not springy. */
+  .work-row img,
+  .work-row .work-name,
+  .work-row span {
+    transition:
+      transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1),
+      color 0.3s ease;
+  }
+  .work-row:hover img {
+    transform: scale(1.12);
+  }
+  .work-row:hover .work-name {
+    transform: translateX(3px);
+  }
+  .work-row:hover span {
+    color: var(--text-primary);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .work-row img,
+    .work-row .work-name,
+    .work-row span {
+      transition: none;
+    }
+    .work-row:hover img,
+    .work-row:hover .work-name {
+      transform: none;
+    }
+  }
+</style>

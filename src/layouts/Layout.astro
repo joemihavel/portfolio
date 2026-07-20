@@ -1,0 +1,93 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Joel Mihavel — Designer, Builder, 0→1",
+  description = "Product designer with 4+ years across b2b and b2c startups. Founding Product Designer at Flent.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://api.open-meteo.com" />
+    <!-- Cross-fades between pages instead of a full white reload. -->
+    <ClientRouter />
+    <!-- Restore the saved theme before first paint so there is no flash. -->
+    <script is:inline>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+
+      // Arm the reveal system before paint, so content doesn't flash in at full
+      // opacity and then hide. Failsafe: if the observer module never reports
+      // in, drop the class and show everything — a broken script must never
+      // leave the page blank.
+      (function () {
+        var d = document.documentElement;
+        if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        d.classList.add("reveals");
+        setTimeout(function () {
+          if (!window.__revealsReady) d.classList.remove("reveals");
+        }, 2500);
+      })();
+    </script>
+  </head>
+  <body class="antialiased">
+    <slot />
+
+    <script>
+      // Reveals anything marked [data-reveal] as it enters the viewport.
+      // Re-runs after view transitions, where the DOM is swapped wholesale.
+      let io: IntersectionObserver | null = null;
+
+      const initReveals = () => {
+        (window as any).__revealsReady = true;
+        io?.disconnect();
+
+        const els = [...document.querySelectorAll<HTMLElement>("[data-reveal]")];
+        if (!("IntersectionObserver" in window)) {
+          els.forEach((el) => el.classList.add("shown"));
+          return;
+        }
+
+        io = new IntersectionObserver(
+          (entries, obs) => {
+            for (const e of entries) {
+              if (!e.isIntersecting) continue;
+              e.target.classList.add("shown");
+              obs.unobserve(e.target); // reveal once, then stop watching
+            }
+          },
+          // Slight bottom inset so things trigger just after they enter, not
+          // the instant a single pixel appears.
+          { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+        );
+
+        for (const el of els) {
+          if (el.classList.contains("shown")) continue;
+          io.observe(el);
+        }
+      };
+
+      document.addEventListener("astro:page-load", initReveals);
+    </script>
+  </body>
+</html>
