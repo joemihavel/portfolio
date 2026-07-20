@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Static-assets Worker: no server script, Cloudflare just serves ./dist.
+  // Name must match the existing Worker or `wrangler deploy` creates a new one.
+  "name": "portfolio",
+  "compatibility_date": "2026-07-20",
+  "assets": {
+    "directory": "./dist"
+  }
+}
