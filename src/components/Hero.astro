@@ -1,6 +1,6 @@
 ---
-// Hero: serif stack on the left, dictionary-entry definition on the right.
-// Matches Figma frame #51:52681.
+// Hero: dictionary-entry definition centered on top, serif words in a row below.
+// Matches Figma frame #86:49967.
 //
 import NyanTrail from "./NyanTrail.astro";
 
@@ -20,17 +20,68 @@ const links = [
 ---
 
 <section
-  class="mx-auto w-full max-w-[1440px] px-6 pt-16 md:px-12 lg:px-[100px] lg:pt-[140px]"
+  class="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-10 px-6 pt-10 md:px-12 lg:pt-[80px]"
 >
-  <div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-[97px]">
-    <!-- Serif word stack -->
-    <h1 class="flex shrink-0 flex-col gap-2 lg:w-[228px]">
+  <!-- Dictionary entry -->
+  <div class="max-w-[526px] pt-[15px] text-center">
+    <p
+      data-reveal="up"
+      style="--reveal-d:300ms"
+      class="flex flex-wrap items-baseline justify-center gap-x-2"
+    >
+      <span class="text-[clamp(1.75rem,5vw,39px)] leading-tight text-ink">jo·el</span>
+      <span class="text-faint">/ˈdʒoʊ.əl/</span>
+      <span class="text-muted">noun</span>
+    </p>
+    <p
+      data-reveal="up"
+      style="--reveal-d:400ms"
+      class="mt-2 text-[15px] leading-[1.85] text-ink"
+    >
+      Designer, builder, and perpetual tinkerer;<br />
+      Founding Product Designer; at{" "}
+      <a
+        href="https://flent.in/"
+        target="_blank"
+        rel="noreferrer"
+        class="accent-link">flenthomes</a
+      ><br />
+      See also:{" "}
       {
-        words.map((w, i) => (
+        links.map((l, i) => (
+          <>
+            <a
+              href={l.href}
+              target="_blank"
+              rel="noreferrer"
+              class="link-draw link-draw-on"
+            >
+              {l.label}
+            </a>
+            {i < links.length - 1 && <span class="text-muted"> · </span>}
+          </>
+        ))
+      }
+    </p>
+  </div>
+
+  <!-- Serif words, in a row divided by pipes -->
+  <h1 class="flex flex-wrap items-stretch justify-center gap-x-[6.4px]">
+    {
+      words.map((w, i) => (
+        <>
+          {i > 0 && (
+            <span
+              aria-hidden="true"
+              class="font-serif text-[clamp(2rem,7vw,48px)] leading-[1.1] tracking-[-0.02em] text-ink"
+            >
+              |
+            </span>
+          )}
           <span
             data-reveal="up"
             style={`--reveal-d:${i * 90}ms`}
-            class="font-serif text-[clamp(2.5rem,8vw,60px)] leading-[1.1] tracking-[-0.02em] text-ink"
+            class="font-serif text-[clamp(2rem,7vw,48px)] leading-[1.1] tracking-[-0.02em] text-ink"
           >
             {/* aria-label carries the word; the pieces are decorative split-ups
                 so screen readers don't announce it letter by letter. */}
@@ -50,54 +101,10 @@ const links = [
               </span>
             )}
           </span>
-        ))
-      }
-    </h1>
-
-    <!-- Dictionary entry -->
-    <div class="lg:max-w-[526px] lg:pt-[15px]">
-      <p
-        data-reveal="up"
-        style="--reveal-d:300ms"
-        class="flex flex-wrap items-baseline gap-x-2"
-      >
-        <span class="text-[clamp(1.75rem,5vw,39px)] leading-tight text-ink">jo·el</span>
-        <span class="text-faint">/ˈdʒoʊ.əl/</span>
-        <span class="text-muted">noun</span>
-      </p>
-      <p
-        data-reveal="up"
-        style="--reveal-d:400ms"
-        class="mt-2 text-[15px] leading-[1.85] text-ink"
-      >
-        Designer, builder, and perpetual tinkerer;<br />
-        Founding Product Designer; at{" "}
-        <a
-          href="https://flent.in/"
-          target="_blank"
-          rel="noreferrer"
-          class="accent-link">flenthomes</a
-        ><br />
-        See also:{" "}
-        {
-          links.map((l, i) => (
-            <>
-              <a
-                href={l.href}
-                target="_blank"
-                rel="noreferrer"
-                class="link-draw link-draw-on"
-              >
-                {l.label}
-              </a>
-              {i < links.length - 1 && <span class="text-muted"> · </span>}
-            </>
-          ))
-        }
-      </p>
-    </div>
-  </div>
-
+        </>
+      ))
+    }
+  </h1>
 </section>
 
 <!-- Outside the section on purpose: the rainbow is full-bleed in the frame

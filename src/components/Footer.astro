@@ -11,7 +11,7 @@ const year = new Date().getFullYear();
   <div data-reveal="line" class="bg-hairline h-px w-full"></div>
 
   <div
-    class="mx-auto flex w-full max-w-[1440px] flex-col gap-8 px-6 pt-12 pb-16 md:px-12 lg:px-[100px]"
+    class="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-8 px-6 pt-12 pb-16 md:px-12 lg:px-[100px]"
   >
     <div
       role="img"
@@ -25,21 +25,18 @@ const year = new Date().getFullYear();
     <div
       data-reveal="up"
       style="--reveal-d:200ms"
-      class="flex flex-wrap items-end justify-between gap-6"
+      class="flex flex-col items-center gap-2 text-center"
     >
-      <div class="flex flex-col justify-center gap-2">
-        <p class="text-[15px] text-footer">
-          Designed and Built with Figma, Claude and Procrastination
-        </p>
-        <div class="flex gap-2 text-[13px]">
-          <span class="text-muted-2 uppercase">All rights reserved</span>
-          <span class="text-muted">© {year}</span>
-        </div>
+      <p class="text-[15px] text-footer">
+        Designed and Built with Figma, Claude and Procrastination
+      </p>
+      <div class="flex gap-2 text-[13px]">
+        <span class="text-muted-2 uppercase">All rights reserved</span>
+        <span class="text-muted">© {year}</span>
       </div>
 
       <!-- "Download Resume" removed. It was hidden in the Figma frame too
-           (#51:53185 sits at opacity 0), and there is no resume.pdf yet. -->
-
+           (opacity 0) and dropped entirely in #93:64975; no resume.pdf yet. -->
     </div>
   </div>
 </footer>

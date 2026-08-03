@@ -36,10 +36,10 @@ const roles = [
   id="about"
   class="mx-auto w-full max-w-[1440px] px-6 pt-24 md:px-12 lg:px-[100px] lg:pt-[180px]"
 >
-  <div class="flex flex-col gap-10 lg:flex-row lg:justify-end lg:gap-16">
+  <div class="flex flex-col items-center gap-16">
     <!-- Visual. Was a 25MB GIF in Figma; re-encoded to video (~1MB) since GIF
          has no interframe compression. Poster shows until the first frame decodes. -->
-    <div class="lg:flex-1" data-reveal="clip">
+    <div class="w-full max-w-[588px] aspect-[588/390]" data-reveal="clip">
       <video
         autoplay
         loop
@@ -58,13 +58,13 @@ const roles = [
     </div>
 
     <!-- Copy + work history -->
-    <div class="flex flex-col gap-12 lg:flex-1">
+    <div class="flex w-full max-w-[588px] flex-col gap-12">
       <div class="flex flex-col gap-2.5">
         <h2 data-reveal="up" class="text-[15px] text-muted">ABOUT ME</h2>
         <p
           data-reveal="up"
           style="--reveal-d:90ms"
-          class="max-w-[512px] text-[15px] leading-[1.85] text-ink"
+          class="text-[15px] leading-[1.85] text-ink"
         >
           I'm a product designer with 4+ years across b2b and b2c startups. i've
           been part of early teams where the design function was basically just
@@ -74,13 +74,13 @@ const roles = [
         </p>
       </div>
 
-      <ul class="flex w-full max-w-[680px] flex-col">
+      <ul class="flex w-full flex-col">
         {
           roles.map((r, i) => (
             <li
               data-reveal="up"
               style={`--reveal-d:${i * 70}ms`}
-              class="work-row grid grid-cols-[1fr_auto] items-center gap-x-6 gap-y-0.5 pb-[18px] lg:grid-cols-[200px_190px_1fr]"
+              class="work-row grid grid-cols-[1fr_auto] items-center gap-x-6 gap-y-0.5 pb-[18px] lg:grid-cols-[200px_1fr_auto]"
             >
               {/* Row 1 col 1 on mobile and desktop */}
               {/* Logo and name are one link, for a bigger target than the
