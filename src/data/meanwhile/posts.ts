@@ -58,14 +58,6 @@ export const PAPERS = [
 
 export const MAX_LENGTH = 240;
 
-/** The stretch of canvas that new cards are placed within. */
-export interface Zone {
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-}
-
 // Bumped to retire the previous round of cards. Older rows are left in place
 // rather than deleted, so stepping this back recovers them.
 /**
@@ -118,14 +110,8 @@ export const store = {
       country: string;
       paper?: number;
       strokes?: Stroke[];
-    },
-    zone: Zone,
-    existing: Post[] = []
+    }
   ): Promise<Post | { error: string }> {
-    // Placement is decided here, not on the server: it needs the zone, which
-    // is a property of the canvas the visitor is looking at.
-    const spot = spread(existing, zone);
-
     try {
       const res = await fetch("/api/posts", {
         method: "POST",
@@ -136,7 +122,12 @@ export const store = {
           country: input.country,
           paper: input.paper ?? Math.floor(Math.random() * PAPERS.length),
           strokes: input.strokes ?? null,
-          ...spot,
+          // Position is not stored in any meaningful sense any more: the wall
+          // is the viewport, so where a card sits is recomputed on every load
+          // from the window size and where the hero happens to be.
+          x: 0,
+          y: 0,
+          rotation: 0,
         }),
       });
 
@@ -195,60 +186,6 @@ export const store = {
     }
   },
 };
-
-/**
- * Card geometry, used to lay the wall out without collisions.
- *
- * A card is a fixed 320px wide and grows with its message; 300 covers the
- * 240-character maximum. The cell is bigger than the card on both axes so the
- * jitter and the small rotation still cannot push one card into its neighbour.
- */
-const CARD_W = 320;
-const CELL_W = 400;
-const CELL_H = 360;
-const JITTER = 24;
-
-function spread(posts: Post[], zone: Zone) {
-  const cols = Math.max(1, Math.floor(zone.w / CELL_W));
-  const rows = Math.max(1, Math.floor(zone.h / CELL_H));
-
-  // Which cell each existing card sits in. Recoverable from its position
-  // because a card is always centred in its cell, plus at most JITTER.
-  const taken = new Set(
-    posts.map((p) => {
-      const col = Math.floor((p.x - zone.x) / CELL_W);
-      const row = Math.floor((p.y - zone.y) / CELL_H);
-      return `${col},${row}`;
-    })
-  );
-
-  const free: [number, number][] = [];
-  for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) {
-      if (!taken.has(`${c},${r}`)) free.push([c, r]);
-    }
-  }
-
-  const place = (col: number, row: number) => ({
-    // Centred in the cell, then nudged — so the left edge stays well inside
-    // the cell and the cell stays recoverable from the position.
-    x: zone.x + col * CELL_W + (CELL_W - CARD_W) / 2 + (Math.random() - 0.5) * 2 * JITTER,
-    y: zone.y + row * CELL_H + 30 + (Math.random() - 0.5) * 2 * JITTER,
-    // Kept small: a bigger lean would swell the card's bounding box past the
-    // clearance the cell allows.
-    rotation: (Math.random() - 0.5) * 5,
-  });
-
-  if (free.length) {
-    const [col, row] = free[Math.floor(Math.random() * free.length)];
-    return place(col, row);
-  }
-
-  // Wall full: start a fresh row below the grid rather than stacking on top
-  // of an existing card.
-  const overflow = posts.length - cols * rows;
-  return place(overflow % cols, rows + Math.floor(overflow / cols));
-}
 
 /** "3 people felt this" — never a score, never sortable. */
 export function reactionLabel(n: number): string {

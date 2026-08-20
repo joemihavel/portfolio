@@ -16,9 +16,6 @@ const { day } = Astro.props;
 ---
 
 <section class="hero" id="mw-hero">
-  <!-- Paint trail. A canvas rather than DOM nodes: this redraws every frame,
-       and 60 divs a second would thrash layout. -->
-  <canvas class="hero-paint" id="mw-paint" aria-hidden="true"></canvas>
 
   <!-- Uses the portfolio's own idioms so it reads as part of that site rather
        than as this one's chrome: bracketed label, the arrow that travels, and
@@ -45,9 +42,9 @@ const { day } = Astro.props;
 
     <div class="hero-ctas">
       <button type="button" class="cta" id="mw-open-deck">
-        Explore good things <span class="cta-arrow" aria-hidden="true">→</span>
+        Explore good news <span class="cta-arrow" aria-hidden="true">→</span>
       </button>
-      <button type="button" class="cta cta-alt" id="mw-open-canvas">
+      <button type="button" class="cta cta-alt" data-open-composer>
         Add your own <span class="cta-arrow" aria-hidden="true">→</span>
       </button>
     </div>
@@ -66,7 +63,7 @@ const { day } = Astro.props;
       <div class="deck-end" id="mw-deck-end" aria-hidden="true">
         <p class="deck-end-head">That's everything for today.</p>
         <p class="deck-end-sub">Come back tomorrow. We'll find some more.</p>
-        <button type="button" class="cta cta-alt" data-open-canvas>
+        <button type="button" class="cta cta-alt" data-open-composer>
           Add your own <span class="cta-arrow" aria-hidden="true">→</span>
         </button>
       </div>
@@ -83,37 +80,19 @@ const { day } = Astro.props;
 
 <style>
   /* ------------------------------------------------------------------ hero */
-  .hero-paint {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* Behind the words, so the trail decorates the page instead of obscuring
-       the one sentence the page exists to say. */
-    z-index: 0;
-    /* One GPU blur over the whole layer, rather than a per-dab canvas filter.
-       This is what turns discrete blobs into a wash. */
-    filter: blur(6px);
-    opacity: 1;
-  }
   .hero-inner,
   .hero-back { position: relative; z-index: 1; }
 
-  .hero {
-    /* Only where a real cursor exists; touch gets the default. */
+  /* The brush is set on the page, not the hero: an element with
+     pointer-events:none is never hovered, so a cursor rule on it does nothing. */
+  :global(body) {
     cursor: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%3E%3Cg%20transform='rotate(45%2014%2014)'%3E%3Crect%20x='12.4'%20y='2.5'%20width='3.2'%20height='9'%20rx='1.6'%20fill='%23222'/%3E%3Crect%20x='11.2'%20y='11'%20width='5.6'%20height='3.4'%20rx='1'%20fill='%23b9b9b9'/%3E%3Cpath%20d='M11.4%2014.2%20h5.2%20l-2.6%206.4%20z'%20fill='%23e0483a'/%3E%3C/g%3E%3C/svg%3E") 9 19, crosshair;
-    position: relative;
-    min-height: 100dvh;
-    display: grid;
-    place-items: center;
-    padding: 80px 24px;
-    text-align: center;
   }
   /* Matched to the portfolio header: same 15px uppercase sans, same page
      gutters (24 / 48 / 100px) and the same vertical padding, so it lands where
      the wordmark sits on every other page. */
   .hero-back {
+    pointer-events: auto;
     position: absolute;
     top: 20px;
     left: 24px;
@@ -175,16 +154,32 @@ const { day } = Astro.props;
   .hero-back:hover .hero-back-tail { transform: scaleX(1); }
 
   .hero-back-label { white-space: nowrap; }
+  .hero {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    padding: 80px 24px;
+    text-align: center;
+    /* Ignores the pointer so the wall stays reachable through it; only the
+       words and buttons below take clicks. */
+    pointer-events: none;
+  }
+
   /* A link should still say it is a link. */
-  .hero a, .hero button { cursor: pointer; }
+  :global(a), :global(button) { cursor: pointer; }
 
   @media (prefers-reduced-motion: reduce) {
-    .hero { cursor: auto; }
+    :global(body) { cursor: auto; }
     .hero-paint { display: none; }
     .hero-back, .hero-back-brk, .hero-back-head, .hero-back-tail { transition: none; }
   }
 
-  .hero-inner { max-width: 640px; }
+  .hero-inner {
+    max-width: 640px;
+    pointer-events: auto;
+  }
   /* Recedes while the deck is up, so the cards clearly sit in front of it. */
   .hero-inner {
     transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.5s ease,
@@ -651,31 +646,15 @@ const { day } = Astro.props;
       if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); advance(); }
     });
 
-    /* -------------------------------------------------------- to the canvas */
-    const toCanvas = () => {
-      // The canvas lives below the hero on the same page, so this is a scroll,
-      // not a swap. The deck goes instantly — waiting out its fade before the
-      // page starts moving reads as lag.
-      close({ instant: true });
-      document.getElementById("mw-canvas-wrap")?.scrollIntoView({
-        behavior: reduced ? "auto" : "smooth",
-        block: "start",
-      });
-      // Held back a beat so the cards land as the wall comes into frame,
-      // rather than finishing while it is still scrolling past.
-      setTimeout(() => document.dispatchEvent(new CustomEvent("mw:populate")), 260);
-      history.replaceState(null, "", "#wall");
-    };
-
-    document.getElementById("mw-open-canvas")?.addEventListener("click", toCanvas);
-    for (const el of document.querySelectorAll("[data-open-canvas]")) {
-      el.addEventListener("click", toCanvas);
+    /* ---------------------------------------------------------- to the wall */
+    // The composer is opened by People.astro, which listens for the same
+    // attribute. All this has to do is get the deck out of the way first, so
+    // the dialog does not open behind it.
+    for (const el of deck.querySelectorAll("[data-open-composer]")) {
+      el.addEventListener("click", () => close({ instant: true }));
     }
 
-    // Deep link: land on the wall rather than the hero.
-    if (location.hash === "#wall") {
-      document.getElementById("mw-canvas-wrap")?.scrollIntoView({ block: "start" });
-    }
+
   };
 
   /* ------------------------------------------------------------------ paint */
@@ -695,8 +674,8 @@ const { day } = Astro.props;
     let dpr = 1;
     const size = () => {
       dpr = Math.min(window.devicePixelRatio || 1, 2); // 2 is plenty; 3 just costs fill rate
-      cv.width = hero.clientWidth * dpr;
-      cv.height = hero.clientHeight * dpr;
+      cv.width = window.innerWidth * dpr;
+      cv.height = window.innerHeight * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
     size();
@@ -780,11 +759,13 @@ const { day } = Astro.props;
       if (!raf) raf = requestAnimationFrame(draw);
     };
 
-    hero.addEventListener("pointermove", (e) => {
+    // Listened for on the window, not the hero: the hero layer sets
+    // pointer-events:none so that the wall stays draggable through it, which
+    // also means it never receives a pointer event of its own.
+    window.addEventListener("pointermove", (e) => {
       if (e.pointerType === "touch") return;
-      const rect = hero.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+      const x = e.clientX;
+      const y = e.clientY;
 
       const from = last ?? { x, y };
       const dist = Math.hypot(x - from.x, y - from.y);
@@ -806,7 +787,7 @@ const { day } = Astro.props;
 
     // Leaving mid-stroke should not connect the last point to wherever the
     // cursor re-enters.
-    hero.addEventListener("pointerleave", () => { last = null; });
+    document.addEventListener("pointerleave", () => { last = null; });
   };
 
   document.addEventListener("astro:page-load", () => {

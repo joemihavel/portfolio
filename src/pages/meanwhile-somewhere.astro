@@ -35,18 +35,24 @@ const current = days.find((d) => d.day <= today) ?? days[0];
   {
     current ? (
       <main class="relative">
-        <Deck day={current} />
+        {/* Canvas first in the DOM so the hero paints over it. */}
         <div id="mw-canvas-wrap">
           <Canvas day={current} />
         </div>
+        <Deck day={current} />
         <People />
       </main>
 
       <style is:global>
-        /* The canvas is a section of this page, directly below the hero — not a
-           screen that replaces it. "Add your own" scrolls down to it, so you can
-           always scroll back up to the hero and the deck. */
-        #mw-canvas-wrap { position: relative; }
+        /* One screen. The canvas is the page, and the hero is pinned over the
+           middle of it — so there is nothing to scroll to and nothing below.
+           You explore by dragging instead. */
+        html, body {
+          height: 100%;
+          overflow: hidden;
+          overscroll-behavior: none;
+        }
+        #mw-canvas-wrap { position: fixed; inset: 0; }
       </style>
     ) : (
       <main class="flex min-h-dvh items-center justify-center px-6 text-center">

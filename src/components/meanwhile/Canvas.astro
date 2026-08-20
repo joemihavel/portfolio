@@ -1,65 +1,26 @@
 ---
-import type { Day } from "../../data/meanwhile/layout";
-import { place } from "../../data/meanwhile/layout";
-
-interface Props {
-  day: Day;
-}
-
-const { day } = Astro.props;
-const { cards, width, height, intro, peopleZone } = place(day.stories);
+// The wall.
+//
+// This used to be a pannable, zoomable world larger than the screen. It is now
+// exactly the viewport: every card is visible at once, arranged around the
+// hero, so there is nothing to pan to and none of that machinery earns its
+// place. What is left is a backdrop and a container the cards go into.
 ---
 
-<div class="mw-viewport" id="mw-viewport" data-w={width} data-h={height}>
-  <!-- The world is one transformed layer: panning writes a single transform
-       rather than moving 25 elements. -->
-  <div
-    class="mw-world"
-    id="mw-world"
-    data-zone={JSON.stringify(peopleZone)}
-    style={`width:${width}px; height:${height}px`}
-  >
-  </div>
-
-  <div class="mw-hud mw-hud-b">
-    <button type="button" class="mw-fab" data-open-composer>
-      <span class="mw-fab-mark" aria-hidden="true">✦</span>
-      <span class="font-serif">Add your own</span>
-    </button>
-  </div>
-
-  <div class="mw-hud mw-hud-br flex items-center gap-1">
-    <!-- The canvas owns touch gestures, so on a phone a finger on it never
-         scrolls the page. This is the way back up to the hero. -->
-    <button type="button" class="mw-zoom mw-top" id="mw-to-top" aria-label="Back to top">↑</button>
-    <button type="button" class="mw-zoom" data-zoom="out" aria-label="Zoom out">–</button>
-    <button type="button" class="mw-zoom" data-zoom="reset" aria-label="Reset view">·</button>
-    <button type="button" class="mw-zoom" data-zoom="in" aria-label="Zoom in">+</button>
-  </div>
-
+<div class="mw-viewport" id="mw-viewport">
+  <!-- Paint trail. Its own layer between the backdrop and the cards, so a
+       stroke washes over the wall without ever washing over a card. A canvas
+       rather than DOM nodes: this redraws every frame, and 60 divs a second
+       would thrash layout. -->
+  <canvas class="mw-paint" id="mw-paint" aria-hidden="true"></canvas>
+  <div class="mw-world" id="mw-world"></div>
 </div>
 
 <style>
   .mw-viewport {
-    position: relative;
-    width: 100%;
-    /* The canvas is the page — there is no header above it. */
-    /* svh, not dvh. dvh tracks the *current* viewport, so with Safari's URL bar
-       expanded the section is taller than what you can actually see and the
-       bottom controls — including the only way to scroll back out on a phone —
-       sit below the fold. svh is the smallest the viewport ever gets, so they
-       are always reachable. */
-    height: 100dvh;
-    height: 100svh;
-    min-height: 520px;
+    position: absolute;
+    inset: 0;
     overflow: hidden;
-    cursor: grab;
-    touch-action: none; /* we handle pan/pinch ourselves */
-    /* Dragging and double-tapping are the two gestures here, and both are
-       ruined by the browser turning them into text selection. Cards opt back
-       in below so a headline can still be copied. */
-    user-select: none;
-    -webkit-user-select: none;
     background:
       radial-gradient(
         circle at 1px 1px,
@@ -67,11 +28,29 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
         transparent 0
       );
     background-size: 28px 28px;
-    /* The dot grid scrolls with the world, so panning feels physical. */
-    background-position: var(--bg-x, 0px) var(--bg-y, 0px);
+    /* Dragging a card must not also drag-select the page. Cards opt their own
+       text back in below. */
+    user-select: none;
+    -webkit-user-select: none;
   }
-  .mw-viewport.is-panning {
-    cursor: grabbing;
+
+  .mw-paint {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* One GPU blur over the whole layer is what turns discrete dabs into a
+       wash. */
+    filter: blur(6px);
+  }
+
+  .mw-world {
+    position: absolute;
+    inset: 0;
+    /* Above the paint, below the hero. */
+    z-index: 1;
   }
 
   .mw-world :global(.mw-post-message),
@@ -79,590 +58,39 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
     user-select: text;
     -webkit-user-select: text;
   }
-
-  .mw-world {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: 0 0;
-  }
-
-  
-  
-  
-  /* ------------------------------------------------------------------ hud */
-  .mw-hud {
-    position: absolute;
-    z-index: 20;
-    pointer-events: none;
-  }
-  .mw-hud > * {
-    pointer-events: auto;
-  }
-  .mw-hud-b {
-    /* Clear of the home indicator on notched phones. */
-    bottom: calc(26px + env(safe-area-inset-bottom, 0px));
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .mw-hud-br { bottom: calc(26px + env(safe-area-inset-bottom, 0px)); right: 24px; }
-
-  .mw-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 16px;
-    font-size: 13px;
-    border: 1px solid var(--border-subtle);
-    border-radius: 999px;
-    background: var(--background);
-    box-shadow: 0 6px 20px color-mix(in srgb, var(--text-primary) 10%, transparent);
-    transition: transform 0.28s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.28s ease;
-  }
-  .mw-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 28px color-mix(in srgb, var(--text-primary) 16%, transparent);
-  }
-
-  /* The one action this page is for, so it floats and it is the loudest thing
-     on the canvas. */
-  .mw-fab {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    padding: 13px 24px;
-    font-size: 15px;
-    border-radius: 999px;
-    color: var(--background);
-    background: var(--accent);
-    box-shadow:
-      0 2px 6px color-mix(in srgb, var(--text-primary) 18%, transparent),
-      0 14px 34px color-mix(in srgb, var(--accent) 38%, transparent);
-    transition: transform 0.28s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.28s ease;
-  }
-  .mw-fab:hover {
-    transform: translateY(-3px);
-    box-shadow:
-      0 3px 8px color-mix(in srgb, var(--text-primary) 22%, transparent),
-      0 20px 44px color-mix(in srgb, var(--accent) 46%, transparent);
-  }
-  .mw-fab-mark { transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
-  .mw-fab:hover .mw-fab-mark { transform: rotate(90deg) scale(1.15); }
-
-
-  .mw-zoom {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
-    line-height: 1;
-    border: 1px solid var(--border-subtle);
-    border-radius: 999px;
-    background: var(--background);
-    color: var(--text-primary);
-    transition: border-color 0.25s ease;
-  }
-  .mw-zoom:hover { border-color: var(--accent); }
-  .mw-top { margin-right: 6px; }
-
-  
-  @media (max-width: 900px) {
-    .mw-fab { padding: 12px 20px; font-size: 14px; }
-    .mw-hud-b { bottom: calc(14px + env(safe-area-inset-bottom, 0px)); }
-    /* Clear of the floating CTA stack, which is taller on small screens. */
-    .mw-hud-br {
-      bottom: calc(14px + env(safe-area-inset-bottom, 0px));
-      right: 14px;
-    }
-    /* Bigger touch targets, and the way out of the canvas has to be obvious. */
-    .mw-zoom { width: 38px; height: 38px; font-size: 16px; }
-    .mw-top {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .mw-btn { transition: none; }
-  }
 </style>
 
 <script>
-  // Pan / zoom for the canvas.
+  // Double-tap an empty patch of wall to write one.
   //
-  // One transform on the world layer, written inside rAF. Cards are plain DOM
-  // (rather than a <canvas>) so headlines stay real text — selectable, linkable
-  // and reachable by a screen reader — which a bitmap canvas would destroy.
-  const MIN_SCALE = 0.35;
-  const MAX_SCALE = 1.9;
-
-  interface View { x: number; y: number; k: number }
-
-  let booted = false;
-
+  // Detected by hand rather than with dblclick: that event never fires on
+  // touch, which is where the gesture is most natural.
   const initCanvas = () => {
     const vp = document.getElementById("mw-viewport");
-    const world = document.getElementById("mw-world");
-    if (!vp || !world) return;
-    // The stage starts hidden behind the intro, so a viewport with no measured
-    // width means we are early — the intro will re-fire this once it's visible.
-    if (booted || !vp.clientWidth) return;
-    booted = true;
+    if (!vp) return;
 
-    const worldW = Number(vp.dataset.w) || 3000;
-    const worldH = Number(vp.dataset.h) || 2000;
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    const zone = JSON.parse(world.dataset.zone ?? "null") ?? {
-      x: 0, y: 0, w: worldW, h: worldH,
-    };
-
-    const view: View = { x: 0, y: 0, k: 1 };
-    let target: View | null = null; // set while gliding to a card
-    let raf = 0;
-
-    /** Keeps at least a third of the wall on screen, so you can't get lost. */
-    const clamp = (v: View) => {
-      const vw = vp.clientWidth;
-      const vh = vp.clientHeight;
-      const margin = 0.65;
-      v.x = Math.min(vw * margin, Math.max(vw - worldW * v.k - vw * margin, v.x));
-      v.y = Math.min(vh * margin, Math.max(vh - worldH * v.k - vh * margin, v.y));
-      return v;
-    };
-
-    const draw = () => {
-      world.style.transform = `translate3d(${view.x}px, ${view.y}px, 0) scale(${view.k})`;
-      // Grid tracks the world so motion reads as parallax-free and physical.
-      vp.style.setProperty("--bg-x", `${view.x}px`);
-      vp.style.setProperty("--bg-y", `${view.y}px`);
-    };
-
-    const schedule = () => {
-      if (raf) return;
-      raf = requestAnimationFrame(() => {
-        raf = 0;
-        if (target) {
-          // Critically-damped-ish glide. Cheaper and more interruptible than a
-          // CSS transition, which would fight an in-flight drag.
-          const e = 0.14;
-          view.x += (target.x - view.x) * e;
-          view.y += (target.y - view.y) * e;
-          view.k += (target.k - view.k) * e;
-          const done =
-            Math.abs(target.x - view.x) < 0.4 &&
-            Math.abs(target.y - view.y) < 0.4 &&
-            Math.abs(target.k - view.k) < 0.002;
-          if (done) {
-            Object.assign(view, target);
-            target = null;
-          }
-          draw();
-          if (target) schedule();
-          return;
-        }
-        draw();
-      });
-    };
-
-    const glideTo = (v: View) => {
-      if (reduced) {
-        Object.assign(view, clamp(v));
-        draw();
-        return;
-      }
-      target = clamp({ ...v });
-      schedule();
-    };
-
-    /* ------------------------------------------------------------ initial */
-    // Opens framed on the middle of the wall, fitted so a good spread of cards
-    // is in view. Read from the DOM, not from the component's frontmatter —
-    // this script is a separate module and cannot see build-time values.
-    const zoneCx = zone.x + zone.w / 2;
-    const zoneCy = zone.y + zone.h / 2;
-
-    // Set once the visitor pans, zooms or presses anything. Until then the view
-    // keeps re-fitting, because the first measurement can land before the
-    // viewport has settled — an early read gave a viewport a third of its real
-    // width and opened the wall at the wrong zoom.
-    let touched = false;
-
-    const introView = (): View => {
-      const k = Math.min(0.9, Math.max(0.4, vp.clientWidth / 2000));
-      return {
-        k,
-        x: vp.clientWidth / 2 - zoneCx * k,
-        y: vp.clientHeight / 2 - zoneCy * k,
-      };
-    };
-
-    const fitIntro = () => {
-      Object.assign(view, clamp(introView()));
-      draw();
-    };
-
-    fitIntro();
-    // Two frames: one for style/layout to flush, one to measure the result.
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      if (!touched) fitIntro();
-    }));
-
-    /* ---------------------------------------------------------------- pan */
-    const pointers = new Map<number, { x: number; y: number }>();
-    let pinchDist = 0;
-    let moved = false;
-
-    vp.addEventListener("pointerdown", (e) => {
-      // Let links and buttons behave normally.
-      if ((e.target as HTMLElement).closest("a, button")) return;
-      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-      touched = true;
-      moved = false;
-      target = null;
-      vp.setPointerCapture(e.pointerId);
-      vp.classList.add("is-panning");
-    });
-
-    vp.addEventListener("pointermove", (e) => {
-      const prev = pointers.get(e.pointerId);
-      if (!prev) return;
-      const next = { x: e.clientX, y: e.clientY };
-
-      if (pointers.size === 1) {
-        view.x += next.x - prev.x;
-        view.y += next.y - prev.y;
-        if (Math.abs(next.x - prev.x) + Math.abs(next.y - prev.y) > 2) moved = true;
-        clamp(view);
-        schedule();
-      }
-      pointers.set(e.pointerId, next);
-
-      if (pointers.size === 2) {
-        const [a, b] = [...pointers.values()];
-        const dist = Math.hypot(a.x - b.x, a.y - b.y);
-        if (pinchDist) {
-          const mid = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
-          zoomAt(mid, (dist / pinchDist) ** 0.9);
-        }
-        pinchDist = dist;
-      }
-    });
-
-    const release = (e: PointerEvent) => {
-      pointers.delete(e.pointerId);
-      if (pointers.size < 2) pinchDist = 0;
-      if (!pointers.size) vp.classList.remove("is-panning");
-      if (moved) hideHint();
-    };
-    vp.addEventListener("pointerup", release);
-    vp.addEventListener("pointercancel", release);
-
-    /* --------------------------------------------------------------- zoom */
-    // Anchored on the cursor, so the point under the pointer stays put.
-    const zoomAt = (p: { x: number; y: number }, factor: number) => {
-      const rect = vp.getBoundingClientRect();
-      const px = p.x - rect.left;
-      const py = p.y - rect.top;
-      const k = Math.min(MAX_SCALE, Math.max(MIN_SCALE, view.k * factor));
-      const ratio = k / view.k;
-      view.x = px - (px - view.x) * ratio;
-      view.y = py - (py - view.y) * ratio;
-      view.k = k;
-      clamp(view);
-      schedule();
-    };
-
-    vp.addEventListener(
-      "wheel",
-      (e) => {
-        // Only zoom is claimed. A plain wheel is left to the page, because the
-        // canvas is now a section in a scrolling document — hijacking it would
-        // trap you here with no way to scroll back up to the hero.
-        if (!e.ctrlKey && !e.metaKey) return;
-        e.preventDefault();
-        touched = true;
-        target = null;
-        hideHint();
-        zoomAt({ x: e.clientX, y: e.clientY }, Math.exp(-e.deltaY * 0.01));
-      },
-      { passive: false }
-    );
-
-    for (const btn of vp.querySelectorAll<HTMLElement>("[data-zoom]")) {
-      btn.addEventListener("click", () => {
-        const centre = {
-          x: vp.getBoundingClientRect().left + vp.clientWidth / 2,
-          y: vp.getBoundingClientRect().top + vp.clientHeight / 2,
-        };
-        touched = true;
-        const mode = btn.dataset.zoom;
-        if (mode === "in") zoomAt(centre, 1.25);
-        else if (mode === "out") zoomAt(centre, 0.8);
-        // Reset returns to the intro — the one landmark on an endless wall.
-        else {
-          for (const c of cards()) c.classList.remove("is-focus");
-          glideTo(introView());
-        }
-      });
-    }
-
-    /* -------------------------------------------------- give me one / focus */
-    const cards = () => [...world.querySelectorAll<HTMLElement>(".mw-post")];
-    let lastPick = -1;
-
-    /** Centres any element that carries world coordinates (card or post). */
-    const focusEl = (el: HTMLElement | null, scale?: number) => {
-      if (!el) return;
-      touched = true;
-      for (const c of world.querySelectorAll(".is-focus")) c.classList.remove("is-focus");
-      el.classList.add("is-focus");
-      const k = scale ?? Math.min(1.25, Math.max(0.9, vp.clientWidth / 1200));
-      glideTo({
-        k,
-        x: vp.clientWidth / 2 - (Number(el.dataset.x) + el.offsetWidth / 2) * k,
-        // Biased upward so the card isn't hidden behind the shelf at the
-        // bottom of the viewport.
-        y: vp.clientHeight * 0.4 - (Number(el.dataset.y) + el.offsetHeight / 2) * k,
-      });
-      hideHint();
-    };
-
-    // Any component can ask the canvas to travel somewhere.
-    document.addEventListener("mw:focus", (e) => {
-      const d = (e as CustomEvent).detail;
-      focusEl(d?.el ?? null, d?.scale);
-    });
-
-    /* --------------------------------------------------------------- misc */
-    // The hint line is gone; the calls that referenced it are harmless no-ops.
-    function hideHint() {}
-
-    // Keyboard panning, so the canvas isn't mouse-only.
-    vp.tabIndex = 0;
-    vp.addEventListener("keydown", (e) => {
-      const step = e.shiftKey ? 240 : 90;
-      const moves: Record<string, [number, number]> = {
-        ArrowLeft: [step, 0], ArrowRight: [-step, 0],
-        ArrowUp: [0, step], ArrowDown: [0, -step],
-      };
-      const m = moves[e.key];
-      if (!m) return;
-      e.preventDefault();
-      touched = true;
-      target = null;
-      view.x += m[0];
-      view.y += m[1];
-      clamp(view);
-      schedule();
-      hideHint();
-    });
-
-
-    /* ------------------------------------------------------------- dragging */
-    // Cards are draggable; the background pans. Both are pointer drags, so the
-    // card handler claims the event and stops it reaching the pan handler.
-    //
-    // News-card positions live in localStorage rather than the day file: the
-    // file is regenerated every morning and would otherwise wipe the wall you
-    // arranged. Posts persist through their own store.
-    const POS_KEY = "meanwhile:cardpos:v2";
-    const readPos = (): Record<string, [number, number]> => {
-      try { return JSON.parse(localStorage.getItem(POS_KEY) ?? "{}"); } catch { return {}; }
-    };
-    const writePos = (id: string, x: number, y: number) => {
-      try {
-        const all = readPos();
-        all[id] = [Math.round(x), Math.round(y)];
-        localStorage.setItem(POS_KEY, JSON.stringify(all));
-      } catch { /* private mode — the move still holds for this session */ }
-    };
-
-    const applySaved = () => {
-      const saved = readPos();
-      for (const el of world.querySelectorAll<HTMLElement>(".mw-post")) {
-        const p = saved[el.dataset.post ?? ""];
-        if (!p) continue;
-        el.style.left = `${p[0]}px`;
-        el.style.top = `${p[1]}px`;
-        el.dataset.x = String(p[0]);
-        el.dataset.y = String(p[1]);
-      }
-    };
-    applySaved();
-
-    let drag: {
-      el: HTMLElement; id: number; sx: number; sy: number;
-      ox: number; oy: number; moved: boolean;
-    } | null = null;
-
-    world.addEventListener("pointerdown", (e) => {
-      const el = (e.target as HTMLElement).closest<HTMLElement>(".mw-post");
-      if (!el) return;
-      // Links and buttons keep their normal behaviour.
-      if ((e.target as HTMLElement).closest("a, button")) return;
-
-      e.stopPropagation(); // do not also pan the canvas
-      touched = true;
-      target = null;
-      drag = {
-        el, id: e.pointerId,
-        sx: e.clientX, sy: e.clientY,
-        ox: Number(el.dataset.x) || el.offsetLeft,
-        oy: Number(el.dataset.y) || el.offsetTop,
-        moved: false,
-      };
-      el.setPointerCapture(e.pointerId);
-      el.classList.add("is-dragging");
-    });
-
-    world.addEventListener("pointermove", (e) => {
-      if (!drag || e.pointerId !== drag.id) return;
-      // Divided by scale, or the card would race the cursor when zoomed out.
-      const dx = (e.clientX - drag.sx) / view.k;
-      const dy = (e.clientY - drag.sy) / view.k;
-      if (!drag.moved && Math.abs(dx) + Math.abs(dy) < 3) return;
-      drag.moved = true;
-
-      const nx = drag.ox + dx;
-      const ny = drag.oy + dy;
-      drag.el.style.left = `${nx}px`;
-      drag.el.style.top = `${ny}px`;
-      drag.el.dataset.x = String(nx);
-      drag.el.dataset.y = String(ny);
-    });
-
-    const endDrag = (e: PointerEvent) => {
-      if (!drag || e.pointerId !== drag.id) return;
-      const { el, moved } = drag;
-      el.classList.remove("is-dragging");
-      drag = null;
-      if (!moved) return;
-
-      const x = Number(el.dataset.x);
-      const y = Number(el.dataset.y);
-      const id = el.dataset.post ?? "";
-      // Seeds are rebuilt from the day file each morning and have no store
-      // row, so their arrangement is kept locally like the old card positions.
-      if (id.startsWith("seed_")) writePos(id, x, y);
-      else document.dispatchEvent(new CustomEvent("mw:moved", { detail: { kind: "post", id, x, y } }));
-    };
-    world.addEventListener("pointerup", endDrag);
-    world.addEventListener("pointercancel", endDrag);
-
-    // Posts are added after this runs, so give them their saved spot too.
-    document.addEventListener("mw:post-rendered", () => {});
-
-    /* --------------------------------------------------- double-tap to add */
-    // Detected by hand rather than with the dblclick event, for two reasons:
-    // dblclick never fires on touch at all, and the pan handler's pointer
-    // capture stops it firing reliably with a mouse either.
     let lastTap = 0;
-    let lastTapX = 0;
-    let lastTapY = 0;
+    let lastX = 0;
+    let lastY = 0;
 
     vp.addEventListener("pointerup", (e) => {
-      // Only on bare canvas, and only if this tap wasn't part of a drag.
       if ((e.target as HTMLElement).closest(".mw-post, a, button, dialog")) return;
-      if (moved) return;
 
-      const now = e.timeStamp;
-      const near = Math.abs(e.clientX - lastTapX) < 24 && Math.abs(e.clientY - lastTapY) < 24;
-      // 450ms rather than something tighter: the platform double-click
-      // interval is around half a second, and a stricter window makes the
-      // gesture feel broken for anyone who taps at a normal speed.
-      if (now - lastTap < 450 && near) {
+      const near = Math.abs(e.clientX - lastX) < 24 && Math.abs(e.clientY - lastY) < 24;
+      // 450ms rather than something tighter: the platform double-click interval
+      // is around half a second, and a stricter window feels broken at normal
+      // tapping speed.
+      if (e.timeStamp - lastTap < 450 && near) {
         lastTap = 0;
         document.querySelector<HTMLElement>("[data-open-composer]")?.click();
         return;
       }
-      lastTap = now;
-      lastTapX = e.clientX;
-      lastTapY = e.clientY;
-    });
 
-    /* ------------------------------------------------------------ populate */
-    // Cards land one after another, nearest the middle of the view first, so
-    // arriving on the wall feels like it is being filled in rather than
-    // already sitting there.
-    let populated = false;
-
-    const populate = (force = false) => {
-      const posts = [...world.querySelectorAll<HTMLElement>(".mw-post")];
-      // People.astro renders these on page load; if we got here first, wait.
-      if (!posts.length) return setTimeout(() => populate(force), 200);
-      if (populated && !force) return;
-      populated = true;
-
-      if (reduced) return;
-
-      const cx = (vp.clientWidth / 2 - view.x) / view.k;
-      const cy = (vp.clientHeight / 2 - view.y) / view.k;
-
-      posts
-        .map((el) => ({
-          el,
-          d: Math.hypot(Number(el.dataset.x) - cx, Number(el.dataset.y) - cy),
-        }))
-        .sort((a, b) => a.d - b.d)
-        .forEach(({ el }, i) => {
-          el.classList.remove("is-populating");
-          void el.offsetWidth; // restart the animation if it is already running
-          el.style.setProperty("--pop-d", `${Math.min(i * 55, 1100)}ms`);
-          el.classList.add("is-populating");
-          el.addEventListener(
-            "animationend",
-            () => {
-              el.classList.remove("is-populating");
-              el.style.removeProperty("--pop-d");
-            },
-            { once: true }
-          );
-        });
-    };
-
-    document.addEventListener("mw:populate", () => populate(true));
-
-    // Also runs for anyone who simply scrolls down to the wall.
-    if ("IntersectionObserver" in window) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          if (entries.some((e) => e.isIntersecting)) {
-            populate();
-            io.disconnect();
-          }
-        },
-        { threshold: 0.35 }
-      );
-      io.observe(vp);
-    } else {
-      populate();
-    }
-
-    document.getElementById("mw-to-top")?.addEventListener("click", () => {
-      document.getElementById("mw-hero")?.scrollIntoView({
-        behavior: reduced ? "auto" : "smooth",
-        block: "start",
-      });
-    });
-
-    window.addEventListener("resize", () => {
-      // Before the visitor has touched anything, a resize should re-frame the
-      // intro rather than leave it half off screen at the old zoom.
-      if (!touched) return fitIntro();
-      clamp(view);
-      schedule();
+      lastTap = e.timeStamp;
+      lastX = e.clientX;
+      lastY = e.clientY;
     });
   };
 
-  // Fired by the page once the intro has stepped aside and the stage is real.
-  document.addEventListener("mw:canvas-ready", () => requestAnimationFrame(initCanvas));
-  // A fresh document swap resets the guard; the deep-link path boots here.
-  document.addEventListener("astro:page-load", () => {
-    booted = false;
-    initCanvas();
-  });
+  document.addEventListener("astro:page-load", initCanvas);
 </script>

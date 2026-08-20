@@ -47,36 +47,16 @@ export interface Placed extends Story {
   rotate: number;
 }
 
-/** Deterministic 0–1 from a string. xorshift over an FNV-ish seed. */
-function rand(seed: string, salt: number): number {
-  let h = 2166136261 ^ salt;
-  for (let i = 0; i < seed.length; i++) {
-    h ^= seed.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  h ^= h << 13;
-  h ^= h >>> 17;
-  h ^= h << 5;
-  return ((h >>> 0) % 100000) / 100000;
-}
-
-const CELL_W = 440;
-// Portrait photo cards, plus the caption that overhangs them.
-const CELL_H = 580;
-const PAD = 220;
-
-/** The intro sits on the canvas itself, as the first thing on the wall. */
+/** Kept only so the intro's width is still expressible; nothing renders it. */
 export const INTRO = { w: 640, h: 560 };
 
-/**
- * Loose grid with per-cell jitter.
- *
- * A jittered grid rather than a true scatter: real scatter needs overlap
- * resolution, and cards that overlap on an infinite canvas are unreadable and
- * fight for clicks. The grid guarantees separation, and the jitter plus a small
- * rotation is enough to read as "pinned to a wall" rather than "laid out in a
- * spreadsheet".
- */
+/** Grid the wall is laid out on. Must match the cell size in posts.ts. */
+const COLS = 7;
+const ROWS = 6;
+const CELL_W = 400;
+const CELL_H = 360;
+const MARGIN = 260;
+
 export function place(stories: Story[]): {
   cards: Placed[];
   width: number;
@@ -84,40 +64,31 @@ export function place(stories: Story[]): {
   intro: { x: number; y: number };
   peopleZone: { x: number; y: number; w: number; h: number };
 } {
-  // News lives in the deck now, so the wall only has to hold the intro and the
-  // stamp cards. Sized for those: a world scaled for forty story cards left a
-  // dozen stamps swimming in empty grid, which is the failure mode this whole
-  // page is trying to avoid.
-  // Wide enough for a 7-column grid of cards plus margins.
-  const width = 3400;
-  const introTop = PAD;
-  const bandY = introTop + INTRO.h * 0.62 + 160;
+  // The wall is exactly its grid plus an even margin. It used to carry an
+  // offset for an intro block that has since moved to the hero, which left a
+  // band of empty canvas above the first row that you had to scroll past.
+  const gridW = COLS * CELL_W;
+  const gridH = ROWS * CELL_H;
+  const width = gridW + MARGIN * 2;
+  const height = gridH + MARGIN * 2;
 
-  // Positions are still computed for every story, because the seed cards are
-  // derived from them and the caller may want to place news again later.
-  const cols = Math.max(3, Math.round(Math.sqrt(stories.length * 1.7)));
+  const peopleZone = { x: MARGIN, y: MARGIN, w: gridW, h: gridH };
+
+  // News lives in the deck now; these positions are vestigial but the type
+  // still carries them.
   const cards = stories.map((s, i) => ({
     ...s,
-    x: PAD + (i % cols) * CELL_W + (rand(s.id, 1) - 0.5) * 110,
-    y: bandY + Math.floor(i / cols) * CELL_H + (rand(s.id, 2) - 0.5) * 110,
-    w: [244, 268, 292][Math.floor(rand(s.id, 3) * 3)],
-    rotate: (rand(s.id, 4) - 0.5) * 5.2,
+    x: MARGIN + (i % COLS) * CELL_W,
+    y: MARGIN + Math.floor(i / COLS) * CELL_H,
+    w: 268,
+    rotate: 0,
   }));
-
-  const zoneH = 2160;
-  const peopleZone = {
-    x: 150,
-    y: bandY,
-    // Right inset leaves room for a card's own width plus the zoom controls.
-    w: width - 150 - 380,
-    h: zoneH,
-  };
 
   return {
     cards,
     width,
-    height: bandY + zoneH + 340,
-    intro: { x: width / 2 - INTRO.w / 2, y: introTop },
+    height,
+    intro: { x: width / 2 - INTRO.w / 2, y: MARGIN },
     peopleZone,
   };
 }
