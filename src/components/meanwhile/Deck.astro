@@ -56,6 +56,9 @@ const { day } = Astro.props;
   <div class="deck-scrim" data-close-deck></div>
 
   <div class="deck-wrap">
+    <div class="deck-row">
+      <button type="button" class="deck-arrow" id="mw-deck-prev" aria-label="Previous story">‹</button>
+
     <div class="deck-stack" id="mw-stack">
       {day.stories.map((story, i) => <StoryCard story={story} index={i} />)}
 
@@ -69,10 +72,10 @@ const { day } = Astro.props;
       </div>
     </div>
 
+      <button type="button" class="deck-arrow" id="mw-deck-next" aria-label="Next story">›</button>
+    </div>
+
     <div class="deck-bar">
-      <button type="button" class="deck-next" id="mw-deck-next">
-        Next <span class="cta-arrow" aria-hidden="true">→</span>
-      </button>
       <button type="button" class="deck-close" data-close-deck aria-label="Close">Close</button>
     </div>
   </div>
@@ -286,11 +289,6 @@ const { day } = Astro.props;
     perspective: 1400px;
   }
   .deck-stack :global(.card) { width: 100%; }
-  /* The top card owns horizontal gestures, so a swipe flicks it instead of
-     scrolling the page underneath. */
-  .deck-stack :global(.card.is-top) { touch-action: none; }
-  /* No transition while a finger is on it — the card must track the pointer. */
-  .deck-stack :global(.card.is-dragging) { transition: none; }
 
   .deck-stack :global(.card) {
     transition:
@@ -306,6 +304,7 @@ const { day } = Astro.props;
       transform 0.66s cubic-bezier(0.32, 0, 0.24, 1),
       opacity 0.5s ease 0.08s;
   }
+  /* The whole card is the link now. */
   .deck-stack :global(.card.is-top) { cursor: pointer; }
 
   .deck-end {
@@ -332,11 +331,40 @@ const { day } = Astro.props;
   .deck-end-sub { font-size: 14px; color: var(--pixel-secondary); }
   .deck-end .cta { margin-top: 10px; font-size: 18px; }
 
+  .deck-row {
+    display: flex;
+    align-items: center;
+    gap: clamp(8px, 3vw, 26px);
+  }
+
+  .deck-arrow {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    line-height: 1;
+    border-radius: 999px;
+    color: var(--text-primary);
+    background: var(--background);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 6px 18px color-mix(in srgb, var(--text-primary) 12%, transparent);
+    transition: transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1),
+      border-color 0.25s ease, opacity 0.25s ease;
+  }
+  .deck-arrow:hover { transform: scale(1.09); border-color: var(--accent); }
+  .deck-arrow[disabled] { opacity: 0.25; pointer-events: none; }
+
+  @media (max-width: 560px) {
+    .deck-arrow { width: 38px; height: 38px; font-size: 20px; }
+  }
+
   .deck-bar {
     display: flex;
     align-items: center;
     gap: 18px;
-    padding: 9px 10px;
+    padding: 8px;
     border-radius: 999px;
     background: var(--background);
     border: 1px solid var(--border-subtle);
@@ -355,28 +383,18 @@ const { day } = Astro.props;
       transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s;
   }
 
-  .deck-next {
-    padding: 7px 16px;
+  .deck-close {
+    padding: 11px 30px;
     border-radius: 999px;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--background);
     background: var(--text-primary);
     transition: transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
-  .deck-next:hover { transform: translateY(-2px); }
-  .deck-next:hover .cta-arrow { transform: translateX(4px); }
-  .deck-next[disabled] { opacity: 0.35; pointer-events: none; }
-
-  .deck-close {
-    padding: 7px 12px;
-    font-size: 12px;
-    color: var(--pixel-secondary);
-  }
-  .deck-close:hover { color: var(--accent); }
+  .deck-close:hover { transform: translateY(-2px); }
 
   @media (max-width: 520px) {
     .hero-ctas { gap: 12px 20px; }
-    .deck-bar { gap: 12px; padding-left: 14px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -397,6 +415,7 @@ const { day } = Astro.props;
     const cards = [...stack.querySelectorAll<HTMLElement>(".card")];
     const endEl = document.getElementById("mw-deck-end")!;
     const nextBtn = document.getElementById("mw-deck-next") as HTMLButtonElement;
+    const prevBtn = document.getElementById("mw-deck-prev") as HTMLButtonElement;
     const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     // How many cards behind the top one are actually drawn. Beyond four the
@@ -468,6 +487,7 @@ const { day } = Astro.props;
 
       const done = index >= cards.length;
       nextBtn.disabled = done;
+      prevBtn.disabled = index === 0;
       endEl.classList.toggle("is-shown", done);
       endEl.setAttribute("aria-hidden", String(!done));
     };
@@ -484,7 +504,7 @@ const { day } = Astro.props;
 
       const right = dir ? dir > 0 : index % 2 === 0;
       card.classList.add("is-gone");
-      card.classList.remove("is-top", "is-dragging");
+      card.classList.remove("is-top");
       card.style.transition = "";
       setVars(card, {
         tx: `${right ? 560 : -560}px`,
@@ -498,76 +518,36 @@ const { day } = Astro.props;
       layout();
     };
 
+    /** Brings the last discarded card back onto the pile. */
+    const retreat = () => {
+      if (index === 0) return;
+      index--;
+      const card = cards[index];
+      card.classList.remove("is-gone");
+      // Put it back where the stack expects before it animates, so it returns
+      // to the top rather than sliding in from wherever it was thrown.
+      card.style.transition = "none";
+      setVars(card, { tx: "0px", ty: "40px", rot: "0deg", sc: "0.96", op: "0" });
+      void card.offsetWidth;
+      card.style.transition = "";
+      layout();
+    };
+
     nextBtn.addEventListener("click", () => advance());
-    // Clicking the card itself advances too — but not its link or arrow button.
+    prevBtn.addEventListener("click", retreat);
+    // The whole card is a link to its story. The arrow button is a real anchor
+    // and handles its own click, so it is left alone here.
     stack.addEventListener("click", (e) => {
       const t = e.target as HTMLElement;
-      if (t.closest("a, .open") || t.closest(".deck-end")) return;
-      // A drag ends with a click too; the pointer handlers have already dealt
-      // with it, so only a genuine tap should advance here.
-      if (justDragged) return;
-      if (t.closest(".card")?.classList.contains("is-top")) advance();
-    });
+      if (t.closest("a") || t.closest(".deck-end")) return;
 
-    /* --------------------------------------------------------- drag to flick */
-    // The whole point on a phone: a card you can throw. Pointer events cover
-    // mouse, pen and touch in one path, so there is no separate touch branch.
-    let drag: { id: number; x0: number; y0: number; t0: number; card: HTMLElement } | null = null;
-    let justDragged = false;
-
-    // How far, or how fast, a card has to travel before it leaves. Velocity is
-    // included so a short sharp flick counts, which is how people actually
-    // swipe on a phone.
-    const FLICK_PX = 88;
-    const FLICK_VELOCITY = 0.55; // px per ms
-
-    stack.addEventListener("pointerdown", (e) => {
-      const card = (e.target as HTMLElement).closest<HTMLElement>(".card");
+      const card = t.closest(".card");
       if (!card?.classList.contains("is-top")) return;
-      if ((e.target as HTMLElement).closest("a, .open")) return;
 
-      drag = { id: e.pointerId, x0: e.clientX, y0: e.clientY, t0: e.timeStamp, card };
-      card.setPointerCapture(e.pointerId);
-      card.classList.add("is-dragging");
+      const href = card.querySelector<HTMLAnchorElement>(".open")?.href;
+      // noopener: the story opens in a tab that cannot reach back into this one.
+      if (href) window.open(href, "_blank", "noopener,noreferrer");
     });
-
-    stack.addEventListener("pointermove", (e) => {
-      if (!drag || e.pointerId !== drag.id) return;
-      const dx = e.clientX - drag.x0;
-      const dy = e.clientY - drag.y0;
-      if (Math.abs(dx) + Math.abs(dy) > 4) justDragged = true;
-
-      // Rotation tied to horizontal distance, and a touch of vertical follow,
-      // so the card pivots around the hand rather than sliding flat.
-      setVars(drag.card, {
-        tx: `${dx}px`,
-        ty: `${dy * 0.35}px`,
-        rot: `${dx * 0.045}deg`,
-        op: `${Math.max(0.35, 1 - Math.abs(dx) / 620)}`,
-      });
-    });
-
-    const endDrag = (e: PointerEvent) => {
-      if (!drag || e.pointerId !== drag.id) return;
-      const { card, x0, t0 } = drag;
-      const dx = e.clientX - x0;
-      const dt = Math.max(1, e.timeStamp - t0);
-      drag = null;
-
-      card.classList.remove("is-dragging");
-      const thrown = Math.abs(dx) > FLICK_PX || Math.abs(dx) / dt > FLICK_VELOCITY;
-
-      if (thrown && dx !== 0) {
-        advance(dx > 0 ? 1 : -1);
-      } else {
-        // Didn't travel far enough: settle it back onto the pile.
-        layout();
-      }
-      // Cleared after the click that follows this pointerup has been and gone.
-      setTimeout(() => { justDragged = false; }, 0);
-    };
-    stack.addEventListener("pointerup", endDrag);
-    stack.addEventListener("pointercancel", endDrag);
 
     /* ---------------------------------------------------------- open/close */
     const open = () => {
@@ -644,6 +624,7 @@ const { day } = Astro.props;
       if (deck.hidden) return;
       if (e.key === "Escape") close();
       if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); advance(); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); retreat(); }
     });
 
     /* ---------------------------------------------------------- to the wall */

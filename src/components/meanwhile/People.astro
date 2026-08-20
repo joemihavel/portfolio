@@ -127,6 +127,26 @@ const countries = (COUNTRIES as { code: string; name: string }[])
 
 <script type="application/json" id="mw-country-data" set:html={JSON.stringify(countries)}></script>
 
+<!-- Phone only: the wall shown as a deck.
+     There is no room to scatter cards around the hero on a small screen, so
+     they are stacked over it and opened as an overlay — the same shape as the
+     news deck, so there is only one interaction to learn. -->
+<div class="pd" id="mw-postdeck" hidden>
+  <div class="pd-scrim" data-pd-close></div>
+
+  <div class="pd-wrap">
+    <div class="pd-row">
+      <button type="button" class="pd-arrow" id="mw-pd-prev" aria-label="Previous">‹</button>
+      <div class="pd-stack" id="mw-pd-stack"></div>
+      <button type="button" class="pd-arrow" id="mw-pd-next" aria-label="Next">›</button>
+    </div>
+
+    <div class="pd-bar">
+      <button type="button" class="pd-close" data-pd-close>Close</button>
+    </div>
+  </div>
+</div>
+
 <template id="mw-post-template">
   <article class="mw-post absolute">
     <div class="mw-post-paper">
@@ -429,6 +449,98 @@ const countries = (COUNTRIES as { code: string; name: string }[])
   .mw-submit-arrow { transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
   .mw-submit:disabled { opacity: 0.45; }
 
+  /* ------------------------------------------------------- the phone deck */
+  .pd {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: grid;
+    place-items: center;
+  }
+  .pd-scrim {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in srgb, var(--background) 62%, transparent);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .pd.is-open .pd-scrim { opacity: 1; transition: opacity 0.45s ease; }
+
+  .pd-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    max-width: 100vw;
+  }
+  .pd-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  /* Carries the footprint, so the bar below does not jump as cards change. */
+  .pd-stack {
+    position: relative;
+    width: min(300px, 68vw);
+    height: 60vh;
+  }
+  .pd-stack :global(.mw-post) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: default;
+    transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.4s ease;
+  }
+
+  .pd-arrow {
+    flex: none;
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 999px;
+    color: var(--text-primary);
+    background: var(--background);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 6px 18px color-mix(in srgb, var(--text-primary) 12%, transparent);
+  }
+  .pd-arrow[disabled] { opacity: 0.25; pointer-events: none; }
+
+  .pd-bar {
+    padding: 8px;
+    border-radius: 999px;
+    background: var(--background);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--text-primary) 14%, transparent);
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.26s ease, transform 0.3s cubic-bezier(0.4, 0, 0.9, 0.4);
+  }
+  .pd.is-open .pd-bar {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.4s ease 0.2s,
+      transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s;
+  }
+  .pd-close {
+    padding: 11px 30px;
+    border-radius: 999px;
+    font-size: 14px;
+    color: var(--background);
+    background: var(--text-primary);
+  }
+
+  /* The pile on the hero: a hint that there is something to open. */
+  :global(.mw-post.is-piled) {
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
   /* ---------------------------------------------------------- post cards */
   /* Global, because these are cloned from a <template> into the canvas at
      runtime and so never carry this component's scope attribute. */
@@ -703,7 +815,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     };
 
     /* ------------------------------------------------------------- render */
-    const render = (post: Post, isNew = false) => {
+    const render = (post: Post, isNew = false, target: HTMLElement = world) => {
       const node = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
       const paper = PAPERS[post.paper % PAPERS.length];
 
@@ -763,7 +875,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
         if (!gone) return;
       });
 
-      world.appendChild(node);
+      target.appendChild(node);
 
       // Drawn after the card is in the document, because the canvas sizes
       // itself from its laid-out width.
@@ -781,7 +893,104 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     // recent rather than everything ever written.
     let onWall: Post[] = [];
 
+    const isPhone = () => matchMedia("(max-width: 640px)").matches;
+
+    /* ------------------------------------------------------- the phone deck */
+    const pd = document.getElementById("mw-postdeck")!;
+    const pdStack = document.getElementById("mw-pd-stack")!;
+    const pdPrev = document.getElementById("mw-pd-prev") as HTMLButtonElement;
+    const pdNext = document.getElementById("mw-pd-next") as HTMLButtonElement;
+    let pdIndex = 0;
+
+    /** Lays the overlay's cards out as a pile, exactly like the news deck. */
+    const pdLayout = () => {
+      const cards = [...pdStack.querySelectorAll<HTMLElement>(".mw-post")];
+      cards.forEach((card, i) => {
+        const d = i - pdIndex;
+        if (d < 0) {
+          // Already seen: thrown off to the side rather than hidden, so going
+          // back can bring it in from where it went.
+          card.style.transform = "translate3d(-120%, -12px, 0) rotate(-14deg)";
+          card.style.opacity = "0";
+          card.style.pointerEvents = "none";
+          return;
+        }
+        const visible = d <= 3;
+        card.style.transform =
+          `translate3d(0, ${d * 12}px, 0) scale(${1 - d * 0.05}) ` +
+          `rotate(${d === 0 ? 0 : (d % 2 ? 1 : -1) * (0.8 + d * 0.4)}deg)`;
+        card.style.opacity = visible ? "1" : "0";
+        card.style.zIndex = String(cards.length - i);
+        card.style.pointerEvents = d === 0 ? "auto" : "none";
+      });
+
+      pdPrev.disabled = pdIndex === 0;
+      pdNext.disabled = pdIndex >= cards.length - 1;
+    };
+
+    const pdOpen = () => {
+      pdStack.textContent = "";
+      // Newest first, same order as the wall.
+      for (const post of onWall) render(post, false, pdStack);
+      pdIndex = 0;
+      pd.hidden = false;
+      pdLayout();
+      // Committed by a reflow, not a frame: a delayed frame would leave the
+      // overlay open but still transparent.
+      void pd.offsetHeight;
+      pd.classList.add("is-open");
+    };
+
+    const pdClose = () => {
+      pd.classList.remove("is-open");
+      setTimeout(() => { pd.hidden = true; }, 300);
+    };
+
+    pdNext.addEventListener("click", () => { pdIndex++; pdLayout(); });
+    pdPrev.addEventListener("click", () => { pdIndex--; pdLayout(); });
+    for (const el of pd.querySelectorAll("[data-pd-close]")) {
+      el.addEventListener("click", pdClose);
+    }
+    document.addEventListener("keydown", (e) => {
+      if (pd.hidden) return;
+      if (e.key === "Escape") pdClose();
+      if (e.key === "ArrowRight" && !pdNext.disabled) { pdIndex++; pdLayout(); }
+      if (e.key === "ArrowLeft" && !pdPrev.disabled) { pdIndex--; pdLayout(); }
+    });
+
+    /** Phone: one pile sitting under the hero, tapped to open the deck. */
+    const pileLayout = () => {
+      const { w } = cardSize(window.innerWidth, window.innerHeight);
+      world.style.setProperty("--card-w", `${Math.round(w)}px`);
+      world.textContent = "";
+
+      // Only the top few are drawn: the ones below are invisible anyway and
+      // would just cost layout on a phone.
+      onWall.slice(0, 4).forEach((post, i) => {
+        const node = render(post);
+        node.classList.add("is-piled");
+        node.style.left = `calc(50% - ${Math.round(w / 2)}px)`;
+        // Sits below the hero's buttons rather than over the words.
+        node.style.top = `calc(56% + ${i * 10}px)`;
+        node.style.setProperty("--rot", `${(i % 2 ? 1 : -1) * (1 + i * 0.8)}deg`);
+        node.style.zIndex = String(50 - i);
+        node.style.opacity = i > 2 ? "0" : "1";
+      });
+    };
+
+    world.addEventListener("click", (e) => {
+      if (!isPhone()) return;
+      const t = e.target as HTMLElement;
+      if (t.closest("a, button")) return;
+      if (t.closest(".mw-post")) pdOpen();
+    });
+
     const layout = (burst = false) => {
+      if (isPhone()) {
+        pileLayout();
+        if (burst) explode();
+        return;
+      }
       measure();
       const shown = onWall.slice(0, slots.length);
 
@@ -827,6 +1036,67 @@ const countries = (COUNTRIES as { code: string; name: string }[])
 
       if (burst) explode();
     };
+
+    /* -------------------------------------------------------------- dragging */
+    // Desktop only. On a phone the pile is tapped to open the deck, and there
+    // is nowhere to drag a card to anyway.
+    let drag: { el: HTMLElement; id: number; dx: number; dy: number; shifted: boolean } | null = null;
+
+    world.addEventListener("pointerdown", (e) => {
+      if (isPhone()) return;
+      const el = (e.target as HTMLElement).closest<HTMLElement>(".mw-post");
+      if (!el) return;
+      // Links and buttons keep their own behaviour.
+      if ((e.target as HTMLElement).closest("a, button")) return;
+
+      drag = {
+        el,
+        id: e.pointerId,
+        dx: e.clientX - el.offsetLeft,
+        dy: e.clientY - el.offsetTop,
+        shifted: false,
+      };
+      el.setPointerCapture(e.pointerId);
+      el.classList.add("is-dragging");
+      // Whatever you are holding belongs on top.
+      el.style.zIndex = "200";
+    });
+
+    world.addEventListener("pointermove", (e) => {
+      if (!drag || e.pointerId !== drag.id) return;
+
+      const { w, h } = cardSize(window.innerWidth, window.innerHeight);
+      const realH = drag.el.offsetHeight || h;
+
+      // Clamped, because there is nowhere off-screen to put a card any more —
+      // dragging one past the edge would simply lose it.
+      const clamp = (px: number, py: number) => ({
+        x: Math.min(window.innerWidth - w - 8, Math.max(8, px)),
+        y: Math.min(window.innerHeight - realH - 8, Math.max(8, py)),
+      });
+
+      let { x, y } = clamp(e.clientX - drag.dx, e.clientY - drag.dy);
+
+      // The hero and the corner labels push back, so a card slides around the
+      // headline instead of being dragged across it.
+      const pushed = keepOut({ x, y, w, h: realH }, obstacles());
+      ({ x, y } = clamp(pushed.x, pushed.y));
+
+      if (!drag.shifted && Math.abs(x - drag.el.offsetLeft) + Math.abs(y - drag.el.offsetTop) < 3) {
+        return;
+      }
+      drag.shifted = true;
+      drag.el.style.left = `${x}px`;
+      drag.el.style.top = `${y}px`;
+    });
+
+    const endDrag = (e: PointerEvent) => {
+      if (!drag || e.pointerId !== drag.id) return;
+      drag.el.classList.remove("is-dragging");
+      drag = null;
+    };
+    world.addEventListener("pointerup", endDrag);
+    world.addEventListener("pointercancel", endDrag);
 
     /** Throws the cards out from the middle of the screen to their places. */
     const explode = () => {
