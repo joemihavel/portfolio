@@ -269,7 +269,9 @@ const { day } = Astro.props;
   .deck-wrap {
     /* One knob for the whole deck. Everything below is derived from it, so the
        stack stays proportional from a 320px phone to a desktop. */
-    --card-w: clamp(232px, 74vw, 300px);
+    /* Leaves room for an arrow either side plus their gaps — sized off the
+       card alone, the pair sat half off the screen on a phone. */
+    --card-w: clamp(168px, calc(100vw - 140px), 300px);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -334,7 +336,10 @@ const { day } = Astro.props;
   .deck-row {
     display: flex;
     align-items: center;
-    gap: clamp(8px, 3vw, 26px);
+    justify-content: center;
+    gap: clamp(6px, 2.4vw, 26px);
+    width: 100%;
+    padding: 0 6px;
   }
 
   .deck-arrow {
@@ -393,8 +398,14 @@ const { day } = Astro.props;
   }
   .deck-close:hover { transform: translateY(-2px); }
 
-  @media (max-width: 520px) {
+  @media (max-width: 640px) {
     .hero-ctas { gap: 12px 20px; }
+    /* The pile of cards takes the top of the screen on a phone, so the words
+       sit low rather than dead centre. */
+    .hero {
+      align-items: end;
+      padding-bottom: 12vh;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
