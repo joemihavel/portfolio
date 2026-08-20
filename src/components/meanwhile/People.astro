@@ -651,7 +651,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     const measure = () => {
       const vw = window.innerWidth;
       const vh = window.innerHeight;
-      const { w, h } = cardSize(vw);
+      const { w, h } = cardSize(vw, vh);
       world.style.setProperty("--card-w", `${Math.round(w)}px`);
       // The corner chrome is measured rather than assumed, so the reserved
       // area follows it if either label changes size.
@@ -786,89 +786,47 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       const shown = onWall.slice(0, slots.length);
 
       world.textContent = "";
-      shown.forEach((post, i) => {
+      const nodes = shown.map((post) => render(post));
+
+      // Slots are sized for a typical card, but a card carrying a scribble is
+      // roughly twice as tall — placing it on that assumption pushed it off the
+      // bottom of the screen. Heights are only knowable once the card is in the
+      // document, so position is corrected in a second pass.
+      const edge = 12;
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const blocks = obstacles();
+
+      nodes.forEach((node, i) => {
         const slot = slots[i];
-        const node = render(post);
-        node.style.left = `${slot.x}px`;
-        node.style.top = `${slot.y}px`;
+        const w = node.offsetWidth;
+        const h = node.offsetHeight;
+
+        // Keep the slot's centre, so a tall card grows about its position
+        // rather than hanging off the bottom of it.
+        const assumedH = cardSize(vw, vh).h;
+        let x = slot.x;
+        let y = slot.y + (assumedH - h) / 2;
+
+        x = Math.min(vw - w - edge, Math.max(edge, x));
+        y = Math.min(vh - h - edge, Math.max(edge, y));
+
+        // Its real footprint may now reach the hero even though the slot did
+        // not, so it is pushed clear and clamped again.
+        const pushed = keepOut({ x, y, w, h }, blocks);
+        x = Math.min(vw - w - edge, Math.max(edge, pushed.x));
+        y = Math.min(vh - h - edge, Math.max(edge, pushed.y));
+
+        node.style.left = `${Math.round(x)}px`;
+        node.style.top = `${Math.round(y)}px`;
         node.style.setProperty("--rot", `${slot.rotation}deg`);
         // Newest sits on top, so a card arriving overlaps the ones it joins
         // rather than sliding underneath them.
         node.style.zIndex = String(100 - i);
-        node.dataset.slot = String(i);
       });
 
       if (burst) explode();
     };
-
-    /* -------------------------------------------------------------- dragging */
-    // Cards can still be picked up and moved. The position is not persisted —
-    // the wall is the viewport now, so a stored coordinate would mean something
-    // different on every screen — but a card you have moved keeps its spot
-    // until the layout is rebuilt.
-    const moved = new Set<string>();
-    let drag: {
-      el: HTMLElement;
-      id: number;
-      dx: number;
-      dy: number;
-      shifted: boolean;
-    } | null = null;
-
-    world.addEventListener("pointerdown", (e) => {
-      const el = (e.target as HTMLElement).closest<HTMLElement>(".mw-post");
-      if (!el) return;
-      // Links and buttons keep their own behaviour.
-      if ((e.target as HTMLElement).closest("a, button")) return;
-
-      drag = {
-        el,
-        id: e.pointerId,
-        dx: e.clientX - el.offsetLeft,
-        dy: e.clientY - el.offsetTop,
-        shifted: false,
-      };
-      el.setPointerCapture(e.pointerId);
-      el.classList.add("is-dragging");
-      // Whatever you are holding belongs on top.
-      el.style.zIndex = "200";
-    });
-
-    world.addEventListener("pointermove", (e) => {
-      if (!drag || e.pointerId !== drag.id) return;
-
-      const { w, h } = cardSize(window.innerWidth);
-
-      // Clamped, because there is nowhere off-screen to put a card any more —
-      // dragging one past the edge would simply lose it.
-      const clamp = (px: number, py: number) => ({
-        x: Math.min(window.innerWidth - w - 8, Math.max(8, px)),
-        y: Math.min(window.innerHeight - h - 8, Math.max(8, py)),
-      });
-
-      let { x, y } = clamp(e.clientX - drag.dx, e.clientY - drag.dy);
-
-      // The hero and the corner labels push back, so a card slides around the
-      // headline instead of being dragged across it.
-      const pushed = keepOut({ x, y, w, h }, obstacles());
-      ({ x, y } = clamp(pushed.x, pushed.y));
-
-      if (!drag.shifted && Math.abs(x - drag.el.offsetLeft) + Math.abs(y - drag.el.offsetTop) < 3) {
-        return;
-      }
-      drag.shifted = true;
-      drag.el.style.left = `${x}px`;
-      drag.el.style.top = `${y}px`;
-    });
-
-    const endDrag = (e: PointerEvent) => {
-      if (!drag || e.pointerId !== drag.id) return;
-      drag.el.classList.remove("is-dragging");
-      if (drag.shifted) moved.add(drag.el.dataset.post ?? "");
-      drag = null;
-    };
-    world.addEventListener("pointerup", endDrag);
-    world.addEventListener("pointercancel", endDrag);
 
     /** Throws the cards out from the middle of the screen to their places. */
     const explode = () => {

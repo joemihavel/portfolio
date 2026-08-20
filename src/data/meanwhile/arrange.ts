@@ -152,8 +152,14 @@ export function keepOut(card: Rect, obstacles: Rect[], gap = 12): { x: number; y
   return { x, y };
 }
 
-/** Card size for the current viewport. Shrinks before it starts dropping slots. */
-export function cardSize(vw: number) {
-  const w = Math.max(178, Math.min(300, vw * 0.21));
+/**
+ * Card size for the current viewport. Shrinks before it starts dropping slots.
+ *
+ * Bounded by height as well as width: a card carrying a scribble is about
+ * `w / 2` taller than a text-only one, so on a short window sizing purely off
+ * the width produces a card that cannot fit on screen at all.
+ */
+export function cardSize(vw: number, vh = 900) {
+  const w = Math.max(168, Math.min(300, vw * 0.21, vh * 0.34));
   return { w, h: w * 0.66 };
 }
