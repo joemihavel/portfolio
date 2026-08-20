@@ -14,6 +14,7 @@
 // cost of counting a second time if someone clears storage or switches device.
 
 import type { APIRoute } from "astro";
+import type { D1Database } from "@cloudflare/workers-types";
 // v13+ of the adapter dropped locals.runtime.env; bindings come from here.
 import { env } from "cloudflare:workers";
 

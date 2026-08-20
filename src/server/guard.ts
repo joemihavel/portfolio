@@ -4,6 +4,7 @@
 // per request — so it is all cheap string work and single-statement D1 calls.
 // Nothing loops over user input more than once.
 
+import type { D1Database } from "@cloudflare/workers-types";
 import { env } from "cloudflare:workers";
 
 export const db = () => (env as { DB?: D1Database }).DB;

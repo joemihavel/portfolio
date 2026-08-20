@@ -363,7 +363,7 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
 
     /* --------------------------------------------------------------- zoom */
     // Anchored on the cursor, so the point under the pointer stays put.
-    function zoomAt(p: { x: number; y: number }, factor: number) {
+    const zoomAt = (p: { x: number; y: number }, factor: number) => {
       const rect = vp.getBoundingClientRect();
       const px = p.x - rect.left;
       const py = p.y - rect.top;
@@ -374,7 +374,7 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
       view.k = k;
       clamp(view);
       schedule();
-    }
+    };
 
     vp.addEventListener(
       "wheel",
@@ -415,7 +415,7 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
     let lastPick = -1;
 
     /** Centres any element that carries world coordinates (card or post). */
-    function focusEl(el: HTMLElement | null, scale?: number) {
+    const focusEl = (el: HTMLElement | null, scale?: number) => {
       if (!el) return;
       touched = true;
       for (const c of world.querySelectorAll(".is-focus")) c.classList.remove("is-focus");
@@ -429,7 +429,7 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
         y: vp.clientHeight * 0.4 - (Number(el.dataset.y) + el.offsetHeight / 2) * k,
       });
       hideHint();
-    }
+    };
 
     // Any component can ask the canvas to travel somewhere.
     document.addEventListener("mw:focus", (e) => {

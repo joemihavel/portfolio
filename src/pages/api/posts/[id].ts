@@ -7,6 +7,7 @@
 // somebody running a loop.
 
 import type { APIRoute } from "astro";
+import type { D1Database } from "@cloudflare/workers-types";
 import { db, json, allow, visitorId, clampNumber } from "../../../server/guard";
 
 export const prerender = false;

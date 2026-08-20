@@ -58,6 +58,14 @@ export const PAPERS = [
 
 export const MAX_LENGTH = 240;
 
+/** The stretch of canvas that new cards are placed within. */
+export interface Zone {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
 // Bumped to retire the previous round of cards. Older rows are left in place
 // rather than deleted, so stepping this back recovers them.
 /**
@@ -187,6 +195,18 @@ export const store = {
     }
   },
 };
+
+/**
+ * Card geometry, used to lay the wall out without collisions.
+ *
+ * A card is a fixed 320px wide and grows with its message; 300 covers the
+ * 240-character maximum. The cell is bigger than the card on both axes so the
+ * jitter and the small rotation still cannot push one card into its neighbour.
+ */
+const CARD_W = 320;
+const CELL_W = 400;
+const CELL_H = 360;
+const JITTER = 24;
 
 function spread(posts: Post[], zone: Zone) {
   const cols = Math.max(1, Math.floor(zone.w / CELL_W));

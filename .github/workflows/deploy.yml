@@ -21,6 +21,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+
+      # `npm run build` runs astro check first. A ReferenceError shipped to
+      # production once because nothing type-checked the client scripts.
       - run: npm run build
 
       # Schema changes travel with the code that needs them, so a deploy can
