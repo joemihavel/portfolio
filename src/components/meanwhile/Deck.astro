@@ -404,8 +404,14 @@ const { day } = Astro.props;
        sit low rather than dead centre. */
     .hero {
       align-items: end;
-      padding-bottom: 18vh;
+      padding-bottom: 26vh;
     }
+  }
+
+  /* A short phone cannot afford a quarter of the screen as padding: it starves
+     the pile above and the preview ends up scaled down to nothing. */
+  @media (max-width: 640px) and (max-height: 760px) {
+    .hero { padding-bottom: 8vh; }
   }
 
   @media (prefers-reduced-motion: reduce) {

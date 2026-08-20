@@ -483,12 +483,14 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     width: 100%;
     padding: 0 6px;
   }
-  /* Carries the footprint, so the bar below does not jump as cards change. */
+  /* Carries the footprint, so the bar below does not jump as cards change.
+     The height is set from the tallest card once they are built — a fixed one
+     left a short card stranded at the top of a tall empty box. */
   .pd-stack {
     position: relative;
     /* Same reasoning as the news deck: the arrows need their own room. */
     width: min(300px, calc(100vw - 130px));
-    height: 60vh;
+    max-height: 76vh;
   }
   .pd-stack :global(.mw-post) {
     position: absolute;
@@ -546,11 +548,45 @@ const countries = (COUNTRIES as { code: string; name: string }[])
   :global(.mw-post.is-piled) {
     cursor: pointer;
     transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transform-origin: top center;
+    /* On a short screen the preview is scaled down to fit rather than having
+       its drawing taken away. */
+    transform: rotate(var(--rot)) scale(var(--pile-scale, 1));
   }
-  :global(.mw-post.is-piled .mw-post-ink) { aspect-ratio: 2.6 / 1; }
-  /* Last resort on a short screen: the scribble goes rather than the card
-     overlapping the headline. It is still there when the deck is opened. */
-  :global(.mw-post.is-piled.is-tight .mw-post-ink) { display: none; }
+  /* Landscape in the pile: the scribble sits beside the words rather than
+     above them, so both are visible in roughly half the height. Stacked, a
+     card with a drawing was tall enough to reach the headline, which is what
+     forced the drawing to be dropped before. */
+  :global(.mw-post.is-piled .mw-stamp) {
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    grid-template-areas:
+      "kicker kicker"
+      "ink    msg"
+      "foot   foot";
+    column-gap: 12px;
+    align-items: center;
+  }
+  :global(.mw-post.is-piled .mw-post-kicker) { grid-area: kicker; }
+  :global(.mw-post.is-piled .mw-post-ink) {
+    grid-area: ink;
+    aspect-ratio: 3 / 2;
+    margin-bottom: 0;
+  }
+  :global(.mw-post.is-piled .mw-post-message) {
+    grid-area: msg;
+    -webkit-line-clamp: 4;
+  }
+  :global(.mw-post.is-piled .mw-post-foot) { grid-area: foot; }
+
+  /* A card with no drawing gives its full width to the words. */
+  :global(.mw-post.is-piled.no-ink .mw-stamp) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "kicker"
+      "msg"
+      "foot";
+  }
   :global(.mw-post.is-piled .mw-post-message) {
     -webkit-line-clamp: 3;
     display: -webkit-box;
@@ -600,8 +636,17 @@ const countries = (COUNTRIES as { code: string; name: string }[])
   /* A mask clips box-shadow, so the lift lives on a layer underneath. */
   :global(.mw-post-paper) {
     position: relative;
-    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.16))
-            drop-shadow(0 14px 26px rgba(0, 0, 0, 0.18));
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.14))
+            drop-shadow(0 14px 26px rgba(0, 0, 0, 0.16));
+  }
+
+  /* On a phone the stacked drop-shadows read as a grey slab behind the stamp
+     rather than a lift, because the mask makes every scallop cast its own. One
+     soft shadow is enough at this size. */
+  @media (max-width: 640px) {
+    :global(.mw-post-paper) {
+      filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
+    }
   }
 
   :global(.mw-post-ink) {
@@ -707,7 +752,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     55% { opacity: 1; }
     100% {
       opacity: 1;
-      transform: translate3d(0, 0, 0) rotate(var(--rot)) scale(1);
+      transform: translate3d(0, 0, 0) rotate(var(--rot)) scale(var(--pile-scale, 1));
     }
   }
 
@@ -946,11 +991,29 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     };
 
     const pdOpen = () => {
+      // Cards in the overlay are shown in full: never the pile's preview
+      // treatment, which clamps the text and lays it out sideways.
       pdStack.textContent = "";
+      // Unhidden *before* the cards are built: a scribble is drawn from the
+      // canvas's laid-out width, and inside a hidden container that width is
+      // zero — which is why the opened card came up with a blank space where
+      // the drawing should be.
+      pd.hidden = false;
+      pdStack.style.height = "";
+
       // Newest first, same order as the wall.
       for (const post of onWall) render(post, false, pdStack);
       pdIndex = 0;
-      pd.hidden = false;
+
+      // The cards are absolutely positioned, so the stack has to carry their
+      // footprint itself or it collapses and the Close button rides up.
+      const tallest = Math.max(
+        0,
+        ...[...pdStack.querySelectorAll<HTMLElement>(".mw-post")].map((c) => c.offsetHeight)
+      );
+      // Room for the three cards peeking out below the top one.
+      pdStack.style.height = `${tallest + 40}px`;
+
       pdLayout();
       // Committed by a reflow, not a frame: a delayed frame would leave the
       // overlay open but still transparent.
@@ -981,60 +1044,45 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       if (!onWall.length) return;
 
       const topSafe = 64; // clear of the back link and the visitor count
-      const gap = 20;
+      const gap = 18;
 
-      // The card's height depends on what is written on it and whether it
-      // carries a scribble, so the only way to know it is to build one and
-      // measure. Widths are tried in turn until the pile fits the space above
-      // the hero — shrinking is much better than overlapping the text.
-      const widths = [Math.min(300, window.innerWidth * 0.68), 240, 200, 168];
-      let chosen = widths[widths.length - 1];
-      let cardH = 0;
+      // Landscape and wide: the card is a preview, and laying the scribble
+      // beside the words rather than above them roughly halves its height,
+      // which is what lets it show both and still clear the headline.
+      const width = Math.min(360, window.innerWidth - 40);
+      world.style.setProperty("--card-w", `${Math.round(width)}px`);
 
-      for (const w of widths) {
-        world.style.setProperty("--card-w", `${Math.round(w)}px`);
+      const measureOne = () => {
         const probe = render(onWall[0]);
         probe.classList.add("is-piled");
-        cardH = probe.offsetHeight;
+        if (!onWall[0].strokes?.length) probe.classList.add("no-ink");
+        const h = probe.offsetHeight;
         probe.remove();
+        return h;
+      };
 
-        const heroTop = heroRect().y;
-        if (heroTop - gap - topSafe >= cardH) {
-          chosen = w;
-          break;
-        }
-        chosen = w; // keep the smallest tried, in case none fit
-      }
-
-      world.style.setProperty("--card-w", `${Math.round(chosen)}px`);
-
-      // Even at the smallest width the text and footer do not shrink, so on a
-      // short screen the card can still be too tall. Dropping the scribble from
-      // the preview always buys enough — and it is still there once opened.
-      const tight = heroRect().y - gap - topSafe < cardH;
-
+      const cardH = measureOne();
       const heroTop = heroRect().y;
-      // Sits directly above the hero, or as high as it can go if the screen is
-      // too short for both.
-      // Measured again after the tight fallback, since dropping the scribble
-      // changes the height this is positioned against.
-      const probe = render(onWall[0]);
-      probe.classList.add("is-piled");
-      if (tight) probe.classList.add("is-tight");
-      const finalH = probe.offsetHeight;
-      probe.remove();
+      const room = heroTop - gap - topSafe;
 
-      const top = Math.max(topSafe, heroTop - gap - finalH);
+      // Shrink to fit if the screen is short. Scaling keeps the whole card —
+      // scribble and words — where the previous fallback had to delete the
+      // drawing to make room.
+      // Floored: below about three quarters the preview stops being readable,
+      // and a slightly tighter gap is the better trade.
+      const fit = Math.max(0.78, Math.min(1, room / Math.max(1, cardH)));
+      const top = Math.max(topSafe, heroTop - gap - cardH * fit);
 
       // Only the top few are drawn: the rest are invisible anyway and would
       // just cost layout on a phone.
       onWall.slice(0, 4).forEach((post, i) => {
         const node = render(post);
         node.classList.add("is-piled");
-        if (tight) node.classList.add("is-tight");
-        node.style.left = `calc(50% - ${Math.round(chosen / 2)}px)`;
-        node.style.top = `${Math.round(top + i * 8)}px`;
-        node.style.setProperty("--rot", `${(i % 2 ? 1 : -1) * (1 + i * 0.8)}deg`);
+        if (!post.strokes?.length) node.classList.add("no-ink");
+        node.style.left = `calc(50% - ${Math.round(width / 2)}px)`;
+        node.style.top = `${Math.round(top + i * 7)}px`;
+        node.style.setProperty("--rot", `${(i % 2 ? 1 : -1) * (0.8 + i * 0.6)}deg`);
+        node.style.setProperty("--pile-scale", String(fit));
         node.style.zIndex = String(50 - i);
         node.style.opacity = i > 2 ? "0" : "1";
       });
