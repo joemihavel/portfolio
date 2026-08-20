@@ -116,7 +116,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     <p class="mw-preview" id="mw-preview" hidden></p>
 
     <div class="mt-7 flex items-center justify-between gap-4">
-      <p class="mw-footnote">Leave a little something for someone else to find.</p>
+      <p class="mw-footnote" id="mw-footnote">Leave a little something for someone else to find.</p>
       <button type="submit" class="mw-submit font-serif text-[17px]">
         Leave it here <span class="mw-submit-arrow inline-block" aria-hidden="true">→</span>
       </button>
@@ -233,6 +233,10 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     line-height: 1.5;
     opacity: 0.6;
   }
+  .mw-footnote.is-error {
+    opacity: 1;
+    font-weight: 500;
+  }
 
   .mw-grid {
     display: grid;
@@ -328,7 +332,16 @@ const countries = (COUNTRIES as { code: string; name: string }[])
 
   .mw-combo { position: relative; }
 
+  /* Inline on small screens. Absolutely positioned, it was being clipped by
+     the sheet's own overflow — the suggestions existed but could not be seen
+     or tapped, which made the country impossible to set on a phone. */
   .mw-combo-list {
+    position: static;
+    margin-top: 6px;
+    max-height: 168px;
+  }
+  @media (min-width: 660px) {
+    .mw-combo-list {
     position: absolute;
     z-index: 5;
     top: calc(100% + 4px);
@@ -344,6 +357,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     border: 1px solid color-mix(in srgb, var(--sheet-ink) 26%, transparent);
     border-radius: 3px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    }
   }
 
   :global(.mw-combo-opt) {
@@ -845,7 +859,26 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       setTimeout(closeList, 120);
     });
 
-    const resolveCountry = () => chosen;
+    /**
+     * The chosen country, falling back to whatever was typed.
+     *
+     * Tapping a suggestion is the happy path, but requiring it made the form
+     * silently unsubmittable for anyone whose suggestion list was clipped or
+     * dismissed. An exact name, or a prefix that matches exactly one country,
+     * is unambiguous — so accept it.
+     */
+    const resolveCountry = (): CountryRow | null => {
+      if (chosen) return chosen;
+
+      const typed = country.value.trim().replace(/^[^\p{L}]+/u, "").toLowerCase();
+      if (!typed) return null;
+
+      const exact = COUNTRY_LIST.find((c) => c.name.toLowerCase() === typed);
+      if (exact) return exact;
+
+      const starts = COUNTRY_LIST.filter((c) => c.name.toLowerCase().startsWith(typed));
+      return starts.length === 1 ? starts[0] : null;
+    };
 
     let paperIndex = 0;
 
@@ -944,7 +977,27 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       });
     }
 
+    const footnote = document.getElementById("mw-footnote")!;
+    const restingNote = footnote.textContent ?? "";
+
+    /**
+     * Says something next to the button.
+     *
+     * Errors used to land in the "will appear as" line further up the sheet,
+     * which on a phone is often scrolled out of view — so a rejected submit
+     * looked exactly like nothing happening.
+     */
+    const say = (msg: string) => {
+      footnote.textContent = msg;
+      footnote.classList.add("is-error");
+    };
+    const clearSay = () => {
+      footnote.textContent = restingNote;
+      footnote.classList.remove("is-error");
+    };
+
     const open = () => {
+      clearSay();
       form.reset();
       chosen = null;
       closeList();
@@ -979,11 +1032,13 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       const c = resolveCountry();
       // Either half is enough on its own — a scribble is a post too.
       if (!text && !strokes.length) {
-        message.reportValidity();
+        say("Write something or draw something first.");
+        message.focus();
         return;
       }
       if (!c) {
-        country.reportValidity();
+        say("Pick your country from the list.");
+        country.focus();
         return;
       }
 
@@ -1008,8 +1063,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       // Say so in the composer rather than closing it and losing what was
       // typed.
       if ("error" in result) {
-        preview.hidden = false;
-        preview.textContent = result.error;
+        say(result.error);
         return;
       }
 
