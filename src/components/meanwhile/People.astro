@@ -539,10 +539,23 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     background: var(--text-primary);
   }
 
-  /* The pile on the hero: a hint that there is something to open. */
+  /* The pile above the hero: a hint that there is something to open.
+     A card in the pile is a preview, not the whole thing — tapping opens it at
+     full size. So it shows a squatter scribble and three lines of text, which
+     keeps its height predictable instead of varying with what someone wrote. */
   :global(.mw-post.is-piled) {
     cursor: pointer;
     transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  :global(.mw-post.is-piled .mw-post-ink) { aspect-ratio: 2.6 / 1; }
+  /* Last resort on a short screen: the scribble goes rather than the card
+     overlapping the headline. It is still there when the deck is opened. */
+  :global(.mw-post.is-piled.is-tight .mw-post-ink) { display: none; }
+  :global(.mw-post.is-piled .mw-post-message) {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   /* ---------------------------------------------------------- post cards */
@@ -981,6 +994,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       for (const w of widths) {
         world.style.setProperty("--card-w", `${Math.round(w)}px`);
         const probe = render(onWall[0]);
+        probe.classList.add("is-piled");
         cardH = probe.offsetHeight;
         probe.remove();
 
@@ -994,16 +1008,30 @@ const countries = (COUNTRIES as { code: string; name: string }[])
 
       world.style.setProperty("--card-w", `${Math.round(chosen)}px`);
 
+      // Even at the smallest width the text and footer do not shrink, so on a
+      // short screen the card can still be too tall. Dropping the scribble from
+      // the preview always buys enough — and it is still there once opened.
+      const tight = heroRect().y - gap - topSafe < cardH;
+
       const heroTop = heroRect().y;
       // Sits directly above the hero, or as high as it can go if the screen is
       // too short for both.
-      const top = Math.max(topSafe, heroTop - gap - cardH);
+      // Measured again after the tight fallback, since dropping the scribble
+      // changes the height this is positioned against.
+      const probe = render(onWall[0]);
+      probe.classList.add("is-piled");
+      if (tight) probe.classList.add("is-tight");
+      const finalH = probe.offsetHeight;
+      probe.remove();
+
+      const top = Math.max(topSafe, heroTop - gap - finalH);
 
       // Only the top few are drawn: the rest are invisible anyway and would
       // just cost layout on a phone.
       onWall.slice(0, 4).forEach((post, i) => {
         const node = render(post);
         node.classList.add("is-piled");
+        if (tight) node.classList.add("is-tight");
         node.style.left = `calc(50% - ${Math.round(chosen / 2)}px)`;
         node.style.top = `${Math.round(top + i * 8)}px`;
         node.style.setProperty("--rot", `${(i % 2 ? 1 : -1) * (1 + i * 0.8)}deg`);
