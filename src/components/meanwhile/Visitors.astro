@@ -47,6 +47,9 @@ import { WORLD_PATH, WORLD_W, WORLD_H } from "../../data/meanwhile/world";
   /* Mirrors the back link on the other side of the hero: same 15px uppercase,
      same gutters, same bracket idiom. */
   .vis-trigger {
+    /* This sits inside the hero, which ignores the pointer so the wall stays
+       draggable through it. Anything clickable in there has to opt back in. */
+    pointer-events: auto;
     position: absolute;
     top: 20px;
     right: 24px;
@@ -81,6 +84,9 @@ import { WORLD_PATH, WORLD_W, WORLD_H } from "../../data/meanwhile/world";
 
   /* -------------------------------------------------------------- the sheet */
   .vis-dialog {
+    /* Same reason: pointer-events is inherited, and a modal dialog is still a
+       descendant of the hero even while it is in the top layer. */
+    pointer-events: auto;
     margin: auto;
     width: min(840px, calc(100vw - 32px));
     max-height: calc(100dvh - 32px);
