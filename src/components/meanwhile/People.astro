@@ -57,21 +57,26 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       </div>
       <div>
         <label class="mw-label" for="mw-country">Where are you?</label>
-        {/* An input backed by a datalist rather than a select: 100 countries is
-            too many to scroll, and this gets type-to-filter from the browser
-            for free, with no dropdown of our own to build or make accessible. */}
-        <input
-          id="mw-country"
-          name="country"
-          required
-          class="mw-input"
-          list="mw-countries"
-          autocomplete="off"
-          placeholder="Type to search…"
-        />
-        <datalist id="mw-countries">
-          {countries.map((c) => <option value={`${c.flag} ${c.name}`} />)}
-        </datalist>
+        {/* A hand-built combobox rather than <input list> + <datalist>.
+            Datalist support on phones is patchy — often no suggestions appear
+            at all, so you type a country, nothing resolves, and the form just
+            refuses to submit with no way to tell why. */}
+        <div class="mw-combo">
+          <input
+            id="mw-country"
+            name="country"
+            required
+            class="mw-input"
+            role="combobox"
+            aria-expanded="false"
+            aria-controls="mw-country-list"
+            aria-autocomplete="list"
+            autocomplete="off"
+            autocapitalize="words"
+            placeholder="Start typing…"
+          />
+          <ul class="mw-combo-list" id="mw-country-list" role="listbox" hidden></ul>
+        </div>
       </div>
     </div>
 
@@ -319,6 +324,50 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     cursor: crosshair;
     /* The pad owns the gesture; without this a drag scrolls the dialog. */
     touch-action: none;
+  }
+
+  .mw-combo { position: relative; }
+
+  .mw-combo-list {
+    position: absolute;
+    z-index: 5;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    max-height: 208px;
+    overflow-y: auto;
+    /* Momentum scrolling, and the list must not hand its scroll to the sheet
+       behind it once it reaches the end. */
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    background: var(--sheet-bg);
+    border: 1px solid color-mix(in srgb, var(--sheet-ink) 26%, transparent);
+    border-radius: 3px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  }
+
+  :global(.mw-combo-opt) {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    padding: 11px 12px;
+    font-size: 13.5px;
+    text-align: left;
+    color: var(--sheet-ink);
+    cursor: pointer;
+  }
+  :global(.mw-combo-opt + .mw-combo-opt) {
+    border-top: 1px solid color-mix(in srgb, var(--sheet-ink) 10%, transparent);
+  }
+  :global(.mw-combo-opt:hover),
+  :global(.mw-combo-opt[aria-selected="true"]) {
+    background: color-mix(in srgb, var(--sheet-ink) 9%, transparent);
+  }
+  :global(.mw-combo-empty) {
+    padding: 11px 12px;
+    font-size: 13px;
+    opacity: 0.6;
   }
 
   .mw-swatches {
@@ -700,18 +749,103 @@ const countries = (COUNTRIES as { code: string; name: string }[])
     const count = document.getElementById("mw-count")!;
     const preview = document.getElementById("mw-preview")!;
 
-    // The datalist gives us a free-text field, so the typed value has to be
-    // resolved back to a real country. Matched on the bare name so "India" and
-    // the flag-prefixed form both work, and case is ignored.
-    const resolveCountry = () => {
-      const raw = country.value.trim().replace(/^[^\p{L}]+/u, "").toLowerCase();
-      if (!raw) return null;
-      return (
-        COUNTRY_LIST.find((c) => c.name.toLowerCase() === raw) ??
-        COUNTRY_LIST.find((c) => c.name.toLowerCase().startsWith(raw)) ??
-        null
+    /* ------------------------------------------------------------- country */
+    const list = document.getElementById("mw-country-list")!;
+    let chosen: CountryRow | null = null;
+    let active = -1;
+
+    const matches = (q: string) => {
+      const needle = q.trim().toLowerCase();
+      if (!needle) return COUNTRY_LIST.slice(0, 8);
+      // Names that start with the query first, then names that merely contain
+      // it — so "ind" offers India before Indonesia rather than alphabetically.
+      const starts = COUNTRY_LIST.filter((c) => c.name.toLowerCase().startsWith(needle));
+      const has = COUNTRY_LIST.filter(
+        (c) => !c.name.toLowerCase().startsWith(needle) && c.name.toLowerCase().includes(needle)
       );
+      return [...starts, ...has].slice(0, 8);
     };
+
+    const closeList = () => {
+      list.hidden = true;
+      country.setAttribute("aria-expanded", "false");
+      active = -1;
+    };
+
+    const pick = (c: CountryRow) => {
+      chosen = c;
+      country.value = `${c.flag} ${c.name}`;
+      country.setCustomValidity("");
+      closeList();
+      sync();
+    };
+
+    const openList = () => {
+      const found = matches(country.value);
+      list.textContent = "";
+
+      if (!found.length) {
+        const empty = document.createElement("li");
+        empty.className = "mw-combo-empty";
+        empty.textContent = "No country by that name.";
+        list.appendChild(empty);
+      }
+
+      found.forEach((c, i) => {
+        const li = document.createElement("li");
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "mw-combo-opt";
+        btn.setAttribute("role", "option");
+        btn.setAttribute("aria-selected", String(i === active));
+        btn.textContent = `${c.flag} ${c.name}`;
+        // pointerdown, not click: the input's blur would close the list first
+        // and the tap would land on nothing.
+        btn.addEventListener("pointerdown", (e) => {
+          e.preventDefault();
+          pick(c);
+        });
+        li.appendChild(btn);
+        list.appendChild(li);
+      });
+
+      list.hidden = false;
+      country.setAttribute("aria-expanded", "true");
+    };
+
+    country.addEventListener("focus", openList);
+    country.addEventListener("input", () => {
+      // Typing after choosing means they are choosing again.
+      chosen = null;
+      active = -1;
+      openList();
+      sync();
+    });
+
+    country.addEventListener("keydown", (e) => {
+      if (list.hidden) return;
+      const opts = [...list.querySelectorAll<HTMLElement>(".mw-combo-opt")];
+      if (!opts.length) return;
+
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        active = (active + (e.key === "ArrowDown" ? 1 : -1) + opts.length) % opts.length;
+        opts.forEach((o, i) => o.setAttribute("aria-selected", String(i === active)));
+        opts[active].scrollIntoView({ block: "nearest" });
+      } else if (e.key === "Enter" && active >= 0) {
+        e.preventDefault();
+        opts[active].dispatchEvent(new Event("pointerdown"));
+      } else if (e.key === "Escape") {
+        closeList();
+      }
+    });
+
+    country.addEventListener("blur", () => {
+      // Delayed, so a tap on an option is not cancelled by the blur.
+      setTimeout(closeList, 120);
+    });
+
+    const resolveCountry = () => chosen;
 
     let paperIndex = 0;
 
@@ -783,7 +917,9 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       count.parentElement!.classList.toggle("is-near", message.value.length > MAX_LENGTH - 40);
 
       const c = resolveCountry();
-      country.setCustomValidity(country.value.trim() && !c ? "Pick a country from the list" : "");
+      country.setCustomValidity(
+        country.value.trim() && !c ? "Pick a country from the list" : ""
+      );
       if (c) {
         preview.hidden = false;
         preview.textContent = `Will appear as: ${nameEl.value.trim() || "Someone"} \u00b7 ${c.flag} ${c.name}`;
@@ -810,6 +946,8 @@ const countries = (COUNTRIES as { code: string; name: string }[])
 
     const open = () => {
       form.reset();
+      chosen = null;
+      closeList();
       strokes = [];
       drawing = null;
       // A different paper each time, so the wall does not fill with one colour

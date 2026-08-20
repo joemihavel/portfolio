@@ -44,7 +44,13 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
     position: relative;
     width: 100%;
     /* The canvas is the page — there is no header above it. */
+    /* svh, not dvh. dvh tracks the *current* viewport, so with Safari's URL bar
+       expanded the section is taller than what you can actually see and the
+       bottom controls — including the only way to scroll back out on a phone —
+       sit below the fold. svh is the smallest the viewport ever gets, so they
+       are always reachable. */
     height: 100dvh;
+    height: 100svh;
     min-height: 520px;
     overflow: hidden;
     cursor: grab;
@@ -94,7 +100,8 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
     pointer-events: auto;
   }
   .mw-hud-b {
-    bottom: 26px;
+    /* Clear of the home indicator on notched phones. */
+    bottom: calc(26px + env(safe-area-inset-bottom, 0px));
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -102,7 +109,7 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
     align-items: center;
     gap: 10px;
   }
-  .mw-hud-br { bottom: 26px; right: 24px; }
+  .mw-hud-br { bottom: calc(26px + env(safe-area-inset-bottom, 0px)); right: 24px; }
 
   .mw-btn {
     display: flex;
@@ -164,9 +171,18 @@ const { cards, width, height, intro, peopleZone } = place(day.stories);
   
   @media (max-width: 900px) {
     .mw-fab { padding: 12px 20px; font-size: 14px; }
-    .mw-hud-b { bottom: 18px; }
+    .mw-hud-b { bottom: calc(14px + env(safe-area-inset-bottom, 0px)); }
     /* Clear of the floating CTA stack, which is taller on small screens. */
-    .mw-hud-br { bottom: 18px; right: 14px; }
+    .mw-hud-br {
+      bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+      right: 14px;
+    }
+    /* Bigger touch targets, and the way out of the canvas has to be obvious. */
+    .mw-zoom { width: 38px; height: 38px; font-size: 16px; }
+    .mw-top {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
