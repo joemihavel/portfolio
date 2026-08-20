@@ -1,0 +1,816 @@
+---
+// The hero, and the deck of cards that rises over it.
+//
+// The deck sits on top of the hero rather than replacing it: you never leave
+// the page, so dismissing it puts you exactly back where you were. Cards are a
+// real stack — the ones behind are visible, offset and scaled — and the top one
+// is flicked away to reveal the next.
+import type { Day } from "../../data/meanwhile/layout";
+import StoryCard from "./StoryCard.astro";
+import Visitors from "./Visitors.astro";
+
+interface Props {
+  day: Day;
+}
+const { day } = Astro.props;
+---
+
+<section class="hero" id="mw-hero">
+  <!-- Paint trail. A canvas rather than DOM nodes: this redraws every frame,
+       and 60 divs a second would thrash layout. -->
+  <canvas class="hero-paint" id="mw-paint" aria-hidden="true"></canvas>
+
+  <!-- Uses the portfolio's own idioms so it reads as part of that site rather
+       than as this one's chrome: bracketed label, the arrow that travels, and
+       the word swap from the header nav. -->
+  <a href="/" class="hero-back" aria-label="Back to home">
+    <span class="hero-back-brk" aria-hidden="true">[</span>
+    <span class="hero-back-arrow" aria-hidden="true">
+      <span class="hero-back-tail"></span>
+      <span class="hero-back-head">←</span>
+    </span>
+    <span class="hero-back-label">back to home</span>
+    <span class="hero-back-brk" aria-hidden="true">]</span>
+  </a>
+
+  <Visitors />
+
+  <div class="hero-inner">
+    <p class="eyebrow">The internet is a lot</p>
+    <h1 class="hero-head">Not everything is bad.</h1>
+    <p class="hero-body">
+      A little corner of the internet<br />
+      for the good stuff happening around the world.
+    </p>
+
+    <div class="hero-ctas">
+      <button type="button" class="cta" id="mw-open-deck">
+        Explore good things <span class="cta-arrow" aria-hidden="true">→</span>
+      </button>
+      <button type="button" class="cta cta-alt" id="mw-open-canvas">
+        Add your own <span class="cta-arrow" aria-hidden="true">→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------------ deck -->
+<div class="deck" id="mw-deck" hidden>
+  <div class="deck-scrim" data-close-deck></div>
+
+  <div class="deck-wrap">
+    <div class="deck-stack" id="mw-stack">
+      {day.stories.map((story, i) => <StoryCard story={story} index={i} />)}
+
+      <!-- Sits at the bottom of the pile, revealed when the last card goes. -->
+      <div class="deck-end" id="mw-deck-end" aria-hidden="true">
+        <p class="deck-end-head">That's everything for today.</p>
+        <p class="deck-end-sub">Come back tomorrow. We'll find some more.</p>
+        <button type="button" class="cta cta-alt" data-open-canvas>
+          Add your own <span class="cta-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="deck-bar">
+      <button type="button" class="deck-next" id="mw-deck-next">
+        Next <span class="cta-arrow" aria-hidden="true">→</span>
+      </button>
+      <button type="button" class="deck-close" data-close-deck aria-label="Close">Close</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* ------------------------------------------------------------------ hero */
+  .hero-paint {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Behind the words, so the trail decorates the page instead of obscuring
+       the one sentence the page exists to say. */
+    z-index: 0;
+    /* One GPU blur over the whole layer, rather than a per-dab canvas filter.
+       This is what turns discrete blobs into a wash. */
+    filter: blur(6px);
+    opacity: 1;
+  }
+  .hero-inner,
+  .hero-back { position: relative; z-index: 1; }
+
+  .hero {
+    /* Only where a real cursor exists; touch gets the default. */
+    cursor: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%3E%3Cg%20transform='rotate(45%2014%2014)'%3E%3Crect%20x='12.4'%20y='2.5'%20width='3.2'%20height='9'%20rx='1.6'%20fill='%23222'/%3E%3Crect%20x='11.2'%20y='11'%20width='5.6'%20height='3.4'%20rx='1'%20fill='%23b9b9b9'/%3E%3Cpath%20d='M11.4%2014.2%20h5.2%20l-2.6%206.4%20z'%20fill='%23e0483a'/%3E%3C/g%3E%3C/svg%3E") 9 19, crosshair;
+    position: relative;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 80px 24px;
+    text-align: center;
+  }
+  /* Matched to the portfolio header: same 15px uppercase sans, same page
+     gutters (24 / 48 / 100px) and the same vertical padding, so it lands where
+     the wordmark sits on every other page. */
+  .hero-back {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--pixel-secondary);
+    transition: color 0.3s ease;
+  }
+  @media (min-width: 768px) {
+    .hero-back { left: 48px; }
+  }
+  @media (min-width: 1024px) {
+    .hero-back { top: 24px; left: 100px; }
+  }
+  .hero-back:hover { color: var(--text-primary); }
+
+  /* Brackets ease outward, the way the header's do. */
+  .hero-back-brk {
+    color: var(--pixel-primary);
+    transition: transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1), color 0.3s ease;
+  }
+  .hero-back-brk:first-of-type { margin-right: 0.4em; }
+  .hero-back-brk:last-of-type { margin-left: 0.4em; }
+  .hero-back:hover .hero-back-brk:first-of-type { transform: translateX(-3px); }
+  .hero-back:hover .hero-back-brk:last-of-type { transform: translateX(3px); }
+  .hero-back:hover .hero-back-brk { color: var(--accent); }
+
+  /* The arrow grows a tail as it moves, so it reads as travelling rather than
+     as a glyph being nudged. */
+  .hero-back-arrow {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 16px;
+    height: 11px;
+    margin-right: 0.35em;
+  }
+  .hero-back-head {
+    position: absolute;
+    left: 0;
+    line-height: 1;
+    transition: transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .hero-back-tail {
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    height: 1px;
+    width: 11px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .hero-back:hover .hero-back-head { transform: translateX(-3px); }
+  .hero-back:hover .hero-back-tail { transform: scaleX(1); }
+
+  .hero-back-label { white-space: nowrap; }
+  /* A link should still say it is a link. */
+  .hero a, .hero button { cursor: pointer; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero { cursor: auto; }
+    .hero-paint { display: none; }
+    .hero-back, .hero-back-brk, .hero-back-head, .hero-back-tail { transition: none; }
+  }
+
+  .hero-inner { max-width: 640px; }
+  /* Recedes while the deck is up, so the cards clearly sit in front of it. */
+  .hero-inner {
+    transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.5s ease,
+      filter 0.6s ease;
+  }
+  body.deck-open .hero-inner {
+    transform: scale(0.94) translateY(-14px);
+    opacity: 0.35;
+    filter: blur(2px);
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--pixel-secondary);
+  }
+  .hero-head {
+    margin-top: 18px;
+    font-family: var(--font-serif);
+    font-size: clamp(2.1rem, 6vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--text-primary);
+  }
+  .hero-body {
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--pixel-secondary);
+  }
+
+  .hero-ctas {
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    justify-content: center;
+  }
+  .cta {
+    position: relative;
+    padding-bottom: 4px;
+    font-family: var(--font-serif);
+    font-size: 20px;
+    color: var(--text-primary);
+    white-space: nowrap;
+  }
+  .cta::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 1px;
+    background: var(--accent);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .cta:hover::after { transform: scaleX(1.06); }
+  .cta:hover .cta-arrow { transform: translateX(5px); }
+  .cta-alt::after { background: var(--pixel-primary); }
+  .cta-arrow {
+    display: inline-block;
+    transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  /* ------------------------------------------------------------------ deck */
+  .deck {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: grid;
+    place-items: center;
+  }
+  .deck-scrim {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in srgb, var(--background) 62%, transparent);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    /* Out faster than in: a backdrop that lingers reads as lag. */
+    transition: opacity 0.3s ease;
+  }
+  .deck.is-open .deck-scrim { opacity: 1; transition: opacity 0.45s ease; }
+
+  .deck-wrap {
+    /* One knob for the whole deck. Everything below is derived from it, so the
+       stack stays proportional from a 320px phone to a desktop. */
+    --card-w: clamp(232px, 74vw, 300px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(14px, 3vh, 22px);
+    max-width: 100vw;
+  }
+
+  /* Fixed box: the cards inside are absolutely positioned, so the stack must
+     carry the footprint or the controls below it would jump on every flick. */
+  .deck-stack {
+    position: relative;
+    width: var(--card-w);
+    /* Frame is 3:4.15, plus the caption that overhangs it and the room the
+       cards behind need to peek out at the bottom. */
+    height: calc(var(--card-w) * 1.3833 + 118px);
+    perspective: 1400px;
+  }
+  .deck-stack :global(.card) { width: 100%; }
+  /* The top card owns horizontal gestures, so a swipe flicks it instead of
+     scrolling the page underneath. */
+  .deck-stack :global(.card.is-top) { touch-action: none; }
+  /* No transition while a finger is on it — the card must track the pointer. */
+  .deck-stack :global(.card.is-dragging) { transition: none; }
+
+  .deck-stack :global(.card) {
+    transition:
+      transform 0.62s cubic-bezier(0.22, 0.61, 0.36, 1),
+      opacity 0.45s ease;
+  }
+  /* The discard uses a longer, flatter curve than the restack, so the card
+     reads as thrown rather than as sliding. The offsets themselves are set
+     inline by the script — a rule here could never win against them. */
+  .deck-stack :global(.card.is-gone) {
+    pointer-events: none;
+    transition:
+      transform 0.66s cubic-bezier(0.32, 0, 0.24, 1),
+      opacity 0.5s ease 0.08s;
+  }
+  .deck-stack :global(.card.is-top) { cursor: pointer; }
+
+  .deck-end {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.96);
+    pointer-events: none;
+    transition: opacity 0.5s ease 0.25s, transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) 0.25s;
+  }
+  .deck-end.is-shown { opacity: 1; transform: none; pointer-events: auto; }
+  .deck-end-head {
+    font-family: var(--font-serif);
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--text-primary);
+  }
+  .deck-end-sub { font-size: 14px; color: var(--pixel-secondary); }
+  .deck-end .cta { margin-top: 10px; font-size: 18px; }
+
+  .deck-bar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 9px 10px;
+    border-radius: 999px;
+    background: var(--background);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--text-primary) 14%, transparent);
+    opacity: 0;
+    transform: translateY(12px);
+    /* Delay lives on the open state only. Put it on the base rule and the bar
+       also waits 200ms before leaving, which makes closing feel sticky. */
+    transition: opacity 0.26s ease, transform 0.3s cubic-bezier(0.4, 0, 0.9, 0.4);
+  }
+  .deck.is-open .deck-bar {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.4s ease 0.2s,
+      transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s;
+  }
+
+  .deck-next {
+    padding: 7px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    color: var(--background);
+    background: var(--text-primary);
+    transition: transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .deck-next:hover { transform: translateY(-2px); }
+  .deck-next:hover .cta-arrow { transform: translateX(4px); }
+  .deck-next[disabled] { opacity: 0.35; pointer-events: none; }
+
+  .deck-close {
+    padding: 7px 12px;
+    font-size: 12px;
+    color: var(--pixel-secondary);
+  }
+  .deck-close:hover { color: var(--accent); }
+
+  @media (max-width: 520px) {
+    .hero-ctas { gap: 12px 20px; }
+    .deck-bar { gap: 12px; padding-left: 14px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-inner, .deck-scrim, .deck-bar, .deck-end, .cta::after, .cta-arrow,
+    .deck-stack :global(.card), .deck-next, .hero-back-arrow {
+      transition: none !important;
+    }
+  }
+</style>
+
+<script>
+  const initDeck = () => {
+    const hero = document.getElementById("mw-hero");
+    const deck = document.getElementById("mw-deck");
+    const stack = document.getElementById("mw-stack");
+    if (!hero || !deck || !stack) return;
+
+    const cards = [...stack.querySelectorAll<HTMLElement>(".card")];
+    const endEl = document.getElementById("mw-deck-end")!;
+    const nextBtn = document.getElementById("mw-deck-next") as HTMLButtonElement;
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // How many cards behind the top one are actually drawn. Beyond four the
+    // extra layers are invisible but still composited, which costs frames on
+    // exactly the animation that has to feel smooth.
+    const DEPTH = 4;
+    // How far ahead images are fetched. Two past the visible depth, so the next
+    // card is always decoded before it is promoted.
+    const PRELOAD = DEPTH + 2;
+    let index = 0;
+
+    /** Attaches real image URLs to the cards near the top of the pile. */
+    const preload = () => {
+      for (let i = index; i < Math.min(cards.length, index + PRELOAD); i++) {
+        const img = cards[i].querySelector<HTMLImageElement>(".shot[data-src]");
+        if (!img) continue;
+        img.src = img.dataset.src!;
+        img.removeAttribute("data-src");
+      }
+    };
+
+    type Vars = { tx?: string; ty?: string; rot?: string; sc?: string; op?: string };
+    /**
+     * Single writer for a card's transform.
+     *
+     * Everything goes through inline custom properties rather than classes,
+     * because inline styles beat stylesheet rules — a `.is-gone { --tx: … }`
+     * rule was silently losing to the `--tx` this function had already set,
+     * so discarded cards never actually flew anywhere.
+     */
+    const setVars = (card: HTMLElement, v: Vars) => {
+      if (v.tx !== undefined) card.style.setProperty("--tx", v.tx);
+      if (v.ty !== undefined) card.style.setProperty("--ty", v.ty);
+      if (v.rot !== undefined) card.style.setProperty("--rot", v.rot);
+      if (v.sc !== undefined) card.style.setProperty("--sc", v.sc);
+      if (v.op !== undefined) card.style.setProperty("--op", v.op);
+    };
+
+    /** Lays out the pile from `index` down. */
+    const layout = (animate = true) => {
+      cards.forEach((card, i) => {
+        const d = i - index;
+        card.classList.toggle("is-top", d === 0);
+
+        if (d < 0) return; // already flicked away
+        if (!animate) card.style.transition = "none";
+
+        const visible = d <= DEPTH;
+        setVars(card, {
+          tx: "0px",
+          ty: `${d * 13}px`,
+          sc: `${1 - d * 0.045}`,
+          // Alternating lean, so the pile looks hand-stacked, not milled.
+          rot: `${d === 0 ? 0 : (d % 2 ? 1 : -1) * (0.9 + d * 0.5)}deg`,
+          op: visible ? "1" : "0",
+        });
+        card.style.zIndex = String(cards.length - i);
+        card.setAttribute("aria-hidden", d === 0 ? "false" : "true");
+        card.style.pointerEvents = d === 0 ? "auto" : "none";
+
+        if (!animate) {
+          // Flush, then restore, so the reset itself is not animated.
+          void card.offsetHeight;
+          card.style.transition = "";
+        }
+      });
+
+      preload();
+
+      const done = index >= cards.length;
+      nextBtn.disabled = done;
+      endEl.classList.toggle("is-shown", done);
+      endEl.setAttribute("aria-hidden", String(!done));
+    };
+
+    /**
+     * Flicks the top card away and promotes the next.
+     *
+     * `dir` lets a swipe throw the card the way the finger was going; without
+     * one it alternates, so a run of taps doesn't send every card the same way.
+     */
+    const advance = (dir?: 1 | -1) => {
+      const card = cards[index];
+      if (!card) return;
+
+      const right = dir ? dir > 0 : index % 2 === 0;
+      card.classList.add("is-gone");
+      card.classList.remove("is-top", "is-dragging");
+      card.style.transition = "";
+      setVars(card, {
+        tx: `${right ? 560 : -560}px`,
+        ty: "-50px",
+        rot: `${right ? 19 : -19}deg`,
+        sc: "1",
+        op: "0",
+      });
+
+      index++;
+      layout();
+    };
+
+    nextBtn.addEventListener("click", () => advance());
+    // Clicking the card itself advances too — but not its link or arrow button.
+    stack.addEventListener("click", (e) => {
+      const t = e.target as HTMLElement;
+      if (t.closest("a, .open") || t.closest(".deck-end")) return;
+      // A drag ends with a click too; the pointer handlers have already dealt
+      // with it, so only a genuine tap should advance here.
+      if (justDragged) return;
+      if (t.closest(".card")?.classList.contains("is-top")) advance();
+    });
+
+    /* --------------------------------------------------------- drag to flick */
+    // The whole point on a phone: a card you can throw. Pointer events cover
+    // mouse, pen and touch in one path, so there is no separate touch branch.
+    let drag: { id: number; x0: number; y0: number; t0: number; card: HTMLElement } | null = null;
+    let justDragged = false;
+
+    // How far, or how fast, a card has to travel before it leaves. Velocity is
+    // included so a short sharp flick counts, which is how people actually
+    // swipe on a phone.
+    const FLICK_PX = 88;
+    const FLICK_VELOCITY = 0.55; // px per ms
+
+    stack.addEventListener("pointerdown", (e) => {
+      const card = (e.target as HTMLElement).closest<HTMLElement>(".card");
+      if (!card?.classList.contains("is-top")) return;
+      if ((e.target as HTMLElement).closest("a, .open")) return;
+
+      drag = { id: e.pointerId, x0: e.clientX, y0: e.clientY, t0: e.timeStamp, card };
+      card.setPointerCapture(e.pointerId);
+      card.classList.add("is-dragging");
+    });
+
+    stack.addEventListener("pointermove", (e) => {
+      if (!drag || e.pointerId !== drag.id) return;
+      const dx = e.clientX - drag.x0;
+      const dy = e.clientY - drag.y0;
+      if (Math.abs(dx) + Math.abs(dy) > 4) justDragged = true;
+
+      // Rotation tied to horizontal distance, and a touch of vertical follow,
+      // so the card pivots around the hand rather than sliding flat.
+      setVars(drag.card, {
+        tx: `${dx}px`,
+        ty: `${dy * 0.35}px`,
+        rot: `${dx * 0.045}deg`,
+        op: `${Math.max(0.35, 1 - Math.abs(dx) / 620)}`,
+      });
+    });
+
+    const endDrag = (e: PointerEvent) => {
+      if (!drag || e.pointerId !== drag.id) return;
+      const { card, x0, t0 } = drag;
+      const dx = e.clientX - x0;
+      const dt = Math.max(1, e.timeStamp - t0);
+      drag = null;
+
+      card.classList.remove("is-dragging");
+      const thrown = Math.abs(dx) > FLICK_PX || Math.abs(dx) / dt > FLICK_VELOCITY;
+
+      if (thrown && dx !== 0) {
+        advance(dx > 0 ? 1 : -1);
+      } else {
+        // Didn't travel far enough: settle it back onto the pile.
+        layout();
+      }
+      // Cleared after the click that follows this pointerup has been and gone.
+      setTimeout(() => { justDragged = false; }, 0);
+    };
+    stack.addEventListener("pointerup", endDrag);
+    stack.addEventListener("pointercancel", endDrag);
+
+    /* ---------------------------------------------------------- open/close */
+    const open = () => {
+      index = 0;
+      for (const c of cards) c.classList.remove("is-gone");
+      deck.hidden = false;
+
+      // Put the pile in its "from" pose with transitions off, so the entrance
+      // has a real starting point to move away from.
+      for (const c of cards) {
+        c.style.transition = "none";
+        setVars(c, { tx: "0px", ty: "96px", rot: "0deg", sc: "0.9", op: "0" });
+      }
+      void deck.offsetHeight;
+      // Staggered by depth so the pile assembles rather than snapping as one
+      // block. Only the few visible layers get a delay; the rest are invisible
+      // anyway and a long tail of delays would hold the transition open.
+      cards.forEach((c, i) => {
+        c.style.transition = "";
+        c.style.transitionDelay = i <= DEPTH ? `${i * 55}ms` : "0ms";
+      });
+      layout(true);
+      setTimeout(() => {
+        for (const c of cards) c.style.transitionDelay = "";
+      }, 700);
+      // Commit the closed state by forcing a reflow, so the entrance has
+      // something to transition from. Deliberately not requestAnimationFrame:
+      // a delayed frame would leave the deck unhidden but still at opacity 0,
+      // i.e. an invisible modal you cannot see but can click.
+      void deck.offsetHeight;
+      deck.classList.add("is-open");
+      document.body.classList.add("deck-open");
+      nextBtn.focus({ preventScroll: true });
+    };
+
+    const close = ({ instant = false } = {}) => {
+      deck.classList.remove("is-open");
+      document.body.classList.remove("deck-open");
+
+      const hide = () => {
+        deck.hidden = true;
+        for (const c of cards) c.style.transitionDelay = "";
+      };
+
+      if (reduced || instant) return hide();
+
+      // Exit: the pile sinks and fades, top card first, so the deck reads as
+      // being put back down rather than deleted. Without this the cards simply
+      // disappeared when the container was hidden.
+      const remaining = cards.slice(index, index + DEPTH + 1);
+      remaining.forEach((c, d) => {
+        c.style.transition =
+          "transform 0.44s cubic-bezier(0.4, 0, 0.9, 0.4), opacity 0.34s ease";
+        c.style.transitionDelay = `${d * 40}ms`;
+        setVars(c, {
+          ty: `${d * 13 + 74}px`,
+          sc: `${(1 - d * 0.045) * 0.94}`,
+          rot: "0deg",
+          op: "0",
+        });
+      });
+
+      setTimeout(() => {
+        for (const c of cards) c.style.transition = "";
+        hide();
+      }, 520);
+    };
+
+    document.getElementById("mw-open-deck")?.addEventListener("click", open);
+    for (const el of deck.querySelectorAll("[data-close-deck]")) {
+      el.addEventListener("click", close);
+    }
+    document.addEventListener("keydown", (e) => {
+      if (deck.hidden) return;
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); advance(); }
+    });
+
+    /* -------------------------------------------------------- to the canvas */
+    const toCanvas = () => {
+      // The canvas lives below the hero on the same page, so this is a scroll,
+      // not a swap. The deck goes instantly — waiting out its fade before the
+      // page starts moving reads as lag.
+      close({ instant: true });
+      document.getElementById("mw-canvas-wrap")?.scrollIntoView({
+        behavior: reduced ? "auto" : "smooth",
+        block: "start",
+      });
+      // Held back a beat so the cards land as the wall comes into frame,
+      // rather than finishing while it is still scrolling past.
+      setTimeout(() => document.dispatchEvent(new CustomEvent("mw:populate")), 260);
+      history.replaceState(null, "", "#wall");
+    };
+
+    document.getElementById("mw-open-canvas")?.addEventListener("click", toCanvas);
+    for (const el of document.querySelectorAll("[data-open-canvas]")) {
+      el.addEventListener("click", toCanvas);
+    }
+
+    // Deep link: land on the wall rather than the hero.
+    if (location.hash === "#wall") {
+      document.getElementById("mw-canvas-wrap")?.scrollIntoView({ block: "start" });
+    }
+  };
+
+  /* ------------------------------------------------------------------ paint */
+  // A rainbow stroke that follows the cursor and fades behind it.
+  const initPaint = () => {
+    const hero = document.getElementById("mw-hero");
+    const cv = document.getElementById("mw-paint") as HTMLCanvasElement | null;
+    if (!hero || !cv) return;
+
+    // Pointless without a real pointer, and unwelcome if motion is reduced.
+    if (!matchMedia("(pointer: fine)").matches) return;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const ctx = cv.getContext("2d");
+    if (!ctx) return;
+
+    let dpr = 1;
+    const size = () => {
+      dpr = Math.min(window.devicePixelRatio || 1, 2); // 2 is plenty; 3 just costs fill rate
+      cv.width = hero.clientWidth * dpr;
+      cv.height = hero.clientHeight * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    size();
+    window.addEventListener("resize", size);
+
+    interface Dab { x: number; y: number; t: number }
+
+    /**
+     * A wash, not a rainbow.
+     *
+     * Colour comes from where you are across the page rather than from a hue
+     * that cycles with time — that is what keeps it reading as one continuous
+     * body of pigment instead of a novelty cursor trail. Three pastels, low
+     * alpha, wide falloff.
+     */
+    const STOPS = [
+      [232, 224, 245], // pale lavender
+      [243, 220, 230], // blush
+      [245, 224, 200], // pale peach
+    ];
+
+    const tint = (x: number, w: number) => {
+      const p = Math.max(0, Math.min(1, x / w)) * (STOPS.length - 1);
+      const i = Math.min(STOPS.length - 2, Math.floor(p));
+      const f = p - i;
+      const a = STOPS[i];
+      const b2 = STOPS[i + 1];
+      return [
+        Math.round(a[0] + (b2[0] - a[0]) * f),
+        Math.round(a[1] + (b2[1] - a[1]) * f),
+        Math.round(a[2] + (b2[2] - a[2]) * f),
+      ];
+    };
+
+    const R = 55;         // dab radius
+    const ALPHA = 0.34;   // peak opacity of a single dab
+    const LIFE = 6000;    // ms a dab survives
+    const FADE_AT = 3600; // ms before it starts to go
+    const SPACING = 8;    // px between dabs along the path
+    const MAX = 420;      // ceiling, since every dab is redrawn each frame
+
+    const dabs: Dab[] = [];
+    let raf = 0;
+    let last: { x: number; y: number } | null = null;
+
+    const paint = (x: number, y: number, alpha: number, w: number) => {
+      const [r, g, b2] = tint(x, w);
+      const grad = ctx.createRadialGradient(x, y, 0, x, y, R);
+      // A long, shallow falloff is what makes the edge disappear rather than
+      // stop — the same reason the reference has no hard rim.
+      grad.addColorStop(0, `rgba(${r},${g},${b2},${alpha})`);
+      grad.addColorStop(0.4, `rgba(${r},${g},${b2},${alpha * 0.35})`);
+      grad.addColorStop(0.85, `rgba(${r},${g},${b2},${alpha * 0.12})`);
+      grad.addColorStop(1, `rgba(${r},${g},${b2},0)`);
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(x, y, R, 0, Math.PI * 2);
+      ctx.fill();
+    };
+
+    const draw = (now: number) => {
+      raf = 0;
+      const w = cv.width / dpr;
+      ctx.clearRect(0, 0, cv.width, cv.height);
+
+      // Cleared and fully repainted each frame. Costlier than fading the layer,
+      // but it leaves no residue, so the wash can linger for seconds and still
+      // vanish completely.
+      for (let i = dabs.length - 1; i >= 0; i--) {
+        const age = now - dabs[i].t;
+        if (age > LIFE) { dabs.splice(i, 1); continue; }
+        const a = age < FADE_AT ? ALPHA : ALPHA * (1 - (age - FADE_AT) / (LIFE - FADE_AT));
+        paint(dabs[i].x, dabs[i].y, a, w);
+      }
+
+      if (dabs.length) raf = requestAnimationFrame(draw);
+      else ctx.clearRect(0, 0, cv.width, cv.height);
+    };
+
+    const kick = () => {
+      if (!raf) raf = requestAnimationFrame(draw);
+    };
+
+    hero.addEventListener("pointermove", (e) => {
+      if (e.pointerType === "touch") return;
+      const rect = hero.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const from = last ?? { x, y };
+      const dist = Math.hypot(x - from.x, y - from.y);
+      const steps = Math.max(1, Math.min(20, Math.round(dist / SPACING)));
+
+      for (let i = 1; i <= steps; i++) {
+        const t = i / steps;
+        dabs.push({
+          x: from.x + (x - from.x) * t,
+          y: from.y + (y - from.y) * t,
+          t: e.timeStamp,
+        });
+      }
+      while (dabs.length > MAX) dabs.shift();
+
+      last = { x, y };
+      kick();
+    });
+
+    // Leaving mid-stroke should not connect the last point to wherever the
+    // cursor re-enters.
+    hero.addEventListener("pointerleave", () => { last = null; });
+  };
+
+  document.addEventListener("astro:page-load", () => {
+    initDeck();
+    initPaint();
+  });
+</script>

@@ -1,0 +1,381 @@
+---
+// Lifetime visitor count, and the map behind it.
+//
+// The number is real: it comes from D1 via /api/visits. What is stored is a
+// country code and a tally — no IP, no cookie, no timestamp — so the map can
+// only ever say "someone in Kenya has been here", never who or when.
+import { WORLD_PATH, WORLD_W, WORLD_H } from "../../data/meanwhile/world";
+---
+
+<button type="button" class="vis-trigger" id="mw-vis-trigger" hidden>
+  <span class="vis-brk" aria-hidden="true">[</span>
+  <span class="vis-n" id="mw-vis-n">0</span>
+  <span class="vis-word">visitors</span>
+  <span class="vis-brk" aria-hidden="true">]</span>
+</button>
+
+<dialog id="mw-vis" class="vis-dialog" aria-labelledby="mw-vis-title">
+  <div class="vis-sheet">
+    <div class="vis-paper">
+      <button type="button" class="vis-close" data-vis-close aria-label="Close">×</button>
+
+      <p class="vis-eyebrow">Meanwhile, somewhere</p>
+      <h2 id="mw-vis-title" class="vis-title">
+        <span id="mw-vis-big">0</span> people have wandered in.
+      </h2>
+      <p class="vis-sub" id="mw-vis-sub">Here's where from.</p>
+
+      <div class="vis-map-wrap">
+        <svg
+          class="vis-map"
+          viewBox={`0 0 ${WORLD_W} ${WORLD_H}`}
+          role="img"
+          aria-label="World map of visitor countries"
+        >
+          <path class="vis-land" d={WORLD_PATH} />
+          <g id="mw-vis-dots"></g>
+        </svg>
+      </div>
+
+      <ul class="vis-list" id="mw-vis-list"></ul>
+    </div>
+  </div>
+</dialog>
+
+<style>
+  /* ----------------------------------------------------------- the trigger */
+  /* Mirrors the back link on the other side of the hero: same 15px uppercase,
+     same gutters, same bracket idiom. */
+  .vis-trigger {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: baseline;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--pixel-secondary);
+    transition: color 0.3s ease;
+  }
+  @media (min-width: 768px) { .vis-trigger { right: 48px; } }
+  @media (min-width: 1024px) { .vis-trigger { top: 24px; right: 100px; } }
+
+  .vis-trigger:hover { color: var(--text-primary); }
+  .vis-brk {
+    color: var(--pixel-primary);
+    transition: transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1), color 0.3s ease;
+  }
+  .vis-brk:first-of-type { margin-right: 0.4em; }
+  .vis-brk:last-of-type { margin-left: 0.4em; }
+  .vis-trigger:hover .vis-brk:first-of-type { transform: translateX(-3px); }
+  .vis-trigger:hover .vis-brk:last-of-type { transform: translateX(3px); }
+  .vis-trigger:hover .vis-brk { color: var(--accent); }
+
+  .vis-n {
+    font-variant-numeric: tabular-nums;
+    color: var(--text-primary);
+    margin-right: 0.35em;
+  }
+
+  /* -------------------------------------------------------------- the sheet */
+  .vis-dialog {
+    margin: auto;
+    width: min(840px, calc(100vw - 32px));
+    max-height: calc(100dvh - 32px);
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+  .vis-dialog::backdrop {
+    background: color-mix(in srgb, var(--text-primary) 45%, transparent);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  .vis-dialog[open]::backdrop { opacity: 1; }
+
+  .vis-sheet {
+    filter:
+      drop-shadow(0 2px 3px rgba(0, 0, 0, 0.16))
+      drop-shadow(0 26px 60px rgba(0, 0, 0, 0.28));
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+    transition:
+      opacity 0.4s ease,
+      transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .vis-dialog.is-open .vis-sheet { opacity: 1; transform: none; }
+
+  /* Same stamp stock as the cards, so this belongs to the wall. */
+  .vis-paper {
+    --notch: 8px;
+    --step: 24px;
+    position: relative;
+    padding: 34px 34px 28px;
+    max-height: calc(100dvh - 32px);
+    overflow-y: auto;
+    background: #f4efe2;
+    color: #23324f;
+    --mask-edges:
+      radial-gradient(var(--notch) at 50% 0, #0000 97%, #000) 0 0 / var(--step) 100% repeat-x,
+      radial-gradient(var(--notch) at 50% 100%, #0000 97%, #000) 0 0 / var(--step) 100% repeat-x,
+      radial-gradient(var(--notch) at 0 50%, #0000 97%, #000) 0 0 / 100% var(--step) repeat-y,
+      radial-gradient(var(--notch) at 100% 50%, #0000 97%, #000) 0 0 / 100% var(--step) repeat-y;
+    -webkit-mask: var(--mask-edges);
+    -webkit-mask-composite: source-in;
+    mask: var(--mask-edges);
+    mask-composite: intersect;
+  }
+
+  .vis-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 20px;
+    line-height: 1;
+    color: color-mix(in srgb, #23324f 45%, transparent);
+  }
+  .vis-close:hover { color: #23324f; }
+
+  .vis-eyebrow {
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .vis-title {
+    margin-top: 10px;
+    font-family: var(--font-serif);
+    font-size: clamp(1.4rem, 3.4vw, 28px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  #mw-vis-big { font-variant-numeric: tabular-nums; }
+  .vis-sub {
+    margin-top: 8px;
+    font-size: 13.5px;
+    opacity: 0.7;
+  }
+
+  /* ---------------------------------------------------------------- the map */
+  .vis-map-wrap { margin-top: 22px; }
+  .vis-map { display: block; width: 100%; height: auto; overflow: visible; }
+
+  .vis-land {
+    fill: color-mix(in srgb, #23324f 11%, transparent);
+    stroke: none;
+  }
+
+  :global(.vis-dot) {
+    fill: var(--accent);
+    transform-box: fill-box;
+    transform-origin: center;
+    /* Grows out of nothing when the map is revealed. */
+    transform: scale(0);
+    transition: transform 0.62s cubic-bezier(0.34, 1.5, 0.64, 1);
+    transition-delay: var(--dot-d, 0ms);
+  }
+  :global(.vis-dialog.is-open .vis-dot) { transform: scale(1); }
+
+  /* A soft halo behind each dot, breathing slowly out of phase. */
+  :global(.vis-halo) {
+    fill: var(--accent);
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: vis-pulse 3.4s ease-in-out infinite;
+    animation-delay: var(--dot-d, 0ms);
+  }
+  @keyframes vis-pulse {
+    0%, 100% { opacity: 0.06; transform: scale(1); }
+    50% { opacity: 0.22; transform: scale(1.6); }
+  }
+
+  /* --------------------------------------------------------------- the list */
+  .vis-list {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px 18px;
+    font-size: 12.5px;
+  }
+  :global(.vis-row) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid color-mix(in srgb, #23324f 12%, transparent);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition-delay: var(--row-d, 0ms);
+  }
+  :global(.vis-dialog.is-open .vis-row) { opacity: 1; transform: none; }
+  :global(.vis-row b) { font-weight: 400; font-variant-numeric: tabular-nums; opacity: 0.6; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .vis-sheet, .vis-brk, .vis-trigger,
+    :global(.vis-dot), :global(.vis-row) { transition: none; }
+    :global(.vis-halo) { animation: none; opacity: 0.12; }
+  }
+</style>
+
+<script>
+  import { CENTROIDS } from "../../data/meanwhile/centroids";
+  import { WORLD_W, WORLD_H } from "../../data/meanwhile/world";
+  import { COUNTRIES, flagOf } from "../../../scripts/lib/countries.mjs";
+
+  const SEEN = "meanwhile:counted:v1";
+
+  interface Tally {
+    total: number;
+    countries: { country: string; count: number }[];
+  }
+
+  const NAMES = new Map<string, string>(
+    (COUNTRIES as { code: string; name: string }[]).map((c) => [c.code, c.name])
+  );
+
+  const initVisitors = () => {
+    const trigger = document.getElementById("mw-vis-trigger");
+    const dialog = document.getElementById("mw-vis") as HTMLDialogElement | null;
+    if (!trigger || !dialog) return;
+
+    const nEl = document.getElementById("mw-vis-n")!;
+    const bigEl = document.getElementById("mw-vis-big")!;
+    const subEl = document.getElementById("mw-vis-sub")!;
+    const dots = document.getElementById("mw-vis-dots")!;
+    const list = document.getElementById("mw-vis-list")!;
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const fmt = (n: number) => n.toLocaleString("en-GB");
+
+    /** Counts up to the real figure. Nothing is ever displayed that isn't. */
+    const countTo = (el: HTMLElement, to: number) => {
+      if (reduced || to === 0) return void (el.textContent = fmt(to));
+      const t0 = performance.now();
+      const dur = 900;
+      const step = (now: number) => {
+        const p = Math.min(1, (now - t0) / dur);
+        // Ease-out cubic, so it decelerates into the final number.
+        el.textContent = fmt(Math.round(to * (1 - Math.pow(1 - p, 3))));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    const render = (data: Tally) => {
+      trigger.hidden = false;
+      countTo(nEl, data.total);
+      bigEl.textContent = fmt(data.total);
+
+      // 'XX' means Cloudflare could not resolve a country — it counts toward
+      // the total but has nowhere to sit on the map.
+      const placed = data.countries.filter((c) => c.country !== "XX" && CENTROIDS[c.country]);
+      const max = Math.max(1, ...placed.map((c) => c.count));
+
+      subEl.textContent = placed.length
+        ? `From ${placed.length} ${placed.length === 1 ? "country" : "countries"} so far.`
+        : "Here's where from.";
+
+      const ns = "http://www.w3.org/2000/svg";
+      dots.textContent = "";
+
+      placed.forEach((c, i) => {
+        const [lat, lng] = CENTROIDS[c.country];
+        const x = ((lng + 180) / 360) * WORLD_W;
+        const y = ((90 - lat) / 180) * WORLD_H;
+        // Area-proportional, so ten visitors do not look a hundred times the
+        // size of one. Floored so a single visit is still findable.
+        const r = 3 + 9 * Math.sqrt(c.count / max);
+        const delay = Math.min(i * 55, 900);
+
+        const halo = document.createElementNS(ns, "circle");
+        halo.setAttribute("class", "vis-halo");
+        halo.setAttribute("cx", String(x));
+        halo.setAttribute("cy", String(y));
+        halo.setAttribute("r", String(r * 1.9));
+        halo.style.setProperty("--dot-d", `${delay}ms`);
+
+        const dot = document.createElementNS(ns, "circle");
+        dot.setAttribute("class", "vis-dot");
+        dot.setAttribute("cx", String(x));
+        dot.setAttribute("cy", String(y));
+        dot.setAttribute("r", String(r));
+        dot.style.setProperty("--dot-d", `${delay}ms`);
+
+        const title = document.createElementNS(ns, "title");
+        title.textContent = `${NAMES.get(c.country) ?? c.country} — ${fmt(c.count)}`;
+        dot.appendChild(title);
+
+        dots.append(halo, dot);
+      });
+
+      list.textContent = "";
+      data.countries.slice(0, 12).forEach((c, i) => {
+        const li = document.createElement("li");
+        li.className = "vis-row";
+        li.style.setProperty("--row-d", `${Math.min(i * 45, 600)}ms`);
+        const name = c.country === "XX" ? "Somewhere" : NAMES.get(c.country) ?? c.country;
+        const flag = c.country === "XX" ? "🌍" : flagOf(c.country);
+        li.innerHTML = "";
+        li.append(
+          Object.assign(document.createElement("span"), { textContent: `${flag} ${name}` }),
+          Object.assign(document.createElement("b"), { textContent: fmt(c.count) })
+        );
+        list.appendChild(li);
+      });
+    };
+
+    /* ------------------------------------------------------------- fetch */
+    (async () => {
+      // Counted once per browser. A flag in localStorage rather than a cookie,
+      // so there is nothing to consent to — at the cost of counting again if
+      // someone clears storage or switches device.
+      const first = !localStorage.getItem(SEEN);
+      try {
+        const res = await fetch("/api/visits", { method: first ? "POST" : "GET" });
+        if (!res.ok) return;
+        if (first) localStorage.setItem(SEEN, "1");
+        render((await res.json()) as Tally);
+      } catch {
+        // Offline or the API is down: the counter simply never appears, rather
+        // than showing a zero that would read as "nobody has been here".
+      }
+    })();
+
+    /* -------------------------------------------------------- open/close */
+    const open = () => {
+      dialog.showModal();
+      // Committed by a reflow, not a frame — a delayed frame would leave the
+      // sheet open but still transparent.
+      void dialog.offsetHeight;
+      dialog.classList.add("is-open");
+    };
+
+    const close = () => {
+      dialog.classList.remove("is-open");
+      const done = () => dialog.close();
+      reduced ? done() : setTimeout(done, 260);
+    };
+
+    trigger.addEventListener("click", open);
+    for (const el of dialog.querySelectorAll("[data-vis-close]")) {
+      el.addEventListener("click", close);
+    }
+    // Clicking the backdrop, which is the dialog element itself.
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) close();
+    });
+    dialog.addEventListener("cancel", (e) => {
+      e.preventDefault();
+      close();
+    });
+  };
+
+  document.addEventListener("astro:page-load", initVisitors);
+</script>

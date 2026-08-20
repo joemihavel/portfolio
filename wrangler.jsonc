@@ -1,10 +1,21 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  // Static-assets Worker: no server script, Cloudflare just serves ./dist.
-  // Name must match the existing Worker or `wrangler deploy` creates a new one.
+  // Worker with a script now, not just static assets: /api/* runs server-side
+  // so the visitor tally can live somewhere other than one person's browser.
+  // Everything else is still prerendered and served as a free static asset.
+  //
+  // `main` points at the adapter's entrypoint, not at dist/_worker.js — that
+  // file does not exist before the build, and the adapter resolves this config
+  // while building.
   "name": "portfolio",
   "compatibility_date": "2026-07-20",
-  "assets": {
-    "directory": "./dist"
-  }
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "meanwhile-somewhere",
+      "database_id": "6db1a8bf-70bf-4151-bbaf-7092159b2ada"
+    }
+  ]
 }

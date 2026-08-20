@@ -1,0 +1,43 @@
+---
+// The last thing on the page: the door into Meanwhile, Somewhere for anyone
+// who scrolled the whole way. Serif (Averia) so it reads in the same voice as
+// the hero words rather than as another paragraph of body copy.
+---
+
+<section
+  class="mx-auto w-full max-w-[1440px] px-6 pt-24 pb-4 text-center md:px-12 lg:px-[100px] lg:pt-[160px]"
+>
+  <p
+    data-reveal="up"
+    class="font-serif text-[clamp(1.25rem,3.2vw,26px)] leading-[1.5] tracking-[-0.01em] text-ink"
+  >
+    A small detour before you go
+    <a href="/meanwhile-somewhere" class="mark-link whitespace-nowrap text-accent">
+      <span class="mark-arrow" aria-hidden="true">→</span>
+      <span class="bracket">meanwhile, somewhere</span>
+    </a>
+  </p>
+</section>
+
+<style>
+  /* The arrow advances into the link on hover — same idea as the hero's 0→1. */
+  .mark-arrow {
+    display: inline-block;
+    margin-right: 0.15em;
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .mark-link:hover .mark-arrow,
+  .mark-link:focus-visible .mark-arrow {
+    transform: translateX(0.18em);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mark-arrow {
+      transition: none;
+    }
+    .mark-link:hover .mark-arrow,
+    .mark-link:focus-visible .mark-arrow {
+      transform: none;
+    }
+  }
+</style>

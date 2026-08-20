@@ -1,0 +1,897 @@
+---
+// The human half of the wall: the composer, and the coloured cards it makes.
+//
+// Post cards are rendered client-side because they arrive after build. The news
+// prints stay server-rendered — they are known at build time and should be in
+// the HTML for anyone without JavaScript.
+import { COUNTRIES } from "../../../scripts/lib/countries.mjs";
+import { PAPERS } from "../../data/meanwhile/posts";
+
+
+
+const countries = (COUNTRIES as { code: string; name: string }[])
+  .map((c) => ({
+    code: c.code,
+    name: c.name,
+    flag: String.fromCodePoint(
+      ...[...c.code].map((ch) => 0x1f1e6 + ch.charCodeAt(0) - 65)
+    ),
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<!-- Composer. A <dialog> so focus trapping, Escape and the backdrop come from
+     the platform rather than from three hundred lines of focus management. -->
+<dialog id="mw-composer" class="mw-dialog" aria-labelledby="mw-composer-title">
+  <form method="dialog" id="mw-post-form" class="mw-sheet">
+   <div class="mw-sheet-paper">
+    <button
+      type="button"
+      class="mw-close"
+      data-close
+      aria-label="Close">×</button>
+
+    <p class="mw-eyebrow">Meanwhile, somewhere</p>
+    <h2 id="mw-composer-title" class="mw-title">Something good happened. Tell us.</h2>
+    <p class="mw-sub">
+      It can be tiny. A nice conversation, a lucky break, a stranger being kind
+      — if it made you smile, it counts.
+    </p>
+
+    <div class="mw-grid">
+    <div class="mw-col">
+    <label class="mw-label" for="mw-message">Your good thing</label>
+    <textarea
+      id="mw-message"
+      name="message"
+      maxlength="240"
+      rows="4"
+      class="mw-input mw-textarea"
+      placeholder="What happened?"></textarea>
+    <p class="mw-count"><span id="mw-count">0</span>/240</p>
+
+    <div class="mt-4 grid gap-4">
+      <div>
+        <label class="mw-label" for="mw-name">Your name <span class="text-muted-2">(optional)</span></label>
+        <input id="mw-name" name="name" maxlength="32" class="mw-input" placeholder="Someone" />
+      </div>
+      <div>
+        <label class="mw-label" for="mw-country">Where are you?</label>
+        {/* An input backed by a datalist rather than a select: 100 countries is
+            too many to scroll, and this gets type-to-filter from the browser
+            for free, with no dropdown of our own to build or make accessible. */}
+        <input
+          id="mw-country"
+          name="country"
+          required
+          class="mw-input"
+          list="mw-countries"
+          autocomplete="off"
+          placeholder="Type to search…"
+        />
+        <datalist id="mw-countries">
+          {countries.map((c) => <option value={`${c.flag} ${c.name}`} />)}
+        </datalist>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="mw-col">
+    <div class="mw-ink-head">
+      <p class="mw-label" id="mw-pad-label">Write it or draw it</p>
+      <span class="mw-ink-tools">
+        <button type="button" class="mw-ink-btn" id="mw-undo" disabled>Undo</button>
+        <button type="button" class="mw-ink-btn" id="mw-clear" disabled>Clear</button>
+      </span>
+    </div>
+    <canvas
+      id="mw-pad"
+      class="mw-pad"
+      role="img"
+      aria-labelledby="mw-pad-label"
+    ></canvas>
+
+    <div class="mw-swatches mt-4" id="mw-swatches" role="radiogroup" aria-label="Card colour">
+      {PAPERS.map((paper, i) => (
+        <button
+          type="button"
+          class="mw-swatch"
+          role="radio"
+          aria-checked={i === 0 ? "true" : "false"}
+          data-paper={i}
+          style={`--sw-bg:${paper.bg}; --sw-ink:${paper.ink}`}
+          aria-label={`Colour ${i + 1}`}
+        />
+      ))}
+    </div>
+    </div>
+    </div>
+
+    <p class="mw-preview" id="mw-preview" hidden></p>
+
+    <div class="mt-7 flex items-center justify-between gap-4">
+      <p class="mw-footnote">Leave a little something for someone else to find.</p>
+      <button type="submit" class="mw-submit font-serif text-[17px]">
+        Leave it here <span class="mw-submit-arrow inline-block" aria-hidden="true">→</span>
+      </button>
+    </div>
+   </div>
+  </form>
+</dialog>
+
+<script type="application/json" id="mw-country-data" set:html={JSON.stringify(countries)}></script>
+
+<template id="mw-post-template">
+  <article class="mw-post absolute">
+    <div class="mw-post-paper">
+      <div class="mw-stamp">
+      <p class="mw-post-kicker"></p>
+      <canvas class="mw-post-ink" aria-hidden="true" hidden></canvas>
+      <p class="mw-post-message"></p>
+      <div class="mw-post-foot">
+        <span class="mw-post-who"></span>
+        <button type="button" class="mw-react">
+          <span class="mw-react-mark" aria-hidden="true">✦</span>
+          <span class="mw-react-label"></span>
+        </button>
+      </div>
+      <button type="button" class="mw-flag" title="Flag this" aria-label="Flag this post">⚐</button>
+      </div>
+    </div>
+  </article>
+</template>
+
+<style>
+  /* ------------------------------------------------------------- composer */
+  /* The composer is the card you are about to make: same stamp stock, same
+     perforated edge, and it takes the colour you pick so the choice is shown
+     rather than described. --sheet-bg / --sheet-ink are set by the script. */
+  .mw-dialog {
+    margin: auto;
+    width: min(760px, calc(100vw - 32px));
+    max-height: calc(100dvh - 32px);
+    padding: 0;
+    border: none;
+    background: transparent;
+    --sheet-bg: #F4EFE2;
+    --sheet-ink: #23324F;
+  }
+  .mw-dialog::backdrop {
+    background: color-mix(in srgb, var(--text-primary) 45%, transparent);
+    backdrop-filter: blur(3px);
+  }
+
+  /* A mask clips box-shadow, so the lift lives on this outer layer. */
+  .mw-sheet {
+    filter:
+      drop-shadow(0 2px 3px rgba(0, 0, 0, 0.16))
+      drop-shadow(0 26px 60px rgba(0, 0, 0, 0.28));
+    text-align: left;
+  }
+
+  .mw-sheet-paper {
+    --notch: 8px;
+    --step: 24px;
+    position: relative;
+    padding: 34px 34px 28px;
+    max-height: calc(100dvh - 32px);
+    overflow-y: auto;
+    background: var(--sheet-bg);
+    color: var(--sheet-ink);
+    transition: background 0.4s ease, color 0.4s ease;
+    --mask-edges:
+      radial-gradient(var(--notch) at 50% 0, #0000 97%, #000) 0 0 / var(--step) 100% repeat-x,
+      radial-gradient(var(--notch) at 50% 100%, #0000 97%, #000) 0 0 / var(--step) 100% repeat-x,
+      radial-gradient(var(--notch) at 0 50%, #0000 97%, #000) 0 0 / 100% var(--step) repeat-y,
+      radial-gradient(var(--notch) at 100% 50%, #0000 97%, #000) 0 0 / 100% var(--step) repeat-y;
+    -webkit-mask: var(--mask-edges);
+    -webkit-mask-composite: source-in;
+    mask: var(--mask-edges);
+    mask-composite: intersect;
+  }
+
+  .mw-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 20px;
+    line-height: 1;
+    color: color-mix(in srgb, var(--sheet-ink) 45%, transparent);
+    transition: color 0.2s ease;
+  }
+  .mw-close:hover { color: var(--sheet-ink); }
+
+  .mw-eyebrow {
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .mw-title {
+    margin-top: 10px;
+    font-family: var(--font-serif);
+    font-size: clamp(1.4rem, 3.4vw, 28px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  .mw-sub {
+    margin-top: 10px;
+    max-width: 56ch;
+    font-size: 13.5px;
+    line-height: 1.65;
+    opacity: 0.72;
+  }
+  .mw-footnote {
+    font-size: 11.5px;
+    line-height: 1.5;
+    opacity: 0.6;
+  }
+
+  .mw-grid {
+    display: grid;
+    gap: 26px;
+    margin-top: 24px;
+  }
+  @media (min-width: 660px) {
+    .mw-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  .mw-col { min-width: 0; }
+
+  .mw-label {
+    display: block;
+    margin-bottom: 7px;
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+
+  /* Typed text is the card's own typewriter face, so the preview is literal. */
+  .mw-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    font-size: 13.5px;
+    color: var(--sheet-ink);
+    background: color-mix(in srgb, var(--sheet-ink) 4%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sheet-ink) 22%, transparent);
+    border-radius: 2px;
+    transition: border-color 0.25s ease, background 0.25s ease;
+  }
+  .mw-input::placeholder { color: color-mix(in srgb, var(--sheet-ink) 38%, transparent); }
+  .mw-input:focus {
+    outline: none;
+    border-color: color-mix(in srgb, var(--sheet-ink) 60%, transparent);
+    background: color-mix(in srgb, var(--sheet-ink) 7%, transparent);
+  }
+  .mw-textarea {
+    resize: none;
+    line-height: 1.6;
+    height: 92px;
+  }
+  .mw-count {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 10.5px;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.45;
+  }
+  .mw-count.is-near { opacity: 0.9; }
+
+  .mw-preview {
+    margin-top: 14px;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .mw-ink-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .mw-ink-head .mw-label { margin-bottom: 7px; }
+  .mw-ink-tools { display: inline-flex; gap: 12px; }
+  .mw-ink-btn {
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sheet-ink);
+    opacity: 0.55;
+    transition: opacity 0.2s ease;
+  }
+  .mw-ink-btn:hover { opacity: 1; }
+  .mw-ink-btn[disabled] { opacity: 0.22; pointer-events: none; }
+
+  .mw-pad {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    /* 2:1 always — it is the aspect the strokes are stored against. */
+    aspect-ratio: 2 / 1;
+    border: 1px dashed color-mix(in srgb, var(--sheet-ink) 28%, transparent);
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--sheet-ink) 3%, transparent);
+    cursor: crosshair;
+    /* The pad owns the gesture; without this a drag scrolls the dialog. */
+    touch-action: none;
+  }
+
+  .mw-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  /* Every paper is a similar cream, so the ink is the only real difference —
+     a swatch of the paper alone looked like six identical squares. The ring is
+     the stock, the core is the ink. */
+  .mw-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: var(--sw-bg);
+    border: 1px solid color-mix(in srgb, var(--sheet-ink) 20%, transparent);
+    box-shadow: inset 0 0 0 6px var(--sw-ink);
+    transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.2s ease;
+  }
+  .mw-swatch:hover { transform: translateY(-2px) scale(1.06); }
+  .mw-swatch[aria-checked="true"] {
+    box-shadow:
+      inset 0 0 0 9px var(--sw-ink),
+      0 0 0 2px var(--sheet-bg),
+      0 0 0 4px var(--sheet-ink);
+  }
+
+  .mw-submit {
+    position: relative;
+    padding-bottom: 3px;
+    color: var(--sheet-ink);
+    white-space: nowrap;
+  }
+  .mw-submit::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 1px;
+    background: currentColor;
+    transform-origin: left center;
+    transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .mw-submit:hover::after { transform: scaleX(1.05); }
+  .mw-submit:hover .mw-submit-arrow { transform: translateX(4px); }
+  .mw-submit-arrow { transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .mw-submit:disabled { opacity: 0.45; }
+
+  /* ---------------------------------------------------------- post cards */
+  /* Global, because these are cloned from a <template> into the canvas at
+     runtime and so never carry this component's scope attribute. */
+  :global(.mw-post) {
+    width: 320px;
+    transform: rotate(var(--rot));
+    transform-origin: 50% 50%;
+    transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+    cursor: grab;
+    touch-action: none;
+  }
+  :global(.mw-post.is-dragging) {
+    cursor: grabbing;
+    z-index: 30;
+    transition: none;
+  }
+
+  /* Postage-stamp edge. Four radial-gradient layers, one per side, combined
+     with mask-composite: intersect so each side keeps its own row of notches
+     and the corners stay square. A border-image or SVG would not survive the
+     card being resized by its content. */
+  :global(.mw-stamp) {
+    --notch: 7px;
+    --step: 21px;
+    position: relative;
+    background: var(--paper);
+    color: var(--ink);
+    padding: 24px 22px 20px;
+    --mask-edges:
+      radial-gradient(var(--notch) at 50% 0, #0000 97%, #000) 0 0 / var(--step) 100% repeat-x,
+      radial-gradient(var(--notch) at 50% 100%, #0000 97%, #000) 0 0 / var(--step) 100% repeat-x,
+      radial-gradient(var(--notch) at 0 50%, #0000 97%, #000) 0 0 / 100% var(--step) repeat-y,
+      radial-gradient(var(--notch) at 100% 50%, #0000 97%, #000) 0 0 / 100% var(--step) repeat-y;
+    -webkit-mask: var(--mask-edges);
+    -webkit-mask-composite: source-in;
+    mask: var(--mask-edges);
+    mask-composite: intersect;
+  }
+
+  /* A mask clips box-shadow, so the lift lives on a layer underneath. */
+  :global(.mw-post-paper) {
+    position: relative;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.16))
+            drop-shadow(0 14px 26px rgba(0, 0, 0, 0.18));
+  }
+
+  :global(.mw-post-ink) {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    margin-bottom: 10px;
+  }
+  /* A scribble on its own should not leave an empty line under it. */
+  :global(.mw-post-message:empty) { display: none; }
+
+  :global(.mw-post-message) {
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    font-size: 14px;
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  :global(.mw-post-kicker) {
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+    font-size: 9.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.62;
+    margin-bottom: 12px;
+  }
+  :global(.mw-post-foot) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 16px;
+    font-size: 11px;
+  }
+  :global(.mw-post-who) { opacity: 0.75; }
+
+
+  :global(.mw-react) {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 10.5px;
+    color: inherit;
+    border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+    transition: background 0.25s ease, border-color 0.25s ease;
+  }
+  :global(.mw-react:hover) {
+    border-color: color-mix(in srgb, currentColor 70%, transparent);
+    background: color-mix(in srgb, currentColor 10%, transparent);
+  }
+  :global(.mw-react.is-on) {
+    background: color-mix(in srgb, currentColor 16%, transparent);
+    border-color: currentColor;
+  }
+  :global(.mw-react-mark) {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  :global(.mw-react.is-on .mw-react-mark) { transform: scale(1.35) rotate(72deg); }
+
+  :global(.mw-flag) {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    font-size: 11px;
+    line-height: 1;
+    opacity: 0;
+    color: inherit;
+    transition: opacity 0.25s ease;
+  }
+  :global(.mw-post:hover .mw-flag) { opacity: 0.5; }
+  :global(.mw-flag:hover) { opacity: 1 !important; }
+
+  :global(.mw-post:hover) {
+    transform: rotate(calc(var(--rot) * 0.2)) translateY(-5px) scale(1.02);
+    z-index: 6;
+  }
+
+  /* Arrival: the wall assembles itself card by card. Delay is set inline so
+     the order can be computed from where each card sits relative to the view,
+     rather than baked into the stylesheet. */
+  :global(.mw-post.is-populating) {
+    animation: mw-populate 0.66s cubic-bezier(0.22, 1.15, 0.36, 1) both;
+    animation-delay: var(--pop-d, 0ms);
+  }
+  @keyframes mw-populate {
+    0% {
+      opacity: 0;
+      transform: rotate(var(--rot)) scale(0.84) translateY(26px);
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(var(--rot)) scale(1) translateY(0);
+    }
+  }
+
+  /* New card lands with a small settle, so posting feels like it stuck. */
+  :global(.mw-post.is-new) {
+    animation: mw-land 0.62s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+  }
+  @keyframes mw-land {
+    0%   { opacity: 0; transform: rotate(var(--rot)) scale(1.16) translateY(-26px); }
+    100% { opacity: 1; transform: rotate(var(--rot)) scale(1) translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(.mw-post), :global(.mw-react-mark), .mw-submit-arrow { transition: none; }
+    :global(.mw-post:hover) { transform: rotate(var(--rot)); }
+    :global(.mw-post.is-new) { animation: none; }
+  }
+</style>
+
+<script>
+  import {
+    store,
+    PAPERS,
+    MAX_LENGTH,
+    INK_RATIO,
+    type Stroke,
+    reactionLabel,
+    timeAgo,
+    type Post,
+    type Zone,
+  } from "../../data/meanwhile/posts";
+
+  interface CountryRow { code: string; name: string; flag: string }
+
+  // Emitted by the component as a JSON island. Read once at module scope, so
+  // both the card renderer and the composer's search share it.
+  const COUNTRY_LIST: CountryRow[] = JSON.parse(
+    document.getElementById("mw-country-data")?.textContent || "[]"
+  );
+  const NAMES = new Map<string, string>(COUNTRY_LIST.map((c) => [c.code, c.name]));
+  const flagFor = (code: string) =>
+    String.fromCodePoint(
+      ...[...code.toUpperCase()].map((ch) => 0x1f1e6 + ch.charCodeAt(0) - 65)
+    );
+
+  const initPeople = () => {
+    const world = document.getElementById("mw-world");
+    const dialog = document.getElementById("mw-composer") as HTMLDialogElement | null;
+    const tpl = document.getElementById("mw-post-template") as HTMLTemplateElement | null;
+    if (!world || !dialog || !tpl) return;
+
+    const zone: Zone = JSON.parse(world.dataset.zone ?? "null") ?? {
+      x: 200, y: 800, w: 2400, h: 1400,
+    };
+
+    const who = (p: Post) => p.name || "Someone";
+
+    /**
+     * Paints stored strokes onto a canvas at whatever size it currently is.
+     *
+     * Coordinates are normalised, so this is the only place that knows about
+     * pixels — the same function draws the composer pad and every card.
+     */
+    const inkTo = (cv: HTMLCanvasElement, strokes: Stroke[], colour: string) => {
+      const w = cv.clientWidth;
+      if (!w) return;
+      const h = w / INK_RATIO;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      cv.width = w * dpr;
+      cv.height = h * dpr;
+
+      const c = cv.getContext("2d");
+      if (!c) return;
+      c.setTransform(dpr, 0, 0, dpr, 0, 0);
+      c.clearRect(0, 0, w, h);
+      c.strokeStyle = colour;
+      c.lineCap = "round";
+      c.lineJoin = "round";
+      // Scales with the card so a scribble keeps its weight when shrunk.
+      c.lineWidth = Math.max(1.6, w / 110);
+
+      for (const stroke of strokes) {
+        if (!stroke.length) continue;
+        c.beginPath();
+        if (stroke.length === 1) {
+          // A single tap is a dot, not a zero-length line that draws nothing.
+          c.arc(stroke[0][0] * w, stroke[0][1] * h, c.lineWidth / 2, 0, Math.PI * 2);
+          c.fillStyle = colour;
+          c.fill();
+          continue;
+        }
+        c.moveTo(stroke[0][0] * w, stroke[0][1] * h);
+        for (let i = 1; i < stroke.length; i++) {
+          c.lineTo(stroke[i][0] * w, stroke[i][1] * h);
+        }
+        c.stroke();
+      }
+    };
+
+    /* ------------------------------------------------------------- render */
+    const render = (post: Post, isNew = false) => {
+      const node = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
+      const paper = PAPERS[post.paper % PAPERS.length];
+
+      node.dataset.post = post.id;
+      node.dataset.x = String(post.x);
+      node.dataset.y = String(post.y);
+      node.style.left = `${post.x}px`;
+      node.style.top = `${post.y}px`;
+      node.style.setProperty("--rot", `${post.rotation}deg`);
+      node.style.setProperty("--paper", paper.bg);
+      node.style.setProperty("--ink", paper.ink);
+      if (isNew) node.classList.add("is-new");
+
+      const code = post.country;
+      node.querySelector(".mw-post-kicker")!.textContent =
+        `${flagFor(code)} ${NAMES.get(code) ?? code} · ${timeAgo(post.created_at)}`;
+      // textContent, never innerHTML: this is a stranger's text.
+      node.querySelector(".mw-post-message")!.textContent = post.message;
+      node.querySelector(".mw-post-who")!.textContent = `— ${who(post)}`;
+
+      const react = node.querySelector(".mw-react") as HTMLButtonElement;
+      const label = node.querySelector(".mw-react-label")!;
+      const paint = (n: number, on: boolean) => {
+        label.textContent = reactionLabel(n);
+        react.classList.toggle("is-on", on);
+        react.setAttribute("aria-pressed", String(on));
+      };
+      paint(post.reactions, !!post.reacted);
+
+      let busy = false;
+      react.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        // The server is the source of truth for the count, so a double-click
+        // must not fire two writes and then paint the loser's answer.
+        if (busy) return;
+        busy = true;
+
+        const on = !react.classList.contains("is-on");
+        // Painted before the write lands so the tap feels instant.
+        paint(post.reactions + (on ? 1 : -1), on);
+
+        const n = await store.react(post.id, on);
+        post.reactions = n;
+        post.reacted = on;
+        paint(n, on);
+        busy = false;
+      });
+
+      node.querySelector(".mw-flag")!.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        if (!confirm("Flag this as not belonging here?")) return;
+
+        const gone = await store.flag(post.id);
+        // Removed locally either way: you have said you do not want to see it.
+        // It only leaves the wall for everyone once enough others agree.
+        node.remove();
+        onWall = onWall.filter((p) => p.id !== post.id);
+        if (!gone) return;
+      });
+
+      world.appendChild(node);
+
+      // Drawn after the card is in the document, because the canvas sizes
+      // itself from its laid-out width.
+      if (post.strokes?.length) {
+        const ink = node.querySelector(".mw-post-ink") as HTMLCanvasElement;
+        ink.hidden = false;
+        inkTo(ink, post.strokes, paper.ink);
+      }
+
+      return node;
+    };
+
+    // Everything currently on the wall, so a new card can be placed in a free
+    // cell rather than on top of someone else's.
+    let onWall: Post[] = [];
+
+    (async () => {
+      onWall = await store.list();
+      for (const p of onWall) render(p);
+    })();
+
+    /* ----------------------------------------------------------- composer */
+    const form = document.getElementById("mw-post-form") as HTMLFormElement;
+    const message = document.getElementById("mw-message") as HTMLTextAreaElement;
+    const nameEl = document.getElementById("mw-name") as HTMLInputElement;
+    const country = document.getElementById("mw-country") as HTMLInputElement;
+    const count = document.getElementById("mw-count")!;
+    const preview = document.getElementById("mw-preview")!;
+
+    // The datalist gives us a free-text field, so the typed value has to be
+    // resolved back to a real country. Matched on the bare name so "India" and
+    // the flag-prefixed form both work, and case is ignored.
+    const resolveCountry = () => {
+      const raw = country.value.trim().replace(/^[^\p{L}]+/u, "").toLowerCase();
+      if (!raw) return null;
+      return (
+        COUNTRY_LIST.find((c) => c.name.toLowerCase() === raw) ??
+        COUNTRY_LIST.find((c) => c.name.toLowerCase().startsWith(raw)) ??
+        null
+      );
+    };
+
+    let paperIndex = 0;
+
+    /* ------------------------------------------------------------- the pad */
+    const pad = document.getElementById("mw-pad") as HTMLCanvasElement;
+    const undoBtn = document.getElementById("mw-undo") as HTMLButtonElement;
+    const clearBtn = document.getElementById("mw-clear") as HTMLButtonElement;
+
+    let strokes: Stroke[] = [];
+    let drawing: Stroke | null = null;
+
+    const padInk = () => PAPERS[paperIndex].ink;
+
+    /** The sheet wears the paper you picked, so the choice is shown not told. */
+    const dressSheet = () => {
+      const paper = PAPERS[paperIndex];
+      dialog.style.setProperty("--sheet-bg", paper.bg);
+      dialog.style.setProperty("--sheet-ink", paper.ink);
+    };
+
+    const repaint = () => {
+      inkTo(pad, drawing ? [...strokes, drawing] : strokes, padInk());
+      const empty = !strokes.length && !drawing;
+      undoBtn.disabled = empty;
+      clearBtn.disabled = empty;
+    };
+
+    const padPoint = (e: PointerEvent): [number, number] => {
+      const r = pad.getBoundingClientRect();
+      // Clamped, so a stroke that leaves the pad stops at its edge rather than
+      // being stored outside the box and clipped later.
+      return [
+        Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)),
+        Math.min(1, Math.max(0, (e.clientY - r.top) / r.height)),
+      ];
+    };
+
+    pad.addEventListener("pointerdown", (e) => {
+      pad.setPointerCapture(e.pointerId);
+      drawing = [padPoint(e)];
+      repaint();
+    });
+
+    pad.addEventListener("pointermove", (e) => {
+      if (!drawing) return;
+      const p = padPoint(e);
+      const last = drawing[drawing.length - 1];
+      // Skip samples that barely moved: they add weight to the payload and
+      // nothing to the drawing.
+      if (Math.hypot(p[0] - last[0], p[1] - last[1]) < 0.004) return;
+      drawing.push(p);
+      repaint();
+    });
+
+    const endStroke = () => {
+      if (!drawing) return;
+      strokes.push(drawing);
+      drawing = null;
+      repaint();
+    };
+    pad.addEventListener("pointerup", endStroke);
+    pad.addEventListener("pointercancel", endStroke);
+
+    undoBtn.addEventListener("click", () => { strokes.pop(); repaint(); });
+    clearBtn.addEventListener("click", () => { strokes = []; repaint(); });
+
+    const sync = () => {
+      count.textContent = String(message.value.length);
+      count.parentElement!.classList.toggle("is-near", message.value.length > MAX_LENGTH - 40);
+
+      const c = resolveCountry();
+      country.setCustomValidity(country.value.trim() && !c ? "Pick a country from the list" : "");
+      if (c) {
+        preview.hidden = false;
+        preview.textContent = `Will appear as: ${nameEl.value.trim() || "Someone"} \u00b7 ${c.flag} ${c.name}`;
+      } else {
+        preview.hidden = true;
+      }
+    };
+    message.addEventListener("input", sync);
+    nameEl.addEventListener("input", sync);
+    country.addEventListener("input", sync);
+
+    for (const sw of document.querySelectorAll<HTMLElement>(".mw-swatch")) {
+      sw.addEventListener("click", () => {
+        for (const o of document.querySelectorAll(".mw-swatch")) {
+          o.setAttribute("aria-checked", "false");
+        }
+        sw.setAttribute("aria-checked", "true");
+        paperIndex = Number(sw.dataset.paper);
+        dressSheet();
+        // The scribble is drawn in the card's ink, so it recolours too.
+        repaint();
+      });
+    }
+
+    const open = () => {
+      form.reset();
+      strokes = [];
+      drawing = null;
+      // A different paper each time, so the wall does not fill with one colour
+      // just because it happens to be first in the list.
+      paperIndex = Math.floor(Math.random() * PAPERS.length);
+      for (const [i, o] of [...document.querySelectorAll(".mw-swatch")].entries()) {
+        o.setAttribute("aria-checked", i === paperIndex ? "true" : "false");
+      }
+      dressSheet();
+      sync();
+      dialog.showModal();
+      // Sized from layout, so it has to wait for the dialog to be on screen.
+      requestAnimationFrame(repaint);
+      // Focus the textarea, not the close button the browser would pick.
+      setTimeout(() => message.focus(), 40);
+    };
+
+    for (const el of document.querySelectorAll("[data-open-composer]")) {
+      el.addEventListener("click", open);
+    }
+    for (const el of dialog.querySelectorAll("[data-close]")) {
+      el.addEventListener("click", () => dialog.close());
+    }
+
+    form.addEventListener("submit", async (e) => {
+      // method="dialog" would close before we ever see the values.
+      e.preventDefault();
+      const text = message.value.trim();
+      const c = resolveCountry();
+      // Either half is enough on its own — a scribble is a post too.
+      if (!text && !strokes.length) {
+        message.reportValidity();
+        return;
+      }
+      if (!c) {
+        country.reportValidity();
+        return;
+      }
+
+      const submit = form.querySelector(".mw-submit") as HTMLButtonElement;
+      submit.disabled = true;
+
+      const result = await store.create(
+        {
+          message: text,
+          name: nameEl.value.trim() || null,
+          country: c.code,
+          paper: paperIndex,
+          strokes,
+        },
+        zone,
+        onWall
+      );
+
+      submit.disabled = false;
+
+      // The server can refuse — rate limit, validation, or simply being down.
+      // Say so in the composer rather than closing it and losing what was
+      // typed.
+      if ("error" in result) {
+        preview.hidden = false;
+        preview.textContent = result.error;
+        return;
+      }
+
+      const post = result;
+      onWall.push(post);
+
+      dialog.close();
+      const node = render(post, true);
+      // Fly to where it landed, so you watch your own card join the wall.
+      document.dispatchEvent(
+        new CustomEvent("mw:focus", { detail: { el: node, scale: 1.05 } })
+      );
+    });
+  };
+
+  // The canvas owns dragging; it tells us where a post ended up.
+  document.addEventListener("mw:moved", (e) => {
+    const d = (e as CustomEvent).detail;
+    if (d?.kind === "post") store.move(d.id, d.x, d.y);
+  });
+
+  document.addEventListener("astro:page-load", initPeople);
+</script>

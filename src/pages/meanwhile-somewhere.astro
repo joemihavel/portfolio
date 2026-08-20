@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Deck from "../components/meanwhile/Deck.astro";
+import Canvas from "../components/meanwhile/Canvas.astro";
+import People from "../components/meanwhile/People.astro";
+import type { Day } from "../data/meanwhile/layout";
+
+// Day files are written by scripts/ingest.mjs and committed, so they are baked
+// into the build. Glob rather than a fixed import: the newest file wins without
+// anything having to edit this page.
+const files = import.meta.glob<Day>("../data/meanwhile/days/*.json", {
+  eager: true,
+  import: "default",
+});
+
+const days = Object.entries(files)
+  .map(([, d]) => d)
+  .sort((a, b) => (a.day < b.day ? 1 : -1));
+
+const today = new Date().toISOString().slice(0, 10);
+// Never show a file dated in the future — a day generated ahead of time should
+// wait its turn rather than spoiling tomorrow's canvas.
+const current = days.find((d) => d.day <= today) ?? days[0];
+---
+
+<Layout
+  title="Meanwhile, Somewhere — a little proof that good things are happening"
+  description="The internet is a lot. Here's a little corner where things are good: a handful of genuinely good things happening around the world, collected daily."
+>
+  {
+    /* No portfolio header here on purpose: the canvas is the whole page, and a
+       second navbar over it fights the brief's "the canvas is the hero". The
+       way home is the back link inside the canvas HUD. */
+  }
+  {
+    current ? (
+      <main class="relative">
+        <Deck day={current} />
+        <div id="mw-canvas-wrap">
+          <Canvas day={current} />
+        </div>
+        <People />
+      </main>
+
+      <style is:global>
+        /* The canvas is a section of this page, directly below the hero — not a
+           screen that replaces it. "Add your own" scrolls down to it, so you can
+           always scroll back up to the hero and the deck. */
+        #mw-canvas-wrap { position: relative; }
+      </style>
+    ) : (
+      <main class="flex min-h-dvh items-center justify-center px-6 text-center">
+        <div>
+          <p class="font-serif text-[26px] text-ink">Nothing on the wall yet.</p>
+          <p class="mt-2 text-[14px] text-muted">
+            Run <code>node scripts/ingest.mjs</code> to collect today's good things.
+          </p>
+          <a href="/" class="link-draw mt-6 inline-block text-[13px] text-accent">
+            ← Back to joemihavel.com
+          </a>
+        </div>
+      </main>
+    )
+  }
+</Layout>

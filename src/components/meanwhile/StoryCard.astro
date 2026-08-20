@@ -1,0 +1,209 @@
+---
+// One card in the hero's deck.
+//
+// Same visual language as before — portrait photo in a coloured frame with the
+// caption panel overhanging its lower edge — but positioned by the stack rather
+// than by world coordinates, so it carries no absolute placement of its own.
+import type { Story } from "../../data/meanwhile/layout";
+import { CATEGORY_META, CATEGORY_COLOUR } from "../../data/meanwhile/layout";
+
+interface Props {
+  story: Story;
+  index: number;
+}
+
+const { story, index } = Astro.props;
+const cat = CATEGORY_META[story.category] ?? { label: "Good", emoji: "✨" };
+const colour = CATEGORY_COLOUR[story.category] ?? "#D8452B";
+
+const d = story.published_at ? new Date(story.published_at) : null;
+const dateLabel = d
+  ? d.toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" })
+  : null;
+
+// The image carries `data-src`, not `src`, on purpose. Every card in the deck
+// sits at the same spot, so the browser treats them all as on-screen and
+// `loading="lazy"` does nothing — opening the deck fired one request per story
+// at once. The deck attaches real URLs only to the few cards near the top.
+const place = story.country?.name ?? "Somewhere";
+const flag = story.country?.flag ?? "🌍";
+---
+
+<article
+  class:list={["card", story.image && "has-photo"]}
+  data-card={index}
+  style={`--c:${colour}`}
+  aria-hidden="true"
+>
+  <div class="frame">
+    {
+      story.image ? (
+        <img
+          class="shot"
+          data-src={story.image.src}
+          alt={story.image.alt ?? ""}
+          decoding="async"
+          draggable="false"
+          referrerpolicy="no-referrer"
+          onload="this.closest('.card')?.classList.add('img-ok')"
+          onerror="this.closest('.card')?.classList.add('img-failed')"
+        />
+      ) : (
+        <span class="shot shot-empty" aria-hidden="true">{cat.emoji}</span>
+      )
+    }
+
+    <span class="badges">
+      <span class="badge"><span aria-hidden="true">{flag}</span> {place}</span>
+      {dateLabel && <span class="badge badge-date">{dateLabel}</span>}
+    </span>
+  </div>
+
+  <div class="cap">
+    <a
+      href={story.url}
+      target="_blank"
+      rel="noreferrer"
+      class="open"
+      aria-label={`Read: ${story.headline}`}
+    >
+      <span aria-hidden="true">↗</span>
+    </a>
+    <h3 class="cap-head">{story.headline}</h3>
+    <span class="chip">{story.source}</span>
+  </div>
+</article>
+
+<style>
+  .card {
+    /* An <img> is draggable by default, so a swipe that starts on the photo —
+       which is most of the card — was being taken over by the browser's native
+       drag-and-drop and never reached the flick handler. */
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding-bottom: 24px;
+    transform-origin: 50% 92%;
+    /* The stack writes --tx/--ty/--rot/--sc; keeping them as variables lets the
+       flick animation compose with the resting position instead of replacing
+       it and snapping. */
+    transform:
+      translate3d(var(--tx, 0px), var(--ty, 0px), 0)
+      rotate(var(--rot, 0deg))
+      scale(var(--sc, 1));
+    opacity: var(--op, 1);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+  }
+
+  .frame {
+    position: relative;
+    aspect-ratio: 3 / 4.15;
+    overflow: hidden;
+    border: 4px solid var(--c);
+    border-radius: 20px;
+    background: var(--c);
+    /* Layered, tight-to-wide — a single large blur reads as fog, whereas a
+       contact shadow plus a spread shadow reads as an object on a surface. */
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.16),
+      0 8px 16px rgba(0, 0, 0, 0.12),
+      0 24px 48px rgba(0, 0, 0, 0.16);
+  }
+
+  .shot {
+    -webkit-user-drag: none;
+    pointer-events: none; /* the card handles the gesture, not the image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .card.img-ok .shot { opacity: 1; }
+  .shot-empty,
+  .card.img-failed .shot {
+    display: grid;
+    place-items: center;
+    font-size: 48px;
+    opacity: 1;
+    background: var(--c);
+  }
+  .card.img-failed .shot { visibility: hidden; }
+
+  .badges {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    pointer-events: none;
+  }
+  .badge {
+    padding: 4px 9px;
+    border-radius: 999px;
+    font-size: 9.5px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(6px);
+    white-space: nowrap;
+  }
+  .badge-date { font-size: 11px; letter-spacing: 0.04em; }
+
+  .cap {
+    position: relative;
+    margin: -46px 12px 0;
+    padding: 13px 15px;
+    background: var(--c);
+    border-radius: 14px;
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  }
+  .cap-head {
+    font-family: var(--font-serif);
+    font-size: 14.5px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    padding-right: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .chip {
+    display: inline-block;
+    margin-top: 9px;
+    padding: 3px 9px;
+    border-radius: 7px;
+    font-size: 9.5px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.22);
+  }
+  .open {
+    position: absolute;
+    top: -16px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 13px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .open:hover { transform: translate(2px, -2px) scale(1.1); }
+</style>
