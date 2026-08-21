@@ -372,6 +372,18 @@
     "score": 4
   },
   {
+    "id": "s_c944ua",
+    "headline": "Cat Named ‘Toast’ Survives Intense Heat of 4-Alarm Fire By Hiding in Closet",
+    "summary": "A mechanical issue started a fire in a Utah apartment building last week that sent the entire five-story structure ablaze in a matter of minutes. Residents in the Salt Lake City suburb—and their pets—were evacuated from…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/cat-named-toast-survives-intense-heat-of-4-alarm-fire-by-hiding-in-closet/",
+    "published_at": "2026-08-13T18:20:37.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_cr82lg",
     "headline": "Rescued Orangutans Released Into Isolated Forest Are Now Raising Babies, Creating New Wild Population",
     "summary": "Fifteen years ago, conservationists began releasing rescued orangutans into a protected forest in Sumatra where no others from their species were living. Some arrived had been in human care after being orphaned. Others…",
@@ -416,18 +428,6 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/ospreys-recover-thanks-to-pioneering-pairs-who-nest-afar/",
     "published_at": "2026-08-13T20:46:15.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_c944ua",
-    "headline": "Cat Named ‘Toast’ Survives Intense Heat of 4-Alarm Fire By Hiding in Closet",
-    "summary": "A mechanical issue started a fire in a Utah apartment building last week that sent the entire five-story structure ablaze in a matter of minutes. Residents in the Salt Lake City suburb—and their pets—were evacuated from…",
-    "category": "animals",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/cat-named-toast-survives-intense-heat-of-4-alarm-fire-by-hiding-in-closet/",
-    "published_at": "2026-08-13T18:20:37.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1048,18 +1048,6 @@
     "score": 4
   },
   {
-    "id": "s_b8gq3o",
-    "headline": "Rye reference genome uncovers diversity that could strengthen wheat breeding",
-    "summary": "Rye is not only a hardy and high-yielding crop, but also possesses a valuable gene pool for wheat breeding. An international research team led by the IPK Leibniz Institute has significantly improved the foundations for…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-rye-genome-uncovers-diversity-wheat.html",
-    "published_at": "2026-08-19T23:00:01.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_osdqcl",
     "headline": "Astronomers Peered at the Early Universe and May Have Discovered a New Kind of Celestial Object: Black Hole Stars",
     "summary": "Since the James Webb Space Telescope started collecting data in 2022, it has found puzzling objects dubbed little red dots. A new study suggests they might be giant black holes with some characteristics of stars",
@@ -1068,6 +1056,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/astronomers-peered-at-the-early-universe-and-may-have-discovered-a-new-kind-of-celestial-object-black-hole-stars-180989334/",
     "published_at": "2026-08-14T15:47:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_b8gq3o",
+    "headline": "Rye reference genome uncovers diversity that could strengthen wheat breeding",
+    "summary": "Rye is not only a hardy and high-yielding crop, but also possesses a valuable gene pool for wheat breeding. An international research team led by the IPK Leibniz Institute has significantly improved the foundations for…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-08-rye-genome-uncovers-diversity-wheat.html",
+    "published_at": "2026-08-19T23:00:01.000Z",
     "read_minutes": 2,
     "score": 3
   },
