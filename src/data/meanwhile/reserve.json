@@ -132,6 +132,18 @@
     "score": 6
   },
   {
+    "id": "s_y9mt0m",
+    "headline": "Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations",
+    "summary": "Desperate times call for desperate measures. With traditional funding sources facing cuts, The Rocky Mountain Biological Laboratory, which has spent the last 65 years studying yellow-bellied marmots, had to get…",
+    "category": "planet",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/good-humored-scientists-create-onlymarms-page-to-boost-marmot-conservation-and-donations/",
+    "published_at": "2026-08-23T12:00:02.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_16uag3u",
     "headline": "Cement Kilns Could Become Carbon Negative if Run on Clean Energy as Limestone Absorbs CO2",
     "summary": "The production of cement ranks as one of the world’s largest industrial sources of CO2, but now a new study shows how in the future it could be used to remove, rather than produce the greenhouse gas. Every year, around…",
@@ -360,6 +372,30 @@
     "score": 5
   },
   {
+    "id": "s_bofe7y",
+    "headline": "Two Hours of Sleep Restored in Alzheimer’s Brains in Research Breakthrough",
+    "summary": "Picture this: You find a small fire isolated in your kitchen. If you had the right tool, you might be able to put it out. But before you can, the sprinklers turn on and soak your entire house. An automatic response to…",
+    "category": "science",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/two-hours-of-sleep-restored-in-alzheimers-brains-in-research-breakthrough/",
+    "published_at": "2026-08-16T14:00:57.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1td5y3y",
+    "headline": "Avoiding These Three Vascular Health Risk Factors in Midlife Can Help You Delay Dementia for About 13 Years, Study Suggests",
+    "summary": "High blood pressure, diabetes and smoking are three major modifiable risk factors of dementia. New research tracked more than 12,000 participants to quantify how many years of healthy cognitive function you can gain by…",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/avoiding-these-three-vascular-health-risk-factors-in-midlife-can-help-you-delay-dementia-for-about-13-years-study-suggests-180989354/",
+    "published_at": "2026-08-18T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1otzwqu",
     "headline": "Italian Police Recover Stolen Renoir, Cézanne and Matisse Artworks Worth Millions",
     "summary": "From the Italian police’s crack art crimes team comes the news that 3 stolen paintings by famous French artists were recovered and returned to their owners. The Carabinieri, or military police, report that the paintings…",
@@ -376,18 +412,6 @@
     "score": 4
   },
   {
-    "id": "s_bofe7y",
-    "headline": "Two Hours of Sleep Restored in Alzheimer’s Brains in Research Breakthrough",
-    "summary": "Picture this: You find a small fire isolated in your kitchen. If you had the right tool, you might be able to put it out. But before you can, the sprinklers turn on and soak your entire house. An automatic response to…",
-    "category": "science",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/two-hours-of-sleep-restored-in-alzheimers-brains-in-research-breakthrough/",
-    "published_at": "2026-08-16T14:00:57.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_rjovb9",
     "headline": "Einstein’s biggest “mistake” came back — and changed cosmology forever",
     "summary": "Einstein’s abandoned cosmological constant made a spectacular comeback when astronomers discovered that the universe’s expansion is accelerating. It now sits at the heart of our best cosmological model—a model that…",
@@ -396,18 +420,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260816044835.htm",
     "published_at": "2026-08-18T05:58:07.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1td5y3y",
-    "headline": "Avoiding These Three Vascular Health Risk Factors in Midlife Can Help You Delay Dementia for About 13 Years, Study Suggests",
-    "summary": "High blood pressure, diabetes and smoking are three major modifiable risk factors of dementia. New research tracked more than 12,000 participants to quantify how many years of healthy cognitive function you can gain by…",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/avoiding-these-three-vascular-health-risk-factors-in-midlife-can-help-you-delay-dementia-for-about-13-years-study-suggests-180989354/",
-    "published_at": "2026-08-18T14:00:00.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1048,14 +1060,30 @@
     "score": 4
   },
   {
-    "id": "s_1gc94j4",
-    "headline": "Rooftop rainwater could break cities’ air conditioning trap",
-    "summary": "Air conditioning is making cities hotter, and that’s not incidental. It’s the physics. Every AC unit pulls heat from inside a building and dumps it into the street, which raises outdoor temperatures, which makes more…",
+    "id": "s_p16fe7",
+    "headline": "Ethiopian Farmers Save Thousands by Switching to Solar Irrigation–While Cutting Emissions",
+    "summary": "Farmers in Ethiopia are slashing their growing costs, increasing food production, and protecting the environment thanks to solar-powered irrigation systems introduced through the Nature-based Solutions for Sustainable…",
     "category": "planet",
+    "country": {
+      "code": "ET",
+      "name": "Ethiopia",
+      "flag": "🇪🇹"
+    },
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/ethiopian-farmers-save-thousands-by-switching-to-solar-irrigation/",
+    "published_at": "2026-08-24T03:45:07.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1w7s8sg",
+    "headline": "A hidden “on switch” in human DNA has finally been decoded",
+    "summary": "Researchers have used AI to uncover the DNA signature of a key genetic “switch” involved in turning genes on. After analyzing about 500,000 DNA sequences, the model identified the initiator in roughly 60% of human…",
+    "category": "science",
     "country": null,
-    "source": "The Optimist Daily",
-    "url": "https://www.optimistdaily.com/2026/08/rooftop-rainwater-could-break-cities-air-conditioning-trap/",
-    "published_at": "2026-08-18T00:00:34.000Z",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/08/260823014943.htm",
+    "published_at": "2026-08-23T12:14:40.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1072,14 +1100,14 @@
     "score": 3
   },
   {
-    "id": "s_4wuxso",
-    "headline": "Stellar eruptions in the laboratory: First experimental evidence for their suppression in strong magnetic fields",
-    "summary": "An international team of astrophysicists and plasma physicists has provided the first experimental evidence that strong magnetic fields surrounding active stars can completely suppress coronal mass ejections. This…",
-    "category": "science",
+    "id": "s_1duyczm",
+    "headline": "Hot temperatures can dull blue morpho butterflies' iridescent scales",
+    "summary": "Blue morpho butterflies have captivated the human eye for centuries. We even have one as an emoji on our phones. In a recent experiment, researchers at the Smithsonian Tropical Research Institute (STRI) documented for…",
+    "category": "animals",
     "country": null,
     "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-stellar-eruptions-laboratory-experimental-evidence.html",
-    "published_at": "2026-08-21T16:20:10.000Z",
+    "url": "https://phys.org/news/2026-08-hot-temperatures-dull-blue-morpho.html",
+    "published_at": "2026-08-23T15:00:01.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1092,6 +1120,30 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/astronomers-peered-at-the-early-universe-and-may-have-discovered-a-new-kind-of-celestial-object-black-hole-stars-180989334/",
     "published_at": "2026-08-14T15:47:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1gc94j4",
+    "headline": "Rooftop rainwater could break cities’ air conditioning trap",
+    "summary": "Air conditioning is making cities hotter, and that’s not incidental. It’s the physics. Every AC unit pulls heat from inside a building and dumps it into the street, which raises outdoor temperatures, which makes more…",
+    "category": "planet",
+    "country": null,
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/08/rooftop-rainwater-could-break-cities-air-conditioning-trap/",
+    "published_at": "2026-08-18T00:00:34.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_4wuxso",
+    "headline": "Stellar eruptions in the laboratory: First experimental evidence for their suppression in strong magnetic fields",
+    "summary": "An international team of astrophysicists and plasma physicists has provided the first experimental evidence that strong magnetic fields surrounding active stars can completely suppress coronal mass ejections. This…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-08-stellar-eruptions-laboratory-experimental-evidence.html",
+    "published_at": "2026-08-21T16:20:10.000Z",
     "read_minutes": 2,
     "score": 3
   },
