@@ -132,18 +132,6 @@
     "score": 6
   },
   {
-    "id": "s_y9mt0m",
-    "headline": "Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations",
-    "summary": "Desperate times call for desperate measures. With traditional funding sources facing cuts, The Rocky Mountain Biological Laboratory, which has spent the last 65 years studying yellow-bellied marmots, had to get…",
-    "category": "planet",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/good-humored-scientists-create-onlymarms-page-to-boost-marmot-conservation-and-donations/",
-    "published_at": "2026-08-23T12:00:02.000Z",
-    "read_minutes": 2,
-    "score": 5
-  },
-  {
     "id": "s_16uag3u",
     "headline": "Cement Kilns Could Become Carbon Negative if Run on Clean Energy as Limestone Absorbs CO2",
     "summary": "The production of cement ranks as one of the world’s largest industrial sources of CO2, but now a new study shows how in the future it could be used to remove, rather than produce the greenhouse gas. Every year, around…",
@@ -152,6 +140,18 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/cement-kilns-could-become-carbon-negative-if-run-on-clean-energy-because-limestone-absorbs-co2/",
     "published_at": "2026-08-17T18:00:39.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
+    "id": "s_y9mt0m",
+    "headline": "Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations",
+    "summary": "Desperate times call for desperate measures. With traditional funding sources facing cuts, The Rocky Mountain Biological Laboratory, which has spent the last 65 years studying yellow-bellied marmots, had to get…",
+    "category": "planet",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/good-humored-scientists-create-onlymarms-page-to-boost-marmot-conservation-and-donations/",
+    "published_at": "2026-08-23T12:00:02.000Z",
     "read_minutes": 2,
     "score": 5
   },
