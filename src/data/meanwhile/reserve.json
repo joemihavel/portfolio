@@ -132,18 +132,6 @@
     "score": 6
   },
   {
-    "id": "s_16uag3u",
-    "headline": "Cement Kilns Could Become Carbon Negative if Run on Clean Energy as Limestone Absorbs CO2",
-    "summary": "The production of cement ranks as one of the world’s largest industrial sources of CO2, but now a new study shows how in the future it could be used to remove, rather than produce the greenhouse gas. Every year, around…",
-    "category": "planet",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/cement-kilns-could-become-carbon-negative-if-run-on-clean-energy-because-limestone-absorbs-co2/",
-    "published_at": "2026-08-17T18:00:39.000Z",
-    "read_minutes": 2,
-    "score": 5
-  },
-  {
     "id": "s_y9mt0m",
     "headline": "Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations",
     "summary": "Desperate times call for desperate measures. With traditional funding sources facing cuts, The Rocky Mountain Biological Laboratory, which has spent the last 65 years studying yellow-bellied marmots, had to get…",
@@ -152,6 +140,18 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/good-humored-scientists-create-onlymarms-page-to-boost-marmot-conservation-and-donations/",
     "published_at": "2026-08-23T12:00:02.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
+    "id": "s_16uag3u",
+    "headline": "Cement Kilns Could Become Carbon Negative if Run on Clean Energy as Limestone Absorbs CO2",
+    "summary": "The production of cement ranks as one of the world’s largest industrial sources of CO2, but now a new study shows how in the future it could be used to remove, rather than produce the greenhouse gas. Every year, around…",
+    "category": "planet",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/cement-kilns-could-become-carbon-negative-if-run-on-clean-energy-because-limestone-absorbs-co2/",
+    "published_at": "2026-08-17T18:00:39.000Z",
     "read_minutes": 2,
     "score": 5
   },
@@ -372,14 +372,54 @@
     "score": 5
   },
   {
-    "id": "s_bofe7y",
-    "headline": "Two Hours of Sleep Restored in Alzheimer’s Brains in Research Breakthrough",
-    "summary": "Picture this: You find a small fire isolated in your kitchen. If you had the right tool, you might be able to put it out. But before you can, the sprinklers turn on and soak your entire house. An automatic response to…",
+    "id": "s_1ltbzvx",
+    "headline": "California Joins 30 States to Require Financial Literacy Courses For Teens in Every High School",
+    "summary": "California will be helping teens mold their futures as early as possible, by requiring every high schooler to pass a financial literacy course. Legislation now being implemented after its passage in 2024 made California…",
+    "category": "communities",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/california-became-26th-state-to-require-financial-literacy-courses-in-every-high-school/",
+    "published_at": "2026-08-23T18:21:38.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1gnp4gy",
+    "headline": "Common medications may change your gut for years",
+    "summary": "Common medications may reshape the gut microbiome long after the last dose is taken. In a study of more than 2,500 people, researchers found lasting microbial changes linked not only to antibiotics, but also to…",
     "category": "science",
     "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/two-hours-of-sleep-restored-in-alzheimers-brains-in-research-breakthrough/",
-    "published_at": "2026-08-16T14:00:57.000Z",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/08/260824065605.htm",
+    "published_at": "2026-08-24T13:14:50.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1w2y2mr",
+    "headline": "This shark can live 400 years. Its eyes barely seem to age",
+    "summary": "Greenland sharks may live for 400 years without suffering the kind of retinal decline normally associated with aging. Researchers found healthy eye tissue and active proteins specially adapted for seeing blue light in…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/08/260821012232.htm",
+    "published_at": "2026-08-23T03:14:26.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_vly88p",
+    "headline": "Lunar soil reads as a cosmic time capsule for exploding stars",
+    "summary": "When a star reaches its final stages of life, it ends in a bright, powerful explosion called a supernova and scatters material across the universe. A new study led by a University of Hawai'i at Mānoa researcher has…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-08-lunar-soil-cosmic-capsule-stars.html",
+    "published_at": "2026-08-25T17:40:05.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -392,6 +432,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/avoiding-these-three-vascular-health-risk-factors-in-midlife-can-help-you-delay-dementia-for-about-13-years-study-suggests-180989354/",
     "published_at": "2026-08-18T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_bofe7y",
+    "headline": "Two Hours of Sleep Restored in Alzheimer’s Brains in Research Breakthrough",
+    "summary": "Picture this: You find a small fire isolated in your kitchen. If you had the right tool, you might be able to put it out. But before you can, the sprinklers turn on and soak your entire house. An automatic response to…",
+    "category": "science",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/two-hours-of-sleep-restored-in-alzheimers-brains-in-research-breakthrough/",
+    "published_at": "2026-08-16T14:00:57.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1076,6 +1128,18 @@
     "score": 3
   },
   {
+    "id": "s_9xbp1t",
+    "headline": "A ghostly ribbon of stars reveals hidden dark matter",
+    "summary": "A faint ribbon of stars around a distant galaxy has become the first globular cluster stellar stream ever identified beyond the Milky Way. Because the stars trace the galaxy’s gravity, researchers used the stream to…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/08/260823015000.htm",
+    "published_at": "2026-08-24T12:19:34.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_1w7s8sg",
     "headline": "A hidden “on switch” in human DNA has finally been decoded",
     "summary": "Researchers have used AI to uncover the DNA signature of a key genetic “switch” involved in turning genes on. After analyzing about 500,000 DNA sequences, the model identified the initiator in roughly 60% of human…",
@@ -1096,6 +1160,18 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260822015141.htm",
     "published_at": "2026-08-22T12:36:23.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_18y2sk2",
+    "headline": "Sound waves do double duty, carrying and protecting quantum information",
+    "summary": "Researchers at the Harvard John A. Paulson School of Engineering and Applied Sciences (SEAS) have demonstrated a promising new way to protect fragile quantum information using nothing but mechanical…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-08-duty-quantum.html",
+    "published_at": "2026-08-25T21:00:03.000Z",
     "read_minutes": 2,
     "score": 3
   },
