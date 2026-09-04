@@ -1,0 +1,998 @@
+{
+  "day": "2026-09-04",
+  "generated_at": "2026-09-04T09:54:48.362Z",
+  "count": 54,
+  "fresh_count": 54,
+  "stories": [
+    {
+      "id": "s_zsbtz4",
+      "headline": "Florida Teens Design Charity App to Help Generous Locals Deliver ‘Pizza for a Purpose’",
+      "summary": "Two South Florida teens with a penchant for volunteering have used their IT skills to build an app that facilitates the donation of pizzas from local restaurants to local charities. It streamlines the donation process…",
+      "category": "people",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/florida-teens-design-charity-app-to-help-generous-locals-deliver-pizza-for-a-purpose/",
+      "published_at": "2026-08-31T13:00:48.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/credit-@pizzawithapurpose.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 634
+      }
+    },
+    {
+      "id": "s_1066844",
+      "headline": "This Star Orbits Our Galaxy's Heart at a Record-Breaking Speed—and Could Help Uncover Secrets About the Behemoth Black Hole There",
+      "summary": "The speedster travels at up to 56 million miles per hour, or about 8 percent the speed of light. It also gets very close to the supermassive black hole at the center of the Milky Way",
+      "category": "achievement",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/this-star-orbits-our-galaxys-heart-at-a-record-breaking-speed-and-could-help-uncover-secrets-about-the-behemoth-black-hole-there-180989393/",
+      "published_at": "2026-08-28T15:45:08.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/F9I9_Alty-qsjextwbJo_OqocrQ=/fit-in/1600x0/filters:focal(700x400:701x401)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f0/fe/f0fe19e4-e68b-474d-b0a4-19c5beb9d19d/speedy-star.webp",
+        "alt": "Many stars orbit the Milky Way&amp;#39;s central supermassive black hole. But S301&amp;#39;s orbit, shown in red, is the only one known to be close enough to feel the effects of the black hole&amp;#39;s theorized spin.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1encaty",
+      "headline": "3 Million Oysters Eaten by New Yorkers Are Rebuilding the City’s Reefs",
+      "summary": "On Governor’s Island in New York City, a nonprofit is turning wasted oyster shells into new oyster reefs that filter pollutants from the harbor, absorb wave energy, and supply the city’s restaurant industry. Called the…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/3-million-oysters-eaten-by-new-yorkers-are-rebuilding-the-citys-reefs/",
+      "published_at": "2026-09-03T13:00:37.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Billion-Oyster-Project.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 735
+      }
+    },
+    {
+      "id": "s_z8vgwm",
+      "headline": "Original Picasso Stolen 8 Years Ago Found Hanging in Vacant Apartment by Milwaukee Landlord",
+      "summary": "Whether it’s cleaning out an attic or a Wisconsin apartment, in one landlord’s case, finding an original Pablo Picasso work might seem like an unbelievable stroke of luck. GNN knows slightly better—every year pieces by…",
+      "category": "culture",
+      "country": {
+        "code": "ES",
+        "name": "Spain",
+        "flag": "🇪🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/original-picasso-stolen-8-years-ago-found-hanging-in-relinquished-apartment-by-milwaukee-landlord/",
+      "published_at": "2026-09-02T13:00:02.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Torero-by-Picasso-credit-Milwaukee-Police-Department.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 738
+      }
+    },
+    {
+      "id": "s_4dd3c",
+      "headline": "Free Mobile Dental Lab Brings Volunteer Dentists to Deliver Care to Homeless and Vulnerable in UK",
+      "summary": "A million-dollar fund has been launched to provide dental treatment to the most vulnerable members of Britain. The mydentist Foundation announced it is supporting charitable organizations assisting underserved…",
+      "category": "science",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/mobile-dental-lab-brings-volunteer-dentists-to-uk-homeless/",
+      "published_at": "2026-08-30T16:19:09.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/St-Pauls-Dental-clinic-England-mydentist-SWNS.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_8mvifh",
+      "headline": "World’s Oldest Person Celebrates 117 Years of a ‘Nonconfrontational’ Approach to Life",
+      "summary": "The world’s oldest person as acknowledged by the Guinness World Records turned 117 last Friday Ethel Caterham was born in the United Kingdom on August 21st, 1909, when the great-great grandfather of the current king was…",
+      "category": "tiny",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/worlds-oldest-person-celebrates-117-years-of-a-nonconfrontational-approach-to-life/",
+      "published_at": "2026-08-28T18:30:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Oldest-person-in-the-world-Courtesy-of-Ethel-Caterham-Family.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1apzofo",
+      "headline": "A ‘lost’ Philippine pigeon reappears after 20 years — but its forest is disappearing",
+      "summary": "A camera trap on the Philippine island of Mindoro has photographed one of the country’s rarest birds, confirming that the critically endangered Mindoro bleeding-heart pigeon still survives in the wild. Captured in…",
+      "category": "animals",
+      "country": null,
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/09/a-lost-philippine-pigeon-reappears-after-20-years-but-its-forest-is-disappearing/",
+      "published_at": "2026-09-03T17:28:35.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/03173737/MBH-Camera-Trap-01_cover-scaled.jpg",
+        "alt": null,
+        "w": 2560,
+        "h": 1492
+      }
+    },
+    {
+      "id": "s_12hqqpo",
+      "headline": "The fossil fuel industry is spending record amounts to keep California from regulating it",
+      "summary": "In the first half of this year, oil and gas interests poured more than $17 million into fighting climate and worker-safety legislation.",
+      "category": "planet",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Grist",
+      "url": "https://grist.org/politics/fossil-fuel-companies-spent-record-amounts-california-legislation/",
+      "published_at": "2026-08-27T08:15:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://grist.org/wp-content/uploads/2026/08/oil-jacks-california.jpg",
+        "alt": null,
+        "w": 1600,
+        "h": 1067
+      }
+    },
+    {
+      "id": "s_13f6to6",
+      "headline": "Putting slugs on the map: farmers pioneer precision crop protection",
+      "summary": "A new mapping tool pinpoints where slugs are likely to strike, helping farmers cut pesticide use while protecting crops",
+      "category": "people",
+      "country": null,
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/putting-slugs-on-the-map-farmers-pioneer-precision-crop-protection/",
+      "published_at": "2026-08-26T07:00:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.positive.news/wp-content/uploads/2026/08/t-y-zQAUz4MmcZA-unsplash-scaled.jpg",
+        "alt": null,
+        "w": 2560,
+        "h": 1706
+      }
+    },
+    {
+      "id": "s_1qwk18",
+      "headline": "Indian Home Stays Cool Without A/C Through Clever Clay Architecture",
+      "summary": "Every summer it seems there’s a part of the world experiencing record temperatures, so perhaps it’s time for architects to design buildings designed to resist heat as easily as possible. GNN has reported, mostly in…",
+      "category": "achievement",
+      "country": {
+        "code": "IN",
+        "name": "India",
+        "flag": "🇮🇳"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/indian-home-stays-cool-without-a-c-through-clever-clay-architecture/",
+      "published_at": "2026-09-03T19:00:38.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2025/09/credit-CoolAnt-Studio.jpg",
+        "alt": null,
+        "w": 1125,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_f53cmu",
+      "headline": "Renter Is Shocked When Landlord Gives Her a Home After 20 Years Being a Good Tenant There",
+      "summary": "Landlords get a bad rap, often unfairly, but now from Melbourne comes the story of one who gave a long-term tenant the home she was renting. The magnanimous gesture is typical, 9 News reports, of the late self-made…",
+      "category": "communities",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/renter-is-shocked-when-landlord-gives-her-a-home-after-20-years-being-a-good-tenant-there/",
+      "published_at": "2026-08-28T11:00:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Getty-Images-for-Unsplash-e1787897674266.jpg",
+        "alt": null,
+        "w": 1125,
+        "h": 662
+      }
+    },
+    {
+      "id": "s_77flvs",
+      "headline": "Seven new frog species were hiding beneath Madagascar’s forest floor",
+      "summary": "Scientists have discovered seven new species of Madagascar’s elusive diamond frogs, using DNA from modern and century-old museum specimens to solve a long-running biological puzzle. The findings reveal surprising hidden…",
+      "category": "culture",
+      "country": {
+        "code": "MG",
+        "name": "Madagascar",
+        "flag": "🇲🇬"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260828082347.htm",
+      "published_at": "2026-08-30T10:28:59.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/diamond-frog-rhombophryne-mavokely.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_117xw45",
+      "headline": "Early mammals weren't all loners—some may have lived in pairs alongside the dinosaurs",
+      "summary": "About 200 million years ago, furry, little egg-laying creatures evolved the ability to feed their offspring with a secretion from special glands: milk. Their evolutionary journey continued, and by about 160 million…",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-early-mammals-werent-loners-pairs.html",
+      "published_at": "2026-09-03T20:00:02.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/early-mammals-werent-a.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1g991hy",
+      "headline": "8 clever ways to reuse spice jars around the house",
+      "summary": "Most spice jars get rinsed and recycled. A few get left on the counter until someone throws them away. Almost none get a second life, and professional organizers say that’s worth reconsidering. Clean them first…",
+      "category": "tiny",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/09/8-clever-ways-to-reuse-spice-jars-around-the-house/",
+      "published_at": "2026-09-02T00:00:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_521547792_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1333
+      }
+    },
+    {
+      "id": "s_wdqw39",
+      "headline": "Bats carry dangerous viruses without getting sick. This may be why",
+      "summary": "Scientists discovered that more than 500 species of vesper bats possess two separate sets of antibody genes, an immune arrangement never before found in mammals. The surprising system could help explain how bats…",
+      "category": "animals",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260901010713.htm",
+      "published_at": "2026-09-03T11:56:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/bat-mouth-open.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1p7a28g",
+      "headline": "Scientists make a seaweed coating that beats the fridge for cutting food waste",
+      "summary": "Canadian researchers found a cheaper, lower-carbon way to keep strawberries fresh, cutting into a $58 billion waste problem.",
+      "category": "planet",
+      "country": {
+        "code": "CA",
+        "name": "Canada",
+        "flag": "🇨🇦"
+      },
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/scientists-make-a-seaweed-coating-that-beats-the-fridge-for-cutting-food-waste/?utm_source=rss&utm_medium=rss&utm_campaign=scientists-make-a-seaweed-coating-that-beats-the-fridge-for-cutting-food-waste",
+      "published_at": "2026-08-14T12:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/unnamed-1.jpg",
+        "alt": "Scientists make a seaweed coating that beats the fridge for cutting food waste",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_wgkkc9",
+      "headline": "One immune switch may help drive aging across the body",
+      "summary": "Aging may be partly fueled by immune cells losing their ability to clear away damaged, inflammation-promoting cells. Blocking a single receptor restored that cleanup process in mice, reducing inflammation and helping…",
+      "category": "people",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260901010717.htm",
+      "published_at": "2026-09-03T10:29:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/senior-man-aging-face-disease.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1e02bin",
+      "headline": "6 useful things to donate before back-to-school season this year",
+      "summary": "Back-to-school season is a great time to donate. Kids have outgrown things. Backpacks didn’t survive the year. Notebooks never got opened. Most of it ends up in the trash, and a smaller portion ends up at Goodwill…",
+      "category": "communities",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/08/6-useful-things-to-donate-before-back-to-school-season-this-year/",
+      "published_at": "2026-08-28T00:00:24.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_299181534_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1333
+      }
+    },
+    {
+      "id": "s_44ayas",
+      "headline": "'Odyssey' Translator Emily Wilson Is Starting Over After Calling Christopher Nolan's Blockbuster Film 'Abysmal'",
+      "summary": "Nearly a decade after her acclaimed first translation was released, Wilson is taking a fresh approach to Homer's ancient Greek epic",
+      "category": "culture",
+      "country": {
+        "code": "GR",
+        "name": "Greece",
+        "flag": "🇬🇷"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/emily-wilson-will-completely-re-translate-homers-odyssey-after-calling-christopher-nolan-blockbuster-film-abysmal-180989423/",
+      "published_at": "2026-08-31T16:21:17.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/iu33-15c_7nToYrkT4kffQXo3Zw=/fit-in/1600x0/filters:focal(2000x876:2001x877)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e9/5b/e95b8c1e-c226-4cf6-8d18-bf22a932d0cc/arnold_bocklin_-_odysseus_and_polyphemus.jpg",
+        "alt": "Odysseus and Polyphemus (1896),&amp;nbsp;by painter Arnold B&amp;ouml;cklin, depicts Odysseus and his men escaping from the island of the Cyclops.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1r8yy2a",
+      "headline": "A coffee-table-size scorpion roamed Earth before forests existed",
+      "summary": "A meter-long scorpion with massive pincers stalked ancient Britain 415 million years ago, long before forests and the better-known age of giant insects. Its surprising size and possible semi-aquatic lifestyle could…",
+      "category": "science",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260831015200.htm",
+      "published_at": "2026-09-02T13:23:16.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/praearcturus-gigas-life-reconstruction.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1nk1y8",
+      "headline": "The Reddit-popular five-minute productivity rule that truly works for procrastinators",
+      "summary": "Most to-do lists have two kinds of items on them: the real work you’re managing, and the small things that keep getting moved to tomorrow. Reply to that email. File that paper. RSVP to that thing. None of them take…",
+      "category": "tiny",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/09/the-reddit-popular-five-minute-productivity-rule-that-truly-works-for-procrastinators/",
+      "published_at": "2026-09-01T00:00:34.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_121703616_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1333
+      }
+    },
+    {
+      "id": "s_1tfgml0",
+      "headline": "Man Saves Baby Otter with CPR: ‘A life’s a life, no matter what it is’",
+      "summary": "It takes a village to raise a child they say. Well a story comes to us now from Alert Bay in British Columbia, where it took a village to save one. It was a retired logger and fisherman named Gordon Mellish who first…",
+      "category": "animals",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/man-saves-baby-otter-with-cpr-a-lifes-a-life-no-matter-what-it-is/",
+      "published_at": "2026-08-27T15:30:41.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/credit-the-revived-otter-supplied-to-CTV.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 691
+      }
+    },
+    {
+      "id": "s_1ps08os",
+      "headline": "Women farmers in Sumatra find a gentler way to keep elephants at bay",
+      "summary": "On the island of Sumatra, Indonesia, in the buffer zone of a national park, a women-led farming group has come up with a solution to reduce encounters with elephants. Deforestation and oil palm encroachment have…",
+      "category": "planet",
+      "country": {
+        "code": "ID",
+        "name": "Indonesia",
+        "flag": "🇮🇩"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/09/women-farmers-in-sumatra-find-a-gentler-way-to-keep-elephants-at-bay/",
+      "published_at": "2026-09-03T05:31:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/03053019/Foto-3-Rahmi-Carolina.jpeg",
+        "alt": null,
+        "w": 900,
+        "h": 596
+      }
+    },
+    {
+      "id": "s_mne9p",
+      "headline": "Ancient “living fossils” may reveal how complex life began",
+      "summary": "A newly discovered microbe living inside ancient stromatolite communities may offer a rare look at how complex life first emerged. Researchers captured the first direct images of an Asgard archaeon physically connected…",
+      "category": "people",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260902234514.htm",
+      "published_at": "2026-09-03T13:11:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/stromatolites-in-hamelin-pool-in-shark-bay-western-australia.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_zdzshs",
+      "headline": "1,800 Volunteers Pull a 400-Ton Japanese Castle Keep Back Toward Its Original Location After a Decade of Restoration Work",
+      "summary": "The chance to help move the castle keep drew thousands of applications from Japan and abroad. Groups of lottery winners took turns tugging on thick ropes attached to the massive structure",
+      "category": "culture",
+      "country": {
+        "code": "JP",
+        "name": "Japan",
+        "flag": "🇯🇵"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/1800-people-pull-a-400-ton-japanese-castle-keep-back-toward-its-original-location-after-a-decade-of-restoration-work-180989401/",
+      "published_at": "2026-08-27T19:43:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/AuikrH1d9X4i7EngBoHmkgG7nSM=/fit-in/1600x0/filters:focal(512x375:513x376)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d1/1d/d11d695b-6b16-4e97-9805-9e6bc1dc046d/hirosaki-castle_aomori_with_sakura_blossoms.jpg",
+        "alt": "Hundreds of people pulled the keep of Hirosaki Castle closer to its original position.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1khsify",
+      "headline": "1.4-million-year-old footprints reveal a surprisingly large human relative",
+      "summary": "Ancient footprints in Kenya reveal that eight Paranthropus boisei may have traveled together 1.4 million years ago, with some individuals reaching surprisingly large, human-like body sizes. The tracks offer a rare…",
+      "category": "science",
+      "country": {
+        "code": "KE",
+        "name": "Kenya",
+        "flag": "🇰🇪"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260829035221.htm",
+      "published_at": "2026-08-30T15:17:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/ancient-kenya-footprint.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1p22iuq",
+      "headline": "Pakistan Combines River Dolphin Sanctuaries Along the Indus River, Protecting 250 Miles of Habitat",
+      "summary": "Pakistan has created a wildlife sanctuary along 123 miles of the Indus River where it’s estimated 440 of these extraordinary freshwater cetaceans live. The endangered Indus River Dolphin has seen large declines in the…",
+      "category": "animals",
+      "country": {
+        "code": "PK",
+        "name": "Pakistan",
+        "flag": "🇵🇰"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/pakistan-combines-river-dolphin-sanctuaries-along-the-indus-river-protecting-250-miles-of-habitat/",
+      "published_at": "2026-08-27T13:00:54.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/%C2%A9-WWF-Pakistan-editorial-use-only.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 700
+      }
+    },
+    {
+      "id": "s_1jwlykg",
+      "headline": "Australia’s red soil may be hiding a massive clean energy source",
+      "summary": "Researchers have discovered that Western Australia’s iron-rich rocks can naturally generate hydrogen and that the process may be boosted to produce much larger amounts. If it can be scaled up, the vast formations…",
+      "category": "planet",
+      "country": {
+        "code": "AU",
+        "name": "Australia",
+        "flag": "🇦🇺"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260829035214.htm",
+      "published_at": "2026-08-29T10:05:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/iron-ore-western-australia-red-soil.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1mosx4h",
+      "headline": "Newly discovered 1666 manuscript may trace four-lens telescope experiments to Galileo",
+      "summary": "A potentially history-altering finding by a University of Limerick researcher may provide the most detailed technical analysis of a telescope demonstrably made by the famous astronomer and scientist Galileo Galilei.",
+      "category": "culture",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-newly-manuscript-lens-telescope-galileo.html",
+      "published_at": "2026-09-03T19:20:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/university-of-limerick-2.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_15b2da4",
+      "headline": "Permafrost melt could cost $261 billion in infrastructure damages, study suggests",
+      "summary": "A new study provides insight into the economic impact of melting permafrost on Arctic communities. Permafrost is ground that permanently remains below freezing for at least two consecutive years. Permafrost covers about…",
+      "category": "science",
+      "country": {
+        "code": "CA",
+        "name": "Canada",
+        "flag": "🇨🇦"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-permafrost-billion-infrastructure.html",
+      "published_at": "2026-09-03T18:20:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2024/permafrost.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_kwm664",
+      "headline": "Former Poachers Are Protecting One of Nigeria’s Last Rainforests",
+      "summary": "Sunday Abiodun can often tell an animal is nearby before he sees it — from a broken twig or the way birds suddenly stop singing. For 15 years, he used those instincts to hunt wildlife to feed his family or to sell as…",
+      "category": "animals",
+      "country": {
+        "code": "NG",
+        "name": "Nigeria",
+        "flag": "🇳🇬"
+      },
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/former-poachers-protecting-forest-nigeria/",
+      "published_at": "2026-09-03T08:00:52.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/shutterstock_1449363119-scaled.jpg",
+        "alt": null,
+        "w": 1800,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_16n2ddk",
+      "headline": "Corals Reveal El Niño Events Have Become Stronger in Recent Decades, Probably Because Humans Have Been Heating Up the Planet",
+      "summary": "Researchers used elements trapped within Galápagos corals to understand natural swings in the climate over the past millennium. They hint that variability has gone up over the past 40 years compared to preindustrial…",
+      "category": "planet",
+      "country": {
+        "code": "EC",
+        "name": "Ecuador",
+        "flag": "🇪🇨"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/corals-reveal-el-nino-events-have-become-stronger-in-recent-decades-probably-because-humans-have-been-heating-up-the-planet-180989432/",
+      "published_at": "2026-09-02T14:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/VPuQv9e_MO74rsQcjDiNdTIWo5g=/fit-in/1600x0/filters:focal(1000x876:1001x877)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/95/51/9551ee70-228c-4dbe-9da9-47fdec6f5069/coral-underwater-sample.jpg",
+        "alt": "The researchers have collected thousands of coral samples since 2006.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_liub7h",
+      "headline": "Scientists Recreated the Long-Lost Chirps of Jurassic Insects. Listen to the Simulated Soundscape of 165 Million Years Ago",
+      "summary": "With artificial intelligence and careful modeling of fossilized wings, researchers reproduced how some extinct, katydid-like insects might have made noise",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/scientists-recreated-the-long-lost-chirps-of-jurassic-insects-listen-to-the-simulated-soundscape-of-165-million-years-ago-180989445/",
+      "published_at": "2026-09-03T20:08:40.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_88mdzh",
+      "headline": "Dogs Provide Security and Comfort at Busy Train Station in ‘British First’",
+      "summary": "London’s Waterloo station has become the first major train hub in Britain to employ dogs on regular patrols. Canine caretakers Riley, Buster and Flo are providing “additional reassurance” to passengers as part of a…",
+      "category": "science",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/dogs-provide-security-and-comfort-at-busy-train-station-in-british-first/",
+      "published_at": "2026-08-29T11:00:45.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Dogs-patrol-train-station-SWNS.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1rno2e3",
+      "headline": "Rising species numbers on Europe's mountaintops may mask increasing losses of high-elevation plant specialists",
+      "summary": "Decades of warming have relaxed cold-temperature constraints on mountain plant distribution and increased species numbers on mountaintops. An international research team led by scientists from the University of Vienna…",
+      "category": "animals",
+      "country": {
+        "code": "AT",
+        "name": "Austria",
+        "flag": "🇦🇹"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-species-europe-mountaintops-mask-losses.html",
+      "published_at": "2026-09-03T18:00:24.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/rising-plant-extinctio.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_sgt6rs",
+      "headline": "A majority of Americans don’t actually fit either climate camp",
+      "summary": "An analysis of 20 years of polling data shows how age, education and income—in addition to political affiliation—shape views on climate policy",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/a-majority-of-americans-dont-actually-fit-either-climate-camp/?utm_source=rss&utm_medium=rss&utm_campaign=yes-republicans-and-democrats-have-different-views-on-climate-change-but-that-isnt-the-whole-story",
+      "published_at": "2026-08-04T13:00:22.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/unnamed-1.gif",
+        "alt": "A majority of Americans don&#039;t actually fit either climate camp",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_nv9x88",
+      "headline": "Traces of nearly 4 million coins reveal how Rome achieved economic integration",
+      "summary": "For centuries, the study of ancient history relied primarily on interpreting classical texts and examining inscriptions and archaeological remains at their sites of origin or in museums. In recent years, however, a…",
+      "category": "science",
+      "country": {
+        "code": "IT",
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-million-coins-reveal-rome-economic.html",
+      "published_at": "2026-09-03T21:10:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/traces-of-nearly-four.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_u9qjz3",
+      "headline": "This Ancient Insect Had 24 Legs—and Could Help Explain How the Ancestors of Modern-Day Bugs Took Over the Land",
+      "summary": "A previously undescribed critter that lived 324 million years ago appears to have been a transitional species that lived between land and sea. It could help researchers fill an 80-million-year gap in the fossil record…",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/this-ancient-insect-had-24-legs-and-could-help-explain-how-the-ancestors-of-modern-day-bugs-took-over-the-land-180989420/",
+      "published_at": "2026-09-01T14:00:00.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_anx1w3",
+      "headline": "Obeying the speed limit would save 57,000 tons of carbon a day. It would cost you 54 seconds.",
+      "summary": "A study of more than 120 million trips finds that Americans' rush to save time on the road comes at an outsize environmental cost.",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/07/obeying-the-speed-limit-would-save-57000-tons-of-carbon-a-day-it-would-cost-you-54-seconds/?utm_source=rss&utm_medium=rss&utm_campaign=heres-how-everyday-drivers-can-cut-tons-of-carbon-emissions-in-under-a-minute",
+      "published_at": "2026-07-21T13:00:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/07/unnamed-29.jpg",
+        "alt": "Obeying the speed limit would save 57,000 tons of carbon a day. It would cost you 54 seconds.",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_1822nwa",
+      "headline": "Too much coffee may weaken bones, study finds",
+      "summary": "Following nearly 10,000 older women for 10 years, researchers found that tea drinking was associated with slightly higher hip bone density. Moderate coffee consumption did not appear harmful, but drinking more than five…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260901070550.htm",
+      "published_at": "2026-09-02T06:04:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/osteoporosis-stages-hip-bone-strength.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_avksuq",
+      "headline": "Ancient buffalo DNA lays out a roadmap to rehabilitating healthy herds",
+      "summary": "Genetic analysis of bison dating back 20,000 years shows how the 19th-century slaughter reshaped the species—and how today's herds could recover.",
+      "category": "animals",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds/?utm_source=rss&utm_medium=rss&utm_campaign=ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds",
+      "published_at": "2026-08-19T16:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/Bison-in-snowstorm.jpg",
+        "alt": "Ancient buffalo DNA lays out a roadmap to rehabilitating healthy herds",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_16d5rva",
+      "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+      "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+      "published_at": "2026-08-25T13:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/unnamed-34.jpg",
+        "alt": "Urban heat&#039;s overlooked fix: Greening the land upwind of cities",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_760rra",
+      "headline": "Rocky planets may have formed just 100 million years after the Big Bang",
+      "summary": "Rocky planets may have been able to start forming just 100 million years after the Big Bang, thanks to enormous early supernovae that scattered planet-building elements across space. Simulations found enough solid…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260828082345.htm",
+      "published_at": "2026-08-31T05:00:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/rocky-exoplanet-in-space.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1rxgb0f",
+      "headline": "Beetle larvae trick bees into feeding and sheltering them by smelling like flowers, study finds",
+      "summary": "European Black oil beetle larva lures unsuspecting bees by manufacturing smells that mimic floral scents, new research suggests. The larva then hitches a ride on the bee to its burrow, where it eats the bee’s eggs and…",
+      "category": "animals",
+      "country": null,
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/09/beetle-larvae-trick-bees-into-feeding-and-sheltering-them-by-smelling-like-flowers-study-finds/",
+      "published_at": "2026-09-03T05:08:56.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/03050610/Meloe_proscarabaeus_larvae_Danny_Kessler-scaled.jpeg",
+        "alt": null,
+        "w": 2560,
+        "h": 1920
+      }
+    },
+    {
+      "id": "s_1cpyicv",
+      "headline": "Forests Didn't Fare Well During an Ancient Global Warming Event, Offering a 'Cautionary' Tale About Today's Climate Change",
+      "summary": "An intense global warming event 56 million years ago caused a forest in modern-day Wyoming to lose around 60 percent of its canopy cover, and it took more than 100,000 years to bounce back, a study suggests",
+      "category": "planet",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/forests-didnt-fare-well-during-an-ancient-global-warming-event-offering-a-cautionary-tale-about-todays-climate-change-180989353/",
+      "published_at": "2026-08-28T18:43:58.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/c2U8qw2TBf2w1zN-ZNID-5iB-Wk=/fit-in/1600x0/filters:focal(350x263:351x264)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f9/a1/f9a1f6a6-893d-43dc-a48a-6386c8defe01/low-res_example_of_carbonaceous_shale_img_6878.jpg",
+        "alt": "Scientists reconstructed the ancient forest canopy using fragments of fossilized leaves.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_xfumwf",
+      "headline": "'Power of disorder' tames CF₄, a semiconductor greenhouse gas that can persist for 50,000 years",
+      "summary": "Among the gases used in semiconductor manufacturing, tetrafluoromethane (CF₄) is a greenhouse gas more than 6,000 times as potent as carbon dioxide.",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-power-disorder-cf-semiconductor-greenhouse.html",
+      "published_at": "2026-09-03T20:30:01.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_k6vde",
+      "headline": "Meet the Newly Discovered Fuzzy Fish Species Named After Mr. Snuffleupagus From 'Sesame Street'",
+      "summary": "The ghost pipefish's scruffy appearance probably helps it look like floating algae, allowing it to blend in with its environment. Researchers had been on the hunt for this strange creature for years after first spotting…",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/meet-the-newly-discovered-fuzzy-fish-species-named-after-mr-snuffleupagus-from-sesame-street-180988774/",
+      "published_at": "2026-08-31T14:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/Klc2Cl46wXJuQ1W1KsM1X3G8TSk=/fit-in/1600x0/filters:focal(1009x634:1010x635)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3b/f9/3bf963ae-c158-4aa5-bf52-4165a34fdef3/hairy-new-fish-species-1.jpg",
+        "alt": "A photo of&amp;nbsp;Solenostomus snuffleupagus taken in 2003",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_q79lrz",
+      "headline": "Scientists turned coffee grounds into biochar fuel in 90 seconds",
+      "summary": "A plasma pyrolysis breakthrough turns soggy spent grounds into coal-grade biochar without pre-drying—opening the door to distributed waste-to-energy systems",
+      "category": "science",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/07/scientists-turned-coffee-grounds-into-fuel-in-90-seconds/?utm_source=rss&utm_medium=rss&utm_campaign=scientists-turned-coffee-grounds-into-fuel-in-90-seconds",
+      "published_at": "2026-07-16T12:00:45.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/07/espresso-flame.jpg",
+        "alt": "Scientists turned coffee grounds into biochar fuel in 90 seconds",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_89zvp",
+      "headline": "Meet the Bioloon: the biodegradable balloon aiming for shelves by 2028",
+      "summary": "Balloons have always been made from natural latex, a material derived from rubber tree sap. Natural latex is biodegradable. The rubber tree has been producing it since before the first balloon was invented in 1824. On…",
+      "category": "animals",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/09/meet-the-bioloon-the-biodegradable-balloon-aiming-for-shelves-by-2028/",
+      "published_at": "2026-09-01T00:00:40.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_400318604_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1333
+      }
+    },
+    {
+      "id": "s_18hyyba",
+      "headline": "Scientists find a human-only gene that may help explain our brainpower",
+      "summary": "Scientists discovered that human microglia, immune cells that help shape developing brain circuits, can take four to eight years to mature instead of just weeks as they do in mice. The unusually slow process may help…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260831015141.htm",
+      "published_at": "2026-09-01T03:54:40.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/genetic-neuroscience-human-brain-dna-mutation.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_jicgze",
+      "headline": "'Green thumb' molecule helps leaf stalks grow in crowded conditions",
+      "summary": "Potassium (K) is one of the three essential nutrients for plants. It plays a critical role in a wide range of processes, including cell growth, photosynthesis and regulation of water balance. Plants take up K from the…",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-green-thumb-molecule-leaf-stalks.html",
+      "published_at": "2026-09-03T21:00:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/researchers-identify-g-4.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1ox2yya",
+      "headline": "Metabolic networks provide clues about the earliest stages of enzyme evolution",
+      "summary": "The enzymes found in modern organisms are complex proteins, often with multiple folded substructures and specialized catalytic sites. Proteins are encoded by genes. Tracing the history of enzymes across all living…",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-metabolic-networks-clues-earliest-stages.html",
+      "published_at": "2026-09-03T17:40:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/metabolic-networks-pro-1.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_dq9zni",
+      "headline": "Scientists just overturned a century-old physics assumption",
+      "summary": "Scientists at Carnegie Mellon University have discovered an unexpected form of the Hall effect, overturning the long-held assumption that this electrical response only appears when a magnetic field points perpendicular…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260901010659.htm",
+      "published_at": "2026-09-03T12:17:16.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/carnegie-mellon-hall-effect-device.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_uwkhbq",
+      "headline": "Stones From One of Henry VIII's Fortresses Spent More Than a Century Hidden in Plain Sight. New Research Suggests the Victorians Repurposed Them as Building Materials",
+      "summary": "Recently discovered archival records indicate that workers constructing an extension of the Constable's Gate at Dover Castle in the late 19th century reused fragments of the Tudor-era Sandown Castle",
+      "category": "science",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/stones-from-one-of-henry-viiis-fortresses-spent-more-than-a-century-hidden-in-plain-sight-new-research-suggests-the-victorians-repurposed-them-as-building-materials-180989427/",
+      "published_at": "2026-09-01T12:52:03.000Z",
+      "read_minutes": 2,
+      "image": null
+    }
+  ]
+}
