@@ -132,6 +132,18 @@
     "score": 6
   },
   {
+    "id": "s_io2093",
+    "headline": "GLP-1 Weight-Loss Drugs Can Slow Aging and Extend Life Span, Mouse Study Suggests",
+    "summary": "Older female mice—equivalent in age to 60-year-old women—given daily injections of the active ingredient in Ozempic lived about 12 percent longer than animals that didn't receive the drug",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/GLP-1-weight-loss-drugs-can-slow-aging-and-extend-lifespan-mouse-study-suggests-180989452/",
+    "published_at": "2026-09-04T15:16:21.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_1wyc2o",
     "headline": "Manhattan-sized ice island breaks off Greenland’s Petermann Glacier",
     "summary": "A Manhattan-sized ice island has broken away from Greenland’s Petermann Glacier after years of growing fractures weakened its floating ice tongue. Scientists expect two more huge sections could soon detach, potentially…",
@@ -382,6 +394,42 @@
     "published_at": "2026-06-22T13:51:06.000Z",
     "read_minutes": 2,
     "score": 5
+  },
+  {
+    "id": "s_yi0i02",
+    "headline": "12 Golden Puppies in One Litter Reunite With Mom On First Birthday: ‘It turned into a real extended family’",
+    "summary": "A litter of 12 unexpected puppies were reunited with their golden mom and dad to celebrate their first birthday as a family. The humans, crucial to this dog family, were also there, reminiscing about when sister Rhian…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/12-golden-puppies-in-one-litter-reunite-with-mom-on-first-birthday/",
+    "published_at": "2026-09-05T18:13:19.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_5pf0ag",
+    "headline": "Students with lower grades earn degrees more often when they belong to an academic major's majority group",
+    "summary": "Despite efforts to encourage broader participation, women earn about 25% of undergraduate engineering degrees and 18% of undergraduate computer science degrees—and men remain a small minority among people earning…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-students-grades-degrees-academic-major.html",
+    "published_at": "2026-09-04T19:20:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1tpkl08",
+    "headline": "Betelgeuse's atmosphere is becoming spotty and asymmetric—and a nearby companion could be shaping the pattern",
+    "summary": "For the first time since its dramatic dimming in 2020, a team of astronomers has observed the inner atmosphere of Betelgeuse using the Atacama Large Millimeter Array (ALMA). Led by Bill Dent at the University of…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-betelgeuse-atmosphere-spotty-asymmetric-nearby.html",
+    "published_at": "2026-09-04T16:20:03.000Z",
+    "read_minutes": 2,
+    "score": 4
   },
   {
     "id": "s_sl6t19",
@@ -1146,6 +1194,42 @@
     "published_at": "2026-08-17T19:41:46.000Z",
     "read_minutes": 2,
     "score": 4
+  },
+  {
+    "id": "s_p35kt3",
+    "headline": "Scientists reveal the hidden instructions that build the human brain",
+    "summary": "UCLA researchers have discovered two powerful influences that help guide how the human brain forms before birth. Radial glia, stem cells responsible for producing much of the cerebral cortex, change their behavior…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260904000308.htm",
+    "published_at": "2026-09-04T06:04:06.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_dq9zni",
+    "headline": "Scientists just overturned a century-old physics assumption",
+    "summary": "Scientists at Carnegie Mellon University have discovered an unexpected form of the Hall effect, overturning the long-held assumption that this electrical response only appears when a magnetic field points perpendicular…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260901010659.htm",
+    "published_at": "2026-09-03T12:17:16.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_uwkhbq",
+    "headline": "Stones From One of Henry VIII's Fortresses Spent More Than a Century Hidden in Plain Sight. New Research Suggests the Victorians Repurposed Them as Building Materials",
+    "summary": "Recently discovered archival records indicate that workers constructing an extension of the Constable's Gate at Dover Castle in the late 19th century reused fragments of the Tudor-era Sandown Castle",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/stones-from-one-of-henry-viiis-fortresses-spent-more-than-a-century-hidden-in-plain-sight-new-research-suggests-the-victorians-repurposed-them-as-building-materials-180989427/",
+    "published_at": "2026-09-01T12:52:03.000Z",
+    "read_minutes": 2,
+    "score": 3
   },
   {
     "id": "s_ihhhln",
@@ -5210,37 +5294,5 @@
     "published_at": "2026-06-25T14:00:00.000Z",
     "read_minutes": 2,
     "score": 0
-  },
-  {
-    "id": "s_1lqo4p5",
-    "headline": "What We’re Reading: Should Short Flights Be Banned?",
-    "summary": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here. On track Do you really need…",
-    "category": "communities",
-    "country": {
-      "code": "FR",
-      "name": "France",
-      "flag": "🇫🇷"
-    },
-    "source": "Reasons to be Cheerful",
-    "url": "https://reasonstobecheerful.world/what-were-reading-trains-over-planes/",
-    "published_at": "2026-08-19T08:00:44.000Z",
-    "read_minutes": 2,
-    "score": 0
-  },
-  {
-    "id": "s_1psgm0n",
-    "headline": "Did These Ancient Egyptian Princesses Wield Weapons and Train in Martial Arts, Just Like the Men of Their Time?",
-    "summary": "A new analysis of their bones suggests they were buried alongside arrows, maces and daggers because they had repeatedly used those weapons in life",
-    "category": "culture",
-    "country": {
-      "code": "EG",
-      "name": "Egypt",
-      "flag": "🇪🇬"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/did-these-ancient-egyptian-princesses-wield-weapons-and-train-in-martial-arts-just-like-the-men-of-their-time-180989151/",
-    "published_at": "2026-07-20T10:00:00.000Z",
-    "read_minutes": 2,
-    "score": -1
   }
 ]
