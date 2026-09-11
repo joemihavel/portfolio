@@ -1,0 +1,1007 @@
+{
+  "day": "2026-09-11",
+  "generated_at": "2026-09-11T09:56:08.666Z",
+  "count": 53,
+  "fresh_count": 53,
+  "stories": [
+    {
+      "id": "s_u9qjz3",
+      "headline": "This Ancient Insect Had 24 Legs—and Could Help Explain How the Ancestors of Modern-Day Bugs Took Over the Land",
+      "summary": "A previously undescribed critter that lived 324 million years ago appears to have been a transitional species that lived between land and sea. It could help researchers fill an 80-million-year gap in the fossil record…",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/this-ancient-insect-had-24-legs-and-could-help-explain-how-the-ancestors-of-modern-day-bugs-took-over-the-land-180989420/",
+      "published_at": "2026-09-01T14:00:00.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_1irzznf",
+      "headline": "Giant new dinosaur discovered beneath construction site in Brazil",
+      "summary": "Scientists have identified a giant new dinosaur from Brazil that reached about 20 meters long and lived 120 million years ago. Its surprising evolutionary ties to a Spanish dinosaur suggest its ancestors crossed ancient…",
+      "category": "science",
+      "country": {
+        "code": "BR",
+        "name": "Brazil",
+        "flag": "🇧🇷"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260907201603.htm",
+      "published_at": "2026-09-08T12:42:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/new-dinosaur-from-maranhao-state.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_dcl4ky",
+      "headline": "After 30 Years of Estranged Trains, Sweden and Finland Re-Connect Their Railway Lines",
+      "summary": "Early on a Monday morning in early August, a train rumbled across a thawed out Arctic landscape in Finland before screeching to a halt at its final destination at a border crossing with Sweden. It may sound ordinary for…",
+      "category": "tiny",
+      "country": {
+        "code": "FI",
+        "name": "Finland",
+        "flag": "🇫🇮"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/after-30-years-of-estranged-trains-sweden-and-finland-re-connect-their-railway-lines/",
+      "published_at": "2026-09-04T12:10:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Aapo-Riihimaki-Prime-Ministers-Office.jpg",
+        "alt": null,
+        "w": 1314,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1l0ehbq",
+      "headline": "Two wild Przewalski’s horse foals born in Kazakhstan after 200 years",
+      "summary": "Two Przewalski’s horse foals were born in a reintroduction center in the grasslands of central Kazakhstan in late August. They are reportedly the first wild horses born on Kazakh soil in more than 200 years. The first…",
+      "category": "planet",
+      "country": {
+        "code": "KZ",
+        "name": "Kazakhstan",
+        "flag": "🇰🇿"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/09/two-wild-przewalskis-horse-foals-born-in-kazakhstan-after-200-years/",
+      "published_at": "2026-09-09T23:59:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/09235109/Foal-1-and-2-by-A.-Salemgareyev-b162-75db4ce08617-1.jpg",
+        "alt": null,
+        "w": 2500,
+        "h": 1667
+      }
+    },
+    {
+      "id": "s_1encaty",
+      "headline": "3 Million Oysters Eaten by New Yorkers Are Rebuilding the City’s Reefs",
+      "summary": "On Governor’s Island in New York City, a nonprofit is turning wasted oyster shells into new oyster reefs that filter pollutants from the harbor, absorb wave energy, and supply the city’s restaurant industry. Called the…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/3-million-oysters-eaten-by-new-yorkers-are-rebuilding-the-citys-reefs/",
+      "published_at": "2026-09-03T13:00:37.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Billion-Oyster-Project.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 735
+      }
+    },
+    {
+      "id": "s_1qwk18",
+      "headline": "Indian Home Stays Cool Without A/C Through Clever Clay Architecture",
+      "summary": "Every summer it seems there’s a part of the world experiencing record temperatures, so perhaps it’s time for architects to design buildings designed to resist heat as easily as possible. GNN has reported, mostly in…",
+      "category": "achievement",
+      "country": {
+        "code": "IN",
+        "name": "India",
+        "flag": "🇮🇳"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/indian-home-stays-cool-without-a-c-through-clever-clay-architecture/",
+      "published_at": "2026-09-03T19:00:38.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-permission-granted-by-justin_sebastian_photography-.jpg",
+        "alt": null,
+        "w": 1382,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_148nw59",
+      "headline": "Gondwana really was a supercontinent—and it may have helped kickstart life on Earth",
+      "summary": "Some 550 million years ago, Earth looked very different than it does today. The Southern Hemisphere was dominated by an enormous single continent known as Gondwana.",
+      "category": "people",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-gondwana-supercontinent-kickstart-life-earth.html",
+      "published_at": "2026-09-10T18:20:10.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/gondwana-really-was-a-1.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1y80dm6",
+      "headline": "Thieves Broke Into a French Museum and Made Off With Renoir Paintings Worth More Than $2.5 Million",
+      "summary": "Early today, burglars stole four artworks from the Renoir Museum, in the French Riviera, only to drop two of them as they escaped",
+      "category": "culture",
+      "country": {
+        "code": "FR",
+        "name": "France",
+        "flag": "🇫🇷"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/thieves-broke-into-a-french-museum-and-made-off-with-renoir-paintings-worth-more-than-25-million-180989462/",
+      "published_at": "2026-09-08T19:21:19.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/KxsxnWWwgEdQdBa8mQBzs69By_0=/fit-in/1600x0/filters:focal(863x575:864x576)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/25/a0/25a0aa25-6886-4d8d-b4f6-65d28fe4dd09/800781231_1737427244230131_4510547318998373369_n_1.jpeg",
+        "alt": "The Renoir Museum occupies the Impressionist&amp;#39;s final home.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1l50hyy",
+      "headline": "Celebrating 10 years of the Nikon Comedy Wildlife Photography Awards",
+      "summary": "Ten years of Comedy Wildlife Photography is brought to life in a new immersive experience in London this autumn",
+      "category": "animals",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/celebrating-10-years-of-the-nikon-comedy-wildlife-photography-awards/",
+      "published_at": "2026-09-10T07:00:49.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.positive.news/wp-content/uploads/2026/09/Frameless-Nikon-Comedy-Wildlife-Awards-%C2%A9-David-Parry-_-Frameless.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1334
+      }
+    },
+    {
+      "id": "s_11xrz2",
+      "headline": "Devil’s Arrows: Ancient builders hauled 55,000-pound stones 11 miles for Britain’s tallest stone row",
+      "summary": "Britain’s towering Devil’s Arrows were built from 25-tonne stones hauled at least 18 kilometers from Brimham Rocks around 4,000 years ago. The discovery reveals an astonishing feat of prehistoric engineering and…",
+      "category": "science",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260909005152.htm",
+      "published_at": "2026-09-09T07:41:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/devils-arrows-standing-stones.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1lj1y0k",
+      "headline": "Armless Racing Driver Hits 110 mph Steering with His Feet–Aims to Make History at Le Mans",
+      "summary": "Meet the world’s only armless racing driver who uses his feet to steer. 23-year-old Callum Smith was born without arms but has already handled speeds of more than 110 mph on track. Smith just signed his first driver…",
+      "category": "tiny",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/armless-racing-driver-hits-110-mph-steering-with-his-feet-aims-to-make-history-at-le-mans/",
+      "published_at": "2026-09-08T15:30:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Callum-Smith-Britains-only-no-armed-racing-driver-credit-Anita-Maric-SWNS.jpg",
+        "alt": null,
+        "w": 1124,
+        "h": 672
+      }
+    },
+    {
+      "id": "s_wx8n5",
+      "headline": "Antarctica gained a record 695 billion tons of ice. Scientists found the surprising reason",
+      "summary": "East Antarctica gained an astonishing 695 billion tons of ice between 2021 and 2023, temporarily slowing Antarctica’s long-term decline. Researchers found that warming thousands of miles away in the tropical ocean…",
+      "category": "planet",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260906170128.htm",
+      "published_at": "2026-09-06T22:54:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/aerial-view-of-antarctica-ice-coastline.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_cp5t8l",
+      "headline": "NYC schools issue the country’s broadest AI ban, covering pre-K through eighth grade",
+      "summary": "New York City Public Schools, the nation’s largest school district, is banning generative AI for all students in pre-kindergarten through eighth grade for the 2026-2027 school year. More than half a million students are…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/09/nyc-schools-issue-the-countrys-broadest-ai-ban-covering-pre-k-through-eighth-grade/",
+      "published_at": "2026-09-10T00:00:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_9245831_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1030
+      }
+    },
+    {
+      "id": "s_10yh4ht",
+      "headline": "What the record-high cost of diesel means for you",
+      "summary": "Most Americans don't buy diesel, but the soaring costs of trucking and shipping goods have cost the average household $350.",
+      "category": "achievement",
+      "country": null,
+      "source": "Grist",
+      "url": "https://grist.org/economics/what-the-record-high-cost-of-diesel-means-for-you/",
+      "published_at": "2026-09-10T08:45:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://grist.org/wp-content/uploads/2026/09/diesel-fuel-record-high-all-time-price-united-states-iran-war.jpeg",
+        "alt": null,
+        "w": 1600,
+        "h": 900
+      }
+    },
+    {
+      "id": "s_mne9p",
+      "headline": "Ancient “living fossils” may reveal how complex life began",
+      "summary": "A newly discovered microbe living inside ancient stromatolite communities may offer a rare look at how complex life first emerged. Researchers captured the first direct images of an Asgard archaeon physically connected…",
+      "category": "people",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260902234514.htm",
+      "published_at": "2026-09-03T13:11:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/stromatolites-in-hamelin-pool-in-shark-bay-western-australia.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_8fpeu3",
+      "headline": "Girl Scouts of America Announces a First for Its Iconic Cookie Lineup—One Created Exclusively for Dogs",
+      "summary": "For the first time in its 109-year history of cookie sales, the organization offers a custom-made sweet treat for four-legged friends",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/girl-scouts-of-america-announces-a-first-for-its-iconic-cookie-lineup-one-created-exclusively-for-dogs-180989479/",
+      "published_at": "2026-09-10T19:28:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/tANp2ozJNTMKTAVfVROOrWqXamE=/fit-in/1600x0/filters:focal(4020x2680:4021x2681)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0d/77/0d779495-70e9-49db-8e7f-02d9067239e2/26_cookie_5773_1.jpg",
+        "alt": "For the first time in more than a century of cookie sales, Girl Scouts of the USA has launched a dedicated dog treat.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_kwm664",
+      "headline": "Former Poachers Are Protecting One of Nigeria’s Last Rainforests",
+      "summary": "Sunday Abiodun can often tell an animal is nearby before he sees it — from a broken twig or the way birds suddenly stop singing. For 15 years, he used those instincts to hunt wildlife to feed his family or to sell as…",
+      "category": "animals",
+      "country": {
+        "code": "NG",
+        "name": "Nigeria",
+        "flag": "🇳🇬"
+      },
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/former-poachers-protecting-forest-nigeria/",
+      "published_at": "2026-09-03T08:00:52.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/shutterstock_1449363119-scaled.jpg",
+        "alt": null,
+        "w": 1800,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_wkunr6",
+      "headline": "Yard Work Reveals Largest Trove of Viking Silver Ever Discovered in Denmark",
+      "summary": "When a man in Denmark broke ground in his backyard on home improvement work, it was a new terrace that he was looking forward to seeing at the end of the sweaty job. Yet merely half an hour had passed when he realized…",
+      "category": "science",
+      "country": {
+        "code": "DK",
+        "name": "Denmark",
+        "flag": "🇩🇰"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/yard-work-reveals-largest-trove-of-viking-silver-ever-discovered-in-denmark/",
+      "published_at": "2026-09-09T11:30:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-hoard-found-in-Rebild-credit-Noth-Jutland-Museums-released-e1788940442233.jpg",
+        "alt": null,
+        "w": 1125,
+        "h": 632
+      }
+    },
+    {
+      "id": "s_1442zll",
+      "headline": "Firm Buys Texas Coal Plant to Leverage its Grid Connections for New Massive Solar Project",
+      "summary": "Coal power has a huge role still to play in the American energy mix—by turning over its substantial grid infrastructure to renewable energy projects. Energy investment firm Panamint is putting up $1.7 billion to build…",
+      "category": "planet",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/firm-buys-texas-coal-plant-to-leverage-its-grid-connections-for-new-massive-solar-project/",
+      "published_at": "2026-09-07T15:30:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-Twin-Oaks-coal-power-plant-the-site-of-the-upcoming-Big-Rooter-solar-project-credit-Panamint-Capital.jpg",
+        "alt": null,
+        "w": 1333,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_16ez5he",
+      "headline": "Neighbors Get Swept Up in Man’s Viral Journey to Clean a NYC Street Block Every Day for 100 Days",
+      "summary": "In New York City, something magical has happened along the sidewalk in Washington Heights that can best be described in a metaphor. In the East, the lotus is not only a food source, an ornamental, and a religious…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/neighbors-gets-swept-up-in-mans-viral-journey-to-clean-1-nyc-street-block-every-day-for-100-days/",
+      "published_at": "2026-09-04T15:30:31.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-trashtalk_nyc.jpg",
+        "alt": null,
+        "w": 1297,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1irhroz",
+      "headline": "Routine Yard Work Reveals a Trove of Viking Silver—the Largest Treasure of Its Kind Ever Discovered in Denmark",
+      "summary": "The collection includes coins, jewelry, silver bars and a tiny artifact shaped like Thor's hammer. Experts say the roughly 700 items were buried during the tenth century",
+      "category": "culture",
+      "country": {
+        "code": "DK",
+        "name": "Denmark",
+        "flag": "🇩🇰"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/routine-yard-work-reveals-a-trove-of-viking-silver-the-largest-treasure-of-its-kind-ever-discovered-in-denmark-180989456/",
+      "published_at": "2026-09-08T12:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/ZVUTzoNwQk6pCn6s2_uNEKEZDTU=/fit-in/1600x0/filters:focal(975x660:976x661)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/95/43/9543c0d6-d8e6-41b5-acd2-e351ebf3f44a/vikingesoelvskat-rebild-2026-6-2048x1365.jpeg",
+        "alt": "The treasure was found at a home in Rebild, a municipality&amp;nbsp;in northern Denmark.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_dn7qfz",
+      "headline": "Australia’s Second-Smallest Rock-Wallaby Reappears in a Region Where It Had Not Been Seen for 50 Years",
+      "summary": "The endangered nabarlek is not easy to find and difficult to distinguish from similar species. But a research team made new detections of the animals that offer “good news for their long-term survival”",
+      "category": "animals",
+      "country": {
+        "code": "AU",
+        "name": "Australia",
+        "flag": "🇦🇺"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/australias-second-smallest-rock-wallaby-reappears-in-a-region-where-it-had-not-been-seen-for-50-years-180989469/",
+      "published_at": "2026-09-10T18:00:37.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/rT65I2mFn7htjFcY-f_37hTD-6o=/fit-in/1600x0/filters:focal(1856x1237:1857x1238)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/6c/5f/6c5f3401-48da-41c5-8eb0-c7f99032b198/11_nabarlek_on_augustus_island__ian_bool.jpg",
+        "alt": "A nabarlek on Augustus Island, an uninhabited island in Western Australia. This is not one of the newly discovered wallabies.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1iql5ix",
+      "headline": "Ozempic and Wegovy may have an unexpected mental health benefit",
+      "summary": "Semaglutide, the drug behind Ozempic and Wegovy, may have benefits that extend well beyond weight loss and diabetes. In a large Swedish study of nearly 15,000 people with bipolar disorder, its use was linked to a 21%…",
+      "category": "science",
+      "country": {
+        "code": "SE",
+        "name": "Sweden",
+        "flag": "🇸🇪"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260907201601.htm",
+      "published_at": "2026-09-08T12:59:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/hand-holding-glp-1-semaglutide-ozempic-pen-close-up.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1p7a28g",
+      "headline": "Scientists make a seaweed coating that beats the fridge for cutting food waste",
+      "summary": "Canadian researchers found a cheaper, lower-carbon way to keep strawberries fresh, cutting into a $58 billion waste problem.",
+      "category": "planet",
+      "country": {
+        "code": "CA",
+        "name": "Canada",
+        "flag": "🇨🇦"
+      },
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/scientists-make-a-seaweed-coating-that-beats-the-fridge-for-cutting-food-waste/?utm_source=rss&utm_medium=rss&utm_campaign=scientists-make-a-seaweed-coating-that-beats-the-fridge-for-cutting-food-waste",
+      "published_at": "2026-08-14T12:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/unnamed-1.jpg",
+        "alt": "Scientists make a seaweed coating that beats the fridge for cutting food waste",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_9gfrym",
+      "headline": "Court rules residents of a US city don’t have a constitutional right to lead-free water",
+      "summary": "A U.S. federal court recently ruled that residents of Jackson, Mississippi, don’t have a constitutional right to truthful information from public officials, nor the right to municipal drinking water that is free of…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/09/court-rules-residents-of-a-us-city-dont-have-a-constitutional-right-to-lead-free-water/",
+      "published_at": "2026-09-10T20:38:33.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/10203528/51486530327_a02c635dcf_k.jpg",
+        "alt": null,
+        "w": 2048,
+        "h": 1365
+      }
+    },
+    {
+      "id": "s_liub7h",
+      "headline": "Scientists Recreated the Long-Lost Chirps of Jurassic Insects. Listen to the Simulated Soundscape of 165 Million Years Ago",
+      "summary": "With artificial intelligence and careful modeling of fossilized wings, researchers reproduced how some extinct, katydid-like insects might have made noise",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/scientists-recreated-the-long-lost-chirps-of-jurassic-insects-listen-to-the-simulated-soundscape-of-165-million-years-ago-180989445/",
+      "published_at": "2026-09-03T20:08:40.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_1hfj6nd",
+      "headline": "Endangered Salmon Return to California Rivers in Incredible Numbers: ‘Everybody’s just ecstatic’",
+      "summary": "A record 30,000 coho salmon returned to central California rivers last season—up 10x from an average of 3,000 over the last decade—and double the total of last season. Running up the rivers which empty into the…",
+      "category": "animals",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/endangered-salmon-return-to-california-rivers-in-incredible-numbers-everybodys-just-ecstatic/",
+      "published_at": "2026-09-04T18:30:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/An-adult-male-coho-salmon-credit-Christie-Hemm-Klok-Trout-Unlimited.jpg",
+        "alt": null,
+        "w": 1322,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1wc2lvj",
+      "headline": "Scientists discover a bizarre “devil flower” hidden in Thailand",
+      "summary": "Scientists have discovered a strange black “devil flower” in Thailand that lives mostly underground, steals nutrients from fungi, and looks strikingly unlike a typical plant. The newly named Thismia daemona is known…",
+      "category": "science",
+      "country": {
+        "code": "TH",
+        "name": "Thailand",
+        "flag": "🇹🇭"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260903064217.htm",
+      "published_at": "2026-09-04T03:25:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/thismia-daemona.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1nmol8z",
+      "headline": "‘Forgotten fauna’: Little known river sharks and rays face increased extinction risk",
+      "summary": "The Vashishti River, originating in the biodiversity-rich Western Ghats and flowing into the Arabian Sea along India’s western coast, has long supported traditional fishing communities. But in 2023, local fishers…",
+      "category": "planet",
+      "country": {
+        "code": "IN",
+        "name": "India",
+        "flag": "🇮🇳"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/09/forgotten-fauna-little-known-river-sharks-and-rays-face-increased-extinction-risk/",
+      "published_at": "2026-09-10T15:48:31.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/10135017/BANNER-e-Xingu-River-Stingray-031.jpg",
+        "alt": null,
+        "w": 1193,
+        "h": 700
+      }
+    },
+    {
+      "id": "s_tehsf4",
+      "headline": "Huge AI data center project blindsides water-stressed town in Brazil",
+      "summary": "As water wells turn to dust, local leaders learn of the massive facility firsthand from reporters.",
+      "category": "communities",
+      "country": {
+        "code": "BR",
+        "name": "Brazil",
+        "flag": "🇧🇷"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/09/huge-ai-data-center-project-blindsides-water-stressed-town-in-brazil/",
+      "published_at": "2026-09-10T12:00:35.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/08190834/Headerfeat.jpg",
+        "alt": null,
+        "w": 1920,
+        "h": 1152
+      }
+    },
+    {
+      "id": "s_5amnnu",
+      "headline": "A ‘Living Roof’ is Growing Atop Ford’s Largest Factory–Saving Energy and Boosting Birds",
+      "summary": "The year was 1915, and before Henry Ford decided to turn a 2,000 acre stretch of land along the River Rogue into one of America’s largest manufacturing centers, he thought of turning it into a bird sanctuary. In a…",
+      "category": "animals",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/living-roof-grows-atop-fords-largest-factory-saving-energy-and-boosting-biodiversity/",
+      "published_at": "2026-09-09T18:30:45.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Photographed-by-Michelle-Andonian-from-The-Henry-Ford-Collections-e1788942399679.jpg",
+        "alt": null,
+        "w": 1118,
+        "h": 550
+      }
+    },
+    {
+      "id": "s_13nlygs",
+      "headline": "First PLP-dependent enzyme that influences bacterial protein production discovered",
+      "summary": "Researchers from the Singapore-MIT Alliance for Research & Technology's (SMART) Antimicrobial Resistance (AMR) interdisciplinary research group, alongside collaborators from Massachusetts Institute of Technology (MIT)…",
+      "category": "science",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-plp-enzyme-bacterial-protein-production.html",
+      "published_at": "2026-09-10T19:20:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/researchers-discover-f.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_gzldyy",
+      "headline": "Colombia’s Indigenous guardians adapt as pressures mount on the ‘Heart of the World’",
+      "summary": "RIOHACHA, Colombia — Amid the low slopes of a tropical dry forest, families from the Wiwa community of Gomke are building a new home. Their ancestral settlement lies higher on a lush mountain in the town of Dibulla…",
+      "category": "planet",
+      "country": {
+        "code": "CO",
+        "name": "Colombia",
+        "flag": "🇨🇴"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/09/colombias-indigenous-guardians-adapt-as-pressures-mount-on-the-heart-of-the-world/",
+      "published_at": "2026-09-09T07:00:31.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/08210725/0002.jpg",
+        "alt": null,
+        "w": 1500,
+        "h": 1000
+      }
+    },
+    {
+      "id": "s_nax8jj",
+      "headline": "A New York City Exhibition Celebrates Snoopy’s Enduring Influence on Art and Fashion",
+      "summary": "The beloved \"Peanuts\" character’s many costumes and brand collaborations are featured in a new showcase",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-new-york-city-exhibition-celebrates-snoopys-enduring-influence-on-art-and-fashion-180989455/",
+      "published_at": "2026-09-04T21:22:36.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/xOXsyzBm7IHKgvh4lsBWaH3gfSA=/fit-in/1600x0/filters:focal(960x681:961x682)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c9/05/c905a52f-0314-4ce0-993c-206eadb5d2c4/grc-2019-c-00772large.jpg",
+        "alt": "The Silver Snoopy pin, awarded to NASA astronauts and employees for &amp;quot;outstanding achievements related to human flight safety or mission success.&amp;quot;",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_zmxi1c",
+      "headline": "Scientists Recreated Chirps of Jurassic Insects, Simulating a 165 Million-yo Soundscape (Listen)",
+      "summary": "It wasn’t just the roars of the dinosaurs that made up the soundscape of the animal world during the Jurassic period. Crickets and grasshoppers communicated through a variety of songs and high-pitched sounds, some of…",
+      "category": "animals",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/scientists-recreated-chirps-of-jurassic-insects-simulating-a-165-million-yo-soundscape-listen/",
+      "published_at": "2026-09-09T13:00:54.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Jun-Jie-Gu-et-al.-PNAS-2026.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 689
+      }
+    },
+    {
+      "id": "s_io2093",
+      "headline": "GLP-1 Weight-Loss Drugs Can Slow Aging and Extend Life Span, Mouse Study Suggests",
+      "summary": "Older female mice—equivalent in age to 60-year-old women—given daily injections of the active ingredient in Ozempic lived about 12 percent longer than animals that didn't receive the drug",
+      "category": "science",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/GLP-1-weight-loss-drugs-can-slow-aging-and-extend-lifespan-mouse-study-suggests-180989452/",
+      "published_at": "2026-09-04T15:16:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/HWbgpwGnqTOSsUbCg0cQtajEceY=/fit-in/1600x0/filters:focal(3840x2176:3841x2177)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/bc/df/bcdf38b1-5940-4466-8703-d20d1d334481/ozempic.jpg",
+        "alt": "Since calorie restriction is known to slow aging, researchers wanted to know if GLP-1s&amp;mdash;which curb appetite&amp;mdash;could do the same.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1f0lf6f",
+      "headline": "Sickles, sarees and smoke: Women on the frontlines of Uttarakhand forest fires",
+      "summary": "In the village forests of Uttarakhand, in the Himalayan region of northern India, a tree can be charred at its base while maintaining a green canopy at its peak. The distinct separation between burnt and unburnt wood is…",
+      "category": "planet",
+      "country": {
+        "code": "IN",
+        "name": "India",
+        "flag": "🇮🇳"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/09/sickles-sarees-and-smoke-women-on-the-frontlines-of-uttarakhand-forest-fires/",
+      "published_at": "2026-09-08T20:50:59.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/09/08160244/Lila-Devi-1200x800.jpg",
+        "alt": null,
+        "w": 1200,
+        "h": 800
+      }
+    },
+    {
+      "id": "s_ls8tzh",
+      "headline": "Indigenous fisherwoman finds ‘lost’ spinach pipefish, not seen by science in 40 years",
+      "summary": "Founder’s Briefs: An occasional series where Mongabay founder Rhett Ayers Butler shares analysis, perspectives and story summaries. On the final day of a two-week expedition, where researchers were searching for a…",
+      "category": "animals",
+      "country": null,
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/09/indigenous-fisherwoman-finds-lost-spinach-pipefish-not-seen-by-science-in-40-years/",
+      "published_at": "2026-09-10T10:52:31.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/08/24155007/Spinach_Pipefish_iv_%C2%A9_New_Guinea_Binatang_Research_Center_edit.jpg",
+        "alt": null,
+        "w": 2400,
+        "h": 1139
+      }
+    },
+    {
+      "id": "s_10mvyu6",
+      "headline": "Scientists observe Einstein’s gravity in the quantum world for the first time",
+      "summary": "Physicists have directly observed a long-predicted quantum effect of gravity, putting one of Einstein’s foundational ideas to a striking new test. Using ultracold atoms, researchers split an atom’s quantum wave so that…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260907201552.htm",
+      "published_at": "2026-09-08T12:09:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/albert-einstein-quantum-cosmology.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_16n2ddk",
+      "headline": "Corals Reveal El Niño Events Have Become Stronger in Recent Decades, Probably Because Humans Have Been Heating Up the Planet",
+      "summary": "Researchers used elements trapped within Galápagos corals to understand natural swings in the climate over the past millennium. They hint that variability has gone up over the past 40 years compared to preindustrial…",
+      "category": "planet",
+      "country": {
+        "code": "EC",
+        "name": "Ecuador",
+        "flag": "🇪🇨"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/corals-reveal-el-nino-events-have-become-stronger-in-recent-decades-probably-because-humans-have-been-heating-up-the-planet-180989432/",
+      "published_at": "2026-09-02T14:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/VPuQv9e_MO74rsQcjDiNdTIWo5g=/fit-in/1600x0/filters:focal(1000x876:1001x877)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/95/51/9551ee70-228c-4dbe-9da9-47fdec6f5069/coral-underwater-sample.jpg",
+        "alt": "The researchers have collected thousands of coral samples since 2006.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_avksuq",
+      "headline": "Ancient buffalo DNA lays out a roadmap to rehabilitating healthy herds",
+      "summary": "Genetic analysis of bison dating back 20,000 years shows how the 19th-century slaughter reshaped the species—and how today's herds could recover.",
+      "category": "animals",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds/?utm_source=rss&utm_medium=rss&utm_campaign=ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds",
+      "published_at": "2026-08-19T16:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/Bison-in-snowstorm.jpg",
+        "alt": "Ancient buffalo DNA lays out a roadmap to rehabilitating healthy herds",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_qvenhu",
+      "headline": "Popular brain supplement linked to shorter lifespan in men",
+      "summary": "A large study involving more than 270,000 people has linked higher blood levels of the amino acid tyrosine to a shorter lifespan in men. Using both observational data and genetic analysis, researchers found that…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260904000330.htm",
+      "published_at": "2026-09-06T21:21:25.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/man-holding-supplement-capsule.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_ktvx89",
+      "headline": "Teen Discovers Coconut Fungi Can Filter Plastic and Sunscreen From Sea—And Wins Science Fair",
+      "summary": "An East Honolulu high school student discovered a fungi in coconut husks that could clean up plastics and sunscreen from the ocean—and her won multiple awards at the Hawaiʻi State Science & Engineering Fair. Vera Wang…",
+      "category": "planet",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/teen-discovers-coconut-fungi-can-filter-plastic-and-sunscreen-from-sea/",
+      "published_at": "2026-09-06T21:33:34.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Coconut-fungi-experiment-by-Vera-Wang-wins-awards-at-2026-Hawaii-State-Science-and-Engineering-Fair.jpeg",
+        "alt": null,
+        "w": 1300,
+        "h": 698
+      }
+    },
+    {
+      "id": "s_1itetrx",
+      "headline": "Scientists discover a powerful new antivenom hidden in rattlesnake blood",
+      "summary": "Researchers discovered that combinations of toxin-blocking proteins naturally found in rattlesnake blood can powerfully neutralize venom from several dangerous snake species. In lab tests, the mixtures were about 10…",
+      "category": "animals",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260907201605.htm",
+      "published_at": "2026-09-08T13:54:56.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/venomous-red-bush-viper.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_op59a3",
+      "headline": "The neuroscience of motivation: what orexin neurons reveal about staying the course",
+      "summary": "Researchers at Nagoya University identified orexin-producing neurons as the brain’s apparent mechanism for deciding whether a reward is worth pursuing. Published in the Proceedings of the National Academy of Sciences…",
+      "category": "science",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/09/the-neuroscience-of-motivation-what-orexin-neurons-reveal-about-staying-the-course/",
+      "published_at": "2026-09-08T00:00:34.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_77461184_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_sgt6rs",
+      "headline": "A majority of Americans don’t actually fit either climate camp",
+      "summary": "An analysis of 20 years of polling data shows how age, education and income—in addition to political affiliation—shape views on climate policy",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/a-majority-of-americans-dont-actually-fit-either-climate-camp/?utm_source=rss&utm_medium=rss&utm_campaign=yes-republicans-and-democrats-have-different-views-on-climate-change-but-that-isnt-the-whole-story",
+      "published_at": "2026-08-04T13:00:22.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/unnamed-1.gif",
+        "alt": "A majority of Americans don&#039;t actually fit either climate camp",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_153yua4",
+      "headline": "'CRISPR-Combo' system speeds regeneration of hard-to-breed perennial crops",
+      "summary": "Editing a plant's genes is only half the battle. Before a new, improved trait can ever reach a farmer's field, scientists must be able to grow a whole plant from just a few edited cells—a process that can be slow…",
+      "category": "animals",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-09-crispr-combo-regeneration-hard-perennial.html",
+      "published_at": "2026-09-10T21:20:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2020/citrustree.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_p35kt3",
+      "headline": "Scientists reveal the hidden instructions that build the human brain",
+      "summary": "UCLA researchers have discovered two powerful influences that help guide how the human brain forms before birth. Radial glia, stem cells responsible for producing much of the cerebral cortex, change their behavior…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260904000308.htm",
+      "published_at": "2026-09-04T06:04:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/thalamic-and-cortical-organoids.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1bxgket",
+      "headline": "The ‘National Park’ That Stretches From Coast to Coast",
+      "summary": "On Doug Tallamy’s 10-acre property in rural Pennsylvania, the evidence arrives on wings. Wood thrushes now nest in shrubs that were once cut for hay. Luna moths — emerald-green giants that had become increasingly rare …",
+      "category": "planet",
+      "country": null,
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/the-national-park-that-stretches-from-coast-to-coast/",
+      "published_at": "2026-09-10T08:00:08.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/Anonymous_Brooklyn_MI_1765150956-scaled.jpg",
+        "alt": null,
+        "w": 1512,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_19y9zmd",
+      "headline": "The Tip of This Snake's Tail Looks Like a Spider. But Inside, Its Bones Are 'Bizarrely Normal'",
+      "summary": "High-tech scans reveal the first detailed look at the internal anatomy of the spider-tailed horned viper. The findings shed light on little-known snake vertebrae and highlight the difficulty of predicting what an animal…",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/the-tip-of-this-snakes-tail-looks-like-a-spider-but-inside-its-bones-are-bizarrely-normal-180989478/",
+      "published_at": "2026-09-10T16:06:57.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/1ftqT3LA3GCFPuxvgl-8BYUlWmc=/fit-in/1600x0/filters:focal(350x250:351x251)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b1/6a/b16a91bf-2945-4bf1-be26-b0f0039c530a/0274.jpeg",
+        "alt": "Elongated scales form leg-like structures at the tip of the spider-tailed horned viper&amp;#39;s tail, creating a decoy arachnid that the predator can use to attract birds.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_16d5rva",
+      "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+      "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+      "published_at": "2026-08-25T13:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/unnamed-34.jpg",
+        "alt": "Urban heat&#039;s overlooked fix: Greening the land upwind of cities",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_1s1rdtn",
+      "headline": "A simpler path to treating degenerative blindness: photoswitchable eye drops",
+      "summary": "Scientists at the Institute for Bioengineering of Catalonia developed light-activated compounds that restored light perception and visually guided behavior in blind animal models, without gene therapy, implants, or…",
+      "category": "animals",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/09/a-simpler-path-to-treating-degenerative-blindness-photoswitchable-eye-drops/",
+      "published_at": "2026-09-09T00:00:30.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_367466930_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1333
+      }
+    },
+    {
+      "id": "s_1emt03s",
+      "headline": "Beyond the thrift store: where your donations do more good",
+      "summary": "When you’re decluttering, the thrift store is the obvious first move. Drop it off, and it’s done. But a lot of what people donate there sits on a rack for weeks and then gets tossed anyway. Some things do much more good…",
+      "category": "animals",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/09/beyond-the-thrift-store-where-your-donations-do-more-good/",
+      "published_at": "2026-09-09T00:00:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_661658024_L.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1335
+      }
+    }
+  ]
+}
