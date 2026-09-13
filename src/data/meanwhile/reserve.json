@@ -408,18 +408,6 @@
     "score": 5
   },
   {
-    "id": "s_t0t2cs",
-    "headline": "S. Carolina Aquarium Celebrates ‘Baby Boom’ of Critically-Endangered Penguin Chicks",
-    "summary": "5 baby penguins from a species considered Critically-Endangered have hatched at an aquarium down in South Carolina. The 5 join 2 that hatched in May, and together make up a record nesting season for the organization’s…",
-    "category": "animals",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/s-carolina-aquarium-celebrates-baby-boom-of-critically-endangered-penguin-chicks/",
-    "published_at": "2026-09-08T11:30:38.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_yi0i02",
     "headline": "12 Golden Puppies in One Litter Reunite With Mom On First Birthday: ‘It turned into a real extended family’",
     "summary": "A litter of 12 unexpected puppies were reunited with their golden mom and dad to celebrate their first birthday as a family. The humans, crucial to this dog family, were also there, reminiscing about when sister Rhian…",
@@ -428,6 +416,18 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/12-golden-puppies-in-one-litter-reunite-with-mom-on-first-birthday/",
     "published_at": "2026-09-05T18:13:19.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_t0t2cs",
+    "headline": "S. Carolina Aquarium Celebrates ‘Baby Boom’ of Critically-Endangered Penguin Chicks",
+    "summary": "5 baby penguins from a species considered Critically-Endangered have hatched at an aquarium down in South Carolina. The 5 join 2 that hatched in May, and together make up a record nesting season for the organization’s…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/s-carolina-aquarium-celebrates-baby-boom-of-critically-endangered-penguin-chicks/",
+    "published_at": "2026-09-08T11:30:38.000Z",
     "read_minutes": 2,
     "score": 4
   },
