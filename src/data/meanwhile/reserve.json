@@ -408,6 +408,30 @@
     "score": 5
   },
   {
+    "id": "s_19y9zmd",
+    "headline": "The Tip of This Snake's Tail Looks Like a Spider. But Inside, Its Bones Are 'Bizarrely Normal'",
+    "summary": "High-tech scans reveal the first detailed look at the internal anatomy of the spider-tailed horned viper. The findings shed light on little-known snake vertebrae and highlight the difficulty of predicting what an animal…",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-tip-of-this-snakes-tail-looks-like-a-spider-but-inside-its-bones-are-bizarrely-normal-180989478/",
+    "published_at": "2026-09-10T16:06:57.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_liub7h",
+    "headline": "Scientists Recreated the Long-Lost Chirps of Jurassic Insects. Listen to the Simulated Soundscape of 165 Million Years Ago",
+    "summary": "With artificial intelligence and careful modeling of fossilized wings, researchers reproduced how some extinct, katydid-like insects might have made noise",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/scientists-recreated-the-long-lost-chirps-of-jurassic-insects-listen-to-the-simulated-soundscape-of-165-million-years-ago-180989445/",
+    "published_at": "2026-09-03T20:08:40.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_yi0i02",
     "headline": "12 Golden Puppies in One Litter Reunite With Mom On First Birthday: ‘It turned into a real extended family’",
     "summary": "A litter of 12 unexpected puppies were reunited with their golden mom and dad to celebrate their first birthday as a family. The humans, crucial to this dog family, were also there, reminiscing about when sister Rhian…",
@@ -1220,14 +1244,14 @@
     "score": 4
   },
   {
-    "id": "s_op59a3",
-    "headline": "The neuroscience of motivation: what orexin neurons reveal about staying the course",
-    "summary": "Researchers at Nagoya University identified orexin-producing neurons as the brain’s apparent mechanism for deciding whether a reward is worth pursuing. Published in the Proceedings of the National Academy of Sciences…",
+    "id": "s_13qkth2",
+    "headline": "Physicists discover a hidden “curveball” in quantum light",
+    "summary": "Researchers have experimentally demonstrated the optical Magnus effect for the first time, revealing that a tightly focused laser interacts most strongly with an atom slightly away from the beam’s center. The unexpected…",
     "category": "science",
     "country": null,
-    "source": "The Optimist Daily",
-    "url": "https://www.optimistdaily.com/2026/09/the-neuroscience-of-motivation-what-orexin-neurons-reveal-about-staying-the-course/",
-    "published_at": "2026-09-08T00:00:34.000Z",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260912220025.htm",
+    "published_at": "2026-09-13T11:22:01.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1240,6 +1264,30 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260909231729.htm",
     "published_at": "2026-09-11T01:40:57.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_ye5d8r",
+    "headline": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
+    "summary": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
+    "published_at": "2026-09-11T12:00:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_op59a3",
+    "headline": "The neuroscience of motivation: what orexin neurons reveal about staying the course",
+    "summary": "Researchers at Nagoya University identified orexin-producing neurons as the brain’s apparent mechanism for deciding whether a reward is worth pursuing. Published in the Proceedings of the National Academy of Sciences…",
+    "category": "science",
+    "country": null,
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/09/the-neuroscience-of-motivation-what-orexin-neurons-reveal-about-staying-the-course/",
+    "published_at": "2026-09-08T00:00:34.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5238,57 +5286,5 @@
     "published_at": "2026-06-23T21:27:05.000Z",
     "read_minutes": 2,
     "score": 1
-  },
-  {
-    "id": "s_138uzdr",
-    "headline": "These Butterflies Can Live 25 Times Longer Than Their Relatives. They Might Provide Insights Into Healthy Aging in Humans",
-    "summary": "Their unusual diet of pollen—rather than nectar—might partially explain why members of the Heliconius genus live so long, up to nearly a year",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/these-butterflies-can-live-25-times-longer-than-their-relatives-they-might-provide-insights-into-healthy-aging-in-humans-180988993/",
-    "published_at": "2026-06-23T15:47:01.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_y7djrz",
-    "headline": "Scientists Identify Swaths of Coral Reefs That Might Be Able to Withstand Climate Change, Offering New Avenues for Conservation",
-    "summary": "New research has mapped more than 64,000 square miles where the crucial habitat seems to be somewhat protected from the impacts of the warming ocean",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/scientists-identify-swaths-of-coral-reefs-that-might-be-able-to-withstand-climate-change-offering-new-avenues-for-conservation-180988976/",
-    "published_at": "2026-06-22T18:01:22.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_vqoib1",
-    "headline": "Authorities Investigated Reports of an Illegal Excavation in Rome. Then, They Stumbled Upon an Ancient Villa Adorned With Mosaics",
-    "summary": "In the second century C.E., Roman emperors such as Marcus Aurelius and Antoninus Pius frequented the area where the residence was found",
-    "category": "culture",
-    "country": {
-      "code": "IT",
-      "name": "Italy",
-      "flag": "🇮🇹"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/authorities-investigated-reports-of-an-illegal-excavation-in-rome-then-they-stumbled-upon-an-ancient-villa-adorned-with-mosaics-180988995/",
-    "published_at": "2026-06-22T17:58:44.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1bezpzz",
-    "headline": "The market for used EVs ‘is so hot’ right now",
-    "summary": "Used EV sales continued their surge in July, according to the latest data.",
-    "category": "planet",
-    "country": null,
-    "source": "Grist",
-    "url": "https://grist.org/transportation/the-market-for-used-evs-is-so-hot-right-now/",
-    "published_at": "2026-08-17T19:29:33.000Z",
-    "read_minutes": 2,
-    "score": 0
   }
 ]
