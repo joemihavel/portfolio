@@ -408,6 +408,18 @@
     "score": 5
   },
   {
+    "id": "s_z26ow8",
+    "headline": "Weather forecasts are significantly less accurate in poorer countries, analysis finds",
+    "summary": "Weather forecasts inform countless everyday decisions—from farmers deciding when to sow crops and energy companies anticipating demand to public authorities preparing for heat waves. But how useful those forecasts are…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-weather-significantly-accurate-poorer-countries.html",
+    "published_at": "2026-09-15T22:20:07.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_19y9zmd",
     "headline": "The Tip of This Snake's Tail Looks Like a Spider. But Inside, Its Bones Are 'Bizarrely Normal'",
     "summary": "High-tech scans reveal the first detailed look at the internal anatomy of the spider-tailed horned viper. The findings shed light on little-known snake vertebrae and highlight the difficulty of predicting what an animal…",
@@ -1244,6 +1256,18 @@
     "score": 4
   },
   {
+    "id": "s_1fia0db",
+    "headline": "Supermassive black hole winds are 100 times more powerful than scientists thought",
+    "summary": "Astronomers have discovered that winds from a supermassive black hole are about 100 times more powerful than previously thought. XRISM observations showed the resulting turbulence spreading roughly 300,000 light-years…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260914102429.htm",
+    "published_at": "2026-09-15T12:34:32.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_13qkth2",
     "headline": "Physicists discover a hidden “curveball” in quantum light",
     "summary": "Researchers have experimentally demonstrated the optical Magnus effect for the first time, revealing that a tightly focused laser interacts most strongly with an atom slightly away from the beam’s center. The unexpected…",
@@ -1263,7 +1287,43 @@
     "country": null,
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260909231729.htm",
-    "published_at": "2026-09-11T01:40:57.000Z",
+    "published_at": "2026-09-10T03:17:29.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_hw09br",
+    "headline": "High-resolution weather data could pinpoint neighborhoods facing greatest heat stress",
+    "summary": "Heat stress is a leading cause of weather-related deaths and can be especially dangerous in cities, where phenomena like urban heat islands drive temperatures higher than in surrounding rural areas. Now, a new dataset…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-high-resolution-weather-neighborhoods-greatest.html",
+    "published_at": "2026-09-15T23:20:01.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_9imyo9",
+    "headline": "Webb reveals dynamic panorama of star formation, including smallest known brown dwarfs",
+    "summary": "This starry view of the nearby star-forming region IC 348 is one of the largest images released to date from NASA's James Webb Space Telescope. Using Webb, astronomers searched IC 348 for brown dwarfs, which are less…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-webb-reveals-dynamic-panorama-star.html",
+    "published_at": "2026-09-15T21:20:01.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_kyfx7b",
+    "headline": "Disordered atoms steer shared light pulses by matching motion and timing",
+    "summary": "A research team at the Institute of Applied Physics at TU Darmstadt has shown for the first time that atoms that are completely disordered and in constant motion can nevertheless emit jointly directed light…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-disordered-atoms-pulses-motion.html",
+    "published_at": "2026-09-15T21:00:08.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5220,70 +5280,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/why-did-neanderthals-go-extinct-inbreeding-probably-wasnt-to-blame-for-their-demise-in-northwestern-europe-a-study-suggests-180989032/",
     "published_at": "2026-06-30T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_btqpn5",
-    "headline": "The Hall of Raphael Frescoes in the Pope’s Residence at the Vatican Is Getting a Much-Needed Restoration With the Help of Lasers",
-    "summary": "Conservators will spend the next five years cleaning and retouching the Renaissance frescoes, which date back to the early 16th century",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-vaticans-hall-of-raphael-frescoes-in-the-popes-residence-is-getting-a-much-needed-restoration-with-the-help-of-lasers-180989041/",
-    "published_at": "2026-06-30T13:31:51.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_eotiqy",
-    "headline": "Genghis Khan Is Remembered for His Vast Empire and Fearsome Warriors. This Exhibition Explores His Cultural Legacy",
-    "summary": "The Royal Armouries Museum will show nearly 250 rare artifacts—from saddles to early paper money—that reveal a side of the Mongol Empire that's often neglected",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/genghis-khan-is-remembered-for-his-vast-empire-and-fearsome-warriors-this-exhibition-explores-his-cultural-legacy-180989040/",
-    "published_at": "2026-06-29T20:19:27.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_drfji9",
-    "headline": "See the Most Detailed Photo of the Milky Way's Heart Ever Taken in Visible Light, Which Will Help Astronomers Hunt for Exoplanets",
-    "summary": "The European Space Agency’s Euclid telescope was built to study dark matter and dark energy, but for one day last year, it captured the densely packed stars brightening the center of our galaxy",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/see-the-most-detailed-photo-of-the-milky-ways-heart-ever-taken-in-visible-light-which-will-help-astronomers-hunt-for-exoplanets-180989027/",
-    "published_at": "2026-06-26T21:09:42.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_qygm72",
-    "headline": "The ‘Odyssey,’ One of the World’s Oldest Stories, Gets a Modern Spin With A.I.-Generated Audiobook Narration by the Voice Clone of an Oscar Winner",
-    "summary": "Meanwhile, other actors are pushing back against the use of artificial intelligence in creative projects, including through a new “human consent” registry tool",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-odyssey-one-of-the-worlds-oldest-stories-gets-a-modern-spin-with-ai-generated-audiobook-narration-by-the-voice-clone-of-an-oscar-winner-actor-michael-caine-180989006/",
-    "published_at": "2026-06-24T18:56:21.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_fcpo3e",
-    "headline": "A Letter Signed by George Washington That Helped Pave the Way for American Independence Goes on Display in London",
-    "summary": "Washington dictated and signed the letter in October 1781 to formally accept the British surrender at Yorktown, writing of his “ardent desire to spare the further effusion of blood”",
-    "category": "people",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-letter-signed-by-george-washington-that-helped-pave-the-way-for-american-independence-is-going-on-display-in-london-180989004/",
-    "published_at": "2026-06-23T21:27:05.000Z",
     "read_minutes": 2,
     "score": 1
   }
