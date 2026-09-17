@@ -408,14 +408,110 @@
     "score": 5
   },
   {
-    "id": "s_z26ow8",
-    "headline": "Weather forecasts are significantly less accurate in poorer countries, analysis finds",
-    "summary": "Weather forecasts inform countless everyday decisions—from farmers deciding when to sow crops and energy companies anticipating demand to public authorities preparing for heat waves. But how useful those forecasts are…",
+    "id": "s_1vpppk3",
+    "headline": "Chemistry textbooks have been getting this wrong for nearly 100 years",
+    "summary": "A foundational chemistry concept found in textbooks for almost 100 years may have been taught incorrectly. Researchers say the inductive effect in neutral molecules appears to extend only across one chemical bond…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260913082157.htm",
+    "published_at": "2026-09-14T14:13:47.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1nrh0ab",
+    "headline": "Tiny cell “antennas” may help explain why some babies are born with heart defects",
+    "summary": "A newly discovered communication system in the microscopic “antennae” of cells may help explain how some congenital heart defects develop. When genetic mutations disrupt this system, the effects may extend beyond the…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260912220103.htm",
+    "published_at": "2026-09-15T03:20:52.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_b7dwfp",
+    "headline": "Scientists find how “zombie” cells fuel inflammation as we age",
+    "summary": "Scientists discovered that aging cells can use malfunctioning mitochondria to unlock inflammatory genes and keep the immune system stuck in a prolonged state of alert. Blocking one part of this process reduced…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260911214301.htm",
+    "published_at": "2026-09-14T03:48:19.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_l6cm2m",
+    "headline": "Mercury’s surface reveals a surprisingly fiery past",
+    "summary": "Scientists have discovered that Mercury’s surface contains far less silicon dioxide than previously thought, pointing to an unexpectedly hot volcanic past. The finding suggests ancient lava may have originated from…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260911003854.htm",
+    "published_at": "2026-09-12T01:28:22.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_w5so6j",
+    "headline": "NASA spacecraft discovers a huge new crater on the moon",
+    "summary": "Scientists have discovered a crater on the moon that's bigger than the Roman Colosseum and is the result of a powerful impact two years ago that initially went undetected.",
     "category": "science",
     "country": null,
     "source": "Phys.org",
-    "url": "https://phys.org/news/2026-09-weather-significantly-accurate-poorer-countries.html",
-    "published_at": "2026-09-15T22:20:07.000Z",
+    "url": "https://phys.org/news/2026-09-nasa-spacecraft-huge-crater-moon.html",
+    "published_at": "2026-09-17T08:12:32.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1smenmf",
+    "headline": "Iron, sulfur and purple light unlock greener carbon-carbon bond formation",
+    "summary": "Much of organic chemistry, including the type used to create and alter medicinal drugs, relies on modifying carbon bonds. Rice University's Julian West has been developing a less expensive, faster and more…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-iron-sulfur-purple-greener-carbon.html",
+    "published_at": "2026-09-16T21:30:02.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1duv5q1",
+    "headline": "Fungi neutralize spruce defense mechanisms with sugar",
+    "summary": "A research team at the Max Planck Institute for Chemical Ecology discovered a previously unknown strategy by which certain fungi neutralize spruce defense compounds. These fungi are introduced into trees by bark…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-fungi-neutralize-spruce-defense-mechanisms.html",
+    "published_at": "2026-09-16T20:40:02.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_19mfa6p",
+    "headline": "The Ruins of a Long-Lost Medieval Convent Have Been Discovered Just a Few Feet Beneath a Soccer Field",
+    "summary": "St. Clare's Convent closed in the 16th century, and researchers assumed all traces of it had been lost. But a new ground-penetrating radar survey revealed surprisingly intact remains of pillars, rooms, cloisters, a…",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-ruins-of-a-long-lost-medieval-convent-have-been-discovered-just-a-few-feet-beneath-a-soccer-field-180989506/",
+    "published_at": "2026-09-16T11:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_8fpeu3",
+    "headline": "Girl Scouts of America Announces a First for Its Iconic Cookie Lineup—One Created Exclusively for Dogs",
+    "summary": "For the first time in its 109-year history of cookie sales, the organization offers a custom-made sweet treat for four-legged friends",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/girl-scouts-of-america-announces-a-first-for-its-iconic-cookie-lineup-one-created-exclusively-for-dogs-180989479/",
+    "published_at": "2026-09-10T19:28:28.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -428,6 +524,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/the-tip-of-this-snakes-tail-looks-like-a-spider-but-inside-its-bones-are-bizarrely-normal-180989478/",
     "published_at": "2026-09-10T16:06:57.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_z26ow8",
+    "headline": "Weather forecasts are significantly less accurate in poorer countries, analysis finds",
+    "summary": "Weather forecasts inform countless everyday decisions—from farmers deciding when to sow crops and energy companies anticipating demand to public authorities preparing for heat waves. But how useful those forecasts are…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-weather-significantly-accurate-poorer-countries.html",
+    "published_at": "2026-09-15T22:20:07.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1256,6 +1364,30 @@
     "score": 4
   },
   {
+    "id": "s_1s7e2mh",
+    "headline": "8 low-cost hobbies that add hours of joy to your week",
+    "summary": "Image alt text: Hands carefully pressing colorful flowers between the pages of an open book on a wooden table surrounded by dried botanicals and greenery Research has put a number on the value of a good hobby: eight…",
+    "category": "science",
+    "country": null,
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/09/8-low-cost-hobbies-that-add-hours-of-joy-to-your-week/",
+    "published_at": "2026-09-17T00:00:54.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_vs9kg2",
+    "headline": "NASA’s New Horizons spots signs of liquid nitrogen flowing on Pluto",
+    "summary": "Scientists have found the first evidence that liquid may have flowed across Pluto’s surface in the recent past. Dark features on the enormous Sputnik Planitia glacier appear consistent with liquid nitrogen rising…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260916232525.htm",
+    "published_at": "2026-09-17T04:02:29.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_1fia0db",
     "headline": "Supermassive black hole winds are 100 times more powerful than scientists thought",
     "summary": "Astronomers have discovered that winds from a supermassive black hole are about 100 times more powerful than previously thought. XRISM observations showed the resulting turbulence spreading roughly 300,000 light-years…",
@@ -1276,6 +1408,30 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260912220025.htm",
     "published_at": "2026-09-13T11:22:01.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1w5gujv",
+    "headline": "Circular Rydberg atoms set three records, staying stable for 11 milliseconds",
+    "summary": "Rydberg atoms are considered promising building blocks for quantum computers and their precursors, quantum simulators. Researchers at the 5th Institute of Physics of the University of Stuttgart have achieved record…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-circular-rydberg-atoms-staying-stable.html",
+    "published_at": "2026-09-16T19:20:08.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_ye5d8r",
+    "headline": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
+    "summary": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
+    "published_at": "2026-09-11T12:00:00.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1324,18 +1480,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-09-disordered-atoms-pulses-motion.html",
     "published_at": "2026-09-15T21:00:08.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_ye5d8r",
-    "headline": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
-    "summary": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
-    "published_at": "2026-09-11T12:00:00.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5100,186 +5244,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/how-a-hungry-komodo-dragod-led-scientists-to-determine-our-small-hobbit-like-cousins-probably-werent-that-smart-after-all-180989078/",
     "published_at": "2026-07-06T15:31:58.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_3h30qw",
-    "headline": "See Ten Spectacular Images From This Year's Astronomy Photographer of the Year Contest That Capture the Wonders of the Universe",
-    "summary": "The pictures, on the competition's shortlist, reveal the remarkable celestial objects that lie above our heads, both in deep space and closer to home",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/see-ten-spectacular-images-from-this-years-astronomy-photographer-of-the-year-contest-that-capture-the-wonders-of-the-universe-180989065/",
-    "published_at": "2026-07-06T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_ybaxlm",
-    "headline": "An A.I.-Generated Alexander Hamilton Chats About Economics at the Museum of American Finance, Opening This Weekend in Boston",
-    "summary": "The museum, which started in New York and hasn't had a permanent exhibition space in several years, depicts the history and influence of U.S. financial institutions",
-    "category": "culture",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/an-ai-generated-alexander-hamilton-chats-about-economics-at-the-museum-of-american-finance-opening-this-weekend-in-boston-180989071/",
-    "published_at": "2026-07-02T21:28:51.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_lgeglh",
-    "headline": "The Oldest Black Church in the U.S., the Wright Brothers' Home and a New York Hospital Are Among the American Heritage Sites in Urgent Need of Preservation",
-    "summary": "For its “Irreplaceable America” list in honor of the 250th birthday of the United States, the World Monuments Fund chose endangered historic sites of innovation, creativity and spirituality to publicize and support",
-    "category": "communities",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/oldest-black-church-wright-brothers-homes-new-york-hospital-american-heritage-treasures-in-urgent-need-of-preservation-180989058/",
-    "published_at": "2026-07-02T17:54:44.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_gvhga7",
-    "headline": "An Archival Discovery Became a Treasure Map Leading a Diver to a 17th-Century Shipwreck Carrying Coins and Gold Jewelry",
-    "summary": "See artifacts recovered thanks to a clue about the last resting place of a lost captain from an East India Company ship that went down near the Isles of Scilly",
-    "category": "science",
-    "country": {
-      "code": "IN",
-      "name": "India",
-      "flag": "🇮🇳"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/an-archival-discovery-became-a-treasure-map-leading-a-diver-to-a-17th-century-shipwreck-carrying-coins-and-gold-jewelry-180989063/",
-    "published_at": "2026-07-02T17:45:59.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_190l03b",
-    "headline": "'The Greatest Cosmic Movie Ever Made': The World's Largest Digital Camera Begins a Historic, Decade-Long Survey of the Night Sky",
-    "summary": "After a year of testing, the Vera C. Rubin Observatory in Chile has started capturing data as part of the much-anticipated Legacy Survey of Space and Time",
-    "category": "culture",
-    "country": {
-      "code": "CL",
-      "name": "Chile",
-      "flag": "🇨🇱"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-greatest-cosmic-movie-ever-made-the-worlds-largest-digital-camera-begins-a-historic-decade-long-survey-of-the-night-sky-180989059/",
-    "published_at": "2026-07-01T21:21:11.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_g28tnb",
-    "headline": "Vintage ‘READ’ Posters Adorning Libraries and Classrooms for Decades Go on Auction as the American Library Association Turns 150",
-    "summary": "Taylor Swift, Serena Williams and famous fictional characters lent their iconic faces to encourage people to pick up a book",
-    "category": "communities",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/vintage-read-posters-adorning-libraries-and-classrooms-for-decades-go-on-auction-as-the-american-library-association-turns-150-180989057/",
-    "published_at": "2026-07-01T19:30:37.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_bq5wqv",
-    "headline": "As France Prepares to Light Up the Statue of Liberty for America's 250th, Peek Into the History of the Symbol of Trans-Atlantic Friendship",
-    "summary": "Here’s how three French idealists—an abolitionist, a sculptor and the engineer behind the Eiffel Tower—brought the representation of freedom to life",
-    "category": "achievement",
-    "country": {
-      "code": "FR",
-      "name": "France",
-      "flag": "🇫🇷"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/as-france-prepares-to-light-up-the-statue-of-liberty-for-americas-250th-peek-into-the-history-of-the-symbol-of-translatlantic-friendship-180989047/",
-    "published_at": "2026-07-01T15:11:09.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1bg96ll",
-    "headline": "This Ancient Monolith That Archaeologists Unearthed in Mexico May Depict People Receiving ‘Divine Liquid’ in a Ritual",
-    "summary": "The stela was found with a large, decorated platform and remnants of offerings in the state of Veracruz",
-    "category": "culture",
-    "country": {
-      "code": "MX",
-      "name": "Mexico",
-      "flag": "🇲🇽"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/this-ancient-monolith-archaeologists-unearthed-in-mexico-may-depict-people-receiving-divine-liquid-in-a-ritual-180989049/",
-    "published_at": "2026-07-01T14:33:20.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1f1dl1i",
-    "headline": "These Male Fruit Flies Have Sperm That Are Nearly as Long as Their Bodies. Here's How the Cells Don't Become a Tangled Mess",
-    "summary": "Males of the species Drosophila melanogaster pack thousands of almost two-millimeter-long sperm cells into significantly smaller storage organs. A new study reveals how they move in an orderly manner",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/these-male-fruit-flies-have-sperm-that-are-nearly-as-long-as-their-bodies-heres-how-the-cells-dont-become-a-tangled-mess-180989054/",
-    "published_at": "2026-07-01T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1cszgz2",
-    "headline": "Rembrandt Began a Biblical Painting. Another Artist Finished It 'Rather Crudely.' Now, Restorations Have Revealed the Long-Lost Original",
-    "summary": "An art dealer stumbled across \"Let the Little Children Come Unto Me\" at a German auction house in 2014. Experts have now carefully removed layers of overpaint from the forgotten masterpiece",
-    "category": "culture",
-    "country": {
-      "code": "DE",
-      "name": "Germany",
-      "flag": "🇩🇪"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/rembrandt-began-a-biblical-painting-another-artist-finished-it-rather-crudely-now-restorations-have-revealed-the-long-lost-original-180989045/",
-    "published_at": "2026-06-30T19:10:41.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_rh5npf",
-    "headline": "Sold for Just £5,588, This Amber Pendant Turned Out to Be a Rare Tudor-Era Portrait of Elizabeth I. Now, It's Going on Auction for £100,000",
-    "summary": "A master craftsman carved the likeness around 1600, possibly as a commission from the English monarch herself. A parrot on the back of the heart-shaped object symbolizes Elizabeth's status as a \"virgin queen\"",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/sold-for-just-5588-this-amber-pendant-turned-out-to-be-a-rare-tudor-era-portrait-of-elizabeth-i-now-its-going-on-auction-for-100000-180989048/",
-    "published_at": "2026-06-30T17:19:18.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_axxvx8",
-    "headline": "Why Did Neanderthals Go Extinct? Inbreeding Probably Wasn't to Blame for Their Demise in Northwestern Europe, a Study Suggests",
-    "summary": "In contrast to those who resided in Siberia, Neanderthals who lived in what's now Belgium and France shortly before the species vanished seem to have been genetically diverse and healthy",
-    "category": "animals",
-    "country": {
-      "code": "BE",
-      "name": "Belgium",
-      "flag": "🇧🇪"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/why-did-neanderthals-go-extinct-inbreeding-probably-wasnt-to-blame-for-their-demise-in-northwestern-europe-a-study-suggests-180989032/",
-    "published_at": "2026-06-30T14:00:00.000Z",
     "read_minutes": 2,
     "score": 1
   }
