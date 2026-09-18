@@ -408,6 +408,30 @@
     "score": 5
   },
   {
+    "id": "s_1bxgket",
+    "headline": "The ‘National Park’ That Stretches From Coast to Coast",
+    "summary": "On Doug Tallamy’s 10-acre property in rural Pennsylvania, the evidence arrives on wings. Wood thrushes now nest in shrubs that were once cut for hay. Luna moths — emerald-green giants that had become increasingly rare …",
+    "category": "planet",
+    "country": null,
+    "source": "Reasons to be Cheerful",
+    "url": "https://reasonstobecheerful.world/the-national-park-that-stretches-from-coast-to-coast/",
+    "published_at": "2026-09-10T08:00:08.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1rgmobz",
+    "headline": "For the first time, Congolese NGO to manage a DRC protected area",
+    "summary": "For the first time in the modern history of the Democratic Republic of Congo (DRC), a Congolese nongovernmental organization will co-manage a protected area in the country. “It is an honor,” Dominique Bikaba, founder of…",
+    "category": "planet",
+    "country": null,
+    "source": "Mongabay",
+    "url": "https://news.mongabay.com/short-article/2026/09/for-the-first-time-congolese-ngo-to-manage-a-drc-protected-area/",
+    "published_at": "2026-09-16T05:56:14.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1vpppk3",
     "headline": "Chemistry textbooks have been getting this wrong for nearly 100 years",
     "summary": "A foundational chemistry concept found in textbooks for almost 100 years may have been taught incorrectly. Researchers say the inductive effect in neutral molecules appears to extend only across one chemical bond…",
@@ -440,6 +464,78 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260911214301.htm",
     "published_at": "2026-09-14T03:48:19.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_o5j6p3",
+    "headline": "Ubiquitin marks abnormal glycogen for destruction to protect the brain, study finds",
+    "summary": "Researchers at the University of Cambridge and the MRC Laboratory of Molecular Biology have discovered a previously unknown cellular defense system that protects the brain from abnormal glycogen accumulation, which is…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-ubiquitin-abnormal-glycogen-destruction-brain.html",
+    "published_at": "2026-09-17T23:20:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1yj8pw1",
+    "headline": "Disorder is key to tuning a high-temperature superconductor",
+    "summary": "Cornell physicists have discovered that minimizing disorder, not varying electron count, is the key factor for controlling superconductivity in the unique material iron selenide (FeSe), a new insight for understanding…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-disorder-key-tuning-high-temperature.html",
+    "published_at": "2026-09-17T20:40:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1kn857c",
+    "headline": "Vapor-phase synthesis of MXenes could expand their technological applications",
+    "summary": "MXenes are two-dimensional nanomaterials first synthesized at Drexel University in 2011. They have been recognized by the International Union of Pure and Applied Chemistry as an emerging technology with \"true potential…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-vapor-phase-synthesis-mxenes-technological.html",
+    "published_at": "2026-09-17T19:50:02.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_19mfa6p",
+    "headline": "The Ruins of a Long-Lost Medieval Convent Have Been Discovered Just a Few Feet Beneath a Soccer Field",
+    "summary": "St. Clare's Convent closed in the 16th century, and researchers assumed all traces of it had been lost. But a new ground-penetrating radar survey revealed surprisingly intact remains of pillars, rooms, cloisters, a…",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-ruins-of-a-long-lost-medieval-convent-have-been-discovered-just-a-few-feet-beneath-a-soccer-field-180989506/",
+    "published_at": "2026-09-16T11:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_8fpeu3",
+    "headline": "Girl Scouts of America Announces a First for Its Iconic Cookie Lineup—One Created Exclusively for Dogs",
+    "summary": "For the first time in its 109-year history of cookie sales, the organization offers a custom-made sweet treat for four-legged friends",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/girl-scouts-of-america-announces-a-first-for-its-iconic-cookie-lineup-one-created-exclusively-for-dogs-180989479/",
+    "published_at": "2026-09-10T19:28:28.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_19y9zmd",
+    "headline": "The Tip of This Snake's Tail Looks Like a Spider. But Inside, Its Bones Are 'Bizarrely Normal'",
+    "summary": "High-tech scans reveal the first detailed look at the internal anatomy of the spider-tailed horned viper. The findings shed light on little-known snake vertebrae and highlight the difficulty of predicting what an animal…",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-tip-of-this-snakes-tail-looks-like-a-spider-but-inside-its-bones-are-bizarrely-normal-180989478/",
+    "published_at": "2026-09-10T16:06:57.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -488,42 +584,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-09-fungi-neutralize-spruce-defense-mechanisms.html",
     "published_at": "2026-09-16T20:40:02.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_19mfa6p",
-    "headline": "The Ruins of a Long-Lost Medieval Convent Have Been Discovered Just a Few Feet Beneath a Soccer Field",
-    "summary": "St. Clare's Convent closed in the 16th century, and researchers assumed all traces of it had been lost. But a new ground-penetrating radar survey revealed surprisingly intact remains of pillars, rooms, cloisters, a…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-ruins-of-a-long-lost-medieval-convent-have-been-discovered-just-a-few-feet-beneath-a-soccer-field-180989506/",
-    "published_at": "2026-09-16T11:00:00.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_8fpeu3",
-    "headline": "Girl Scouts of America Announces a First for Its Iconic Cookie Lineup—One Created Exclusively for Dogs",
-    "summary": "For the first time in its 109-year history of cookie sales, the organization offers a custom-made sweet treat for four-legged friends",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/girl-scouts-of-america-announces-a-first-for-its-iconic-cookie-lineup-one-created-exclusively-for-dogs-180989479/",
-    "published_at": "2026-09-10T19:28:28.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_19y9zmd",
-    "headline": "The Tip of This Snake's Tail Looks Like a Spider. But Inside, Its Bones Are 'Bizarrely Normal'",
-    "summary": "High-tech scans reveal the first detailed look at the internal anatomy of the spider-tailed horned viper. The findings shed light on little-known snake vertebrae and highlight the difficulty of predicting what an animal…",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-tip-of-this-snakes-tail-looks-like-a-spider-but-inside-its-bones-are-bizarrely-normal-180989478/",
-    "published_at": "2026-09-10T16:06:57.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1366,7 +1426,7 @@
   {
     "id": "s_1s7e2mh",
     "headline": "8 low-cost hobbies that add hours of joy to your week",
-    "summary": "Image alt text: Hands carefully pressing colorful flowers between the pages of an open book on a wooden table surrounded by dried botanicals and greenery Research has put a number on the value of a good hobby: eight…",
+    "summary": "Research has put a number on the value of a good hobby: eight hours. That is how much joy, defined as deep satisfaction, gratification, and accomplishment, studies suggest a person can add to their week by pursuing…",
     "category": "science",
     "country": null,
     "source": "The Optimist Daily",
@@ -1412,14 +1472,26 @@
     "score": 3
   },
   {
-    "id": "s_1w5gujv",
-    "headline": "Circular Rydberg atoms set three records, staying stable for 11 milliseconds",
-    "summary": "Rydberg atoms are considered promising building blocks for quantum computers and their precursors, quantum simulators. Researchers at the 5th Institute of Physics of the University of Stuttgart have achieved record…",
+    "id": "s_17gq8q0",
+    "headline": "Virtual biotech company puts thousands of AI scientist agents to work on drug discovery",
+    "summary": "The latest company to spin out of a Stanford Medicine lab is a biotech undertaking with 37,000 employees—and none of them are human. There's no lab space, no lunch breaks and no payroll. It's an artificial…",
     "category": "science",
     "country": null,
     "source": "Phys.org",
-    "url": "https://phys.org/news/2026-09-circular-rydberg-atoms-staying-stable.html",
-    "published_at": "2026-09-16T19:20:08.000Z",
+    "url": "https://phys.org/news/2026-09-virtual-biotech-company-thousands-ai.html",
+    "published_at": "2026-09-17T18:00:10.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_wpyezg",
+    "headline": "A Rare Marble Sculpture by America’s First Professional Female Sculptor Sat Hidden in Plain Sight for Decades in an English Garden",
+    "summary": "Until its discovery during a house appraisal, the debut bust by Harriet Goodhue Hosmer, a celebrated artist and feminist icon, had been mistaken for an ordinary garden ornament",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
+    "published_at": "2026-09-17T14:30:00.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1432,6 +1504,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
     "published_at": "2026-09-11T12:00:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1w5gujv",
+    "headline": "Circular Rydberg atoms set three records, staying stable for 11 milliseconds",
+    "summary": "Rydberg atoms are considered promising building blocks for quantum computers and their precursors, quantum simulators. Researchers at the 5th Institute of Physics of the University of Stuttgart have achieved record…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-circular-rydberg-atoms-staying-stable.html",
+    "published_at": "2026-09-16T19:20:08.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5152,98 +5236,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/our-ancestors-loved-shell-trinkets-just-like-neanderthals-new-research-suggests-its-a-sign-of-shared-culture-across-species-180989085/",
     "published_at": "2026-07-08T14:26:56.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1e9g471",
-    "headline": "Sperm Whales Living in the Eastern Mediterranean Sea Seem to Have Developed a Distinct Dialect From Those in the West",
-    "summary": "All Mediterranean sperm whales were thought to be part of one cultural group, identifiable by a unique pattern of clicks, or a coda. But sound recordings suggest that eastern creatures use a sped-up version of the…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/sperm-whales-living-in-the-eastern-mediterranean-sea-seem-to-have-developed-a-distinct-dialect-from-those-in-the-west-180989084/",
-    "published_at": "2026-07-08T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_q5djl",
-    "headline": "Strange Spheres Washed Ashore on an Australian Beach. Authorities Say They're Probably 'Space Balls'—Empty Fuel Vessels From a Rocket",
-    "summary": "The shiny objects—each roughly twice the size of a basketball—began to appear on July 3. Authorities initially worried that they were hazardous but have since determined that they're likely safe bits of space junk",
-    "category": "culture",
-    "country": {
-      "code": "AU",
-      "name": "Australia",
-      "flag": "🇦🇺"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/strange-spheres-washed-ashore-on-an-australian-beach-authorities-say-theyre-probably-space-balls-empty-fuel-vessels-from-a-rocket-180989082/",
-    "published_at": "2026-07-07T21:15:14.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1sf1qbx",
-    "headline": "Tall Trees Were Thought to Be More Vulnerable to Drought. But These Towering Plants in Southeast Asia Have Adapted to Move Water Efficiently",
-    "summary": "A new study found that enormous dipterocarp trees have special adaptations to transport water up to their highest limbs, challenging the assumption that they would more easily succumb to dry conditions",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/tall-trees-were-thought-to-be-more-vulnerable-to-drought-but-these-towering-plants-in-southeast-asia-have-adapted-to-move-water-efficiently-180989075/",
-    "published_at": "2026-07-07T19:29:28.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_pl3v5e",
-    "headline": "Cyborg Cockroaches Could Help Find Survivors of Natural Disasters. New Diving Suits Allow the Insects to Expand Their Search Underwater",
-    "summary": "Previously, researchers created electrical implants to control cockroaches' movements for search-and-rescue missions. Now, they've made 3D-printed suits that provide oxygen, allowing the critters to survive submerged…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/cyborg-cockroaches-could-help-find-survivors-of-natural-disasters-new-diving-suits-allow-the-insects-to-expand-their-search-underwater-180989066/",
-    "published_at": "2026-07-07T16:01:10.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_zw0q28",
-    "headline": "These 11 Wildlife Images From the Ocean Conservancy’s Photography Contest Showcase the Wonder of Earth’s Waters",
-    "summary": "Seals, penguins and fish are featured in the nonprofit’s annual competition to inspire care for the world’s oceans",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/these-11-wildlife-images-from-the-ocean-conservancys-photography-contest-showcase-the-wonder-of-earths-waters-180989069/",
-    "published_at": "2026-07-06T22:15:10.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_122rw08",
-    "headline": "See the Space Shuttle 'Endeavour' in a Unique Vertical Display Before Its New Exhibition Launches at the California Science Center",
-    "summary": "This November, visitors to the new Samuel Oschin Air and Space Center in Los Angeles will get to see the \"ready-to-launch\" \"Endeavour\" complete with rocket boosters and a fuel tank",
-    "category": "achievement",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/see-the-space-shuttle-endeavour-in-a-unique-vertical-display-before-its-new-exhibition-launches-at-the-california-science-center-180989073/",
-    "published_at": "2026-07-06T19:21:54.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1eqq271",
-    "headline": "How a Hungry Komodo Dragon Led Scientists to Determine Our Small, Hobbit-Like Cousins Probably Weren't That Smart After All",
-    "summary": "New research indicates \"Homo floresiensis\" probably wasn't hunting big game or using fire on Flores Island, suggesting the small-brained species wasn't quite as \"behaviorally advanced\" as once hypothesized",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/how-a-hungry-komodo-dragod-led-scientists-to-determine-our-small-hobbit-like-cousins-probably-werent-that-smart-after-all-180989078/",
-    "published_at": "2026-07-06T15:31:58.000Z",
     "read_minutes": 2,
     "score": 1
   }
