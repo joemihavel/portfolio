@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_sgt6rs",
+    "headline": "A majority of Americans don’t actually fit either climate camp",
+    "summary": "An analysis of 20 years of polling data shows how age, education and income—in addition to political affiliation—shape views on climate policy",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/08/a-majority-of-americans-dont-actually-fit-either-climate-camp/?utm_source=rss&utm_medium=rss&utm_campaign=yes-republicans-and-democrats-have-different-views-on-climate-change-but-that-isnt-the-whole-story",
+    "published_at": "2026-08-04T13:00:22.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_io2093",
     "headline": "GLP-1 Weight-Loss Drugs Can Slow Aging and Extend Life Span, Mouse Study Suggests",
     "summary": "Older female mice—equivalent in age to 60-year-old women—given daily injections of the active ingredient in Ozempic lived about 12 percent longer than animals that didn't receive the drug",
@@ -200,18 +212,6 @@
     "source": "Anthropocene",
     "url": "https://www.anthropocenemagazine.org/2026/08/ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds/?utm_source=rss&utm_medium=rss&utm_campaign=ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds",
     "published_at": "2026-08-19T16:00:00.000Z",
-    "read_minutes": 2,
-    "score": 5
-  },
-  {
-    "id": "s_sgt6rs",
-    "headline": "A majority of Americans don’t actually fit either climate camp",
-    "summary": "An analysis of 20 years of polling data shows how age, education and income—in addition to political affiliation—shape views on climate policy",
-    "category": "planet",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/08/a-majority-of-americans-dont-actually-fit-either-climate-camp/?utm_source=rss&utm_medium=rss&utm_campaign=yes-republicans-and-democrats-have-different-views-on-climate-change-but-that-isnt-the-whole-story",
-    "published_at": "2026-08-04T13:00:22.000Z",
     "read_minutes": 2,
     "score": 5
   },
@@ -432,6 +432,42 @@
     "score": 4
   },
   {
+    "id": "s_16d5rva",
+    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+    "published_at": "2026-08-25T13:00:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1gsvmht",
+    "headline": "Scientists recreated what mice saw from brain activity alone",
+    "summary": "Scientists reconstructed videos from the brain activity of mice, producing 10-second clips based only on signals from neurons in the visual cortex. The breakthrough could help reveal how the brain reshapes what we see…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260914102449.htm",
+    "published_at": "2026-09-16T12:33:18.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_etpoe8",
+    "headline": "Nearly 10,000 patients reveal what works best for knee arthritis pain relief",
+    "summary": "A major analysis of 139 clinical trials involving nearly 10,000 people suggests that some of the simplest treatments may work best for knee osteoarthritis. Knee braces ranked highest overall for reducing pain…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260913082208.htm",
+    "published_at": "2026-09-15T03:57:43.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1vpppk3",
     "headline": "Chemistry textbooks have been getting this wrong for nearly 100 years",
     "summary": "A foundational chemistry concept found in textbooks for almost 100 years may have been taught incorrectly. Researchers say the inductive effect in neutral molecules appears to extend only across one chemical bond…",
@@ -456,14 +492,26 @@
     "score": 4
   },
   {
-    "id": "s_b7dwfp",
-    "headline": "Scientists find how “zombie” cells fuel inflammation as we age",
-    "summary": "Scientists discovered that aging cells can use malfunctioning mitochondria to unlock inflammatory genes and keep the immune system stuck in a prolonged state of alert. Blocking one part of this process reduced…",
+    "id": "s_1lhgd03",
+    "headline": "Amino acids and a bone mineral may help control magnesium implant breakdown, three student papers suggest",
+    "summary": "Seeing a bachelor's thesis published in a scientific journal is relatively uncommon. For three theses linked to the same research group to result in scientific publications within just three months is downright rare…",
     "category": "science",
     "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260911214301.htm",
-    "published_at": "2026-09-14T03:48:19.000Z",
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-amino-acids-bone-mineral-magnesium.html",
+    "published_at": "2026-09-18T18:40:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_amgdcm",
+    "headline": "From the start, the solar system chose fire over ice to build its first bodies",
+    "summary": "When the solar system first took up the task of building solid bodies—such as planets, moons and protoplanets—it basically had a choice between two ingredients: heat-forged chondrules, which were millimeter-sized bits…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-solar-chose-ice-bodies.html",
+    "published_at": "2026-09-18T15:40:09.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -476,6 +524,18 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-09-ubiquitin-abnormal-glycogen-destruction-brain.html",
     "published_at": "2026-09-17T23:20:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_b7dwfp",
+    "headline": "Scientists find how “zombie” cells fuel inflammation as we age",
+    "summary": "Scientists discovered that aging cells can use malfunctioning mitochondria to unlock inflammatory genes and keep the immune system stuck in a prolonged state of alert. Blocking one part of this process reduced…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260911214301.htm",
+    "published_at": "2026-09-14T03:48:19.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1436,6 +1496,34 @@
     "score": 3
   },
   {
+    "id": "s_4d69pi",
+    "headline": "Elementic’s MO6 is the building material claiming to lock away carbon for thousands of years",
+    "summary": "Lignin is the part of wood that paper mills and timber companies tend to get rid of. It comes off as a byproduct when wood is processed, resists most conventional uses, and usually ends up burned for energy. A Finnish…",
+    "category": "planet",
+    "country": {
+      "code": "FI",
+      "name": "Finland",
+      "flag": "🇫🇮"
+    },
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/09/elementics-mo6-is-the-building-material-claiming-to-lock-away-carbon-for-thousands-of-years/",
+    "published_at": "2026-09-15T00:00:33.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1g2xkcn",
+    "headline": "Scientists are about to test Einstein’s gravity with exotic matter",
+    "summary": "Scientists have found a new way to create a controlled beam of muonium, an exotic atom containing a heavier cousin of the electron. The advance could allow researchers to test for the first time whether gravity acts on…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260918024808.htm",
+    "published_at": "2026-09-18T11:07:25.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_vs9kg2",
     "headline": "NASA’s New Horizons spots signs of liquid nitrogen flowing on Pluto",
     "summary": "Scientists have found the first evidence that liquid may have flowed across Pluto’s surface in the recent past. Dark features on the enormous Sputnik Planitia glacier appear consistent with liquid nitrogen rising…",
@@ -1456,6 +1544,30 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260914102429.htm",
     "published_at": "2026-09-15T12:34:32.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_ypkbsj",
+    "headline": "Centuries Ago, an Architect Characterized the Parthenon’s Curves as a Clever Optical Illusion. Now, a Mathematician Begs to Differ",
+    "summary": "In the first century B.C.E., Vitruvius wrote that the Acropolis’ largest temple was horizontally bowed so that it didn't seem to sag, and that explanation persisted for millennia. New research suggests a different reason",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-an-architect-characterized-the-parthenons-curves-as-a-clever-optical-illusion-now-a-mathematician-begs-to-differ-180989520/",
+    "published_at": "2026-09-18T17:11:29.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_ye5d8r",
+    "headline": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
+    "summary": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
+    "published_at": "2026-09-11T12:00:00.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1492,18 +1604,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
     "published_at": "2026-09-17T14:30:00.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_ye5d8r",
-    "headline": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
-    "summary": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
-    "published_at": "2026-09-11T12:00:00.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5128,114 +5228,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/how-did-two-wolves-end-up-on-this-remote-island-thousands-of-years-ago-researchers-think-humans-brought-them-there-then-cared-for-them-180989110/",
     "published_at": "2026-07-13T10:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_152hhoo",
-    "headline": "Bumblebees Seem to 'Lick Their Lips' After Sweet Treats and Shake Their Heads at Bad Tastes, Hinting at the Insects' Inner Lives",
-    "summary": "Slow-motion videos suggest that the insects display distinct behaviors when they like or dislike a snack. The findings might offer a new way to study their emotion-like states",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/bumblebees-seem-to-lick-their-lips-after-sweet-treats-and-shake-their-heads-at-bad-tastes-hinting-at-the-insects-inner-lives-180989098/",
-    "published_at": "2026-07-10T15:45:42.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_h5pdrx",
-    "headline": "The Culprit Behind South Australia's Deadly Algal Bloom Might Be the Most Toxic Species Ever Tested, Scientists Say",
-    "summary": "Karenia cristata, a rare type of microscopic algae that produces toxins that harm nerve cells, can be lethal at very low concentrations",
-    "category": "animals",
-    "country": {
-      "code": "AU",
-      "name": "Australia",
-      "flag": "🇦🇺"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-culprit-behind-south-australias-deadly-algal-bloom-might-be-the-most-toxic-species-ever-tested-scientists-say-180989100/",
-    "published_at": "2026-07-10T12:46:29.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_korxlm",
-    "headline": "Are Moose Colorado Natives or Introduced Outsiders? New Research Suggests That the Animals Have Lived in the State for Centuries",
-    "summary": "Officials say moose weren't established in the state until they were brought there in the late 1970s. But historical documentation and archaeological evidence indicate that they resided there long before that",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/are-moose-colorado-natives-or-introduced-outsiders-new-research-suggests-that-the-animals-have-lived-in-the-state-for-centuries-180989091/",
-    "published_at": "2026-07-09T20:15:43.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1k6m4z3",
-    "headline": "Country Music Legend Dolly Parton's Autobiographical Musical Exploring Her Journey From East Tennessee Will Hit Broadway This Winter",
-    "summary": "\"Dolly: A True Original Musical\" premiered last year in Nashville in Parton's home state",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/country-music-legend-dolly-partons-autobiographical-musical-exploring-her-journey-from-east-tennessee-will-hit-broadway-this-winter-180989099/",
-    "published_at": "2026-07-09T19:27:59.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_9n99om",
-    "headline": "Kazakhstan's Iron Age 'Golden Man' and Other Elite Scythians of Eurasia Inherited Their High Social Status, Ancient DNA Suggests",
-    "summary": "Researchers have long wondered whether upper-class members of the ancient nomadic warriors earned their social status through individual achievements or birthright",
-    "category": "culture",
-    "country": {
-      "code": "KZ",
-      "name": "Kazakhstan",
-      "flag": "🇰🇿"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/kazakhstans-iron-age-golden-man-and-other-elite-scythians-of-eurasia-inherited-their-high-social-status-ancient-dna-suggests-180989089/",
-    "published_at": "2026-07-09T16:04:08.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_clsndi",
-    "headline": "Smallpox Scabs That British Doctors Used to Inoculate Patients May Have Introduced the Deadly Disease to Australia, New Research Suggests",
-    "summary": "Two new studies find that British colonists arriving via ship in the late 18th century likely introduced smallpox, which devastated Aboriginal communities far more than previously known",
-    "category": "science",
-    "country": {
-      "code": "AU",
-      "name": "Australia",
-      "flag": "🇦🇺"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/smallpox-scabs-that-british-doctors-used-to-inoculate-patients-may-have-introduced-the-deadly-disease-to-australia-new-research-suggests-180989093/",
-    "published_at": "2026-07-09T14:14:36.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_i74fvn",
-    "headline": "'Like an Explosion in a Glass Factory': Frank Gehry's Seven-Ton 'Icehenge' Desk That Once Graced a Skyscraper Lobby Is Up for Auction",
-    "summary": "Designed for the Inland Steel Building in Chicago, the desk is made from more than a dozen blocks of jagged, green-tinted glass",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/like-an-explosion-in-a-glass-factory-frank-gehrys-seven-ton-icehenge-desk-that-once-graced-a-skyscraper-is-up-for-auction-180989087/",
-    "published_at": "2026-07-08T18:23:36.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1jjin66",
-    "headline": "Our Ancestors Loved Shell Trinkets, Just Like Neanderthals. New Research Suggests It's a Sign of Shared Culture Across Species",
-    "summary": "Based on artifacts found in a limestone cave on the Mediterranean coast, scientists think the two species might have shared similar survival strategies, stone tool technologies and symbolic traditions",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/our-ancestors-loved-shell-trinkets-just-like-neanderthals-new-research-suggests-its-a-sign-of-shared-culture-across-species-180989085/",
-    "published_at": "2026-07-08T14:26:56.000Z",
     "read_minutes": 2,
     "score": 1
   }
