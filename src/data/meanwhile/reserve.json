@@ -144,6 +144,30 @@
     "score": 6
   },
   {
+    "id": "s_1fyp1z5",
+    "headline": "NASA’s Roman Space Telescope could last more than twice as long as planned",
+    "summary": "NASA’s Roman Space Telescope may now have enough fuel for at least 22 years of science, more than double its original 10 year design life. An extremely precise course correction, extra fuel at launch, and additional…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260918024802.htm",
+    "published_at": "2026-09-18T11:31:56.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
+    "id": "s_68fksj",
+    "headline": "Anak Krakatau blasts ash nearly 10 miles high",
+    "summary": "Anak Krakatau erupted for more than 24 hours in early September, sending volcanic ash up to 50,000 feet into the atmosphere. The ash cloud shut down eight airports, disrupted nearly 3,000 flights, and affected air…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260917003718.htm",
+    "published_at": "2026-09-18T03:16:17.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_sgt6rs",
     "headline": "A majority of Americans don’t actually fit either climate camp",
     "summary": "An analysis of 20 years of polling data shows how age, education and income—in addition to political affiliation—shape views on climate policy",
@@ -432,18 +456,6 @@
     "score": 4
   },
   {
-    "id": "s_16d5rva",
-    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
-    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
-    "category": "planet",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
-    "published_at": "2026-08-25T13:00:03.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_1gsvmht",
     "headline": "Scientists recreated what mice saw from brain activity alone",
     "summary": "Scientists reconstructed videos from the brain activity of mice, producing 10-second clips based only on signals from neurons in the visual cortex. The breakthrough could help reveal how the brain reshapes what we see…",
@@ -468,30 +480,6 @@
     "score": 4
   },
   {
-    "id": "s_1vpppk3",
-    "headline": "Chemistry textbooks have been getting this wrong for nearly 100 years",
-    "summary": "A foundational chemistry concept found in textbooks for almost 100 years may have been taught incorrectly. Researchers say the inductive effect in neutral molecules appears to extend only across one chemical bond…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260913082157.htm",
-    "published_at": "2026-09-14T14:13:47.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1nrh0ab",
-    "headline": "Tiny cell “antennas” may help explain why some babies are born with heart defects",
-    "summary": "A newly discovered communication system in the microscopic “antennae” of cells may help explain how some congenital heart defects develop. When genetic mutations disrupt this system, the effects may extend beyond the…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260912220103.htm",
-    "published_at": "2026-09-15T03:20:52.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_1lhgd03",
     "headline": "Amino acids and a bone mineral may help control magnesium implant breakdown, three student papers suggest",
     "summary": "Seeing a bachelor's thesis published in a scientific journal is relatively uncommon. For three theses linked to the same research group to result in scientific publications within just three months is downright rare…",
@@ -512,6 +500,54 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-09-solar-chose-ice-bodies.html",
     "published_at": "2026-09-18T15:40:09.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_19mfa6p",
+    "headline": "The Ruins of a Long-Lost Medieval Convent Have Been Discovered Just a Few Feet Beneath a Soccer Field",
+    "summary": "St. Clare's Convent closed in the 16th century, and researchers assumed all traces of it had been lost. But a new ground-penetrating radar survey revealed surprisingly intact remains of pillars, rooms, cloisters, a…",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-ruins-of-a-long-lost-medieval-convent-have-been-discovered-just-a-few-feet-beneath-a-soccer-field-180989506/",
+    "published_at": "2026-09-16T11:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_16d5rva",
+    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+    "published_at": "2026-08-25T13:00:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1vpppk3",
+    "headline": "Chemistry textbooks have been getting this wrong for nearly 100 years",
+    "summary": "A foundational chemistry concept found in textbooks for almost 100 years may have been taught incorrectly. Researchers say the inductive effect in neutral molecules appears to extend only across one chemical bond…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260913082157.htm",
+    "published_at": "2026-09-14T14:13:47.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1nrh0ab",
+    "headline": "Tiny cell “antennas” may help explain why some babies are born with heart defects",
+    "summary": "A newly discovered communication system in the microscopic “antennae” of cells may help explain how some congenital heart defects develop. When genetic mutations disrupt this system, the effects may extend beyond the…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260912220103.htm",
+    "published_at": "2026-09-15T03:20:52.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -560,18 +596,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-09-vapor-phase-synthesis-mxenes-technological.html",
     "published_at": "2026-09-17T19:50:02.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_19mfa6p",
-    "headline": "The Ruins of a Long-Lost Medieval Convent Have Been Discovered Just a Few Feet Beneath a Soccer Field",
-    "summary": "St. Clare's Convent closed in the 16th century, and researchers assumed all traces of it had been lost. But a new ground-penetrating radar survey revealed surprisingly intact remains of pillars, rooms, cloisters, a…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-ruins-of-a-long-lost-medieval-convent-have-been-discovered-just-a-few-feet-beneath-a-soccer-field-180989506/",
-    "published_at": "2026-09-16T11:00:00.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1496,6 +1520,22 @@
     "score": 3
   },
   {
+    "id": "s_w22hka",
+    "headline": "The world’s largest battery-electric ferry just crossed an ocean",
+    "summary": "In 2019, a South American transport company ordered a diesel ferry. By the time it launched six years later, it had become the largest electric vehicle ever built, of any kind, on land or sea. Hull 096 is a 130-meter…",
+    "category": "planet",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
+    "published_at": "2026-09-17T00:00:14.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_4d69pi",
     "headline": "Elementic’s MO6 is the building material claiming to lock away carbon for thousands of years",
     "summary": "Lignin is the part of wood that paper mills and timber companies tend to get rid of. It comes off as a byproduct when wood is processed, resists most conventional uses, and usually ends up burned for energy. A Finnish…",
@@ -1560,6 +1600,18 @@
     "score": 3
   },
   {
+    "id": "s_wpyezg",
+    "headline": "A Rare Marble Sculpture by America’s First Professional Female Sculptor Sat Hidden in Plain Sight for Decades in an English Garden",
+    "summary": "Until its discovery during a house appraisal, the debut bust by Harriet Goodhue Hosmer, a celebrated artist and feminist icon, had been mistaken for an ordinary garden ornament",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
+    "published_at": "2026-09-17T14:30:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_ye5d8r",
     "headline": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
     "summary": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
@@ -1592,18 +1644,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-09-virtual-biotech-company-thousands-ai.html",
     "published_at": "2026-09-17T18:00:10.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_wpyezg",
-    "headline": "A Rare Marble Sculpture by America’s First Professional Female Sculptor Sat Hidden in Plain Sight for Decades in an English Garden",
-    "summary": "Until its discovery during a house appraisal, the debut bust by Harriet Goodhue Hosmer, a celebrated artist and feminist icon, had been mistaken for an ordinary garden ornament",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
-    "published_at": "2026-09-17T14:30:00.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5188,46 +5228,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/heres-how-these-adorable-mice-can-live-at-an-extremely-high-elevation-where-no-other-mammal-is-known-to-survive-180989116/",
     "published_at": "2026-07-14T18:45:04.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_olypi0",
-    "headline": "How Has Roman Concrete Lasted for Millennia? A 1,900-Year-Old Latrine Offers New Clues About the Material's Impressive Durability",
-    "summary": "A chemical process called carbonation, which helps seal cracks, could help explain why many ancient Roman structures are still standing today. Researchers hope that the insights will lead to better modern-day building…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/",
-    "published_at": "2026-07-14T15:54:46.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_117e5ng",
-    "headline": "Ancient Romans Put Their Faith in Guardian Spirits. Archaeologists Just Found a Rare 1,600-Year-Old Carving of One in Northern England",
-    "summary": "Known as a “genius,” the protective spirit or deity was believed to bring good fortune and prosperity to a particular person, household or place. Archaeologists haven't found many depictions of them across Roman Britain",
-    "category": "culture",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/romans-put-their-faith-in-guardian-spirits-archaeologists-just-found-a-rare-1600-year-old-carving-of-one-in-northern-england-180989118/",
-    "published_at": "2026-07-14T11:45:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_hg0yik",
-    "headline": "How Did Two Wolves End Up on This Remote Island Thousands of Years Ago? Researchers Think Humans Brought Them There, Then Cared for Them",
-    "summary": "The discovery suggests humans may have maintained relationships with wolves long after domesticated dogs came on the scene",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/how-did-two-wolves-end-up-on-this-remote-island-thousands-of-years-ago-researchers-think-humans-brought-them-there-then-cared-for-them-180989110/",
-    "published_at": "2026-07-13T10:00:00.000Z",
     "read_minutes": 2,
     "score": 1
   }
