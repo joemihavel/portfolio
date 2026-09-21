@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_ntsu2k",
+    "headline": "Scientists Solve Mystery Behind Snowfall That Dropped 695 Billion Tons of Ice on Antarctica",
+    "summary": "A warming pool of tropical ocean water has been shown to be the cause of immense snowstorms over East Antarctica which contributed to a net gain of 695 billion tons of ice between 2021 and 2023. To put that tonnage into…",
+    "category": "planet",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/scientists-solve-mystery-behind-snowfall-that-dropped-695-billion-tons-of-ice-on-antarctica/",
+    "published_at": "2026-09-17T15:30:25.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_1fyp1z5",
     "headline": "NASA’s Roman Space Telescope could last more than twice as long as planned",
     "summary": "NASA’s Roman Space Telescope may now have enough fuel for at least 22 years of science, more than double its original 10 year design life. An extremely precise course correction, extra fuel at launch, and additional…",
@@ -444,18 +456,6 @@
     "score": 4
   },
   {
-    "id": "s_1rgmobz",
-    "headline": "For the first time, Congolese NGO to manage a DRC protected area",
-    "summary": "For the first time in the modern history of the Democratic Republic of Congo (DRC), a Congolese nongovernmental organization will co-manage a protected area in the country. “It is an honor,” Dominique Bikaba, founder of…",
-    "category": "planet",
-    "country": null,
-    "source": "Mongabay",
-    "url": "https://news.mongabay.com/short-article/2026/09/for-the-first-time-congolese-ngo-to-manage-a-drc-protected-area/",
-    "published_at": "2026-09-16T05:56:14.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_1gsvmht",
     "headline": "Scientists recreated what mice saw from brain activity alone",
     "summary": "Scientists reconstructed videos from the brain activity of mice, producing 10-second clips based only on signals from neurons in the visual cortex. The breakthrough could help reveal how the brain reshapes what we see…",
@@ -464,18 +464,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260914102449.htm",
     "published_at": "2026-09-16T12:33:18.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_etpoe8",
-    "headline": "Nearly 10,000 patients reveal what works best for knee arthritis pain relief",
-    "summary": "A major analysis of 139 clinical trials involving nearly 10,000 people suggests that some of the simplest treatments may work best for knee osteoarthritis. Knee braces ranked highest overall for reducing pain…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260913082208.htm",
-    "published_at": "2026-09-15T03:57:43.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -492,18 +480,6 @@
     "score": 4
   },
   {
-    "id": "s_amgdcm",
-    "headline": "From the start, the solar system chose fire over ice to build its first bodies",
-    "summary": "When the solar system first took up the task of building solid bodies—such as planets, moons and protoplanets—it basically had a choice between two ingredients: heat-forged chondrules, which were millimeter-sized bits…",
-    "category": "planet",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-09-solar-chose-ice-bodies.html",
-    "published_at": "2026-09-18T15:40:09.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_19mfa6p",
     "headline": "The Ruins of a Long-Lost Medieval Convent Have Been Discovered Just a Few Feet Beneath a Soccer Field",
     "summary": "St. Clare's Convent closed in the 16th century, and researchers assumed all traces of it had been lost. But a new ground-penetrating radar survey revealed surprisingly intact remains of pillars, rooms, cloisters, a…",
@@ -512,6 +488,42 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/the-ruins-of-a-long-lost-medieval-convent-have-been-discovered-just-a-few-feet-beneath-a-soccer-field-180989506/",
     "published_at": "2026-09-16T11:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1rgmobz",
+    "headline": "For the first time, Congolese NGO to manage a DRC protected area",
+    "summary": "For the first time in the modern history of the Democratic Republic of Congo (DRC), a Congolese nongovernmental organization will co-manage a protected area in the country. “It is an honor,” Dominique Bikaba, founder of…",
+    "category": "planet",
+    "country": null,
+    "source": "Mongabay",
+    "url": "https://news.mongabay.com/short-article/2026/09/for-the-first-time-congolese-ngo-to-manage-a-drc-protected-area/",
+    "published_at": "2026-09-16T05:56:14.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_etpoe8",
+    "headline": "Nearly 10,000 patients reveal what works best for knee arthritis pain relief",
+    "summary": "A major analysis of 139 clinical trials involving nearly 10,000 people suggests that some of the simplest treatments may work best for knee osteoarthritis. Knee braces ranked highest overall for reducing pain…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260913082208.htm",
+    "published_at": "2026-09-15T03:57:43.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_amgdcm",
+    "headline": "From the start, the solar system chose fire over ice to build its first bodies",
+    "summary": "When the solar system first took up the task of building solid bodies—such as planets, moons and protoplanets—it basically had a choice between two ingredients: heat-forged chondrules, which were millimeter-sized bits…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-solar-chose-ice-bodies.html",
+    "published_at": "2026-09-18T15:40:09.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1520,18 +1532,18 @@
     "score": 3
   },
   {
-    "id": "s_w22hka",
-    "headline": "The world’s largest battery-electric ferry just crossed an ocean",
-    "summary": "In 2019, a South American transport company ordered a diesel ferry. By the time it launched six years later, it had become the largest electric vehicle ever built, of any kind, on land or sea. Hull 096 is a 130-meter…",
+    "id": "s_183zj7u",
+    "headline": "The world’s first solar ambulance just completed its first real-world test in rural Kenya",
+    "summary": "The question most ambulances are designed to answer is how fast a patient can reach a hospital. In the Narok region of Kenya, where long distances and unreliable electricity make quality healthcare difficult to access…",
     "category": "planet",
     "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
+      "code": "KE",
+      "name": "Kenya",
+      "flag": "🇰🇪"
     },
     "source": "The Optimist Daily",
-    "url": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
-    "published_at": "2026-09-17T00:00:14.000Z",
+    "url": "https://www.optimistdaily.com/2026/09/the-worlds-first-solar-ambulance-just-completed-its-first-real-world-test-in-rural-kenya/",
+    "published_at": "2026-09-16T00:00:03.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1576,18 +1588,6 @@
     "score": 3
   },
   {
-    "id": "s_1fia0db",
-    "headline": "Supermassive black hole winds are 100 times more powerful than scientists thought",
-    "summary": "Astronomers have discovered that winds from a supermassive black hole are about 100 times more powerful than previously thought. XRISM observations showed the resulting turbulence spreading roughly 300,000 light-years…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260914102429.htm",
-    "published_at": "2026-09-15T12:34:32.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_ypkbsj",
     "headline": "Centuries Ago, an Architect Characterized the Parthenon’s Curves as a Clever Optical Illusion. Now, a Mathematician Begs to Differ",
     "summary": "In the first century B.C.E., Vitruvius wrote that the Acropolis’ largest temple was horizontally bowed so that it didn't seem to sag, and that explanation persisted for millennia. New research suggests a different reason",
@@ -1612,6 +1612,22 @@
     "score": 3
   },
   {
+    "id": "s_kkzwhp",
+    "headline": "Russia Sends the Centuries-Old Remains of a Medieval Warrior Prince to Its Front Line in Ukraine, Hoping to ‘Spiritually Strengthen’ Troops",
+    "summary": "A reliquary containing part of the right hand of Dmitry Donskoy, whose crypt was discovered in August, has been dispatched to Donetsk",
+    "category": "culture",
+    "country": {
+      "code": "UA",
+      "name": "Ukraine",
+      "flag": "🇺🇦"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/russia-sends-the-centuries-old-remains-of-a-medieval-warrior-prince-to-its-front-line-in-ukraine-hoping-to-spiritually-strengthen-troops-180989501/",
+    "published_at": "2026-09-15T18:41:30.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_ye5d8r",
     "headline": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
     "summary": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
@@ -1620,6 +1636,34 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
     "published_at": "2026-09-11T12:00:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_w22hka",
+    "headline": "The world’s largest battery-electric ferry just crossed an ocean",
+    "summary": "In 2019, a South American transport company ordered a diesel ferry. By the time it launched six years later, it had become the largest electric vehicle ever built, of any kind, on land or sea. Hull 096 is a 130-meter…",
+    "category": "planet",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
+    "published_at": "2026-09-17T00:00:14.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1fia0db",
+    "headline": "Supermassive black hole winds are 100 times more powerful than scientists thought",
+    "summary": "Astronomers have discovered that winds from a supermassive black hole are about 100 times more powerful than previously thought. XRISM observations showed the resulting turbulence spreading roughly 300,000 light-years…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260914102429.htm",
+    "published_at": "2026-09-15T12:34:32.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5188,46 +5232,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/once-the-worlds-biggest-passenger-ship-this-metal-marvel-the-ss-great-britain-that-crossed-the-atlantic-and-took-immigrants-to-australia-has-a-new-museum-home-180989130/",
     "published_at": "2026-07-15T20:34:22.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_odl1di",
-    "headline": "Scientists Ranked Hundreds of Spider Species by Running Speed. Australia's Huge, Hairy Brown Huntsman Came Out on Top",
-    "summary": "The brown huntsman can sprint at a maximum speed of eight miles per hour, although it can only maintain that pace for a fraction of a second. The research will lead to a better understanding of the evolution and…",
-    "category": "animals",
-    "country": {
-      "code": "AU",
-      "name": "Australia",
-      "flag": "🇦🇺"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/scientists-ranked-hundreds-of-spider-species-by-running-speed-australias-huge-hairy-brown-huntsman-came-out-on-top-180989132/",
-    "published_at": "2026-07-15T20:02:54.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1l44caa",
-    "headline": "Astronomers Noticed a Mysterious Spot Appearing in Telescope Images. It Turned Out to Be the Faintest Exoplanet Ever Imaged From Earth",
-    "summary": "The gas giant, called Beta Pictoris d, had been hiding in plain sight for more than a decade, until two independent teams verified its existence",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/astronomers-noticed-a-mysterious-spot-appearing-in-telescope-images-it-turned-out-to-be-the-faintest-exoplanet-ever-imaged-from-earth-180989133/",
-    "published_at": "2026-07-15T19:40:22.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1xjfwv4",
-    "headline": "Here's How These Adorable Mice Can Live at an Extremely High Elevation Where No Other Mammal Is Known to Reside",
-    "summary": "The Andean leaf-eared mouse has adaptations that help it generate body heat efficiently in frigid, low-oxygen conditions at 22,000 feet above sea level, according to a new study",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/heres-how-these-adorable-mice-can-live-at-an-extremely-high-elevation-where-no-other-mammal-is-known-to-survive-180989116/",
-    "published_at": "2026-07-14T18:45:04.000Z",
     "read_minutes": 2,
     "score": 1
   }
