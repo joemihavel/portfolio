@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_sgt6rs",
+    "headline": "A majority of Americans don’t actually fit either climate camp",
+    "summary": "An analysis of 20 years of polling data shows how age, education and income—in addition to political affiliation—shape views on climate policy",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/08/a-majority-of-americans-dont-actually-fit-either-climate-camp/?utm_source=rss&utm_medium=rss&utm_campaign=yes-republicans-and-democrats-have-different-views-on-climate-change-but-that-isnt-the-whole-story",
+    "published_at": "2026-08-04T13:00:22.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_ntsu2k",
     "headline": "Scientists Solve Mystery Behind Snowfall That Dropped 695 Billion Tons of Ice on Antarctica",
     "summary": "A warming pool of tropical ocean water has been shown to be the cause of immense snowstorms over East Antarctica which contributed to a net gain of 695 billion tons of ice between 2021 and 2023. To put that tonnage into…",
@@ -176,18 +188,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260917003718.htm",
     "published_at": "2026-09-18T03:16:17.000Z",
-    "read_minutes": 2,
-    "score": 5
-  },
-  {
-    "id": "s_sgt6rs",
-    "headline": "A majority of Americans don’t actually fit either climate camp",
-    "summary": "An analysis of 20 years of polling data shows how age, education and income—in addition to political affiliation—shape views on climate policy",
-    "category": "planet",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/08/a-majority-of-americans-dont-actually-fit-either-climate-camp/?utm_source=rss&utm_medium=rss&utm_campaign=yes-republicans-and-democrats-have-different-views-on-climate-change-but-that-isnt-the-whole-story",
-    "published_at": "2026-08-04T13:00:22.000Z",
     "read_minutes": 2,
     "score": 5
   },
@@ -456,6 +456,42 @@
     "score": 4
   },
   {
+    "id": "s_16d5rva",
+    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+    "published_at": "2026-08-25T13:00:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_2a42ty",
+    "headline": "Satellite record reveals Arctic melt season has plateaued after decades of lengthening",
+    "summary": "For decades, Arctic sea ice has been melting earlier in spring and freezing later in fall, extending the melt season and contributing to widespread ice loss. A new NASA-led study published in Communications Earth &…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-satellite-reveals-arctic-season-plateaued.html",
+    "published_at": "2026-09-21T17:40:09.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1636rqo",
+    "headline": "Elusive builders of nearly perfect hexagonal tunnel fossils were probably small crustaceans—not worms",
+    "summary": "For more than 170 years, paleontologists have been trying to solve the mystery of what created the strangely uniform hexagonal tunnels found in fossils. In a new study published in Earth Science Reviews, a team of…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-elusive-builders-hexagonal-tunnel-fossils.html",
+    "published_at": "2026-09-21T17:20:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1gsvmht",
     "headline": "Scientists recreated what mice saw from brain activity alone",
     "summary": "Scientists reconstructed videos from the brain activity of mice, producing 10-second clips based only on signals from neurons in the visual cortex. The breakthrough could help reveal how the brain reshapes what we see…",
@@ -524,18 +560,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-09-solar-chose-ice-bodies.html",
     "published_at": "2026-09-18T15:40:09.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_16d5rva",
-    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
-    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
-    "category": "planet",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
-    "published_at": "2026-08-25T13:00:03.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1532,6 +1556,122 @@
     "score": 3
   },
   {
+    "id": "s_w22hka",
+    "headline": "The world’s largest battery-electric ferry just crossed an ocean",
+    "summary": "In 2019, a South American transport company ordered a diesel ferry. By the time it launched six years later, it had become the largest electric vehicle ever built, of any kind, on land or sea. Hull 096 is a 130-meter…",
+    "category": "planet",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
+    "published_at": "2026-09-17T00:00:14.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1g2xkcn",
+    "headline": "Scientists are about to test Einstein’s gravity with exotic matter",
+    "summary": "Scientists have found a new way to create a controlled beam of muonium, an exotic atom containing a heavier cousin of the electron. The advance could allow researchers to test for the first time whether gravity acts on…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260918024808.htm",
+    "published_at": "2026-09-18T11:07:25.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_vs9kg2",
+    "headline": "NASA’s New Horizons spots signs of liquid nitrogen flowing on Pluto",
+    "summary": "Scientists have found the first evidence that liquid may have flowed across Pluto’s surface in the recent past. Dark features on the enormous Sputnik Planitia glacier appear consistent with liquid nitrogen rising…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260916232525.htm",
+    "published_at": "2026-09-17T04:02:29.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1cdgfgd",
+    "headline": "Student-led missions deploy free-flying light sails from CubeSats in low Earth orbit",
+    "summary": "Students in Cornell's Space Systems Design Studio (SSDS) have released mission results for two unique light-sail experiments. These sails are slightly larger than a pizza box and harness momentum from photons to…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-student-missions-deploy-free-flying.html",
+    "published_at": "2026-09-21T21:10:02.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1dxaqfq",
+    "headline": "Henry VIII Relied on This Courtier to Enforce His Orders During the English Reformation. Behind the Scenes, the Tudor Politician Defied His King by Secretly Saving a Catholic Text",
+    "summary": "A newly discovered fragment suggests that John Gage preserved a 15th-century religious manuscript, keeping it \"safe when he was meant to destroy books precisely like this one\"",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/henry-viii-relied-on-this-courtier-to-enforce-his-orders-during-the-english-reformation-behind-the-scenes-the-tudor-politician-defied-his-king-by-secretly-saving-a-catholic-text-180989541/",
+    "published_at": "2026-09-21T19:08:47.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1bn9wkt",
+    "headline": "The Brain Shrinks as We Age and During Major Transitions. But Surprisingly, It Seems to Take a Break From Rewiring During Menopause",
+    "summary": "Puberty, pregnancy and menopause are the three major hormonal transitions for the female brain. Researchers already knew that during the first two, the organ fine-tunes itself in response to hormonal shifts, but they…",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-brain-shrinks-as-we-age-and-during-major-transitions-but-surprisingly-it-seems-to-take-a-break-from-rewiring-during-menopause-180989527/",
+    "published_at": "2026-09-21T18:51:14.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_ypkbsj",
+    "headline": "Centuries Ago, an Architect Characterized the Parthenon’s Curves as a Clever Optical Illusion. Now, a Mathematician Begs to Differ",
+    "summary": "In the first century B.C.E., Vitruvius wrote that the Acropolis’ largest temple was horizontally bowed so that it didn't seem to sag, and that explanation persisted for millennia. New research suggests a different reason",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-an-architect-characterized-the-parthenons-curves-as-a-clever-optical-illusion-now-a-mathematician-begs-to-differ-180989520/",
+    "published_at": "2026-09-18T17:11:29.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_wpyezg",
+    "headline": "A Rare Marble Sculpture by America’s First Professional Female Sculptor Sat Hidden in Plain Sight for Decades in an English Garden",
+    "summary": "Until its discovery during a house appraisal, the debut bust by Harriet Goodhue Hosmer, a celebrated artist and feminist icon, had been mistaken for an ordinary garden ornament",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
+    "published_at": "2026-09-17T14:30:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1s9oagk",
+    "headline": "New Zealand Welcomes a Record 90 Kakapo Chicks, Helping the World's Chunkiest Parrot Species Rebound From the Brink of Extinction",
+    "summary": "Annual chick counts aren't confirmed until the youngest hatchling reaches 150 days old, a benchmark for independence. The population now stands at 325 birds, up from the 51 individuals that remained in 1995",
+    "category": "animals",
+    "country": {
+      "code": "NZ",
+      "name": "New Zealand",
+      "flag": "🇳🇿"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/new-zealand-welcomes-a-record-90-kakapo-chicks-helping-the-worlds-chunkiest-parrot-species-rebound-from-the-brink-of-extinction-180989511/",
+    "published_at": "2026-09-17T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_183zj7u",
     "headline": "The world’s first solar ambulance just completed its first real-world test in rural Kenya",
     "summary": "The question most ambulances are designed to answer is how fast a patient can reach a hospital. In the Narok region of Kenya, where long distances and unreliable electricity make quality healthcare difficult to access…",
@@ -1564,54 +1704,6 @@
     "score": 3
   },
   {
-    "id": "s_1g2xkcn",
-    "headline": "Scientists are about to test Einstein’s gravity with exotic matter",
-    "summary": "Scientists have found a new way to create a controlled beam of muonium, an exotic atom containing a heavier cousin of the electron. The advance could allow researchers to test for the first time whether gravity acts on…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260918024808.htm",
-    "published_at": "2026-09-18T11:07:25.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_vs9kg2",
-    "headline": "NASA’s New Horizons spots signs of liquid nitrogen flowing on Pluto",
-    "summary": "Scientists have found the first evidence that liquid may have flowed across Pluto’s surface in the recent past. Dark features on the enormous Sputnik Planitia glacier appear consistent with liquid nitrogen rising…",
-    "category": "planet",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260916232525.htm",
-    "published_at": "2026-09-17T04:02:29.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_ypkbsj",
-    "headline": "Centuries Ago, an Architect Characterized the Parthenon’s Curves as a Clever Optical Illusion. Now, a Mathematician Begs to Differ",
-    "summary": "In the first century B.C.E., Vitruvius wrote that the Acropolis’ largest temple was horizontally bowed so that it didn't seem to sag, and that explanation persisted for millennia. New research suggests a different reason",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-an-architect-characterized-the-parthenons-curves-as-a-clever-optical-illusion-now-a-mathematician-begs-to-differ-180989520/",
-    "published_at": "2026-09-18T17:11:29.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_wpyezg",
-    "headline": "A Rare Marble Sculpture by America’s First Professional Female Sculptor Sat Hidden in Plain Sight for Decades in an English Garden",
-    "summary": "Until its discovery during a house appraisal, the debut bust by Harriet Goodhue Hosmer, a celebrated artist and feminist icon, had been mistaken for an ordinary garden ornament",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
-    "published_at": "2026-09-17T14:30:00.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_kkzwhp",
     "headline": "Russia Sends the Centuries-Old Remains of a Medieval Warrior Prince to Its Front Line in Ukraine, Hoping to ‘Spiritually Strengthen’ Troops",
     "summary": "A reliquary containing part of the right hand of Dmitry Donskoy, whose crypt was discovered in August, has been dispatched to Donetsk",
@@ -1636,22 +1728,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
     "published_at": "2026-09-11T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_w22hka",
-    "headline": "The world’s largest battery-electric ferry just crossed an ocean",
-    "summary": "In 2019, a South American transport company ordered a diesel ferry. By the time it launched six years later, it had become the largest electric vehicle ever built, of any kind, on land or sea. Hull 096 is a 130-meter…",
-    "category": "planet",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "The Optimist Daily",
-    "url": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
-    "published_at": "2026-09-17T00:00:14.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5148,90 +5224,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/when-a-cat-licks-another-cat-its-not-always-friendly-new-study-reveals-180989136/",
     "published_at": "2026-07-17T12:59:56.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_fqhaeg",
-    "headline": "Buzz Aldrin Used This Humble Felt-Tip Pen to Save the Apollo II Astronauts. It Just Sold for More Than $850,000",
-    "summary": "In July 1969, a quick-thinking Aldrin used the writing instrument to rearm the engine arm circuit of the lunar module \"Eagle\" after the switch broke off during the moon landing",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/buzz-aldrin-used-this-humble-felt-tip-pen-to-save-the-apollo-ii-astronauts-it-just-sold-for-more-than-850000-180989142/",
-    "published_at": "2026-07-16T21:22:26.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1gsqt2q",
-    "headline": "This Viking Longship Crossed the Atlantic Before Starring in Christopher Nolan's 'Odyssey' as Odysseus' Greek Galley",
-    "summary": "Hollywood stars including Matt Damon went to rowing camp to learn how to operate the vessel for the new film",
-    "category": "culture",
-    "country": {
-      "code": "GR",
-      "name": "Greece",
-      "flag": "🇬🇷"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/thisviking-longship-crossed-the-atlantic-before-starring-in-christopher-nolans-odyssey-as-odysseus-greek-galley-180989137/",
-    "published_at": "2026-07-16T20:27:45.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_3ppnlp",
-    "headline": "This Meteorite Crashed Into a New Jersey Home in 2024. Now, Scientists Say It Contains Some of the Building Blocks of Life",
-    "summary": "The Hillsborough meteorite belongs to a rare class of rocks from space, according to a new study. It holds amino acids and other organic compounds, as well as evidence of salty water",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/this-meteorite-crashed-into-a-new-jersey-home-in-2024-now-scientists-say-it-contains-some-of-the-building-blocks-of-life-180989138/",
-    "published_at": "2026-07-16T20:04:05.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1mtw1qn",
-    "headline": "Buckingham Palace's Royal Picture Gallery Revives the Salon-Style Hang, Doubling the Number of Masterpieces on View",
-    "summary": "Charles III reportedly had a say in the stylistic switch, which rearranged and added artworks by the likes of Rembrandt, Rubens, Vermeer and Van Dyck",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/buckingham-palaces-royal-picture-gallery-revives-the-salon-style-hang-doubling-the-number-of-masterpieces-on-view-180989135/",
-    "published_at": "2026-07-16T18:13:06.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1myayy7",
-    "headline": "Man Sentenced for Stealing 'Rare and Unique' Chinese Texts, Valued at More Than $200,000, by Using Aliases, Fake IDs and Dummy Manuscripts",
-    "summary": "The works were stolen from the University of California, Los Angeles, over the course of several years",
-    "category": "culture",
-    "country": {
-      "code": "CN",
-      "name": "China",
-      "flag": "🇨🇳"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/man-sentenced-for-stealing-rare-and-unique-chinese-texts-valued-at-more-than-200000-by-using-aliases-fake-ids-and-dummy-manuscripts-180989134/",
-    "published_at": "2026-07-16T15:18:28.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_5m4rma",
-    "headline": "Once the World’s Biggest Passenger Ship, This Metal Marvel That Crossed the Atlantic and Took Immigrants to Australia Has a New Museum Home",
-    "summary": "A new museum dedicated to stories surrounding the S.S. \"Great Britain\" is about to open in Bristol, where the ship is permanently dry-docked",
-    "category": "culture",
-    "country": {
-      "code": "AU",
-      "name": "Australia",
-      "flag": "🇦🇺"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/once-the-worlds-biggest-passenger-ship-this-metal-marvel-the-ss-great-britain-that-crossed-the-atlantic-and-took-immigrants-to-australia-has-a-new-museum-home-180989130/",
-    "published_at": "2026-07-15T20:34:22.000Z",
     "read_minutes": 2,
     "score": 1
   }
