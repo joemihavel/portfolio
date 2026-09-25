@@ -1556,6 +1556,22 @@
     "score": 4
   },
   {
+    "id": "s_1s9oagk",
+    "headline": "New Zealand Welcomes a Record 90 Kakapo Chicks, Helping the World's Chunkiest Parrot Species Rebound From the Brink of Extinction",
+    "summary": "Annual chick counts aren't confirmed until the youngest hatchling reaches 150 days old, a benchmark for independence. The population now stands at 325 birds, up from the 51 individuals that remained in 1995",
+    "category": "animals",
+    "country": {
+      "code": "NZ",
+      "name": "New Zealand",
+      "flag": "🇳🇿"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/new-zealand-welcomes-a-record-90-kakapo-chicks-helping-the-worlds-chunkiest-parrot-species-rebound-from-the-brink-of-extinction-180989511/",
+    "published_at": "2026-09-17T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_ypkbsj",
     "headline": "Centuries Ago, an Architect Characterized the Parthenon’s Curves as a Clever Optical Illusion. Now, a Mathematician Begs to Differ",
     "summary": "In the first century B.C.E., Vitruvius wrote that the Acropolis’ largest temple was horizontally bowed so that it didn't seem to sag, and that explanation persisted for millennia. New research suggests a different reason",
@@ -1576,22 +1592,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
     "published_at": "2026-09-17T14:30:00.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_1s9oagk",
-    "headline": "New Zealand Welcomes a Record 90 Kakapo Chicks, Helping the World's Chunkiest Parrot Species Rebound From the Brink of Extinction",
-    "summary": "Annual chick counts aren't confirmed until the youngest hatchling reaches 150 days old, a benchmark for independence. The population now stands at 325 birds, up from the 51 individuals that remained in 1995",
-    "category": "animals",
-    "country": {
-      "code": "NZ",
-      "name": "New Zealand",
-      "flag": "🇳🇿"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/new-zealand-welcomes-a-record-90-kakapo-chicks-helping-the-worlds-chunkiest-parrot-species-rebound-from-the-brink-of-extinction-180989511/",
-    "published_at": "2026-09-17T14:00:00.000Z",
     "read_minutes": 2,
     "score": 3
   },
