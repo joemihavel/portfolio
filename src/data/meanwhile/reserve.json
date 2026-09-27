@@ -456,6 +456,34 @@
     "score": 5
   },
   {
+    "id": "s_eowztn",
+    "headline": "Mercury Has Wrinkles That Show It's Shrinking. Now, Scientists Say the Planet Has Shriveled Far More Than Previously Thought",
+    "summary": "A new study suggests that our solar system’s smallest planet has shrunk by up to 30 percent since its birth roughly 4.5 billion years ago",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/mercury-has-wrinkles-that-show-its-shrinking-now-scientists-say-the-planet-has-shriveled-far-more-than-we-previously-thought-180989532/",
+    "published_at": "2026-09-22T19:12:34.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1ye2bkx",
+    "headline": "Meet the Adorable and Tiny Tilcayo, the First Brand-New Cat Species Identified in More Than a Century",
+    "summary": "Discovered in a cloud forest in Bolivia, the diminutive felines are smaller than a house cat and covered in large, irregularly shaped rosettes",
+    "category": "animals",
+    "country": {
+      "code": "BO",
+      "name": "Bolivia",
+      "flag": "🇧🇴"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/meet-the-adorable-and-tiny-tilcayo-the-first-brand-new-cat-species-identified-in-more-than-a-century-180989528/",
+    "published_at": "2026-09-21T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_16d5rva",
     "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
     "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
@@ -508,34 +536,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/meet-bubbles-a-dolphin-in-australia-that-chases-fish-until-they-barf-then-eats-their-upchucked-meals-180989547/",
     "published_at": "2026-09-23T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_eowztn",
-    "headline": "Mercury Has Wrinkles That Show It's Shrinking. Now, Scientists Say the Planet Has Shriveled Far More Than Previously Thought",
-    "summary": "A new study suggests that our solar system’s smallest planet has shrunk by up to 30 percent since its birth roughly 4.5 billion years ago",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/mercury-has-wrinkles-that-show-its-shrinking-now-scientists-say-the-planet-has-shriveled-far-more-than-we-previously-thought-180989532/",
-    "published_at": "2026-09-22T19:12:34.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1ye2bkx",
-    "headline": "Meet the Adorable and Tiny Tilcayo, the First Brand-New Cat Species Identified in More Than a Century",
-    "summary": "Discovered in a cloud forest in Bolivia, the diminutive felines are smaller than a house cat and covered in large, irregularly shaped rosettes",
-    "category": "animals",
-    "country": {
-      "code": "BO",
-      "name": "Bolivia",
-      "flag": "🇧🇴"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/meet-the-adorable-and-tiny-tilcayo-the-first-brand-new-cat-species-identified-in-more-than-a-century-180989528/",
-    "published_at": "2026-09-21T14:00:00.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1626,6 +1626,18 @@
     "published_at": "2026-08-17T19:41:46.000Z",
     "read_minutes": 2,
     "score": 4
+  },
+  {
+    "id": "s_1m6pvgj",
+    "headline": "REM sleep paradox: Dreaming may drain the brain’s energy even as fuel supply rises",
+    "summary": "Scientists discovered a surprising energy paradox in the brain during REM sleep, the stage most closely associated with dreaming. Blood supply to the brain begins increasing even before REM starts, but neurons’…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260925093206.htm",
+    "published_at": "2026-09-26T11:30:49.000Z",
+    "read_minutes": 2,
+    "score": 3
   },
   {
     "id": "s_ypkbsj",
@@ -5212,22 +5224,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/would-you-chat-with-an-ai-ghost-of-a-deceased-loved-one-new-research-suggests-that-the-tech-can-provide-comfort-and-closure-180989176/",
     "published_at": "2026-07-23T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1upmhmf",
-    "headline": "Kids Can Try Out the 'Oliver Twist' Lifestyle at This English Museum Revealing Conditions for Poor People in a Victorian Workhouse",
-    "summary": "After a restoration, the Ripon Workhouse Museum reopened to the public, showcasing the sights, sounds and rules of England’s 19th-century “solution to poverty”",
-    "category": "culture",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/kids-can-try-out-the-oliver-twist-lifestyle-at-this-english-museum-revealing-conditions-for-poor-people-in-a-victorian-workhouse-180989175/",
-    "published_at": "2026-07-22T20:10:27.000Z",
     "read_minutes": 2,
     "score": 1
   }
