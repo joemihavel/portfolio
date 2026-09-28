@@ -1628,18 +1628,6 @@
     "score": 4
   },
   {
-    "id": "s_1m6pvgj",
-    "headline": "REM sleep paradox: Dreaming may drain the brain’s energy even as fuel supply rises",
-    "summary": "Scientists discovered a surprising energy paradox in the brain during REM sleep, the stage most closely associated with dreaming. Blood supply to the brain begins increasing even before REM starts, but neurons’…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260925093206.htm",
-    "published_at": "2026-09-26T11:30:49.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_ypkbsj",
     "headline": "Centuries Ago, an Architect Characterized the Parthenon’s Curves as a Clever Optical Illusion. Now, a Mathematician Begs to Differ",
     "summary": "In the first century B.C.E., Vitruvius wrote that the Acropolis’ largest temple was horizontally bowed so that it didn't seem to sag, and that explanation persisted for millennia. New research suggests a different reason",
@@ -1648,6 +1636,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-an-architect-characterized-the-parthenons-curves-as-a-clever-optical-illusion-now-a-mathematician-begs-to-differ-180989520/",
     "published_at": "2026-09-18T17:11:29.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1m6pvgj",
+    "headline": "REM sleep paradox: Dreaming may drain the brain’s energy even as fuel supply rises",
+    "summary": "Scientists discovered a surprising energy paradox in the brain during REM sleep, the stage most closely associated with dreaming. Blood supply to the brain begins increasing even before REM starts, but neurons’…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260925093206.htm",
+    "published_at": "2026-09-26T11:30:49.000Z",
     "read_minutes": 2,
     "score": 3
   },
