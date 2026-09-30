@@ -456,6 +456,18 @@
     "score": 5
   },
   {
+    "id": "s_1iz0pjf",
+    "headline": "Two Heads Are Better Than One: Rare, Double-Headed Turtle Hatchling Discovered on Cape Cod",
+    "summary": "The tiny diamondback terrapin was brought to a wildlife center on September 17. At the time, the creature weighed about as much as a nickel",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/two-heads-are-better-than-one-rare-double-headed-turtle-hatchling-discovered-on-cape-cod-180989579/",
+    "published_at": "2026-09-29T13:33:21.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_xd2nfm",
     "headline": "This Massive, Deep-Sea Roly Poly Can Go Years Without Food Thanks to a Huge Stomach and a Stolen Gene, Study Suggests",
     "summary": "The ancestors of the giant isopod Bathynomus jamesi—a seafloor-dwelling creature that resembles a huge pill bug—acquired the snippet of DNA from bacteria more than 16 million years ago, according to a new study. The…",
@@ -464,6 +476,38 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/this-massive-deep-sea-roly-poly-can-go-years-without-food-thanks-to-a-huge-stomach-and-a-stolen-gene-study-suggests-180989562/",
     "published_at": "2026-09-28T19:53:41.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_at9592",
+    "headline": "Two New Stick Insect Species Have Been Discovered in Australia—and Another One Was Hiding in Plain Sight",
+    "summary": "The new discoveries emphasize that scientists have a lot left to learn about insect diversity, even in areas with many observations",
+    "category": "animals",
+    "country": {
+      "code": "AU",
+      "name": "Australia",
+      "flag": "🇦🇺"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/two-new-stick-insect-species-have-been-discovered-in-australiaand-another-one-was-hiding-in-plain-sight-180989575/",
+    "published_at": "2026-09-25T19:03:30.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1a91ilb",
+    "headline": "Meet Bubbles, a Dolphin in Australia Who Chases Fish Until They Barf—Then Eats Their Upchucked Meals",
+    "summary": "Scientists recorded 11 instances of Bubbles successfully snacking this way. They mark some of the first detailed observations of kleptoparasitism, or food stealing, in cetaceans, the group of marine mammals that…",
+    "category": "animals",
+    "country": {
+      "code": "AU",
+      "name": "Australia",
+      "flag": "🇦🇺"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/meet-bubbles-a-dolphin-in-australia-that-chases-fish-until-they-barf-then-eats-their-upchucked-meals-180989547/",
+    "published_at": "2026-09-23T14:00:00.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -516,38 +560,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/09/260921081052.htm",
     "published_at": "2026-09-23T03:06:29.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_at9592",
-    "headline": "Two New Stick Insect Species Have Been Discovered in Australia—and Another One Was Hiding in Plain Sight",
-    "summary": "The new discoveries emphasize that scientists have a lot left to learn about insect diversity, even in areas with many observations",
-    "category": "animals",
-    "country": {
-      "code": "AU",
-      "name": "Australia",
-      "flag": "🇦🇺"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/two-new-stick-insect-species-have-been-discovered-in-australiaand-another-one-was-hiding-in-plain-sight-180989575/",
-    "published_at": "2026-09-25T19:03:30.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1a91ilb",
-    "headline": "Meet Bubbles, a Dolphin in Australia Who Chases Fish Until They Barf—Then Eats Their Upchucked Meals",
-    "summary": "Scientists recorded 11 instances of Bubbles successfully snacking this way. They mark some of the first detailed observations of kleptoparasitism, or food stealing, in cetaceans, the group of marine mammals that…",
-    "category": "animals",
-    "country": {
-      "code": "AU",
-      "name": "Australia",
-      "flag": "🇦🇺"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/meet-bubbles-a-dolphin-in-australia-that-chases-fish-until-they-barf-then-eats-their-upchucked-meals-180989547/",
-    "published_at": "2026-09-23T14:00:00.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -5208,22 +5220,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/experimental-alzheimers-drug-that-fights-a-tough-to-target-protein-shows-promise-at-slowing-cognitive-decline-in-a-clinical-trial-180989177/",
     "published_at": "2026-07-23T19:32:27.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_bdv33d",
-    "headline": "Wacky, Mysterious Paintings by This Surrealist Still Influence Contemporary Artists. An Exhibition in London Will Explore the Legacy of René Magritte",
-    "summary": "The Belgian Surrealist was famous for his playful subversion, like when he created a painting of a pipe and then defiantly declared it wasn’t a pipe, after all",
-    "category": "culture",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/wacky-mysterious-paintings-by-this-surrealist-still-influence-contemporary-artists-an-exhibition-in-london-will-explore-the-legacy-of-rene-magritte-180989181/",
-    "published_at": "2026-07-23T17:34:57.000Z",
     "read_minutes": 2,
     "score": 1
   }
