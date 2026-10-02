@@ -456,18 +456,6 @@
     "score": 5
   },
   {
-    "id": "s_1iz0pjf",
-    "headline": "Two Heads Are Better Than One: Rare, Double-Headed Turtle Hatchling Discovered on Cape Cod",
-    "summary": "The tiny diamondback terrapin was brought to a wildlife center on September 17. At the time, the creature weighed about as much as a nickel",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/two-heads-are-better-than-one-rare-double-headed-turtle-hatchling-discovered-on-cape-cod-180989579/",
-    "published_at": "2026-09-29T13:33:21.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_xd2nfm",
     "headline": "This Massive, Deep-Sea Roly Poly Can Go Years Without Food Thanks to a Huge Stomach and a Stolen Gene, Study Suggests",
     "summary": "The ancestors of the giant isopod Bathynomus jamesi—a seafloor-dwelling creature that resembles a huge pill bug—acquired the snippet of DNA from bacteria more than 16 million years ago, according to a new study. The…",
@@ -476,6 +464,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/this-massive-deep-sea-roly-poly-can-go-years-without-food-thanks-to-a-huge-stomach-and-a-stolen-gene-study-suggests-180989562/",
     "published_at": "2026-09-28T19:53:41.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1iz0pjf",
+    "headline": "Two Heads Are Better Than One: Rare, Double-Headed Turtle Hatchling Discovered on Cape Cod",
+    "summary": "The tiny diamondback terrapin was brought to a wildlife center on September 17. At the time, the creature weighed about as much as a nickel",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/two-heads-are-better-than-one-rare-double-headed-turtle-hatchling-discovered-on-cape-cod-180989579/",
+    "published_at": "2026-09-29T13:33:21.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1650,6 +1650,18 @@
     "published_at": "2026-08-17T19:41:46.000Z",
     "read_minutes": 2,
     "score": 4
+  },
+  {
+    "id": "s_4qzqy9",
+    "headline": "Anthropic Says Its A.I. Discovered a New Enzyme System That Resembles the Revolutionary Gene-Editing Tool CRISPR",
+    "summary": "Experts at the company don't know what the newfound system does, so its potential utility in biology—if any—remains unclear. But the work marks a major advancement because the A.I. made this discovery mostly on its own",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/anthropic-says-its-ai-discovered-a-new-enzyme-system-that-resembles-the-revolutionary-gene-editing-tool-crispr-180989578/",
+    "published_at": "2026-09-29T18:16:27.000Z",
+    "read_minutes": 2,
+    "score": 3
   },
   {
     "id": "s_ypkbsj",
@@ -5208,18 +5220,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/this-robot-can-flap-its-wings-to-both-fly-and-swim-it-might-one-day-help-scientists-study-diving-birds-and-survey-ocean-habitats-180989172/",
     "published_at": "2026-07-24T20:28:24.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_178pyod",
-    "headline": "Experimental Alzheimer's Drug That Fights a Tough-to-Target Protein Shows Promise at Slowing Cognitive Decline in a Clinical Trial",
-    "summary": "Recently FDA-approved treatments work to clear clumps of the protein amyloid beta in the brain. A drug that instead goes after tangles of the protein tau can yield similar cognitive outcomes, a new study suggests",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/experimental-alzheimers-drug-that-fights-a-tough-to-target-protein-shows-promise-at-slowing-cognitive-decline-in-a-clinical-trial-180989177/",
-    "published_at": "2026-07-23T19:32:27.000Z",
     "read_minutes": 2,
     "score": 1
   }
