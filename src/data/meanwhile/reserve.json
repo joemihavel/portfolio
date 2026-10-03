@@ -456,6 +456,18 @@
     "score": 5
   },
   {
+    "id": "s_e9g95e",
+    "headline": "Animals may have evolved vastly earlier than fossil evidence suggests",
+    "summary": "The earliest animals may have evolved hundreds of millions of years before their first unmistakable fossils appear in the fossil record, according to a new study led by the University of Oxford. The findings, published…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-animals-evolved-vastly-earlier-fossil.html",
+    "published_at": "2026-10-02T18:00:13.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_xd2nfm",
     "headline": "This Massive, Deep-Sea Roly Poly Can Go Years Without Food Thanks to a Huge Stomach and a Stolen Gene, Study Suggests",
     "summary": "The ancestors of the giant isopod Bathynomus jamesi—a seafloor-dwelling creature that resembles a huge pill bug—acquired the snippet of DNA from bacteria more than 16 million years ago, according to a new study. The…",
@@ -464,6 +476,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/this-massive-deep-sea-roly-poly-can-go-years-without-food-thanks-to-a-huge-stomach-and-a-stolen-gene-study-suggests-180989562/",
     "published_at": "2026-09-28T19:53:41.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_5go63y",
+    "headline": "Satellite Images Reveal Greenland and Antarctica Have Lost More Than 12 Trillion Tons of Ice Over the Past 50 Years",
+    "summary": "Most of the frozen water has vanished because glaciers have been flowing faster into the ocean, rather than because of surface melting of ice sheets, according to a new study. Researchers estimate the ice loss has…",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/satellite-images-reveal-greenland-and-antarctica-have-lost-more-than-12-trillion-tons-of-ice-over-the-past-50-years-180989567/",
+    "published_at": "2026-09-28T15:36:55.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1652,6 +1676,54 @@
     "score": 4
   },
   {
+    "id": "s_r0uqrj",
+    "headline": "Scientists just discovered what coffee really does to your gut and brain",
+    "summary": "A new study suggests coffee may influence mood and brain function by changing the activity of microbes in the gut. Both caffeinated and decaf coffee were linked to lower stress, depression, and impulsivity, while also…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260927034331.htm",
+    "published_at": "2026-09-28T13:37:05.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1m6pvgj",
+    "headline": "REM sleep paradox: Dreaming may drain the brain’s energy even as fuel supply rises",
+    "summary": "Scientists discovered a surprising energy paradox in the brain during REM sleep, the stage most closely associated with dreaming. Blood supply to the brain begins increasing even before REM starts, but neurons’…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260925093206.htm",
+    "published_at": "2026-09-26T11:30:49.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_14gnqxz",
+    "headline": "Marine biologists discover new plankton off Oregon coast",
+    "summary": "Nearly every morning when she was a doctoral student in the College of Arts and Sciences (CAS), Nicole Nakata, Ph.D. '23 (biology), would cross the street from the Oregon Institute of Marine Biology (OIMB) in…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-marine-biologists-plankton-oregon-coast.html",
+    "published_at": "2026-10-02T21:20:02.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_8mph3a",
+    "headline": "Protons ride moving waves to reach record energy with long-pulse lasers",
+    "summary": "Imagine a proton catching a wave and surfing it to gain speed. While the imagery may seem wild, the premise of laser-driven ion acceleration has promise as an alternative to conventional accelerators. However, the…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-protons-energy-pulse-lasers.html",
+    "published_at": "2026-10-02T14:20:08.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_4qzqy9",
     "headline": "Anthropic Says Its A.I. Discovered a New Enzyme System That Resembles the Revolutionary Gene-Editing Tool CRISPR",
     "summary": "Experts at the company don't know what the newfound system does, so its potential utility in biology—if any—remains unclear. But the work marks a major advancement because the A.I. made this discovery mostly on its own",
@@ -1672,18 +1744,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-an-architect-characterized-the-parthenons-curves-as-a-clever-optical-illusion-now-a-mathematician-begs-to-differ-180989520/",
     "published_at": "2026-09-18T17:11:29.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_1m6pvgj",
-    "headline": "REM sleep paradox: Dreaming may drain the brain’s energy even as fuel supply rises",
-    "summary": "Scientists discovered a surprising energy paradox in the brain during REM sleep, the stage most closely associated with dreaming. Blood supply to the brain begins increasing even before REM starts, but neurons’…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260925093206.htm",
-    "published_at": "2026-09-26T11:30:49.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5152,74 +5212,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/see-a-rare-ceiling-fresco-from-pompeii-that-archaeologists-are-carefully-reassembling-piece-by-piece-like-an-ancient-puzzle-180989209/",
     "published_at": "2026-07-28T14:19:34.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1d9rguv",
-    "headline": "How Does a Bilingual Speaker's Brain Process Two Languages? New Research Suggests That Both Rely on the Same Neural Wiring",
-    "summary": "Scientists have long wondered whether different neural mechanisms govern each language within a bilingual speaker’s brain. A recent study of people who speak both English and Spanish hints at a single \"grammatical…",
-    "category": "science",
-    "country": {
-      "code": "ES",
-      "name": "Spain",
-      "flag": "🇪🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/how-does-a-bilingual-speakers-brain-process-two-languages-new-research-suggests-that-both-rely-on-the-same-neural-wiring-180989202/",
-    "published_at": "2026-07-27T20:29:25.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1dd59bt",
-    "headline": "French Customs Detained This Marc Chagall Etching for Two Decades After an Attempted Border Crossing. Now It's Headed for Public Display",
-    "summary": "An acrobat perches on a violin in the absurd scene, which draws on the Russian artist's favored motifs",
-    "category": "culture",
-    "country": {
-      "code": "FR",
-      "name": "France",
-      "flag": "🇫🇷"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/french-customs-detained-this-marc-chagall-etching-for-two-decades-after-an-attempted-border-crossing-now-its-headed-for-public-display-180989204/",
-    "published_at": "2026-07-27T19:08:59.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_ryb29m",
-    "headline": "Chimpanzees and Bonobos Use Hugs, Kisses and Friendly Pats to Keep the Peace, Just Like Humans, a New Study Suggests",
-    "summary": "Since all three ape species diverged from a common ancestor that lived roughly six million to eight million years ago, the findings hint that friendly touching to diffuse tension has deep evolutionary origins",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/chimpanzees-and-bonobos-use-hugs-kisses-and-pats-to-keep-the-peace-just-like-humans-a-new-study-suggests-180989192/",
-    "published_at": "2026-07-27T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_f6no1g",
-    "headline": "Three Millennia Ago, Humans May Have Spoken Thousands More Languages Than We Have Today, During a Linguistic 'Golden Age'",
-    "summary": "A new study suggests linguistic diversity reached its peak between 1000 B.C.E. and 1000 C.E. before declining",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/three-millennia-ago-humans-may-have-spoken-thousands-more-languages-than-we-have-today-during-a-linguistic-golden-age-180989197/",
-    "published_at": "2026-07-24T21:42:54.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1o358i3",
-    "headline": "This Robot Can Flap Its Wings to Both Fly and Swim. It Might One Day Help Scientists Study Diving Birds and Survey Ocean Habitats",
-    "summary": "The bioinspired device, which weighs roughly half a pound and measures around three feet wide, was also modeled after aquatic birds like puffins, gulls and loons",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/this-robot-can-flap-its-wings-to-both-fly-and-swim-it-might-one-day-help-scientists-study-diving-birds-and-survey-ocean-habitats-180989172/",
-    "published_at": "2026-07-24T20:28:24.000Z",
     "read_minutes": 2,
     "score": 1
   }
