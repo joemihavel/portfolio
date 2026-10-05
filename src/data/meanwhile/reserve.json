@@ -456,30 +456,6 @@
     "score": 5
   },
   {
-    "id": "s_16d5rva",
-    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
-    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
-    "category": "planet",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
-    "published_at": "2026-08-25T13:00:03.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1nch8gz",
-    "headline": "Powerful simulations reveal how the first stars changed the universe",
-    "summary": "Ultra-detailed simulations are showing how the first stars lit up the dark Universe and seeded space with elements such as carbon, oxygen, and iron. The MEGATRON project could bridge JWST observations of the earliest…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261001214012.htm",
-    "published_at": "2026-10-03T12:50:57.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_1higmrd",
     "headline": "This new qubit could be 100 times less error-prone in superfluid quantum computer breakthrough",
     "summary": "A proposed qubit made with superfluid helium could cut quantum computing error rates by around 100 times by shielding quantum information from common forms of electromagnetic noise. If experiments confirm the…",
@@ -504,14 +480,14 @@
     "score": 4
   },
   {
-    "id": "s_y61vdt",
-    "headline": "Caltech physicists finally measure a quantum energy ladder predicted 40 years ago",
-    "summary": "Researchers have experimentally observed energy patterns that physicists have predicted for about 40 years. By arranging laser-trapped atoms into a quantum simulator, they recreated two different quantum tipping points…",
+    "id": "s_d12w9x",
+    "headline": "Hidden X-ray phase revealed in likely neutron star merger",
+    "summary": "An international team of astronomers, including researchers from the Department of Physics and the Hong Kong Institute for Astronomy and Astrophysics (HKIAA) at The University of Hong Kong (HKU), has discovered a…",
     "category": "science",
     "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260928100554.htm",
-    "published_at": "2026-10-01T03:06:56.000Z",
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-09-hidden-ray-phase-revealed-neutron.html",
+    "published_at": "2026-10-04T17:00:02.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -524,30 +500,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-10-scientists-superconductor-reversal-symmetry.html",
     "published_at": "2026-10-02T21:00:01.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_e9g95e",
-    "headline": "Animals may have evolved vastly earlier than fossil evidence suggests",
-    "summary": "The earliest animals may have evolved hundreds of millions of years before their first unmistakable fossils appear in the fossil record, according to a new study led by the University of Oxford. The findings, published…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-10-animals-evolved-vastly-earlier-fossil.html",
-    "published_at": "2026-10-02T18:00:13.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1iz0pjf",
-    "headline": "Two Heads Are Better Than One: Rare, Double-Headed Turtle Hatchling Discovered on Cape Cod",
-    "summary": "The tiny diamondback terrapin was brought to a wildlife center on September 17. At the time, the creature weighed about as much as a nickel",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/two-heads-are-better-than-one-rare-double-headed-turtle-hatchling-discovered-on-cape-cod-180989579/",
-    "published_at": "2026-09-29T13:33:21.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -572,6 +524,66 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/satellite-images-reveal-greenland-and-antarctica-have-lost-more-than-12-trillion-tons-of-ice-over-the-past-50-years-180989567/",
     "published_at": "2026-09-28T15:36:55.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_16d5rva",
+    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+    "published_at": "2026-08-25T13:00:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1nch8gz",
+    "headline": "Powerful simulations reveal how the first stars changed the universe",
+    "summary": "Ultra-detailed simulations are showing how the first stars lit up the dark Universe and seeded space with elements such as carbon, oxygen, and iron. The MEGATRON project could bridge JWST observations of the earliest…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261001214012.htm",
+    "published_at": "2026-10-03T12:50:57.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_y61vdt",
+    "headline": "Caltech physicists finally measure a quantum energy ladder predicted 40 years ago",
+    "summary": "Researchers have experimentally observed energy patterns that physicists have predicted for about 40 years. By arranging laser-trapped atoms into a quantum simulator, they recreated two different quantum tipping points…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260928100554.htm",
+    "published_at": "2026-10-01T03:06:56.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_e9g95e",
+    "headline": "Animals may have evolved vastly earlier than fossil evidence suggests",
+    "summary": "The earliest animals may have evolved hundreds of millions of years before their first unmistakable fossils appear in the fossil record, according to a new study led by the University of Oxford. The findings, published…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-animals-evolved-vastly-earlier-fossil.html",
+    "published_at": "2026-10-02T18:00:13.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1iz0pjf",
+    "headline": "Two Heads Are Better Than One: Rare, Double-Headed Turtle Hatchling Discovered on Cape Cod",
+    "summary": "The tiny diamondback terrapin was brought to a wildlife center on September 17. At the time, the creature weighed about as much as a nickel",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/two-heads-are-better-than-one-rare-double-headed-turtle-hatchling-discovered-on-cape-cod-180989579/",
+    "published_at": "2026-09-29T13:33:21.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1760,18 +1772,6 @@
     "score": 3
   },
   {
-    "id": "s_14gnqxz",
-    "headline": "Marine biologists discover new plankton off Oregon coast",
-    "summary": "Nearly every morning when she was a doctoral student in the College of Arts and Sciences (CAS), Nicole Nakata, Ph.D. '23 (biology), would cross the street from the Oregon Institute of Marine Biology (OIMB) in…",
-    "category": "planet",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-10-marine-biologists-plankton-oregon-coast.html",
-    "published_at": "2026-10-02T21:20:02.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_4qzqy9",
     "headline": "Anthropic Says Its A.I. Discovered a New Enzyme System That Resembles the Revolutionary Gene-Editing Tool CRISPR",
     "summary": "Experts at the company don't know what the newfound system does, so its potential utility in biology—if any—remains unclear. But the work marks a major advancement because the A.I. made this discovery mostly on its own",
@@ -1780,6 +1780,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/anthropic-says-its-ai-discovered-a-new-enzyme-system-that-resembles-the-revolutionary-gene-editing-tool-crispr-180989578/",
     "published_at": "2026-09-29T18:16:27.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_14gnqxz",
+    "headline": "Marine biologists discover new plankton off Oregon coast",
+    "summary": "Nearly every morning when she was a doctoral student in the College of Arts and Sciences (CAS), Nicole Nakata, Ph.D. '23 (biology), would cross the street from the Oregon Institute of Marine Biology (OIMB) in…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-marine-biologists-plankton-oregon-coast.html",
+    "published_at": "2026-10-02T21:20:02.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5192,22 +5204,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/rare-fossil-reveals-a-three-tier-food-chain-frozen-in-time-a-pterosaur-eaten-by-an-ichthyosaur-eaten-by-a-pliosaur-180989243/",
     "published_at": "2026-07-31T18:40:06.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_ldf6a9",
-    "headline": "Want to Spend Some Alone Time With Stonehenge? This August, Lucky Visitors Get the Chance to Enter the Stone Circle Before the Site Opens to Tourists",
-    "summary": "Almost every day next month, management of the prehistoric landmark in England will draw a winning ticket and offer a unique experience to a visitor before the daily bustle begins",
-    "category": "culture",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/want-to-spend-some-alone-time-with-stonehenge-this-august-lucky-visitors-get-the-chance-to-enter-the-stone-circle-before-the-site-opens-to-tourists-180989229/",
-    "published_at": "2026-07-30T18:02:41.000Z",
     "read_minutes": 2,
     "score": 1
   }
