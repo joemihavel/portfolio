@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_xkz2lq",
+    "headline": "AI Chatbots Will Never Replace Advice From Elders, Say Seven of 10 in New Poll",
+    "summary": "More than seven in 10 Brits believe AI will never replace advice from their elders. A study of 2,000 adults found while 21 percent use these artificial intelligence tools for help several times a week, 92 percent…",
+    "category": "science",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/ai-chatbots-will-never-replace-advice-from-elders-say-seven-of-10-in-new-poll/",
+    "published_at": "2026-10-04T11:00:36.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_pt1due",
     "headline": "Marine protected areas aren’t as protected as you think",
     "summary": "Only 2 percent of the ocean appears to benefit substantially from marine conservation areas, challenging a key metric of the 30x30 campaign.",
@@ -468,14 +480,26 @@
     "score": 4
   },
   {
-    "id": "s_1nelhnq",
-    "headline": "Chang’e-6 lunar soil contains a surprising magnetic time capsule",
-    "summary": "Scientists studying Chang’e-6 lunar soil have discovered a previously unknown magnetic mineral in natural Moon samples: a form of metallic iron called γ-Fe. Found inside tiny impact-glass particles, the nanoscale iron…",
-    "category": "science",
+    "id": "s_gsc7ho",
+    "headline": "Uncertainty mounts as Suriname struggles to evict illegal settlers in the Amazon",
+    "summary": "The government in Suriname this year said it planned to evict illegal settlers in the Amazon Rainforest, and possibly send many of them back to their home countries. But eviction has proven much more complicated than it…",
+    "category": "planet",
     "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261001214015.htm",
-    "published_at": "2026-10-03T13:12:14.000Z",
+    "source": "Mongabay",
+    "url": "https://news.mongabay.com/2026/10/uncertainty-mounts-as-suriname-struggles-to-evict-illegal-settlers-in-the-amazon/",
+    "published_at": "2026-10-05T19:03:50.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_16d5rva",
+    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+    "published_at": "2026-08-25T13:00:03.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -488,6 +512,30 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/10/261001214012.htm",
     "published_at": "2026-10-03T12:50:57.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1535228",
+    "headline": "Illinois passed the nation’s first climate migration law. The effort has languished since.",
+    "summary": "More than a year after the law was signed, the state has made little progress and appears poised to miss a December deadline for a required report.",
+    "category": "planet",
+    "country": null,
+    "source": "Grist",
+    "url": "https://grist.org/migration/illinois-passed-the-nations-first-climate-migration-law-the-effort-has-languished-since/",
+    "published_at": "2026-09-28T08:30:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1nelhnq",
+    "headline": "Chang’e-6 lunar soil contains a surprising magnetic time capsule",
+    "summary": "Scientists studying Chang’e-6 lunar soil have discovered a previously unknown magnetic mineral in natural Moon samples: a form of metallic iron called γ-Fe. Found inside tiny impact-glass particles, the nanoscale iron…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261001214015.htm",
+    "published_at": "2026-10-03T13:12:14.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -540,18 +588,6 @@
     "score": 4
   },
   {
-    "id": "s_1535228",
-    "headline": "Illinois passed the nation’s first climate migration law. The effort has languished since.",
-    "summary": "More than a year after the law was signed, the state has made little progress and appears poised to miss a December deadline for a required report.",
-    "category": "planet",
-    "country": null,
-    "source": "Grist",
-    "url": "https://grist.org/migration/illinois-passed-the-nations-first-climate-migration-law-the-effort-has-languished-since/",
-    "published_at": "2026-09-28T08:30:00.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_d12w9x",
     "headline": "Hidden X-ray phase revealed in likely neutron star merger",
     "summary": "An international team of astronomers, including researchers from the Department of Physics and the Hong Kong Institute for Astronomy and Astrophysics (HKIAA) at The University of Hong Kong (HKU), has discovered a…",
@@ -584,18 +620,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/satellite-images-reveal-greenland-and-antarctica-have-lost-more-than-12-trillion-tons-of-ice-over-the-past-50-years-180989567/",
     "published_at": "2026-09-28T15:36:55.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_16d5rva",
-    "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
-    "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
-    "category": "planet",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
-    "published_at": "2026-08-25T13:00:03.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1796,14 +1820,26 @@
     "score": 3
   },
   {
-    "id": "s_1nnbph4",
-    "headline": "Quantum systems never quite forget where they came from",
-    "summary": "Even the most chaotic quantum systems keep a permanent mark of their own past—a \"quantum birthmark\"—that never fades. Researchers from Tampere University, Harvard University and TU Dresden discovered the feature in…",
+    "id": "s_1pnvy01",
+    "headline": "The world's oyster reefs could add $12 trillion to planetary health each year—if they were better managed",
+    "summary": "A new study shows that the world's oyster reefs are a precious resource that's vastly underestimated and underutilized. The authors set out to calculate the reefs' potential gross ecosystem product (GEP), the ecological…",
     "category": "science",
     "country": null,
     "source": "Phys.org",
-    "url": "https://phys.org/news/2026-10-quantum.html",
-    "published_at": "2026-10-05T20:00:13.000Z",
+    "url": "https://phys.org/news/2026-10-world-oyster-reefs-trillion-planetary.html",
+    "published_at": "2026-10-07T04:00:01.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1yob8ic",
+    "headline": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
+    "summary": "Indigenous communities near present-day Milwaukee hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
+    "published_at": "2026-10-06T14:10:50.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -1816,6 +1852,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/anthropic-says-its-ai-discovered-a-new-enzyme-system-that-resembles-the-revolutionary-gene-editing-tool-crispr-180989578/",
     "published_at": "2026-09-29T18:16:27.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1nnbph4",
+    "headline": "Quantum systems never quite forget where they came from",
+    "summary": "Even the most chaotic quantum systems keep a permanent mark of their own past—a \"quantum birthmark\"—that never fades. Researchers from Tampere University, Harvard University and TU Dresden discovered the feature in…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-quantum.html",
+    "published_at": "2026-10-05T20:00:13.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5144,58 +5192,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/spinal-deformities-in-saber-toothed-cat-fossils-reveal-how-the-now-extinct-felines-may-have-spent-their-final-days-180989237/",
     "published_at": "2026-08-10T15:36:44.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1irb2j",
-    "headline": "One of Italy's Most Popular Attractions, the Uffizi Galleries in Florence, Reveals Plans for a Major Renovation Over the Next Two Years",
-    "summary": "The collection of treasures, many of them connected to the Medici family, includes Italian Renaissance masterpieces, a palace and a courtly garden",
-    "category": "culture",
-    "country": {
-      "code": "IT",
-      "name": "Italy",
-      "flag": "🇮🇹"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/one-of-italys-most-popular-attractions-the-uffizi-galleries-in-florence-reveals-plans-for-a-major-renovation-over-the-next-two-years-180989295/",
-    "published_at": "2026-08-07T18:22:09.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1kpt0o4",
-    "headline": "Traces of Two Extinct 'Ghost' Ancestors Were Found Hiding in Modern Human DNA, Hinting at Our Extremely Complex Family Tree",
-    "summary": "Researchers used a new method to investigate past interbreeding with Homo sapiens that doesn't require ancient DNA. The technique identified areas of living humans' genomes that came from unknown hominins, including one…",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/traces-of-two-extinct-ghost-ancestors-were-found-hiding-in-modern-human-dna-hinting-at-our-extremely-complex-family-tree-180989250/",
-    "published_at": "2026-08-07T15:34:44.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1w35mhu",
-    "headline": "Why Does Antarctica's Blood Falls Spew Ruby Red Water? Microbes Offer New Clues About the Geologic Feature's Ancient Origins",
-    "summary": "The falls contain saltwater rich with iron, which oxidizes and turns red when exposed to air. A new study provides further evidence that the brine probably comes from ocean water trapped when flood waters retreated…",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/why-does-antarcticas-blood-falls-spew-ruby-red-water-microbes-offer-new-clues-about-the-geologic-features-ancient-origins-180989271/",
-    "published_at": "2026-08-06T20:26:01.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1nogvx4",
-    "headline": "Sperm Whales Seem to Change Their Calls When Ships Are Near, Highlighting the Implications of Underwater Noise Pollution",
-    "summary": "Several of the huge cetaceans living in the eastern Caribbean Sea shortened the intervals between their clicks and used one click pattern more than another when vessels were around, according to a new study",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/sperm-whales-seem-to-change-their-calls-when-ships-are-near-highlighting-the-implications-of-underwater-noise-pollution-180989257/",
-    "published_at": "2026-08-06T15:12:00.000Z",
     "read_minutes": 2,
     "score": 1
   }

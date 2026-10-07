@@ -1,0 +1,830 @@
+{
+  "day": "2026-10-07",
+  "generated_at": "2026-10-07T11:56:14.068Z",
+  "count": 44,
+  "fresh_count": 44,
+  "stories": [
+    {
+      "id": "s_int5s8",
+      "headline": "New crocodile species found fossilized in stone used to build Egypt’s Great Sphinx",
+      "summary": "About 45 million years ago in northern Egypt, a long-snouted crocodile hunted in the warm, shallow sea. Its bones settled into the same limestone formation that ancient Egyptians would later carry and carve into the…",
+      "category": "animals",
+      "country": {
+        "code": "EG",
+        "name": "Egypt",
+        "flag": "🇪🇬"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/new-crocodile-species-found-fossilized-in-stone-used-to-build-egypts-great-sphinx/",
+      "published_at": "2026-10-06T23:14:27.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/06231012/Sphinx-croc_Herugavialis_cairensis.png",
+        "alt": null,
+        "w": 1024,
+        "h": 729
+      }
+    },
+    {
+      "id": "s_2d2mpp",
+      "headline": "The Roman City of Claudivium Disappeared From Historical Records Almost 2,000 Years Ago. It May Have Been Hiding in Austria",
+      "summary": "Archaeologists have discovered a previously unknown settlement on the banks of the Danube River",
+      "category": "planet",
+      "country": {
+        "code": "AT",
+        "name": "Austria",
+        "flag": "🇦🇹"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/the-roman-city-of-claudivium-disappeared-from-historical-records-almost-2000-years-ago-it-may-have-been-hiding-in-austria-180989614/",
+      "published_at": "2026-10-05T13:00:00.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_1utywhk",
+      "headline": "‘You’re Walking!’ – Dad Surprises Children Having Recovered Ability to Walk After Serious Brain Injury",
+      "summary": "After 3 years of recovery from a brain injury sustained in a car accident, a father surprised his children by walking independently again. Lounging on the couch enjoying some TV time, children are excellent at…",
+      "category": "tiny",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/youre-walking-dad-surprises-children-having-recovered-ability-to-walk-after-serious-brain-injury/",
+      "published_at": "2026-10-07T11:00:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-screengrab-via-@glittersparkles.jpg",
+        "alt": null,
+        "w": 1216,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1mdh283",
+      "headline": "Illinois Community Members Honored for Helping Save Woman in Submerged Vehicle (WATCH)",
+      "summary": "On a stormy afternoon in Illinois in August, an elderly driver lost control of her vehicle as it plunged into a flooded retention pond. Sinking up to its roof, multiple local community members immediately began to swim…",
+      "category": "people",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/illinois-community-members-honored-for-helping-save-woman-in-submerged-vehicle-watch/",
+      "published_at": "2026-10-06T13:00:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-Champaign-Illinois-Police-Department-e1791276599357.jpg",
+        "alt": null,
+        "w": 1145,
+        "h": 637
+      }
+    },
+    {
+      "id": "s_dd55nl",
+      "headline": "A Place to Sleep for Denver’s Homeless College Students",
+      "summary": "This story was originally published by Chalkbeat. Sign up for their newsletters at ckbe.at/newsletters. During her first semester at Chicago’s Malcolm X College, Nikya Harrell had had enough. It was winter, and she was…",
+      "category": "communities",
+      "country": null,
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/home-for-denver-homeless-college-students/",
+      "published_at": "2026-09-29T08:00:24.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_1440479351-scaled.jpg",
+        "alt": null,
+        "w": 2560,
+        "h": 1067
+      }
+    },
+    {
+      "id": "s_1kll6tl",
+      "headline": "Animals may have evolved 200 million years earlier than we thought",
+      "summary": "New research suggests animals could have evolved as early as 800 to 700 million years ago, roughly 200 million years earlier than some previous estimates. If so, the first animals may have lived before or during…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261003234023.htm",
+      "published_at": "2026-10-07T02:29:56.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/ediacaran-sea-floor.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_plcwv6",
+      "headline": "Stunning Collection of Stolen Greek Artifacts Spanning 5,000 Years Were Just Returned to Greece",
+      "summary": "Millions of dollars in ancient Greek artifacts were recently repatriated to their mother country by New York authorities after they were identified at the Metropolitan Museum of Art. They include 2 ancient bronze…",
+      "category": "culture",
+      "country": {
+        "code": "GR",
+        "name": "Greece",
+        "flag": "🇬🇷"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/stunning-collection-of-stolen-greek-artifacts-spanning-5000-years-were-just-returned-to-greece/",
+      "published_at": "2026-10-01T11:00:34.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Greek-Ministry-of-Culture-released.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 682
+      }
+    },
+    {
+      "id": "s_18t2bgs",
+      "headline": "In an Exciting but ‘Brutal’ Find, a 5,000-Year-Old Arrow Emerges From Norway’s Rapidly Melting Mountain Ice",
+      "summary": "Archaeologists discovered 48 prehistoric arrows during a recent three-week expedition in the mountains of Jotunheimen",
+      "category": "achievement",
+      "country": {
+        "code": "NO",
+        "name": "Norway",
+        "flag": "🇳🇴"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/in-an-exciting-but-brutal-find-a-5000-year-old-arrow-emerges-from-norways-rapidly-melting-mountain-ice-180989599/",
+      "published_at": "2026-10-01T14:39:13.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/P1afvsWtEflPAmXjt1V_jC68910=/fit-in/1600x0/filters:focal(1408x919:1409x920)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/61/b3/61b30383-d8a0-4546-9327-35adb1b9a6c1/1_slate_arrowhead_approx_5000_years_old_photo_asa_romme-5de025acc680e9a2bff7cb922a2ab1fd.jpg",
+        "alt": "Archaeologists found a slate arrowhead they estimate to be between 5,000 and 6,000 years old.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_avksuq",
+      "headline": "Ancient buffalo DNA lays out a roadmap to rehabilitating healthy herds",
+      "summary": "Genetic analysis of bison dating back 20,000 years shows how the 19th-century slaughter reshaped the species—and how today's herds could recover.",
+      "category": "animals",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds/?utm_source=rss&utm_medium=rss&utm_campaign=ancient-buffalo-dna-lays-out-a-roadmap-to-rehabilitating-healthy-herds",
+      "published_at": "2026-08-19T16:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/Bison-in-snowstorm.jpg",
+        "alt": "Ancient buffalo DNA lays out a roadmap to rehabilitating healthy herds",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_zdw36p",
+      "headline": "Antarctica’s Wind Farm Saves 122,000 Gallons of Diesel Over 15 Years Powering McMurdo Station",
+      "summary": "As they near the end of their productive lives, the 3 wind turbines spinning on Antarctica’s Ross Island have made an enormous impact on the energy market of the continent. Built and commissioned over 2008-2009, the…",
+      "category": "planet",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/antarcticas-wind-farm-saves-122000-gallons-of-diesel-over-15-years-powering-mcmurdo-station/",
+      "published_at": "2026-10-02T13:00:15.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Ross-Island-Wind-Farm-credit-retrived-from-Meridian-Energy-e1790930850358.jpg",
+        "alt": null,
+        "w": 1125,
+        "h": 660
+      }
+    },
+    {
+      "id": "s_z79fdj",
+      "headline": "Pomegranates, Walnuts and Berries Could Unlock Heart Failure Treatment By Producing Urolithin A",
+      "summary": "A compound produced in the body after eating pomegranates improves heart function by up to 80%, particularly for a type of heart failure with limited treatment options. Scientists at King’s College London have…",
+      "category": "tiny",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/pomegranates-walnuts-and-berries-could-unlock-heart-failure-treatment-with-urolithin-a/",
+      "published_at": "2026-10-04T23:21:48.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/11/pomegranates-fruit-pubdomain-Margarita-Zueva.jpg",
+        "alt": null,
+        "w": 1397,
+        "h": 757
+      }
+    },
+    {
+      "id": "s_12bhf84",
+      "headline": "Nonprofit Brings Free Music Education to More Than 20,000 Miami Students in 131 Schools",
+      "summary": "Down in Miami-Dade County, educators are seeing how school doesn’t mean a thing if it ain’t got that swing. Showing up, taking an interest in school and the community therein, comes that much easier for the some 21,000…",
+      "category": "communities",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/nonprofit-brings-free-music-education-to-more-than-20000-miami-students-in-131-schools/",
+      "published_at": "2026-10-05T13:00:20.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/maxresdefault-1.jpg",
+        "alt": null,
+        "w": 1280,
+        "h": 720
+      }
+    },
+    {
+      "id": "s_gjakfm",
+      "headline": "Rare 1-in-100M ‘Ghost Lobster’ Goes to School to Help Scientists Crack Genetic Mystery–in Time for Halloween",
+      "summary": "A ‘ghost’ lobster so rare that the odds of finding one are 1 in 100 million is going to school, and its new home is Maine’s Marine Science Center—arriving just in time for Halloween. The rare white crustacean was…",
+      "category": "science",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/100m-ghost-lobster-goes-to-college/",
+      "published_at": "2026-10-04T15:04:49.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Casper-the-white-lobster-at-University-of-New-England-Arthur-P-Girard-Marine-Science-Center-released.jpg",
+        "alt": null,
+        "w": 1300,
+        "h": 700
+      }
+    },
+    {
+      "id": "s_1n0bvls",
+      "headline": "These Wild Lemurs Sing Just Like Opera Stars, Widening Their Mouths as They Hit the High Notes, Study Suggests",
+      "summary": "Scientists suspect this musical trait arose independently in humans and indris, which split from a common ancestor some 74 million years ago. Today, the lemurs make loud, haunting calls to communicate with one another…",
+      "category": "culture",
+      "country": {
+        "code": "MG",
+        "name": "Madagascar",
+        "flag": "🇲🇬"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/these-wild-lemurs-sing-just-like-opera-stars-widening-their-mouths-as-they-hit-the-high-notes-study-suggests-180989603/",
+      "published_at": "2026-10-02T14:34:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/UnIBwsAhNFQX_d5M1OMzM_lXkjg=/fit-in/1600x0/filters:focal(600x451:601x452)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9c/9a/9c9aa69d-c6d0-493c-b23e-61e1ed2b1da9/indri_indri_8945066.jpg",
+        "alt": "The indri is the only known species of lemur that sings.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_2r5yn7",
+      "headline": "What went right this week: a brighter future for Kosovo, plus more",
+      "summary": "Kosovo was cleared of landmines, Germany set a date for quitting oil, and a new species was discovered, plus more",
+      "category": "animals",
+      "country": {
+        "code": "DE",
+        "name": "Germany",
+        "flag": "🇩🇪"
+      },
+      "source": "Positive News",
+      "url": "https://www.positive.news/society/good-news-stories-from-week-39-of-2026/",
+      "published_at": "2026-09-25T05:11:56.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.positive.news/wp-content/uploads/2026/09/iStock-487000750-2.jpg",
+        "alt": null,
+        "w": 1650,
+        "h": 1100
+      }
+    },
+    {
+      "id": "s_1r68bih",
+      "headline": "‘Flourishing’ Sycamore Gap Tree Has Ring of New Shoots Already 3-Feet Tall",
+      "summary": "3 years on from the illegal felling of Britain’s famous Sycamore Gap tree, new aerial images reveal how the stump is flourishing, and the basal sprouts that emerged are growing fast. For those who didn’t read or weren’t…",
+      "category": "planet",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/",
+      "published_at": "2026-10-01T18:30:18.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 612
+      }
+    },
+    {
+      "id": "s_v6fhb9",
+      "headline": "Chinese Commercial Reactor Achieves Nuclear Fusion with Clean Hydrogen-Boron Fuel",
+      "summary": "In a world first, Chinese engineers have achieved brief nuclear fusion with a much cleaner and abundant fuel supply in what an international review team called a “significant and valuable” advance in the field. Using…",
+      "category": "tiny",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/chinese-commercial-reactor-achieves-nuclear-fusion-with-clean-hydrogen-boron-fuel/",
+      "published_at": "2026-10-01T15:30:26.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/ENN-Groups-EXL-50U-spherical-device-which-successfully-achieved-hydrogen-boron-fusion-reactions-credit-handout.jpg",
+        "alt": null,
+        "w": 1125,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1exwbho",
+      "headline": "This Stone Wall Seems to Have Finally Settled Debate About The Town That Became Paris",
+      "summary": "Excavations in central Paris have turned up a stone wall that may have finally settled the debate regarding the true origins of the city. City officials described themselves as feeling “dizzy” looking down onto what is…",
+      "category": "communities",
+      "country": {
+        "code": "FR",
+        "name": "France",
+        "flag": "🇫🇷"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/this-stone-wall-seems-to-have-finally-settled-debate-about-the-town-that-became-paris/",
+      "published_at": "2026-09-29T15:30:41.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Anastasia-Choquet-DRAC-Ile-de-France-released.jpg",
+        "alt": null,
+        "w": 1125,
+        "h": 665
+      }
+    },
+    {
+      "id": "s_1g71dzz",
+      "headline": "The early universe wasn’t nearly as pristine as scientists thought",
+      "summary": "JWST has revealed that galaxies were spreading carbon, oxygen, and other heavy elements through space just 500 million years after the Big Bang. The surprising discovery suggests the young universe became chemically…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260930225443.htm",
+      "published_at": "2026-10-02T11:24:07.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/early-galaxy-visualization.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1czyl2i",
+      "headline": "In One of Rome’s Most Famed and Neglected Villas, Centuries-Old Risqué Frescoes, Painted Over by Nuns, Have Reappeared",
+      "summary": "Nearly a year into a $40 million restoration of the Villa Silvestri Rivaldi, conservators are rediscovering and reviving 16th-century art",
+      "category": "culture",
+      "country": {
+        "code": "IT",
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/in-one-of-romes-most-famed-and-neglected-villas-centuries-old-risque-frescoes-painted-over-by-nuns-have-reappeared-180989585/",
+      "published_at": "2026-09-29T20:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/G3adg3kHUEVR_eUihS7OtE7aw7Y=/fit-in/1600x0/filters:focal(600x400:601x401)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9d/f7/9df77a95-aaf8-42d2-9516-c5a9713762d9/9-dicembre-villa-silvestri-rivaldi-rocca-giuli-baldassarre-15.jpg",
+        "alt": "Built in the mid-16th century, the&amp;nbsp;Villa Silvestri Rivaldi sat abandoned for decades just a short walk from Rome&amp;rsquo;s Colisseum. A new improvement project is revitalizing the complex and bringing its interior artworks to light.&amp;nbsp;",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_jq79c3",
+      "headline": "First Ever Recorded Sea Turtle Nests on America’s West Coast",
+      "summary": "A bombshell report last week from the LA Times details that a series of olive ridley sea turtles which laid their eggs on beaches in Southern California are the first of their race ever recorded buildings nests on the…",
+      "category": "animals",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/first-ever-recorded-sea-turtle-nests-on-americas-west-coast/",
+      "published_at": "2026-09-30T09:52:15.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Eggs-from-an-olive-ridley-sea-turtle-were-laid-near-Seal-Beach-Credit-City-of-Huntington-Beach.jpg",
+        "alt": null,
+        "w": 1300,
+        "h": 715
+      }
+    },
+    {
+      "id": "s_fz70or",
+      "headline": "Indigenous activist Kynan Tegar on Indonesia’s fires, and defending the Earth",
+      "summary": "Indigenous activist and filmmaker Kynan Tegar joins the Mongabay Newscast this week to discuss the impacts of the fires devastating Kalimantan, the Indonesian portion of the island of Borneo. Some 48,000 hectares (about…",
+      "category": "planet",
+      "country": {
+        "code": "ID",
+        "name": "Indonesia",
+        "flag": "🇮🇩"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/podcast/2026/10/indigenous-activist-kynan-tegar-on-indonesias-fires-and-defending-the-earth/",
+      "published_at": "2026-10-06T19:06:37.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2024/11/15123538/5-Customary-long-house.jpg",
+        "alt": null,
+        "w": 1536,
+        "h": 864
+      }
+    },
+    {
+      "id": "s_1q17k18",
+      "headline": "NASA’s Roman telescope just opened its planet-hunting eye",
+      "summary": "NASA’s Roman Space Telescope has demonstrated remarkable pointing stability and given its powerful planet-imaging coronagraph its first look at the cosmos. The telescope can already stay locked on a target with…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261001214057.htm",
+      "published_at": "2026-10-02T12:21:30.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/nasa-roman-space-telescope-explores-universe.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_12gg8q0",
+      "headline": "Centuries Ago, Royals Dressed Up Their Dolls to Share the Latest Fashions. See How Barbies, Baby Dolls and Other Tiny Trendsetters Have Inspired Designers Ever Since",
+      "summary": "A new exhibition at the Museum at FIT in New York City showcases more than 170 objects that trace the often-unexpected relationship between dolls and fashion",
+      "category": "culture",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-royals-dressed-up-their-dolls-to-share-latest-fashions-see-how-barbies-baby-dolls-and-other-tiny-trendsetters-have-inspired-designers-ever-since-180989580/",
+      "published_at": "2026-09-28T20:22:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/0LycYHYe-1oT5OJNcPOBijVVUQg=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9f/05/9f05717c-beda-464e-bdb8-40eb41114db3/doll-dressing1.png",
+        "alt": "A display case featuring &amp;quot;Dolls as Designers,&amp;quot; including Yves Saint Laurent (second from left) and Anna Sui (second from right)",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_6o32sh",
+      "headline": "New crocodile species discovered in rocks used to build the Great Sphinx",
+      "summary": "A new species of extinct crocodile from Egypt has been discovered, sharing more than just its home with the Great Sphinx. Herugavialis cairensis was found in the very same rocks used to build the iconic monument. And…",
+      "category": "animals",
+      "country": {
+        "code": "EG",
+        "name": "Egypt",
+        "flag": "🇪🇬"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-crocodile-species-great-sphinx.html",
+      "published_at": "2026-10-06T23:00:07.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/new-crocodile-species.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_17atla5",
+      "headline": "Meet the 14-year-old uncovering London’s lost history",
+      "summary": "Seasoned mudlark Emmylou Vaxby has spent nearly a decade searching the Thames foreshore for fragments of the city’s past",
+      "category": "planet",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/meet-the-14-year-old-uncovering-londons-lost-history/",
+      "published_at": "2026-10-05T07:00:44.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.positive.news/wp-content/uploads/2026/09/IMG_4220-copy.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 1440
+      }
+    },
+    {
+      "id": "s_90z0hv",
+      "headline": "ESA’s Juice just used Earth as a slingshot to Jupiter",
+      "summary": "ESA’s Juice spacecraft raced past Earth on September 28, using our planet’s gravity to dramatically reshape its path toward Jupiter without burning much fuel. The flyby changed its direction by 20 degrees and increased…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261001214102.htm",
+      "published_at": "2026-10-03T13:34:11.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/juice-images-earth-during-flyby.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_3xxs7y",
+      "headline": "A New Exhibition Spotlights 4,500 Years of Broken, Shot-Up and Degraded Artworks to Explore the ‘Power of the Fragment’",
+      "summary": "The show, on view in Florence and coming to D.C. next year, examines the history and impact of destroyed sculptures throughout time and across cultures",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-new-exhibition-spotlights-4500-years-of-broken-shot-up-and-degraded-artworks-to-explore-the-power-of-the-fragment-180989602/",
+      "published_at": "2026-10-02T12:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/pAvIYXDVJC2w843eGREnU6UQoEg=/fit-in/1600x0/filters:focal(4752x3168:4753x3169)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9a/86/9a86f67c-8741-4374-8c74-7a17aee632c9/0003dsb09891_photoelabialkowskaoknostudio.jpeg",
+        "alt": "The exhibition features damaged art from all over the world.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_iirdft",
+      "headline": "Fighting dengue with sterile insects: Lisbon’s experimental approach",
+      "summary": "Portugal has released 30,000 sterile male mosquitoes in Lisbon as part of a push to bring down populations of the Asian tiger mosquito (Aedes albopictus), a species that can carry dengue, Zika, and yellow fever. Last…",
+      "category": "animals",
+      "country": {
+        "code": "PT",
+        "name": "Portugal",
+        "flag": "🇵🇹"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/fighting-dengue-with-sterile-insects-lisbons-experimental-approach/",
+      "published_at": "2026-10-02T00:00:31.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_48209325_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_157mopd",
+      "headline": "Colombia’s new government backs fracking as debate over energy future heats up",
+      "summary": "PUERTO WILCHES, Santander – On the banks of Colombia’s largest river, the town and the wider municipality of Puerto Wilches sit amid a maze of wetlands and floodplain lakes in the Middle Magdalena Valley. Residents…",
+      "category": "planet",
+      "country": {
+        "code": "CO",
+        "name": "Colombia",
+        "flag": "🇨🇴"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/colombias-new-government-backs-fracking-as-debate-over-energy-future-heats-up/",
+      "published_at": "2026-10-07T10:46:55.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/07103518/Residents-in-the-Medio-Magdalena-region-protest-against-proposed-fracking-CREDIT-Alianza-Colombia-Libre-de-Fracking.jpg",
+        "alt": null,
+        "w": 2400,
+        "h": 1600
+      }
+    },
+    {
+      "id": "s_1yyqst8",
+      "headline": "This diet may slow brain aging by 2.5 years",
+      "summary": "People who followed the MIND diet more closely showed slower brain shrinkage and less grey matter loss over time, with the strongest differences equivalent to about 2.5 years of delayed brain aging. Berries and poultry…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260930225503.htm",
+      "published_at": "2026-10-01T12:26:47.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/human-brain-fresh-fruit-healthy-food.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1yux1qn",
+      "headline": "The Milwaukee Art Museum Just Returned Two Ceramics Made by Enslaved Potter David Drake to His Descendants",
+      "summary": "The two vessels, one of them a signed 1855 jar, are the latest to be reinstituted to Drake’s family, who are on a mission to acquire the works of their ancestor",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/the-milwaukee-art-museum-just-returned-two-ceramics-made-by-enslaved-potter-david-drake-to-his-descendants-180989586/",
+      "published_at": "2026-09-29T18:07:38.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/0ZH-takdHDdK1uHA4jXMaqJnrps=/fit-in/1600x0/filters:focal(1242x828:1243x829)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/44/0b/440b06cd-d76d-495e-bded-151b36f5202a/im048333_press.jpeg",
+        "alt": "An 1857 storage jar signed by David Drake",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_102nwai",
+      "headline": "The women putting community at the heart of elephant conservation",
+      "summary": "Across Africa, women are challenging old assumptions about who conservation is for – and who gets to lead it",
+      "category": "animals",
+      "country": null,
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/the-women-putting-community-at-the-heart-of-elephant-conservation/",
+      "published_at": "2026-10-06T07:00:43.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_7r34ll",
+      "headline": "In Australia’s Wet Tropics, restoration misses the forest for the tree cover",
+      "summary": "Relics of ancient wet forests stretch across the coast of Queensland state in Australia. In a landscape made patchwork by agriculture, volunteers, community groups and Indigenous rangers in Australia’s Wet Tropics now…",
+      "category": "planet",
+      "country": {
+        "code": "AU",
+        "name": "Australia",
+        "flag": "🇦🇺"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/in-australias-wet-tropics-restoration-misses-the-forest-for-the-tree-cover/",
+      "published_at": "2026-10-06T15:14:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/05/20181459/6-1-scaled.jpg",
+        "alt": null,
+        "w": 2560,
+        "h": 1312
+      }
+    },
+    {
+      "id": "s_18fudkx",
+      "headline": "Simulated moon soil and recyclable thermoplastics could help build future space infrastructure",
+      "summary": "Transporting material from Earth to the moon is an expensive proposition: By some estimates, moving a single kilogram (2.2 pounds) can cost more than $1 million. Any plan to build a permanent human habitat up there will…",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-simulated-moon-soil-recyclable-thermoplastics.html",
+      "published_at": "2026-10-06T22:40:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/simulated-moon-soil-an.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1f3fv3a",
+      "headline": "In 1884, Gale-Force Winds Ran a Ship Aground Near Cape Cod. Now, the Nor’easter Lashing the East Coast May Have Uncovered Part of It",
+      "summary": "The wreckage could belong to the “Warren Sawyer,” a three-masted cargo schooner that foundered more than 140 years ago",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/in-1884-gale-force-winds-ran-a-ship-aground-near-cape-code-now-the-noreaster-lashing-the-east-coast-may-have-uncovered-part-of-it-180989583/",
+      "published_at": "2026-09-29T12:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/cxBFN7KLZat4ff8xiAlCxJlH8-E=/fit-in/1600x0/filters:focal(2016x1517:2017x1518)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/74/af/74afbd73-0b7b-4181-b868-88e1e7bf6f15/8ff41a7a-5360-4471-81ba-786133bce5bc.jpg",
+        "alt": "Jason Graziadei, editor in chief of the Nantucket Current, snapped this photo after getting a tip from a reader.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1iz0pjf",
+      "headline": "Two Heads Are Better Than One: Rare, Double-Headed Turtle Hatchling Discovered on Cape Cod",
+      "summary": "The tiny diamondback terrapin was brought to a wildlife center on September 17. At the time, the creature weighed about as much as a nickel",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/two-heads-are-better-than-one-rare-double-headed-turtle-hatchling-discovered-on-cape-cod-180989579/",
+      "published_at": "2026-09-29T13:33:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/itFIcFx_4QLAeMzFD4chJj3W__A=/fit-in/1600x0/filters:focal(816x482:817x483)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c1/32/c1323fed-f8b0-41ff-be13-e2a9fa983d82/813878266_1366770682282989_6709670340602065331_n.jpg",
+        "alt": "The rare two-headed turtle was found at a proteted nesting site.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_jc7h8c",
+      "headline": "Solar panels have (another) surprising side effect: Stopping dust storms in their tracks",
+      "summary": "In a first, researchers realistically calculated how solar farms in the Gobi Desert improve air quality in northern Chinese cities",
+      "category": "planet",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/10/solar-panels-have-another-surprising-side-effect-stopping-dust-storms-in-their-tracks/?utm_source=rss&utm_medium=rss&utm_campaign=the-unexpected-secret-to-stopping-dust-storms-in-their-tracks-solar-power",
+      "published_at": "2026-10-06T13:00:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/10/unnamed-40.jpg",
+        "alt": "Solar panels have (another) surprising side effect: Stopping dust storms in their tracks",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_1m52bhh",
+      "headline": "A meteor hit Oklahoma 100 million years later than scientists thought",
+      "summary": "A meteor crater buried beneath Oklahoma has turned out to be nearly 100 million years younger than scientists thought. Zircon crystals show the Ames impact occurred about 370 million years ago, meaning it was not part…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261002080012.htm",
+      "published_at": "2026-10-04T12:41:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/huge-asteroid-meteor-slams-into-earth.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_dkcb63",
+      "headline": "DeafCity Hub and the fight to build a space where sign language can live and thrive",
+      "summary": "Sign language interpreters at rap concerts go viral for a reason. There’s something genuinely arresting about watching BSL in full flight: the expressiveness, the grammar operating in three-dimensional space, a face…",
+      "category": "culture",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/deafcity-hub-and-the-fight-to-build-a-space-where-sign-language-can-live-and-thrive/",
+      "published_at": "2026-10-05T00:00:02.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_285836350_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_xd2nfm",
+      "headline": "This Massive, Deep-Sea Roly Poly Can Go Years Without Food Thanks to a Huge Stomach and a Stolen Gene, Study Suggests",
+      "summary": "The ancestors of the giant isopod Bathynomus jamesi—a seafloor-dwelling creature that resembles a huge pill bug—acquired the snippet of DNA from bacteria more than 16 million years ago, according to a new study. The…",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/this-massive-deep-sea-roly-poly-can-go-years-without-food-thanks-to-a-huge-stomach-and-a-stolen-gene-study-suggests-180989562/",
+      "published_at": "2026-09-28T19:53:41.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/m6p7UTSw6YAh0nkMd7XOl3EmVpI=/fit-in/1600x0/filters:focal(2448x1632:2449x1633)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5c/44/5c444071-f699-425f-bd7f-a3a0d76e4647/w020260608495789892714.jpg",
+        "alt": "A giant isopod plucked from the ocean near China",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_9fren1",
+      "headline": "A 100-year-old freezer rule has a hidden climate cost",
+      "summary": "Frozen food worldwide is still kept at −18°C (0°F). Raising that by just three degrees could avoid 17 million tons of emissions a year, and an 18-month study found most foods stay safe and tasty.",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/09/a-100-year-old-freezer-rule-has-a-hidden-climate-cost/?utm_source=rss&utm_medium=rss&utm_campaign=a-100-year-old-freezer-rule-has-a-hidden-climate-cost",
+      "published_at": "2026-09-25T12:00:34.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/09/frozen-food-blocks3_SALMON-CHICKEN.jpg",
+        "alt": "A 100-year-old freezer rule has a hidden climate cost",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_1nelhnq",
+      "headline": "Chang’e-6 lunar soil contains a surprising magnetic time capsule",
+      "summary": "Scientists studying Chang’e-6 lunar soil have discovered a previously unknown magnetic mineral in natural Moon samples: a form of metallic iron called γ-Fe. Found inside tiny impact-glass particles, the nanoscale iron…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261001214015.htm",
+      "published_at": "2026-10-03T13:12:14.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/lunar-topography-and-magnetic-anomalies.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_149musy",
+      "headline": "An Arson Investigation Is Underway After a Suspected ‘Senseless Act of Vandalism’ Destroys a Newly Installed Benjamin Harrison Statue",
+      "summary": "The 3D-printed piece was created by students and faculty at Indiana University Indianapolis and had been installed on September 16",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/an-arson-investigation-is-underway-after-a-suspected-sensless-act-of-vandalism-destroys-a-newly-installed-benjamin-harrison-statue-180989605/",
+      "published_at": "2026-10-02T13:33:31.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/UAY9qlp9k-zo6gLNS-Lnkfn-q8o=/fit-in/1600x0/filters:focal(2054x787:2055x788)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4b/ac/4bac34af-7823-43b6-9eff-f3ef6a0674d9/img_2967.jpeg",
+        "alt": "The life-size statue depicted Benjamin Harrison, the nation&amp;rsquo;s 23rd president.",
+        "w": null,
+        "h": null
+      }
+    }
+  ]
+}
