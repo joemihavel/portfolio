@@ -144,6 +144,42 @@
     "score": 6
   },
   {
+    "id": "s_zdw36p",
+    "headline": "Antarctica’s Wind Farm Saves 122,000 Gallons of Diesel Over 15 Years Powering McMurdo Station",
+    "summary": "As they near the end of their productive lives, the 3 wind turbines spinning on Antarctica’s Ross Island have made an enormous impact on the energy market of the continent. Built and commissioned over 2008-2009, the…",
+    "category": "planet",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/antarcticas-wind-farm-saves-122000-gallons-of-diesel-over-15-years-powering-mcmurdo-station/",
+    "published_at": "2026-10-02T13:00:15.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
+    "id": "s_i9klbk",
+    "headline": "International pledge to fund forest rights exceeds target, but direct funding remains low",
+    "summary": "Funders of the $1.7 billion pledge to support Indigenous peoples and local communities’ land rights, announced at the 2021 United Nations Climate Change Conference, say they have exceeded the target by 35%, delivering…",
+    "category": "planet",
+    "country": null,
+    "source": "Mongabay",
+    "url": "https://news.mongabay.com/2026/10/international-pledge-to-fund-forest-rights-exceeds-target-but-direct-funding-remains-low/",
+    "published_at": "2026-10-07T17:23:29.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
+    "id": "s_9fren1",
+    "headline": "A 100-year-old freezer rule has a hidden climate cost",
+    "summary": "Frozen food worldwide is still kept at −18°C (0°F). Raising that by just three degrees could avoid 17 million tons of emissions a year, and an 18-month study found most foods stay safe and tasty.",
+    "category": "planet",
+    "country": null,
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/09/a-100-year-old-freezer-rule-has-a-hidden-climate-cost/?utm_source=rss&utm_medium=rss&utm_campaign=a-100-year-old-freezer-rule-has-a-hidden-climate-cost",
+    "published_at": "2026-09-25T12:00:34.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_xkz2lq",
     "headline": "AI Chatbots Will Never Replace Advice From Elders, Say Seven of 10 in New Poll",
     "summary": "More than seven in 10 Brits believe AI will never replace advice from their elders. A study of 2,000 adults found while 21 percent use these artificial intelligence tools for help several times a week, 92 percent…",
@@ -468,6 +504,18 @@
     "score": 5
   },
   {
+    "id": "s_1t6maln",
+    "headline": "Neighbors Flock to Rescue a Wounded Owl Tangled Up in Barbed Wire",
+    "summary": "From the Cowboy State Daily comes the story of a rural community flocking to the side of an injured owl and rescuing it from a dreadful fate. The story begins when Sharon and Scott Jacobs were driving past private land…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/neighbors-flock-to-rescue-a-wounded-owl-tangled-up-in-barbed-wire/",
+    "published_at": "2026-10-08T13:00:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_17wfswk",
     "headline": "Orphaned, Rescued, and Rewilded, Female Gorilla Becomes a Mother in Historic Conservation Success",
     "summary": "One of the first-ever eastern lowland gorillas to be successfully returned to the wild gave birth on May 21st in her new/old home of Virunga National Park in the Democratic Republic of the Congo (DRC). Every new gorilla…",
@@ -480,14 +528,34 @@
     "score": 4
   },
   {
-    "id": "s_gsc7ho",
-    "headline": "Uncertainty mounts as Suriname struggles to evict illegal settlers in the Amazon",
-    "summary": "The government in Suriname this year said it planned to evict illegal settlers in the Amazon Rainforest, and possibly send many of them back to their home countries. But eviction has proven much more complicated than it…",
+    "id": "s_157mopd",
+    "headline": "Colombia’s new government backs fracking as debate over energy future heats up",
+    "summary": "PUERTO WILCHES, Santander – On the banks of Colombia’s largest river, the town and the wider municipality of Puerto Wilches sit amid a maze of wetlands and floodplain lakes in the Middle Magdalena Valley. Residents…",
     "category": "planet",
-    "country": null,
+    "country": {
+      "code": "CO",
+      "name": "Colombia",
+      "flag": "🇨🇴"
+    },
     "source": "Mongabay",
-    "url": "https://news.mongabay.com/2026/10/uncertainty-mounts-as-suriname-struggles-to-evict-illegal-settlers-in-the-amazon/",
-    "published_at": "2026-10-05T19:03:50.000Z",
+    "url": "https://news.mongabay.com/2026/10/colombias-new-government-backs-fracking-as-debate-over-energy-future-heats-up/",
+    "published_at": "2026-10-07T10:46:55.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_jc7h8c",
+    "headline": "Solar panels have (another) surprising side effect: Stopping dust storms in their tracks",
+    "summary": "In a first, researchers realistically calculated how solar farms in the Gobi Desert improve air quality in northern Chinese cities",
+    "category": "planet",
+    "country": {
+      "code": "CN",
+      "name": "China",
+      "flag": "🇨🇳"
+    },
+    "source": "Anthropocene",
+    "url": "https://www.anthropocenemagazine.org/2026/10/solar-panels-have-another-surprising-side-effect-stopping-dust-storms-in-their-tracks/?utm_source=rss&utm_medium=rss&utm_campaign=the-unexpected-secret-to-stopping-dust-storms-in-their-tracks-solar-power",
+    "published_at": "2026-10-06T13:00:21.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -500,6 +568,58 @@
     "source": "Anthropocene",
     "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
     "published_at": "2026-08-25T13:00:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_ci9cni",
+    "headline": "Sentinel-3C returns its first views of Earth",
+    "summary": "Just two weeks after it was launched, the Copernicus Sentinel-3C satellite returned its first images and measurements from two of its key instruments—a major milestone that confirms the satellite is working well and on…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-sentinel-3c-views-earth.html",
+    "published_at": "2026-10-08T22:40:14.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1fm4eg4",
+    "headline": "Hearing tests reveal how sea lions and fur seals hear human-made noise",
+    "summary": "Curtin University and Taronga Conservation Society Australia researchers have conducted the first hearing tests on Australian sea lions and long-nosed fur seals, revealing what sounds these marine mammals can hear and…",
+    "category": "planet",
+    "country": {
+      "code": "AU",
+      "name": "Australia",
+      "flag": "🇦🇺"
+    },
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-reveal-sea-lions-fur-human.html",
+    "published_at": "2026-10-08T19:40:06.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1r7duyc",
+    "headline": "Light-driven method puts notoriously reactive hydrogen atoms to work for chemical synthesis",
+    "summary": "Hydrogen is the simplest element in the periodic table, consisting of just one proton and one electron. In chemistry, however, the smallest of atoms is anything but simple. First produced by Nobel laureate Irving…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-driven-method-notoriously-reactive-hydrogen.html",
+    "published_at": "2026-10-08T19:00:06.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_gsc7ho",
+    "headline": "Uncertainty mounts as Suriname struggles to evict illegal settlers in the Amazon",
+    "summary": "The government in Suriname this year said it planned to evict illegal settlers in the Amazon Rainforest, and possibly send many of them back to their home countries. But eviction has proven much more complicated than it…",
+    "category": "planet",
+    "country": null,
+    "source": "Mongabay",
+    "url": "https://news.mongabay.com/2026/10/uncertainty-mounts-as-suriname-struggles-to-evict-illegal-settlers-in-the-amazon/",
+    "published_at": "2026-10-05T19:03:50.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1808,6 +1928,34 @@
     "score": 4
   },
   {
+    "id": "s_wnhb4a",
+    "headline": "Coffee’s memory boosting effect might have nothing to do with caffeine, study suggests",
+    "summary": "In a small experiment, researchers found that only participants who drank decaffeinated coffee showed significant improvements on memory tests. Those who drank caffeinated coffee did not. The findings, published in…",
+    "category": "science",
+    "country": null,
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/10/coffees-memory-boosting-effect-might-have-nothing-to-do-with-caffeine-study-suggests/",
+    "published_at": "2026-10-09T00:00:24.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_cbxezk",
+    "headline": "London’s Oxford Street gets fully pedestrianized this month: here’s what that means",
+    "summary": "Oxford Street, one of the busiest shopping streets in the world, goes traffic-free on October 26. London Mayor Sadiq Khan announced the closure of the stretch from Orchard Street to Great Portland Street, nearly a…",
+    "category": "planet",
+    "country": {
+      "code": "GB",
+      "name": "United Kingdom",
+      "flag": "🇬🇧"
+    },
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/10/londons-oxford-street-gets-fully-pedestrianized-this-month-heres-what-that-means/",
+    "published_at": "2026-10-08T00:00:44.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_14yqz0j",
     "headline": "Social physiology: the hidden health cost of eating alone, according to science",
     "summary": "TEAM A study published in Science Advances found that eating the same meal with a close companion produces measurably better blood sugar control than eating it alone. In experiments with 108 participants, researchers at…",
@@ -1820,6 +1968,66 @@
     "score": 3
   },
   {
+    "id": "s_j290pd",
+    "headline": "Scientists accidentally discover a genetic code that breaks the rules of life",
+    "summary": "Scientists accidentally discovered a microscopic organism with a genetic code that breaks a rule researchers thought was nearly universal. While testing a new DNA sequencing technique, they examined a previously unknown…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261007233136.htm",
+    "published_at": "2026-10-08T13:31:39.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_dteccl",
+    "headline": "Layered semiconductor unlocks magnetic control of light emitted by quantum condensates",
+    "summary": "Quantum technologies are considered key technologies of the future. However, research in this field requires not only scientific expertise but sometimes also highly specialized laboratory conditions. Bose–Einstein…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-layered-semiconductor-magnetic-emitted-quantum.html",
+    "published_at": "2026-10-08T20:00:11.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_11h7vkw",
+    "headline": "Liquid-crystal-like magnetism explains puzzling properties in a rare-earth compound",
+    "summary": "In some materials, physical properties don't emerge from their individual particles, but from the collective behavior of their quantum spins. Now, researchers led by Pengcheng Dai at Rice University in the U.S. have…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-liquid-crystal-magnetism-puzzling-properties.html",
+    "published_at": "2026-10-08T19:20:15.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1yob8ic",
+    "headline": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
+    "summary": "Indigenous communities near present-day Milwaukee likely hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
+    "published_at": "2026-10-06T14:10:50.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_149musy",
+    "headline": "An Arson Investigation Is Underway After a Suspected ‘Senseless Act of Vandalism’ Destroys a Newly Installed Benjamin Harrison Statue",
+    "summary": "The 3D-printed piece was created by students and faculty at Indiana University Indianapolis and had been installed on September 16",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/an-arson-investigation-is-underway-after-a-suspected-sensless-act-of-vandalism-destroys-a-newly-installed-benjamin-harrison-statue-180989605/",
+    "published_at": "2026-10-02T13:33:31.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_1pnvy01",
     "headline": "The world's oyster reefs could add $12 trillion to planetary health each year—if they were better managed",
     "summary": "A new study shows that the world's oyster reefs are a precious resource that's vastly underestimated and underutilized. The authors set out to calculate the reefs' potential gross ecosystem product (GEP), the ecological…",
@@ -1828,18 +2036,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-10-world-oyster-reefs-trillion-planetary.html",
     "published_at": "2026-10-07T04:00:01.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_1yob8ic",
-    "headline": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
-    "summary": "Indigenous communities near present-day Milwaukee hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
-    "published_at": "2026-10-06T14:10:50.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -4996,202 +5192,6 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/cheese-lovers-unite-the-benefits-of-full-fat-dairy-documented-in-study-without-cholesterol-rise-or-weight-gain/",
     "published_at": "2026-08-09T22:43:37.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_jl4l7g",
-    "headline": "Scientists reveal why walking gets so much harder with age",
-    "summary": "As we age, the body appears to sacrifice walking efficiency in exchange for stability. Older adults stiffen the ankle more with each step, which may help prevent falls but also forces the muscles to work harder while…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260815065014.htm",
-    "published_at": "2026-08-16T09:13:25.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1lxc3g5",
-    "headline": "A stress hormone may help the brain repair itself",
-    "summary": "A surprising stress-related signal may help the brain repair itself after injury. Researchers found that myelin-producing precursor cells rapidly release the stress hormone CRH near damaged brain tissue, helping control…",
-    "category": "people",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814011044.htm",
-    "published_at": "2026-08-14T11:35:11.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1kpk5kn",
-    "headline": "Women taking estrogen had fewer signs of Alzheimer’s in their brains",
-    "summary": "Women who used estrogen-only hormone therapy later in life were less likely to develop dementia and showed fewer signs of Alzheimer’s disease in their brains, according to a large study of more than 21,000 participants…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814011028.htm",
-    "published_at": "2026-08-14T11:19:42.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_2v0jyy",
-    "headline": "Why your brain keeps making the same decisions – even when better options exist",
-    "summary": "Why do we keep making the same choices even when better options are available? Researchers found that simply repeating a decision can reshape what we prefer, causing familiar choices to feel better than alternatives…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260812015218.htm",
-    "published_at": "2026-08-13T03:45:36.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1j30d0b",
-    "headline": "A strange crystal made of electrons just revealed its hidden motion",
-    "summary": "Physicists have found a new way to peer inside one of matter’s most elusive quantum states: the Wigner crystal, where electrons stop behaving like independent particles and organize into a crystal-like pattern. By…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260812015156.htm",
-    "published_at": "2026-08-12T09:10:01.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_12qizti",
-    "headline": "Ozempic may have revealed the brain’s hidden “craving center”",
-    "summary": "Ozempic-like drugs appear to weaken more than hunger—they may also reduce cravings for alcohol and other addictive substances. Scientists are increasingly tracing this effect to the lateral septum, a brain region that…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260811011138.htm",
-    "published_at": "2026-08-12T14:36:07.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_hkiw3o",
-    "headline": "Supramolecular nanofibers paired with nanohole substrate improve exciton transport in organic solid",
-    "summary": "Self-assembling, anthracene-based supramolecular nanofibers can enable excitons to migrate hundreds of nanometers, according to a new experimental finding by researchers at Science Tokyo. Coupling these nanofibers with…",
-    "category": "communities",
-    "country": {
-      "code": "JP",
-      "name": "Japan",
-      "flag": "🇯🇵"
-    },
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-supramolecular-nanofibers-paired-nanohole-substrate.html",
-    "published_at": "2026-08-19T23:40:01.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1flenlr",
-    "headline": "AI prompts offer a new tool for mapping how emotion concepts relate",
-    "summary": "How similar are \"joy\" and \"surprise\"? Conversely, how far apart are \"joy\" and \"sadness\"? We naturally organize words that express emotions—such as \"happy,\" \"afraid,\" and \"angry\"—according to similarities and differences…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-ai-prompts-tool-emotion-concepts.html",
-    "published_at": "2026-08-19T22:20:01.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1nhjfyv",
-    "headline": "Climate taxonomy tool turns risk assessments into practical adaptation guidance",
-    "summary": "As climate impacts such as heat waves, floods and fires intensify worldwide, there is an urgent demand for information on how to respond. IIASA researchers and partners have developed a new tool that meets that need…",
-    "category": "planet",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-climate-taxonomy-tool-guidance.html",
-    "published_at": "2026-08-19T18:40:03.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_12qh0pw",
-    "headline": "Why Don't Insects Live in the Ocean? Scientists Just Ruled Out One Possible Explanation Thanks to Deep-Diving Fly Larvae",
-    "summary": "Researchers thought that insects might not live there because their respiratory systems would implode from water pressure. But certain fly larvae in East Africa make daily trips toward the bottom of Lake Malawi with the…",
-    "category": "planet",
-    "country": {
-      "code": "MW",
-      "name": "Malawi",
-      "flag": "🇲🇼"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/why-dont-insects-live-in-the-ocean-scientists-just-ruled-out-one-possible-explanation-thanks-to-deep-diving-fly-larvae-180989348/",
-    "published_at": "2026-08-19T20:52:52.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1804kuu",
-    "headline": "When Did Animals Start Giving Birth to Live Young? This 236-Million-Year-Old Fossil Might Rewrite Mammals' Evolutionary History",
-    "summary": "A bone feature found in a mammal ancestor hints that the creature was relatively large as a newborn, more in line with the size of a creature birthed live than hatched from an egg. Still, it provides only indirect…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/when-did-animals-start-giving-birth-to-live-young-this-236-million-year-old-fossil-might-rewrite-mammals-evolutionary-history-180989343/",
-    "published_at": "2026-08-17T16:23:49.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_rqqo1w",
-    "headline": "Covid-19 Can Reawaken Dormant Viruses in the Body, Which Might Worsen Symptoms of the Respiratory Illness, Study Suggests",
-    "summary": "Most people carry a sleeping virus in their bodies, such as the herpesvirus that causes mononucleosis, or the “kissing disease.” A new study hints that Covid-19 triggers their reactivation, which could worsen symptoms…",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/covid-19-can-reawaken-dormant-viruses-in-the-body-which-might-worsen-symptoms-of-the-respiratory-illness-study-suggests-180989322/",
-    "published_at": "2026-08-14T20:06:16.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1i2a1d9",
-    "headline": "Archaeologists in England Preparing for Road Construction Unearthed a Roman-Era Fingernail Cleaner With a Handle Shaped Like a Penis",
-    "summary": "The Romans considered the phallus a symbol of good luck and used it to decorate objects, mark walls and inspire sculptures",
-    "category": "culture",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/archaeologists-in-England-preparing-for-road-construction-unearthed-a-roman-era-fingernail-cleaner-with-a-handle-shaped-like-a-penis-180989318/",
-    "published_at": "2026-08-11T22:45:06.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_yc5iwm",
-    "headline": "How to Watch the Total Solar Eclipse on a Livestream, Witnessing the Rare View of the Sun's Corona From Your Own Home",
-    "summary": "Wednesday’s eclipse will bring dark skies to parts of Russia, Greenland, Iceland, Portugal and Spain. But with these online broadcasts, you can view the spectacle from anywhere",
-    "category": "planet",
-    "country": {
-      "code": "PT",
-      "name": "Portugal",
-      "flag": "🇵🇹"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/how-to-watch-the-total-solar-eclipse-on-a-live-stream-witnessing-the-rare-view-of-the-suns-corona-from-your-own-home-180989315/",
-    "published_at": "2026-08-11T20:35:29.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_19afqsx",
-    "headline": "Spinal Deformities in Saber-Toothed Cat Fossils Reveal How the Now-Extinct Felines May Have Spent Their Final Days",
-    "summary": "Researchers studied saber-toothed cat vertebrae found in the La Brea Tar Pits in Los Angeles. They identified a surprisingly high number of deformations, including signs of spinal nerve tumors, hinting at a dwindling…",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/spinal-deformities-in-saber-toothed-cat-fossils-reveal-how-the-now-extinct-felines-may-have-spent-their-final-days-180989237/",
-    "published_at": "2026-08-10T15:36:44.000Z",
     "read_minutes": 2,
     "score": 1
   }
