@@ -1,0 +1,680 @@
+{
+  "day": "2026-10-10",
+  "generated_at": "2026-10-10T11:18:53.130Z",
+  "count": 35,
+  "fresh_count": 35,
+  "stories": [
+    {
+      "id": "s_a6hxj",
+      "headline": "The floating scarecrow saving seabirds from fishing nets",
+      "summary": "TEAM A bird-shaped kite and a floating scarecrow with spinning eyes reduced seabird deaths in Cornish fishing nets by up to 71 percent in a two-year trial. The devices cost relatively little, don’t require significant…",
+      "category": "animals",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/the-floating-scarecrow-saving-seabirds-from-fishing-nets/",
+      "published_at": "2026-10-09T00:00:41.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_534880686_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_2d2mpp",
+      "headline": "The Roman City of Claudivium Disappeared From Historical Records Almost 2,000 Years Ago. It May Have Been Hiding in Austria",
+      "summary": "Archaeologists have discovered a previously unknown settlement on the banks of the Danube River",
+      "category": "planet",
+      "country": {
+        "code": "AT",
+        "name": "Austria",
+        "flag": "🇦🇹"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/the-roman-city-of-claudivium-disappeared-from-historical-records-almost-2000-years-ago-it-may-have-been-hiding-in-austria-180989614/",
+      "published_at": "2026-10-05T13:00:00.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_52wh37",
+      "headline": "NPR-Inspired Homework Leads Teen to Find Hidden Message a Decade After a Stranger’s Kindness",
+      "summary": "From Seattle’s chapter of National Public Radio comes the remarkable story of the kindness of strangers immortalized in an origami crane. Published through KUOW’s “My Unsung Hero” series, the story begins with a…",
+      "category": "people",
+      "country": {
+        "code": "JP",
+        "name": "Japan",
+        "flag": "🇯🇵"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/npr-inspired-homework-leads-teen-to-find-hidden-message-a-decade-after-a-strangers-kindness/",
+      "published_at": "2026-10-09T18:30:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/courtesy-of-Mika-Matsuda-supplied-to-KUOW.jpg",
+        "alt": null,
+        "w": 1290,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_3xafsf",
+      "headline": "NYC Parks Extends Late Night Soccer at 5 Fields for Night Workers–And Their Reactions Are Awesome (WATCH)",
+      "summary": "New York City authorities decided to leave the lights on at 5 urban soccer pitches around the city, hoping to even the playing field of recreation opportunities for those who work late. The response from the locals in…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/nyc-parks-extends-late-night-soccer-at-5-fields-for-night-workers-and-their-reactions-are-awesome-watch/",
+      "published_at": "2026-10-08T15:30:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-NYC-Mayors-Office.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 672
+      }
+    },
+    {
+      "id": "s_pinri4",
+      "headline": "More Than 14,000 Derelict Explosives Cleared from Libyan City and Nearby Farmland",
+      "summary": "Demining operations have cleared just over 14,000 pieces of derelict explosives in a coastal Libyan city this year. A partnership between the UN’s support mission in-country (UNSMIL), Italian foreign aid, Libyan…",
+      "category": "achievement",
+      "country": {
+        "code": "IT",
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/more-than-14000-derelict-explosives-cleared-from-libyan-city-and-nearby-farmland/",
+      "published_at": "2026-10-08T11:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/An-ammunition-depot-in-Misratah-Libya-credit-UN-Photo-UNSMIL.jpg",
+        "alt": null,
+        "w": 1333,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1utywhk",
+      "headline": "‘You’re Walking!’ – Dad Surprises Children Having Recovered Ability to Walk After Serious Brain Injury",
+      "summary": "After 3 years of recovery from a brain injury sustained in a car accident, a father surprised his children by walking independently again. Lounging on the couch enjoying some TV time, children are excellent at…",
+      "category": "tiny",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/youre-walking-dad-surprises-children-having-recovered-ability-to-walk-after-serious-brain-injury/",
+      "published_at": "2026-10-07T11:00:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-screengrab-via-@glittersparkles.jpg",
+        "alt": null,
+        "w": 1216,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_pop6u0",
+      "headline": "NASA astronauts splash down after 100 million miles in space",
+      "summary": "NASA’s SpaceX Crew-12 astronauts have returned to Earth after 237 days in space, traveling more than 100 million miles and completing over 3,792 orbits while conducting research to prepare for future missions to the…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008232629.htm",
+      "published_at": "2026-10-09T03:56:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/nasa-spacex-crew-12-splash-down.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1yych78",
+      "headline": "In Ecuador, Indigenous youth turn to rap music to defend the Amazon",
+      "summary": "Willan Gualinga first stepped onto a stage in his home community of Sarayaku, in the Ecuadorian Amazon, in the province of Pastaza. He recalls his hands sweating, his body trembling, and his mouth freezing up as words…",
+      "category": "culture",
+      "country": {
+        "code": "EC",
+        "name": "Ecuador",
+        "flag": "🇪🇨"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/in-ecuador-indigenous-youth-turn-to-rap-music-to-defend-the-amazon/",
+      "published_at": "2026-10-09T16:32:20.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/09141132/Raperos-1-Willan-Gualinga-Taki-Supay-Ecuador.jpg",
+        "alt": null,
+        "w": 1263,
+        "h": 848
+      }
+    },
+    {
+      "id": "s_nf5ylq",
+      "headline": "Scientists Took a Cheek Swab From the World's Oldest Tortoise. His DNA Could Reveal Hints to Longevity",
+      "summary": "Jonathan, an Aldabra giant tortoise, is about 194 years old and the oldest land animal alive today. Discoveries about his genetics could provide clues to extending lifespan in humans",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/scientists-took-a-cheek-swab-from-the-worlds-oldest-tortoise-his-dna-could-reveal-hints-to-longevity-180989663/",
+      "published_at": "2026-10-09T17:28:10.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/EG7QG0feyw9uW-WDz2BqT-Ts7ig=/fit-in/1600x0/filters:focal(2016x1517:2017x1518)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a7/7b/a77be531-cb07-4a9e-a6dc-155b6c26f63d/saint-helena-plantation-house-jonathan-the-tortoise-by-kevin-gepford-02.jpg",
+        "alt": "Jonathan stands on the lawn of Plantation House, the governor&amp;#39;s residence in Saint Helena. The Aldabra giant tortoise holds the world record for being the oldest living land animal.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_qd3ah7",
+      "headline": "Berlin mapped 900,000 street trees. Now 12,000 people water them.",
+      "summary": "Amanda Gläser-Bligh named her street tree Linda. Linda is a linden, eight years old, growing outside Gläser-Bligh’s apartment building in Charlottenburg, and once a week during Berlin’s hot months, Gläser-Bligh makes a…",
+      "category": "planet",
+      "country": {
+        "code": "DE",
+        "name": "Germany",
+        "flag": "🇩🇪"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/berlin-mapped-900000-street-trees-now-12000-people-water-them/",
+      "published_at": "2026-10-08T00:00:55.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_199512700_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_1mdh283",
+      "headline": "Illinois Community Members Honored for Helping Save Woman in Submerged Vehicle (WATCH)",
+      "summary": "On a stormy afternoon in Illinois in August, an elderly driver lost control of her vehicle as it plunged into a flooded retention pond. Sinking up to its roof, multiple local community members immediately began to swim…",
+      "category": "people",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/illinois-community-members-honored-for-helping-save-woman-in-submerged-vehicle-watch/",
+      "published_at": "2026-10-06T13:00:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-Champaign-Illinois-Police-Department-e1791276599357.jpg",
+        "alt": null,
+        "w": 1145,
+        "h": 637
+      }
+    },
+    {
+      "id": "s_dd55nl",
+      "headline": "A Place to Sleep for Denver’s Homeless College Students",
+      "summary": "This story was originally published by Chalkbeat. Sign up for their newsletters at ckbe.at/newsletters. During her first semester at Chicago’s Malcolm X College, Nikya Harrell had had enough. It was winter, and she was…",
+      "category": "communities",
+      "country": null,
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/home-for-denver-homeless-college-students/",
+      "published_at": "2026-09-29T08:00:24.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_1440479351-scaled.jpg",
+        "alt": null,
+        "w": 2560,
+        "h": 1067
+      }
+    },
+    {
+      "id": "s_z79fdj",
+      "headline": "Pomegranates, Walnuts and Berries Could Unlock Heart Failure Treatment By Producing Urolithin A",
+      "summary": "A compound produced in the body after eating pomegranates improves heart function by up to 80%, particularly for a type of heart failure with limited treatment options. Scientists at King’s College London have…",
+      "category": "tiny",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/pomegranates-walnuts-and-berries-could-unlock-heart-failure-treatment-with-urolithin-a/",
+      "published_at": "2026-10-04T23:21:48.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/11/pomegranates-fruit-pubdomain-Margarita-Zueva.jpg",
+        "alt": null,
+        "w": 1397,
+        "h": 757
+      }
+    },
+    {
+      "id": "s_1kll6tl",
+      "headline": "Animals may have evolved 200 million years earlier than we thought",
+      "summary": "New research suggests animals could have evolved as early as 800 to 700 million years ago, roughly 200 million years earlier than some previous estimates. If so, the first animals may have lived before or during…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261003234023.htm",
+      "published_at": "2026-10-07T02:29:56.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/ediacaran-sea-floor.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_tuvbzq",
+      "headline": "J.M.W. Turner Painted This Breathtaking Roman Landscape Nearly 200 Years Ago. If You Look Closely, You Can Still See His Fingerprints",
+      "summary": "The Romantic painter completed \"Rome, From Mount Aventine\" in the 1830s. It became his most expensive artwork in 2014, and it's expected to sell for another record-breaking sum in December",
+      "category": "culture",
+      "country": {
+        "code": "IT",
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/jmw-turner-painted-this-breathtaking-roman-landscape-nearly-200-years-ago-if-you-look-closely-you-can-still-see-his-fingerprints-180989659/",
+      "published_at": "2026-10-08T18:56:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/ytKPpz_2djd2Ej8Vfx9ZhVndXP4=/fit-in/1600x0/filters:focal(1024x756:1025x757)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/07/62/07625028-14a0-4437-a78e-d2d14b703eec/turner.jpeg",
+        "alt": "Rome, From Mount Aventine,&amp;nbsp;J.M.W. Turner, 1836",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1hbo2nh",
+      "headline": "This “golden tree” coral was too strange for any known family",
+      "summary": "A brilliant yellow coral discovered off Costa Rica proved so unusual that scientists had to create an entirely new family to classify it. The meter-tall colonies rise from seafloors covered in brittle stars, inspiring…",
+      "category": "animals",
+      "country": {
+        "code": "CR",
+        "name": "Costa Rica",
+        "flag": "🇨🇷"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261007042116.htm",
+      "published_at": "2026-10-08T13:18:54.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/laurinque-elenya.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_17atla5",
+      "headline": "Meet the 14-year-old uncovering London’s lost history",
+      "summary": "Seasoned mudlark Emmylou Vaxby has spent nearly a decade searching the Thames foreshore for fragments of the city’s past",
+      "category": "planet",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/meet-the-14-year-old-uncovering-londons-lost-history/",
+      "published_at": "2026-10-05T07:00:44.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.positive.news/wp-content/uploads/2026/09/IMG_4220-copy.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 1440
+      }
+    },
+    {
+      "id": "s_5kqao2",
+      "headline": "A Ship Carrying Stacks of Ancient Dishware Sank Off the Coast of Turkey 2,100 Years Ago. Its Ceramic Cargo Is Still Remarkably Intact",
+      "summary": "Researchers believe that the vessel's plates and bowls were made in the ancient city of Rhosus, once praised by Roman statesman Cicero for its \"fine pottery\"",
+      "category": "communities",
+      "country": {
+        "code": "TR",
+        "name": "Türkiye",
+        "flag": "🇹🇷"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-ship-carrying-stacks-of-ancient-dishware-sank-off-the-coast-of-turkey-2100-years-ago-its-ceramic-cargo-is-still-remarkably-intact-180989626/",
+      "published_at": "2026-10-07T11:45:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/u5ZIl_0p4NDLZMBPwpHfbl5OjG0=/fit-in/1600x0/filters:focal(675x450:676x451)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3c/5d/3c5d64ef-fa30-4bc1-89ee-af5a2f0e2667/7d56dae5-d789-46d6-9df7-cb274be80482_1.jpeg",
+        "alt": "The dishes were packed carefully, and many remained intact.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_gjakfm",
+      "headline": "Rare 1-in-100M ‘Ghost Lobster’ Goes to School to Help Scientists Crack Genetic Mystery–in Time for Halloween",
+      "summary": "A ‘ghost’ lobster so rare that the odds of finding one are 1 in 100 million is going to school, and its new home is Maine’s Marine Science Center—arriving just in time for Halloween. The rare white crustacean was…",
+      "category": "science",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/100m-ghost-lobster-goes-to-college/",
+      "published_at": "2026-10-04T15:04:49.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Casper-the-white-lobster-at-University-of-New-England-Arthur-P-Girard-Marine-Science-Center-released.jpg",
+        "alt": null,
+        "w": 1300,
+        "h": 700
+      }
+    },
+    {
+      "id": "s_1n0bvls",
+      "headline": "These Wild Lemurs Sing Just Like Opera Stars, Widening Their Mouths as They Hit the High Notes, Study Suggests",
+      "summary": "Scientists suspect this musical trait arose independently in humans and indris, which split from a common ancestor some 74 million years ago. Today, the lemurs make loud, haunting calls to communicate with one another…",
+      "category": "culture",
+      "country": {
+        "code": "MG",
+        "name": "Madagascar",
+        "flag": "🇲🇬"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/these-wild-lemurs-sing-just-like-opera-stars-widening-their-mouths-as-they-hit-the-high-notes-study-suggests-180989603/",
+      "published_at": "2026-10-02T14:34:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/UnIBwsAhNFQX_d5M1OMzM_lXkjg=/fit-in/1600x0/filters:focal(600x451:601x452)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9c/9a/9c9aa69d-c6d0-493c-b23e-61e1ed2b1da9/indri_indri_8945066.jpg",
+        "alt": "The indri is the only known species of lemur that sings.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1h9jtgq",
+      "headline": "Scientists found Homo erectus 200,000 years earlier than expected",
+      "summary": "New fossils from South Africa are reshaping the story of early human evolution. Researchers have described 18 hominin fossils from Drimolen Cave, including an adult Homo erectus skull fragment dated to about 2 million…",
+      "category": "animals",
+      "country": {
+        "code": "ZA",
+        "name": "South Africa",
+        "flag": "🇿🇦"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261007042113.htm",
+      "published_at": "2026-10-08T12:47:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/homo-erectus-skull.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1xmooo8",
+      "headline": "South Korea strengthens migrant fisher protections. Advocates are not impressed.",
+      "summary": "SEOUL — At 2 a.m. one night, two Indonesian fishers were gripping a flimsy, makeshift rope, hanging on for dear life. The precarious rope dangled from the eighth-floor window of a motel room overlooking a dark alley in…",
+      "category": "planet",
+      "country": {
+        "code": "KR",
+        "name": "South Korea",
+        "flag": "🇰🇷"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/south-korea-strengthens-migrant-fisher-protections-advocates-are-not-impressed/",
+      "published_at": "2026-10-08T14:47:18.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2018/05/31010214/farisbobero3_Nelayan-Bajo-Sankuang-abk-bagan-ikan-saat-menarik-jangkar.jpg",
+        "alt": null,
+        "w": 1280,
+        "h": 853
+      }
+    },
+    {
+      "id": "s_12sz76j",
+      "headline": "Activists cite ecological, social connections in blocking US border wall construction (commentary)",
+      "summary": "A group of activists in the small border town of Lochiel, Arizona, U.S., is fighting to save 200-year-old cottonwood trees by stopping contractors from building a section of the U.S.’s new wall along its border with…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/activists-cite-ecological-social-connections-in-blocking-us-border-wall-construction-commentary/",
+      "published_at": "2026-10-08T17:56:07.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/08172450/IMG_8310.jpg",
+        "alt": null,
+        "w": 1210,
+        "h": 681
+      }
+    },
+    {
+      "id": "s_mn4zay",
+      "headline": "Geologists uncover evidence of a missing Late Cretaceous magmatic arc in northwestern Iran",
+      "summary": "Mountains preserve evidence of ancient oceans, moving continents and tectonic processes that have shaped Earth over millions of years. Later deformation, erosion and burial, however, can obscure important parts of this…",
+      "category": "science",
+      "country": {
+        "code": "TR",
+        "name": "Türkiye",
+        "flag": "🇹🇷"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-geologists-uncover-evidence-late-cretaceous.html",
+      "published_at": "2026-10-10T00:20:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/geologists-uncover-evi.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_10cuz27",
+      "headline": "This One-of-a-Kind Bronze Ring Offers a Tantalizing Glimpse at the Lighthouse of Alexandria, a Lost Wonder of the Ancient World",
+      "summary": "Archaeologists in Egypt discovered the signet ring while conducting excavations on the island of Antirhodos, which once housed a lavish Ptolemaic palace",
+      "category": "culture",
+      "country": {
+        "code": "EG",
+        "name": "Egypt",
+        "flag": "🇪🇬"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/this-one-of-a-kind-bronze-ring-offers-a-tantalizing-glimpse-at-the-lighthouse-of-alexandria-a-lost-wonder-of-the-ancient-world-180989661/",
+      "published_at": "2026-10-09T15:21:52.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/PS4D5JZcApADv_SD5utzVab2O68=/fit-in/1600x0/filters:focal(1000x667:1001x668)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d1/1d/d11d5260-a855-4fe8-ab1c-8865c93aa333/ring.png",
+        "alt": "An underwater archaeologist examines a bronze signet ring discovered off the coast of Alexandria, Egypt.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_102nwai",
+      "headline": "The women putting community at the heart of elephant conservation",
+      "summary": "Across Africa, women are challenging old assumptions about who conservation is for – and who gets to lead it",
+      "category": "animals",
+      "country": null,
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/the-women-putting-community-at-the-heart-of-elephant-conservation/",
+      "published_at": "2026-10-06T07:00:43.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_cbxezk",
+      "headline": "London’s Oxford Street gets fully pedestrianized this month: here’s what that means",
+      "summary": "Oxford Street, one of the busiest shopping streets in the world, goes traffic-free on October 26. London Mayor Sadiq Khan announced the closure of the stretch from Orchard Street to Great Portland Street, nearly a…",
+      "category": "planet",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/londons-oxford-street-gets-fully-pedestrianized-this-month-heres-what-that-means/",
+      "published_at": "2026-10-08T00:00:44.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_29807437_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 663
+      }
+    },
+    {
+      "id": "s_12bhf84",
+      "headline": "Nonprofit Brings Free Music Education to More Than 20,000 Miami Students in 131 Schools",
+      "summary": "Down in Miami-Dade County, educators are seeing how school doesn’t mean a thing if it ain’t got that swing. Showing up, taking an interest in school and the community therein, comes that much easier for the some 21,000…",
+      "category": "communities",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/nonprofit-brings-free-music-education-to-more-than-20000-miami-students-in-131-schools/",
+      "published_at": "2026-10-05T13:00:20.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/maxresdefault-1.jpg",
+        "alt": null,
+        "w": 1280,
+        "h": 720
+      }
+    },
+    {
+      "id": "s_9ltfle",
+      "headline": "Light reads electron spins inside porous crystals, opening path to quantum chemical sensors",
+      "summary": "University of Glasgow researchers are part of an international collaboration that could lead to a new generation of quantum sensors. The team, which included researchers from the University of Tokyo, University of…",
+      "category": "science",
+      "country": {
+        "code": "JP",
+        "name": "Japan",
+        "flag": "🇯🇵"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-electron-porous-crystals-path-quantum.html",
+      "published_at": "2026-10-09T14:40:09.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/research-breakthrough-1.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1axpwny",
+      "headline": "A Community-Led Archaeology Dig on a Tiny Scottish Isle Has Unearthed a Medieval Monastery of 'International Importance'",
+      "summary": "The settlement, founded by an early Christian saint in the 500s, is \"far more than a small island church.\" It may have played a larger role in the Christianization of Britain than historians once realized",
+      "category": "culture",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-community-led-archaeology-dig-on-a-tiny-scottish-isle-has-unearthed-a-medieval-monastery-of-international-importance-180989654/",
+      "published_at": "2026-10-09T14:35:25.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/Emnb6J2TfpJJRjpMLwaRICwHua4=/fit-in/1600x0/filters:focal(797x531:798x532)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/19/1b/191b6b16-3366-4b72-ae0a-53d2fee141d1/community-led-archaeol-2.jpeg",
+        "alt": "An aerial view of the archaeological trenches dug around Lismore&amp;#39;s parish church, a 13th-century cathedral",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_84ti61",
+      "headline": "Nearly 200-year-old Tortoise Becomes First to Contribute Extraordinary Epigenome to Research on Aging",
+      "summary": "A giant tortoise called Jonathan reinforces what we know about humans and healthy aging, say scientists—especially because Jon is almost 200. Researchers have been conducting genetic tests on Jonathan who, at an…",
+      "category": "animals",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/nearly-200-year-old-tortoise-becomes-first-to-contribute-extraordinary-epigenome-to-aging-research/",
+      "published_at": "2026-10-08T18:30:07.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jonathan-left-arrived-in-St-Helena-as-a-gift-to-Sir-William-Grey-Wilson-in-1882-.jpeg",
+        "alt": null,
+        "w": 1280,
+        "h": 705
+      }
+    },
+    {
+      "id": "s_e32sxv",
+      "headline": "A Digital Swamp Coming to New York City’s MoMA Is 'Made to Envelop You' in Nature With the Help of Cutting-Edge Technology",
+      "summary": "\"Wetland\" is the latest installation of a high-tech traveling exhibition designed by Danish artist Jakob Kudsk Steensen. It recreates the overlooked ecosystem with the help of folklore, soundscapes and video game…",
+      "category": "planet",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
+      "published_at": "2026-10-09T20:39:30.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/A5JWQLLa9xM-KIDndcIP1dekMTo=/fit-in/1600x0/filters:focal(850x526:851x527)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a3/8d/a38dd753-9c7e-4e71-b9ee-883308dc5d69/highresscreenshot00111_webpage-image.png",
+        "alt": "Jakob Kudsk Steensen&amp;#39;s&amp;nbsp;Berl-Berl&amp;nbsp;installation, which goes on view at New York City&amp;#39;s MoMA on October 12, brings a digital, immersive swamp to life.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_lc1azj",
+      "headline": "How NYC Students Saved School Lunch",
+      "summary": "There were three clear reasons why Leslie Gomez Rivera avoided the cafeteria at her high school in Brooklyn: She didn’t like the food, the room felt hectic and there was a stigma attached to eating school meals. She…",
+      "category": "communities",
+      "country": null,
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/how-nyc-students-saved-school-lunch/",
+      "published_at": "2026-10-08T08:00:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/shutterstock_1488137138-scaled.jpg",
+        "alt": null,
+        "w": 1801,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_xkz2lq",
+      "headline": "AI Chatbots Will Never Replace Advice From Elders, Say Seven of 10 in New Poll",
+      "summary": "More than seven in 10 Brits believe AI will never replace advice from their elders. A study of 2,000 adults found while 21 percent use these artificial intelligence tools for help several times a week, 92 percent…",
+      "category": "science",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/ai-chatbots-will-never-replace-advice-from-elders-say-seven-of-10-in-new-poll/",
+      "published_at": "2026-10-04T11:00:36.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Senior-Actress-Sue-Johnston-for-Maltesers-SWNS.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 755
+      }
+    },
+    {
+      "id": "s_1uquhyd",
+      "headline": "Hundreds of British College Students Clashed With Wooden Swords in a 1966 Re-enactment of the Battle of Hastings. Watch the Rediscovered 'Time Capsule' of Lost Footage",
+      "summary": "A local videographer shot 300 reels of color film during the re-enactment, which shows \"soldiers on foot getting remarkably close to horses\" and \"a rather relaxed attitude towards health and safety.\" The event sparked…",
+      "category": "culture",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/hundreds-of-british-college-students-clashed-with-wooden-swords-in-a-1966-re-enactment-of-the-battle-of-hastings-watch-the-rediscovered-time-capsule-of-lost-footage-180989635/",
+      "published_at": "2026-10-08T12:00:00.000Z",
+      "read_minutes": 2,
+      "image": null
+    }
+  ]
+}

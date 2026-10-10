@@ -156,6 +156,18 @@
     "score": 5
   },
   {
+    "id": "s_1xgw4as",
+    "headline": "September's Ozone Hole Was the Biggest It Has Been in 25 Years",
+    "summary": "The size of the hole in the stratosphere's ozone layer fluctuates every year, but last month's, measuring 10.6 million square miles, was especially large",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/septembers-ozone-hole-was-the-biggest-it-has-been-in-25-years-180989657/",
+    "published_at": "2026-10-09T14:55:21.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_i9klbk",
     "headline": "International pledge to fund forest rights exceeds target, but direct funding remains low",
     "summary": "Funders of the $1.7 billion pledge to support Indigenous peoples and local communities’ land rights, announced at the 2021 United Nations Climate Change Conference, say they have exceeded the target by 35%, delivering…",
@@ -524,6 +536,66 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/orphaned-rescued-and-rewilded-female-gorilla-becomes-a-mother-in-historic-conservation-success/",
     "published_at": "2026-10-05T11:00:53.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_12ylt9u",
+    "headline": "NASA is searching for hidden caves to build its first Moon base",
+    "summary": "NASA is preparing for humanity’s first Moon base with three investigations that will hunt for underground shelters, uncover hidden ice, and track dangerous conditions on the lunar surface. The findings could reveal how…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008005247.htm",
+    "published_at": "2026-10-08T12:19:20.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1m52bhh",
+    "headline": "A meteor hit Oklahoma 100 million years later than scientists thought",
+    "summary": "A meteor crater buried beneath Oklahoma has turned out to be nearly 100 million years younger than scientists thought. Zircon crystals show the Ames impact occurred about 370 million years ago, meaning it was not part…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261002080012.htm",
+    "published_at": "2026-10-04T12:41:43.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_4bab8v",
+    "headline": "Fluorescent imaging tracks metabolism of cells in real time",
+    "summary": "Cornell researchers have designed a new, faster form of two-photon fluorescence imaging for observing cell metabolism in real time, a method that could enable quicker screening of new therapeutic treatments. The…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-fluorescent-imaging-tracks-metabolism-cells.html",
+    "published_at": "2026-10-09T19:20:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_7y76pp",
+    "headline": "Discovery marks the first detection of variable water clouds outside of the solar system",
+    "summary": "A Jupiter-sized world just 7.5 light-years away is cloudy, chemically complex and, it turns out, more like home than anyone expected. Using the James Webb Space Telescope, Brittany Miles, assistant astronomer at the…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-discovery-variable-clouds-solar.html",
+    "published_at": "2026-10-09T18:20:12.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_a93sf5",
+    "headline": "Tiny marine microbe sheds new light on how little genetic machinery a cell needs to survive",
+    "summary": "Scientists have discovered a previously unknown microorganism that has the smallest genome ever found and may be able to replicate and express its own genetic information.",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-tiny-marine-microbe-genetic-machinery.html",
+    "published_at": "2026-10-09T15:00:12.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -1940,22 +2012,6 @@
     "score": 3
   },
   {
-    "id": "s_cbxezk",
-    "headline": "London’s Oxford Street gets fully pedestrianized this month: here’s what that means",
-    "summary": "Oxford Street, one of the busiest shopping streets in the world, goes traffic-free on October 26. London Mayor Sadiq Khan announced the closure of the stretch from Orchard Street to Great Portland Street, nearly a…",
-    "category": "planet",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "The Optimist Daily",
-    "url": "https://www.optimistdaily.com/2026/10/londons-oxford-street-gets-fully-pedestrianized-this-month-heres-what-that-means/",
-    "published_at": "2026-10-08T00:00:44.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_14yqz0j",
     "headline": "Social physiology: the hidden health cost of eating alone, according to science",
     "summary": "TEAM A study published in Science Advances found that eating the same meal with a close companion produces measurably better blood sugar control than eating it alone. In experiments with 108 participants, researchers at…",
@@ -1980,6 +2036,58 @@
     "score": 3
   },
   {
+    "id": "s_vsu9ac",
+    "headline": "Watch Five Adorable Newborn Cheetah Cubs Grow on a Livestream From the Smithsonian's Conservation Biology Institute",
+    "summary": "The healthy and active babies are being cared for by first-time mother Zura, and the public can keep up with their antics through an online cheetah cub cam",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/watch-five-adorable-newborn-cheetah-cubs-grow-on-a-livestream-from-the-smithsonians-conservation-biology-institute-180989669/",
+    "published_at": "2026-10-09T21:05:40.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_9wr51e",
+    "headline": "Researchers May Have Directly Glimpsed an Exoplanet’s Magnetic Field for the First Time, Building Hope of Peering Deeper Into Faraway Worlds",
+    "summary": "Radio signals emanating from Beta Pictoris b suggest that this young and massive exoplanet has a strong magnetic field and intense auroral show",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/researchers-may-have-directly-glimpsed-an-exoplanets-magnetic-field-for-the-first-time-building-hope-of-peering-deeper-into-faraway-worlds-180989633/",
+    "published_at": "2026-10-07T16:07:13.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1yob8ic",
+    "headline": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
+    "summary": "Indigenous communities near present-day Milwaukee likely hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
+    "published_at": "2026-10-06T14:10:50.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_cbxezk",
+    "headline": "London’s Oxford Street gets fully pedestrianized this month: here’s what that means",
+    "summary": "Oxford Street, one of the busiest shopping streets in the world, goes traffic-free on October 26. London Mayor Sadiq Khan announced the closure of the stretch from Orchard Street to Great Portland Street, nearly a…",
+    "category": "planet",
+    "country": {
+      "code": "GB",
+      "name": "United Kingdom",
+      "flag": "🇬🇧"
+    },
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/10/londons-oxford-street-gets-fully-pedestrianized-this-month-heres-what-that-means/",
+    "published_at": "2026-10-08T00:00:44.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_dteccl",
     "headline": "Layered semiconductor unlocks magnetic control of light emitted by quantum condensates",
     "summary": "Quantum technologies are considered key technologies of the future. However, research in this field requires not only scientific expertise but sometimes also highly specialized laboratory conditions. Bose–Einstein…",
@@ -2000,18 +2108,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-10-liquid-crystal-magnetism-puzzling-properties.html",
     "published_at": "2026-10-08T19:20:15.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_1yob8ic",
-    "headline": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
-    "summary": "Indigenous communities near present-day Milwaukee likely hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
-    "published_at": "2026-10-06T14:10:50.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5088,110 +5184,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-08-metastable-3d-ink-enables-loop.html",
     "published_at": "2026-08-19T17:00:08.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1b4r6bz",
-    "headline": "Gentle chemical glow helps scientists capture sharper images of living cells",
-    "summary": "We reach for brighter, better lighting for sharper pictures, whether we're photographing a puppy or a microscopic cell. In most cases, the light comes from outside the object being photographed. A recent study explored…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-gentle-chemical-scientists-capture-sharper.html",
-    "published_at": "2026-08-19T16:20:04.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_qk4y64",
-    "headline": "From Armpits to Feet, Our Ticklish Hot Spots Are Surprisingly Universal. The Finding Offers Clues About the Sensation's Evolutionary Origins",
-    "summary": "A new study probes the basics of gargalesis, a poorly understood type of tickling caused by firm, repetitive touches that typically elicits laughter and squirming",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/from-armpits-to-feet-our-ticklish-hot-spots-are-surprisingly-universal-the-finding-offers-clues-about-the-sensations-evolutionary-origins-180989324/",
-    "published_at": "2026-08-13T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_ub7tfx",
-    "headline": "As Sicilians Flocked to a Religious Festival, Thieves Broke Into a Nearby Museum and Stole Four Renaissance Paintings",
-    "summary": "The missing works include three panels from a 15th-century altarpiece by Antonello da Messina, as well as a two-sided devotional painting by the artist",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/as-sicilians-flocked-to-religious-festival-thieves-broke-into-nearby-museum-stole-four-renaissance-paintings-180989352/",
-    "published_at": "2026-08-17T19:36:01.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_j5e0m",
-    "headline": "This Couple Found a Mysterious 150-Pound Sculpture Buried in Their Backyard. Now, They're Trying to Figure Out Who Made It",
-    "summary": "After discovering a large limestone bust on their San Francisco property in May, Greg Gatwood and Judy Gittelsohn have spent the past few months trying to unravel its backstory",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/this-couple-found-a-mysterious-150-pound-sculpture-buried-in-their-backyard-now-theyre-trying-to-figure-out-who-made-it-180989347/",
-    "published_at": "2026-08-17T14:33:57.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_16gbrds",
-    "headline": "Following Pope Leo XIV's Encyclical, the Vatican Announces a New Art Triennial Celebrating Human Creativity and Empathy in the Age of A.I.",
-    "summary": "More than 100 artists will showcase their art on four continents as the Catholic Church continues to emphasize human creativity and relationships over artificial intelligence tools",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/following-pope-leo-vivs-encyclical-the-vatican-announces-a-new-art-triennial-celebrating-human-creativity-and-empathy-in-the-age-of-ai-180989321/",
-    "published_at": "2026-08-12T19:00:28.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_5e516f",
-    "headline": "A Total Solar Eclipse Is Coming to Spain. This Madrid Museum Is Celebrating With a Digital Artwork Illuminating Its Paintings ‘In the Light of the Eclipse’",
-    "summary": "A new animation from The Prado, called \"El Prado a la luz del eclipse,\" uses A.I. to imagine masterpieces by Goya and Velázquez as if their scenes occurred during a total solar eclipse",
-    "category": "culture",
-    "country": {
-      "code": "ES",
-      "name": "Spain",
-      "flag": "🇪🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-total-solar-eclipse-is-coming-to-spain-this-madrid-museum-is-celebrating-with-a-digital-artwork-illuminating-its-paintings-in-the-light-of-the-eclipse-180989311/",
-    "published_at": "2026-08-11T21:08:08.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_b16g0t",
-    "headline": "New Treatment Shows Remarkable Motor Improvements in Boys With Muscular Dystrophy—in Just 12 Weeks",
-    "summary": "Scientists studying one of the world’s most serious inherited muscle diseases have found encouraging evidence that treating children much earlier—potentially before obvious symptoms develop—could make a significant…",
-    "category": "science",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/new-treatment-shows-remarkable-motor-improvements-in-boys-with-muscular-dystrophy/",
-    "published_at": "2026-08-10T17:01:11.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1w1foll",
-    "headline": "Cheese Lovers Unite: The Benefits of Full-Fat Dairy Documented in Study Without Cholesterol Rise or Weight Gain",
-    "summary": "A University of Toronto study is offering new evidence in support of full-fat dairy consumption. The findings from a 12-week study demonstrate that three daily servings of full-fat dairy can be incorporated into a…",
-    "category": "science",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/cheese-lovers-unite-the-benefits-of-full-fat-dairy-documented-in-study-without-cholesterol-rise-or-weight-gain/",
-    "published_at": "2026-08-09T22:43:37.000Z",
     "read_minutes": 2,
     "score": 1
   }
