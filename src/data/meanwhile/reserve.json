@@ -144,14 +144,14 @@
     "score": 6
   },
   {
-    "id": "s_zdw36p",
-    "headline": "Antarctica’s Wind Farm Saves 122,000 Gallons of Diesel Over 15 Years Powering McMurdo Station",
-    "summary": "As they near the end of their productive lives, the 3 wind turbines spinning on Antarctica’s Ross Island have made an enormous impact on the energy market of the continent. Built and commissioned over 2008-2009, the…",
-    "category": "planet",
+    "id": "s_1ooji29",
+    "headline": "Loneliness may steal nearly 6 years of good health",
+    "summary": "A large study suggests loneliness and social isolation can cost people years of healthy life, especially when it comes to mental health. Men experiencing both lost about 5.8 years free from depression and anxiety, while…",
+    "category": "science",
     "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/antarcticas-wind-farm-saves-122000-gallons-of-diesel-over-15-years-powering-mcmurdo-station/",
-    "published_at": "2026-10-02T13:00:15.000Z",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261006234514.htm",
+    "published_at": "2026-10-10T18:57:02.000Z",
     "read_minutes": 2,
     "score": 5
   },
@@ -164,6 +164,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/septembers-ozone-hole-was-the-biggest-it-has-been-in-25-years-180989657/",
     "published_at": "2026-10-09T14:55:21.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
+    "id": "s_zdw36p",
+    "headline": "Antarctica’s Wind Farm Saves 122,000 Gallons of Diesel Over 15 Years Powering McMurdo Station",
+    "summary": "As they near the end of their productive lives, the 3 wind turbines spinning on Antarctica’s Ross Island have made an enormous impact on the energy market of the continent. Built and commissioned over 2008-2009, the…",
+    "category": "planet",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/antarcticas-wind-farm-saves-122000-gallons-of-diesel-over-15-years-powering-mcmurdo-station/",
+    "published_at": "2026-10-02T13:00:15.000Z",
     "read_minutes": 2,
     "score": 5
   },
@@ -540,6 +552,30 @@
     "score": 4
   },
   {
+    "id": "s_ijglyj",
+    "headline": "Scientists build a nuclear clock that could make atomic clocks obsolete",
+    "summary": "Scientists in Vienna have achieved a major breakthrough in timekeeping by creating the world’s first self-stabilizing nuclear clock, a technology that could eventually surpass even the most precise atomic clocks…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
+    "published_at": "2026-10-11T03:06:35.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_13jsd5c",
+    "headline": "The eye has a hidden cleanup system scientists never knew existed",
+    "summary": "Scientists have discovered a hidden cleanup system at the back of the eye that drains fluid and waste through a previously unknown pathway. The surprising finding, demonstrated in mice, could open the door to new…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
+    "published_at": "2026-10-11T06:01:54.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_12ylt9u",
     "headline": "NASA is searching for hidden caves to build its first Moon base",
     "summary": "NASA is preparing for humanity’s first Moon base with three investigations that will hunt for underground shelters, uncover hidden ice, and track dangerous conditions on the lunar surface. The findings could reveal how…",
@@ -552,14 +588,26 @@
     "score": 4
   },
   {
-    "id": "s_1m52bhh",
-    "headline": "A meteor hit Oklahoma 100 million years later than scientists thought",
-    "summary": "A meteor crater buried beneath Oklahoma has turned out to be nearly 100 million years younger than scientists thought. Zircon crystals show the Ames impact occurred about 370 million years ago, meaning it was not part…",
+    "id": "s_12v2pyl",
+    "headline": "Scientists may have found a shortcut to fusion energy",
+    "summary": "Princeton Plasma Physics Laboratory may have found a dramatically more efficient route to fusion energy by reversing the traditional approach: heating plasma first, then increasing its density. Their calculations could…",
     "category": "science",
     "country": null,
     "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261002080012.htm",
-    "published_at": "2026-10-04T12:41:43.000Z",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008005242.htm",
+    "published_at": "2026-10-10T18:57:27.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_12tnvu3",
+    "headline": "MIT astronomers catch a star in a feast that could last billions of years",
+    "summary": "Astronomers have discovered a bizarre star system about 300 light-years from Earth where a small star is slowly devouring a nearby brown dwarf, an object too massive to be a planet but too small to be a true star…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008005240.htm",
+    "published_at": "2026-10-10T18:56:25.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -596,6 +644,18 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-10-tiny-marine-microbe-genetic-machinery.html",
     "published_at": "2026-10-09T15:00:12.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1m52bhh",
+    "headline": "A meteor hit Oklahoma 100 million years later than scientists thought",
+    "summary": "A meteor crater buried beneath Oklahoma has turned out to be nearly 100 million years younger than scientists thought. Zircon crystals show the Ames impact occurred about 370 million years ago, meaning it was not part…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261002080012.htm",
+    "published_at": "2026-10-04T12:41:43.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2020,6 +2080,18 @@
     "source": "The Optimist Daily",
     "url": "https://www.optimistdaily.com/2026/10/social-physiology-the-hidden-health-cost-of-eating-alone-according-to-science/",
     "published_at": "2026-10-06T00:00:41.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_13l779u",
+    "headline": "Neanderthals may have used prehistoric glue as an ancient antibiotic",
+    "summary": "Neanderthals may have used a sticky substance made from birch bark to treat wounds thousands of years before antibiotics existed. Researchers recreated ancient birch tar production techniques and discovered that every…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm",
+    "published_at": "2026-10-11T00:45:37.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5112,78 +5184,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260815064805.htm",
     "published_at": "2026-08-16T09:55:45.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1ldkdp5",
-    "headline": "Scientists solve the mystery of a brain “switch” that can trigger weight loss in opposite ways",
-    "summary": "Scientists have uncovered why two seemingly opposite ways of targeting the same brain receptor can both promote weight loss. In mice, activating the GIP receptor in the brainstem reduced appetite, while blocking it in…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814011039.htm",
-    "published_at": "2026-08-15T10:55:39.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1oq1ukh",
-    "headline": "Neptune’s tiny moons may be the wreckage of shattered ancient worlds",
-    "summary": "JWST has uncovered surprising clues that Neptune’s strange inner moons may be the wreckage of an ancient cosmic catastrophe. Researchers detected clay-like minerals on Larissa, Galatea, and Neptune’s rings that form in…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260813045545.htm",
-    "published_at": "2026-08-14T04:35:05.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_pi0k05",
-    "headline": "Universal pattern revealed in quantum matter",
-    "summary": "When different materials transition from one phase to another, such as water coming to a boil or a magnet losing its ability to attract metals, something remarkable can happen: They begin to behave identically…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-universal-pattern-revealed-quantum.html",
-    "published_at": "2026-08-19T21:20:01.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_1wtvalj",
-    "headline": "AI screens 100,000+ membrane combinations, predicting carbon capture performance within seconds",
-    "summary": "Reducing carbon dioxide emissions from industrial processes and energy production remains one of the major technological challenges in addressing climate change. Membrane-based gas separation offers an energy-efficient…",
-    "category": "planet",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-ai-screens-membrane-combinations-carbon.html",
-    "published_at": "2026-08-19T19:20:04.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_932rhd",
-    "headline": "Beijing's isoprene-emitting trees highlight ozone risks in greener, hotter cities",
-    "summary": "Amid current heat waves, urban greening is once again moving to the center of public debate. Greener cities are generally expected to have cleaner air because trees capture airborne particles, absorb gaseous pollutants…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-beijing-isoprene-emitting-trees-highlight.html",
-    "published_at": "2026-08-19T18:00:19.000Z",
-    "read_minutes": 2,
-    "score": 1
-  },
-  {
-    "id": "s_o25sev",
-    "headline": "Metastable 3D printing 'ink' enables a closed-loop material cycle",
-    "summary": "Polymers used for light-based 3D printing are very stable because of their chemical structure, but they are typically hard to recycle. A research team led by Professor Dr. Eva Blasco, a researcher at the Institute for…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-metastable-3d-ink-enables-loop.html",
-    "published_at": "2026-08-19T17:00:08.000Z",
     "read_minutes": 2,
     "score": 1
   }
