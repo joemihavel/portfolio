@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_15exc0h",
+    "headline": "Climate fingerprints reveal stronger evidence of human-caused warming after more than 30 years",
+    "summary": "The scientific evidence for human-caused global warming is stronger than ever, according to a major new review—despite a U.S. government report questioning the science.",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-climate-fingerprints-reveal-stronger-evidence.html",
+    "published_at": "2026-10-12T13:00:12.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_1ooji29",
     "headline": "Loneliness may steal nearly 6 years of good health",
     "summary": "A large study suggests loneliness and social isolation can cost people years of healthy life, especially when it comes to mental health. Men experiencing both lost about 5.8 years free from depression and anxiety, while…",
@@ -528,18 +540,6 @@
     "score": 5
   },
   {
-    "id": "s_1t6maln",
-    "headline": "Neighbors Flock to Rescue a Wounded Owl Tangled Up in Barbed Wire",
-    "summary": "From the Cowboy State Daily comes the story of a rural community flocking to the side of an injured owl and rescuing it from a dreadful fate. The story begins when Sharon and Scott Jacobs were driving past private land…",
-    "category": "animals",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/neighbors-flock-to-rescue-a-wounded-owl-tangled-up-in-barbed-wire/",
-    "published_at": "2026-10-08T13:00:03.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_17wfswk",
     "headline": "Orphaned, Rescued, and Rewilded, Female Gorilla Becomes a Mother in Historic Conservation Success",
     "summary": "One of the first-ever eastern lowland gorillas to be successfully returned to the wild gave birth on May 21st in her new/old home of Virunga National Park in the Democratic Republic of the Congo (DRC). Every new gorilla…",
@@ -548,18 +548,6 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/orphaned-rescued-and-rewilded-female-gorilla-becomes-a-mother-in-historic-conservation-success/",
     "published_at": "2026-10-05T11:00:53.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_ijglyj",
-    "headline": "Scientists build a nuclear clock that could make atomic clocks obsolete",
-    "summary": "Scientists in Vienna have achieved a major breakthrough in timekeeping by creating the world’s first self-stabilizing nuclear clock, a technology that could eventually surpass even the most precise atomic clocks…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
-    "published_at": "2026-10-11T03:06:35.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -612,6 +600,30 @@
     "score": 4
   },
   {
+    "id": "s_1mo3ikh",
+    "headline": "'DNA Typewriter' records cells' history in developing mouse embryo",
+    "summary": "Scientists have succeeded in reconstructing the family tree of cells in a developing mouse embryo. They recorded cells' relationships, starting when the fertilized egg first split in two and ending after the body and…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-dna-typewriter-cells-history-mouse.html",
+    "published_at": "2026-10-11T22:20:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1jiv59t",
+    "headline": "Jurassic fossil reveals ancient origins of how mammals drink milk",
+    "summary": "An international team of researchers has uncovered new evidence illuminating the evolutionary origins of one of the defining features of mammals: the ability to suckle and consume milk during infancy. Their findings…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-jurassic-fossil-reveals-ancient-mammals.html",
+    "published_at": "2026-10-11T16:00:04.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_4bab8v",
     "headline": "Fluorescent imaging tracks metabolism of cells in real time",
     "summary": "Cornell researchers have designed a new, faster form of two-photon fluorescence imaging for observing cell metabolism in real time, a method that could enable quicker screening of new therapeutic treatments. The…",
@@ -632,6 +644,30 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-10-discovery-variable-clouds-solar.html",
     "published_at": "2026-10-09T18:20:12.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1t6maln",
+    "headline": "Neighbors Flock to Rescue a Wounded Owl Tangled Up in Barbed Wire",
+    "summary": "From the Cowboy State Daily comes the story of a rural community flocking to the side of an injured owl and rescuing it from a dreadful fate. The story begins when Sharon and Scott Jacobs were driving past private land…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/neighbors-flock-to-rescue-a-wounded-owl-tangled-up-in-barbed-wire/",
+    "published_at": "2026-10-08T13:00:03.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_ijglyj",
+    "headline": "Scientists build a nuclear clock that could make atomic clocks obsolete",
+    "summary": "Scientists in Vienna have achieved a major breakthrough in timekeeping by creating the world’s first self-stabilizing nuclear clock, a technology that could eventually surpass even the most precise atomic clocks…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
+    "published_at": "2026-10-11T03:06:35.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2072,6 +2108,22 @@
     "score": 3
   },
   {
+    "id": "s_cbxezk",
+    "headline": "London’s Oxford Street gets fully pedestrianized this month: here’s what that means",
+    "summary": "Oxford Street, one of the busiest shopping streets in the world, goes traffic-free on October 26. London Mayor Sadiq Khan announced the closure of the stretch from Orchard Street to Great Portland Street, nearly a…",
+    "category": "planet",
+    "country": {
+      "code": "GB",
+      "name": "United Kingdom",
+      "flag": "🇬🇧"
+    },
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/10/londons-oxford-street-gets-fully-pedestrianized-this-month-heres-what-that-means/",
+    "published_at": "2026-10-08T00:00:44.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_14yqz0j",
     "headline": "Social physiology: the hidden health cost of eating alone, according to science",
     "summary": "TEAM A study published in Science Advances found that eating the same meal with a close companion produces measurably better blood sugar control than eating it alone. In experiments with 108 participants, researchers at…",
@@ -2080,6 +2132,18 @@
     "source": "The Optimist Daily",
     "url": "https://www.optimistdaily.com/2026/10/social-physiology-the-hidden-health-cost-of-eating-alone-according-to-science/",
     "published_at": "2026-10-06T00:00:41.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_a9di9c",
+    "headline": "Scientists make stunning discovery that could help explain why life exists",
+    "summary": "Scientists have discovered that the universe's fundamental physical constants may be finely balanced to make life possible. Even tiny changes to these constants could make liquids too thick or too thin for essential…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
+    "published_at": "2026-10-11T16:35:58.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -2120,6 +2184,22 @@
     "score": 3
   },
   {
+    "id": "s_e32sxv",
+    "headline": "A Digital Swamp Coming to New York City’s MoMA Is 'Made to Envelop You' in Nature With the Help of Cutting-Edge Technology",
+    "summary": "\"Wetland\" is the latest installation of a high-tech traveling exhibition designed by Danish artist Jakob Kudsk Steensen. It recreates the overlooked ecosystem with the help of folklore, soundscapes and video game…",
+    "category": "planet",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
+    "published_at": "2026-10-09T20:39:30.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_9wr51e",
     "headline": "Researchers May Have Directly Glimpsed an Exoplanet’s Magnetic Field for the First Time, Building Hope of Peering Deeper Into Faraway Worlds",
     "summary": "Radio signals emanating from Beta Pictoris b suggest that this young and massive exoplanet has a strong magnetic field and intense auroral show",
@@ -2140,22 +2220,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
     "published_at": "2026-10-06T14:10:50.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_cbxezk",
-    "headline": "London’s Oxford Street gets fully pedestrianized this month: here’s what that means",
-    "summary": "Oxford Street, one of the busiest shopping streets in the world, goes traffic-free on October 26. London Mayor Sadiq Khan announced the closure of the stretch from Orchard Street to Great Portland Street, nearly a…",
-    "category": "planet",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "The Optimist Daily",
-    "url": "https://www.optimistdaily.com/2026/10/londons-oxford-street-gets-fully-pedestrianized-this-month-heres-what-that-means/",
-    "published_at": "2026-10-08T00:00:44.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5114,77 +5178,5 @@
     "published_at": "2026-08-18T13:00:25.000Z",
     "read_minutes": 2,
     "score": 2
-  },
-  {
-    "id": "s_iec9bn",
-    "headline": "California Creek Restoration Helps Young Salmon Grow Twice as Fast—And Doubles Their Survival Rate",
-    "summary": "Along California’s redwood coast, conservationists have been working for more than a decade to give a damaged creek something surprisingly simple: room to behave like a creek again. Prairie Creek is one of the last…",
-    "category": "animals",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/california-creek-restoration-helps-young-salmon-grow-twice-as-fast-and-doubles-their-survival-rate/",
-    "published_at": "2026-08-15T18:25:36.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_14co5vu",
-    "headline": "Texas activist’s claims of Indigenous ancestry face scrutiny",
-    "summary": "A recent investigation from Grist, a U.S.-based nonprofit media organization, raises questions about environmental activist Juan Mancias’ Indigenous claim to the land he works to protect in the U.S. state of Texas. In…",
-    "category": "people",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Mongabay",
-    "url": "https://news.mongabay.com/short-article/2026/08/texas-activists-claims-of-indigenous-ancestry-face-scrutiny/",
-    "published_at": "2026-08-17T20:21:15.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_by6f48",
-    "headline": "Concerns grow over ‘green’ biomass power in Japan after spate of accidents",
-    "summary": "For the past decade, Japan has been expanding the use of woody biomass for power generation to replace or be mixed and burned with coal. The country is now the second-largest wood pellet consumer in the world after the…",
-    "category": "planet",
-    "country": {
-      "code": "JP",
-      "name": "Japan",
-      "flag": "🇯🇵"
-    },
-    "source": "Mongabay",
-    "url": "https://news.mongabay.com/2026/08/concerns-grow-over-green-biomass-power-in-japan-after-spate-of-accidents/",
-    "published_at": "2026-08-17T15:45:17.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1ma0tv2",
-    "headline": "Increasingly rare: Jaguarundi moves up a notch on the endangered species list",
-    "summary": "Distinct for their rather uncat-like appearance, jaguarundis have long flown under the research and conservation radar. However, its latest uplisting to near threatened on the IUCN Red List could change that. These…",
-    "category": "animals",
-    "country": null,
-    "source": "Mongabay",
-    "url": "https://news.mongabay.com/2026/08/increasingly-rare-jaguarundi-moves-up-a-notch-on-the-endangered-species-list/",
-    "published_at": "2026-08-17T13:40:23.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1h8rmg3",
-    "headline": "Physicists discover a hidden gluon structure inside protons that could rewrite textbooks",
-    "summary": "Physicists may have uncovered a hidden feature inside protons that helps preserve one of matter’s most fundamental properties. RHIC collision data suggest baryon number is carried not simply by three quarks, but by a…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260815064805.htm",
-    "published_at": "2026-08-16T09:55:45.000Z",
-    "read_minutes": 2,
-    "score": 1
   }
 ]
