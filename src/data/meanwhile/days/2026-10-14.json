@@ -1,0 +1,1318 @@
+{
+  "day": "2026-10-14",
+  "generated_at": "2026-10-14T10:28:46.982Z",
+  "count": 70,
+  "fresh_count": 70,
+  "stories": [
+    {
+      "id": "s_a6hxj",
+      "headline": "The floating scarecrow saving seabirds from fishing nets",
+      "summary": "TEAM A bird-shaped kite and a floating scarecrow with spinning eyes reduced seabird deaths in Cornish fishing nets by up to 71 percent in a two-year trial. The devices cost relatively little, don’t require significant…",
+      "category": "animals",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/the-floating-scarecrow-saving-seabirds-from-fishing-nets/",
+      "published_at": "2026-10-09T00:00:41.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_534880686_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_13vlg9",
+      "headline": "Australia sets a new renewable energy record, with rooftop solar leading the way",
+      "summary": "On Saturday, September 22, solar and wind met 80.4 percent of demand on Australia’s national electricity market, with the grid covering the eastern states, South Australia, and the Australian Capital Territory. For…",
+      "category": "planet",
+      "country": {
+        "code": "AU",
+        "name": "Australia",
+        "flag": "🇦🇺"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/australia-sets-a-new-renewable-energy-record-with-rooftop-solar-leading-the-way/",
+      "published_at": "2026-10-12T00:00:55.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_9578065_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 669
+      }
+    },
+    {
+      "id": "s_1wucwm1",
+      "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
+      "summary": "When summer’s heat becomes too much to bear, a glass of iced lemonade is a welcome relief, but what tens of thousands across Ohio have learned is that lemonade can provide a different sort of relief as well. For 8…",
+      "category": "communities",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/teens-wish-to-return-kindness-she-received-sees-her-lemonade-stand-become-5-million-charity-engine/",
+      "published_at": "2026-10-12T12:30:49.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-Patyons-Lemonade-Stand.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 737
+      }
+    },
+    {
+      "id": "s_1utywhk",
+      "headline": "‘You’re Walking!’ – Dad Surprises Children Having Recovered Ability to Walk After Serious Brain Injury",
+      "summary": "After 3 years of recovery from a brain injury sustained in a car accident, a father surprised his children by walking independently again. Lounging on the couch enjoying some TV time, children are excellent at…",
+      "category": "tiny",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/youre-walking-dad-surprises-children-having-recovered-ability-to-walk-after-serious-brain-injury/",
+      "published_at": "2026-10-07T11:00:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-screengrab-via-@glittersparkles.jpg",
+        "alt": null,
+        "w": 1216,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_52wh37",
+      "headline": "NPR-Inspired Homework Leads Teen to Find Hidden Message a Decade After a Stranger’s Kindness",
+      "summary": "From Seattle’s chapter of National Public Radio comes the remarkable story of the kindness of strangers immortalized in an origami crane. Published through KUOW’s “My Unsung Hero” series, the story begins with a…",
+      "category": "people",
+      "country": {
+        "code": "JP",
+        "name": "Japan",
+        "flag": "🇯🇵"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/npr-inspired-homework-leads-teen-to-find-hidden-message-a-decade-after-a-strangers-kindness/",
+      "published_at": "2026-10-09T18:30:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/courtesy-of-Mika-Matsuda-supplied-to-KUOW.jpg",
+        "alt": null,
+        "w": 1290,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_pinri4",
+      "headline": "More Than 14,000 Derelict Explosives Cleared from Libyan City and Nearby Farmland",
+      "summary": "Demining operations have cleared just over 14,000 pieces of derelict explosives in a coastal Libyan city this year. A partnership between the UN’s support mission in-country (UNSMIL), Italian foreign aid, Libyan…",
+      "category": "achievement",
+      "country": {
+        "code": "IT",
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/more-than-14000-derelict-explosives-cleared-from-libyan-city-and-nearby-farmland/",
+      "published_at": "2026-10-08T11:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/An-ammunition-depot-in-Misratah-Libya-credit-UN-Photo-UNSMIL.jpg",
+        "alt": null,
+        "w": 1333,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_pop6u0",
+      "headline": "NASA astronauts splash down after 100 million miles in space",
+      "summary": "NASA’s SpaceX Crew-12 astronauts have returned to Earth after 237 days in space, traveling more than 100 million miles and completing over 3,792 orbits while conducting research to prepare for future missions to the…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008232629.htm",
+      "published_at": "2026-10-09T03:56:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/nasa-spacex-crew-12-splash-down.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_tuvbzq",
+      "headline": "J.M.W. Turner Painted This Breathtaking Roman Landscape Nearly 200 Years Ago. If You Look Closely, You Can Still See His Fingerprints",
+      "summary": "The Romantic painter completed \"Rome, From Mount Aventine\" in the 1830s. It became his most expensive artwork in 2014, and it's expected to sell for another record-breaking sum in December",
+      "category": "culture",
+      "country": {
+        "code": "IT",
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/jmw-turner-painted-this-breathtaking-roman-landscape-nearly-200-years-ago-if-you-look-closely-you-can-still-see-his-fingerprints-180989659/",
+      "published_at": "2026-10-08T18:56:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/ytKPpz_2djd2Ej8Vfx9ZhVndXP4=/fit-in/1600x0/filters:focal(1024x756:1025x757)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/07/62/07625028-14a0-4437-a78e-d2d14b703eec/turner.jpeg",
+        "alt": "Rome, From Mount Aventine,&amp;nbsp;J.M.W. Turner, 1836",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_5ztop2",
+      "headline": "Scientists Shocked to Discover ‘D-rex’, a Giant Fungus from Chinese Forests Dating Back 65 Million Years",
+      "summary": "Deep in the forests of southwest China, scientists have discovered a ‘fungal giant’ that challenges our understanding of how large fungi can become. The newly described species, Dianjunus rex, or “King of Dian,” named…",
+      "category": "animals",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/scientists-shocked-to-discover-d-rex-a-giant-fungus-from-chinese-forests-dating-back-65-million-years/",
+      "published_at": "2026-10-13T18:30:53.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/pictured-the-stromata-of-Dianjunus-rex-in-the-field.jpg",
+        "alt": null,
+        "w": 994,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_qd3ah7",
+      "headline": "Berlin mapped 900,000 street trees. Now 12,000 people water them.",
+      "summary": "Amanda Gläser-Bligh named her street tree Linda. Linda is a linden, eight years old, growing outside Gläser-Bligh’s apartment building in Charlottenburg, and once a week during Berlin’s hot months, Gläser-Bligh makes a…",
+      "category": "planet",
+      "country": {
+        "code": "DE",
+        "name": "Germany",
+        "flag": "🇩🇪"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/berlin-mapped-900000-street-trees-now-12000-people-water-them/",
+      "published_at": "2026-10-08T00:00:55.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_199512700_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_3xafsf",
+      "headline": "NYC Parks Extends Late Night Soccer at 5 Fields for Night Workers–And Their Reactions Are Awesome (WATCH)",
+      "summary": "New York City authorities decided to leave the lights on at 5 urban soccer pitches around the city, hoping to even the playing field of recreation opportunities for those who work late. The response from the locals in…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/nyc-parks-extends-late-night-soccer-at-5-fields-for-night-workers-and-their-reactions-are-awesome-watch/",
+      "published_at": "2026-10-08T15:30:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-NYC-Mayors-Office.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 672
+      }
+    },
+    {
+      "id": "s_1kjwte7",
+      "headline": "Daughter Gets to Join Dad as Co-Pilot, With Mom Serving on Flight’s Cabin Crew: A Surprise Full Circle Moment",
+      "summary": "A young pilot flew a commercial jet alongside her father as captain for the first time—while her mother worked in the cabin crew on the same flight. 22-year-old Zoë took to the skies with both her parents aboard the…",
+      "category": "tiny",
+      "country": {
+        "code": "NL",
+        "name": "Netherlands",
+        "flag": "🇳🇱"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/daughter-gets-to-join-dad-as-co-pilot-with-mom-serving-on-cabin-crew/",
+      "published_at": "2026-10-10T15:25:15.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Family-is-airline-crew-released-by-Zoe-de-Bruijn-via-SWNS.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 780
+      }
+    },
+    {
+      "id": "s_1mdh283",
+      "headline": "Illinois Community Members Honored for Helping Save Woman in Submerged Vehicle (WATCH)",
+      "summary": "On a stormy afternoon in Illinois in August, an elderly driver lost control of her vehicle as it plunged into a flooded retention pond. Sinking up to its roof, multiple local community members immediately began to swim…",
+      "category": "people",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/illinois-community-members-honored-for-helping-save-woman-in-submerged-vehicle-watch/",
+      "published_at": "2026-10-06T13:00:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-Champaign-Illinois-Police-Department-e1791276599357.jpg",
+        "alt": null,
+        "w": 1145,
+        "h": 637
+      }
+    },
+    {
+      "id": "s_1kti2ep",
+      "headline": "Europe's new Sentinel-3C satellite just sent back spectacular images of Earth",
+      "summary": "Europe's Sentinel-3C satellite has returned breathtaking images of Earth just two weeks after launch, revealing the snowy Alps, frozen Arctic islands, and brilliant turquoise Caribbean waters. Its first measurements…",
+      "category": "achievement",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261011211559.htm",
+      "published_at": "2026-10-12T23:48:22.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/copernicus-sentinel-3-satellite.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_5uj4vz",
+      "headline": "Why October is the best time to get your flu shot this year",
+      "summary": "Flu season usually builds in late fall, but this year it’s getting a jump start. During the week ending September 26, 3.4 percent of respiratory samples tested by clinical labs came back positive for flu, according to…",
+      "category": "science",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/why-october-is-the-best-time-to-get-your-flu-shot-this-year/",
+      "published_at": "2026-10-14T00:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_42557355_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_1xgw4as",
+      "headline": "September's Ozone Hole Was the Biggest It Has Been in 25 Years",
+      "summary": "The size of the hole in the stratosphere's ozone layer fluctuates every year, but last month's, measuring 10.6 million square miles, was especially large",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/septembers-ozone-hole-was-the-biggest-it-has-been-in-25-years-180989657/",
+      "published_at": "2026-10-09T14:55:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/FWtNbtK0NLupqtLmz63tOaXj-iM=/fit-in/1600x0/filters:focal(1000x709:1001x710)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/52/21/5221e37a-444a-4c23-9fd5-a82b199fac95/20260916_international_day_for_the_preservation_of_the_ozone_layer_copy.jpg",
+        "alt": "These visualizations show how the Antarctic ozone hole grew from August 1, 2026 to September 12, 2026.&amp;nbsp;",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_84ti61",
+      "headline": "Nearly 200-year-old Tortoise Becomes First to Contribute Extraordinary Epigenome to Research on Aging",
+      "summary": "A giant tortoise called Jonathan reinforces what we know about humans and healthy aging, say scientists—especially because Jonathan is nearly 200 years old. Researchers have been conducting genetic tests on Jonathan…",
+      "category": "animals",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/nearly-200-year-old-tortoise-becomes-first-to-contribute-extraordinary-epigenome-to-aging-research/",
+      "published_at": "2026-10-08T18:30:07.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jonathan-left-arrived-in-St-Helena-as-a-gift-to-Sir-William-Grey-Wilson-in-1882-.jpeg",
+        "alt": null,
+        "w": 1280,
+        "h": 705
+      }
+    },
+    {
+      "id": "s_13pggpv",
+      "headline": "Family Sells 650 Acres on East Texas Lake to Become State Park, Saying Land is ‘Part of my soul’",
+      "summary": "A “gem” of a landscape in eastern Texas has been sold by its multigenerational owners for the purpose of becoming a state park. The property is the longest remaining, contiguous piece of land on Lake Palestine’s shore…",
+      "category": "planet",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/family-sells-650-acres-on-east-texas-lake-to-become-state-park-saying-land-is-part-of-my-soul/",
+      "published_at": "2026-10-12T06:21:02.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Sunset-on-Lake-Palestine-credit-TexasLand-provided-to-TPWF-as-a-courtesy.jpg",
+        "alt": null,
+        "w": 1147,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1fwagr7",
+      "headline": "Young Adults Are Building Safe Spaces for Unhoused Peers",
+      "summary": "In his first year at the University of California, Davis, Liam commuted three hours a day from his family’s home in the Bay Area to campus and back again. The round-trip train tickets were expensive, but not as pricey…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/young-adults-are-building-safe-spaces-for-unhoused-peers/",
+      "published_at": "2026-10-13T08:00:49.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/shutterstock_421405048-scaled.jpg",
+        "alt": null,
+        "w": 1800,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_inp4c1",
+      "headline": "NASA spots a giant patch of Moon-like rock on Earth",
+      "summary": "An astronaut aboard the International Space Station photographed a remarkable formation in Madagascar that looks surprisingly similar to the Moon’s bright highlands. Made of anorthosite, a rock abundant on the lunar…",
+      "category": "science",
+      "country": {
+        "code": "MG",
+        "name": "Madagascar",
+        "flag": "🇲🇬"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008102707.htm",
+      "published_at": "2026-10-11T15:30:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/moon-like-madagascar.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_125w00q",
+      "headline": "Humans and songbirds hear the same sounds, but organize them differently",
+      "summary": "Researchers from the University of Amsterdam and Leiden University have discovered that humans and songbirds use markedly different strategies to recognize sequences of complex sounds. The findings shed new light on how…",
+      "category": "culture",
+      "country": {
+        "code": "NL",
+        "name": "Netherlands",
+        "flag": "🇳🇱"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-humans-songbirds-differently.html",
+      "published_at": "2026-10-13T20:50:02.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/humans-and-songbirds-h.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1qbe0o8",
+      "headline": "Scientists discover 'D-rex', a giant fungus from Chinese forests whose unique lineage dates back 65 million years",
+      "summary": "Deep in the forests of Yunnan, China, scientists have discovered a \"fungal giant\" that challenges our understanding of how large fungi can become. The newly described species, Dianjunus rex, produces vertical fruiting…",
+      "category": "animals",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-scientists-d-rex-giant-fungus.html",
+      "published_at": "2026-10-13T23:20:10.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/scientists-discover-d.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_kf2qp8",
+      "headline": "As sand becomes more valuable, Sierra Leone’s Mahera Coast grows more vulnerable",
+      "summary": "PORT LOKO, Sierra Leone — When the tide pulls away from the beach in the agricultural regions in Mahera in Lungi, about 27 kilometers (17 miles) across the sea from the country’s capital, Freetown, the digging…",
+      "category": "planet",
+      "country": null,
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/as-sand-becomes-more-valuable-sierra-leones-mahera-coast-grows-more-vulnerable/",
+      "published_at": "2026-10-13T17:27:17.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/13151637/e3fdcb0d-9767-4eed-b7e5-f46f36d0957d-edit.jpg",
+        "alt": null,
+        "w": 1080,
+        "h": 730
+      }
+    },
+    {
+      "id": "s_5kqao2",
+      "headline": "A Ship Carrying Stacks of Ancient Dishware Sank Off the Coast of Turkey 2,100 Years Ago. Its Ceramic Cargo Is Still Remarkably Intact",
+      "summary": "Researchers believe that the vessel's plates and bowls were made in the ancient city of Rhosus, once praised by Roman statesman Cicero for its \"fine pottery\"",
+      "category": "communities",
+      "country": {
+        "code": "TR",
+        "name": "Türkiye",
+        "flag": "🇹🇷"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-ship-carrying-stacks-of-ancient-dishware-sank-off-the-coast-of-turkey-2100-years-ago-its-ceramic-cargo-is-still-remarkably-intact-180989626/",
+      "published_at": "2026-10-07T11:45:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/u5ZIl_0p4NDLZMBPwpHfbl5OjG0=/fit-in/1600x0/filters:focal(675x450:676x451)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3c/5d/3c5d64ef-fa30-4bc1-89ee-af5a2f0e2667/7d56dae5-d789-46d6-9df7-cb274be80482_1.jpeg",
+        "alt": "The dishes were packed carefully, and many remained intact.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_11kxlu0",
+      "headline": "Gigantic prehistoric snake discovered in India may have been one of the largest ever",
+      "summary": "A massive prehistoric snake discovered in India may have rivaled the largest snake ever known. Called Vasuki indicus, the 47-million-year-old giant could have reached up to 50 feet long, making it comparable to the…",
+      "category": "science",
+      "country": {
+        "code": "IN",
+        "name": "India",
+        "flag": "🇮🇳"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261014001406.htm",
+      "published_at": "2026-10-14T05:44:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/giant-prehistoric-snake.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_21w12w",
+      "headline": "Mourners Placed an Ancient Sippy Cup in a Roman Toddler's Grave. It May Have Been Meant to Sustain the Child on the Journey to the Afterlife",
+      "summary": "Fragments of the spouted cup, known as a \"tettina,\" were unearthed in England over a decade ago. It has recently been restored and put on display for the first time",
+      "category": "culture",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/mourners-laced-an-ancient-sippy-cup-in-a-roman-toddlers-grave-it-may-have-been-meant-to-sustain-the-child-on-the-journey-to-the-afterlife-180989673/",
+      "published_at": "2026-10-13T19:44:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/toOMpOtCzNHxZl3pbAuZFxDKCAs=/fit-in/1600x0/filters:focal(360x240:361x241)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/28/08/280800b5-fd01-40e1-9df9-a7cc7edf1c03/tettine-image-1024x480.jpeg",
+        "alt": "The tettina was found broken into pieces in 2011.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_h122h5",
+      "headline": "‘Patrick’ sea star went viral, but Argentine deep-sea canyon held 57 new species",
+      "summary": "A sea cucumber with two horn-like appendages sits on the mud in the deep South Atlantic Ocean. Scientists named it Loki, after the horned Norse trickster god. Loki lives 2,577 meters (8,455 feet) below the surface…",
+      "category": "animals",
+      "country": {
+        "code": "AR",
+        "name": "Argentina",
+        "flag": "🇦🇷"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/patrick-sea-star-went-viral-but-argentine-deep-sea-canyon-held-57-new-species/",
+      "published_at": "2026-10-13T22:11:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/13154333/10-Deep-Sea-Sea-Star-Patrick-Star-1200x800.jpg",
+        "alt": null,
+        "w": 1200,
+        "h": 800
+      }
+    },
+    {
+      "id": "s_sglblv",
+      "headline": "Damming the Xingu",
+      "summary": "As the Belo Monte hydroelectric plant in the Brazilian Amazon marks 10 years of operation, it faces a contentious environmental license renewal. At the heart of the debate are urgent calls to revise the dam’s discharge…",
+      "category": "planet",
+      "country": {
+        "code": "BR",
+        "name": "Brazil",
+        "flag": "🇧🇷"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/specials/2026/10/damming-the-xingu/",
+      "published_at": "2026-10-12T00:23:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/06/08092956/DSC_5440-scaled-1.jpg",
+        "alt": null,
+        "w": 2560,
+        "h": 1706
+      }
+    },
+    {
+      "id": "s_18ay3p0",
+      "headline": "‘A hard reset’: Cape Town to capture and relocate baboon troops",
+      "summary": "CAPE TOWN, South Africa — A steady stream of chacma baboons flows down the walking path in the beautiful wooded ravine that leads up to Admiral’s Kloof, on the slopes of Table Mountain National Park. The score of…",
+      "category": "communities",
+      "country": {
+        "code": "ZA",
+        "name": "South Africa",
+        "flag": "🇿🇦"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/a-hard-reset-cape-town-to-capture-and-relocate-baboon-troops/",
+      "published_at": "2026-10-13T11:33:31.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/13102332/BANNER-22_troops_and_tropes_mb_bc_DSC3085-CROP-1200x800.jpg",
+        "alt": null,
+        "w": 1200,
+        "h": 800
+      }
+    },
+    {
+      "id": "s_eact96",
+      "headline": "This Tiny Sardinian Village Might Be a New 'Blue Zone'—and Could Hold the Secrets to Female Longevity",
+      "summary": "In Bolotana, a town on the Italian island with about 2,300 residents, women who reach the age of 70 are about three times as likely to live to 100 than women in the United States, according to a new study",
+      "category": "science",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/this-tiny-sardinian-village-might-be-a-new-blue-zone-and-could-hold-the-secrets-to-female-longevity-180989660/",
+      "published_at": "2026-10-13T15:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/QPck9qwffAI5aTwjssaIpT9vbv8=/fit-in/1600x0/filters:focal(768x512:769x513)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/06/54/0654ce82-61a8-48c6-aaa0-3474319a638f/sunset-over-bolotana-1536x1024.png",
+        "alt": "Bolotana is a town on the Italian island of Sardinia with about 2,300 residents.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_10cuz27",
+      "headline": "This One-of-a-Kind Bronze Ring Offers a Tantalizing Glimpse at the Lighthouse of Alexandria, a Lost Wonder of the Ancient World",
+      "summary": "Archaeologists in Egypt discovered the signet ring while conducting excavations on the island of Antirhodos, which once housed a lavish Ptolemaic palace",
+      "category": "culture",
+      "country": {
+        "code": "EG",
+        "name": "Egypt",
+        "flag": "🇪🇬"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/this-one-of-a-kind-bronze-ring-offers-a-tantalizing-glimpse-at-the-lighthouse-of-alexandria-a-lost-wonder-of-the-ancient-world-180989661/",
+      "published_at": "2026-10-09T15:21:52.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/PS4D5JZcApADv_SD5utzVab2O68=/fit-in/1600x0/filters:focal(1000x667:1001x668)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d1/1d/d11d5260-a855-4fe8-ab1c-8865c93aa333/ring.png",
+        "alt": "An underwater archaeologist examines a bronze signet ring discovered off the coast of Alexandria, Egypt.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_vlngp2",
+      "headline": "A Family of Barn Owls Has Moved Into New York City's Upper West Side, Perhaps the First to Nest in Manhattan in Modern History",
+      "summary": "The feathered residents have attracted lots of attention, as their species is considered an extremely rare sight in the city",
+      "category": "animals",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-family-of-barn-owls-has-moved-into-new-york-citys-upper-west-side-perhaps-the-first-to-nest-in-manhattan-in-modern-history-180989674/",
+      "published_at": "2026-10-13T19:25:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/-1JdM-PjmggdWorggMfyzKN4ocU=/fit-in/1600x0/filters:focal(422x362:423x363)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d8/0e/d80e9500-f424-4c19-b2b7-04f5ea1b3d18/dix_6834a2.jpg",
+        "alt": "The nocturnal barn owls have drawn crowds of birders at night.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_17atla5",
+      "headline": "Meet the 14-year-old uncovering London’s lost history",
+      "summary": "Seasoned mudlark Emmylou Vaxby has spent nearly a decade searching the Thames foreshore for fragments of the city’s past",
+      "category": "planet",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/meet-the-14-year-old-uncovering-londons-lost-history/",
+      "published_at": "2026-10-05T07:00:44.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.positive.news/wp-content/uploads/2026/09/IMG_4220-copy.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 1440
+      }
+    },
+    {
+      "id": "s_lstsd3",
+      "headline": "Montana High School Softball Player Discovered Long-Lost Sister on Opposing Team",
+      "summary": "A softball diamond in Montana was the scene of a larger-than-life family reunion. Like something out of Field of Dreams, a teen softball player had lined up against an out-of-state team for an August match—and her…",
+      "category": "communities",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/montana-high-school-softball-player-discovered-long-lost-sister-on-opposing-team/",
+      "published_at": "2026-10-12T18:30:44.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Kyann-Dean-left-and-Samantha-Rensvold-right-credit-Rensvold-family-photo.jpg",
+        "alt": null,
+        "w": 1125,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1kok4yy",
+      "headline": "Scientists find a surprising genetic twist behind octopus intelligence",
+      "summary": "The remarkable intelligence of octopuses, squid, and cuttlefish may trace back to an ancient reshuffling of their DNA that created new connections between genes. Scientists discovered that these changes in the genome's…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261011211552.htm",
+      "published_at": "2026-10-12T20:44:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/octopus-flight-in-ocean.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1axpwny",
+      "headline": "A Community-Led Archaeology Dig on a Tiny Scottish Isle Has Unearthed a Medieval Monastery of 'International Importance'",
+      "summary": "The settlement, founded by an early Christian saint in the 500s, is \"far more than a small island church.\" It may have played a larger role in the Christianization of Britain than historians once realized",
+      "category": "culture",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-community-led-archaeology-dig-on-a-tiny-scottish-isle-has-unearthed-a-medieval-monastery-of-international-importance-180989654/",
+      "published_at": "2026-10-09T14:35:25.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/Emnb6J2TfpJJRjpMLwaRICwHua4=/fit-in/1600x0/filters:focal(797x531:798x532)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/19/1b/191b6b16-3366-4b72-ae0a-53d2fee141d1/community-led-archaeol-2.jpeg",
+        "alt": "An aerial view of the archaeological trenches dug around Lismore&amp;#39;s parish church, a 13th-century cathedral",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_4pvuve",
+      "headline": "First Nation-led effort replants kelp forests in Clayoquot Sound",
+      "summary": "Founder’s Briefs: An occasional series where Mongabay founder Rhett Ayers Butler shares analysis, perspectives and story summaries. In Clayoquot Sound, in the Canadian province of British Columbia, a partnership between…",
+      "category": "animals",
+      "country": {
+        "code": "CA",
+        "name": "Canada",
+        "flag": "🇨🇦"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/10/first-nation-led-effort-replants-kelp-forests-in-clayoquot-sound/",
+      "published_at": "2026-10-12T13:27:56.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/02164446/Mongabay-Kelp-Photo-3-Teams-working-with-kelp-in-Clayoquot-Sound-photo-credit-Graeme-Owsianski.jpg",
+        "alt": null,
+        "w": 1536,
+        "h": 781
+      }
+    },
+    {
+      "id": "s_8z305d",
+      "headline": "‘Like Caring for a Pet’ – the App That Lets You Know if Your Neighborhood Tree Is Thirsty",
+      "summary": "An open-source app has thousands of Berliners adopting and watering city trees as if they were their pets, helping keep the city green amid repeated summer heatwaves. Gieß den Kiez translates to “water your…",
+      "category": "planet",
+      "country": {
+        "code": "DE",
+        "name": "Germany",
+        "flag": "🇩🇪"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/like-caring-for-a-pet-the-app-that-lets-you-know-if-your-neighborhood-tree-is-thirsty/",
+      "published_at": "2026-10-12T15:30:39.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-Thanh-Thu-Nguyen-CityLAB-Berlin.jpg",
+        "alt": null,
+        "w": 1145,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_lc1azj",
+      "headline": "How NYC Students Saved School Lunch",
+      "summary": "There were three clear reasons why Leslie Gomez Rivera avoided the cafeteria at her high school in Brooklyn: She didn’t like the food, the room felt hectic and there was a stigma attached to eating school meals. She…",
+      "category": "communities",
+      "country": null,
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/how-nyc-students-saved-school-lunch/",
+      "published_at": "2026-10-08T08:00:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/shutterstock_1488137138-scaled.jpg",
+        "alt": null,
+        "w": 1801,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_1kn5aug",
+      "headline": "Scientists discover vanilla’s hidden healing potential",
+      "summary": "Scientists have discovered that vanillin, the compound that gives vanilla its distinctive flavor, has powerful properties that could help fight infections, reduce inflammation, and promote wound healing. The…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261011211550.htm",
+      "published_at": "2026-10-12T04:34:24.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/aromatic-vanilla-sticks-and-flowers-on-wooden-board.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1uquhyd",
+      "headline": "Hundreds of British College Students Clashed With Wooden Swords in a 1966 Re-enactment of the Battle of Hastings. Watch the Rediscovered 'Time Capsule' of Lost Footage",
+      "summary": "A local videographer shot 300 reels of color film during the re-enactment, which shows \"soldiers on foot getting remarkably close to horses\" and \"a rather relaxed attitude towards health and safety.\" The event sparked…",
+      "category": "culture",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/hundreds-of-british-college-students-clashed-with-wooden-swords-in-a-1966-re-enactment-of-the-battle-of-hastings-watch-the-rediscovered-time-capsule-of-lost-footage-180989635/",
+      "published_at": "2026-10-08T12:00:00.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_1hbo2nh",
+      "headline": "This “golden tree” coral was too strange for any known family",
+      "summary": "A brilliant yellow coral discovered off Costa Rica proved so unusual that scientists had to create an entirely new family to classify it. The meter-tall colonies rise from seafloors covered in brittle stars, inspiring…",
+      "category": "animals",
+      "country": {
+        "code": "CR",
+        "name": "Costa Rica",
+        "flag": "🇨🇷"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261007042116.htm",
+      "published_at": "2026-10-08T13:18:54.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/laurinque-elenya.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_sox5sa",
+      "headline": "Teenagers Worldwide Are Tackling the Plastics Crisis",
+      "summary": "When students in Singapore looked around their school cafeteria, they could see a problem shared all over the world: Single-use Styrofoam was ubiquitous. They soon learned that the school’s 2,000 students used 72,000…",
+      "category": "planet",
+      "country": {
+        "code": "SG",
+        "name": "Singapore",
+        "flag": "🇸🇬"
+      },
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/teenagers-worldwide-are-tackling-the-plastics-crisis/",
+      "published_at": "2026-10-14T08:00:09.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/shutterstock_2812355491-1-scaled.jpg",
+        "alt": null,
+        "w": 2358,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_ijglyj",
+      "headline": "Scientists build a nuclear clock that could make atomic clocks obsolete",
+      "summary": "Scientists in Vienna have achieved a major breakthrough in timekeeping by creating the world’s first self-stabilizing nuclear clock, a technology that could eventually surpass even the most precise atomic clocks…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
+      "published_at": "2026-10-11T03:06:35.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/nuclear-clock-concept.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_9wr51e",
+      "headline": "Researchers May Have Directly Glimpsed an Exoplanet’s Magnetic Field for the First Time, Building Hope of Peering Deeper Into Faraway Worlds",
+      "summary": "Radio signals emanating from Beta Pictoris b suggest that this young and massive exoplanet has a strong magnetic field and intense auroral show",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/researchers-may-have-directly-glimpsed-an-exoplanets-magnetic-field-for-the-first-time-building-hope-of-peering-deeper-into-faraway-worlds-180989633/",
+      "published_at": "2026-10-07T16:07:13.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_1h9jtgq",
+      "headline": "Scientists found Homo erectus 200,000 years earlier than expected",
+      "summary": "New fossils from South Africa are reshaping the story of early human evolution. Researchers have described 18 hominin fossils from Drimolen Cave, including an adult Homo erectus skull fragment dated to about 2 million…",
+      "category": "animals",
+      "country": {
+        "code": "ZA",
+        "name": "South Africa",
+        "flag": "🇿🇦"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261007042113.htm",
+      "published_at": "2026-10-08T12:47:46.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/homo-erectus-skull.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_19ev8bs",
+      "headline": "New Zealand builds an arsenal of tools to battle a ‘wily’ invasive seaweed",
+      "summary": "BAY OF ISLANDS, Aotearoa New Zealand — Since an invasive seaweed called caulerpa was discovered in Aotearoa New Zealand in 2021, forming meadows that blanketed parts of the seabed, it’s taken on an almost mythical…",
+      "category": "planet",
+      "country": {
+        "code": "NZ",
+        "name": "New Zealand",
+        "flag": "🇳🇿"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/new-zealand-builds-an-arsenal-of-tools-to-battle-a-wily-invasive-seaweed/",
+      "published_at": "2026-10-13T17:16:51.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/13102020/12_B_Advanced_Aquarium_Technologies_NZ_smaller_UV_C_Craig_Thorburn.jpg",
+        "alt": null,
+        "w": 2400,
+        "h": 1350
+      }
+    },
+    {
+      "id": "s_13jsd5c",
+      "headline": "The eye has a hidden cleanup system scientists never knew existed",
+      "summary": "Scientists have discovered a hidden cleanup system at the back of the eye that drains fluid and waste through a previously unknown pathway. The surprising finding, demonstrated in mice, could open the door to new…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
+      "published_at": "2026-10-11T06:01:54.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/eye-iris-close-up.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_sw62mv",
+      "headline": "Scientists discovered the world’s largest octopus nursery off the California coast",
+      "summary": "Most of the deep seafloor is cold, dark, and barely mapped. The Monterey Bay National Marine Sanctuary covers more than 6,000 square miles of ocean along California’s central coast and is better studied than most of it…",
+      "category": "animals",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/scientists-discovered-the-worlds-largest-octopus-nursery-off-the-california-coast/",
+      "published_at": "2026-10-14T00:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_264749180_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_jc7h8c",
+      "headline": "Solar panels have (another) surprising side effect: Stopping dust storms in their tracks",
+      "summary": "In a first, researchers realistically calculated how solar farms in the Gobi Desert improve air quality in northern Chinese cities",
+      "category": "planet",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/10/solar-panels-have-another-surprising-side-effect-stopping-dust-storms-in-their-tracks/?utm_source=rss&utm_medium=rss&utm_campaign=the-unexpected-secret-to-stopping-dust-storms-in-their-tracks-solar-power",
+      "published_at": "2026-10-06T13:00:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/10/unnamed-40.jpg",
+        "alt": "Solar panels have (another) surprising side effect: Stopping dust storms in their tracks",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_12ylt9u",
+      "headline": "NASA is searching for hidden caves to build its first Moon base",
+      "summary": "NASA is preparing for humanity’s first Moon base with three investigations that will hunt for underground shelters, uncover hidden ice, and track dangerous conditions on the lunar surface. The findings could reveal how…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008005247.htm",
+      "published_at": "2026-10-08T12:19:20.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/nasa-moon-base-with-astronauts-habitats-rrovers-power-systems.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1kag2jj",
+      "headline": "One of the World’s Largest Chinstrap Penguin Colonies Is Shrinking Fast",
+      "summary": "Zavodovski Island, a remote, uninhabited volcanic island between South America and Antarctica, lost 63 percent of its chinstrap penguins between 2011 and 2025, according to a new study",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/one-of-the-worlds-largest-chinstrap-penguin-colonies-is-shrinking-fast-180989676/",
+      "published_at": "2026-10-13T19:23:43.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_1hepibq",
+      "headline": "Ancient climate shifts may explain why today's flowering plants are so diverse",
+      "summary": "The two warmest time periods on Earth in the past 140 million years drove both mass extinctions and explosions in plant diversity, according to researchers in Australia and Austria who say this could explain how…",
+      "category": "planet",
+      "country": {
+        "code": "AU",
+        "name": "Australia",
+        "flag": "🇦🇺"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-ancient-climate-shifts-today-diverse.html",
+      "published_at": "2026-10-14T09:00:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/plant-diversity.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_12v2pyl",
+      "headline": "Scientists may have found a shortcut to fusion energy",
+      "summary": "Princeton Plasma Physics Laboratory may have found a dramatically more efficient route to fusion energy by reversing the traditional approach: heating plasma first, then increasing its density. Their calculations could…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008005242.htm",
+      "published_at": "2026-10-10T18:57:27.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/nuclear-fusion-reactor-tokamak-heated-plasma.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_nf5ylq",
+      "headline": "Scientists Took a Cheek Swab From the World's Oldest Tortoise. His DNA Could Reveal Hints to Longevity",
+      "summary": "Jonathan, an Aldabra giant tortoise, is about 194 years old and the oldest land animal alive today. Discoveries about his genetics could provide clues to extending lifespan in humans",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/scientists-took-a-cheek-swab-from-the-worlds-oldest-tortoise-his-dna-could-reveal-hints-to-longevity-180989663/",
+      "published_at": "2026-10-09T17:28:10.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/EG7QG0feyw9uW-WDz2BqT-Ts7ig=/fit-in/1600x0/filters:focal(2016x1517:2017x1518)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a7/7b/a77be531-cb07-4a9e-a6dc-155b6c26f63d/saint-helena-plantation-house-jonathan-the-tortoise-by-kevin-gepford-02.jpg",
+        "alt": "Jonathan stands on the lawn of Plantation House, the governor&amp;#39;s residence in Saint Helena. The Aldabra giant tortoise holds the world record for being the oldest living land animal.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_e32sxv",
+      "headline": "A Digital Swamp Coming to New York City’s MoMA Is 'Made to Envelop You' in Nature With the Help of Cutting-Edge Technology",
+      "summary": "\"Wetland\" is the latest installation of a high-tech traveling exhibition designed by Danish artist Jakob Kudsk Steensen. It recreates the overlooked ecosystem with the help of folklore, soundscapes and video game…",
+      "category": "planet",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
+      "published_at": "2026-10-09T20:39:30.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/A5JWQLLa9xM-KIDndcIP1dekMTo=/fit-in/1600x0/filters:focal(850x526:851x527)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a3/8d/a38dd753-9c7e-4e71-b9ee-883308dc5d69/highresscreenshot00111_webpage-image.png",
+        "alt": "Jakob Kudsk Steensen&amp;#39;s&amp;nbsp;Berl-Berl&amp;nbsp;installation, which goes on view at New York City&amp;#39;s MoMA on October 12, brings a digital, immersive swamp to life.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_12tnvu3",
+      "headline": "MIT astronomers catch a star in a feast that could last billions of years",
+      "summary": "Astronomers have discovered a bizarre star system about 300 light-years from Earth where a small star is slowly devouring a nearby brown dwarf, an object too massive to be a planet but too small to be a true star…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008005240.htm",
+      "published_at": "2026-10-10T18:56:25.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/ztf-j0440-2325-brown-dwarf-white-dwarf.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_102nwai",
+      "headline": "The women putting community at the heart of elephant conservation",
+      "summary": "Across Africa, women are challenging old assumptions about who conservation is for – and who gets to lead it",
+      "category": "animals",
+      "country": null,
+      "source": "Positive News",
+      "url": "https://www.positive.news/environment/the-women-putting-community-at-the-heart-of-elephant-conservation/",
+      "published_at": "2026-10-06T07:00:43.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_9fren1",
+      "headline": "A 100-year-old freezer rule has a hidden climate cost",
+      "summary": "Frozen food worldwide is still kept at −18°C (0°F). Raising that by just three degrees could avoid 17 million tons of emissions a year, and an 18-month study found most foods stay safe and tasty.",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/09/a-100-year-old-freezer-rule-has-a-hidden-climate-cost/?utm_source=rss&utm_medium=rss&utm_campaign=a-100-year-old-freezer-rule-has-a-hidden-climate-cost",
+      "published_at": "2026-09-25T12:00:34.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/09/frozen-food-blocks3_SALMON-CHICKEN.jpg",
+        "alt": "A 100-year-old freezer rule has a hidden climate cost",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_wnhb4a",
+      "headline": "Coffee’s memory boosting effect might have nothing to do with caffeine, study suggests",
+      "summary": "In a small experiment, researchers found that only participants who drank decaffeinated coffee showed significant improvements on memory tests. Those who drank caffeinated coffee did not. The findings, published in…",
+      "category": "science",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/10/coffees-memory-boosting-effect-might-have-nothing-to-do-with-caffeine-study-suggests/",
+      "published_at": "2026-10-09T00:00:24.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_59305845_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_1t6maln",
+      "headline": "Neighbors Flock to Rescue a Wounded Owl Tangled Up in Barbed Wire",
+      "summary": "From the Cowboy State Daily comes the story of a rural community flocking to the side of an injured owl and rescuing it from a dreadful fate. The story begins when Sharon and Scott Jacobs were driving past private land…",
+      "category": "animals",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/neighbors-flock-to-rescue-a-wounded-owl-tangled-up-in-barbed-wire/",
+      "published_at": "2026-10-08T13:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/The-Black-Hills-Raptor-Center-rehabilitated-great-horned-owl-Courtesy-Scott-Jacobs-via-Cowboy-State-Daily.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 760
+      }
+    },
+    {
+      "id": "s_1f0upqu",
+      "headline": "Photos: Taiwan’s tea revival blends ancient terraces with new climate adaptations",
+      "summary": "SHENKENG, Taiwan — Ten kilometers east of Taipei’s high-rises and dense traffic, the city gives way to a succession of steep, forested ridgelines sheltering villages in the valleys below. The subtropical mist that…",
+      "category": "planet",
+      "country": null,
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/10/photos-taiwans-tea-revival-blends-ancient-terraces-with-new-climate-adaptations/",
+      "published_at": "2026-10-13T07:34:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/09102849/The-Future-of-Tea_Taiwan_Michael-O-Snyder-3000px_72dpi-22-1200x800.jpg",
+        "alt": null,
+        "w": 1200,
+        "h": 800
+      }
+    },
+    {
+      "id": "s_19fnfnv",
+      "headline": "Scientists uncover a hidden map of the brain with 539 distinct regions",
+      "summary": "Scientists have uncovered a hidden layer of organization in the brain by creating the first detailed 3D map of its lipids, the fatty molecules essential for brain structure and communication. By analyzing millions of…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261012185011.htm",
+      "published_at": "2026-10-13T05:00:55.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/lipizones-in-mouse-brain.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_nqhqgv",
+      "headline": "In a first for the DRC, a homegrown NGO will co-manage a wildlife reserve",
+      "summary": "Founder’s Briefs: An occasional series where Mongabay founder Rhett Ayers Butler shares analysis, perspectives and story summaries. For the first time in the modern history of the Democratic Republic of Congo, a local…",
+      "category": "animals",
+      "country": null,
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/10/in-a-first-for-the-drc-a-homegrown-ngo-will-co-manage-a-wildlife-reserve/",
+      "published_at": "2026-10-13T08:39:08.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2021/07/05014153/congo_0476.jpg",
+        "alt": null,
+        "w": 1536,
+        "h": 1024
+      }
+    },
+    {
+      "id": "s_16d5rva",
+      "headline": "Urban heat’s overlooked fix: Greening the land upwind of cities",
+      "summary": "A study published in Nature Cities suggests that forests placed strategically outside urban cores can lower temperatures across much of a city.",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/08/urban-heat-overlooked-fix-greening-the-land-upwind-of-cities/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-keep-modern-megacities-cool-look-to-traditional-chinese-villages",
+      "published_at": "2026-08-25T13:00:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/08/unnamed-34.jpg",
+        "alt": "Urban heat&#039;s overlooked fix: Greening the land upwind of cities",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_4h9qzu",
+      "headline": "Physicists discover “astonishing” property of light that defies expectations",
+      "summary": "Scientists have uncovered a surprising hidden ability of light that allows it to develop spinning, twisting behavior as it travels through empty space, without special lenses, mirrors, or materials. Researchers…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
+      "published_at": "2026-10-13T04:19:32.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/multidimensional-quantum-light-data-communications.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_5yov5t",
+      "headline": "Isle of Wight fossil Europe's first known long-clawed megaraptoran dinosaur",
+      "summary": "A new species of dinosaur—a long-clawed predator the size of a large tiger—has been discovered by a UCL-led team from a fossil found on the Isle of Wight. The dinosaur, described in a new paper in the journal Royal…",
+      "category": "animals",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-isle-wight-fossil-europe-clawed.html",
+      "published_at": "2026-10-13T23:10:14.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/uk-dinosaur-fossil-ide.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_vsu9ac",
+      "headline": "Watch Five Adorable Newborn Cheetah Cubs Grow on a Livestream From the Smithsonian's Conservation Biology Institute",
+      "summary": "The healthy and active babies are being cared for by first-time mother Zura, and the public can keep up with their antics through an online cheetah cub cam",
+      "category": "planet",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/watch-five-adorable-newborn-cheetah-cubs-grow-on-a-livestream-from-the-smithsonians-conservation-biology-institute-180989669/",
+      "published_at": "2026-10-09T21:05:40.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/m1p3qENOCc3e2eu1OpKkyXOm1X4=/fit-in/1600x0/filters:focal(1249x730:1250x731)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0e/75/0e759221-7bae-4759-ae5c-ea84bbb4b9d5/screenshot_2026-10-09_at_33437pm.png",
+        "alt": "A screenshot from the live online cheetah cam feed on October 9 shows the mother, Zura, with her five cubs.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1n0lcza",
+      "headline": "Newly discovered antiviral system in bacteria is 'strangest of its kind'",
+      "summary": "Researchers at Gladstone Institutes have uncovered an unusual bacterial immune system that operates in reverse of known defenses. The discovery, published in Molecular Cell, details the mechanics of \"type VI retrons\"—a…",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-10-newly-antiviral-bacteria-strangest-kind.html",
+      "published_at": "2026-10-13T19:20:12.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/newly-discovered-antiv.jpg",
+        "alt": null,
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1yob8ic",
+      "headline": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
+      "summary": "Indigenous communities near present-day Milwaukee likely hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
+      "category": "planet",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
+      "published_at": "2026-10-06T14:10:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/g5n1aUGp6DvMgf6IFhcvqSevYRM=/fit-in/1600x0/filters:focal(2784x2439:2785x2440)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/43/d4/43d47cc6-e2ca-450a-b773-59115bd9f37c/dugout-canoe.png",
+        "alt": "The canoe is submerged 15 feet deep in Wisconsin&amp;rsquo;s Pewaukee Lake.",
+        "w": null,
+        "h": null
+      }
+    }
+  ]
+}
