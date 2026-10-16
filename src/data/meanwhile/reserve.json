@@ -2096,6 +2096,18 @@
     "score": 4
   },
   {
+    "id": "s_19fnfnv",
+    "headline": "Scientists uncover a hidden map of the brain with 539 distinct regions",
+    "summary": "Scientists have uncovered a hidden layer of organization in the brain by creating the first detailed 3D map of its lipids, the fatty molecules essential for brain structure and communication. By analyzing millions of…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261012185011.htm",
+    "published_at": "2026-10-13T05:00:55.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_4h9qzu",
     "headline": "Physicists discover “astonishing” property of light that defies expectations",
     "summary": "Scientists have uncovered a surprising hidden ability of light that allows it to develop spinning, twisting behavior as it travels through empty space, without special lenses, mirrors, or materials. Researchers…",
@@ -2128,6 +2140,30 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm",
     "published_at": "2026-10-11T00:45:37.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1eq4n60",
+    "headline": "Construction Work on the North Dakota Governor's Residence Accidentally Unearthed Seven Coffins Dating Back to the State's Early Settlement",
+    "summary": "The cemetery site was established in 1872, when the state capital Bismarck was a small frontier community called Edwinton. Most, but not all, of its gravesites were exhumed five years later to make way for a railroad",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/construction-work-on-the-north-dakota-governors-residence-accidentally-unearthed-seven-coffins-dating-back-to-the-states-early-settlement-180989686/",
+    "published_at": "2026-10-15T12:00:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_vsu9ac",
+    "headline": "Watch Five Adorable Newborn Cheetah Cubs Grow on a Livestream From the Smithsonian's Conservation Biology Institute",
+    "summary": "The healthy and active babies are being cared for by first-time mother Zura, and the public can keep up with their antics through an online cheetah cub cam",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/watch-five-adorable-newborn-cheetah-cubs-grow-on-a-livestream-from-the-smithsonians-conservation-biology-institute-180989669/",
+    "published_at": "2026-10-09T21:05:40.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -2180,18 +2216,6 @@
     "source": "The Optimist Daily",
     "url": "https://www.optimistdaily.com/2026/10/social-physiology-the-hidden-health-cost-of-eating-alone-according-to-science/",
     "published_at": "2026-10-06T00:00:41.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_vsu9ac",
-    "headline": "Watch Five Adorable Newborn Cheetah Cubs Grow on a Livestream From the Smithsonian's Conservation Biology Institute",
-    "summary": "The healthy and active babies are being cared for by first-time mother Zura, and the public can keep up with their antics through an online cheetah cub cam",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/watch-five-adorable-newborn-cheetah-cubs-grow-on-a-livestream-from-the-smithsonians-conservation-biology-institute-180989669/",
-    "published_at": "2026-10-09T21:05:40.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5148,34 +5172,6 @@
     "source": "Positive News",
     "url": "https://www.positive.news/environment/can-festivals-leave-the-land-better-than-they-found-it/",
     "published_at": "2026-08-18T08:00:38.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_as1i4c",
-    "headline": "Can This City Banish Single-Use Coffee Cups?",
-    "summary": "This story has been co-published by Reasons to be Cheerful and the Outrider Foundation. If you line up to get coffee at one of Aarhus University’s many cafeterias, you won’t see a stack of disposable cups as you do at…",
-    "category": "communities",
-    "country": null,
-    "source": "Reasons to be Cheerful",
-    "url": "https://reasonstobecheerful.world/can-this-city-banish-single-use-coffee-cups/",
-    "published_at": "2026-08-10T08:00:38.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_11qy8zc",
-    "headline": "What We’re Reading: Building a Massive Wildlife Corridor From Fragmented Lands",
-    "summary": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here. Crossing to safety Habitat…",
-    "category": "animals",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Reasons to be Cheerful",
-    "url": "https://reasonstobecheerful.world/what-were-reading-building-wildlife-corridor-rockies/",
-    "published_at": "2026-08-05T08:00:48.000Z",
     "read_minutes": 2,
     "score": 2
   }
