@@ -540,6 +540,30 @@
     "score": 5
   },
   {
+    "id": "s_1kok4yy",
+    "headline": "Scientists find a surprising genetic twist behind octopus intelligence",
+    "summary": "The remarkable intelligence of octopuses, squid, and cuttlefish may trace back to an ancient reshuffling of their DNA that created new connections between genes. Scientists discovered that these changes in the genome's…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261011211552.htm",
+    "published_at": "2026-10-12T20:44:50.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1kn5aug",
+    "headline": "Scientists discover vanilla’s hidden healing potential",
+    "summary": "Scientists have discovered that vanillin, the compound that gives vanilla its distinctive flavor, has powerful properties that could help fight infections, reduce inflammation, and promote wound healing. The…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261011211550.htm",
+    "published_at": "2026-10-12T04:34:24.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_17wfswk",
     "headline": "Orphaned, Rescued, and Rewilded, Female Gorilla Becomes a Mother in Historic Conservation Success",
     "summary": "One of the first-ever eastern lowland gorillas to be successfully returned to the wild gave birth on May 21st in her new/old home of Virunga National Park in the Democratic Republic of the Congo (DRC). Every new gorilla…",
@@ -2132,14 +2156,26 @@
     "score": 3
   },
   {
-    "id": "s_13l779u",
-    "headline": "Neanderthals may have used prehistoric glue as an ancient antibiotic",
-    "summary": "Neanderthals may have used a sticky substance made from birch bark to treat wounds thousands of years before antibiotics existed. Researchers recreated ancient birch tar production techniques and discovered that every…",
+    "id": "s_1x7xne4",
+    "headline": "A highway instead of a racetrack: Strong coupling of light and sound in an optical fiber",
+    "summary": "For the first time, scientists have achieved strong coupling between light and long-lived acoustic vibrations in an optical fiber. Optical fibers are used in both classical telecommunications and quantum communication…",
     "category": "science",
     "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm",
-    "published_at": "2026-10-11T00:45:37.000Z",
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-highway-racetrack-strong-coupling-optical.html",
+    "published_at": "2026-10-16T21:20:01.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1e13a3m",
+    "headline": "Ancient fungus unlocks secret support system in major food crops that could transform farming practices",
+    "summary": "Arabidopsis thaliana, a small flowering mustard plant used worldwide as the primary genetic model in plant biology, was long believed incapable of forming relationships with underground fungal networks. New research…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-ancient-fungus-secret-major-food.html",
+    "published_at": "2026-10-16T17:00:01.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -2164,6 +2200,34 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/watch-five-adorable-newborn-cheetah-cubs-grow-on-a-livestream-from-the-smithsonians-conservation-biology-institute-180989669/",
     "published_at": "2026-10-09T21:05:40.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_e32sxv",
+    "headline": "A Digital Swamp Coming to New York City’s MoMA Is 'Made to Envelop You' in Nature With the Help of Cutting-Edge Technology",
+    "summary": "\"Wetland\" is the latest installation of a high-tech traveling exhibition designed by Danish artist Jakob Kudsk Steensen. It recreates the overlooked ecosystem with the help of folklore, soundscapes and video game…",
+    "category": "planet",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
+    "published_at": "2026-10-09T20:39:30.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_13l779u",
+    "headline": "Neanderthals may have used prehistoric glue as an ancient antibiotic",
+    "summary": "Neanderthals may have used a sticky substance made from birch bark to treat wounds thousands of years before antibiotics existed. Researchers recreated ancient birch tar production techniques and discovered that every…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm",
+    "published_at": "2026-10-11T00:45:37.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -2216,22 +2280,6 @@
     "source": "The Optimist Daily",
     "url": "https://www.optimistdaily.com/2026/10/social-physiology-the-hidden-health-cost-of-eating-alone-according-to-science/",
     "published_at": "2026-10-06T00:00:41.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_e32sxv",
-    "headline": "A Digital Swamp Coming to New York City’s MoMA Is 'Made to Envelop You' in Nature With the Help of Cutting-Edge Technology",
-    "summary": "\"Wetland\" is the latest installation of a high-tech traveling exhibition designed by Danish artist Jakob Kudsk Steensen. It recreates the overlooked ecosystem with the help of folklore, soundscapes and video game…",
-    "category": "planet",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
-    "published_at": "2026-10-09T20:39:30.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5124,54 +5172,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/fish-and-humans-share-surprisingly-similar-sleep-habits-including-daytime-naps-180988985/",
     "published_at": "2026-06-22T20:35:03.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_yqer3c",
-    "headline": "The EPA’s data on cancer risk from air pollution has gone dark",
-    "summary": "For decades, communities have relied on the agency's cancer risk estimates to hold polluters accountable. This year, it's missing.",
-    "category": "planet",
-    "country": null,
-    "source": "Grist",
-    "url": "https://grist.org/regulation/the-epas-data-on-cancer-risk-from-air-pollution-has-gone-dark/",
-    "published_at": "2026-08-14T08:45:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1pc2sit",
-    "headline": "Scientists define a new category of heat wave: ‘Snow eaters’",
-    "summary": "Unseasonably warm weather that rapidly melts snowpack is becoming more widespread in the U.S. West and happening earlier in the year.",
-    "category": "planet",
-    "country": null,
-    "source": "Grist",
-    "url": "https://grist.org/science/new-heat-wave-category-snow-eaters-study/",
-    "published_at": "2026-08-12T08:45:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_19ppclr",
-    "headline": "How to forge meaningful human connections – according to you",
-    "summary": "We asked: how do you forge meaningful human connections in a busy, disconnected world? This is what you said",
-    "category": "people",
-    "country": null,
-    "source": "Positive News",
-    "url": "https://www.positive.news/society/how-do-you-forge-meaningful-human-connections/",
-    "published_at": "2026-08-19T07:00:30.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1072l3g",
-    "headline": "Can festivals leave the land better than they found it?",
-    "summary": "How music festivals are putting land restoration, community action and environmental change on the bill",
-    "category": "planet",
-    "country": null,
-    "source": "Positive News",
-    "url": "https://www.positive.news/environment/can-festivals-leave-the-land-better-than-they-found-it/",
-    "published_at": "2026-08-18T08:00:38.000Z",
     "read_minutes": 2,
     "score": 2
   }
