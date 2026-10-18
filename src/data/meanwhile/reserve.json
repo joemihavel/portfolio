@@ -540,6 +540,66 @@
     "score": 5
   },
   {
+    "id": "s_vjf233",
+    "headline": "A quantum highway just one atom high could transform superconductors",
+    "summary": "Scientists discovered that atomic steps just one atom high can guide quantum vortices through superconductors, making them move more than 1,000 times more easily in one direction than another. This remarkable control…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261014072018.htm",
+    "published_at": "2026-10-16T04:22:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1xd9qbz",
+    "headline": "Astronomers discover a strange universal rule behind black hole eruptions",
+    "summary": "Scientists have discovered that black holes of vastly different sizes appear to launch powerful jets according to the same universal rule. The breakthrough could explain why some black holes suddenly erupt years after…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261014015507.htm",
+    "published_at": "2026-10-16T10:45:33.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_p9tg5m",
+    "headline": "Scientists discover how harmful “zombie cells” hide from the immune system",
+    "summary": "Scientists have discovered a protein that may help harmful aging cells hide from the immune system, allowing them to accumulate and fuel age-related health problems. Blocking the protein in mice reduced these cells and…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261013015800.htm",
+    "published_at": "2026-10-14T10:17:58.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_19las5v",
+    "headline": "Scientists may have finally solved the mystery of the Moon’s two faces",
+    "summary": "Scientists may have solved a long-standing mystery about why the Moon’s two sides are so different, using samples collected from its farside for the first time. Their findings suggest that uneven heating from Earth's…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261012185019.htm",
+    "published_at": "2026-10-14T10:38:46.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_grwzhv",
+    "headline": "Quantum magic state cleanup cuts errors 40-fold in first successful hardware test",
+    "summary": "Qubits, the quantum equivalent of digital bits, are fragile and prone to errors. That makes building reliable quantum computers extremely difficult. One fix has been to use traditional magic state distillation, which…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-quantum-magic-state-cleanup-errors.html",
+    "published_at": "2026-10-17T18:00:02.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1kok4yy",
     "headline": "Scientists find a surprising genetic twist behind octopus intelligence",
     "summary": "The remarkable intelligence of octopuses, squid, and cuttlefish may trace back to an ancient reshuffling of their DNA that created new connections between genes. Scientists discovered that these changes in the genome's…",
@@ -2120,6 +2180,18 @@
     "score": 4
   },
   {
+    "id": "s_o8fha3",
+    "headline": "6 smart things to do with an empty egg carton before you toss it in the recycling bin",
+    "summary": "There’s a half-second every time you finish a carton of eggs. The lid flops open, the last two slots are empty, and you’re already reaching for the recycling bin. Before you do: cardboard egg cartons are more useful…",
+    "category": "animals",
+    "country": null,
+    "source": "The Optimist Daily",
+    "url": "https://www.optimistdaily.com/2026/10/6-smart-things-to-do-with-an-empty-egg-carton-before-you-toss-it-in-the-recycling-bin/",
+    "published_at": "2026-10-15T00:00:50.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_19fnfnv",
     "headline": "Scientists uncover a hidden map of the brain with 539 distinct regions",
     "summary": "Scientists have uncovered a hidden layer of organization in the brain by creating the first detailed 3D map of its lipids, the fatty molecules essential for brain structure and communication. By analyzing millions of…",
@@ -2132,30 +2204,6 @@
     "score": 3
   },
   {
-    "id": "s_4h9qzu",
-    "headline": "Physicists discover “astonishing” property of light that defies expectations",
-    "summary": "Scientists have uncovered a surprising hidden ability of light that allows it to develop spinning, twisting behavior as it travels through empty space, without special lenses, mirrors, or materials. Researchers…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
-    "published_at": "2026-10-13T04:19:32.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_a9di9c",
-    "headline": "Scientists make stunning discovery that could help explain why life exists",
-    "summary": "Scientists have discovered that the universe's fundamental physical constants may be finely balanced to make life possible. Even tiny changes to these constants could make liquids too thick or too thin for essential…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
-    "published_at": "2026-10-11T16:35:58.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_1x7xne4",
     "headline": "A highway instead of a racetrack: Strong coupling of light and sound in an optical fiber",
     "summary": "For the first time, scientists have achieved strong coupling between light and long-lived acoustic vibrations in an optical fiber. Optical fibers are used in both classical telecommunications and quantum communication…",
@@ -2164,18 +2212,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-10-highway-racetrack-strong-coupling-optical.html",
     "published_at": "2026-10-16T21:20:01.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_1e13a3m",
-    "headline": "Ancient fungus unlocks secret support system in major food crops that could transform farming practices",
-    "summary": "Arabidopsis thaliana, a small flowering mustard plant used worldwide as the primary genetic model in plant biology, was long believed incapable of forming relationships with underground fungal networks. New research…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-10-ancient-fungus-secret-major-food.html",
-    "published_at": "2026-10-16T17:00:01.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -2216,6 +2252,58 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
     "published_at": "2026-10-09T20:39:30.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1axpwny",
+    "headline": "A Community-Led Archaeology Dig on a Tiny Scottish Isle Has Unearthed a Medieval Monastery of 'International Importance'",
+    "summary": "The settlement, founded by an early Christian saint in the 500s, is \"far more than a small island church.\" It may have played a larger role in the Christianization of Britain than historians once realized",
+    "category": "culture",
+    "country": {
+      "code": "GB",
+      "name": "United Kingdom",
+      "flag": "🇬🇧"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-community-led-archaeology-dig-on-a-tiny-scottish-isle-has-unearthed-a-medieval-monastery-of-international-importance-180989654/",
+    "published_at": "2026-10-09T14:35:25.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_4h9qzu",
+    "headline": "Physicists discover “astonishing” property of light that defies expectations",
+    "summary": "Scientists have uncovered a surprising hidden ability of light that allows it to develop spinning, twisting behavior as it travels through empty space, without special lenses, mirrors, or materials. Researchers…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
+    "published_at": "2026-10-13T04:19:32.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_a9di9c",
+    "headline": "Scientists make stunning discovery that could help explain why life exists",
+    "summary": "Scientists have discovered that the universe's fundamental physical constants may be finely balanced to make life possible. Even tiny changes to these constants could make liquids too thick or too thin for essential…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
+    "published_at": "2026-10-11T16:35:58.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1e13a3m",
+    "headline": "Ancient fungus unlocks secret support system in major food crops that could transform farming practices",
+    "summary": "Arabidopsis thaliana, a small flowering mustard plant used worldwide as the primary genetic model in plant biology, was long believed incapable of forming relationships with underground fungal networks. New research…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-ancient-fungus-secret-major-food.html",
+    "published_at": "2026-10-16T17:00:01.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5076,102 +5164,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/mars-rover-spots-complex-carbon-on-the-red-planet-marking-yet-another-detection-of-a-building-block-of-life-180989043/",
     "published_at": "2026-06-30T13:38:51.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_zigw4r",
-    "headline": "After the Founders Declared Independence, Printers Quickly Translated the Text for German-Speaking Americans",
-    "summary": "The document, printed in a gothic typeface, was translated in Philadelphia. One of two surviving copies is going on display in Berlin ahead of America's 250th birthday",
-    "category": "culture",
-    "country": {
-      "code": "DE",
-      "name": "Germany",
-      "flag": "🇩🇪"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/after-the-founders-declared-independence-printers-quickly-translated-the-text-for-german-speaking-americans-180989039/",
-    "published_at": "2026-06-29T22:19:22.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1kz106t",
-    "headline": "Humans and Great Apes Giggle With a Similar Rhythm and Timing, Suggesting We Have Shared Our Style of Laughter for 15 Million Years",
-    "summary": "Understanding how laughter evolved can reveal the secrets of human speech",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/humans-and-great-apes-giggle-with-a-similar-rhythm-and-timing-suggesting-we-have-shared-our-style-of-laughter-for-15-million-years-180989031/",
-    "published_at": "2026-06-29T18:30:01.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1rhnaht",
-    "headline": "Years in the Making, National Geographic's Museum of Exploration Is Here to Take You on an Adventure",
-    "summary": "The renovated space highlights the hallmarks of the iconic 138-year-old brand, from wildlife photography to the study of anthropology",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/years-in-the-making-national-geographics-museum-of-exploration-is-here-to-take-you-on-an-adventure-180989034/",
-    "published_at": "2026-06-26T20:03:24.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_o17yge",
-    "headline": "Keep Your Eyes Peeled for Gracie, a Reticulated Giraffe on the Loose in Texas",
-    "summary": "The tall creature escaped from a private ranch this month, and she's been roaming the Texas Hill Country ever since",
-    "category": "culture",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/keep-your-eyes-peeled-for-gracie-a-reticulated-giraffe-on-the-loose-in-texas-180989021/",
-    "published_at": "2026-06-25T17:57:26.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1sbi1w0",
-    "headline": "A Stolen Picasso Just Turned Up During a Drug Raid Near Paris, Reportedly Taken From a Storage Facility",
-    "summary": "The painting has been authenticated but not revealed. Reports suggest it is one of Picasso's portraits of Marie-Thérèse Walter",
-    "category": "culture",
-    "country": {
-      "code": "FR",
-      "name": "France",
-      "flag": "🇫🇷"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-stolen-picasso-just-turned-up-during-a-drug-raid-near-paris-reportedly-taken-from-a-storage-facility-180989010/",
-    "published_at": "2026-06-24T20:37:59.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1gq5tfk",
-    "headline": "Female Dolphins Seem to Remember Which Males Were Aggressive During Mating Season—and May Try to Avoid Them",
-    "summary": "When researchers played underwater recordings of pushy males, females that were capable of becoming pregnant swam away from the sounds",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/female-dolphins-seem-to-remember-which-males-were-aggressive-during-mating-season-and-may-try-to-avoid-them-180988994/",
-    "published_at": "2026-06-23T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_115ham7",
-    "headline": "Fish and Humans Share Surprisingly Similar Sleep Habits, Including Daytime Naps",
-    "summary": "A recent study suggests that zebrafish have four sleep substates, just like humans do—and one of them is akin to an afternoon snooze",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/fish-and-humans-share-surprisingly-similar-sleep-habits-including-daytime-naps-180988985/",
-    "published_at": "2026-06-22T20:35:03.000Z",
     "read_minutes": 2,
     "score": 2
   }
