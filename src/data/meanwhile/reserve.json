@@ -2180,6 +2180,34 @@
     "score": 4
   },
   {
+    "id": "s_vsu9ac",
+    "headline": "Watch Five Adorable Newborn Cheetah Cubs Grow on a Livestream From the Smithsonian's Conservation Biology Institute",
+    "summary": "The healthy and active babies are being cared for by first-time mother Zura, and the public can keep up with their antics through an online cheetah cub cam",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/watch-five-adorable-newborn-cheetah-cubs-grow-on-a-livestream-from-the-smithsonians-conservation-biology-institute-180989669/",
+    "published_at": "2026-10-09T21:05:40.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_e32sxv",
+    "headline": "A Digital Swamp Coming to New York City’s MoMA Is 'Made to Envelop You' in Nature With the Help of Cutting-Edge Technology",
+    "summary": "\"Wetland\" is the latest installation of a high-tech traveling exhibition designed by Danish artist Jakob Kudsk Steensen. It recreates the overlooked ecosystem with the help of folklore, soundscapes and video game…",
+    "category": "planet",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
+    "published_at": "2026-10-09T20:39:30.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_o8fha3",
     "headline": "6 smart things to do with an empty egg carton before you toss it in the recycling bin",
     "summary": "There’s a half-second every time you finish a carton of eggs. The lid flops open, the last two slots are empty, and you’re already reaching for the recycling bin. Before you do: cardboard egg cartons are more useful…",
@@ -2224,34 +2252,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/construction-work-on-the-north-dakota-governors-residence-accidentally-unearthed-seven-coffins-dating-back-to-the-states-early-settlement-180989686/",
     "published_at": "2026-10-15T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_vsu9ac",
-    "headline": "Watch Five Adorable Newborn Cheetah Cubs Grow on a Livestream From the Smithsonian's Conservation Biology Institute",
-    "summary": "The healthy and active babies are being cared for by first-time mother Zura, and the public can keep up with their antics through an online cheetah cub cam",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/watch-five-adorable-newborn-cheetah-cubs-grow-on-a-livestream-from-the-smithsonians-conservation-biology-institute-180989669/",
-    "published_at": "2026-10-09T21:05:40.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_e32sxv",
-    "headline": "A Digital Swamp Coming to New York City’s MoMA Is 'Made to Envelop You' in Nature With the Help of Cutting-Edge Technology",
-    "summary": "\"Wetland\" is the latest installation of a high-tech traveling exhibition designed by Danish artist Jakob Kudsk Steensen. It recreates the overlooked ecosystem with the help of folklore, soundscapes and video game…",
-    "category": "planet",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-digital-swamp-coming-to-new-york-citys-moma-is-made-to-envelop-you-in-nature-with-the-help-of-cutting-edge-technology-180989652/",
-    "published_at": "2026-10-09T20:39:30.000Z",
     "read_minutes": 2,
     "score": 3
   },
