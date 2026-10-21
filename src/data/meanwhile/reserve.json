@@ -552,6 +552,54 @@
     "score": 5
   },
   {
+    "id": "s_113phex",
+    "headline": "A hidden rivalry between two quantum states at the heart of superconductors",
+    "summary": "Transmitting electricity without losing any energy may sound impossible, yet this is precisely the promise of superconductivity. For nearly 40 years, scientists have been working to understand materials that exhibit…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-hidden-rivalry-quantum-states-heart.html",
+    "published_at": "2026-10-20T22:00:07.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_178zxu4",
+    "headline": "Water as we've never known it: Physicists test water beyond Earth-like conditions",
+    "summary": "Water isn't always as it seems. Under extreme conditions, such as those found on other planets, it has been discovered to change its atomic structure, giving it the means to alter its appearance and other properties.",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-weve-physicists-earth-conditions.html",
+    "published_at": "2026-10-20T20:10:02.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_uykxns",
+    "headline": "How Colorado's Wildlife Mitigation Efforts—Including the Largest Animal Crossing Overpass in North America—Are Making Everyone Safer",
+    "summary": "Animals can now cross a dangerous stretch of Interstate 25 thanks to new infrastructure, including fences, underpasses and a massive overpass, which has led to a 91 percent reduction in wildlife-vehicle collisions",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/how-colorados-wildlife-mitigation-efforts-including-the-largest-animal-crossing-overpass-in-north-america-are-making-everyone-safer-180989704/",
+    "published_at": "2026-10-19T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1mndlt3",
+    "headline": "Long after the Maui fires, toxic metals linger in residents’ bodies",
+    "summary": "The toxic exposures didn’t begin with the flames. Researchers are examining how fires impacted a community already harmed by plantation agriculture, development, and colonialism.",
+    "category": "planet",
+    "country": null,
+    "source": "Grist",
+    "url": "https://grist.org/indigenous/long-after-the-maui-fires-toxic-metals-linger-in-residents-bodies/",
+    "published_at": "2026-10-16T08:45:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_yowub4",
     "headline": "NASA’s Webb reveals the wild weather of a mysterious world 20 light-years away",
     "summary": "NASA’s James Webb Space Telescope has revealed that a turbulent world 20 light-years away has a surprisingly orderly weather system, with three recurring atmospheric states driven by temperature changes and shifting…",
@@ -584,18 +632,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-10-oldest-animals-earth-common-wormlike.html",
     "published_at": "2026-10-19T17:00:07.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_uykxns",
-    "headline": "How Colorado's Wildlife Mitigation Efforts—Including the Largest Animal Crossing Overpass in North America—Are Making Everyone Safer",
-    "summary": "Animals can now cross a dangerous stretch of Interstate 25 thanks to new infrastructure, including fences, underpasses and a massive overpass, which has led to a 91 percent reduction in wildlife-vehicle collisions",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/how-colorados-wildlife-mitigation-efforts-including-the-largest-animal-crossing-overpass-in-north-america-are-making-everyone-safer-180989704/",
-    "published_at": "2026-10-19T14:00:00.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -5116,46 +5152,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/a-man-with-paralysis-has-regained-feeling-and-movement-in-his-hands-after-an-experimental-brain-implant-180989156/",
     "published_at": "2026-07-20T19:35:28.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1wjl9m1",
-    "headline": "These 16 Splendid Aerial Views Capture Wildlife From Above, Revealing the Beauty and Mystery of Nature",
-    "summary": "The second International Aerial Photographer of the Year contest selected its winners and 101 top images. Here’s a selection of the photos that spotlight animals from a new perspective",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/these-16-splendid-aerial-views-capture-wildlife-from-above-revealing-the-beauty-and-mystery-of-nature-180989141/",
-    "published_at": "2026-07-17T13:36:40.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_jam5nx",
-    "headline": "Smartphones Might Be Playing a Role in the United States' Declining Birth Rate, New Research Suggests",
-    "summary": "Some economists suspect that the technology's widespread adoption has reduced in-person interactions and increased access to pornography and information on birth control, leading to less unprotected sex",
-    "category": "science",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/smartphones-might-be-playing-a-role-in-the-united-states-declining-birth-rate-new-research-suggests-180989129/",
-    "published_at": "2026-07-16T16:05:52.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1xdzl4z",
-    "headline": "Could We Mitigate Super El Niños by Artificially Changing the Climate? A New Study Indicates Yes",
-    "summary": "Researchers used computer models to see what would have happened had scientists caused marine cloud brightening in the face of strong past El Niños",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/could-we-mitigate-super-el-ninos-by-artificially-changing-the-climate-a-new-study-indicates-yes-180989101/",
-    "published_at": "2026-07-09T18:17:32.000Z",
     "read_minutes": 2,
     "score": 2
   }
