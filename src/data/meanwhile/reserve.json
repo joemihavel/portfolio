@@ -2264,6 +2264,18 @@
     "score": 4
   },
   {
+    "id": "s_ib6hdj",
+    "headline": "NASA’s Perseverance Mars rover just shattered the all-time off-world driving record",
+    "summary": "NASA’s Perseverance rover has shattered a historic space exploration record, traveling farther across another world than any vehicle before it. Its advanced self-driving system helped it surpass Opportunity’s 28.06-mile…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261020084818.htm",
+    "published_at": "2026-10-21T09:22:36.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_qydn3b",
     "headline": "Scientists discover that male and female skin play by different rules",
     "summary": "Scientists have uncovered a surprising difference in how male and female skin repairs and renews itself. By tracking individual skin stem cells in living mice for five months, researchers discovered that female cells…",
@@ -5140,18 +5152,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/naked-mole-rat-queens-emit-a-special-scent-to-stop-their-rivals-from-reproducing-a-new-study-suggests-180989148/",
     "published_at": "2026-07-21T19:14:28.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1n20cmh",
-    "headline": "A Man With Paralysis Has Regained Feeling and Movement in His Hands After an Experimental Brain Implant",
-    "summary": "After months of training, the patient can now move his arms and hands and feel the sensation of touch",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-man-with-paralysis-has-regained-feeling-and-movement-in-his-hands-after-an-experimental-brain-implant-180989156/",
-    "published_at": "2026-07-20T19:35:28.000Z",
     "read_minutes": 2,
     "score": 2
   }
