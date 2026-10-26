@@ -552,6 +552,18 @@
     "score": 5
   },
   {
+    "id": "s_i9rn91",
+    "headline": "A rock plunged 90 kilometers into Earth and revealed something unexpected",
+    "summary": "Scientists discovered a rock in Papua New Guinea that plunged more than 90 kilometers beneath Earth's surface, revealing a bizarre temperature pattern that challenges established theories of Earth's interior. The…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261020084816.htm",
+    "published_at": "2026-10-22T01:35:57.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1d0yyif",
     "headline": "These Snakes Can Cartwheel Away From Danger. Scientists Just Uncovered How the Slithering Creatures Perform Their Acrobatic Rolls",
     "summary": "When they're rolling, some snakes belonging to the Pseudorabdion genus can reach top speeds of 3.8 to 8.3 miles per hour, according to a new study",
@@ -2274,6 +2286,18 @@
     "published_at": "2026-08-17T19:41:46.000Z",
     "read_minutes": 2,
     "score": 4
+  },
+  {
+    "id": "s_ezevdj",
+    "headline": "New evidence suggests spinosaurus spent most of its life underwater",
+    "summary": "Millions of years after animals first conquered land, some took an extraordinary evolutionary U-turn and returned to the water. Using machine learning and thousands of fossil measurements, Yale scientists have uncovered…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261024221956.htm",
+    "published_at": "2026-10-25T11:52:54.000Z",
+    "read_minutes": 2,
+    "score": 3
   },
   {
     "id": "s_ib6hdj",
@@ -5128,30 +5152,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/flesh-eating-superworms-could-become-a-new-skeleton-cleaning-crew-for-museum-and-research-specimens-180989258/",
     "published_at": "2026-08-05T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_bl9qej",
-    "headline": "Why Are These Whales Floating Upside-Down? They Might Just Be Moms Who Need a Break From Feeding Their Babies",
-    "summary": "Each year, southern right whales migrate thousands of miles from their feeding grounds to breed, give birth and raise their young. Taking rests and regulating their calves' nursing schedules might help mothers conserve…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/why-are-these-whales-floating-upside-down-they-might-just-be-moms-who-need-a-break-from-feeding-their-babies-180989184/",
-    "published_at": "2026-07-24T13:39:39.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_9txau2",
-    "headline": "People Aren't Born as Righties or Lefties—They Develop Hand Dominance With Practice, a New Study Suggests",
-    "summary": "Humans do have a biological preference for using one side of their body, which might prime them for using limbs on that side for complex motor tasks like writing—and honing those skills over time",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/people-arent-born-with-as-righties-or-lefties-they-develop-hand-dominance-with-practice-a-new-study-suggests-180989168/",
-    "published_at": "2026-07-22T16:59:55.000Z",
     "read_minutes": 2,
     "score": 2
   }
