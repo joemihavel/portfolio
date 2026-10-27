@@ -552,14 +552,38 @@
     "score": 5
   },
   {
-    "id": "s_i9rn91",
-    "headline": "A rock plunged 90 kilometers into Earth and revealed something unexpected",
-    "summary": "Scientists discovered a rock in Papua New Guinea that plunged more than 90 kilometers beneath Earth's surface, revealing a bizarre temperature pattern that challenges established theories of Earth's interior. The…",
-    "category": "science",
+    "id": "s_1qtylzm",
+    "headline": "Astronomers may have discovered the first moon beyond our Solar System",
+    "summary": "Astronomers have uncovered evidence of a bizarre, potentially historic discovery: the first moon ever detected beyond our Solar System. Unlike familiar moons, this mysterious object is at least as massive as Jupiter and…",
+    "category": "planet",
     "country": null,
     "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261020084816.htm",
-    "published_at": "2026-10-22T01:35:57.000Z",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261023023736.htm",
+    "published_at": "2026-10-25T03:13:05.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_10uytn6",
+    "headline": "Scientists produce less disruptive research as they age, but their breakthroughs are more likely to last",
+    "summary": "Science often advances in small steps, with researchers gradually building on previous discoveries. But every now and then, a breakthrough comes along that challenges conventional thinking and changes the direction of a…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-scientists-disruptive-age-breakthroughs.html",
+    "published_at": "2026-10-26T19:30:06.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1npavwg",
+    "headline": "Hidden chromosome structures reveal greater complexity in how roundworms organize DNA",
+    "summary": "Almost every cell in our body contains around two meters (6.6 feet) of DNA, packed into a tiny nucleus. Yet for the cell to function, this enormous amount of genetic material must remain organized and accessible…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-hidden-chromosome-reveal-greater-complexity.html",
+    "published_at": "2026-10-26T19:20:07.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -572,6 +596,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/these-snakes-can-cartwheel-away-from-danger-scientists-just-uncovered-how-the-slithering-creatures-perform-their-acrobatic-rolls-180989720/",
     "published_at": "2026-10-21T16:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_i9rn91",
+    "headline": "A rock plunged 90 kilometers into Earth and revealed something unexpected",
+    "summary": "Scientists discovered a rock in Papua New Guinea that plunged more than 90 kilometers beneath Earth's surface, revealing a bizarre temperature pattern that challenges established theories of Earth's interior. The…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261020084816.htm",
+    "published_at": "2026-10-22T01:35:57.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2300,14 +2336,14 @@
     "score": 3
   },
   {
-    "id": "s_ib6hdj",
-    "headline": "NASA’s Perseverance Mars rover just shattered the all-time off-world driving record",
-    "summary": "NASA’s Perseverance rover has shattered a historic space exploration record, traveling farther across another world than any vehicle before it. Its advanced self-driving system helped it surpass Opportunity’s 28.06-mile…",
+    "id": "s_1q4jjqm",
+    "headline": "Astronomers uncover a mysterious magnetic web above the Sun",
+    "summary": "The Sun’s seemingly peaceful regions are hiding a surprisingly complex magnetic world. Using a balloon-borne telescope high above Earth, scientists discovered delicate, thread-like magnetic structures woven through the…",
     "category": "planet",
     "country": null,
     "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261020084818.htm",
-    "published_at": "2026-10-21T09:22:36.000Z",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261023023723.htm",
+    "published_at": "2026-10-24T12:23:38.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -2320,6 +2356,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/in-a-first-astronomers-identify-a-star-that-might-glow-green-new-research-highlights-the-strange-hues-white-dwarfs-can-take-on-180989719/",
     "published_at": "2026-10-21T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_ib6hdj",
+    "headline": "NASA’s Perseverance Mars rover just shattered the all-time off-world driving record",
+    "summary": "NASA’s Perseverance rover has shattered a historic space exploration record, traveling farther across another world than any vehicle before it. Its advanced self-driving system helped it surpass Opportunity’s 28.06-mile…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261020084818.htm",
+    "published_at": "2026-10-21T09:22:36.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5096,62 +5144,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/got-a-brawny-build-you-might-be-able-to-thank-your-neanderthal-ancestors-according-to-a-new-study-180989306/",
     "published_at": "2026-08-11T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1d5cih4",
-    "headline": "One of the Most Important Cookbooks of the 20th Century Is Celebrating 50 Years. What Made Its French Author So Special in American Kitchens?",
-    "summary": "With instructions and images explaining how to carve vegetables and deconstruct a lamb, \"La Technique\" by Jacques Pépin became a how-to guide and an inspiration for countless cooks and food lovers",
-    "category": "culture",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/one-of-the-most-important-cookbooks-of-the-20th-century-celebrates-50-years-what-made-jacques-pepin-so-important-in-the-kitchen-180989297/",
-    "published_at": "2026-08-10T13:41:02.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_91tz7n",
-    "headline": "Butterflies Around the World Are Moving to New Habitats, Largely Because of Climate Change, a Study Suggests",
-    "summary": "Researchers examined data on 1,758 butterfly species—about ten percent of all those known—from 105 countries and estimated that about one in ten global species has shifted its distribution range",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/butterflies-around-the-world-are-moving-to-new-habitats-largely-because-of-climate-change-a-study-suggests-180989279/",
-    "published_at": "2026-08-07T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_r6wfsy",
-    "headline": "Notorious Feral Cat That Feasted on Rare New Zealand Ducks Captured After Three-Year Hunt",
-    "summary": "The gray tabby, known as Nine Lives because it eluded capture so many times, had devastated efforts by conservationists to reintroduce the birds to the wild",
-    "category": "animals",
-    "country": {
-      "code": "NZ",
-      "name": "New Zealand",
-      "flag": "🇳🇿"
-    },
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/nine-lives-a-feral-cat-hunting-rare-ducks-in-new-zealand-has-been-caught-and-killed-after-three-years-180989267/",
-    "published_at": "2026-08-06T17:42:31.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_riiepg",
-    "headline": "Flesh-Eating 'Superworms' Could Become a New Skeleton-Cleaning Crew for Museum and Research Specimens",
-    "summary": "A new study hints that the critters would be a good alternative to traditional methods used to remove flesh from bones, including dermestid beetles, chemical treatments and boiling, which can cause damage or be…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/flesh-eating-superworms-could-become-a-new-skeleton-cleaning-crew-for-museum-and-research-specimens-180989258/",
-    "published_at": "2026-08-05T14:00:00.000Z",
     "read_minutes": 2,
     "score": 2
   }
