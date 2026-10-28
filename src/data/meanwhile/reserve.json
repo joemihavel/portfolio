@@ -564,6 +564,30 @@
     "score": 4
   },
   {
+    "id": "s_18fa2a5",
+    "headline": "Scientists discover a hidden switch that burns fat and blocks new fat cells",
+    "summary": "Scientists have discovered that switching off a protein called Mitch makes human cells burn more fat and prevents new fat cells from developing. The breakthrough builds on experiments in mice that showed remarkable…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261023002905.htm",
+    "published_at": "2026-10-24T11:16:08.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1bwk1d",
+    "headline": "Breakthrough PTSD treatment achieves 68% remission rate in clinical trial",
+    "summary": "A newly FDA-cleared PTSD treatment uses personalized brain mapping and magnetic stimulation to target abnormal brain activity, with a clinical trial reporting a 52% reduction in symptoms and 68% remission. Researchers…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261022081309.htm",
+    "published_at": "2026-10-23T11:02:25.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_10uytn6",
     "headline": "Scientists produce less disruptive research as they age, but their breakthroughs are more likely to last",
     "summary": "Science often advances in small steps, with researchers gradually building on previous discoveries. But every now and then, a breakthrough comes along that challenges conventional thinking and changes the direction of a…",
@@ -5120,30 +5144,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/do-monkeys-keep-pets-study-finds-widespread-primate-interactions-with-other-animal-species-from-mice-to-deer-180989356/",
     "published_at": "2026-08-18T20:22:41.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1uu2x4n",
-    "headline": "Here's Why These Male Spiders Sacrifice Themselves by Somersaulting Into Females' Fangs While Mating",
-    "summary": "A new study suggest that even strange, complex animal behaviors can have a relatively simple genetic basis",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/heres-why-these-male-spiders-sacrifice-themselves-by-somersaulting-into-females-fangs-while-mating-180989337/",
-    "published_at": "2026-08-14T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1787eee",
-    "headline": "Got a Brawny Build? You Might Be Able to Thank Your Neanderthal Ancestors, According to a New Study",
-    "summary": "New research hints that some living people inherited a gene variant from Neanderthals that has made them slightly taller and more muscular than their peers",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/got-a-brawny-build-you-might-be-able-to-thank-your-neanderthal-ancestors-according-to-a-new-study-180989306/",
-    "published_at": "2026-08-11T14:00:00.000Z",
     "read_minutes": 2,
     "score": 2
   }
