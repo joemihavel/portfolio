@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_e740l",
+    "headline": "Scientists discover a hidden 100-million-year-old volcanic system",
+    "summary": "Scientists have uncovered a long-lost volcanic system in Iran that dates back roughly 100 million years, revealing a hidden chapter in Earth's tectonic history. The discovery sheds new light on the disappearance of an…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261026225615.htm",
+    "published_at": "2026-10-28T12:00:17.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_1kag2jj",
     "headline": "One of the World’s Largest Chinstrap Penguin Colonies Is Shrinking Fast",
     "summary": "Zavodovski Island, a remote, uninhabited volcanic island between South America and Antarctica, lost 63 percent of its chinstrap penguins between 2011 and 2025, according to a new study",
@@ -552,6 +564,18 @@
     "score": 5
   },
   {
+    "id": "s_6wrsb8",
+    "headline": "Tiny magnetic vortices could help computers work more like your brain",
+    "summary": "Scientists have filmed tiny magnetic vortices called skyrmions melting out of an organized lattice for the first time, revealing new ways to manipulate these unusual structures. The breakthrough could help make…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261025073038.htm",
+    "published_at": "2026-10-26T10:06:16.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1qtylzm",
     "headline": "Astronomers may have discovered the first moon beyond our Solar System",
     "summary": "Astronomers have uncovered evidence of a bizarre, potentially historic discovery: the first moon ever detected beyond our Solar System. Unlike familiar moons, this mysterious object is at least as massive as Jupiter and…",
@@ -560,6 +584,18 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/10/261023023736.htm",
     "published_at": "2026-10-25T03:13:05.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1pkrtzm",
+    "headline": "These tiny snakes roll four times faster than they slither",
+    "summary": "Tiny snakes in Southeast Asia have mastered an extraordinary escape technique: rolling across the ground at speeds up to four times faster than ordinary slithering. Scientists discovered that dwarf reedsnakes accomplish…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm",
+    "published_at": "2026-10-24T12:12:03.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -5104,46 +5140,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-08-rna-starve-cells-energy.html",
     "published_at": "2026-08-19T22:30:03.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1kqwiy9",
-    "headline": "'Ecology of fear' can dramatically change the behavior of blue mussels",
-    "summary": "For a blue mussel, a good meal does not come entirely without risk. Blue mussels feed by filtering microscopic algae from seawater. But some unwelcome guests can slip in along with their food. Tiny parasite larvae can…",
-    "category": "science",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-ecology-behavior-blue-mussels.html",
-    "published_at": "2026-08-19T22:10:01.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_n9x5bx",
-    "headline": "Were Denisovans tall compared to other ancient humans? We should be skeptical",
-    "summary": "Take a walk in London's Trafalgar Square this summer, and people of all body sizes—some tall, some short—will be wilting in the heat: a real mix of sizes.",
-    "category": "science",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-denisovans-tall-ancient-humans-skeptical.html",
-    "published_at": "2026-08-19T21:40:01.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_t657xv",
-    "headline": "Do Monkeys Keep Pets? Study Finds Widespread Primate Interactions With Other Animal Species, From Mice to Deer",
-    "summary": "This social behavior might reveal the evolutionary roots of traits that underlie pet-keeping in humans, scientists say, from caregiving to tolerance and curiosity. But it's not the same as a person keeping a cat or a dog",
-    "category": "animals",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/do-monkeys-keep-pets-study-finds-widespread-primate-interactions-with-other-animal-species-from-mice-to-deer-180989356/",
-    "published_at": "2026-08-18T20:22:41.000Z",
     "read_minutes": 2,
     "score": 2
   }
