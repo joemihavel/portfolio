@@ -1,0 +1,6 @@
+---
+import sourceCopy from "../../data/secured-design-copy.json";
+interface Props { node: keyof typeof sourceCopy; as?: "p" | "h1" | "h2" | "h3" | "div"; class?: string; id?: string; }
+const { node, as: Tag = "p", class: className, id }: Props = Astro.props;
+---
+<Tag id={id} class={className} data-figma-node={node} set:html={sourceCopy[node]} />

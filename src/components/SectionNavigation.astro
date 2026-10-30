@@ -1,0 +1,38 @@
+---
+interface Props {
+  sections: { id: string; label: string }[];
+  backHref?: string;
+  backLabel?: string;
+}
+const { sections, backHref, backLabel = "All work" } = Astro.props;
+---
+
+<aside class:list={["editorial-sidebar", { "has-back-link": Boolean(backHref) }]} aria-label="Page navigation">
+  {backHref && <a class="editorial-back" href={backHref}>← {backLabel}</a>}
+  <nav class="about-toc" aria-label="On this page" data-section-nav>
+    {sections.map(({ id, label }, index) => <a href={`#${id}`} data-section-link aria-current={index === 0 ? "true" : undefined}>{label}</a>)}
+  </nav>
+</aside>
+
+<script>
+  let observers: IntersectionObserver[] = [];
+  document.addEventListener("astro:before-swap", () => { observers.forEach(observer => observer.disconnect()); observers = []; });
+  document.addEventListener("astro:page-load", () => {
+  document.querySelectorAll<HTMLElement>("[data-section-nav]").forEach(nav => {
+    const links = [...nav.querySelectorAll<HTMLAnchorElement>("[data-section-link]")];
+    const sections = links.map(link => document.querySelector<HTMLElement>(link.hash)).filter((section): section is HTMLElement => Boolean(section));
+    const visible = new Set<Element>();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target));
+      const current = sections.filter(section => visible.has(section)).sort((a, b) => Math.abs(a.getBoundingClientRect().top - 36) - Math.abs(b.getBoundingClientRect().top - 36))[0];
+      if (!current) return;
+      links.forEach(link => {
+        if (link.hash === `#${current.id}`) link.setAttribute("aria-current", "true");
+        else link.removeAttribute("aria-current");
+      });
+    }, { rootMargin: "-10% 0px -60% 0px" });
+    observers.push(observer);
+    sections.forEach(section => observer.observe(section));
+  });
+  });
+</script>

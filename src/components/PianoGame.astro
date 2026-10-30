@@ -1,0 +1,65 @@
+<template id="piano-game-template">
+  <dialog id="piano-dialog" class="piano-dialog" aria-labelledby="piano-title">
+    <header class="piano-dialog-header">
+      <h2 id="piano-title">One more song</h2>
+      <div class="piano-song-controls">
+        <div class="piano-song-field"><select class="piano-song-picker" aria-label="Play this song"><option value="">Play this song</option></select><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m5 6.5 3 3 3-3"/></svg></div>
+        <button type="button" class="piano-button" data-piano-action="play" disabled><span data-piano-play-label>Play</span><span aria-hidden="true">→</span></button>
+      </div>
+      <div class="piano-header-actions">
+        <button type="button" class="piano-icon-button" data-piano-action="mute" aria-label="Mute piano" aria-pressed="false"><svg class="piano-sound-on" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3.5 5 7H2v6h3l4 3.5v-13ZM12 7c1.6 1.6 1.6 4.4 0 6M14.5 4.5c3 3 3 8 0 11"/></svg><svg class="piano-sound-off" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3.5 5 7H2v6h3l4 3.5v-13ZM13 7l5 6M18 7l-5 6"/></svg></button>
+        <button type="button" class="piano-icon-button" data-piano-action="close" aria-label="Close game"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button>
+      </div>
+    </header>
+    <div class="piano-dialog-content">
+      <div class="piano-session" hidden>
+        <div><span>Score</span><output data-piano-stat="score">0</output></div>
+        <div class="piano-next-notes" role="group" aria-label="Upcoming piano keys"><span>Next</span><ol></ol></div>
+        <span class="piano-progress" data-piano-stat="progress"></span>
+      </div>
+      <div class="piano-play-area">
+        <div class="piano-instrument" tabindex="0" aria-label="Piano keyboard. White keys A S D F G H J K L. Black keys W E T Y U O.">
+          <div class="piano-roll"><canvas aria-hidden="true"></canvas><div class="piano-free-song" hidden></div><div class="piano-stage-overlay" hidden><span>Paused</span></div></div>
+          <div class="piano-shell"><div class="piano-hardware-top"><span class="piano-led" aria-hidden="true"></span><span>PIANO</span><span>C4 — D5</span></div><div class="piano-key-bed" role="group" aria-label="Playable piano keys"></div></div>
+        </div>
+      </div>
+      <section class="piano-scores" aria-label="Top three scores for this song" hidden>
+        <div class="piano-scores-heading"><h3>Top 3</h3><span class="piano-storage-notice"></span></div>
+        <ol class="piano-top-three"></ol>
+      </section>
+      <form class="piano-score-form" hidden>
+        <label for="piano-player-name">Save your score</label>
+        <input id="piano-player-name" name="displayName" aria-label="Your name" autocomplete="nickname" minlength="2" maxlength="20" placeholder="Your name" required />
+        <button type="submit" class="piano-button">Save</button>
+      </form>
+      <p class="piano-status" role="status"></p>
+    </div>
+    <span class="piano-announcement" role="status" aria-live="polite"></span>
+  </dialog>
+</template>
+
+<script>
+  // Only this small launcher ships with the portfolio. The instrument, engine,
+  // score adapter, and CSS are imported on the first desktop click.
+  const desktop = matchMedia("(min-width: 701px) and (any-hover: hover) and (any-pointer: fine)");
+  let game: { close: () => void } | null = null;
+  let generation = 0;
+  let loading = false;
+  const closeGame = () => { generation++; game?.close(); game = null; };
+  document.addEventListener("click", async event => {
+    const trigger = event.target instanceof Element ? event.target.closest<HTMLButtonElement>("[data-piano-open]") : null;
+    if (!trigger || !desktop.matches || game || loading) return;
+    const token = ++generation;
+    loading = true;
+    trigger.setAttribute("aria-busy", "true");
+    try {
+      const { openPianoGame, preparePianoGameStyles } = await import("../game/piano/game.ts");
+      await preparePianoGameStyles();
+      const template = document.querySelector<HTMLTemplateElement>("#piano-game-template");
+      if (token === generation && desktop.matches && template) game = openPianoGame(template, trigger, () => { game = null; });
+    } catch { trigger.title = "The piano could not load. Please try again."; }
+    finally { loading = false; trigger.removeAttribute("aria-busy"); }
+  });
+  document.addEventListener("astro:before-preparation", closeGame);
+  desktop.addEventListener("change", () => { if (!desktop.matches) closeGame(); });
+</script>

@@ -1,0 +1,41 @@
+---
+import SecuredCoverArtwork from "./case-studies/SecuredCoverArtwork.astro";
+import InsetCoverArtwork from "./case-studies/InsetCoverArtwork.astro";
+import ArchiveFrame from "./archive/ArchiveFrame.astro";
+interface Props {
+  kind: string;
+  label: string;
+  title: string;
+  image: string;
+  index: number;
+  eager?: boolean;
+  tags?: string[];
+  animatedCover?: boolean;
+  comingSoon?: boolean;
+}
+
+const { kind, label, title, image, index, eager = false, tags = ["AI", "Codex"], animatedCover = false, comingSoon = false } = Astro.props;
+const number = String(index).padStart(2, "0");
+const noteTones = ["yellow", "blue", "pink", "green"];
+---
+
+<div class:list={["exp-frame-body", "exp-board-card", { "exp-board-note": kind === "writing" }]} data-note-tone={kind === "writing" ? noteTones[(index - 1) % noteTones.length] : undefined}>
+  <span class="exp-board-topline">
+    <span>{label} <span class="exp-board-number">{number}</span></span>
+    {kind !== "archive" && !comingSoon && <svg class="exp-board-open" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M4.5 4H12v7.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>}
+  </span>
+  {kind === "writing" ? (
+    <>
+      <strong class="exp-board-note-title">{title}</strong>
+      <span class="exp-board-note-footer"><span>{tags.join(" / ")} <span>Draft</span></span><span class="exp-board-author">Joel Mihavel</span></span>
+    </>
+  ) : (
+    <>
+      <div class="exp-board-asset">{kind === "archive" ? <ArchiveFrame index={index - 1} /> : animatedCover ? <SecuredCoverArtwork eager={eager} /> : comingSoon ? <InsetCoverArtwork src={image} alt="" eager={eager} /> : <img src={image} alt="" loading={eager ? "eager" : "lazy"} />}</div>
+      <span class="exp-board-content">
+        <strong class="exp-board-title">{title}</strong>
+        <span class="exp-board-footer"><span>{kind === "archive" ? "From the archive" : "Design & development"}</span>{comingSoon ? <button class="project-cta" type="button" disabled>Coming soon</button> : kind !== "archive" && <span>Open preview</span>}</span>
+      </span>
+    </>
+  )}
+</div>

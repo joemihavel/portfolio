@@ -1,0 +1,24 @@
+.experiment-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 76px; margin-inline: -12px; padding: 16px 12px; border-radius: 8px; transition: background-color 140ms ease-out; }
+.experiment-row:focus-within { background: var(--folio-pill); }
+@media (hover: hover) and (pointer: fine) { .experiment-row:hover { background: var(--folio-pill); } }
+.experiment-row h2 { max-width: 650px; margin: 0; color: var(--folio-ink); font-family: inherit; font-size: 16px; font-weight: 400; line-height: 1.4; letter-spacing: -.02em; }
+.experiment-actions { flex: none; display: flex; align-items: center; gap: 10px; }
+.experiment-actions .project-cta { min-height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 0 17px; font-family: inherit; font-size: 13px; line-height: 1; white-space: nowrap; text-decoration: none; transition: background-color 140ms, border-color 140ms, transform 140ms; }
+.experiment-actions .experiment-primary { border-color: var(--folio-ink); background: var(--folio-ink); color: var(--folio-bg); }
+.experiment-actions .experiment-secondary { border: 1px solid var(--folio-rule); background: transparent; color: var(--folio-ink); }
+.experiment-primary:not(:disabled):hover { background: color-mix(in srgb, var(--folio-ink) 84%, var(--folio-bg)); }
+.experiment-actions .experiment-secondary:not(:disabled):hover { background: var(--folio-pill); border-color: var(--folio-copy); }
+.experiment-actions .project-cta:not(:disabled):active { transform: translateY(1px); }
+.experiment-actions .project-cta:focus-visible { outline: 2px solid var(--folio-ink); outline-offset: 4px; }
+.experiment-actions .project-cta:disabled { opacity: .48; cursor: default; }
+.experiment-hover-preview { position: fixed; z-index: 110; top: 0; left: 0; width: min(440px, calc(100vw - 32px)); overflow: hidden; border: 1px solid var(--folio-rule); border-radius: 8px; background: var(--folio-bg); box-shadow: 0 12px 36px #0002; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 120ms ease-out, visibility 120ms; will-change: transform; }
+.experiment-hover-preview.is-visible { opacity: 1; visibility: visible; }
+.experiment-hover-preview img { display: block; width: 100%; height: auto; }
+.experiment-hover-preview p { margin: 0; padding: 12px 14px; border-top: 1px solid var(--folio-rule); color: var(--folio-copy); font-size: 13px; line-height: 1.5; }
+@media (max-width: 700px) {
+  .experiment-row { align-items: flex-start; flex-direction: column; gap: 14px; min-height: 0; padding-block: 16px; }
+  .experiment-actions { gap: 10px; }
+  .experiment-actions .project-cta { min-height: 44px; }
+}
+@media (hover: none), (pointer: coarse) { .experiment-hover-preview { display: none; } }
+@media (prefers-reduced-motion: reduce) { .experiment-row, .experiment-hover-preview, .experiment-actions .project-cta { transition: none; } }

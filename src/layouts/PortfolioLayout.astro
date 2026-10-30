@@ -1,0 +1,753 @@
+---
+import "../styles/portfolio-redesign.css";
+import "../styles/experimental-preview.css";
+import JoeSignature from "../components/JoeSignature.astro";
+import SoundToggle from "../components/SoundToggle.astro";
+import MobileNavigation from "../components/MobileNavigation.astro";
+import PianoGame from "../components/PianoGame.astro";
+import { resumeHref } from "../data/portfolio-content";
+import { ClientRouter } from "astro:transitions";
+import geistLatinFont from "@fontsource-variable/geist/files/geist-latin-wght-normal.woff2?url";
+// Inspect Mode paused. Keep the implementation available for a future iteration.
+// import InspectionMode from "../components/InspectionMode.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  current?: "home" | "about" | "experimental" | "case-study" | "writing";
+}
+
+const {
+  title = "Joel Mihavel — Product Designer",
+  description = "Product designer, problem solver, and someone who builds what he designs.",
+  current = "home",
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const year = new Date().getFullYear();
+// const InspectControl = current === "home" ? "button" : "a";
+---
+
+<!doctype html>
+<html id="folio-page" lang="en" data-theme="light" data-view={current}>
+  <head>
+    <ClientRouter fallback="swap" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="preload" href={geistLatinFont} as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PPFragment-GlareLight.otf" as="font" type="font/otf" crossorigin="anonymous" />
+    {current === "experimental" && <link rel="preload" href="/images/redesign/hero-photo.webp" as="image" />}
+    <style is:inline set:html={`
+      @font-face { font-family: "Geist Variable"; src: url("${geistLatinFont}") format("woff2"); font-style: normal; font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "PP Fragment"; src: url("/fonts/PPFragment-GlareLight.otf") format("opentype"); font-style: normal; font-weight: 300; font-display: block; }
+    `} />
+    <title>{title}</title>
+    <script is:inline data-astro-rerun>
+      var page = document.documentElement;
+      window.__folioCanvasHandoff = undefined;
+      var reducePageMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      try {
+        page.dataset.theme = localStorage.getItem("theme") || "light";
+        var modeEntry = sessionStorage.getItem("folio-mode-entry");
+        sessionStorage.removeItem("folio-mode-entry");
+        var storedCamera = sessionStorage.getItem("folio-canvas-handoff");
+        sessionStorage.removeItem("folio-canvas-handoff");
+        if (modeEntry === "experimental" && page.dataset.view === "experimental" && storedCamera) {
+          var camera = JSON.parse(storedCamera);
+          if (camera.viewportWidth === innerWidth && camera.viewportHeight === innerHeight &&
+              [camera.panX, camera.panY, camera.scale, camera.gridSize].every(Number.isFinite) && camera.scale > 0) {
+            window.__folioCanvasHandoff = camera;
+            page.style.setProperty("--exp-initial-pan-x", camera.panX + "px");
+            page.style.setProperty("--exp-initial-pan-y", camera.panY + "px");
+            page.style.setProperty("--exp-initial-scale", camera.scale);
+            page.style.setProperty("--exp-grid-size", camera.gridSize + "px");
+            page.style.setProperty("--exp-grid-x", camera.panX + "px");
+            page.style.setProperty("--exp-grid-y", camera.panY + "px");
+          }
+        }
+        if (!reducePageMotion && modeEntry === page.dataset.view) {
+          page.classList.add(modeEntry === "experimental" ? "folio-experimental-entering" : "folio-linear-entering");
+          setTimeout(function () {
+            page.classList.remove("folio-experimental-entering", "folio-linear-entering");
+          }, 2600);
+        }
+      } catch (_) {}
+      if (page.dataset.view === "experimental" && matchMedia("(max-width: 700px)").matches) {
+        location.replace("/");
+      }
+      if (!reducePageMotion) {
+        if (!page.hasAttribute("data-folio-client-navigation")) page.classList.add("folio-entrance");
+        page.classList.add("folio-reveal-ready");
+        setTimeout(function () { page.classList.remove("folio-entrance"); }, 2800);
+        setTimeout(function () {
+          if (!window.__folioMotionReady) page.classList.remove("folio-reveal-ready");
+        }, 2000);
+      }
+    </script>
+    {current === "experimental" && (
+      <script is:inline type="module" blocking="render">
+        if (matchMedia("(min-width: 701px)").matches) {
+          const portrait = new Image();
+          portrait.src = "/images/redesign/hero-photo.webp";
+          await Promise.allSettled([
+            document.fonts.load('300 43px "PP Fragment"'),
+            document.fonts.load('400 15px "Geist Variable"'),
+            document.fonts.load('600 11px "Geist Variable"'),
+            portrait.decode(),
+          ]);
+          window.__folioCanvasAssetsReady = true;
+        }
+      </script>
+    )}
+  </head>
+  <body>
+    <div class="folio-site">
+      <a class="skip-link" href="#main-content">Skip to content</a>
+
+      <header class="folio-header" transition:persist="portfolio-header">
+        <MobileNavigation current={current} />
+        <nav class="folio-main-nav" aria-label="Main navigation" inert={current === "experimental"}>
+          <a href="/" class:list={["folio-nav-link", { "is-current": current === "home" || current === "experimental" || current === "case-study" || current === "writing" }]} aria-current={current === "home" || current === "experimental" ? "page" : undefined}>Home</a>
+          <a href="/about" class:list={["folio-nav-link", { "is-current": current === "about" }]} aria-current={current === "about" ? "page" : undefined}>About me</a>
+          <a href={resumeHref} class="folio-nav-link" target="_blank" rel="noopener noreferrer" aria-label="Resume (opens in a new tab)">Resume</a>
+        </nav>
+
+        <nav class="folio-mode-switch" aria-label="Portfolio view">
+          <a href="/" data-astro-reload class:list={["folio-mode", { "is-current": current !== "experimental" }]} aria-current={current !== "experimental" ? "page" : undefined}>Linear</a>
+          <a href="/experimental-preview" data-astro-reload class:list={["folio-mode", { "is-current": current === "experimental" }]} aria-current={current === "experimental" ? "page" : undefined}>Experimental</a>
+        </nav>
+
+        <div class="folio-tools" aria-label="Display settings" inert={current === "experimental"}>
+          <SoundToggle class="folio-tool" />
+          <span class="folio-tool-divider folio-sound-divider" aria-hidden="true"></span>
+          <div class="folio-theme-group" role="group" aria-label="Color theme">
+            <button class="folio-theme-button folio-theme-light" type="button" data-folio-theme-btn="light" aria-label="Light theme" title="Light theme"><span>✺</span></button>
+            <button class="folio-theme-button folio-theme-dark" type="button" data-folio-theme-btn="dark" aria-label="Dark theme" title="Dark theme"><span>⏾</span></button>
+            <button class="folio-theme-button folio-theme-surprise" type="button" data-folio-theme-btn="surprise" aria-label="Surprise me — random color theme" title="Surprise me"><span>ッ</span></button>
+          </div>
+          <span class="folio-tool-divider" aria-hidden="true"></span>
+          {/* Inspect Mode paused:
+          <InspectControl class="folio-heart folio-inspect-toggle" type={current === "home" ? "button" : undefined} href={current === "home" ? undefined : "/?inspect"} data-inspect-toggle={current === "home" ? "" : undefined} aria-label={current === "home" ? "Inspect my thinking" : "Inspect the homepage"} aria-pressed={current === "home" ? "false" : undefined} aria-controls={current === "home" ? "folio-inspection" : undefined} title="Inspect my thinking"><span aria-hidden="true">[</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2H2v4m8-4h4v4M2 10v4h4m4 0h4v-4M6 6l1.6 6 1.5-2.9L12 7.6 6 6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" /></svg><span aria-hidden="true">]</span></InspectControl>
+          */}
+          <button type="button" class="folio-game-trigger project-cta" data-piano-open aria-haspopup="dialog">Play a game</button>
+        </div>
+      </header>
+
+      <div class="folio-rail" aria-hidden="true" transition:persist="portfolio-rail">
+        {Array.from({ length: 10 }, (_, index) => <span class={index === 0 ? "is-active" : ""} />)}
+      </div>
+      <div class="folio-scrollbar" role="scrollbar" aria-label="Page scroll" aria-controls="folio-page" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0" transition:persist="portfolio-scrollbar" hidden>
+        <span class="folio-scrollbar-thumb"></span>
+      </div>
+
+      <main id="main-content"><slot /></main>
+
+      <footer class="folio-footer" transition:persist="portfolio-footer">
+        <JoeSignature />
+        <p>Designed and Built with Figma, Claude and Procrastination</p>
+        <div class="folio-copyright"><span>All rights reserved</span><span>© {year}</span></div>
+        <div class="folio-footer-status">
+          <button type="button" id="folio-city" title="Change city">Bangalore</button>
+          <span><time id="folio-time">--:-- --</time><span id="folio-weather">✿ --°C</span></span>
+        </div>
+      </footer>
+    </div>
+
+    <PianoGame />
+    {/* Inspect Mode paused: {current === "home" && <InspectionMode />} */}
+
+    <script>
+      import Lenis from "lenis";
+      import { CITIES } from "../data/cities";
+      import { SURPRISE_THEMES, THEME_BACKGROUNDS } from "../data/themes";
+      import { setupInterfaceSounds } from "../scripts/interface-sounds";
+      import { folioRevealSelector, setupPageTransitions } from "../scripts/page-transitions";
+      import { navigate } from "astro:transitions/client";
+
+      const root = document.documentElement;
+      const themeButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-folio-theme-btn]")];
+      let themeColor = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      interface CanvasHandoff {
+        viewportWidth: number;
+        viewportHeight: number;
+        panX: number;
+        panY: number;
+        scale: number;
+        gridSize: number;
+      }
+      let modeNavigationPending = false;
+      const plainModeClick = (event: MouseEvent) => !event.defaultPrevented && event.button === 0 && !event.metaKey && !event.ctrlKey && !event.altKey && !event.shiftKey;
+      const navigateMode = (href: string, view: string, delay: number, camera?: CanvasHandoff) => {
+        setTimeout(() => {
+          try {
+            sessionStorage.setItem("folio-mode-entry", view);
+            if (camera) sessionStorage.setItem("folio-canvas-handoff", JSON.stringify(camera));
+            else sessionStorage.removeItem("folio-canvas-handoff");
+          } catch (_) {}
+          void navigate(href);
+        }, delay);
+      };
+      const experimentalLink = document.querySelector<HTMLAnchorElement>('.folio-mode[href="/experimental-preview"]');
+      let experimentalIntroTemplate: Promise<HTMLElement | null> | null = null;
+      const prepareExperimentalIntro = () => experimentalIntroTemplate ||= fetch("/experimental-preview")
+        .then((response) => response.ok ? response.text() : Promise.reject())
+        .then((markup) => new DOMParser().parseFromString(markup, "text/html").querySelector<HTMLElement>("#exp-intro > .exp-frame-body"))
+        .catch(() => null);
+      experimentalLink?.addEventListener("pointerenter", () => { void prepareExperimentalIntro(); }, { once: true });
+      experimentalLink?.addEventListener("focus", () => { void prepareExperimentalIntro(); }, { once: true });
+      experimentalLink?.addEventListener("click", async (event) => {
+        if (!plainModeClick(event)) return;
+        event.preventDefault();
+        if (root.dataset.view === "experimental") return;
+        if (reducedMotion.matches) { void navigate(experimentalLink.href); return; }
+        if (modeNavigationPending) return;
+        modeNavigationPending = true;
+        lenis.stop();
+        root.classList.add("folio-switching-to-experimental");
+        const navAnimations = [...document.querySelectorAll(".folio-main-nav, .folio-tools")]
+          .flatMap((item) => item.getAnimations())
+          .filter((animation) => animation instanceof CSSAnimation && animation.animationName === "folio-nav-slide-up");
+        const navMotion = navAnimations.length
+          ? Promise.allSettled(navAnimations.map((animation) => animation.finished)).then(() => {})
+          : new Promise<void>((resolve) => setTimeout(resolve, 300));
+        const navExit = navMotion.then(() => new Promise<void>((resolve) => {
+          requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+        }));
+        const title = document.querySelector<HTMLElement>(".home-hero h1");
+        const intro = document.querySelector<HTMLElement>(".home-intro");
+        if (title && intro) {
+          const [template] = await Promise.all([prepareExperimentalIntro(), navExit]);
+          if (!template) { root.classList.add("folio-canvas-arriving"); navigateMode(experimentalLink.href, "experimental", 680); return; }
+          const heading = title.getBoundingClientRect();
+          const copy = intro.getBoundingClientRect();
+          const left = Math.max(16, Math.min(heading.left, copy.left) - 28);
+          const top = heading.top - 24;
+          const width = Math.min(innerWidth - 16, Math.max(heading.right, copy.right) + 28) - left;
+          const height = copy.bottom - top + 24;
+          const outline = document.createElement("div");
+          outline.className = "folio-mode-outline";
+          outline.setAttribute("aria-hidden", "true");
+          Object.assign(outline.style, {
+            left: `${left}px`, top: `${top}px`, width: `${width}px`, height: `${height}px`,
+          });
+          for (let side = 0; side < 4; side++) {
+            const edge = document.createElement("span");
+            edge.className = "folio-outline-edge";
+            outline.append(edge);
+          }
+          const tall = document.createElement("div");
+          tall.className = "exp-intro-frame folio-transition-tall";
+          tall.append(document.importNode(template, true));
+          const tallTitle = tall.querySelector<HTMLElement>("h1")!;
+          const textNodes = [...tallTitle.childNodes].filter((node) => node.nodeType === Node.TEXT_NODE);
+          textNodes.forEach((node) => {
+            const fragment = document.createDocumentFragment();
+            (node.textContent?.match(/\S+|\s+/g) || []).forEach((token) => {
+              if (!token.trim()) fragment.append(document.createTextNode(token));
+              else { const word = document.createElement("span"); word.className = "folio-target-word"; word.textContent = token; fragment.append(word); }
+            });
+            node.replaceWith(fragment);
+          });
+          const tallCopy = tall.querySelector<HTMLElement>(".exp-intro-copy")!;
+          const details = [...tall.querySelectorAll<HTMLElement>(".exp-intro-index, .exp-intro-foot")];
+          tallTitle.style.visibility = "hidden";
+          tallCopy.style.opacity = "0";
+          details.forEach((item) => { item.style.opacity = "0"; });
+          outline.append(tall);
+          document.body.append(outline);
+          const targetHeight = tall.getBoundingClientRect().height;
+          const dockTop = innerHeight - (innerWidth <= 850 ? 70 : 14) - 54;
+          const availableHeight = Math.max(240, dockTop - 124);
+          const targetScale = Math.min(1, (innerWidth - 120) / 560, availableHeight / targetHeight);
+          const targetTop = 100 + (availableHeight - targetHeight * targetScale) / 2;
+          tall.style.transform = `scale(${targetScale})`;
+          const introX = parseFloat(template.parentElement?.style.getPropertyValue("--x") || "1850");
+          const introY = parseFloat(template.parentElement?.style.getPropertyValue("--y") || "1250");
+          const gridStep = targetScale < .3 ? 80 : targetScale < .5 ? 40 : targetScale < .85 ? 30 : 20;
+          const handoff: CanvasHandoff = {
+            viewportWidth: innerWidth, viewportHeight: innerHeight,
+            panX: innerWidth / 2 - (introX + 280) * targetScale,
+            panY: targetTop - introY * targetScale,
+            scale: targetScale, gridSize: gridStep * targetScale,
+          };
+          root.style.setProperty("--folio-transition-grid-size", `${gridStep * targetScale}px`);
+          root.style.setProperty("--folio-transition-grid-x", `${handoff.panX}px`);
+          root.style.setProperty("--folio-transition-grid-y", `${handoff.panY}px`);
+          const targetLeft = (innerWidth - 560 * targetScale) / 2;
+          const target = {
+            left: `${targetLeft}px`,
+            top: `${targetTop}px`,
+            width: `${560 * targetScale}px`, height: `${targetHeight * targetScale}px`,
+            backgroundColor: getComputedStyle(root).getPropertyValue("--folio-bg").trim(),
+          };
+          const motion = { duration: 620, easing: "cubic-bezier(.25, .6, .25, 1)", fill: "forwards" as FillMode };
+          const wordLayer = document.createElement("div");
+          wordLayer.className = "folio-word-transition";
+          wordLayer.setAttribute("aria-hidden", "true");
+          const targetWords = [...tallTitle.querySelectorAll<HTMLElement>(".folio-target-word")];
+          title.querySelectorAll<HTMLElement>("[data-hero-word]").forEach((source, index) => {
+            const destination = targetWords[index];
+            if (!destination) return;
+            const start = source.getBoundingClientRect();
+            const end = destination.getBoundingClientRect();
+            const sourceType = getComputedStyle(source);
+            const targetType = getComputedStyle(destination);
+            const word = document.createElement("span");
+            word.textContent = source.dataset.heroWord || "";
+            Object.assign(word.style, { fontFamily: sourceType.fontFamily, fontWeight: sourceType.fontWeight, fontSize: sourceType.fontSize, lineHeight: sourceType.lineHeight, letterSpacing: sourceType.letterSpacing, left: `${start.left}px`, top: `${start.top}px` });
+            wordLayer.append(word);
+            word.animate([
+              { left: `${start.left}px`, top: `${start.top}px`, fontSize: sourceType.fontSize, lineHeight: sourceType.lineHeight, letterSpacing: sourceType.letterSpacing },
+              { left: `${end.left + targetLeft - left}px`, top: `${end.top + targetTop - top}px`, fontSize: `${parseFloat(targetType.fontSize) * targetScale}px`, lineHeight: `${parseFloat(targetType.lineHeight) * targetScale}px`, letterSpacing: `${parseFloat(targetType.letterSpacing) * targetScale}px` },
+            ], motion);
+            const sourceLine = Math.round((start.top - heading.top) / parseFloat(sourceType.lineHeight));
+            const targetLine = Math.round((end.top - tallTitle.getBoundingClientRect().top) / (parseFloat(targetType.lineHeight) * targetScale));
+            if (sourceLine !== targetLine) {
+              word.animate([{ opacity: 1, offset: 0 }, { opacity: 0, offset: .18 }, { opacity: 0, offset: .68 }, { opacity: 1, offset: .94 }, { opacity: 1, offset: 1 }], { ...motion, easing: "linear" });
+            }
+          });
+          const sourceImage = title.querySelector<HTMLImageElement>("img");
+          const targetImage = tallTitle.querySelector<HTMLImageElement>("img");
+          if (sourceImage && targetImage) {
+            const start = sourceImage.getBoundingClientRect();
+            const end = targetImage.getBoundingClientRect();
+            const image = sourceImage.cloneNode(true) as HTMLImageElement;
+            Object.assign(image.style, { left: `${start.left}px`, top: `${start.top}px`, width: `${start.width}px`, height: `${start.height}px` });
+            wordLayer.append(image);
+            image.animate([{ left: `${start.left}px`, top: `${start.top}px`, width: `${start.width}px`, height: `${start.height}px` }, { left: `${end.left + targetLeft - left}px`, top: `${end.top + targetTop - top}px`, width: `${end.width}px`, height: `${end.height}px` }], motion);
+          }
+          const copyClone = intro.cloneNode(true) as HTMLElement;
+          copyClone.classList.add("folio-copy-transition");
+          const endCopy = tallCopy.getBoundingClientRect();
+          const endType = getComputedStyle(tallCopy.querySelector("p")!);
+          Object.assign(copyClone.style, { left: `${copy.left}px`, top: `${copy.top}px`, width: `${copy.width}px`, margin: "0", textAlign: "center" });
+          document.body.append(wordLayer, copyClone);
+          root.classList.add("folio-hero-transferring");
+          outline.animate([
+            { left: `${left}px`, top: `${top}px`, width: `${width}px`, height: `${height}px`, backgroundColor: "transparent" }, target,
+          ], motion);
+          copyClone.animate([{ left: `${copy.left}px`, top: `${copy.top}px`, width: `${copy.width}px` }, { left: `${endCopy.left + targetLeft - left}px`, top: `${endCopy.top + targetTop - top}px`, width: `${endCopy.width}px`, fontSize: `${parseFloat(endType.fontSize) * targetScale}px`, lineHeight: `${parseFloat(endType.lineHeight) * targetScale}px` }], motion);
+          copyClone.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, delay: 180, fill: "forwards" });
+          tallCopy.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, delay: 360, fill: "forwards" });
+          details.forEach((item) => item.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 240, delay: 620, fill: "forwards" }));
+          setTimeout(() => {
+            tallTitle.style.visibility = "visible";
+            wordLayer.remove();
+            copyClone.remove();
+            root.classList.add("folio-canvas-arriving");
+          }, 620);
+          navigateMode(experimentalLink.href, "experimental", 1040, handoff);
+          return;
+        }
+        await navExit;
+        root.classList.add("folio-canvas-arriving");
+        navigateMode(experimentalLink.href, "experimental", 680);
+      });
+      document.querySelector<HTMLAnchorElement>('.folio-mode[href="/"]')?.addEventListener("click", (event) => {
+        if (!plainModeClick(event)) return;
+        event.preventDefault();
+        if (root.dataset.view !== "experimental") { void navigate("/"); return; }
+        if (reducedMotion.matches) { void navigate("/"); return; }
+        if (modeNavigationPending) return;
+        modeNavigationPending = true;
+        root.classList.remove("folio-experimental-entering");
+        root.classList.add("folio-switching-to-linear");
+        navigateMode("/", "home", 380);
+      });
+      addEventListener("pageshow", (event) => {
+        if (!event.persisted) return;
+        modeNavigationPending = false;
+        root.classList.remove("folio-switching-to-experimental", "folio-switching-to-linear", "folio-hero-transferring", "folio-canvas-arriving");
+        document.querySelector(".folio-mode-outline")?.remove();
+        lenis.start();
+      });
+      const lenis = new Lenis({
+        autoRaf: true,
+        anchors: true,
+        lerp: 0.14,
+        smoothWheel: true,
+        syncTouch: false,
+        respectReducedMotion: true,
+        stopInertiaOnNavigate: true,
+      });
+      document.addEventListener("folio:game", event => {
+        if ((event as CustomEvent<{ active: boolean }>).detail.active) lenis.stop();
+        else { lenis.start(); lenis.resize(); }
+      });
+      document.addEventListener("folio:overlay", event => {
+        if ((event as CustomEvent<{ active: boolean }>).detail.active) lenis.stop();
+        else { lenis.start(); lenis.resize(); }
+      });
+      // Astro updates same-page hashes before Lenis's window click listener.
+      // Restore the starting position within that event, so Lenis measures the
+      // section from the correct origin instead of animating back to the top.
+      const sectionLinkStarts = new WeakMap<MouseEvent, number>();
+      document.addEventListener("click", event => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey || !(event.target instanceof Element)) return;
+        const link = event.target.closest<HTMLAnchorElement>("a[href]");
+        if (!link || link.target || link.hasAttribute("download")) return;
+        const destination = new URL(link.href);
+        if (destination.origin === location.origin && destination.pathname === location.pathname && destination.search === location.search && destination.hash && document.getElementById(decodeURIComponent(destination.hash.slice(1)))) {
+          sectionLinkStarts.set(event, scrollY);
+        }
+      }, { capture: true });
+      document.addEventListener("click", event => {
+        const start = sectionLinkStarts.get(event);
+        if (start !== undefined) {
+          lenis.resize();
+          lenis.scrollTo(start, { immediate: true, force: true });
+        }
+      });
+      (window as any).__folioMotionReady = true;
+      const initializePageMotion = () => {
+      if (root.classList.contains("folio-entrance")) {
+        const markHeroLines = () => {
+          const items = [...document.querySelectorAll<HTMLElement>(".home-hero h1 .hero-scramble-word, .home-hero h1 picture")];
+          const lineTops: number[] = [];
+          const firstLineDelay = 32;
+          const lineStep = 38;
+          const fadeDuration = 180;
+          items.forEach((item) => {
+            const top = item.getBoundingClientRect().top;
+            let line = lineTops.findIndex((lineTop) => Math.abs(lineTop - top) < 8);
+            if (line < 0) line = lineTops.push(top) - 1;
+            item.style.setProperty("--line-delay", `${firstLineDelay + line * lineStep}ms`);
+          });
+          const introStart = firstLineDelay + (lineTops.length - 1) * lineStep + Math.round(fadeDuration * 0.55);
+          document.querySelectorAll<HTMLElement>(".home-intro p").forEach((paragraph, index) => {
+            paragraph.style.setProperty("--intro-delay", `${introStart + index * 40}ms`);
+          });
+          document.querySelector<HTMLElement>(".home-desk")?.style.setProperty("--desk-delay", `${introStart + 120}ms`);
+          root.classList.add("folio-lines-ready");
+        };
+        void Promise.race([
+          document.fonts.ready,
+          new Promise<void>((resolve) => setTimeout(resolve, 500)),
+        ]).then(() => requestAnimationFrame(markHeroLines));
+      }
+      const revealTargets = [...document.querySelectorAll<HTMLElement>(folioRevealSelector)];
+      activeRevealObserver?.disconnect();
+      if (reducedMotion.matches || !("IntersectionObserver" in window)) {
+        root.classList.remove("folio-reveal-ready");
+      } else {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.filter((entry) => entry.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+            .forEach((entry, index) => {
+              const target = entry.target as HTMLElement;
+              target.style.setProperty("--reveal-delay", `${Math.min(index, 5) * 30}ms`);
+              target.classList.add("is-visible");
+              observer.unobserve(target);
+            });
+        }, { rootMargin: "0px 0px -4% 0px", threshold: 0.05 });
+        activeRevealObserver = revealObserver;
+        revealTargets.forEach((target) => revealObserver.observe(target));
+      }
+      };
+      let activeRevealObserver: IntersectionObserver | null = null;
+      reducedMotion.addEventListener("change", () => {
+        if (reducedMotion.matches) {
+          activeRevealObserver?.disconnect();
+          root.classList.remove("folio-entrance", "folio-reveal-ready");
+        }
+      });
+      let cursorTemplate: SVGSVGElement | null = null;
+      const updateCursorTheme = () => {
+        if (!cursorTemplate) return;
+        const palette = getComputedStyle(root);
+        const dotColor = palette.getPropertyValue("--accent-hover").trim() || palette.getPropertyValue("--folio-accent").trim();
+        const ringColor = palette.getPropertyValue("--border-subtle").trim();
+        if (!dotColor || !ringColor) return;
+        const cursor = cursorTemplate.cloneNode(true) as SVGSVGElement;
+        cursor.querySelector("circle")?.setAttribute("fill", dotColor);
+        cursor.querySelector("path")?.setAttribute("stroke", ringColor);
+        const svg = encodeURIComponent(new XMLSerializer().serializeToString(cursor));
+        root.style.setProperty("--folio-cursor-image", `url("data:image/svg+xml,${svg}")`);
+      };
+      if (matchMedia("(hover: hover) and (pointer: fine)").matches) {
+        void fetch("/images/redesign/figma-cursor.svg")
+          .then((response) => response.ok ? response.text() : Promise.reject())
+          .then((markup) => {
+            const parsed = new DOMParser().parseFromString(markup, "image/svg+xml");
+            if (parsed.querySelector("parsererror") || parsed.documentElement.localName !== "svg") return;
+            cursorTemplate = parsed.documentElement as unknown as SVGSVGElement;
+            updateCursorTheme();
+          })
+          .catch(() => {});
+      }
+      let themeTransitionActive = false;
+      let queuedTheme: HTMLButtonElement | null = null;
+      const applyTheme = (theme: string) => {
+        root.dataset.theme = theme;
+        updateCursorTheme();
+        try { localStorage.setItem("theme", theme); } catch (_) {}
+        themeButtons.forEach((button) => {
+          const mode = theme === "light" || theme === "dark" ? theme : "surprise";
+          const active = button.dataset.folioThemeBtn === mode;
+          button.setAttribute("aria-pressed", String(active));
+        });
+        if (themeColor) themeColor.content = THEME_BACKGROUNDS[theme] || THEME_BACKGROUNDS.light;
+      };
+
+      const changeTheme = (button: HTMLButtonElement) => {
+        if (themeTransitionActive) {
+          queuedTheme = button;
+          return;
+        }
+        const choice = button.dataset.folioThemeBtn;
+        const pool = SURPRISE_THEMES.filter((theme) => theme !== root.dataset.theme);
+        const next = choice === "surprise" ? pool[Math.floor(Math.random() * pool.length)] : choice || "light";
+        if (next === root.dataset.theme) return;
+        const site = document.querySelector<HTMLElement>(".folio-site");
+        if (!site || !document.startViewTransition || reducedMotion.matches) {
+          applyTheme(next);
+          return;
+        }
+
+        const iconBounds = (button.querySelector("span") || button).getBoundingClientRect();
+        const x = iconBounds.left + iconBounds.width / 2;
+        const y = iconBounds.top + iconBounds.height / 2;
+        const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y)) + 2;
+        const scroll = window.scrollY;
+        const frames = Array.from({ length: 101 }, (_, step) => {
+          const t = step / 100;
+          const eased = .15 * t + .85 * t * t * (3 - 2 * t);
+          const scale = .005 + .995 * eased;
+          return { percent: step, scale: scale.toFixed(6), inverse: (1 / scale).toFixed(6) };
+        });
+        const revealStyle = document.createElement("style");
+        revealStyle.textContent = `
+          ::view-transition-new(root) { opacity: 0 !important; }
+          ::view-transition-group(folio-theme) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 2;
+            clip-path: circle(${radius}px at ${x}px ${y}px);
+            transform-origin: ${x}px ${y}px;
+            animation: folio-theme-shell 380ms linear both !important;
+          }
+          ::view-transition-image-pair(folio-theme) { width: 100%; height: 100%; }
+          ::view-transition-old(folio-theme) { display: none !important; }
+          ::view-transition-new(folio-theme) {
+            transform-origin: ${x}px ${y}px;
+            object-fit: none;
+            object-position: 0 -${scroll}px;
+            animation: folio-theme-content 380ms linear both !important;
+          }
+          @keyframes folio-theme-shell { ${frames.map(({ percent, scale }) => `${percent}% { transform: scale(${scale}); }`).join("")} }
+          @keyframes folio-theme-content { ${frames.map(({ percent, inverse }) => `${percent}% { transform: scale(${inverse}); }`).join("")} }
+        `;
+        document.head.append(revealStyle);
+        themeTransitionActive = true;
+        const transition = document.startViewTransition(() => {
+          applyTheme(next);
+          site.style.viewTransitionName = "folio-theme";
+        });
+        transition.finished.finally(() => {
+          site.style.removeProperty("view-transition-name");
+          revealStyle.remove();
+          themeTransitionActive = false;
+          if (queuedTheme) {
+            const queued = queuedTheme;
+            queuedTheme = null;
+            changeTheme(queued);
+          }
+        });
+      };
+      themeButtons.forEach((button) => {
+        button.addEventListener("pointerdown", (event) => {
+          if (event.isPrimary && event.button === 0) changeTheme(button);
+        });
+        button.addEventListener("click", (event) => {
+          if (event.detail === 0 || !("PointerEvent" in window)) changeTheme(button);
+        });
+      });
+      applyTheme(root.dataset.theme || "light");
+
+      const railTicks = [...document.querySelectorAll<HTMLElement>(".folio-rail span")];
+      const rail = document.querySelector<HTMLElement>(".folio-rail");
+      const scrollbar = document.querySelector<HTMLElement>(".folio-scrollbar");
+      const scrollbarThumb = scrollbar?.querySelector<HTMLElement>(".folio-scrollbar-thumb");
+      let railFrame = 0;
+      const updateRail = () => {
+        railFrame = 0;
+        const scrollableHeight = root.scrollHeight - innerHeight;
+        const progress = scrollableHeight > 0 ? Math.min(1, Math.max(0, scrollY / scrollableHeight)) : 0;
+        const activeIndex = Math.min(railTicks.length - 1, Math.max(0, Math.round(progress * (railTicks.length - 1))));
+        railTicks.forEach((tick, index) => tick.classList.toggle("is-active", index === activeIndex));
+        const sectionNav = document.querySelector<HTMLElement>(".about-toc");
+        if (rail) {
+          if (sectionNav) rail.style.top = `${sectionNav.getBoundingClientRect().top}px`;
+          else rail.style.removeProperty("top");
+        }
+        if (scrollbar) {
+          scrollbar.hidden = scrollableHeight <= 0;
+          scrollbar.setAttribute("aria-valuenow", String(Math.round(progress * 100)));
+          const trackHeight = scrollbar.clientHeight;
+          const thumbHeight = Math.min(trackHeight, Math.max(40, Math.round(trackHeight * innerHeight / root.scrollHeight)));
+          scrollbar.style.setProperty("--thumb-height", `${thumbHeight}px`);
+          scrollbar.style.setProperty("--thumb-top", `${Math.round(progress * (trackHeight - thumbHeight))}px`);
+        }
+      };
+      const scheduleRailUpdate = () => {
+        if (!railFrame) railFrame = requestAnimationFrame(updateRail);
+      };
+      addEventListener("scroll", scheduleRailUpdate, { passive: true });
+      addEventListener("resize", scheduleRailUpdate);
+      addEventListener("load", scheduleRailUpdate);
+      document.addEventListener("folio:tab-change", scheduleRailUpdate);
+      scheduleRailUpdate();
+
+      if (scrollbar && scrollbarThumb) {
+        let dragOffset: number | null = null;
+        const scrollFromPointer = (clientY: number) => {
+          const track = scrollbar.getBoundingClientRect();
+          const thumbHeight = scrollbarThumb.getBoundingClientRect().height;
+          const travel = track.height - thumbHeight;
+          if (travel <= 0) return;
+          const position = Math.min(travel, Math.max(0, clientY - track.top - (dragOffset ?? thumbHeight / 2)));
+          lenis.scrollTo(position / travel * (root.scrollHeight - innerHeight), { immediate: true });
+        };
+        scrollbar.addEventListener("pointerdown", (event) => {
+          if (event.button !== 0) return;
+          dragOffset = event.target === scrollbarThumb
+            ? event.clientY - scrollbarThumb.getBoundingClientRect().top
+            : scrollbarThumb.getBoundingClientRect().height / 2;
+          scrollbar.setPointerCapture(event.pointerId);
+          scrollFromPointer(event.clientY);
+        });
+        scrollbar.addEventListener("pointermove", (event) => {
+          if (dragOffset !== null) scrollFromPointer(event.clientY);
+        });
+        const stopDragging = () => { dragOffset = null; };
+        scrollbar.addEventListener("pointerup", stopDragging);
+        scrollbar.addEventListener("pointercancel", stopDragging);
+        scrollbar.addEventListener("keydown", (event) => {
+          const pageStep = innerHeight * 0.9;
+          const steps: Record<string, number> = { ArrowUp: -40, ArrowDown: 40, PageUp: -pageStep, PageDown: pageStep };
+          let destination = scrollY + steps[event.key];
+          if (event.key === "Home") destination = 0;
+          else if (event.key === "End") destination = root.scrollHeight - innerHeight;
+          else if (!(event.key in steps)) return;
+          event.preventDefault();
+          lenis.scrollTo(destination, { immediate: true });
+        });
+      }
+
+      const soundButtons = [...document.querySelectorAll<HTMLButtonElement>(".folio-sound")];
+      setupInterfaceSounds(soundButtons, () => modeNavigationPending);
+      setupPageTransitions((destination, navigationType) => {
+        lenis.start();
+        lenis.resize();
+        const anchor = navigationType !== "traverse" && destination.hash
+          ? document.getElementById(decodeURIComponent(destination.hash.slice(1))) : null;
+        lenis.scrollTo(anchor || scrollY, { immediate: true, force: true });
+        updateRail();
+      });
+
+      document.addEventListener("astro:before-preparation", event => {
+        const load = event.loader;
+        event.loader = async () => {
+          await load();
+          if (event.to.pathname === "/experimental-preview") {
+            const portrait = new Image();
+            portrait.src = "/images/redesign/hero-photo.webp";
+            await Promise.allSettled([document.fonts.ready, portrait.decode()]);
+            (window as any).__folioCanvasAssetsReady = true;
+          }
+        };
+      });
+      document.addEventListener("astro:before-swap", event => {
+        const incoming = event.newDocument.documentElement;
+        incoming.dataset.theme = root.dataset.theme;
+        incoming.style.setProperty("--folio-cursor-image", root.style.getPropertyValue("--folio-cursor-image"));
+        try {
+          const stored = sessionStorage.getItem("folio-canvas-handoff");
+          if (incoming.dataset.view === "experimental" && stored) {
+            const camera: CanvasHandoff = JSON.parse(stored);
+            if (camera.viewportWidth === innerWidth && camera.viewportHeight === innerHeight) {
+              incoming.style.setProperty("--exp-initial-pan-x", `${camera.panX}px`);
+              incoming.style.setProperty("--exp-initial-pan-y", `${camera.panY}px`);
+              incoming.style.setProperty("--exp-initial-scale", String(camera.scale));
+              incoming.style.setProperty("--exp-grid-size", `${camera.gridSize}px`);
+              incoming.style.setProperty("--exp-grid-x", `${camera.panX}px`);
+              incoming.style.setProperty("--exp-grid-y", `${camera.panY}px`);
+            }
+          }
+        } catch (_) {}
+      });
+      document.addEventListener("astro:page-load", () => {
+        modeNavigationPending = false;
+        root.classList.remove("folio-switching-to-experimental", "folio-switching-to-linear", "folio-hero-transferring", "folio-canvas-arriving");
+        document.querySelectorAll(".folio-mode-outline, .folio-word-transition, .folio-copy-transition").forEach(node => node.remove());
+        const experimental = root.dataset.view === "experimental";
+        document.querySelectorAll<HTMLElement>(".folio-main-nav, .folio-tools").forEach(node => { node.inert = experimental; });
+        document.querySelectorAll<HTMLAnchorElement>(".folio-main-nav a").forEach(link => {
+          const active = link.getAttribute("href") === "/" ? root.dataset.view !== "about" : link.getAttribute("href") === "/about" && root.dataset.view === "about";
+          link.classList.toggle("is-current", active);
+          if (active && (root.dataset.view === "home" || root.dataset.view === "about" || experimental)) link.setAttribute("aria-current", "page");
+          else link.removeAttribute("aria-current");
+        });
+        document.querySelectorAll<HTMLAnchorElement>(".folio-mode").forEach(link => {
+          const active = (link.getAttribute("href") === "/experimental-preview") === experimental;
+          link.classList.toggle("is-current", active);
+          if (active) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current");
+        });
+        themeColor = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+        applyTheme(root.dataset.theme || "light");
+        lenis.start();
+        lenis.resize();
+        lenis.scrollTo(scrollY, { immediate: true, force: true });
+        initializePageMotion();
+        scheduleRailUpdate();
+      });
+
+      const cityButton = document.querySelector<HTMLButtonElement>("#folio-city");
+      const time = document.querySelector<HTMLElement>("#folio-time");
+      const weather = document.querySelector<HTMLElement>("#folio-weather");
+      let cityIndex = 0;
+      try {
+        const saved = Number(localStorage.getItem("folio-city-index"));
+        if (Number.isInteger(saved) && saved >= 0 && saved < CITIES.length) cityIndex = saved;
+      } catch (_) {}
+      let weatherRequest = 0;
+      const updateCity = async () => {
+        const city = CITIES[cityIndex];
+        if (cityButton) cityButton.textContent = city.name;
+        if (time) time.textContent = new Intl.DateTimeFormat("en-US", { hour: "2-digit", minute: "2-digit", hour12: true, timeZone: city.tz }).format(new Date()).toUpperCase();
+        if (!weather) return;
+        const request = ++weatherRequest;
+        weather.textContent = "✿ --°C";
+        try {
+          const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current=temperature_2m`);
+          if (!response.ok) throw new Error("Weather unavailable");
+          const result = await response.json();
+          if (request === weatherRequest) weather.textContent = `✿ ${Math.round(result.current.temperature_2m)}°C`;
+        } catch (_) { if (request === weatherRequest) weather.textContent = "✿ —"; }
+      };
+      cityButton?.addEventListener("click", () => {
+        cityIndex = (cityIndex + 1) % CITIES.length;
+        try { localStorage.setItem("folio-city-index", String(cityIndex)); } catch (_) {}
+        void updateCity();
+      });
+      void updateCity();
+      setInterval(() => {
+        const city = CITIES[cityIndex];
+        if (time) time.textContent = new Intl.DateTimeFormat("en-US", { hour: "2-digit", minute: "2-digit", hour12: true, timeZone: city.tz }).format(new Date()).toUpperCase();
+      }, 30_000);
+    </script>
+  </body>
+</html>

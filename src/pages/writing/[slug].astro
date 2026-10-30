@@ -1,0 +1,52 @@
+---
+import EditorialLayout from "../../layouts/EditorialLayout.astro";
+import { writingPages, writingSections } from "../../data/writing";
+
+export function getStaticPaths() {
+  return writingPages.map((article, index) => ({ params: { slug: article.slug }, props: { article, index } }));
+}
+interface Props { article: typeof writingPages[number]; index: number; }
+const { article, index } = Astro.props;
+const next = writingPages[(index + 1) % writingPages.length];
+---
+
+<EditorialLayout title={`${article.title} — Joel Mihavel`} description="A placeholder article about design, craft, and building." current="writing" sections={writingSections} class="writing-article-shell" backHref="/?category=writing#selected-work" backLabel="All writing">
+  <aside slot="aside" class="case-summary writing-summary" aria-label="Article details">
+    <img src={article.image} width="290" height="290" alt="Existing portfolio artwork used as a placeholder article image" />
+    <p class="case-draft">[ Placeholder article · {article.number} ]</p>
+    <dl><div><dt>Author</dt><dd>Joel Mihavel</dd></div><div><dt>Topics</dt><dd>{article.tags.join(" / ")}</dd></div><div><dt>Status</dt><dd>Draft</dd></div></dl>
+  </aside>
+
+  <section id="introduction" class="about-section" aria-labelledby="introduction-title">
+    <h1 id="introduction-title" class="editorial-title">{article.title}</h1>
+    <div class="about-prose">
+      <p>This is a placeholder for an upcoming piece. The title sets the direction; the final article is still to be written.</p>
+      <p>It will be a place for observations from designing, exploring tools, and getting closer to the things I build.</p>
+    </div>
+  </section>
+  <section id="idea" class="about-section" aria-labelledby="idea-title">
+    <h2 id="idea-title">The idea</h2>
+    <div class="about-prose">
+      <p>Start with the question or observation behind this piece. Explain what made it interesting and why it is worth thinking about.</p>
+      <p>The finished article will develop one clear idea, grounded in specific examples rather than broad claims.</p>
+      <p>This copy holds the shape of the article while the final story takes form.</p>
+    </div>
+  </section>
+  <section id="practice" class="about-section" aria-labelledby="practice-title">
+    <h2 id="practice-title">Putting it into practice</h2>
+    <div class="about-prose">
+      <p>Use this section for a concrete example, an experiment, or a small detail that makes the idea easier to understand.</p>
+      <p>Show the thinking behind a decision: the options considered, the trade-offs, and what changed along the way.</p>
+      <p>Any project details or outcomes will be added with the final article. The image below is existing portfolio artwork used as a placeholder.</p>
+    </div>
+    <figure class="case-figure"><img src={article.image} width="600" height="400" loading="lazy" alt="Placeholder artwork for a future article illustration" /><figcaption>Article illustration placeholder.</figcaption></figure>
+  </section>
+  <section id="thoughts" class="about-section" aria-labelledby="thoughts-title">
+    <h2 id="thoughts-title">A thought to leave with</h2>
+    <div class="about-prose">
+      <p>The final piece will close with a useful takeaway, a question to explore, or something to try next.</p>
+      <p>For now, this page is a draft space for the writing to come.</p>
+    </div>
+    <nav class="case-pagination" aria-label="More writing"><a href="/?category=writing#selected-work">← All writing</a><a href={next.href}>Next article →</a></nav>
+  </section>
+</EditorialLayout>

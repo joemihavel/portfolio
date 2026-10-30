@@ -1,0 +1,19 @@
+---
+import SecuredCoverUI from "./SecuredCoverUI.astro";
+import { securedMedia, securedAssets, type CaseMediaDesign } from "../../data/secured-design-media";
+import "../../styles/secured-cover.css";
+interface Props { eager?: boolean; }
+const { eager = false } = Astro.props;
+const media: CaseMediaDesign = securedMedia.hero;
+---
+
+<span class="secured-media-art secured-cover-art" role="img" aria-label={media.label} data-cover-art style={`--case-aspect:${media.width / media.height};aspect-ratio:${media.width}/${media.height};background:${media.background}`}>
+  {media.layers.map(layer => {
+    const asset = securedAssets[layer.asset];
+    return <img src={asset.src} alt="" width={asset.width} height={asset.height}
+      loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : "auto"} decoding="async" data-cover-screen
+      style={`left:${(layer.x || 0) / media.width * 100}%;top:${(layer.y || 0) / media.height * 100}%;width:${(layer.width || media.width) / media.width * 100}%;height:${(layer.height || media.height) / media.height * 100}%;object-fit:cover;border-radius:0`}
+    />;
+  })}
+  <SecuredCoverUI />
+</span>

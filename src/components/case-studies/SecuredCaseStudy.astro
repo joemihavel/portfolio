@@ -1,0 +1,188 @@
+---
+import CaseCopy from "./CaseCopy.astro";
+import CaseMedia from "./CaseMedia.astro";
+import { securedAssets as assets } from "../../data/secured-design-media";
+import "../../styles/secured-case-study.css";
+interface Props { next: { href: string; title: string; comingSoon?: boolean }; }
+const { next } = Astro.props;
+const problems = [
+  ["35:30484", "35:30485"], ["35:30490", "35:30491"],
+  ["35:30497", "35:30498"], ["35:30503", "35:30504"],
+] as const;
+const metrics = [["35:42351", "35:42352"], ["35:42354", "35:42355"], ["35:42358", "35:42359"], ["35:42361", "35:42362"], ["35:42364", "35:42365"]] as const;
+const steps = [
+  { label: "Discover", href: "#eligible-renters" }, { label: "Install", href: "#launch" },
+  { label: "Sign up", href: "#onboarding" }, { label: "Upload Agreement", href: "#onboarding" },
+  { label: "Waitlist", href: "#waitlist-design" },
+];
+---
+
+<div class="secured-content" data-secured-case>
+  <section id="overview" class="about-section secured-section" aria-labelledby="secured-title">
+    <CaseMedia name="hero" eager />
+    <div class="secured-intro">
+      <h1 id="secured-title">Designing for Growth in <br />Flent Secured App</h1>
+      <CaseCopy node="35:30363" class="secured-measure" />
+    </div>
+    <dl class="secured-details">
+      <div><dt>Role:</dt><dd><span>Sole Product Designer</span><span>Website Design &amp; Development</span></dd></div>
+      <div><dt>Team</dt><dd><span>1 Product Designer,</span><span>1 Engineer</span></dd></div>
+      <div><dt>Timeline</dt><dd>Jan to Mar 2026</dd></div>
+    </dl>
+  </section>
+
+  <section id="launch" class="about-section secured-section" aria-labelledby="launch-title">
+    <h2 id="launch-title">01 / A new product, <br />three weeks to launch</h2>
+    <div class="secured-stack">
+      <CaseCopy node="35:30385" /><CaseCopy node="35:30386" />
+    </div>
+    <CaseMedia name="announcement" />
+    <CaseCopy node="35:30388" />
+    <CaseMedia name="launch" />
+    <div class="secured-stack secured-gap-8">
+      <CaseCopy as="h3" node="35:30468" /><CaseCopy node="35:30469" />
+    </div>
+  </section>
+
+  <section id="adoption" class="about-section secured-section" aria-labelledby="adoption-title">
+    <h2 id="adoption-title">02 / People were interested. Getting them to use it was harder.</h2>
+    <CaseMedia name="interest" />
+    <div class="secured-stack secured-gap-12">
+      <CaseCopy node="35:30476" /><CaseCopy node="35:30478" class="secured-measure" />
+      <div class="secured-card-grid secured-problem-grid">
+        {problems.map(([title, body]) => <div class="secured-card secured-problem-card">
+          <img class="secured-icon" src={assets["35-30470-frame"].src} alt="" width="16" height="16" loading="lazy" />
+          <div class="secured-stack secured-gap-4"><CaseCopy node={title} class="secured-card-title" /><CaseCopy node={body} /></div>
+        </div>)}
+      </div>
+      <CaseCopy node="35:30505" />
+    </div>
+    <img class="secured-reaction" src={assets["35-30470-rectangle2534"].src} alt="Patrick trying to make sense of things" width="150" height="150" loading="lazy" />
+    <div class="secured-stack">
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:30509" /><CaseCopy node="35:30510" /></div>
+      <div class="secured-card-grid">
+        <div class="secured-card">
+          <img class="secured-icon" src={assets["35-30470-image15"].src} alt="" width="16" height="16" loading="lazy" />
+          <CaseCopy node="35:30514" class="secured-card-title" /><CaseCopy node="35:30515" />
+        </div>
+        <div class="secured-card">
+          <img class="secured-icon" src={assets["35-30470-frame1"].src} alt="" width="16" height="16" loading="lazy" />
+          <CaseCopy node="35:30519" class="secured-card-title" /><CaseCopy node="35:30520" />
+        </div>
+      </div>
+      <CaseCopy node="35:30521" class="secured-emphasis" />
+    </div>
+  </section>
+
+  <section id="journey" class="about-section secured-section" aria-labelledby="journey-title">
+    <h2 id="journey-title">03 / Looking at the journey differently</h2>
+    <div class="secured-stack secured-gap-24">
+      <CaseCopy node="35:30525" class="secured-touchpoints" />
+      <nav class="secured-journey" aria-label="Explore the onboarding journey">
+        {steps.map(step => <a class="secured-card" href={step.href}>{step.label}</a>)}
+      </nav>
+      <CaseCopy node="35:30537" />
+    </div>
+    <div class="secured-stack">
+      <div class="secured-card-grid">
+        <a href="#eligible-renters" class="secured-card secured-opportunity">
+          <img class="secured-icon" src={assets["35-30522-frame"].src} alt="" width="16" height="16" loading="lazy" />
+          <CaseCopy node="35:30543" class="secured-card-title" /><CaseCopy node="35:30544" />
+        </a>
+        <a href="#onboarding" class="secured-card secured-opportunity">
+          <img class="secured-icon secured-icon-flipped" src={assets["35-30522-frame1"].src} alt="" width="16" height="16" loading="lazy" />
+          <CaseCopy node="35:30548" class="secured-card-title" /><CaseCopy node="35:30549" />
+        </a>
+      </div>
+      <CaseCopy node="35:30550" />
+    </div>
+  </section>
+
+  <section id="onboarding" class="about-section secured-section" aria-labelledby="onboarding-title">
+    <h2 id="onboarding-title">04 / Making onboarding <br />easier to understand</h2>
+    <CaseCopy node="35:30553" />
+    <div class="secured-stack secured-gap-16"><CaseMedia name="agreementV1" /><CaseCopy node="35:30644" /></div>
+    <div class="secured-stack secured-gap-16">
+      <CaseMedia name="agreementV2" />
+      <div class="secured-stack secured-gap-10"><CaseCopy node="35:30871" /><CaseCopy node="35:30872" /></div>
+    </div>
+    <div class="secured-stack">
+      <button type="button" class="secured-reaction-toggle" data-case-inline-motion aria-label="Pause reaction animation"><img class="secured-reaction" src={assets["35-30551-rectangle2534"].src} data-poster={assets["35-30551-rectangle2534"].poster} alt="Colin Jost asking: Did it work?" width="150" height="150" loading="lazy" data-animated="true" /></button>
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:30876" /><CaseCopy node="35:30877" /></div>
+    </div>
+  </section>
+
+  <section id="eligible-renters" class="about-section secured-section" aria-labelledby="eligible-title">
+    <h2 id="eligible-title">05 / Turning the website into a way to find eligible renters</h2>
+    <CaseCopy node="35:30880" /><CaseMedia name="map" />
+    <div class="secured-stack"><CaseCopy node="35:30884" /><CaseCopy node="35:30885" /></div>
+    <div class="secured-stack">
+      <img class="secured-reaction secured-reaction-landscape" src={assets["35-30878-rectangle2534"].src} alt="Fry: Compiles and works first time. What did I do wrong?" width="150" height="115" loading="lazy" />
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:30889" /><CaseCopy node="35:30890" /><CaseCopy node="35:30891" /></div>
+    </div>
+  </section>
+
+  <section id="shipping" class="about-section secured-section" aria-labelledby="shipping-title">
+    <h2 id="shipping-title">06 / A few other decisions <br />that helped us ship</h2>
+    <CaseCopy node="35:30894" />
+    <div class="secured-stack secured-gap-24">
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:30898" /><CaseCopy node="35:30899" /><CaseCopy node="35:30900" /></div>
+      <CaseMedia name="landlord" />
+      <div class="secured-stack secured-gap-8"><CaseCopy node="35:30905" /><CaseCopy node="35:30906" /></div>
+    </div>
+    <div id="waitlist-design" class="secured-stack secured-gap-24">
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:30910" /><CaseCopy node="35:30911" /></div>
+      <CaseMedia name="waitlist" /><CaseCopy node="35:31839" />
+    </div>
+    <div class="secured-stack secured-gap-24">
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:31843" /><CaseCopy node="35:31844" /></div>
+      <CaseMedia name="referrals" />
+      <div class="secured-stack secured-gap-8"><CaseCopy node="35:42344" /><CaseCopy node="35:42345" /></div>
+    </div>
+  </section>
+
+  <section id="results" class="about-section secured-section" aria-labelledby="results-title">
+    <h2 id="results-title">07 / What changed?</h2>
+    <div class="secured-metrics">
+      {metrics.map(([value, label]) => <div class="secured-card secured-metric"><CaseCopy node={value} class="secured-metric-value" /><CaseCopy node={label} /></div>)}
+    </div>
+    <CaseCopy node="35:42366" />
+  </section>
+
+  <section id="personal-wins" class="about-section secured-section" aria-labelledby="wins-title">
+    <h2 id="wins-title">08 / A few personal wins</h2><CaseCopy node="35:42369" class="secured-measure" />
+    <div class="secured-stack secured-gap-24">
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:42373" /><CaseCopy node="35:42374" /></div>
+      <CaseMedia name="language" /><CaseCopy node="35:42378" />
+    </div>
+    <div class="secured-stack secured-gap-24">
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:42382" /><CaseCopy node="35:42383" /></div>
+      <CaseMedia name="tokens" /><CaseCopy node="35:42387" />
+    </div>
+    <div class="secured-stack secured-gap-24">
+      <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:42391" /><CaseCopy node="35:42392" /></div>
+      <CaseMedia name="website" />
+      <div class="secured-stack secured-gap-8"><CaseCopy node="35:42396" /><CaseCopy node="35:42397" /></div>
+    </div>
+  </section>
+
+  <section id="reflection" class="about-section secured-section" aria-labelledby="reflection-title">
+    <h2 id="reflection-title">09 / Looking back</h2><CaseMedia name="reflection" /><CaseCopy as="div" node="35:42404" />
+  </section>
+  <nav class="case-pagination secured-pagination" aria-label="More case studies"><a href="/#selected-work">← All work</a>{next.comingSoon ? <button type="button" disabled>Next case study · Coming soon</button> : <a href={next.href}>Next: {next.title} →</a>}</nav>
+</div>
+
+<dialog class="secured-lightbox" aria-label="Project image viewer" data-case-viewer data-lenis-prevent>
+  <div class="secured-viewer-toolbar">
+    <div>
+      <button type="button" class="secured-viewer-motion" data-case-viewer-motion hidden>Pause</button>
+      <button type="button" data-case-close aria-label="Close image viewer">×</button>
+    </div>
+  </div>
+  <div class="secured-viewer-content" data-case-viewer-content></div>
+</dialog>
+
+<script>
+  import { initializeCaseStudy } from "../../scripts/secured-case-study";
+  initializeCaseStudy();
+</script>

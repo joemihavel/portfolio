@@ -1,0 +1,31 @@
+---
+import { securedMedia, securedAssets, type SecuredMediaKey, type CaseMediaDesign } from "../../data/secured-design-media";
+import SecuredCoverArtwork from "./SecuredCoverArtwork.astro";
+interface Props { name: SecuredMediaKey; eager?: boolean; }
+const { name, eager = false } = Astro.props;
+const media: CaseMediaDesign = securedMedia[name];
+const animated = media.layers.some(layer => layer.motion || securedAssets[layer.asset].format === "gif");
+---
+
+<figure class:list={["secured-media", { "secured-media-bordered": media.border }]} data-media-name={name} data-figma-node={media.node}>
+  <button class="secured-media-open" type="button" aria-label={`Enlarge: ${media.label}`} data-case-enlarge>
+    {name === "hero" ? <SecuredCoverArtwork eager={eager} /> : <span class="secured-media-art" style={`--case-aspect:${media.width / media.height};aspect-ratio:${media.width}/${media.height};background:${media.background || "transparent"}`}>
+      {media.layers.map(layer => {
+        const asset = securedAssets[layer.asset];
+        const style = `left:${(layer.x || 0) / media.width * 100}%;top:${(layer.y || 0) / media.height * 100}%;width:${(layer.width || media.width) / media.width * 100}%;height:${(layer.height || media.height) / media.height * 100}%;object-fit:${layer.fit || "cover"};${layer.radius ? `border-radius:${layer.radius / (layer.width || media.width) * 100}% / ${layer.radius / (layer.height || media.height) * 100}%;` : ""}${layer.background ? `background:${layer.background};` : ""}${layer.filter ? `filter:${layer.filter}` : ""}`;
+        return asset.video ? <video
+          data-video-src={asset.video} data-gif-src={asset.src} poster={asset.poster}
+          autoplay muted loop playsinline preload="none" style={style}
+          aria-label={media.label} role="img" width={asset.width} height={asset.height}
+        /> : <img
+          src={asset.src} alt={media.label} width={asset.width} height={asset.height}
+          loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : "auto"} decoding="async"
+          data-animated={asset.format === "gif" ? "true" : undefined}
+          data-poster={asset.poster} data-cover-screen={layer.motion ? "true" : undefined} style={style}
+        />;
+      })}
+    </span>}
+    <span class="secured-zoom-mark" aria-hidden="true">↗</span>
+  </button>
+  {animated && <button type="button" class="secured-motion-toggle" aria-label={`Pause animation: ${media.label}`} data-case-motion>Pause</button>}
+</figure>

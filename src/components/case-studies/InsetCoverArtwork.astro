@@ -1,0 +1,19 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  eager?: boolean;
+}
+const { src, alt, width, height, eager = false } = Astro.props;
+---
+
+<span class="inset-cover-art">
+  <img src={src} alt={alt} width={width} height={height} loading={eager ? "eager" : "lazy"} decoding="async" />
+</span>
+
+<style>
+  .inset-cover-art { width: 100%; aspect-ratio: 16 / 9; display: grid; place-items: center; overflow: hidden; border-radius: 8px; background: #f8f8f8; }
+  .inset-cover-art > img { display: block; width: 84%; height: auto; aspect-ratio: auto; object-fit: contain; border: 1px solid #0000000d; border-radius: 5px; box-shadow: 0 8px 24px #0000000a; }
+</style>

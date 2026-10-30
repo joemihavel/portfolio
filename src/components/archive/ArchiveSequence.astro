@@ -1,0 +1,16 @@
+---
+import sequences from '../../data/archive-motion.json';
+import '../../styles/archive-sequences.css';
+interface Props { index: number; }
+const sequence = sequences[Astro.props.index];
+const timeline = sequence.states.map(({html, ...state}) => state);
+---
+<div class="archive-sequence" data-archive-sequence={sequence.id} data-source-width={sequence.width} aria-hidden="true">
+  <div class="archive-scene-live" data-scene-live set:html={sequence.states[0].html}></div>
+  {sequence.states.map(state => <template data-scene-template={state.id}><Fragment set:html={state.html} /></template>)}
+  <script is:inline type="application/json" data-scene-timeline set:html={JSON.stringify(timeline).replaceAll('<', '\\u003c')}></script>
+</div>
+<script>
+  import {initializeArchiveSequences} from '../../scripts/archive-sequences';
+  document.addEventListener('astro:page-load', initializeArchiveSequences);
+</script>

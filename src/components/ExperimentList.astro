@@ -1,0 +1,20 @@
+---
+import {experiments} from '../data/portfolio-content';
+import '../styles/experiment-list.css';
+---
+<div class="experiment-list" data-experiment-list>
+  {experiments.map(experiment => (
+    <article class="experiment-row">
+      <h2><span data-experiment-thumbnail={experiment.thumbnail} data-experiment-description={experiment.description}>{experiment.title}</span></h2>
+      <div class="experiment-actions">
+        {experiment.demoHref ? <a class="project-cta experiment-primary" href={experiment.demoHref} target="_blank" rel="noopener noreferrer">View demo <span aria-hidden="true">↗</span></a> : <button class="project-cta experiment-primary" type="button" disabled>View demo <span aria-hidden="true">↗</span></button>}
+        {experiment.githubHref ? <a class="project-cta experiment-secondary" href={experiment.githubHref} target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a> : <button class="project-cta experiment-secondary" type="button" disabled>GitHub <span aria-hidden="true">↗</span></button>}
+      </div>
+    </article>
+  ))}
+  <div class="experiment-hover-preview" data-experiment-hover-preview aria-hidden="true"><img alt="" width="280" height="158" decoding="async" /><p data-experiment-hover-caption hidden></p></div>
+</div>
+<script>
+  import {initializeExperimentList} from '../scripts/experiment-list';
+  document.addEventListener('astro:page-load', initializeExperimentList);
+</script>

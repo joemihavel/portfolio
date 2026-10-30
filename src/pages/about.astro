@@ -1,0 +1,59 @@
+---
+import EditorialLayout from "../layouts/EditorialLayout.astro";
+
+const sections = [
+  { id: "journey", label: "My Journey" },
+  { id: "experience", label: "The last five years" },
+  { id: "towards", label: "What I do, and where I'm headed" },
+  { id: "closing", label: "Still curious" },
+];
+
+const roles = [
+  { company: "Flent", title: "Founding Product Designer", years: "2025–Present" },
+  { company: "Attentions AI", title: "Sr. Product Designer", years: "2024–2025" },
+  { company: "Huemn", title: "Sr. Product Designer", years: "2023–2024" },
+  { company: "Aimedis", title: "Founding Product Designer", years: "2022–2023" },
+];
+---
+
+<EditorialLayout title="About Joel Mihavel — Product Designer" description="The journey, experience, and ideas behind Joel Mihavel’s product design work." current="about" sections={sections}>
+  <img slot="aside" class="about-portrait" src="/images/redesign/portrait.png" width="290" height="283" alt="Joel Mihavel" />
+  <section id="journey" class="about-section" aria-labelledby="journey-title">
+    <h1 id="journey-title" class="editorial-title">My Journey</h1>
+    <div class="about-prose">
+      <p>Growing up, I loved watching my dad use AutoCAD and SolidWorks, turning drawings into 3D models. I barely understood what he was doing, but the idea of creating something real with a computer fascinated me.</p>
+      <p>Then came the iPhone 4, iOS 6, and my obsession with interfaces. I didn't know it was called design. I just loved how technology worked and felt.</p>
+      <p>A few detours later, I found my way into product design. Looking back, curiosity was always the common thread.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="about-section" aria-labelledby="experience-title">
+    <h2 id="experience-title">The last five years</h2>
+    <div class="about-prose">
+      <p>I've spent 5+ years working with B2B and B2C startups, often as the only designer. That meant figuring out messy problems, designing experiences, and working closely with teams to ship them.</p>
+      <p>Over time, I realised what I enjoyed most was making complicated things feel simple. More recently, I've started using AI and code to turn my ideas into working experiences.</p>
+    </div>
+    <div class="about-experience" aria-label="Work experience">
+      {roles.map(({ company, title, years }) => <div class="about-role"><strong>{company}</strong><div><span>{title}</span><time>{years}</time></div></div>)}
+    </div>
+  </section>
+
+  <section id="towards" class="about-section" aria-labelledby="towards-title">
+    <h2 id="towards-title">What I do, and where I'm headed</h2>
+    <div class="about-prose">
+      <p>I enjoy understanding problems, figuring out how things should work, and designing the details that make an experience feel right.</p>
+      <p>These days, I'm getting closer to engineering too. Not to leave design behind, but to experiment more, build faster, and take ideas further.</p>
+      <p>Long term, I want to lead product design while staying close to the craft.</p>
+    </div>
+  </section>
+
+  <section id="closing" class="about-section" aria-labelledby="closing-title">
+    <h2 id="closing-title">Still curious</h2>
+    <div class="about-prose">
+      <p>I'm usually exploring a new tool, building a side project, or figuring out how something works.</p>
+      <p>Some ideas go somewhere. Most don't. I enjoy making them anyway.</p>
+      <p>I guess I'm still that kid fascinated by what a computer could do.</p>
+      <p>Just with a few more tools to play with now.</p>
+    </div>
+  </section>
+</EditorialLayout>

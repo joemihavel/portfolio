@@ -2,25 +2,276 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import ComingSoon from "../components/ComingSoon.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { PROJECTS } from "../data/projects";
 ---
 
 <Layout
   title="Play — Joel Mihavel"
-  description="Side projects, experiments, and things built for no good reason. Coming soon."
+  description="Side projects, experiments, and things built for no good reason."
 >
   <div class="flex min-h-dvh flex-col">
     <Header current="play" />
+
     <main class="flex flex-1 flex-col">
-      <ComingSoon
-        word="play"
-        pronunciation="/pleɪ/"
-        lines={[
-          "Experiments, side quests, and things built for no good reason;",
-          "Tinkering that hasn't earned a case study yet.",
-        ]}
-      />
+      <section class="pt-16 pb-24 lg:pt-[110px] lg:pb-32">
+        <header class="mx-auto max-w-[620px] px-6 text-center">
+          <h1
+            data-reveal="up"
+            class="font-serif text-[clamp(2.75rem,9vw,72px)] leading-[1.02] tracking-[-0.02em] text-ink"
+          >
+            play
+          </h1>
+          <p
+            data-reveal="up"
+            style="--reveal-d:110ms"
+            class="mx-auto mt-5 max-w-[440px] text-[15px] leading-[1.85] text-muted"
+          >
+            Experiments, side quests, and things built for no good reason.
+            Tinkering that got out of hand.
+          </p>
+        </header>
+
+        <!-- Full-bleed on purpose: the cards either side should run off both
+             edges of the screen, which is what tells you the row continues. -->
+        <div class="rail" data-reveal="up" style="--reveal-d:200ms">
+          <button class="arrow" data-dir="-1" type="button" aria-label="Previous project">
+            <svg viewBox="0 0 24 24" aria-hidden="true"
+              ><path
+                d="M15 5 8 12l7 7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            >
+          </button>
+
+          <div class="track" id="play-track" tabindex="0" role="group" aria-label="Projects">
+            {
+              PROJECTS.map((project, i) => (
+                <div class="slide" data-slide>
+                  <ProjectCard project={project} index={i} />
+                </div>
+              ))
+            }
+          </div>
+
+          <button class="arrow" data-dir="1" type="button" aria-label="Next project">
+            <svg viewBox="0 0 24 24" aria-hidden="true"
+              ><path
+                d="m9 5 7 7-7 7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            >
+          </button>
+        </div>
+
+        <p class="mx-auto max-w-[620px] px-6 text-center text-[13px] text-muted-2">
+          More on the way — most of it lives in a folder called <span class="font-serif"
+            >someday</span
+          >.
+        </p>
+      </section>
     </main>
+
     <Footer />
   </div>
 </Layout>
+
+<style>
+  .rail {
+    /* Declared on the rail, not the track, so the arrows can offset
+       themselves by the card width too. */
+    --cw: 340px;
+    position: relative;
+    margin: 46px 0 40px;
+  }
+
+  .track {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    overflow-x: auto;
+    /* Room for the active card's lift and its shadow: overflow-x forces the
+       cross axis to clip, so the space has to be padding, not margin. */
+    padding: 42px 0;
+    scroll-snap-type: x mandatory;
+    /* Half a viewport minus half a card, so the first and last cards can both
+       reach the centre. */
+    padding-inline: calc(50% - var(--cw) / 2);
+    scroll-padding-inline: calc(50% - var(--cw) / 2);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+  .track::-webkit-scrollbar {
+    display: none;
+  }
+  .track:focus-visible {
+    outline: none;
+  }
+
+  .slide {
+    flex: 0 0 var(--cw);
+    scroll-snap-align: center;
+    opacity: 0.9;
+    transform: scale(0.92);
+    transition:
+      transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1),
+      opacity 0.45s ease;
+  }
+  .slide.is-active {
+    opacity: 1;
+    transform: scale(1.07);
+    /* So the scaled card sits over its neighbours rather than under them. */
+    position: relative;
+    z-index: 1;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    color: var(--text-primary);
+    background: var(--background);
+    border: 1px solid color-mix(in srgb, var(--text-primary) 14%, transparent);
+    box-shadow: 0 2px 10px color-mix(in srgb, var(--text-primary) 10%, transparent);
+    transform: translateY(-50%);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  .arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+  .arrow:hover:not(:disabled) {
+    transform: translateY(-50%) scale(1.08);
+  }
+  .arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+  .arrow[data-dir="-1"] {
+    left: max(16px, calc(50% - var(--cw) / 2 - 74px));
+  }
+  .arrow[data-dir="1"] {
+    right: max(16px, calc(50% - var(--cw) / 2 - 74px));
+  }
+
+  /* No room for arrows beside the card on a phone — it is a swipe there. */
+  @media (max-width: 860px) {
+    .arrow {
+      display: none;
+    }
+    .rail {
+      --cw: min(78vw, 340px);
+    }
+    .track {
+      gap: 16px;
+      padding-block: 34px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .slide {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const initPlay = () => {
+    const track = document.getElementById("play-track");
+    if (!track) return;
+
+    const slides = Array.from(track.querySelectorAll<HTMLElement>("[data-slide]"));
+    if (!slides.length) return;
+
+    const arrows = Array.from(
+      document.querySelectorAll<HTMLButtonElement>(".rail .arrow"),
+    );
+
+    // Which slide is nearest the middle of the track — the one the snap has
+    // settled on, or is settling on.
+    const nearest = () => {
+      const mid = track.scrollLeft + track.clientWidth / 2;
+      let best = 0;
+      let bestGap = Infinity;
+      slides.forEach((slide, i) => {
+        const gap = Math.abs(slide.offsetLeft + slide.offsetWidth / 2 - mid);
+        if (gap < bestGap) {
+          bestGap = gap;
+          best = i;
+        }
+      });
+      return best;
+    };
+
+    let active = -1;
+    let queued = false;
+
+    const sync = () => {
+      queued = false;
+      const i = nearest();
+      if (i !== active) {
+        const off = slides[active];
+        off?.classList.remove("is-active");
+        off?.querySelector(".card")?.classList.remove("is-lead");
+        slides[i].classList.add("is-active");
+        // The card carries its own scoped styles, so the class has to go on
+        // the card element rather than be inherited from the slide.
+        slides[i].querySelector(".card")?.classList.add("is-lead");
+        active = i;
+      }
+      // 1px of slack: a browser rarely lands exactly on the maximum.
+      const end = track.scrollWidth - track.clientWidth - 1;
+      arrows.forEach((a) => {
+        a.disabled = a.dataset.dir === "-1" ? track.scrollLeft <= 1 : track.scrollLeft >= end;
+      });
+    };
+
+    track.addEventListener(
+      "scroll",
+      () => {
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(sync);
+      },
+      { passive: true },
+    );
+
+    const go = (dir: number) => {
+      const next = Math.min(slides.length - 1, Math.max(0, nearest() + dir));
+      const target = slides[next];
+      track.scrollTo({
+        left: target.offsetLeft + target.offsetWidth / 2 - track.clientWidth / 2,
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      });
+    };
+
+    arrows.forEach((a) => a.addEventListener("click", () => go(Number(a.dataset.dir))));
+
+    track.addEventListener("keydown", (e) => {
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      e.preventDefault();
+      go(e.key === "ArrowRight" ? 1 : -1);
+    });
+
+    sync();
+    // Card widths depend on the viewport, so the settled slide has to be
+    // re-found after a resize or an orientation change.
+    addEventListener("resize", sync, { passive: true });
+  };
+
+  document.addEventListener("astro:page-load", initPlay);
+</script>

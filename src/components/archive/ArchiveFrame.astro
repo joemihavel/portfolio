@@ -1,0 +1,36 @@
+---
+import ArchivePayments from './ArchivePayments.astro';
+import ArchiveTasks from './ArchiveTasks.astro';
+import ArchiveCalendar from './ArchiveCalendar.astro';
+import ArchiveDashboard from './ArchiveDashboard.astro';
+import ArchiveTemplate from './ArchiveTemplate.astro';
+import ArchiveProductivity from './ArchiveProductivity.astro';
+import ArchiveAttendance from './ArchiveAttendance.astro';
+import ArchiveDitaBuilder from './ArchiveDitaBuilder.astro';
+import ArchiveVideoEditor from './ArchiveVideoEditor.astro';
+import ArchiveDaoDashboard from './ArchiveDaoDashboard.astro';
+import ArchiveDocumentLibrary from './ArchiveDocumentLibrary.astro';
+import ArchiveInsights from './ArchiveInsights.astro';
+import ArchiveSequence from './ArchiveSequence.astro';
+import '../../styles/archive-frames.css';
+import '../../styles/archive-native.css';
+import '../../styles/archive-added-fonts.css';
+import '../../styles/archive-additions.css';
+import {archiveScreens} from '../../data/archive';
+interface Props { index: number; }
+const {index}=Astro.props;
+const screen=archiveScreens[index];
+const animated=screen.sequence !== undefined;
+const width=screen.width ?? 1024;
+const height=screen.height ?? 576;
+const frames=[ArchivePayments,ArchiveTasks,ArchiveCalendar,ArchiveDashboard,ArchiveTemplate,ArchiveProductivity,ArchiveAttendance,ArchiveDitaBuilder,ArchiveVideoEditor,ArchiveDaoDashboard,ArchiveDocumentLibrary,ArchiveInsights];
+const labels=archiveScreens.map(screen=>screen.label);
+const Frame=frames[screen.frame ?? 0];
+---
+<article class:list={["archive-frame", {"archive-portrait":height > width}]} data-archive={index+1} data-archive-animated={animated || undefined} aria-label={labels[index]} style={animated ? `aspect-ratio:${width}/${height}` : undefined}>
+  <div class:list={["archive-stage", {"archive-stage-light":animated || (screen.frame ?? 0) >= 7}]} data-archive-stage data-archive-width={width} style={animated ? `width:${width}px;height:${height}px` : undefined}>{animated ? <ArchiveSequence index={screen.sequence!} /> : <Frame />}</div>
+</article>
+<script>
+  import {initializeArchiveFrames} from '../../scripts/archive-frames';
+  document.addEventListener('astro:page-load',initializeArchiveFrames);
+</script>

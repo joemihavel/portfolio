@@ -1,0 +1,15 @@
+@font-face { font-family: ArchiveDMMono; src: url('/fonts/archive/DMMono-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+.archive-sequence, .archive-scene-live { position: absolute; inset: 0; width: 100%; height: 100%; }
+.archive-sequence { overflow: hidden; background: #edebe5; }
+.archive-sequence template, .archive-sequence script { display: none; }
+/* Preserve the source portrait compositions, alongside the wider app frames. */
+.archive-gallery { grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: start; }
+.archive-motion-cluster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 20px; }
+.archive-motion-stack { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.archive-motion-stack > .archive-frame { flex-grow: 1; }
+@media (max-width: 700px) {
+  .archive-gallery { gap: 16px; }
+  .archive-motion-cluster { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-inline: 16px; }
+  .archive-motion-stack { gap: 16px; }
+  .archive-motion-stack > .archive-frame { flex-grow: 0; }
+}

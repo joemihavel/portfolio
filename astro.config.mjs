@@ -7,6 +7,7 @@ import cloudflare from '@astrojs/cloudflare';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://joemihavel.com',
+  devToolbar: { enabled: false },
   // Every page stays prerendered; only the handful of routes that opt out with
   // `export const prerender = false` run on the Worker. Static assets are free
   // and unlimited on Workers, so the request meter only ever sees the API.

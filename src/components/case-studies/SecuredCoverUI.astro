@@ -1,0 +1,27 @@
+---
+import { securedAssets as assets } from "../../data/secured-design-media";
+import SecuredRentCard from "./SecuredRentCard.astro";
+import SecuredCoverCompass from "./SecuredCoverCompass.astro";
+const tapes = [
+  { tone: "orange", text: "2% cashback on your Rent Payment. Double the usual" },
+  { tone: "dark", text: "Your 1% just became 2%" },
+];
+---
+
+<span class="secured-cover-ui cover-ui-animated" aria-hidden="true" data-cover-ui>
+  <span class="cover-splash-window">
+    {tapes.map(tape => <span class:list={["cover-tape", `cover-tape-${tape.tone}`]}>
+      <span class="cover-tape-track cover-ui-animated">
+        {[0, 1].map(() => <span class="cover-tape-group">{[0, 1, 2, 3].map(() => <span>{tape.text}</span>)}</span>)}
+      </span>
+    </span>)}
+    <img class="cover-logo-pulse cover-ui-animated" src={assets["cover-logo"].src} width="15" height="17" alt="" decoding="async" />
+  </span>
+  <span class="cover-rent-window">
+    <span class="cover-rent-track cover-ui-animated">
+      {[0, 1, 2].map(() => <SecuredRentCard />)}
+    </span>
+  </span>
+  <SecuredCoverCompass />
+  <span class="cover-rent-score"><span class="cover-score-number" /><span> / 900</span></span>
+</span>

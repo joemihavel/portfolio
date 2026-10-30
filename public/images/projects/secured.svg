@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Secured — Designing for Growth</title>
+  <desc id="desc">A rent payment product. 3.3 times waitlist growth and 8 times monthly rent processed.</desc>
+  <rect width="1200" height="675" fill="#151515"/>
+  <g fill="#f6f5f1" font-family="Arial, Helvetica, sans-serif">
+    <text x="78" y="87" font-size="17" letter-spacing="3">FLENT / SECURED</text>
+    <text x="72" y="296" font-family="Georgia, serif" font-size="122" letter-spacing="-5">Secured</text>
+    <text x="78" y="357" font-size="30" fill="#b7b6b0">Designing for Growth</text>
+    <path d="M78 449H1122" fill="none" stroke="#44443f"/>
+    <text x="78" y="538" font-family="Georgia, serif" font-size="66">3.3×</text>
+    <text x="442" y="538" font-family="Georgia, serif" font-size="66">8×</text>
+    <text x="78" y="580" font-size="16" fill="#b7b6b0">WAITLIST GROWTH</text>
+    <text x="442" y="580" font-size="16" fill="#b7b6b0">MONTHLY RENT PROCESSED</text>
+    <text x="1122" y="584" font-size="15" text-anchor="end" fill="#b7b6b0">JAN — MAR 2026</text>
+  </g>
+</svg>

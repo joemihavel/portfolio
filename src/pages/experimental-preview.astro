@@ -1,0 +1,317 @@
+---
+import PortfolioLayout from "../layouts/PortfolioLayout.astro";
+import PortfolioIntro from "../components/PortfolioIntro.astro";
+import { archiveScreens } from "../data/archive";
+import BoardCard from "../components/BoardCard.astro";
+import SoundToggle from "../components/SoundToggle.astro";
+import { caseStudyPages } from "../data/case-studies";
+import { writingPages } from "../data/writing";
+import { caseStudies, experiments, showcaseImage, showcaseTitle, showWriting, writingImage, writingItems } from "../data/portfolio-content";
+
+const casePositions = [
+  [70, 130, 520, 0], [700, 130, 520, 0],
+];
+const archiveColumnY = [130, 190, 150];
+const archivePositions: number[][] = [];
+archiveScreens.forEach(screen => {
+  const column = archiveColumnY.indexOf(Math.min(...archiveColumnY));
+  archivePositions.push([70 + column * 480, archiveColumnY[column], 400, 0]);
+  archiveColumnY[column] += Math.ceil(350 * (screen.height ?? 576) / (screen.width ?? 1024) + 234);
+});
+const archiveGroupHeight = Math.max(...archiveColumnY) + 20;
+const archiveNoteY = 950 + archiveGroupHeight + 200;
+const experimentPositions = [[70, 130, 440, 0], [600, 130, 440, 0], [1130, 130, 440, 0]];
+const writingPositions = [[80, 140, 400, 0], [600, 140, 400, 0], [80, 650, 400, 0], [600, 650, 400, 0]];
+const groups = [
+  { id: "case-studies", label: "Case Studies", count: caseStudies.length, position: [2500, 1030, 1350, 650] },
+  { id: "archive", label: "Archive", count: archiveScreens.length, position: [200, 950, 1500, archiveGroupHeight] },
+  { id: "experiments", label: "Experiments", count: experiments.length, position: [1880, 260, 1650, 650] },
+  ...(showWriting ? [{ id: "writing", label: "Writing", count: writingItems.length, position: [1770, 2350, 1120, 1160] }] : []),
+];
+const frames = [
+  ...caseStudyPages.map((study, index) => ({ id: `case-${index + 1}`, group: "case-studies", name: index === 0 ? "secured.png" : `case-study-0${index + 1}.png`, title: study.cardTitle, image: study.cover, position: casePositions[index], kind: "project", order: index })),
+  ...archiveScreens.map((screen, index) => ({ id: `archive-${index + 1}`, group: "archive", name: `archive-${String(index + 1).padStart(2, "0")}`, title: screen.label, image: "", position: archivePositions[index], kind: "archive", order: caseStudies.length + index })),
+  ...experiments.map((experiment, index) => ({ id: `experiment-${index + 1}`, group: "experiments", name: `experiment-0${index + 1}.png`, title: experiment.title, image: experiment.thumbnail, position: experimentPositions[index], kind: "project", order: caseStudies.length + archiveScreens.length + index })),
+  ...(showWriting ? writingItems.map((_, index) => ({ id: `writing-${index + 1}`, group: "writing", name: `writing-0${index + 1}.md`, title: writingPages[index].title, image: writingImage, position: writingPositions[index], kind: "writing", order: caseStudies.length + archiveScreens.length + experiments.length + index })) : []),
+];
+---
+
+<PortfolioLayout current="experimental" title="Experimental — Joel Mihavel" description="Explore Joel Mihavel's portfolio on an infinite canvas.">
+  <div class="exp-canvas" id="exp-canvas" tabindex="0" role="region" aria-label="Experimental portfolio canvas. Drag to pan, scroll to zoom, or use the jump controls.">
+    <div class="exp-grid" id="exp-grid" aria-hidden="true"></div>
+    <div class="exp-world" id="exp-world" style={`--exp-world-height:${Math.max(3800, archiveNoteY + 240)}px`}>
+      <article class="exp-frame exp-intro-frame is-selected" id="exp-intro" style="--x:1850px;--y:1250px;--w:560px">
+        <span class="exp-frame-name">intro</span>
+        <div class="exp-frame-body">
+          <h1>it's Joel, <img src="/images/redesign/hero-photo.webp" width="85" height="42" alt="" /> part problem solver, part designer, and increasingly someone who builds what he designs.</h1>
+          <div class="exp-intro-copy">
+            <PortfolioIntro />
+          </div>
+          <div class="exp-intro-index" aria-label="Explore the canvas">
+            <button type="button" data-exp-jump="exp-case-1"><span>CASE STUDIES <small>{String(caseStudies.length).padStart(2, "0")}</small></span><span>[ OPEN ]</span></button>
+            <button type="button" data-exp-jump="exp-archive-1"><span>ARCHIVE <small>{String(archiveScreens.length).padStart(2, "0")}</small></span><span>[ OPEN ]</span></button>
+            <button type="button" data-exp-jump="exp-experiment-1"><span>EXPERIMENTS <small>03</small></span><span>[ OPEN ]</span></button>
+            {showWriting && <button type="button" data-exp-jump="exp-writing-1"><span>WRITING <small>04</small></span><span>[ OPEN ]</span></button>}
+          </div>
+          <div class="exp-intro-foot"><span>PRODUCT DESIGNER / BUILDER</span><span>BANGALORE, INDIA</span></div>
+        </div>
+        <span class="exp-handle exp-handle-tl"></span><span class="exp-handle exp-handle-tr"></span><span class="exp-handle exp-handle-bl"></span><span class="exp-handle exp-handle-br"></span>
+      </article>
+
+      {groups.map(({ id: groupId, label, count, position }, groupIndex) => (
+        <section class="exp-group" data-exp-group={groupId} aria-label={`${label}: ${count} items`} style={`--x:${position[0]}px;--y:${position[1]}px;--w:${position[2]}px;--h:${position[3]}px;--group-order:${groupIndex}`}>
+          <div class="exp-group-heading" aria-hidden="true"><span>{label}</span><span class="exp-group-count">{count}</span></div>
+          {frames.filter((frame) => frame.group === groupId).map(({ id, group, name, title, image, position, kind, order }, index) => {
+            const comingSoon = groupId === "case-studies" && caseStudyPages[index].comingSoon;
+            const FrameTag = kind === "archive" || comingSoon ? "article" : "button";
+            return <FrameTag
+              type={FrameTag === "button" ? "button" : undefined}
+              class:list={["exp-frame", "exp-media-frame", `exp-${kind}-frame`, { "exp-coming-soon": comingSoon }]}
+              id={`exp-${id}`}
+              data-exp-frame={kind === "archive" || comingSoon ? undefined : ""}
+              data-coming-soon={comingSoon ? "true" : undefined}
+              data-group={group}
+              data-name={name}
+              data-title={title}
+              data-image={image}
+              data-href={groupId === "case-studies" && !comingSoon ? caseStudyPages[index].href : groupId === "writing" ? writingPages[index].href : undefined}
+              data-demo-href={groupId === "experiments" ? experiments[index].demoHref : undefined}
+              data-github-href={groupId === "experiments" ? experiments[index].githubHref : undefined}
+              aria-label={`${kind === "archive" || comingSoon ? "" : "Open "}${label} ${index + 1}: ${title}${comingSoon ? " — Coming soon" : ""}`}
+              style={`--x:${position[0]}px;--y:${position[1]}px;--w:${position[2]}px;--r:${position[3]}deg;--card-order:${order}`}
+            >
+              <BoardCard kind={kind} label={group === "case-studies" ? "Case study" : group === "experiments" ? "Experiment" : label} title={title} image={image} index={index + 1} eager={order < 4} tags={group === "writing" ? writingPages[index].tags : undefined} animatedCover={group === "case-studies" && index === 0} comingSoon={comingSoon} />
+              <span class="exp-handle exp-handle-tl"></span><span class="exp-handle exp-handle-tr"></span><span class="exp-handle exp-handle-bl"></span><span class="exp-handle exp-handle-br"></span>
+            </FrameTag>;
+          })}
+        </section>
+      ))}
+      <img class="exp-desk-object" src="/images/redesign/desk-illustration.svg" width="368" height="261" alt="" aria-hidden="true" style="--x:3890px;--y:2760px" />
+      <span class="exp-canvas-note" style={`--x:240px;--y:${archiveNoteY}px`} aria-hidden="true">ideas, interfaces, and the messy middle.</span>
+    </div>
+
+    <nav class="exp-jumps category-tabs" aria-label="Jump around the canvas">
+      <button class="category-tab" type="button" data-exp-jump="exp-intro" aria-current="true">Intro</button>
+      <button class="category-tab" type="button" data-exp-jump="exp-case-1">Case Studies <sup>({caseStudies.length})</sup></button>
+      <button class="category-tab" type="button" data-exp-jump="exp-archive-1">Archive <sup>({archiveScreens.length})</sup></button>
+      <button class="category-tab" type="button" data-exp-jump="exp-experiment-1">Experiments <sup>({experiments.length})</sup></button>
+      {showWriting && <button class="category-tab" type="button" data-exp-jump="exp-writing-1">Writing <sup>({writingItems.length})</sup></button>}
+    </nav>
+    <div class="exp-zoom-controls" aria-label="Canvas sound and zoom controls"><SoundToggle class="exp-sound" /><button type="button" data-exp-zoom="out" aria-label="Zoom out">−</button><span id="exp-zoom-value">100%</span><button type="button" data-exp-zoom="in" aria-label="Zoom in">+</button><button type="button" id="exp-reset" aria-label="Reset canvas">↺</button></div>
+  </div>
+
+  <dialog class="exp-inspect" id="exp-inspect" aria-labelledby="exp-inspect-title">
+    <div class="exp-inspect-top"><span id="exp-inspect-name">case-study-01.png</span><button type="button" id="exp-inspect-close" aria-label="Close preview">✕</button></div>
+    <img id="exp-inspect-image" src={showcaseImage} alt="" />
+    <div class="exp-inspect-bottom"><h2 id="exp-inspect-title">{showcaseTitle}</h2><span id="exp-inspect-credit">JOEL MIHAVEL / SELECTED WORK</span><div class="exp-inspect-actions" id="exp-inspect-actions" hidden><a id="exp-inspect-demo" target="_blank" rel="noopener noreferrer">View demo ↗</a><a id="exp-inspect-github" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+  </dialog>
+
+  <script>
+    import { navigate } from "astro:transitions/client";
+    let lifecycle: AbortController | undefined;
+    document.addEventListener("astro:before-swap", () => lifecycle?.abort());
+    const initializeCanvas = () => {
+    lifecycle?.abort();
+    lifecycle = new AbortController();
+    const { signal } = lifecycle;
+    const canvas = document.querySelector<HTMLElement>("#exp-canvas");
+    const world = document.querySelector<HTMLElement>("#exp-world");
+    const grid = document.querySelector<HTMLElement>("#exp-grid");
+    const intro = document.querySelector<HTMLElement>("#exp-intro");
+    const zoomValue = document.querySelector<HTMLElement>("#exp-zoom-value");
+    const inspect = document.querySelector<HTMLDialogElement>("#exp-inspect");
+    if (!canvas || !world || !intro) return;
+    const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+    matchMedia("(max-width: 700px)").addEventListener("change", (event) => {
+      if (event.matches) void navigate("/", { history: "replace" });
+    }, { signal });
+    if (canvas && world && intro) {
+      const initialCamera = (window as any).__folioCanvasHandoff as { scale: number; panX: number; panY: number } | undefined;
+      let scale = initialCamera?.scale ?? 1;
+      let panX = initialCamera?.panX ?? 0;
+      let panY = initialCamera?.panY ?? 0;
+      let pointerStart: { x: number; y: number; panX: number; panY: number } | null = null;
+      let pinchStart: { distance: number; scale: number; worldX: number; worldY: number } | null = null;
+      const pointers = new Map<number, { x: number; y: number }>();
+      let moved = false;
+      let pressedFrame: HTMLElement | null = null;
+      let suppressClick = false;
+      const clampScale = (next: number) => Math.max(.18, Math.min(2.4, next));
+      const render = (animate = false) => {
+        world.classList.toggle("is-animating", animate && !reduceMotion.matches);
+        grid?.classList.toggle("is-animating", animate && !reduceMotion.matches);
+        world.style.transform = `translate3d(${panX}px, ${panY}px, 0) scale(${scale})`;
+        const gridStep = scale < .3 ? 80 : scale < .5 ? 40 : scale < .85 ? 30 : 20;
+        grid?.style.setProperty("--exp-grid-size", `${gridStep * scale}px`);
+        grid?.style.setProperty("--exp-grid-x", `${panX}px`);
+        grid?.style.setProperty("--exp-grid-y", `${panY}px`);
+        if (zoomValue) zoomValue.textContent = `${Math.round(scale * 100)}%`;
+      };
+      const centerOn = (frame: HTMLElement, animate = false) => {
+        const mobile = innerWidth < 700;
+        const topInset = 100;
+        const navTop = document.querySelector<HTMLElement>(".exp-jumps")?.getBoundingClientRect().top ?? innerHeight;
+        const availableHeight = Math.max(240, navTop - topInset - 24);
+        scale = clampScale(Math.min(1, (innerWidth - (mobile ? 28 : 120)) / frame.offsetWidth, availableHeight / frame.offsetHeight));
+        let frameX = 0;
+        let frameY = 0;
+        for (let node: HTMLElement | null = frame; node && node !== world; node = node.offsetParent as HTMLElement | null) {
+          frameX += node.offsetLeft;
+          frameY += node.offsetTop;
+        }
+        panX = innerWidth / 2 - (frameX + frame.offsetWidth / 2) * scale;
+        panY = topInset + availableHeight / 2 - (frameY + frame.offsetHeight / 2) * scale;
+        render(animate);
+      };
+      const zoomAt = (clientX: number, clientY: number, next: number) => {
+        const nextScale = clampScale(next);
+        const worldX = (clientX - panX) / scale;
+        const worldY = (clientY - panY) / scale;
+        scale = nextScale;
+        panX = clientX - worldX * scale;
+        panY = clientY - worldY * scale;
+        render();
+      };
+      const setSelected = (frame: HTMLElement) => {
+        world.querySelector(".is-selected")?.classList.remove("is-selected");
+        frame.classList.add("is-selected");
+        const section = frame === intro ? "exp-intro" : ({
+          "case-studies": "exp-case-1",
+          archive: "exp-archive-1",
+          experiments: "exp-experiment-1",
+          writing: "exp-writing-1",
+        } as Record<string, string>)[frame.dataset.group || ""];
+        document.querySelectorAll<HTMLButtonElement>(".exp-jumps [data-exp-jump]").forEach((button) => {
+          if (button.dataset.expJump === section) button.setAttribute("aria-current", "true");
+          else button.removeAttribute("aria-current");
+        });
+      };
+      const openFrame = (frame: HTMLElement) => {
+        if (frame.dataset.group === "archive" || frame.dataset.comingSoon === "true") return;
+        if (frame.dataset.href) { void navigate(frame.dataset.href); return; }
+        if (!inspect || inspect.open) return;
+        setSelected(frame);
+        const image = inspect.querySelector<HTMLImageElement>("#exp-inspect-image");
+        const title = inspect.querySelector<HTMLElement>("#exp-inspect-title");
+        const name = inspect.querySelector<HTMLElement>("#exp-inspect-name");
+        if (image) { image.src = frame.dataset.image || ""; image.alt = frame.dataset.title || ""; }
+        if (title) title.textContent = frame.dataset.title || "";
+        if (name) name.textContent = frame.dataset.name || "";
+        inspect.dataset.group = frame.dataset.group || "";
+        const hasLinks = !!(frame.dataset.demoHref || frame.dataset.githubHref);
+        const actions = inspect.querySelector<HTMLElement>("#exp-inspect-actions");
+        const credit = inspect.querySelector<HTMLElement>("#exp-inspect-credit");
+        if (actions) actions.hidden = !hasLinks;
+        if (credit) credit.hidden = hasLinks;
+        for (const [id, url] of [["exp-inspect-demo", frame.dataset.demoHref], ["exp-inspect-github", frame.dataset.githubHref]]) {
+          const link = inspect.querySelector<HTMLAnchorElement>(`#${id}`);
+          if (!link) continue;
+          link.hidden = !url;
+          if (url) link.href = url; else link.removeAttribute("href");
+        }
+        inspect.showModal();
+      };
+      canvas.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        zoomAt(event.clientX, event.clientY, scale * Math.exp(-event.deltaY * .001));
+      }, { passive: false });
+      canvas.addEventListener("pointerdown", (event) => {
+        if (event.button !== 0 && event.pointerType === "mouse") return;
+        if ((event.target as HTMLElement).closest("a, .exp-intro-index, .exp-jumps, .exp-zoom-controls")) return;
+        pressedFrame = (event.target as HTMLElement).closest<HTMLElement>("[data-exp-frame]");
+        pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        canvas.setPointerCapture(event.pointerId);
+        world.classList.remove("is-animating");
+        moved = false;
+        if (pointers.size === 1) pointerStart = { x: event.clientX, y: event.clientY, panX, panY };
+        if (pointers.size === 2) {
+          const [a, b] = [...pointers.values()];
+          const midX = (a.x + b.x) / 2; const midY = (a.y + b.y) / 2;
+          pinchStart = { distance: Math.hypot(a.x - b.x, a.y - b.y), scale, worldX: (midX - panX) / scale, worldY: (midY - panY) / scale };
+          pointerStart = null;
+        }
+        canvas.classList.add("is-panning");
+      });
+      canvas.addEventListener("pointermove", (event) => {
+        if (!pointers.has(event.pointerId)) return;
+        pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        if (pointers.size === 2 && pinchStart) {
+          const [a, b] = [...pointers.values()];
+          const midX = (a.x + b.x) / 2; const midY = (a.y + b.y) / 2;
+          scale = clampScale(pinchStart.scale * Math.hypot(a.x - b.x, a.y - b.y) / Math.max(1, pinchStart.distance));
+          panX = midX - pinchStart.worldX * scale;
+          panY = midY - pinchStart.worldY * scale;
+          moved = true; render();
+        } else if (pointerStart) {
+          panX = pointerStart.panX + event.clientX - pointerStart.x;
+          panY = pointerStart.panY + event.clientY - pointerStart.y;
+          if (Math.hypot(event.clientX - pointerStart.x, event.clientY - pointerStart.y) > 5) moved = true;
+          render();
+        }
+      });
+      const endPointer = (event: PointerEvent) => {
+        pointers.delete(event.pointerId);
+        if (event.type === "pointerup" && pointers.size === 0 && pressedFrame && !moved) {
+          openFrame(pressedFrame);
+          suppressClick = true;
+          setTimeout(() => { suppressClick = false; }, 0);
+        }
+        pressedFrame = null;
+        if (pointers.size === 1) {
+          const [remaining] = [...pointers.values()];
+          pointerStart = { x: remaining.x, y: remaining.y, panX, panY };
+        } else { pointerStart = null; pinchStart = null; canvas.classList.remove("is-panning"); }
+        if (moved) setTimeout(() => { moved = false; }, 0);
+      };
+      canvas.addEventListener("pointerup", endPointer);
+      canvas.addEventListener("pointercancel", endPointer);
+      canvas.addEventListener("click", (event) => {
+        if (suppressClick) { suppressClick = false; return; }
+        if ((event.target as HTMLElement).closest(".archive-frame")) return;
+        const frame = (event.target as HTMLElement).closest<HTMLElement>("[data-exp-frame]");
+        if (frame && !moved) openFrame(frame);
+      });
+      world.addEventListener("focusin", (event) => {
+        const frame = (event.target as HTMLElement).closest<HTMLElement>(".exp-frame");
+        if (frame && frame !== world.querySelector(".is-selected")) {
+          centerOn(frame, true);
+          setSelected(frame);
+        }
+      });
+      document.querySelectorAll<HTMLButtonElement>("[data-exp-jump]").forEach((button) => button.addEventListener("click", () => {
+        const target = document.getElementById(button.dataset.expJump || "");
+        if (!target) return;
+        centerOn(target.closest<HTMLElement>(".exp-group") || target, true);
+        setSelected(target);
+      }));
+      document.querySelectorAll<HTMLButtonElement>("[data-exp-zoom]").forEach((button) => button.addEventListener("click", () => zoomAt(innerWidth / 2, innerHeight / 2, scale * (button.dataset.expZoom === "in" ? 1.2 : 1 / 1.2))));
+      const reset = () => { centerOn(intro, true); setSelected(intro); };
+      document.querySelector("#exp-reset")?.addEventListener("click", reset);
+      window.addEventListener("keydown", (event) => {
+        if (document.querySelector("#archive-preview[open]") || (event.target as HTMLElement).closest(".archive-stage, input, textarea, select, [contenteditable]") || inspect?.open || event.metaKey || event.ctrlKey || event.altKey) return;
+        if (event.key.toLowerCase() === "r" || event.key === "0") { event.preventDefault(); reset(); }
+        else if (event.key === "+" || event.key === "=") { event.preventDefault(); zoomAt(innerWidth / 2, innerHeight / 2, scale * 1.2); }
+        else if (event.key === "-") { event.preventDefault(); zoomAt(innerWidth / 2, innerHeight / 2, scale / 1.2); }
+        else if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) {
+          event.preventDefault(); world.classList.remove("is-animating");
+          if (event.key === "ArrowLeft") panX += 90;
+          if (event.key === "ArrowRight") panX -= 90;
+          if (event.key === "ArrowUp") panY += 90;
+          if (event.key === "ArrowDown") panY -= 90;
+          render();
+        }
+      }, { signal });
+      addEventListener("resize", () => { if (world.querySelector(".is-selected") === intro) centerOn(intro); }, { signal });
+      if (initialCamera) render();
+      else {
+        centerOn(intro);
+        requestAnimationFrame(() => centerOn(intro));
+      }
+    }
+    document.querySelector("#exp-inspect-close")?.addEventListener("click", () => inspect?.close());
+    inspect?.addEventListener("click", (event) => { if (event.target === inspect) inspect.close(); });
+    };
+    document.addEventListener("astro:page-load", initializeCanvas);
+  </script>
+</PortfolioLayout>

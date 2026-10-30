@@ -20,13 +20,13 @@ const { day } = Astro.props;
   <!-- Uses the portfolio's own idioms so it reads as part of that site rather
        than as this one's chrome: bracketed label, the arrow that travels, and
        the word swap from the header nav. -->
-  <a href="/" class="hero-back" aria-label="Back to home">
+  <a href="/" class="hero-back" id="mw-back" aria-label="Go back">
     <span class="hero-back-brk" aria-hidden="true">[</span>
     <span class="hero-back-arrow" aria-hidden="true">
       <span class="hero-back-tail"></span>
       <span class="hero-back-head">←</span>
     </span>
-    <span class="hero-back-label">back to home</span>
+    <span class="hero-back-label">back</span>
     <span class="hero-back-brk" aria-hidden="true">]</span>
   </a>
 
@@ -788,8 +788,35 @@ const { day } = Astro.props;
     document.addEventListener("pointerleave", () => { last = null; });
   };
 
+  /**
+   * Returns to wherever you came from.
+   *
+   * The href stays "/" so it is a real link — middle-click, open-in-new-tab and
+   * a visitor arriving straight here all still work. It only becomes a history
+   * step when there is somewhere on this site to step back to, which is what
+   * makes it "back" rather than "home".
+   */
+  const initBack = () => {
+    const back = document.getElementById("mw-back") as HTMLAnchorElement | null;
+    if (!back) return;
+
+    back.addEventListener("click", (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      const from = document.referrer;
+      if (!from) return;
+      try {
+        if (new URL(from).origin !== location.origin) return;
+      } catch {
+        return;
+      }
+      e.preventDefault();
+      history.back();
+    });
+  };
+
   document.addEventListener("astro:page-load", () => {
     initDeck();
     initPaint();
+    initBack();
   });
 </script>

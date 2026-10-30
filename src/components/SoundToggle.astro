@@ -1,0 +1,9 @@
+---
+interface Props { class?: string; }
+const { class: className } = Astro.props;
+---
+
+<button class:list={["folio-sound", className]} type="button" aria-label="Unmute music and interface sounds" aria-pressed="false" title="Unmute music and interface sounds">
+  <svg class="folio-speaker-muted" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3.5 5 7H2v6h3l4 3.5v-13ZM13 7l5 6M18 7l-5 6" /></svg>
+  <svg class="folio-speaker-unmuted" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3.5 5 7H2v6h3l4 3.5v-13ZM12 7c1.6 1.6 1.6 4.4 0 6M14.5 4.5c3 3 3 8 0 11" /></svg>
+</button>

@@ -1,0 +1,51 @@
+.folio-inspect-toggle { flex: none; width: 36px; height: 20px; padding: 0; border: 0; display: inline-flex; align-items: center; justify-content: center; gap: 4px; background: none; color: var(--folio-ink); font-size: 15px; line-height: 1; letter-spacing: -.02em; text-decoration: none; cursor: pointer; }
+.folio-inspect-toggle svg { width: 16px; height: 16px; color: var(--folio-accent); }
+.folio-inspect-toggle:hover { opacity: .65; }
+.folio-inspect-toggle[aria-pressed="true"] { color: var(--folio-accent); }
+#folio-inspection { --inspection-accent: var(--folio-accent); --inspection-rule: color-mix(in srgb, var(--inspection-accent) 24%, transparent); position: relative; z-index: 110; color: var(--folio-ink); font-family: "Geist Variable", Arial, sans-serif; }
+#folio-inspection [hidden], #folio-inspection[hidden] { display: none !important; }
+.inspection-guides { position: fixed; inset: 0; z-index: 1; pointer-events: none; }
+.inspection-guides i { position: absolute; top: 0; bottom: 0; border-left: 1px dashed var(--inspection-rule); opacity: .3; }
+.inspection-guides i:nth-child(1) { left: var(--inspection-title-left); }
+.inspection-guides i:nth-child(2) { left: var(--inspection-copy-left); }
+.inspection-guides i:nth-child(3) { left: var(--inspection-copy-right); }
+.inspection-guides i:nth-child(4) { left: var(--inspection-title-right); }
+.inspection-outline { position: fixed; z-index: 2; border: 1px solid var(--inspection-rule); border-radius: 2px; pointer-events: none; }
+.inspection-outline.is-selected { border-color: var(--inspection-accent); }
+.inspection-marker { position: fixed; z-index: 3; min-width: 32px; min-height: 24px; padding: 3px 5px; border: 0; border-radius: 2px; background: var(--folio-bg); color: var(--inspection-accent); font: inherit; font-size: 10px; font-weight: 500; line-height: 18px; font-variant-numeric: tabular-nums; cursor: pointer; }
+.inspection-marker:hover, .inspection-marker[aria-expanded="true"] { background: var(--inspection-accent); color: var(--folio-bg); }
+.inspection-marker:focus-visible { outline: 1px solid var(--inspection-accent); outline-offset: 3px; }
+.inspection-panel { position: fixed; z-index: 6; width: 340px; max-width: calc(100vw - 32px); max-height: calc(100dvh - 110px); overflow: auto; padding: 18px 20px 6px; border: 1px solid color-mix(in srgb, var(--folio-ink) 18%, var(--folio-bg)); border-radius: 3px; background: var(--folio-bg); box-shadow: 0 6px 28px rgb(0 0 0 / .06); animation: inspection-note-in 140ms ease-out; overscroll-behavior: contain; }
+.inspection-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.inspection-panel h2 { display: flex; align-items: center; gap: 9px; margin: 0; font-size: 11px; font-weight: 500; line-height: 18px; letter-spacing: .025em; text-transform: uppercase; }
+.inspection-panel h2 > span:first-child { color: var(--inspection-accent); font-variant-numeric: tabular-nums; }
+.inspection-close { flex: none; width: 26px; height: 26px; margin: -5px -8px -5px 0; border: 0; background: none; color: var(--folio-muted); font: inherit; font-size: 20px; cursor: pointer; }
+.inspection-close:hover { color: var(--folio-ink); }
+.inspection-tabs { display: flex; gap: 22px; margin-top: 18px; border-bottom: 1px solid color-mix(in srgb, var(--folio-ink) 12%, transparent); }
+.inspection-tabs button { position: relative; padding: 0 0 9px; border: 0; background: none; color: var(--folio-copy); font: inherit; font-size: 11px; font-weight: 500; line-height: 16px; letter-spacing: .04em; text-transform: uppercase; cursor: pointer; }
+.inspection-tabs button[aria-selected="true"] { color: var(--folio-ink); }
+.inspection-tabs button[aria-selected="true"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--inspection-accent); }
+.inspection-panel dl { margin: 0; }
+.inspection-field { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid color-mix(in srgb, var(--folio-ink) 7%, transparent); font-size: 12px; line-height: 1.45; letter-spacing: -.01em; }
+.inspection-field:last-child { border: 0; }
+.inspection-field dt { color: var(--folio-copy); }
+.inspection-field dd { margin: 0; overflow-wrap: anywhere; }
+.inspection-toolbar { position: fixed; z-index: 5; bottom: 22px; left: 24px; max-width: calc(100vw - 48px); width: max-content; display: flex; align-items: center; gap: 24px; padding: 12px 14px 12px 16px; border: 1px solid color-mix(in srgb, var(--folio-ink) 14%, var(--folio-bg)); border-radius: 4px; background: var(--folio-bg); box-shadow: 0 3px 18px rgb(0 0 0 / .04); font-size: 11px; line-height: 18px; }
+.inspection-toolbar-title { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.inspection-toolbar-title > span { color: var(--inspection-accent); font-size: 17px; }
+.inspection-toolbar-hint { color: var(--folio-copy); }
+.inspection-toolbar button { display: inline-flex; align-items: center; gap: 9px; padding: 0 0 0 15px; border: 0; border-left: 1px solid color-mix(in srgb, var(--folio-ink) 15%, transparent); background: none; color: var(--folio-ink); font: inherit; white-space: nowrap; cursor: pointer; }
+.inspection-toolbar kbd { color: var(--folio-muted); font: inherit; font-size: 10px; }
+.inspection-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@keyframes inspection-note-in { from { opacity: 0; } to { opacity: 1; } }
+@media (hover: hover) and (pointer: fine) { #folio-inspection, #folio-inspection button { cursor: var(--folio-cursor-image) 6 6, auto; } }
+@media (max-width: 600px) {
+  .inspection-toolbar { bottom: max(12px, env(safe-area-inset-bottom)); left: 50%; max-width: calc(100vw - 24px); gap: 16px; padding: 11px 12px; transform: translateX(-50%); }
+  .inspection-toolbar-hint { display: none; }
+  .inspection-panel { inset: auto 12px max(70px, calc(env(safe-area-inset-bottom) + 65px)) !important; width: auto; max-width: none; max-height: min(55dvh, 400px); padding: 18px 20px 8px; border-radius: 8px; }
+  .inspection-marker { min-width: 36px; min-height: 32px; font-size: 11px; }
+  .inspection-guides i:nth-child(2), .inspection-guides i:nth-child(3) { display: none; }
+  .inspection-close { width: 36px; height: 32px; }
+  .inspection-tabs button { min-height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) { .inspection-panel { animation: none; } }

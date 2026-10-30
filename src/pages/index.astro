@@ -1,31 +1,192 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import MeanwhileNote from "../components/MeanwhileNote.astro";
-import Footer from "../components/Footer.astro";
+import PortfolioLayout from "../layouts/PortfolioLayout.astro";
+import HeroScrambleText from "../components/HeroScrambleText.astro";
+import PortfolioIntro from "../components/PortfolioIntro.astro";
+import WorkCategoryPicker from "../components/WorkCategoryPicker.astro";
+import ExperimentList from "../components/ExperimentList.astro";
+import { caseStudyPages } from "../data/case-studies";
+import SecuredCoverArtwork from "../components/case-studies/SecuredCoverArtwork.astro";
+import InsetCoverArtwork from "../components/case-studies/InsetCoverArtwork.astro";
+import ArchiveFrame from "../components/archive/ArchiveFrame.astro";
+import { archiveScreens } from "../data/archive";
+import { writingPages } from "../data/writing";
+import { categories, showWriting, writingImage } from "../data/portfolio-content";
+const archiveBlocks: {animated: boolean; stacks: number[][]; heights: number[]}[] = [];
+archiveScreens.forEach((screen, index) => {
+  if (screen.sequence === undefined) {
+    archiveBlocks.push({animated:false,stacks:[[index]],heights:[0]});
+    return;
+  }
+  let block = archiveBlocks.at(-1);
+  if (!block?.animated) {block={animated:true,stacks:[[],[]],heights:[0,.08]}; archiveBlocks.push(block);}
+  const column = block.heights[0] <= block.heights[1] ? 0 : 1;
+  block.stacks[column].push(index);
+  block.heights[column] += screen.height! / screen.width! + .04;
+});
+
+/* Inspect Mode hooks paused; restore these data-inspect attributes to re-enable:
+   .home-hero: "hero-layout"
+   #home-title: "hero-heading"
+   .home-hero picture img: "hero-media"
+   .home-intro a[href^="mailto:"]: "contact-link"
+   .home-desk: "entrance-motion"
+   First case-study .project-showcase: "project-card"
+   PortfolioLayout .folio-main-nav (home only): "navigation"
+*/
 ---
 
-<Layout>
-  <!-- Decorative vertical rules from the Figma frame (x = 10, 30, 40, 1413).
-       Hidden below lg where the fixed 1440 grid no longer applies. -->
-  <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-0 hidden lg:block">
-    <div class="relative mx-auto h-full w-full max-w-[1440px]">
-      <span class="absolute inset-y-0 left-[10px] w-px bg-rule"></span>
-      <span class="absolute inset-y-0 left-[30px] w-px bg-rule"></span>
-      <span class="absolute inset-y-0 left-[40px] w-px bg-rule"></span>
-      <span class="absolute inset-y-0 left-[1413px] w-px bg-rule"></span>
+<PortfolioLayout current="home">
+  <section class="home-hero" aria-labelledby="home-title">
+    <h1 id="home-title"><HeroScrambleText text="it's Joel," /> <picture><source media="(prefers-reduced-motion: reduce)" srcset="/images/redesign/hero-photo.png" /><img src="/images/redesign/hero-photo.webp" width="101" height="52" alt="" /></picture> <HeroScrambleText text="part problem solver, part designer, and increasingly someone who builds what he designs." /></h1>
+    <div class="home-intro">
+      <PortfolioIntro />
     </div>
-  </div>
+    <img class="home-desk" src="/images/redesign/desk-illustration.svg" width="368" height="261" alt="A desk with a computer, lamp, and objects" />
+  </section>
 
-  <div class="relative z-10">
-    <Header />
-    <main>
-      <Hero />
-      <About />
-      <MeanwhileNote />
-    </main>
-    <Footer />
-  </div>
-</Layout>
+  <section class="portfolio-work" id="selected-work" aria-label={showWriting ? "Selected work and writing" : "Selected work"}>
+    <WorkCategoryPicker />
+    <div class="category-tabs" role="tablist" aria-label="Work category">
+      {categories.map(({ key, label, count }, index) => (
+        <button id={`tab-${key}`} class="category-tab" type="button" role="tab" aria-controls={`panel-${key}`} aria-selected={index === 0 ? "true" : "false"} tabindex={index === 0 ? 0 : -1} data-category={key}>{label} <sup>({count})</sup></button>
+      ))}
+    </div>
+
+    <div id="panel-case-studies" class="gallery-panel" role="tabpanel" aria-labelledby="tab-case-studies" tabindex="0">
+      {caseStudyPages.map((study, index) => {
+        const CardTag = study.comingSoon ? "div" : "a";
+        return <article class:list={["project-showcase", { "is-coming-soon": study.comingSoon }]}>
+          <div class="project-showcase-head">
+            <CardTag class="project-title-link" href={study.comingSoon ? undefined : study.href}><div><p class="project-eyebrow">[ Case Study {index + 1} ]</p><h2>{study.cardTitle}</h2></div>{!study.comingSoon && <span class="project-mobile-arrow" aria-hidden="true">↗</span>}</CardTag>
+            {study.comingSoon ? <button class="project-cta" type="button" disabled>Coming soon</button> : <a class="project-cta" href={study.href}>Read Case study →</a>}
+          </div>
+          <CardTag class="project-cover-link" href={study.comingSoon ? undefined : study.href} aria-label={study.comingSoon ? undefined : `Open case study ${index + 1}: ${study.title}`}>{index === 0 ? <SecuredCoverArtwork eager /> : <InsetCoverArtwork src={study.cover} width={study.coverWidth} height={study.coverHeight} alt={study.coverAlt} />}</CardTag>
+        </article>;
+      })}
+    </div>
+
+    <div id="panel-archive" class="gallery-panel archive-gallery" role="tabpanel" aria-labelledby="tab-archive" tabindex="0" hidden>
+      {archiveBlocks.map(block => block.animated ? (
+        <div class="archive-motion-cluster">{block.stacks.map(stack => <div class="archive-motion-stack">{stack.map(index => <ArchiveFrame index={index} />)}</div>)}</div>
+      ) : <ArchiveFrame index={block.stacks[0][0]} />)}
+    </div>
+
+    <div id="panel-experiments" class="gallery-panel" role="tabpanel" aria-labelledby="tab-experiments" tabindex="0" hidden>
+      <ExperimentList />
+    </div>
+
+    {showWriting && <div id="panel-writing" class="gallery-panel writing-list" role="tabpanel" aria-labelledby="tab-writing" tabindex="0" hidden>
+      {writingPages.map((article) => (
+        <a class="writing-card" href={article.href}>
+          <img src={writingImage} width="120" height="120" alt="" loading="lazy" />
+          <div><p class="project-eyebrow">[ Writing {article.number} ]</p><h2>{article.title}</h2><div class="writing-tags">{article.tags.map(tag => <span>{tag}</span>)}</div></div>
+          <span class="writing-read">Read article →</span>
+        </a>
+      ))}
+    </div>}
+  </section>
+
+  <script>
+    const initializeHomePage = () => {
+    if (!document.querySelector(".home-hero")) return;
+    const tabs = [...document.querySelectorAll<HTMLButtonElement>(".category-tab")];
+    const panels = [...document.querySelectorAll<HTMLElement>(".gallery-panel")];
+    const tabList = document.querySelector<HTMLElement>(".category-tabs");
+    const categoryPicker = document.querySelector<HTMLSelectElement>("#mobile-work-category");
+    const validCategories = new Set(tabs.map((tab) => tab.dataset.category));
+    const selectCategory = (category: string, updateUrl = false) => {
+      for (const tab of tabs) {
+        const selected = tab.dataset.category === category;
+        tab.setAttribute("aria-selected", String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+      }
+      for (const panel of panels) panel.hidden = panel.id !== `panel-${category}`;
+      if (categoryPicker) categoryPicker.value = category;
+      const selectedTab = tabs.find((tab) => tab.dataset.category === category);
+      if (selectedTab && tabList && tabList.scrollWidth > tabList.clientWidth) {
+        const tab = selectedTab.getBoundingClientRect();
+        const list = tabList.getBoundingClientRect();
+        tabList.scrollLeft += tab.left - list.left - (list.width - tab.width) / 2;
+      }
+      if (updateUrl) {
+        const url = new URL(location.href);
+        if (category === "case-studies") url.searchParams.delete("category");
+        else url.searchParams.set("category", category);
+        history.replaceState(history.state, "", url);
+        document.dispatchEvent(new Event("folio:tab-change"));
+      }
+    };
+    const requested = new URLSearchParams(location.search).get("category");
+    selectCategory(requested && validCategories.has(requested) ? requested : "case-studies");
+    categoryPicker?.addEventListener("change", () => selectCategory(categoryPicker.value, true));
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => selectCategory(tab.dataset.category || "case-studies", true));
+      tab.addEventListener("keydown", (event) => {
+        if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(event.key)) return;
+        event.preventDefault();
+        const next = event.key === "ArrowRight" ? index + 1 : event.key === "ArrowLeft" ? index - 1 : event.key === "Home" ? 0 : tabs.length - 1;
+        const destination = tabs[(next + tabs.length) % tabs.length];
+        destination.focus();
+        selectCategory(destination.dataset.category || "case-studies", true);
+      });
+    });
+
+    const glyphs = ["*", "+", "/", ">", "~", "?", "="];
+    const colors = ["#ff5a00", "#e11937", "#1d65d8", "#009b70", "#a53dd1"];
+    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+    document.querySelectorAll<HTMLElement>("[data-hero-word]").forEach((word, wordIndex) => {
+      const original = word.dataset.heroWord || "";
+      const textNode = word.firstChild;
+      const overlay = word.querySelector<HTMLElement>(".hero-scramble-overlay");
+      if (!textNode || !overlay) return;
+      const letters = Array.from(original);
+      const cells = letters.map((letter) => {
+        const cell = document.createElement("span");
+        cell.textContent = letter;
+        overlay.append(cell);
+        return cell;
+      });
+      const letterIndices = letters.map((letter, index) => /[a-z]/i.test(letter) ? index : -1).filter((index) => index >= 0);
+      const settledGlyphs = new Set([letterIndices[Math.floor(letterIndices.length / 2)]]);
+      if (letterIndices.length > 8) settledGlyphs.add(letterIndices[letterIndices.length - 2]);
+      let timers: number[] = [];
+      const reset = () => {
+        timers.forEach(clearTimeout);
+        timers = [];
+        word.classList.remove("is-scrambling");
+        cells.forEach((cell, index) => {
+          cell.textContent = letters[index];
+          cell.style.removeProperty("color");
+        });
+      };
+      word.addEventListener("pointerenter", (event) => {
+        if (event.pointerType === "touch" || reducedMotion.matches) return;
+        reset();
+        const wordBounds = word.getBoundingClientRect();
+        const range = document.createRange();
+        cells.forEach((cell, index) => {
+          range.setStart(textNode, index);
+          range.setEnd(textNode, index + 1);
+          const bounds = range.getBoundingClientRect();
+          cell.style.left = `${bounds.left - wordBounds.left}px`;
+          cell.style.width = `${bounds.width}px`;
+        });
+        word.classList.add("is-scrambling");
+        cells.forEach((cell, index) => {
+          if (!letterIndices.includes(index)) return;
+          for (let step = 0; step < 3; step++) {
+            timers.push(window.setTimeout(() => {
+              cell.textContent = step === 2 && !settledGlyphs.has(index)
+                ? letters[index]
+                : glyphs[(wordIndex + index + step * 2) % glyphs.length];
+              cell.style.color = colors[(wordIndex + index + step) % colors.length];
+            }, index * 24 + step * 52));
+          }
+        });
+      });
+      word.addEventListener("pointerleave", reset);
+    });
+    };
+    document.addEventListener("astro:page-load", initializeHomePage);
+  </script>
+</PortfolioLayout>

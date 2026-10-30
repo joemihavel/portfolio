@@ -1,0 +1,16 @@
+---
+import { securedAssets as assets } from "../../data/secured-design-media";
+---
+<span class="cover-native-rent-card">
+  <span class="rent-card-left-panel"></span>
+  <img class="rent-card-texture" src={assets["rent-card-background"].src} alt="" width={assets["rent-card-background"].width} height={assets["rent-card-background"].height} />
+  <img class="rent-card-frame" src={assets["rent-card-frame"].src} alt="" width={assets["rent-card-frame"].width} height={assets["rent-card-frame"].height} />
+  {["tl", "tr", "bl", "br"].map(corner => <img class:list={["rent-card-corner", `rent-card-${corner}`]} src={assets["rent-card-corner"].src} alt="" width={assets["rent-card-corner"].width} height={assets["rent-card-corner"].height} />)}
+  <span class="rent-card-heading"><span>Upcoming rent</span><strong>Feb ‘26</strong></span>
+  <span class="rent-card-sticker"><img src={assets["rent-card-seal"].src} alt="" width={assets["rent-card-seal"].width} height={assets["rent-card-seal"].height} /><img src={assets["rent-card-logo"].src} alt="" width={assets["rent-card-logo"].width} height={assets["rent-card-logo"].height} /></span>
+  <img class="rent-card-rule" src={assets["rent-card-divider"].src} alt="" width={assets["rent-card-divider"].width} height={assets["rent-card-divider"].height} />
+  <span class="rent-card-bottom">
+    <span class="rent-card-amount"><span><s>₹40,000</s> <strong>₹39,200</strong></span><span class="rent-card-saving">saved ₹800</span></span>
+    <span>Refer a friend to pay less rent →</span>
+  </span>
+</span>

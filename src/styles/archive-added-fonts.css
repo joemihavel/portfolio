@@ -1,0 +1,10 @@
+@font-face { font-family: ArchivePoppins; src: url('/fonts/archive/Poppins-1.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: ArchiveManrope; src: url('/fonts/archive/Manrope-1.woff2') format('woff2'); font-style: normal; font-weight: 200 800; font-display: swap; }
+@font-face { font-family: ArchiveDMSans; src: url('/fonts/archive/DMSans-1.woff2') format('woff2'); font-style: normal; font-weight: 100 1000; font-display: swap; }
+@font-face { font-family: ArchiveSourceCodePro; src: url('/fonts/archive/SourceCodePro-1.woff2') format('woff2'); font-style: normal; font-weight: 200 900; font-display: swap; }
+@font-face { font-family: ArchiveRobotoMono; src: url('/fonts/archive/RobotoMono-1.woff2') format('woff2'); font-style: normal; font-weight: 100 700; font-display: swap; }
+@font-face { font-family: ArchiveRoboto; src: url('/fonts/archive/Roboto-1.woff2') format('woff2'); font-style: normal; font-weight: 100 900; font-display: swap; }
+@font-face { font-family: ArchivePoppins; src: url('/fonts/archive/Poppins-2.woff2') format('woff2'); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: ArchivePoppins; src: url('/fonts/archive/Poppins-3.woff2') format('woff2'); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: ArchivePlusJakartaSans; src: url('/fonts/PlusJakartaSans-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: ArchivePlusJakartaSans; src: url('/fonts/PlusJakartaSans-SemiBold.otf') format('opentype'); font-weight: 600; font-style: normal; font-display: swap; }

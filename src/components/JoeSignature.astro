@@ -1,0 +1,55 @@
+---
+import signature from "../assets/joe-signature.svg?raw";
+---
+
+<div class="folio-footer-mark joe-signature" role="img" aria-label="joe" set:html={signature} />
+
+<script>
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  document.addEventListener("astro:page-load", () => {
+  document.querySelectorAll<HTMLElement>(".joe-signature").forEach((mark) => {
+    if (mark.dataset.signatureInitialized || reducedMotion.matches || !("IntersectionObserver" in window) || document.documentElement.dataset.view === "experimental") return;
+    mark.dataset.signatureInitialized = "true";
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      mark.classList.add("is-writing");
+      observer.disconnect();
+    }, { threshold: .65, rootMargin: "0px 0px -16px 0px" });
+    const finish = () => {
+      mark.classList.remove("signature-ready", "is-writing");
+      mark.classList.add("is-written");
+      observer.disconnect();
+      reducedMotion.removeEventListener("change", onMotionChange);
+      window.removeEventListener("pagehide", finish);
+    };
+    const onMotionChange = () => { if (reducedMotion.matches) finish(); };
+    mark.addEventListener("animationend", (event) => {
+      if ((event.target as Element).classList.contains("joe-signature-dot")) finish();
+    });
+    reducedMotion.addEventListener("change", onMotionChange);
+    window.addEventListener("pagehide", finish, { once: true });
+    mark.classList.add("signature-ready");
+    observer.observe(mark);
+  });
+  });
+</script>
+
+<style>
+  .joe-signature :global(.joe-signature-stroke) { stroke-dasharray: 100; stroke-dashoffset: 0; }
+  .signature-ready :global(.joe-signature-stroke) { stroke-dashoffset: 100; opacity: 0; }
+  .signature-ready :global(.joe-signature-dot) { opacity: 0; }
+  .is-writing :global(.joe-signature-j) { animation: joe-ink-line 420ms cubic-bezier(.4, 0, .2, 1) both; }
+  .is-writing :global(.joe-signature-o) { animation: joe-ink-line 360ms cubic-bezier(.4, 0, .2, 1) 310ms both; }
+  .is-writing :global(.joe-signature-e) { animation: joe-ink-line 400ms cubic-bezier(.4, 0, .2, 1) 620ms both; }
+  .is-writing :global(.joe-signature-dot) { animation: joe-ink-dot 100ms ease-out 1020ms both; }
+  @keyframes joe-ink-line {
+    0% { stroke-dashoffset: 100; opacity: 0; }
+    1% { opacity: 1; }
+    100% { stroke-dashoffset: 0; opacity: 1; }
+  }
+  @keyframes joe-ink-dot { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .joe-signature :global(.joe-signature-stroke) { animation: none; stroke-dashoffset: 0; opacity: 1; }
+    .joe-signature :global(.joe-signature-dot) { animation: none; opacity: 1; }
+  }
+</style>

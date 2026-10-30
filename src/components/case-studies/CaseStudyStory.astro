@@ -1,0 +1,31 @@
+---
+import type { CaseStudyStory } from "../../data/secured-case-study";
+interface Props { story: CaseStudyStory; next: { href: string; title: string }; }
+const { story, next } = Astro.props;
+---
+
+<section id="overview" class="about-section case-story-section" aria-labelledby="overview-title">
+  <h1 id="overview-title" class="editorial-title">{story.title}</h1>
+  <div class="about-prose"><p>{story.summary}</p></div>
+</section>
+
+{story.sections.map((section, index) => (
+  <section id={section.id} class="about-section case-story-section" aria-labelledby={`${section.id}-title`}>
+    <h2 id={`${section.id}-title`}>{section.title}</h2>
+    <div class="about-prose">
+      {section.blocks.map(block => (
+        block.type === "paragraph" ? <p set:html={block.html} /> :
+        block.type === "heading" ? <h3>{block.text}</h3> :
+        block.type === "list" ? <ul>{block.items.map(item => <li set:html={item} />)}</ul> :
+        block.type === "link" ? <p><strong>{block.label}:</strong> <a href={block.href} target="_blank" rel="noreferrer">{block.href}</a></p> :
+        <div class="case-results-table" role="region" aria-label="Secured V1 and V2 results" tabindex="0">
+          <table>
+            <thead><tr>{block.headers.map(header => <th scope="col">{header}</th>)}</tr></thead>
+            <tbody>{block.rows.map(row => <tr><th scope="row">{row[0]}</th>{row.slice(1).map(cell => <td>{cell}</td>)}</tr>)}</tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+    {index === story.sections.length - 1 && <nav class="case-pagination" aria-label="More case studies"><a href="/#selected-work">← All work</a><a href={next.href}>Next: {next.title} →</a></nav>}
+  </section>
+))}

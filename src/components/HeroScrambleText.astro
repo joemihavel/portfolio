@@ -1,0 +1,14 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+{text.split(" ").map((word, index) => (
+  <>
+    {index > 0 ? " " : null}
+    <span class="hero-scramble-word" data-hero-word={word}>{word}<span class="hero-scramble-overlay" aria-hidden="true"></span></span>
+  </>
+))}

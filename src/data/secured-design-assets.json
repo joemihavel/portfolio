@@ -1,0 +1,318 @@
+{
+  "agreement-v1": {
+    "src": "/images/secured/agreement-v1.png",
+    "width": 2564,
+    "height": 1443,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30555"
+  },
+  "launch": {
+    "src": "/images/secured/launch.png",
+    "width": 2564,
+    "height": 1443,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30389"
+  },
+  "hero": {
+    "src": "/images/secured/hero.png",
+    "width": 2564,
+    "height": 1443,
+    "format": "png",
+    "pages": 1,
+    "node": "35:29291"
+  },
+  "waitlist": {
+    "src": "/images/secured/waitlist.png",
+    "width": 2564,
+    "height": 1443,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30912"
+  },
+  "agreement-v2": {
+    "src": "/images/secured/agreement-v2.png",
+    "width": 2564,
+    "height": 1443,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30646"
+  },
+  "35-30382-building1": {
+    "src": "/images/secured/35-30382-building1.gif",
+    "width": 640,
+    "height": 640,
+    "format": "gif",
+    "pages": 35,
+    "node": "35:30382",
+    "poster": "/images/secured/35-30382-building1.poster.webp",
+    "video": "/images/secured/35-30382-building1.mp4"
+  },
+  "referrals": {
+    "src": "/images/secured/referrals.png",
+    "width": 2564,
+    "height": 1443,
+    "format": "png",
+    "pages": 1,
+    "node": "35:31845"
+  },
+  "35-30382-image14": {
+    "src": "/images/secured/35-30382-image14.png",
+    "width": 3456,
+    "height": 1776,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30382"
+  },
+  "35-30470-rectangle2533": {
+    "src": "/images/secured/35-30470-rectangle2533.gif",
+    "width": 720,
+    "height": 720,
+    "format": "gif",
+    "pages": 130,
+    "node": "35:30470",
+    "poster": "/images/secured/35-30470-rectangle2533.poster.webp",
+    "video": "/images/secured/35-30470-rectangle2533.mp4"
+  },
+  "35-30470-rectangle2534": {
+    "src": "/images/secured/35-30470-rectangle2534.png",
+    "width": 638,
+    "height": 432,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30470"
+  },
+  "35-30470-image15": {
+    "src": "/images/secured/35-30470-image15.png",
+    "width": 96,
+    "height": 96,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30470"
+  },
+  "35-30470-frame": {
+    "src": "/images/secured/35-30470-frame.svg",
+    "format": "svg",
+    "pages": 1,
+    "node": "35:30470"
+  },
+  "35-30522-frame": {
+    "src": "/images/secured/35-30522-frame.svg",
+    "format": "svg",
+    "pages": 1,
+    "node": "35:30522"
+  },
+  "35-30470-frame1": {
+    "src": "/images/secured/35-30470-frame1.svg",
+    "format": "svg",
+    "pages": 1,
+    "node": "35:30470"
+  },
+  "35-30522-frame1": {
+    "src": "/images/secured/35-30522-frame1.svg",
+    "format": "svg",
+    "pages": 1,
+    "node": "35:30522"
+  },
+  "35-42367-rectangle2530": {
+    "src": "/images/secured/35-42367-rectangle2530.png",
+    "width": 1658,
+    "height": 994,
+    "format": "png",
+    "pages": 1,
+    "node": "35:42367"
+  },
+  "35-42367-slide16917": {
+    "src": "/images/secured/35-42367-slide16917.gif",
+    "width": 800,
+    "height": 411,
+    "format": "gif",
+    "pages": 36,
+    "node": "35:42367",
+    "poster": "/images/secured/35-42367-slide16917.poster.webp",
+    "video": "/images/secured/35-42367-slide16917.mp4"
+  },
+  "35-30878-rectangle2534": {
+    "src": "/images/secured/35-30878-rectangle2534.png",
+    "width": 506,
+    "height": 380,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30878"
+  },
+  "35-42367-rectangle2531": {
+    "src": "/images/secured/35-42367-rectangle2531.png",
+    "width": 2252,
+    "height": 1136,
+    "format": "png",
+    "pages": 1,
+    "node": "35:42367"
+  },
+  "35-30878-rectangle2530": {
+    "src": "/images/secured/35-30878-rectangle2530.gif",
+    "width": 800,
+    "height": 411,
+    "format": "gif",
+    "pages": 300,
+    "node": "35:30878",
+    "poster": "/images/secured/35-30878-rectangle2530.poster.webp",
+    "video": "/images/secured/35-30878-rectangle2530.mp4"
+  },
+  "35-42398-image151": {
+    "src": "/images/secured/35-42398-image151.png",
+    "width": 1598,
+    "height": 530,
+    "format": "png",
+    "pages": 1,
+    "node": "35:42398"
+  },
+  "35-30551-success1": {
+    "src": "/images/secured/35-30551-success1.gif",
+    "width": 150,
+    "height": 150,
+    "format": "gif",
+    "pages": 44,
+    "node": "35:30551",
+    "poster": "/images/secured/35-30551-success1.poster.webp"
+  },
+  "35-42398-img68701": {
+    "src": "/images/secured/35-42398-img68701.jpg",
+    "width": 772,
+    "height": 234,
+    "format": "jpeg",
+    "pages": 1,
+    "node": "35:42398"
+  },
+  "35-42367-rectangle2532": {
+    "src": "/images/secured/35-42367-rectangle2532.png",
+    "width": 3456,
+    "height": 1766,
+    "format": "png",
+    "pages": 1,
+    "node": "35:42367"
+  },
+  "35-30895-rectangle2535": {
+    "src": "/images/secured/35-30895-rectangle2535.gif",
+    "width": 800,
+    "height": 1732,
+    "format": "gif",
+    "pages": 151,
+    "node": "35:30895",
+    "poster": "/images/secured/35-30895-rectangle2535.poster.webp",
+    "video": "/images/secured/35-30895-rectangle2535.mp4"
+  },
+  "35-30551-rectangle2534": {
+    "src": "/images/secured/35-30551-rectangle2534.gif",
+    "width": 220,
+    "height": 220,
+    "format": "gif",
+    "pages": 21,
+    "node": "35:30551",
+    "poster": "/images/secured/35-30551-rectangle2534.poster.webp"
+  },
+  "cover-welcome": {
+    "src": "/images/secured/cover-welcome.png",
+    "width": 684,
+    "height": 1311,
+    "format": "png",
+    "pages": 1,
+    "node": "35:29293"
+  },
+  "cover-payments": {
+    "src": "/images/secured/cover-payments.png",
+    "width": 684,
+    "height": 1282,
+    "format": "png",
+    "pages": 1,
+    "node": "35:29331"
+  },
+  "cover-score": {
+    "src": "/images/secured/cover-score.png",
+    "width": 684,
+    "height": 1271,
+    "format": "png",
+    "pages": 1,
+    "node": "35:29984"
+  },
+  "cover-rent-card": {
+    "src": "/images/secured/cover-rent-card.png",
+    "width": 144,
+    "height": 96,
+    "format": "png",
+    "pages": 1,
+    "node": "35:29488"
+  },
+  "cover-logo": {
+    "src": "/images/secured/cover-logo.svg",
+    "width": 15,
+    "height": 17,
+    "format": "svg",
+    "pages": 1,
+    "node": "35:29299"
+  },
+  "rent-card-background": {
+    "src": "/images/secured/rent-card-background.png",
+    "width": 736,
+    "height": 1308,
+    "format": "png",
+    "pages": 1,
+    "node": "35:29488"
+  },
+  "rent-card-corner": {
+    "src": "/images/secured/rent-card-corner.svg",
+    "width": 5.21893,
+    "height": 5.21893,
+    "format": "svg",
+    "pages": 1,
+    "node": "35:29488"
+  },
+  "rent-card-frame": {
+    "src": "/images/secured/rent-card-frame.svg",
+    "width": 132.648,
+    "height": 180.489,
+    "format": "svg",
+    "pages": 1,
+    "node": "35:29488"
+  },
+  "rent-card-seal": {
+    "src": "/images/secured/rent-card-seal.svg",
+    "width": 29.3095,
+    "height": 29.3095,
+    "format": "svg",
+    "pages": 1,
+    "node": "35:29488"
+  },
+  "rent-card-logo": {
+    "src": "/images/secured/rent-card-logo.svg",
+    "width": 8.09903,
+    "height": 9.70667,
+    "format": "svg",
+    "pages": 1,
+    "node": "35:29488"
+  },
+  "rent-card-divider": {
+    "src": "/images/secured/rent-card-divider.svg",
+    "width": 123.08,
+    "height": 0.108728,
+    "format": "svg",
+    "pages": 1,
+    "node": "35:29488"
+  },
+  "cover-compass": {
+    "src": "/images/secured/cover-compass.svg",
+    "width": 236,
+    "height": 236,
+    "format": "svg",
+    "pages": 1,
+    "node": "35:29987"
+  },
+  "cover-score-stats": {
+    "src": "/images/secured/cover-score-stats.png",
+    "width": 66,
+    "height": 119,
+    "format": "png",
+    "pages": 1,
+    "node": "35:30074"
+  }
+}

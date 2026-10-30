@@ -2,7 +2,7 @@
 // Header: wordmark, click-to-cycle city with live time + temperature, theme
 // switcher, section nav. Matches Figma frame #51:52666.
 import { CITIES } from "../data/cities";
-import { SURPRISE_THEMES } from "../data/themes";
+import { SURPRISE_THEMES, THEME_BACKGROUNDS } from "../data/themes";
 
 const { current = "home" } = Astro.props;
 
@@ -149,42 +149,18 @@ const nav = [
     animation-delay: calc(var(--opt-i) * 26ms);
   }
 
-  /* Theme icons acknowledge the click. */
   [data-theme-btn] {
     display: inline-block;
-    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-  [data-theme-btn]:hover {
-    transform: scale(1.18);
-  }
-  [data-theme-btn].pop {
-    animation: theme-pop 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-
-  @keyframes theme-pop {
-    0% {
-      transform: scale(1) rotate(0);
-    }
-    45% {
-      transform: scale(1.4) rotate(18deg);
-    }
-    100% {
-      transform: scale(1) rotate(0);
-    }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    #city-list:not([hidden]) .city-opt,
-    [data-theme-btn].pop {
+    #city-list:not([hidden]) .city-opt {
       animation: none;
-    }
-    [data-theme-btn] {
-      transition: none;
     }
   }
 </style>
 
-<script define:vars={{ CITIES, SURPRISE_THEMES }}>
+<script define:vars={{ CITIES, SURPRISE_THEMES, THEME_BACKGROUNDS }}>
   /* ---------------------------------------------------------------- city */
   const timeEl = document.getElementById("local-time");
   const wxEl = document.getElementById("local-weather");
@@ -342,7 +318,9 @@ const nav = [
 
   /* --------------------------------------------------------------- theme */
   const root = document.documentElement;
-  const meta = document.querySelector('meta[name="theme-color"]');
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let themeTransitionActive = false;
+  let queuedTheme = null;
 
   const paintActive = () => {
     const t = root.dataset.theme || "light";
@@ -355,7 +333,8 @@ const nav = [
       el.querySelector("button")?.classList.toggle("underline-offset-2", on);
       el.classList.toggle("text-bracket", !on);
     });
-    if (meta) meta.content = getComputedStyle(root).getPropertyValue("--background").trim();
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = THEME_BACKGROUNDS[t] || THEME_BACKGROUNDS.light;
   };
 
   const apply = (t) => {
@@ -364,21 +343,85 @@ const nav = [
     paintActive();
   };
 
-  document.querySelectorAll("[data-theme-btn]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      // Retrigger the pop each click, not just the first.
-      btn.classList.remove("pop");
-      void btn.offsetWidth;
-      btn.classList.add("pop");
+  const changeTheme = (btn) => {
+    if (themeTransitionActive) {
+      queuedTheme = btn;
+      return;
+    }
+    const kind = btn.dataset.themeBtn;
+    const pool = SURPRISE_THEMES.filter((theme) => theme !== root.dataset.theme);
+    const next = kind === "surprise" ? pool[Math.floor(Math.random() * pool.length)] : kind || "light";
+    if (next === root.dataset.theme) return;
+    if (!document.startViewTransition || reducedMotion.matches) {
+      apply(next);
+      return;
+    }
 
-      const kind = btn.dataset.themeBtn;
-      if (kind === "surprise") {
-        // Always land on a theme different from the current one.
-        const pool = SURPRISE_THEMES.filter((t) => t !== root.dataset.theme);
-        apply(pool[Math.floor(Math.random() * pool.length)]);
-      } else {
-        apply(kind);
+    const bounds = btn.getBoundingClientRect();
+    const x = bounds.left + bounds.width / 2;
+    const y = bounds.top + bounds.height / 2;
+    const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y)) + 2;
+    const scroll = window.scrollY;
+    const frames = Array.from({ length: 101 }, (_, step) => {
+      const t = step / 100;
+      const eased = .15 * t + .85 * t * t * (3 - 2 * t);
+      const scale = .005 + .995 * eased;
+      return { percent: step, scale: scale.toFixed(6), inverse: (1 / scale).toFixed(6) };
+    });
+    const revealStyle = document.createElement("style");
+    revealStyle.textContent = `
+      html.theme-reveal-active body { transition: none !important; }
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none !important; mix-blend-mode: normal; }
+      ::view-transition-old(root) { z-index: 0; }
+      ::view-transition-new(root) { opacity: 0 !important; }
+      ::view-transition-group(old-theme) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        clip-path: circle(${radius}px at ${x}px ${y}px);
+        transform-origin: ${x}px ${y}px;
+        animation: old-theme-shell 380ms linear both !important;
       }
+      ::view-transition-image-pair(old-theme) { width: 100%; height: 100%; }
+      ::view-transition-old(old-theme) { display: none !important; }
+      ::view-transition-new(old-theme) {
+        transform-origin: ${x}px ${y}px;
+        object-fit: none;
+        object-position: 0 -${scroll}px;
+        animation: old-theme-content 380ms linear both !important;
+      }
+      @keyframes old-theme-shell { ${frames.map(({ percent, scale }) => `${percent}% { transform: scale(${scale}); }`).join("")} }
+      @keyframes old-theme-content { ${frames.map(({ percent, inverse }) => `${percent}% { transform: scale(${inverse}); }`).join("")} }
+    `;
+    document.head.append(revealStyle);
+    root.classList.add("theme-reveal-active");
+    themeTransitionActive = true;
+    const surface = document.body;
+    const transition = document.startViewTransition(() => {
+      apply(next);
+      surface.style.viewTransitionName = "old-theme";
+    });
+    transition.finished.finally(() => {
+      surface.style.removeProperty("view-transition-name");
+      revealStyle.remove();
+      root.classList.remove("theme-reveal-active");
+      themeTransitionActive = false;
+      if (queuedTheme) {
+        const queued = queuedTheme;
+        queuedTheme = null;
+        changeTheme(queued);
+      }
+    });
+  };
+  document.querySelectorAll("[data-theme-btn]").forEach((btn) => {
+    btn.addEventListener("pointerdown", (event) => {
+      if (event.isPrimary && event.button === 0) changeTheme(btn);
+    });
+    btn.addEventListener("click", (event) => {
+      if (event.detail === 0 || !("PointerEvent" in window)) changeTheme(btn);
     });
   });
 

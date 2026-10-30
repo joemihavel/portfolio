@@ -1,0 +1,23 @@
+---
+import PortfolioLayout from "./PortfolioLayout.astro";
+import SectionNavigation from "../components/SectionNavigation.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  current: "about" | "case-study" | "writing";
+  sections: { id: string; label: string }[];
+  class?: string;
+  backHref?: string;
+  backLabel?: string;
+}
+const { title, description, current, sections, class: className, backHref, backLabel } = Astro.props;
+---
+
+<PortfolioLayout title={title} description={description} current={current}>
+  <div class:list={["about-shell", className]}>
+    <SectionNavigation sections={sections} backHref={backHref} backLabel={backLabel} />
+    <slot name="aside" />
+    <article class="about-content"><slot /></article>
+  </div>
+</PortfolioLayout>

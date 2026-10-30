@@ -1,0 +1,63 @@
+.secured-cover-art { position: relative; display: block; width: 100%; overflow: hidden; isolation: isolate; border-radius: 5.342px; container-type: inline-size; }
+.secured-cover-art > img { position: absolute; display: block; max-width: none; pointer-events: none; border-radius: 0; }
+.secured-cover-ui { --cover-unit: calc(100cqw / 641); position: absolute; inset: 0; display: block; overflow: hidden; font-family: "Secured Jakarta", sans-serif; pointer-events: none; animation: secured-score-count 9s cubic-bezier(.22, 1, .36, 1) infinite; }
+.cover-splash-window { position: absolute; left: 8.73635%; top: 9.15292%; width: 26.66459%; height: 90.84708%; overflow: hidden; }
+.cover-tape { position: absolute; display: flex; align-items: center; width: calc(368.2294 * var(--cover-unit)); height: calc(16.9615 * var(--cover-unit)); overflow: hidden; font-size: calc(5.21893 * var(--cover-unit)); font-weight: 600; line-height: calc(8.6982 * var(--cover-unit)); letter-spacing: 0; }
+.cover-tape-orange { top: calc(35.08 * var(--cover-unit)); left: calc(-98.78 * var(--cover-unit)); background: #ff9a6d; color: #000; transform: rotate(-.48deg); }
+.cover-tape-dark { top: calc(56.38 * var(--cover-unit)); left: calc(-50.64 * var(--cover-unit)); background: #1a1a1a; color: #fff; transform: rotate(1.11deg); }
+.cover-tape-track, .cover-tape-group { display: flex; flex: none; align-items: center; width: max-content; gap: calc(8.6982 * var(--cover-unit)); white-space: nowrap; }
+.cover-tape-group { padding-right: calc(8.6982 * var(--cover-unit)); }
+.cover-tape-track { gap: 0; animation: secured-tape-scroll 16s linear infinite; }
+.cover-tape-dark .cover-tape-track { animation-duration: 12s; animation-direction: reverse; }
+.secured-cover-art .cover-logo-pulse { position: absolute; left: calc(77.9961 * var(--cover-unit)); top: calc(116.1206 * var(--cover-unit)); width: calc(14.5152 * var(--cover-unit)); height: calc(17.3964 * var(--cover-unit)); max-width: none; object-fit: fill; border-radius: 0; animation: secured-logo-glow 3.8s ease-in-out infinite; }
+.cover-rent-window { position: absolute; left: 36.64928%; top: 27.69421%; width: 26.66459%; height: 26.53643%; overflow: hidden; background: #131313; }
+.cover-rent-track { position: absolute; left: calc(13.91715 * var(--cover-unit)); top: 0; display: flex; gap: calc(8.6982 * var(--cover-unit)); width: max-content; transform: translateX(calc(-151.7839 * var(--cover-unit))); animation: secured-card-swipe 12s cubic-bezier(.4, 0, .2, 1) infinite; }
+.cover-native-rent-card { position: relative; display: block; flex: none; width: calc(143.0857 * var(--cover-unit)); height: calc(95.6804 * var(--cover-unit)); overflow: hidden; border-radius: calc(5.21893 * var(--cover-unit)); background: #1a1a1a; color: #878787; font-size: calc(5.21893 * var(--cover-unit)); line-height: calc(8.6982 * var(--cover-unit)); letter-spacing: 0; }
+.secured-cover-art .cover-native-rent-card img { position: absolute; display: block; max-width: none; border-radius: 0; margin: 0; }
+.rent-card-left-panel { position: absolute; inset: 0 auto 0 0; width: calc(40.882 * var(--cover-unit)); background: #202020; }
+.secured-cover-art .rent-card-texture { left: calc(6.309 * var(--cover-unit)); top: calc(-47.8403 * var(--cover-unit)); width: calc(130.908 * var(--cover-unit)); height: calc(191.361 * var(--cover-unit)); object-fit: cover; opacity: .2304; }
+.secured-cover-art .rent-card-frame { left: calc(4.349 * var(--cover-unit)); top: calc(6.52 * var(--cover-unit)); width: calc(132.648 * var(--cover-unit)); height: calc(180.489 * var(--cover-unit)); }
+.secured-cover-art .rent-card-corner { width: calc(5.219 * var(--cover-unit)); height: calc(5.219 * var(--cover-unit)); }
+.rent-card-tl { left: calc(1.74 * var(--cover-unit)); top: calc(3.91 * var(--cover-unit)); }
+.rent-card-tr { left: calc(135.69 * var(--cover-unit)); top: calc(3.91 * var(--cover-unit)); }
+.rent-card-bl { left: calc(1.74 * var(--cover-unit)); top: calc(86.55 * var(--cover-unit)); }
+.rent-card-br { left: calc(135.69 * var(--cover-unit)); top: calc(86.55 * var(--cover-unit)); }
+.rent-card-heading { position: absolute; left: calc(11.31 * var(--cover-unit)); top: calc(10.76 * var(--cover-unit)); display: flex; flex-direction: column; gap: calc(1.74 * var(--cover-unit)); }
+.secured-cover-art .rent-card-heading strong, .secured-cover-art .rent-card-amount strong { color: #ff9a6d; font-size: calc(6.959 * var(--cover-unit)); font-weight: 500; line-height: calc(10.438 * var(--cover-unit)); }
+.rent-card-sticker { position: absolute; left: calc(103.399 * var(--cover-unit)); top: calc(10.76 * var(--cover-unit)); display: block; width: calc(29.31 * var(--cover-unit)); height: calc(29.31 * var(--cover-unit)); border-radius: 50%; background: #202020; }
+.secured-cover-art .rent-card-sticker img:first-child { inset: 0; width: 100%; height: 100%; }
+.secured-cover-art .rent-card-sticker img:last-child { left: calc(10.68 * var(--cover-unit)); top: calc(9.8 * var(--cover-unit)); width: calc(8.099 * var(--cover-unit)); height: calc(9.707 * var(--cover-unit)); }
+.secured-cover-art .rent-card-rule { left: calc(11.31 * var(--cover-unit)); top: calc(53.06 * var(--cover-unit)); width: calc(123.08 * var(--cover-unit)); height: calc(.1 * var(--cover-unit)); }
+.rent-card-bottom { position: absolute; left: calc(11.31 * var(--cover-unit)); top: calc(60.019 * var(--cover-unit)); display: flex; flex-direction: column; gap: calc(1.74 * var(--cover-unit)); width: calc(123.08 * var(--cover-unit)); }
+.rent-card-amount { display: flex; align-items: center; gap: calc(3.479 * var(--cover-unit)); color: #ff9a6d; }
+.rent-card-amount s { color: #797979; }
+.rent-card-saving { padding: calc(1.74 * var(--cover-unit)) calc(6.959 * var(--cover-unit)); border-radius: calc(86.982 * var(--cover-unit)); background: #131313; white-space: nowrap; }
+.cover-rent-score { position: absolute; left: 66.73350%; top: 39.71550%; display: flex; align-items: center; width: calc(56 * var(--cover-unit)); height: calc(18 * var(--cover-unit)); background: #131313; color: #ff9a6d; font-size: calc(12.1775 * var(--cover-unit)); font-weight: 400; line-height: calc(17.3964 * var(--cover-unit)); letter-spacing: calc(-.4349 * var(--cover-unit)); white-space: pre; font-variant-numeric: tabular-nums; }
+.cover-compass-window { position: absolute; left: 64.56221%; top: 11.92581%; width: 26.66459%; height: 88.07419%; overflow: hidden; }
+.cover-compass-circle { position: absolute; left: calc(53.1195 * var(--cover-unit)); top: calc(93.3197 * var(--cover-unit)); display: block; width: calc(235.9089 * var(--cover-unit)); height: calc(235.9089 * var(--cover-unit)); border-radius: 50%; background: #131313; }
+.secured-cover-art .cover-compass-ring { position: absolute; inset: 0; display: block; width: 100%; height: 100%; max-width: none; object-fit: fill; border-radius: 0; }
+/* Reveal the original orange arc from six o'clock towards the current score.
+   The dial, ticks and reference values stay fixed. One inherited score drives
+   both counters, the fill boundary and the moving value marker. */
+.secured-cover-art .cover-gauge-unfilled { filter: grayscale(1) brightness(.45); mask-image: conic-gradient(from 180deg, transparent 0deg calc(var(--secured-cover-score) * .2deg), #000 calc(var(--secured-cover-score) * .2deg) 84deg, transparent 84deg 360deg); }
+.cover-gauge-marker { position: absolute; inset: 0; display: block; transform: rotate(calc(var(--secured-cover-score) * .2deg - 84deg)); transform-origin: center; }
+.cover-compass-label { position: absolute; display: block; color: #656565; font-size: calc(5.21893 * var(--cover-unit)); font-weight: 700; line-height: calc(8.6982 * var(--cover-unit)); letter-spacing: 0; text-align: center; white-space: nowrap; }
+.cover-compass-current { left: calc(57.52445 * var(--cover-unit)); top: calc(121.45 * var(--cover-unit)); transform: translate(-50%, -50%) rotate(90deg); color: #ff9a6d; font-weight: 300; }
+.cover-stats-clear, .secured-cover-art .cover-score-stats { position: absolute; left: calc(13.9181 * var(--cover-unit)); top: calc(163.9622 * var(--cover-unit)); display: block; width: calc(65.6716 * var(--cover-unit)); height: calc(118.9704 * var(--cover-unit)); border-radius: 0; }
+.cover-stats-clear { background: #131313; }
+.secured-cover-art .cover-score-stats { object-fit: fill; }
+@property --secured-cover-score { syntax: "<integer>"; inherits: true; initial-value: 420; }
+.cover-score-number { counter-reset: secured-score var(--secured-cover-score); }
+.cover-score-number::before { content: counter(secured-score); }
+.is-motion-paused .cover-ui-animated { animation-play-state: paused; }
+@keyframes secured-tape-scroll { to { transform: translateX(-50%); } }
+@keyframes secured-logo-glow { 0%, 100% { transform: scale(1); opacity: .5; filter: drop-shadow(0 0 0 #ff9a6d00); } 50% { transform: scale(1.14); opacity: 1; filter: drop-shadow(0 0 calc(3 * var(--cover-unit)) #ff9a6d99); } }
+@keyframes secured-card-swipe { 0%, 12%, 50%, 62%, 100% { transform: translateX(calc(-151.7839 * var(--cover-unit))); } 25%, 38% { transform: translateX(calc(-303.5678 * var(--cover-unit))); } 75%, 88% { transform: translateX(0); } }
+@keyframes secured-score-count { 0% { --secured-cover-score: 0; } 22%, 100% { --secured-cover-score: 420; } }
+@font-face { font-family: "Secured Jakarta"; src: url("/fonts/PlusJakartaSans-Light.otf") format("opentype"); font-style: normal; font-weight: 300; font-display: swap; }
+@font-face { font-family: "Secured Jakarta"; src: url("/fonts/PlusJakartaSans-Regular.otf") format("opentype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Secured Jakarta"; src: url("/fonts/PlusJakartaSans-Medium.otf") format("opentype"); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: "Secured Jakarta"; src: url("/fonts/PlusJakartaSans-SemiBold.otf") format("opentype"); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: "Secured Jakarta"; src: url("/fonts/PlusJakartaSans-Bold.otf") format("opentype"); font-style: normal; font-weight: 700; font-display: swap; }
+
+@media (prefers-reduced-motion: reduce) { .secured-cover-art .cover-ui-animated { animation-play-state: paused; } .secured-cover-ui { animation: none; } .is-motion-playing .cover-ui-animated { animation-play-state: running; } .is-motion-playing .secured-cover-ui { animation: secured-score-count 9s cubic-bezier(.22, 1, .36, 1) infinite; } }

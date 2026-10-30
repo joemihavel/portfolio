@@ -1,0 +1,46 @@
+.archive-stage-light { color: #1f1f1f; color-scheme: light; }
+.archive-added-slide { position: relative; width: 1024px; height: 576px; overflow: hidden; border-radius: 8.533px; }
+.archive-added-background { position: absolute; inset: 0; width: 1024px; height: 576px; object-fit: cover; }
+.archive-dita-app, .archive-insights-app { position: absolute; width: 860.49px; overflow: hidden; border-radius: 10.33px; outline: 2.583px solid #ffffff7a; }
+.archive-dita-app { left: 81.755px; top: 39.326px; height: 611.904px; background: #f5f6f7; }
+.archive-dita-left { position: absolute; inset: 0 auto 0 0; width: 43.0245px; }
+.archive-dita-right { position: absolute; inset: 0 0 0 auto; width: 28.683px; }
+.archive-dita-breadcrumbs { position: absolute; left: 43.0246px; top: 0; width: 788.7825px; height: 19.122px; }
+.archive-dita-header { position: absolute; left: 43.0246px; top: 19.122px; width: 788.7825px; height: 43.0245px; }
+.archive-dita-main { position: absolute; left: 57.366px; top: 76.488px; width: 760.0995px; display: flex; flex-direction: column; gap: 14.3415px; }
+.archive-dita-summary { height: 39.0976px; flex: none; }
+.archive-dita-columns { display: grid; grid-template-columns: 272.4885px 478.05px; gap: 9.561px; height: 467.6354px; }
+.archive-dita-tree { display: flex; flex-direction: column; overflow: hidden; border: .5976px solid #f0f0f0; border-radius: 1.195px; background: white; }
+.archive-dita-tree-header { height: 39.0976px; flex: none; }
+.archive-dita-tree-body { position: relative; height: 428.5378px; flex: none; background: white; }
+.archive-dita-textures { position: absolute; left: 0; top: 0; width: 272.4885px; display: flex; flex-direction: column; }
+.archive-dita-textures img { display: block; width: 272.4885px; height: 151.2128px; flex: none; }
+.archive-dita-topics { position: absolute; left: 14.3414px; top: 14.3415px; width: 243.8055px; height: 802.7176px; }
+.archive-dita-code { height: 467.6354px; }
+.archive-insights-app { left: 81.7559px; top: 27px; height: 1788.5045px; background: white; }
+.archive-insights-navbar { position: absolute; left: 0; top: 0; width: 860.49px; height: 50.1953px; }
+.archive-insights-heading { position: absolute; left: 110.5482px; top: 59.7562px; width: 456.5378px; height: 41.7805px; }
+.archive-insights-tabs { position: absolute; left: 581.4274px; top: 64.2379px; width: 168.927px; height: 32.9025px; }
+.archive-insights-content { position: absolute; left: 110.5482px; top: 121.3051px; width: 639.3918px; display: flex; flex-direction: column; gap: 19.122px; }
+.archive-insights-stats { height: 52.5855px; flex: none; }
+.archive-insights-highlights { height: 213.3786px; flex: none; }
+.archive-insights-actions { height: 233.0981px; flex: none; }
+/* These legacy Figma instances have scaled children. Render their native
+   component sizes, then apply the source instance scale exactly once. */
+.archive-dita-left > [data-node-id='47:20569'] { width: 72px; height: 1024px; transform: scale(.5975625); transform-origin: top left; }
+.archive-dita-right > [data-node-id='47:20557'] { width: 48px; height: 1024px; transform: scale(.5975625); transform-origin: top left; }
+.archive-dita-breadcrumbs > [data-node-id='47:28674'] { width: 1320px; height: 32px; transform: scale(.5975625); transform-origin: top left; }
+/* Image/branding overrides are already positioned in instance coordinates in
+   the source export. Convert their offsets to the unscaled nav coordinate space. */
+.archive-dita-left [data-node-id='I47:20569;308:10168'],
+.archive-dita-left [data-node-id='I47:20569;308:10169'] { left: calc(7.17px / .5975625); top: calc(577.84px / .5975625); }
+.archive-dita-left [data-node-id='I47:20569;308:10170'] { left: calc(28.65px / .5975625); top: calc(574.26px / .5975625); }
+.archive-dita-left [data-node-id='I47:20569;308:10171'] { left: calc(11.95px / .5975625); top: calc(582.62px / .5975625); }
+.archive-dita-left [data-node-id='I47:20569;308:10186'] { left: calc(9.32px / .5975625); top: calc(513.26px / .5975625); }
+/* Keep the frosted navbar clipped to the source frame's rounded top corners. */
+.archive-insights-navbar { overflow: hidden; border-radius: 10.33px 10.33px 0 0; }
+/* Figma places the chart grid and marks in the same 173px area. Its legacy
+   negative auto-layout gap must not become a 6,000px browser flex margin. */
+.archive-stage [data-node-id='47:47300'] { display: grid; flex: none; height: 173.293px; grid-template: minmax(0, 1fr) / minmax(0, 1fr); }
+.archive-stage [data-node-id='47:47301'],
+.archive-stage [data-node-id='47:47349'] { grid-area: 1 / 1; margin-bottom: 0; min-height: 0; height: 100%; }

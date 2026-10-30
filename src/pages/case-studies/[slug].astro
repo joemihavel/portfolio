@@ -1,0 +1,78 @@
+---
+import EditorialLayout from "../../layouts/EditorialLayout.astro";
+import SecuredCaseStudy from "../../components/case-studies/SecuredCaseStudy.astro";
+import { caseStudyPages, caseStudySections } from "../../data/case-studies";
+
+export function getStaticPaths() {
+  return caseStudyPages.map((study, index) => ({ params: { slug: study.slug }, props: { study, index } }));
+}
+interface Props { study: typeof caseStudyPages[number]; index: number; }
+const { study, index } = Astro.props;
+const next = caseStudyPages[(index + 1) % caseStudyPages.length];
+const sections = study.story ? [{ id: "overview", label: "Overview" }, ...study.story.sections.map(({ id, label }) => ({ id, label }))] : caseStudySections;
+---
+
+<EditorialLayout title={`${study.title} — Joel Mihavel`} description={study.description} current="case-study" sections={sections} class={study.story ? "case-study-shell secured-shell" : "case-study-shell"} backHref="/#selected-work">
+  {!study.story &&
+  <aside slot="aside" class="case-summary" aria-label="Project details">
+    <img src={study.cover} width="290" height="163" alt="Existing portfolio interface artwork used as a placeholder" />
+    <p class="case-draft">[ Placeholder case study ]</p>
+    <dl><div><dt>Role</dt><dd>To be added</dd></div><div><dt>Timeline</dt><dd>To be added</dd></div><div><dt>Status</dt><dd>Draft</dd></div></dl>
+  </aside>
+  }
+
+  {study.story ? <SecuredCaseStudy next={next} /> : <>
+  <section id="overview" class="about-section" aria-labelledby="overview-title">
+    <h1 id="overview-title" class="editorial-title">{study.title}</h1>
+    <div class="about-prose">
+      <p>A place for the story behind the work. This is a placeholder page; the project context, process, and results are still to be added.</p>
+      <p>The final case study will explain the problem, the decisions that shaped the experience, and what happened when the work reached people.</p>
+    </div>
+  </section>
+
+  <section id="challenge" class="about-section" aria-labelledby="challenge-title">
+    <h2 id="challenge-title">The challenge</h2>
+    <div class="about-prose">
+      <p>Introduce the product and the people it serves. Describe the situation before the project and the friction that made a change necessary.</p>
+      <p>Add the constraints that mattered: the team, the timeline, existing systems, and the needs that shaped the brief.</p>
+      <p>Use a clear problem statement here, supported by real research or observations when the case study is ready.</p>
+    </div>
+  </section>
+
+  <section id="role" class="about-section" aria-labelledby="role-title">
+    <h2 id="role-title">My role</h2>
+    <div class="about-prose">
+      <p>Outline the parts of the project I owned, who I worked with, and how the team made decisions.</p>
+      <p>This section will cover the scope of the work, from understanding the problem and exploring directions to refining and building the final experience.</p>
+    </div>
+  </section>
+
+  <section id="process" class="about-section" aria-labelledby="process-title">
+    <h2 id="process-title">From questions to direction</h2>
+    <div class="about-prose">
+      <p>Start with the questions that needed answering. Add the research, conversations, or product exploration that helped frame the problem.</p>
+      <p>Show a few meaningful directions and explain the trade-offs. The focus will be on why a decision was made and how it improved the experience.</p>
+      <p>Replace the image below with relevant sketches, flows, or iterations from the project.</p>
+    </div>
+    <figure class="case-figure"><img src={study.processImage} width="1024" height="576" loading="lazy" alt="Portfolio archive artwork as a placeholder for process imagery" /><figcaption>Process image placeholder · existing portfolio artwork.</figcaption></figure>
+  </section>
+
+  <section id="solution" class="about-section" aria-labelledby="solution-title">
+    <h2 id="solution-title">The solution</h2>
+    <div class="about-prose">
+      <p>Introduce the final direction and walk through the key interactions. Connect each design choice to the original problem.</p>
+      <p>Add finished screens, prototypes, and implementation details where they help tell the story. The artwork below is a placeholder for the final product.</p>
+    </div>
+    <figure class="case-figure"><img src={study.cover} width="1024" height="576" loading="lazy" alt="Portfolio interface artwork as a placeholder for the final solution" /><figcaption>Solution image placeholder · existing portfolio artwork.</figcaption></figure>
+  </section>
+
+  <section id="reflection" class="about-section" aria-labelledby="reflection-title">
+    <h2 id="reflection-title">Outcomes &amp; reflection</h2>
+    <div class="about-prose">
+      <p>Add verified outcomes, feedback, and what changed after the work shipped. No results or metrics have been added to this placeholder.</p>
+      <p>Close with the lessons from the project: what worked, what I would approach differently, and the questions worth exploring next.</p>
+    </div>
+    <nav class="case-pagination" aria-label="More case studies"><a href="/#selected-work">← All work</a><a href={next.href}>Next: {next.title} →</a></nav>
+  </section>
+  </>}
+</EditorialLayout>

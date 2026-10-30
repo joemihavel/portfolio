@@ -1,5 +1,11 @@
 /// <reference types="astro/client" />
 
+declare namespace astroHTML.JSX {
+  interface ScriptHTMLAttributes {
+    blocking?: "render";
+  }
+}
+
 // Deliberately no global reference to @cloudflare/workers-types: it redefines
 // Response, ReadableStream and friends, which then shadow the DOM versions in
 // every browser-side script. Server files import the types they need instead.

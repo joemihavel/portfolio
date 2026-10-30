@@ -1,0 +1,43 @@
+---
+import "../styles/inspection-mode.css";
+---
+
+<div id="folio-inspection" hidden>
+  <div class="inspection-guides" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="inspection-outline" data-inspection-hover hidden aria-hidden="true"></div>
+  <div class="inspection-outline is-selected" data-inspection-selection hidden aria-hidden="true"></div>
+  <div class="inspection-markers" data-inspection-markers></div>
+  <aside class="inspection-panel" id="inspection-panel" role="dialog" aria-modal="false" aria-labelledby="inspection-title" data-lenis-prevent hidden>
+    <div class="inspection-panel-heading"><h2 id="inspection-title"><span data-inspection-number></span><span data-inspection-title></span></h2><button class="inspection-close" type="button" data-inspection-close aria-label="Close annotation">×</button></div>
+    <div class="inspection-tabs" role="tablist" aria-label="Annotation detail">
+      <button id="inspection-tab-craft" type="button" role="tab" data-inspection-tab="craft" aria-controls="inspection-content" aria-selected="true">Craft</button>
+      <button id="inspection-tab-build" type="button" role="tab" data-inspection-tab="build" aria-controls="inspection-content" aria-selected="false" tabindex="-1">Build</button>
+    </div>
+    <div id="inspection-content" role="tabpanel" aria-labelledby="inspection-tab-craft" tabindex="0"><dl data-inspection-fields></dl></div>
+  </aside>
+  <div class="inspection-toolbar" aria-label="Inspection mode">
+    <span class="inspection-toolbar-title"><span aria-hidden="true">⌖</span> Inspect my thinking</span>
+    <span class="inspection-toolbar-hint">Choose a numbered detail</span>
+    <button type="button" data-inspection-exit>Exit <kbd>Esc</kbd></button>
+  </div>
+</div>
+<span class="inspection-status" id="inspection-status" role="status" aria-live="polite"></span>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>("[data-inspect-toggle]");
+  let controller: { toggle: () => void; enable: () => void } | undefined;
+  let loading: Promise<void> | undefined;
+  const load = () => loading ??= import("../scripts/inspection-mode").then(({ createInspector }) => {
+    controller = createInspector();
+  });
+  toggle?.addEventListener("click", async () => {
+    await load();
+    controller?.toggle();
+  });
+  if (new URLSearchParams(location.search).has("inspect")) {
+    const url = new URL(location.href);
+    url.searchParams.delete("inspect");
+    history.replaceState(null, "", url);
+    void load().then(() => controller?.enable());
+  }
+</script>
