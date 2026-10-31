@@ -576,18 +576,6 @@
     "score": 4
   },
   {
-    "id": "s_1qtylzm",
-    "headline": "Astronomers may have discovered the first moon beyond our Solar System",
-    "summary": "Astronomers have uncovered evidence of a bizarre, potentially historic discovery: the first moon ever detected beyond our Solar System. Unlike familiar moons, this mysterious object is at least as massive as Jupiter and…",
-    "category": "planet",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261023023736.htm",
-    "published_at": "2026-10-25T03:13:05.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_6wrsb8",
     "headline": "Tiny magnetic vortices could help computers work more like your brain",
     "summary": "Scientists have filmed tiny magnetic vortices called skyrmions melting out of an organized lattice for the first time, revealing new ways to manipulate these unusual structures. The breakthrough could help make…",
@@ -596,6 +584,18 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/10/261025073038.htm",
     "published_at": "2026-10-26T10:06:16.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1qtylzm",
+    "headline": "Astronomers may have discovered the first moon beyond our Solar System",
+    "summary": "Astronomers have uncovered evidence of a bizarre, potentially historic discovery: the first moon ever detected beyond our Solar System. Unlike familiar moons, this mysterious object is at least as massive as Jupiter and…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261023023736.htm",
+    "published_at": "2026-10-25T03:13:05.000Z",
     "read_minutes": 2,
     "score": 4
   },
