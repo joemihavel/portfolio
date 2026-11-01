@@ -14,6 +14,9 @@ export default defineConfig({
   output: 'static',
   adapter: cloudflare({ imageService: 'passthrough' }),
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    // Avoid Cloudflare's cold-start reload with the passthrough image service.
+    // https://github.com/withastro/astro/issues/17788
+    optimizeDeps: { include: ['astro/assets/services/noop', 'astro/logger/json'] }
   }
 });

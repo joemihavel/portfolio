@@ -4,7 +4,7 @@ import { createAmbientMusic, type AmbientState } from "./ambient-music";
 export function setupInterfaceSounds(buttons: HTMLButtonElement[], isTransitioning: () => boolean) {
   if (!buttons.length || !("AudioContext" in window)) return;
   let enabled = false;
-  // Background sound requires a fresh, explicit speaker click. A preference
+  // Background sound requires a fresh, explicit speaker or intro Enter click. A preference
   // from an earlier visit must not turn ordinary page input into surprise audio.
   let context: AudioContext | null = null;
   let output: GainNode | null = null;
@@ -83,9 +83,8 @@ export function setupInterfaceSounds(buttons: HTMLButtonElement[], isTransitioni
   };
   const scrollKeys = new Set(["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "]);
 
-  document.addEventListener("click", event => {
-    if (!(event.target instanceof Element) || !event.target.closest(".folio-sound")) return;
-    enabled = !(enabled && context?.state === "running");
+  const setEnabled = (next: boolean) => {
+    enabled = next;
     updateButton();
     resetScroll();
     try { localStorage.setItem("folio-sound", enabled ? "on" : "off"); } catch (_) {}
@@ -96,6 +95,13 @@ export function setupInterfaceSounds(buttons: HTMLButtonElement[], isTransitioni
       ambient?.stop();
       if (output && context) output.gain.setTargetAtTime(0, context.currentTime, .005);
     }
+  };
+  document.addEventListener("click", event => {
+    if (!(event.target instanceof Element) || !event.target.closest(".folio-sound")) return;
+    setEnabled(!(enabled && context?.state === "running"));
+  });
+  document.addEventListener("folio:sound-preference", event => {
+    setEnabled((event as CustomEvent<{enabled:boolean}>).detail.enabled);
   });
   // Only user scrolling produces ticks; page restores and layout changes stay quiet.
   addEventListener("wheel", markScrollInput, { passive: true });

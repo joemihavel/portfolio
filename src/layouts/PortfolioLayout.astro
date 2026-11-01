@@ -6,6 +6,8 @@ import SoundToggle from "../components/SoundToggle.astro";
 import MobileNavigation from "../components/MobileNavigation.astro";
 import PianoGame from "../components/PianoGame.astro";
 import { resumeHref } from "../data/portfolio-content";
+import SignatureIntro from "../components/SignatureIntro.astro";
+import ThemeControls from "../components/ThemeControls.astro";
 import { ClientRouter } from "astro:transitions";
 import geistLatinFont from "@fontsource-variable/geist/files/geist-latin-wght-normal.woff2?url";
 // Inspect Mode paused. Keep the implementation available for a future iteration.
@@ -85,7 +87,20 @@ const year = new Date().getFullYear();
         location.replace("/");
       }
       if (!reducePageMotion) {
-        if (!page.hasAttribute("data-folio-client-navigation")) page.classList.add("folio-entrance");
+        var introQuery = new URLSearchParams(location.search);
+        var desktopIntro = matchMedia("(min-width: 701px) and (hover: hover) and (pointer: fine)").matches;
+        var showSignatureIntro = desktopIntro && page.dataset.view === "home" && !page.hasAttribute("data-folio-client-navigation") && !location.hash && !introQuery.has("category");
+        if (showSignatureIntro) {
+          page.classList.add("folio-intro-active");
+          page.dataset.folioIntroFailsafe = String(setTimeout(function () {
+            page.classList.remove("folio-intro-active");
+            var intro = document.getElementById("signature-intro");
+            var site = document.querySelector(".folio-site");
+            if (intro) intro.remove();
+            if (site) site.inert = false;
+            document.dispatchEvent(new CustomEvent("folio:overlay", {detail:{active:false}}));
+          }, 6500));
+        } else if (!page.hasAttribute("data-folio-client-navigation")) page.classList.add("folio-entrance");
         page.classList.add("folio-reveal-ready");
         setTimeout(function () { page.classList.remove("folio-entrance"); }, 2800);
         setTimeout(function () {
@@ -110,6 +125,7 @@ const year = new Date().getFullYear();
     )}
   </head>
   <body>
+    {current === "home" && <SignatureIntro />}
     <div class="folio-site">
       <a class="skip-link" href="#main-content">Skip to content</a>
 
@@ -129,11 +145,7 @@ const year = new Date().getFullYear();
         <div class="folio-tools" aria-label="Display settings" inert={current === "experimental"}>
           <SoundToggle class="folio-tool" />
           <span class="folio-tool-divider folio-sound-divider" aria-hidden="true"></span>
-          <div class="folio-theme-group" role="group" aria-label="Color theme">
-            <button class="folio-theme-button folio-theme-light" type="button" data-folio-theme-btn="light" aria-label="Light theme" title="Light theme"><span>✺</span></button>
-            <button class="folio-theme-button folio-theme-dark" type="button" data-folio-theme-btn="dark" aria-label="Dark theme" title="Dark theme"><span>⏾</span></button>
-            <button class="folio-theme-button folio-theme-surprise" type="button" data-folio-theme-btn="surprise" aria-label="Surprise me — random color theme" title="Surprise me"><span>ッ</span></button>
-          </div>
+          <ThemeControls />
           <span class="folio-tool-divider" aria-hidden="true"></span>
           {/* Inspect Mode paused:
           <InspectControl class="folio-heart folio-inspect-toggle" type={current === "home" ? "button" : undefined} href={current === "home" ? undefined : "/?inspect"} data-inspect-toggle={current === "home" ? "" : undefined} aria-label={current === "home" ? "Inspect my thinking" : "Inspect the homepage"} aria-pressed={current === "home" ? "false" : undefined} aria-controls={current === "home" ? "folio-inspection" : undefined} title="Inspect my thinking"><span aria-hidden="true">[</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2H2v4m8-4h4v4M2 10v4h4m4 0h4v-4M6 6l1.6 6 1.5-2.9L12 7.6 6 6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" /></svg><span aria-hidden="true">]</span></InspectControl>
@@ -149,7 +161,7 @@ const year = new Date().getFullYear();
         <span class="folio-scrollbar-thumb"></span>
       </div>
 
-      <main id="main-content"><slot /></main>
+      <main id="main-content" tabindex="-1"><slot /></main>
 
       <footer class="folio-footer" transition:persist="portfolio-footer">
         <JoeSignature />
@@ -380,6 +392,7 @@ const year = new Date().getFullYear();
         respectReducedMotion: true,
         stopInertiaOnNavigate: true,
       });
+      if (root.classList.contains("folio-intro-active")) lenis.stop();
       document.addEventListener("folio:game", event => {
         if ((event as CustomEvent<{ active: boolean }>).detail.active) lenis.stop();
         else { lenis.start(); lenis.resize(); }

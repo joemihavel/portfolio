@@ -1,0 +1,69 @@
+.signature-intro { --intro-mark-width: min(546px, calc((100vw - 64px) * .7)); display: none; }
+html.folio-intro-active { overflow: hidden; }
+html.folio-intro-active .signature-intro { position: fixed; z-index: 1000; inset: 0; display: grid; place-items: center; background: var(--folio-bg); color: var(--folio-ink); overflow: hidden; touch-action: none; outline: none; font-family: "Geist Variable", Arial, sans-serif; }
+.signature-intro-mark { z-index: 1; width: var(--intro-mark-width); margin: 0; font: inherit; transition: transform 640ms cubic-bezier(.22, 1, .36, 1); }
+.signature-intro-mark svg { display: block; width: 100%; height: auto; overflow: visible; }
+.signature-intro [data-signature-stroke] { stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0; }
+/* The name stays at the viewport centre; the cat starts directly above it. */
+.signature-intro-instruction { position: absolute; z-index: 1; top: calc(50% + var(--intro-mark-width) * .151595 + 16px); left: 24px; right: 24px; margin: 0; color: var(--folio-copy); font-size: 13px; font-weight: 400; line-height: 20px; text-align: center; opacity: 0; visibility: hidden; transform: translateY(5px); transition: opacity 320ms ease 160ms, transform 420ms ease 160ms, visibility 0s 160ms; }
+.signature-intro:is([data-intro-stage="ready"], [data-intro-stage="exit"]) .signature-intro-instruction { opacity: 1; visibility: visible; transform: none; }
+.signature-intro-details { position: absolute; z-index: 3; bottom: max(28px, calc(env(safe-area-inset-bottom) + 18px)); left: 24px; right: 24px; display: flex; flex-direction: column; align-items: center; opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity 420ms ease 160ms, transform 520ms cubic-bezier(.22, 1, .36, 1) 160ms, visibility 0s 160ms; }
+.signature-intro-details button { appearance: none; font: inherit; font-size: 13px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.signature-intro-enter { display: block; width: 104px; height: 89px; padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--folio-ink); }
+.intro-enter-key { display: block; width: 100%; height: 100%; overflow: visible; }
+.intro-key-cap { transition: transform 120ms ease-out; }
+.signature-intro-enter:hover .intro-key-cap { transform: translate(2px, 2px); }
+.signature-intro-enter:is(:active, [data-pressed]) .intro-key-cap { animation: none !important; transform: translate(4px, 5px); }
+.signature-intro-silent { min-height: 44px; margin-top: 12px; padding: 8px; border: 0; background: transparent; color: var(--folio-copy); text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: color 150ms, text-decoration-color 150ms; }
+.signature-intro-silent:hover { color: var(--folio-ink); text-decoration-color: var(--folio-muted); }
+.signature-intro button:focus-visible { outline: 1px solid var(--folio-ink); outline-offset: 6px; }
+.signature-intro:is([data-intro-stage="ready"], [data-intro-stage="exit"]) .signature-intro-details { opacity: 1; visibility: visible; }
+.signature-intro:is([data-intro-stage="ready"], [data-intro-stage="exit"]) .signature-intro-details { transform: none; }
+.signature-intro[data-intro-stage="ready"] .signature-intro-enter:not(:hover):not(:focus-visible) .intro-key-cap { animation: intro-enter-press 2.8s ease 400ms infinite; }
+.signature-intro[data-intro-stage="exit"] { pointer-events: none; }
+@keyframes intro-enter-press { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(3px, 4px); } }
+
+/* Original oneko.js sprite at 3×, with its eight-direction animation. */
+.intro-cat-mount { position: absolute; z-index: 2; inset: 0; overflow: hidden; pointer-events: none; opacity: 0; transition: opacity 350ms ease 300ms; }
+.signature-intro:is([data-intro-stage="ready"], [data-intro-stage="exit"]) .intro-cat-mount { opacity: 1; }
+.intro-cat-speech { position: fixed; z-index: 4; display: flex; align-items: center; justify-content: center; width: 144px; height: 48px; color: color-mix(in srgb, var(--folio-ink) 65%, var(--folio-bg)); font-size: 11px; line-height: 16px; white-space: nowrap; pointer-events: none; animation: intro-hint-in 180ms ease-out both; }
+.intro-cat-speech[hidden] { display: none; }
+.intro-cat-speech[data-message="idle"] { width: 196px; }
+.intro-cat-speech svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.intro-cat-speech-copy { position: relative; padding-bottom: 8px; color: var(--folio-copy); }
+.intro-cat-speech[data-side="left"] svg { transform: scaleX(-1); }
+.intro-speech-above { display: none; }
+.intro-cat-speech[data-side="above"] .intro-speech-side { display: none; }
+.intro-cat-speech[data-side="above"] .intro-speech-above { display: block; }
+@keyframes intro-hint-in { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
+.intro-sketch-floor { position: absolute; z-index: 0; inset: 0; color: var(--folio-ink); opacity: 0; pointer-events: none; transition: opacity 560ms ease 200ms; }
+.intro-sketch-floor svg { display: block; width: 100%; height: 100%; }
+.intro-sketch-floor path { vector-effect: non-scaling-stroke; }
+.intro-floor-boards { opacity: 1; }
+.intro-wood-grain { opacity: .72; }
+.intro-floor-frame { opacity: 0; animation: intro-floor-redraw 1800ms steps(1, end) infinite; }
+.intro-floor-frame-1 { animation-delay: -1200ms; }
+.intro-floor-frame-2 { animation-delay: -600ms; }
+.signature-intro:is([data-intro-stage="ready"], [data-intro-stage="exit"]) .intro-sketch-floor { opacity: .17; }
+.signature-intro:not([data-intro-stage="ready"]) .intro-floor-frame { animation-play-state: paused; }
+@keyframes intro-floor-redraw { 0%, 33.32% { opacity: 1; } 33.33%, 100% { opacity: 0; } }
+@media (hover: hover) and (pointer: fine) {
+  .signature-intro, .signature-intro * { cursor: var(--folio-cursor-image) 6 6, auto !important; }
+  .signature-intro button { cursor: var(--folio-cursor-image) 6 6, pointer !important; }
+}
+@media (hover: none), (pointer: coarse) { .intro-cat-speech:not([data-message="idle"]) { display: none; } }
+@media (max-width: 700px) { .signature-intro { --intro-mark-width: calc((100vw - 36px) * .7); } }
+@media (max-height: 600px) {
+  .signature-intro { --intro-mark-width: min(240px, calc((100vw - 36px) * .7)); }
+  .signature-intro-details { bottom: max(16px, env(safe-area-inset-bottom)); }
+  .signature-intro-details { flex-direction: row; justify-content: center; gap: 20px; }
+  .signature-intro-enter { width: 66px; height: 56px; }
+  .signature-intro-silent { min-height: 36px; margin-top: 0; }
+}
+@media (max-height: 420px) { .signature-intro { --intro-mark-width: min(220px, calc((100vw - 36px) * .7), calc((100svh - 300px) * 2.5)); } }
+@media (prefers-reduced-motion: reduce) {
+  html.folio-intro-active .signature-intro { display: none; }
+  html.folio-intro-active { overflow: auto; }
+  .signature-intro *, .signature-intro *::before, .signature-intro *::after { animation: none !important; transition: none !important; }
+  .intro-floor-frame-0 { opacity: 1; }
+}

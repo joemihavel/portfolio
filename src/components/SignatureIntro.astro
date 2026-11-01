@@ -1,0 +1,27 @@
+---
+import signature from '../assets/joel-mihavel-signature.svg?raw';
+import IntroCat from './IntroCat.astro';
+import IntroEnterKey from './IntroEnterKey.astro';
+import IntroFloor from './IntroFloor.astro';
+import IntroCatSpeech from './IntroCatSpeech.astro';
+import '../styles/signature-intro.css';
+---
+
+<div class="signature-intro" id="signature-intro" role="dialog" aria-modal="true" aria-label="Welcome to Joel Mihavel's portfolio" aria-describedby="signature-intro-instruction" tabindex="-1" data-lenis-prevent>
+  <IntroFloor />
+  <h1 class="signature-intro-mark" aria-label="Joel Mihavel" set:html={signature} />
+  <p class="signature-intro-instruction" id="signature-intro-instruction">Press enter to open my portfolio</p>
+  <div class="signature-intro-details" inert>
+    <button class="signature-intro-enter" type="button" data-intro-enter aria-label="Enter with audio">
+      <IntroEnterKey />
+    </button>
+    <button class="signature-intro-silent" type="button" data-intro-silent>Play without audio</button>
+  </div>
+  <IntroCat />
+  <IntroCatSpeech />
+</div>
+
+<script>
+  import { initializeSignatureIntro } from '../scripts/signature-intro';
+  document.addEventListener('astro:page-load', initializeSignatureIntro);
+</script>
