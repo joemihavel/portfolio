@@ -1,0 +1,10 @@
+---
+import arrow from '../assets/icons/remix/arrow-right-up-line.svg?raw';
+import github from '../assets/icons/remix/github-line.svg?raw';
+
+interface Props { name: 'arrow-right-up-line' | 'github-line'; }
+const icons = { 'arrow-right-up-line': arrow, 'github-line': github };
+const paths = icons[Astro.props.name].replace(/<svg\b[^>]*>|<\/svg>/g, '');
+// Original Remix Icon SVGs; attribution and license are in licenses/remixicon-LICENSE.txt.
+---
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><Fragment set:html={paths} /></svg>

@@ -1,18 +1,25 @@
 ---
 import {experiments} from '../data/portfolio-content';
+import RemixIcon from './RemixIcon.astro';
 import '../styles/experiment-list.css';
 ---
 <div class="experiment-list" data-experiment-list>
-  {experiments.map(experiment => (
-    <article class="experiment-row">
-      <h2><span data-experiment-thumbnail={experiment.thumbnail} data-experiment-description={experiment.description}>{experiment.title}</span></h2>
-      <div class="experiment-actions">
-        {experiment.demoHref ? <a class="project-cta experiment-primary" href={experiment.demoHref} target="_blank" rel="noopener noreferrer">View demo <span aria-hidden="true">↗</span></a> : <button class="project-cta experiment-primary" type="button" disabled>View demo <span aria-hidden="true">↗</span></button>}
-        {experiment.githubHref ? <a class="project-cta experiment-secondary" href={experiment.githubHref} target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a> : <button class="project-cta experiment-secondary" type="button" disabled>GitHub <span aria-hidden="true">↗</span></button>}
-      </div>
-    </article>
-  ))}
+  {experiments.map(experiment => {
+    const DemoTag = experiment.demoHref ? 'a' : 'div';
+    return <article class="experiment-row">
+      <DemoTag class="experiment-main" href={experiment.demoHref} target={experiment.demoHref ? '_blank' : undefined} rel={experiment.demoHref ? 'noopener noreferrer' : undefined} aria-label={experiment.demoHref ? `Open ${experiment.title} demo (opens in a new tab)` : undefined}>
+        <img class="experiment-thumbnail" src={experiment.thumbnail} width="128" height="72" alt="" loading="lazy" decoding="async" />
+        <div class="experiment-copy">
+          <h2><span data-experiment-thumbnail={experiment.thumbnail} data-experiment-description={experiment.description}>{experiment.title}</span></h2>
+          {experiment.description && <p class="experiment-description">{experiment.description}</p>}
+        </div>
+        <span class:list={['experiment-icon', 'experiment-primary', { 'is-disabled': !experiment.demoHref }]} data-tooltip="View demo" aria-hidden="true"><RemixIcon name="arrow-right-up-line" /></span>
+      </DemoTag>
+      {experiment.githubHref ? <a class="experiment-icon experiment-secondary" href={experiment.githubHref} target="_blank" rel="noopener noreferrer" aria-label={`View ${experiment.title} on GitHub (opens in a new tab)`} data-tooltip="GitHub"><RemixIcon name="github-line" /></a> : <button class="experiment-icon experiment-secondary" type="button" disabled aria-label={`${experiment.title} repository unavailable`}><RemixIcon name="github-line" /></button>}
+    </article>;
+  })}
   <div class="experiment-hover-preview" data-experiment-hover-preview aria-hidden="true"><img alt="" width="280" height="158" decoding="async" /><p data-experiment-hover-caption hidden></p></div>
+  <div class="experiment-action-tooltip" id="experiment-action-tooltip" role="tooltip" hidden></div>
 </div>
 <script>
   import {initializeExperimentList} from '../scripts/experiment-list';

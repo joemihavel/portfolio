@@ -12,9 +12,10 @@ interface Props {
   tags?: string[];
   animatedCover?: boolean;
   comingSoon?: boolean;
+  description?: string;
 }
 
-const { kind, label, title, image, index, eager = false, tags = ["AI", "Codex"], animatedCover = false, comingSoon = false } = Astro.props;
+const { kind, label, title, image, index, eager = false, tags = ["AI", "Codex"], animatedCover = false, comingSoon = false, description } = Astro.props;
 const number = String(index).padStart(2, "0");
 const noteTones = ["yellow", "blue", "pink", "green"];
 ---
@@ -33,7 +34,7 @@ const noteTones = ["yellow", "blue", "pink", "green"];
     <>
       <div class="exp-board-asset">{kind === "archive" ? <ArchiveFrame index={index - 1} /> : animatedCover ? <SecuredCoverArtwork eager={eager} /> : comingSoon ? <InsetCoverArtwork src={image} alt="" eager={eager} /> : <img src={image} alt="" loading={eager ? "eager" : "lazy"} />}</div>
       <span class="exp-board-content">
-        <strong class="exp-board-title">{title}</strong>
+        <span class="exp-board-summary"><strong class="exp-board-title">{title}</strong>{description && <span class="exp-board-description">{description}</span>}</span>
         <span class="exp-board-footer"><span>{kind === "archive" ? "From the archive" : "Design & development"}</span>{comingSoon ? <button class="project-cta" type="button" disabled>Coming soon</button> : kind !== "archive" && <span>Open preview</span>}</span>
       </span>
     </>

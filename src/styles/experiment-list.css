@@ -1,24 +1,32 @@
-.experiment-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 76px; margin-inline: -12px; padding: 16px 12px; border-radius: 8px; transition: background-color 140ms ease-out; }
+.experiment-row { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) 40px; align-items: center; gap: 10px; min-height: 76px; margin-inline: -12px; padding: 16px 12px; border-radius: 8px; transition: background-color 140ms ease-out; }
 .experiment-row:focus-within { background: var(--folio-pill); }
 @media (hover: hover) and (pointer: fine) { .experiment-row:hover { background: var(--folio-pill); } }
 .experiment-row h2 { max-width: 650px; margin: 0; color: var(--folio-ink); font-family: inherit; font-size: 16px; font-weight: 400; line-height: 1.4; letter-spacing: -.02em; }
-.experiment-actions { flex: none; display: flex; align-items: center; gap: 10px; }
-.experiment-actions .project-cta { min-height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 0 17px; font-family: inherit; font-size: 13px; line-height: 1; white-space: nowrap; text-decoration: none; transition: background-color 140ms, border-color 140ms, transform 140ms; }
-.experiment-actions .experiment-primary { border-color: var(--folio-ink); background: var(--folio-ink); color: var(--folio-bg); }
-.experiment-actions .experiment-secondary { border: 1px solid var(--folio-rule); background: transparent; color: var(--folio-ink); }
-.experiment-primary:not(:disabled):hover { background: color-mix(in srgb, var(--folio-ink) 84%, var(--folio-bg)); }
-.experiment-actions .experiment-secondary:not(:disabled):hover { background: var(--folio-pill); border-color: var(--folio-copy); }
-.experiment-actions .project-cta:not(:disabled):active { transform: translateY(1px); }
-.experiment-actions .project-cta:focus-visible { outline: 2px solid var(--folio-ink); outline-offset: 4px; }
-.experiment-actions .project-cta:disabled { opacity: .48; cursor: default; }
+.experiment-main { min-width: 0; display: grid; grid-template-columns: 128px minmax(0, 1fr) 40px; align-items: center; gap: 24px; color: inherit; text-decoration: none; }
+a.experiment-main::after { content: ''; position: absolute; z-index: 1; inset: 0; border-radius: 8px; }
+.experiment-main:focus-visible { outline: none; }
+.experiment-main:focus-visible::after { outline: 2px solid var(--folio-ink); outline-offset: 3px; }
+.experiment-main [data-experiment-thumbnail] { position: relative; z-index: 2; }
+.experiment-thumbnail { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; border: 1px solid color-mix(in srgb, var(--folio-ink) 8%, transparent); border-radius: 6px; background: var(--folio-pill); }
+.experiment-copy { min-width: 0; }
+.experiment-description { max-width: 560px; margin: 6px 0 0; color: var(--folio-copy); font-size: 13px; line-height: 1.5; letter-spacing: -.01em; }
+.experiment-icon { position: relative; z-index: 2; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 0; background: transparent; color: var(--ui-secondary, var(--folio-copy)); text-decoration: none; transition: color 160ms ease-out, transform 160ms ease-out; }
+.experiment-icon svg { width: 18px; height: 18px; display: block; }
+.experiment-icon:not(:disabled):not(.is-disabled):hover, .experiment-icon[data-tooltip-open], a.experiment-main:focus-visible .experiment-primary, .experiment-secondary:focus-visible { color: var(--folio-ink); transform: translateY(-1px); }
+a.experiment-main:active .experiment-primary, .experiment-secondary:not(:disabled):active { transform: translateY(1px); }
+.experiment-secondary:focus-visible { outline: 2px solid var(--folio-ink); outline-offset: 4px; }
+.experiment-icon:disabled, .experiment-icon.is-disabled { opacity: .48; cursor: default; }
+.experiment-action-tooltip { position: fixed; z-index: 120; max-width: calc(100vw - 24px); padding: 6px 9px; border-radius: 4px; background: var(--folio-ink); color: var(--folio-bg); font-size: 12px; font-weight: 400; line-height: 16px; white-space: nowrap; }
 .experiment-hover-preview { position: fixed; z-index: 110; top: 0; left: 0; width: min(440px, calc(100vw - 32px)); overflow: hidden; border: 1px solid var(--folio-rule); border-radius: 8px; background: var(--folio-bg); box-shadow: 0 12px 36px #0002; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 120ms ease-out, visibility 120ms; will-change: transform; }
 .experiment-hover-preview.is-visible { opacity: 1; visibility: visible; }
 .experiment-hover-preview img { display: block; width: 100%; height: auto; }
 .experiment-hover-preview p { margin: 0; padding: 12px 14px; border-top: 1px solid var(--folio-rule); color: var(--folio-copy); font-size: 13px; line-height: 1.5; }
 @media (max-width: 700px) {
-  .experiment-row { align-items: flex-start; flex-direction: column; gap: 14px; min-height: 0; padding-block: 16px; }
-  .experiment-actions { gap: 10px; }
-  .experiment-actions .project-cta { min-height: 44px; }
+  .experiment-row { display: block; min-height: 128px; padding-right: 72px; }
+  .experiment-main { grid-template-columns: 80px minmax(0, 1fr); gap: 12px; }
+  .experiment-icon { position: absolute; right: 12px; width: 44px; height: 44px; }
+  .experiment-primary { top: calc(50% - 48px); }
+  .experiment-secondary { top: calc(50% + 4px); }
 }
 @media (hover: none), (pointer: coarse) { .experiment-hover-preview { display: none; } }
-@media (prefers-reduced-motion: reduce) { .experiment-row, .experiment-hover-preview, .experiment-actions .project-cta { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .experiment-row, .experiment-hover-preview, .experiment-icon { transition: none; } }

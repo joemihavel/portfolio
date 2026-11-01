@@ -38,6 +38,14 @@ export const experiments: Experiment[] = [
     demoHref: 'https://ascii-dither-video-tool-green.vercel.app/',
     githubHref: 'https://github.com/joemihavel/ascii-dither-video-tool',
   },
+  {
+    id: 'meanwhile-somewhere',
+    title: 'Meanwhile, Somewhere',
+    thumbnail: '/images/projects/meanwhile-app-preview.png',
+    description: 'Explore good news from around the world, collected daily, and leave a note or drawing on a shared wall.',
+    demoHref: '/meanwhile-somewhere',
+    githubHref: 'https://github.com/joemihavel/portfolio',
+  },
 ];
 export const writingItems = Array.from({ length: 4 }, (_, index) => index);
 export const showWriting = false;

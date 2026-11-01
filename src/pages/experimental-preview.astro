@@ -20,12 +20,12 @@ archiveScreens.forEach(screen => {
 });
 const archiveGroupHeight = Math.max(...archiveColumnY) + 20;
 const archiveNoteY = 950 + archiveGroupHeight + 200;
-const experimentPositions = [[70, 130, 440, 0], [600, 130, 440, 0], [1130, 130, 440, 0]];
+const experimentPositions = experiments.map((_, index) => [70 + index * 530, 130, 440, 0]);
 const writingPositions = [[80, 140, 400, 0], [600, 140, 400, 0], [80, 650, 400, 0], [600, 650, 400, 0]];
 const groups = [
   { id: "case-studies", label: "Case Studies", count: caseStudies.length, position: [2500, 1030, 1350, 650] },
   { id: "archive", label: "Archive", count: archiveScreens.length, position: [200, 950, 1500, archiveGroupHeight] },
-  { id: "experiments", label: "Experiments", count: experiments.length, position: [1880, 260, 1650, 650] },
+  { id: "experiments", label: "Experiments", count: experiments.length, position: [1880, 260, experiments.length * 530 + 60, 650] },
   ...(showWriting ? [{ id: "writing", label: "Writing", count: writingItems.length, position: [1770, 2350, 1120, 1160] }] : []),
 ];
 const frames = [
@@ -50,7 +50,7 @@ const frames = [
           <div class="exp-intro-index" aria-label="Explore the canvas">
             <button type="button" data-exp-jump="exp-case-1"><span>CASE STUDIES <small>{String(caseStudies.length).padStart(2, "0")}</small></span><span>[ OPEN ]</span></button>
             <button type="button" data-exp-jump="exp-archive-1"><span>ARCHIVE <small>{String(archiveScreens.length).padStart(2, "0")}</small></span><span>[ OPEN ]</span></button>
-            <button type="button" data-exp-jump="exp-experiment-1"><span>EXPERIMENTS <small>03</small></span><span>[ OPEN ]</span></button>
+            <button type="button" data-exp-jump="exp-experiment-1"><span>EXPERIMENTS <small>{String(experiments.length).padStart(2, "0")}</small></span><span>[ OPEN ]</span></button>
             {showWriting && <button type="button" data-exp-jump="exp-writing-1"><span>WRITING <small>04</small></span><span>[ OPEN ]</span></button>}
           </div>
           <div class="exp-intro-foot"><span>PRODUCT DESIGNER / BUILDER</span><span>BANGALORE, INDIA</span></div>
@@ -80,7 +80,7 @@ const frames = [
               aria-label={`${kind === "archive" || comingSoon ? "" : "Open "}${label} ${index + 1}: ${title}${comingSoon ? " — Coming soon" : ""}`}
               style={`--x:${position[0]}px;--y:${position[1]}px;--w:${position[2]}px;--r:${position[3]}deg;--card-order:${order}`}
             >
-              <BoardCard kind={kind} label={group === "case-studies" ? "Case study" : group === "experiments" ? "Experiment" : label} title={title} image={image} index={index + 1} eager={order < 4} tags={group === "writing" ? writingPages[index].tags : undefined} animatedCover={group === "case-studies" && index === 0} comingSoon={comingSoon} />
+              <BoardCard kind={kind} label={group === "case-studies" ? "Case study" : group === "experiments" ? "Experiment" : label} title={title} image={image} index={index + 1} eager={order < 4} tags={group === "writing" ? writingPages[index].tags : undefined} animatedCover={group === "case-studies" && index === 0} comingSoon={comingSoon} description={group === "experiments" ? experiments[index].description : undefined} />
               <span class="exp-handle exp-handle-tl"></span><span class="exp-handle exp-handle-tr"></span><span class="exp-handle exp-handle-bl"></span><span class="exp-handle exp-handle-br"></span>
             </FrameTag>;
           })}
