@@ -1,0 +1,67 @@
+---
+import "../../styles/flent-system-cover.css";
+import RemixIcon from "../RemixIcon.astro";
+const days = Array.from({ length: 35 }, (_, index) => index < 6 || index > 33 ? "" : String(index - 5));
+interface Props { href?: string; controls?: boolean; }
+const { href, controls = true } = Astro.props;
+---
+
+<div class="flent-cover" data-flent-cover role="group" aria-label="Animated Flent component collection: a visit form, calendar, inputs, selection controls, and booking confirmation.">
+  <div class="flent-stage ss-stage" data-beat="poster" aria-hidden="true">
+    <div class="fc-library fc-surface">
+      <div class="fc-library-title">flent<span class="fc-badge">Design system</span></div>
+      <div class="fc-colors">{["#008E75", "#FF9A6D", "#93F2E9", "#FF90B3", "#FFE98A", "#15102E"].map(color => <span style={`background:${color}`} />)}</div>
+      <div class="fc-type"><span>Aa</span><div>Plus Jakarta Sans<br /><small>Regular · Medium · Semibold</small></div></div>
+      <div class="fc-tabs"><span class="fc-tab-active">Overview</span><span>Amenities</span></div>
+      <div class="fc-control-row"><span class="fc-button fc-primary">Continue</span><span class="fc-button fc-secondary">Cancel</span></div>
+      <div class="fc-control-row fc-selection"><span class="fc-check is-on">✓</span><span class="fc-radio"></span><span class="fc-toggle is-on"></span><span class="fc-toggle"></span></div>
+      <div class="fc-chip-row"><span class="fc-chip fc-green">WiFi</span><span class="fc-chip fc-coral">Furnished</span><span class="fc-chip fc-cyan">AC</span></div>
+      <div class="fc-divider"></div>
+      <div class="fc-people"><span class="fc-avatar">VK</span><span class="fc-avatar">AB</span><span class="fc-avatar">CD</span><span class="fc-avatar fc-avatar-more">+2</span><span class="fc-status"><i></i>Available</span></div>
+      <div class="fc-password"><span>••••••••</span><span class="fc-eye">◉</span></div>
+      <div class="fc-otp">{[1, 2, 3, 4].map(number => <span>{number}</span>)}</div>
+      <div class="fc-pagination"><span>‹</span><span class="is-current">1</span><span>2</span><span>3</span><span>›</span></div>
+      <div class="fc-skeleton"><i></i><i></i><i></i></div>
+    </div>
+
+    <div class="fc-form fc-surface">
+      <div class="fc-form-header"><span>Book a visit</span><span class="fc-reset" data-target="reset"><RemixIcon name="restart-line" /></span></div>
+      <div class="fc-progress">{[0, 1, 2, 3, 4].map(index => <i class={index < 3 ? "is-done" : undefined} />)}</div>
+      <div class="fc-breadcrumbs"><span>Homes</span><i>/</i><span>Visit</span></div>
+      <div class="fc-property"><span class="fc-overline">AVAILABLE NOW</span><div class="fc-property-name">Koramangala 4BHK</div><span class="fc-property-note">A little more room to call home.</span><div class="fc-chip-row"><span class="fc-chip fc-green">Furnished</span><span class="fc-chip fc-coral" data-target="chip">Pet friendly</span></div></div>
+      <div class="fc-form-fields">
+        <div class="fc-field-group"><span class="fc-label">Email</span><span class="fc-input fc-email" data-target="email"><span data-email-value data-typing>Your email</span><span class="fc-input-check">✓</span></span><span class="fc-field-hint">We’ll send your visit details here.</span></div>
+        <div class="fc-phone"><span>+91</span><span>98765 43210</span></div>
+        <div class="fc-select"><span>Private room</span><span>⌄</span></div>
+        <div class="fc-form-option"><span class="fc-check is-on">✓</span><span>Keep me updated</span><span class="fc-toggle is-on"></span></div>
+        <span class="fc-button fc-cta" data-target="book"><span class="fc-book-idle">Book a visit <span><RemixIcon name="arrow-right-up-line" /></span></span><span class="fc-book-loading"><i class="fc-spinner"></i>Booking</span><span class="fc-book-done">✓&nbsp; Visit booked</span></span>
+      </div>
+      <div class="fc-accordion"><span>What happens next?</span><span>⌄</span></div>
+      <div class="fc-textarea">Anything we should know?</div>
+      <div class="fc-drawer">
+        <div class="fc-grab"></div><span class="fc-drawer-close" data-target="close">×</span>
+        <div class="fc-drawer-title">Your next chapter.</div>
+        <div class="fc-alert"><span class="fc-alert-icon">✓</span><span><b class="fc-alert-label"><span class="fc-review-label">Review your visit</span><span class="fc-confirmed-label">Visit confirmed</span></b><small>Koramangala · 18 March, 11 am</small></span></div>
+        <div class="fc-modal"><b>All set?</b><span>Your home visit is ready.</span><div class="fc-control-row"><span class="fc-button fc-secondary">Cancel</span><span class="fc-button fc-primary" data-target="confirm">Confirm</span></div></div>
+        <div class="fc-list-item"><span class="fc-list-icon">18</span><span><b>Wednesday, 18 March</b><small>11:00 am – 11:30 am</small></span><span>›</span></div>
+      </div>
+    </div>
+
+    <div class="fc-support fc-surface">
+      <div class="fc-search"><span>⌕</span><span>Search homes</span></div>
+      <div class="fc-calendar"><div class="fc-month"><span>March 2026</span><span>‹ &nbsp; ›</span></div><div class="fc-week">{["M", "T", "W", "T", "F", "S", "S"].map(day => <span>{day}</span>)}</div><div class="fc-days">{days.map(day => <span class={day === "18" ? "fc-selected-day" : undefined} data-target={day === "18" ? "date" : undefined}>{day}</span>)}</div></div>
+      <div class="fc-menu"><span>Overview <span><RemixIcon name="arrow-right-up-line" /></span></span><span class="is-active">Upcoming visits <span>✓</span></span><span>Saved homes <span>›</span></span></div>
+      <div class="fc-caption"><span class="fc-tooltip">Copy link</span><span class="fc-link">Share this home <RemixIcon name="arrow-right-up-line" /></span></div>
+      <div class="fc-loading-row"><i class="fc-spinner"></i><span class="fc-dots"><i></i><i></i><i></i></span></div>
+    </div>
+    <div class="fc-toast"><span class="fc-toast-check">✓</span><span>Visit booked. See you soon.</span><span>×</span></div>
+    <img class="fc-cursor" data-fc-cursor src="/images/redesign/figma-cursor.svg" width="24" height="28" alt="" />
+  </div>
+  {href && <a class="fc-cover-link" href={href} aria-label="Read case study: Scaling design quality beyond the design team"></a>}
+  {controls && <button class="fc-playback" type="button" data-stage-toggle aria-label="Pause animation" title="Pause animation"><span class="fc-pause-icon"><RemixIcon name="pause-line" /></span><span class="fc-play-icon"><RemixIcon name="play-line" /></span></button>}
+</div>
+
+<script>
+  import { initializeFlentCovers } from "../../scripts/flent-system-cover";
+  initializeFlentCovers();
+</script>

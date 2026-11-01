@@ -1,9 +1,29 @@
 ---
 import arrow from '../assets/icons/remix/arrow-right-up-line.svg?raw';
 import github from '../assets/icons/remix/github-line.svg?raw';
+import restart from '../assets/icons/remix/restart-line.svg?raw';
+import pause from '../assets/icons/remix/pause-line.svg?raw';
+import play from '../assets/icons/remix/play-line.svg?raw';
 
-interface Props { name: 'arrow-right-up-line' | 'github-line'; }
-const icons = { 'arrow-right-up-line': arrow, 'github-line': github };
+import icon0 from '../assets/icons/remix/side-bar-line.svg?raw';
+import icon1 from '../assets/icons/remix/customer-service-2-line.svg?raw';
+import icon2 from '../assets/icons/remix/ticket-2-line.svg?raw';
+import icon3 from '../assets/icons/remix/calendar-line.svg?raw';
+import icon4 from '../assets/icons/remix/checkbox-circle-line.svg?raw';
+import icon5 from '../assets/icons/remix/search-line.svg?raw';
+import icon6 from '../assets/icons/remix/filter-3-line.svg?raw';
+import icon7 from '../assets/icons/remix/layout-grid-line.svg?raw';
+import icon8 from '../assets/icons/remix/add-line.svg?raw';
+import icon9 from '../assets/icons/remix/close-line.svg?raw';
+import icon10 from '../assets/icons/remix/arrow-down-s-line.svg?raw';
+import icon11 from '../assets/icons/remix/file-list-3-line.svg?raw';
+import icon12 from '../assets/icons/remix/user-line.svg?raw';
+import icon13 from '../assets/icons/remix/time-line.svg?raw';
+import icon14 from '../assets/icons/remix/more-line.svg?raw';
+import icon15 from '../assets/icons/remix/attachment-line.svg?raw';
+
+interface Props { name: keyof typeof icons; }
+const icons = { 'arrow-right-up-line': arrow, 'github-line': github, 'restart-line': restart, 'pause-line': pause, 'play-line': play, 'side-bar-line': icon0, 'customer-service-2-line': icon1, 'ticket-2-line': icon2, 'calendar-line': icon3, 'checkbox-circle-line': icon4, 'search-line': icon5, 'filter-3-line': icon6, 'layout-grid-line': icon7, 'add-line': icon8, 'close-line': icon9, 'arrow-down-s-line': icon10, 'file-list-3-line': icon11, 'user-line': icon12, 'time-line': icon13, 'more-line': icon14, 'attachment-line': icon15 };
 const paths = icons[Astro.props.name].replace(/<svg\b[^>]*>|<\/svg>/g, '');
 // Original Remix Icon SVGs; attribution and license are in licenses/remixicon-LICENSE.txt.
 ---

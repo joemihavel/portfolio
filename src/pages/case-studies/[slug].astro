@@ -1,6 +1,9 @@
 ---
 import EditorialLayout from "../../layouts/EditorialLayout.astro";
 import SecuredCaseStudy from "../../components/case-studies/SecuredCaseStudy.astro";
+import FlentSystemCaseStudy from "../../components/case-studies/FlentSystemCaseStudy.astro";
+import CXPlatformCover from "../../components/case-studies/CXPlatformCover.astro";
+import { flentSystem } from "../../data/flent-system";
 import { caseStudyPages, caseStudySections } from "../../data/case-studies";
 
 export function getStaticPaths() {
@@ -9,19 +12,20 @@ export function getStaticPaths() {
 interface Props { study: typeof caseStudyPages[number]; index: number; }
 const { study, index } = Astro.props;
 const next = caseStudyPages[(index + 1) % caseStudyPages.length];
-const sections = study.story ? [{ id: "overview", label: "Overview" }, ...study.story.sections.map(({ id, label }) => ({ id, label }))] : caseStudySections;
+const sections = study.kind === "flent-system" ? flentSystem.sections : study.story ? [{ id: "overview", label: "Overview" }, ...study.story.sections.map(({ id, label }) => ({ id, label }))] : caseStudySections;
+const designed = study.kind !== "cx";
 ---
 
-<EditorialLayout title={`${study.title} — Joel Mihavel`} description={study.description} current="case-study" sections={sections} class={study.story ? "case-study-shell secured-shell" : "case-study-shell"} backHref="/#selected-work">
-  {!study.story &&
+<EditorialLayout title={`${study.title} — Joel Mihavel`} description={study.description} current="case-study" sections={sections} class={designed ? "case-study-shell secured-shell" : "case-study-shell"} backHref="/#selected-work">
+  {!designed &&
   <aside slot="aside" class="case-summary" aria-label="Project details">
-    <img src={study.cover} width="290" height="163" alt="Existing portfolio interface artwork used as a placeholder" />
+    <CXPlatformCover />
     <p class="case-draft">[ Placeholder case study ]</p>
     <dl><div><dt>Role</dt><dd>To be added</dd></div><div><dt>Timeline</dt><dd>To be added</dd></div><div><dt>Status</dt><dd>Draft</dd></div></dl>
   </aside>
   }
 
-  {study.story ? <SecuredCaseStudy next={next} /> : <>
+  {study.kind === "flent-system" ? <FlentSystemCaseStudy next={next} /> : study.story ? <SecuredCaseStudy next={next} /> : <>
   <section id="overview" class="about-section" aria-labelledby="overview-title">
     <h1 id="overview-title" class="editorial-title">{study.title}</h1>
     <div class="about-prose">

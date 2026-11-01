@@ -107,7 +107,7 @@ const steps = [
       <div class="secured-stack secured-gap-10"><CaseCopy node="35:30871" /><CaseCopy node="35:30872" /></div>
     </div>
     <div class="secured-stack">
-      <button type="button" class="secured-reaction-toggle" data-case-inline-motion aria-label="Pause reaction animation"><img class="secured-reaction" src={assets["35-30551-rectangle2534"].src} data-poster={assets["35-30551-rectangle2534"].poster} alt="Colin Jost asking: Did it work?" width="150" height="150" loading="lazy" data-animated="true" /></button>
+      <img class="secured-reaction" src={assets["35-30551-rectangle2534"].src} data-poster={assets["35-30551-rectangle2534"].poster} alt="Colin Jost asking: Did it work?" width="150" height="150" loading="lazy" data-animated="true" />
       <div class="secured-stack secured-gap-8"><CaseCopy as="h3" node="35:30876" /><CaseCopy node="35:30877" /></div>
     </div>
   </section>
@@ -171,16 +171,6 @@ const steps = [
   </section>
   <nav class="case-pagination secured-pagination" aria-label="More case studies"><a href="/#selected-work">← All work</a>{next.comingSoon ? <button type="button" disabled>Next case study · Coming soon</button> : <a href={next.href}>Next: {next.title} →</a>}</nav>
 </div>
-
-<dialog class="secured-lightbox" aria-label="Project image viewer" data-case-viewer data-lenis-prevent>
-  <div class="secured-viewer-toolbar">
-    <div>
-      <button type="button" class="secured-viewer-motion" data-case-viewer-motion hidden>Pause</button>
-      <button type="button" data-case-close aria-label="Close image viewer">×</button>
-    </div>
-  </div>
-  <div class="secured-viewer-content" data-case-viewer-content></div>
-</dialog>
 
 <script>
   import { initializeCaseStudy } from "../../scripts/secured-case-study";

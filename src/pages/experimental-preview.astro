@@ -4,12 +4,13 @@ import PortfolioIntro from "../components/PortfolioIntro.astro";
 import { archiveScreens } from "../data/archive";
 import BoardCard from "../components/BoardCard.astro";
 import SoundToggle from "../components/SoundToggle.astro";
+import RemixIcon from "../components/RemixIcon.astro";
 import { caseStudyPages } from "../data/case-studies";
 import { writingPages } from "../data/writing";
 import { caseStudies, experiments, showcaseImage, showcaseTitle, showWriting, writingImage, writingItems } from "../data/portfolio-content";
 
 const casePositions = [
-  [70, 130, 520, 0], [700, 130, 520, 0],
+  [70, 130, 520, 0], [700, 130, 520, 0], [1330, 130, 520, 0],
 ];
 const archiveColumnY = [130, 190, 150];
 const archivePositions: number[][] = [];
@@ -23,7 +24,7 @@ const archiveNoteY = 950 + archiveGroupHeight + 200;
 const experimentPositions = experiments.map((_, index) => [70 + index * 530, 130, 440, 0]);
 const writingPositions = [[80, 140, 400, 0], [600, 140, 400, 0], [80, 650, 400, 0], [600, 650, 400, 0]];
 const groups = [
-  { id: "case-studies", label: "Case Studies", count: caseStudies.length, position: [2500, 1030, 1350, 650] },
+  { id: "case-studies", label: "Case Studies", count: caseStudies.length, position: [2500, 1030, 1980, 650] },
   { id: "archive", label: "Archive", count: archiveScreens.length, position: [200, 950, 1500, archiveGroupHeight] },
   { id: "experiments", label: "Experiments", count: experiments.length, position: [1880, 260, experiments.length * 530 + 60, 650] },
   ...(showWriting ? [{ id: "writing", label: "Writing", count: writingItems.length, position: [1770, 2350, 1120, 1160] }] : []),
@@ -80,7 +81,7 @@ const frames = [
               aria-label={`${kind === "archive" || comingSoon ? "" : "Open "}${label} ${index + 1}: ${title}${comingSoon ? " — Coming soon" : ""}`}
               style={`--x:${position[0]}px;--y:${position[1]}px;--w:${position[2]}px;--r:${position[3]}deg;--card-order:${order}`}
             >
-              <BoardCard kind={kind} label={group === "case-studies" ? "Case study" : group === "experiments" ? "Experiment" : label} title={title} image={image} index={index + 1} eager={order < 4} tags={group === "writing" ? writingPages[index].tags : undefined} animatedCover={group === "case-studies" && index === 0} comingSoon={comingSoon} description={group === "experiments" ? experiments[index].description : undefined} />
+              <BoardCard kind={kind} label={group === "case-studies" ? "Case study" : group === "experiments" ? "Experiment" : label} title={title} image={image} index={index + 1} eager={order < 4} tags={group === "writing" ? writingPages[index].tags : undefined} animatedCover={group === "case-studies" && index === 0} systemCover={group === "case-studies" && index === 1} cxCover={group === "case-studies" && index === 2} comingSoon={comingSoon} description={group === "experiments" ? experiments[index].description : undefined} />
               <span class="exp-handle exp-handle-tl"></span><span class="exp-handle exp-handle-tr"></span><span class="exp-handle exp-handle-bl"></span><span class="exp-handle exp-handle-br"></span>
             </FrameTag>;
           })}
@@ -103,7 +104,7 @@ const frames = [
   <dialog class="exp-inspect" id="exp-inspect" aria-labelledby="exp-inspect-title">
     <div class="exp-inspect-top"><span id="exp-inspect-name">case-study-01.png</span><button type="button" id="exp-inspect-close" aria-label="Close preview">✕</button></div>
     <img id="exp-inspect-image" src={showcaseImage} alt="" />
-    <div class="exp-inspect-bottom"><h2 id="exp-inspect-title">{showcaseTitle}</h2><span id="exp-inspect-credit">JOEL MIHAVEL / SELECTED WORK</span><div class="exp-inspect-actions" id="exp-inspect-actions" hidden><a id="exp-inspect-demo" target="_blank" rel="noopener noreferrer">View demo ↗</a><a id="exp-inspect-github" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+    <div class="exp-inspect-bottom"><h2 id="exp-inspect-title">{showcaseTitle}</h2><span id="exp-inspect-credit">JOEL MIHAVEL / SELECTED WORK</span><div class="exp-inspect-actions" id="exp-inspect-actions" hidden><a id="exp-inspect-demo" target="_blank" rel="noopener noreferrer">View demo <RemixIcon name="arrow-right-up-line" /></a><a id="exp-inspect-github" target="_blank" rel="noopener noreferrer">GitHub <RemixIcon name="github-line" /></a></div></div>
   </dialog>
 
   <script>

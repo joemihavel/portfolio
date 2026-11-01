@@ -6,7 +6,8 @@ import WorkCategoryPicker from "../components/WorkCategoryPicker.astro";
 import ExperimentList from "../components/ExperimentList.astro";
 import { caseStudyPages } from "../data/case-studies";
 import SecuredCoverArtwork from "../components/case-studies/SecuredCoverArtwork.astro";
-import InsetCoverArtwork from "../components/case-studies/InsetCoverArtwork.astro";
+import FlentSystemCover from "../components/case-studies/FlentSystemCover.astro";
+import CXPlatformCover from "../components/case-studies/CXPlatformCover.astro";
 import ArchiveFrame from "../components/archive/ArchiveFrame.astro";
 import { archiveScreens } from "../data/archive";
 import { writingPages } from "../data/writing";
@@ -57,10 +58,10 @@ archiveScreens.forEach((screen, index) => {
         const CardTag = study.comingSoon ? "div" : "a";
         return <article class:list={["project-showcase", { "is-coming-soon": study.comingSoon }]}>
           <div class="project-showcase-head">
-            <CardTag class="project-title-link" href={study.comingSoon ? undefined : study.href}><div><p class="project-eyebrow">[ Case Study {index + 1} ]</p><h2>{study.cardTitle}</h2></div>{!study.comingSoon && <span class="project-mobile-arrow" aria-hidden="true">↗</span>}</CardTag>
+            <CardTag class="project-title-link" href={study.comingSoon ? undefined : study.href}><div><p class="project-eyebrow">[ Case Study {index + 1} ]</p><h2>{study.cardTitle}</h2></div></CardTag>
             {study.comingSoon ? <button class="project-cta" type="button" disabled>Coming soon</button> : <a class="project-cta" href={study.href}>Read Case study →</a>}
           </div>
-          <CardTag class="project-cover-link" href={study.comingSoon ? undefined : study.href} aria-label={study.comingSoon ? undefined : `Open case study ${index + 1}: ${study.title}`}>{index === 0 ? <SecuredCoverArtwork eager /> : <InsetCoverArtwork src={study.cover} width={study.coverWidth} height={study.coverHeight} alt={study.coverAlt} />}</CardTag>
+          {study.kind === "flent-system" ? <FlentSystemCover href={study.href} /> : study.kind === "cx" ? <CXPlatformCover /> : <CardTag class="project-cover-link" href={study.comingSoon ? undefined : study.href} aria-label={study.comingSoon ? undefined : `Open case study ${index + 1}: ${study.title}`}><SecuredCoverArtwork eager /></CardTag>}
         </article>;
       })}
     </div>

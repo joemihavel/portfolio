@@ -1,0 +1,24 @@
+---
+import RemixIcon from "../RemixIcon.astro";
+import "../../styles/flent-foundations.css";
+const primary = [["Forest Green", "#008E75"], ["Coral Accent", "#FF9A6D"], ["Brand Orange", "#FFA37B"], ["Brand Cyan", "#93F2E9"], ["Brand Pink", "#FF90B3"], ["Brand Yellow", "#FFE98A"]];
+const neutrals = [["Warm White", "#FCFBF7"], ["Text Main", "#15102E"], ["Text Subtle", "#8C8C8C"], ["Dark BG", "#131313"], ["Text Invert", "#FBF8EB"], ["White", "#FFFFFF"]];
+const pastels = [["Pastel Green", "#CFF0E9"], ["Pastel Cyan", "#D5F7F3"], ["Pastel Orange", "#FFE2D8"], ["Pastel Pink", "#FFE3EE"], ["Pastel Red", "#F4D7D7"], ["Pastel Yellow", "#FFF4C3"], ["Pastel Violet", "#DAD7F4"], ["Pastel Brown", "#DDD0C7"]];
+const heading = [["Display Heading 48px", 48], ["Page Heading 36px", 36], ["Section Heading 28px", 28], ["Card Heading 24px", 24], ["Subheading 20px", 20]];
+const body = [["Bold Subtitle 20px", 20, 700], ["SemiBold Label 16px", 16, 600], ["Body Medium 16px", 16, 500], ["Body Regular 16px", 16, 400], ["Muted Text 14px", 14, 400], ["Caption Medium 12px", 12, 500], ["OVERLINE 11PX", 11, 600]];
+---
+
+<figure class="flent-foundations" data-flent-foundations role="group" aria-label="Flent colour and typography foundations">
+  <div class="ff-stage ss-stage">
+    <div class="ff-heading">01 — Color Palette</div>
+    {[{label:"PRIMARY & BRAND", colors:primary}, {label:"BACKGROUNDS & TEXT", colors:neutrals}, {label:"PASTELS (SOFT BACKGROUNDS)", colors:pastels}].map(group => <div class="ff-palette"><div class="ff-overline">{group.label}</div><div class:list={["ff-swatches", {"ff-swatches-eight":group.colors.length === 8}]}>{group.colors.map(([label, color]) => <div class="ff-token" data-token={label}><span class="ff-swatch" style={`background:${color}`} data-color={color}></span><b>{label}</b><span class="ff-hex">{color}</span></div>)}</div></div>)}
+    <div class="ff-heading ff-type-heading">02 — Typography</div>
+    <div class="ff-type-grid"><div><div class="ff-font-label">ZIN DISPLAY CONDENSED — HEADERS</div><div class="ff-heading-samples">{heading.map(([label, size]) => <div style={`font-size:${size}px;--sample-size:${size}`}>{label}</div>)}</div></div><div><div class="ff-font-label">PLUS JAKARTA SANS — BODY & UI</div><div class="ff-body-samples">{body.map(([label, size, weight]) => <div style={`font-size:${size}px;font-weight:${weight}`}>{label}</div>)}</div></div></div>
+    <img class="ff-cursor" data-ff-cursor src="/images/redesign/figma-cursor.svg" width="24" height="28" alt="" />
+  </div>
+  <button class="fc-playback" type="button" data-stage-toggle aria-label="Pause animation" title="Pause animation"><span class="fc-pause-icon"><RemixIcon name="pause-line" /></span><span class="fc-play-icon"><RemixIcon name="play-line" /></span></button>
+</figure>
+<script>
+  import { initializeFlentFoundations } from "../../scripts/flent-foundations";
+  initializeFlentFoundations();
+</script>

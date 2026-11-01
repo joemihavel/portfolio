@@ -8,7 +8,7 @@ const animated = media.layers.some(layer => layer.motion || securedAssets[layer.
 ---
 
 <figure class:list={["secured-media", { "secured-media-bordered": media.border }]} data-media-name={name} data-figma-node={media.node}>
-  <button class="secured-media-open" type="button" aria-label={`Enlarge: ${media.label}`} data-case-enlarge>
+  <div class="secured-media-display">
     {name === "hero" ? <SecuredCoverArtwork eager={eager} /> : <span class="secured-media-art" style={`--case-aspect:${media.width / media.height};aspect-ratio:${media.width}/${media.height};background:${media.background || "transparent"}`}>
       {media.layers.map(layer => {
         const asset = securedAssets[layer.asset];
@@ -25,7 +25,6 @@ const animated = media.layers.some(layer => layer.motion || securedAssets[layer.
         />;
       })}
     </span>}
-    <span class="secured-zoom-mark" aria-hidden="true">↗</span>
-  </button>
+  </div>
   {animated && <button type="button" class="secured-motion-toggle" aria-label={`Pause animation: ${media.label}`} data-case-motion>Pause</button>}
 </figure>

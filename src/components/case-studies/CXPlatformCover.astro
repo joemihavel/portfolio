@@ -1,0 +1,44 @@
+---
+import RemixIcon from "../RemixIcon.astro";
+import "../../styles/cx-platform-cover.css";
+interface Props { controls?: boolean; }
+const { controls = true } = Astro.props;
+// Entirely fictional records. Never render the tenant details in the references.
+const columns = [
+  { title:"New request", count:3, tickets:[{name:"Maya Shah",unit:"204",category:"Billing",description:"Duplicate maintenance payment. Please check the receipt.",owner:"AP"},{name:"Arjun Rao",unit:"301",category:"Plumbing",description:"Kitchen tap needs a replacement.",owner:"NS"},{name:"Isha Dev",unit:"108",category:"Internet",description:"Wi-Fi disconnects in the evening.",owner:"AP"}] },
+  { title:"Waiting on customer", count:3, tickets:[{name:"Neil Kapoor",unit:"405",category:"Appliance",description:"Awaiting a photo of the oven display.",owner:"NS"},{name:"Tara Mehta",unit:"202",category:"Billing",description:"Confirm the date of the bank transfer.",owner:"AP"},{name:"Aman Das",unit:"110",category:"Access",description:"New access card requested.",owner:"RK"}] },
+  { title:"Waiting on vendor", count:3, tickets:[{name:"Leah Sen",unit:"310",category:"Electrical",description:"Schedule a visit to check the socket.",owner:"RK"},{name:"Riya Bose",unit:"504",category:"Plumbing",description:"Bathroom fixture replacement is due.",owner:"NS",overdue:true},{name:"Dev Nair",unit:"203",category:"Other",description:"Follow up on the balcony repair.",owner:"AP"}] },
+  { title:"In progress", count:3, tickets:[{name:"Sara Roy",unit:"402",category:"Appliance",description:"Technician arriving this afternoon.",owner:"RK"},{name:"Vik Joshi",unit:"106",category:"Internet",description:"Router replacement in progress.",owner:"NS",overdue:true},{name:"Anya Sethi",unit:"303",category:"Billing",description:"Checking the payment ledger.",owner:"AP"}] },
+];
+const details = [{icon:"file-list-3-line",label:"TICKET ID",value:"TK-1042"},{icon:"ticket-2-line",label:"SOURCE",value:"Email"},{icon:"user-line",label:"TENANT NAME",value:"Maya Shah"},{icon:"calendar-line",label:"CREATE DATE",value:"1 Nov 2026"},{icon:"side-bar-line",label:"UNIT",value:"South Court / 204"},{icon:"ticket-2-line",label:"CATEGORY",value:"Billing"},{icon:"user-line",label:"TICKET OWNER",value:"Anya Patel"}] as const;
+---
+<div class="cx-cover" data-cx-cover role="group" aria-label="Animated CX platform with fictional tenant tickets and a detail drawer opening and closing.">
+  <div class="cx-stage ss-stage" aria-hidden="true">
+    <div class="cx-app">
+      <aside class="cx-sidebar"><RemixIcon name="side-bar-line" /><span class="cx-sidebar-active"><RemixIcon name="customer-service-2-line" /></span><RemixIcon name="ticket-2-line" /><RemixIcon name="calendar-line" /><RemixIcon name="checkbox-circle-line" /><span class="cx-sidebar-avatar">JM</span></aside>
+      <div class="cx-topbar">CX support <span>/</span> Tenant Tickets</div>
+      <div class="cx-workspace">
+        <div class="cx-toolbar"><span class="cx-heading">Tenant Tickets</span><span class="cx-count">18</span><span class="cx-filter">All <RemixIcon name="arrow-down-s-line" /></span><span class="cx-filter cx-type-filter">All types <RemixIcon name="arrow-down-s-line" /></span><span class="cx-filter cx-filter-button"><RemixIcon name="filter-3-line" /> Filters</span><span class="cx-view"><RemixIcon name="layout-grid-line" /></span><span class="cx-search"><RemixIcon name="search-line" /> Search tickets</span><span class="cx-new"><RemixIcon name="add-line" /> New ticket</span></div>
+        <div class="cx-metrics">{[["TOTAL TICKETS","18","Matching tickets"],["OPEN","12","Across 4 queues"],["CLOSED","6","This week"],["TOTAL COST","₹24,800","Recorded costs"],["AVG CLOSE","8.4 h","6 closed tickets"]].map(([label,value,note]) => <div><span>{label}</span><b>{value}</b><small>{note}</small></div>)}</div>
+        <div class="cx-board">{columns.map((column,columnIndex) => <div class="cx-column"><div class:list={["cx-column-label",{"cx-pending":columnIndex>0}]}>{column.title}<span>· {column.count}</span></div>{column.tickets.map((ticket,ticketIndex) => <div class:list={["cx-ticket",{"cx-overdue":"overdue" in ticket&&ticket.overdue}]} data-cx-target={columnIndex===0&&ticketIndex===0?"ticket":undefined}><div class="cx-ticket-top"><b>{ticket.name} <span>| {ticket.unit} | {ticket.category}</span></b><i></i></div>{"overdue" in ticket&&ticket.overdue&&<span class="cx-overdue-label">&gt; 24h in stage</span>}<p>{ticket.description}</p><div class="cx-ticket-bottom"><span><RemixIcon name="calendar-line" />01/11/2026</span><span><RemixIcon name="time-line" />2 hours</span><span class="cx-avatar">{ticket.owner}</span></div></div>)}</div>)}</div>
+      </div>
+      <div class="cx-dim"></div>
+      <div class="cx-drawer">
+        <div class="cx-drawer-toolbar"><span class="cx-close" data-cx-target="close"><RemixIcon name="close-line" /></span><span class="cx-source">Billing</span><span class="cx-age"><RemixIcon name="time-line" />2h 15m</span><span class="cx-state"><span class="cx-state-new">New request</span><span class="cx-state-progress">In progress</span><RemixIcon name="arrow-down-s-line" /></span></div>
+        <div class="cx-review">Review &amp; close</div>
+        <div class="cx-drawer-body"><div class="cx-detail-title">Maya Shah | 204 | Billing</div><div class="cx-detail-grid">{details.map(detail => <div><RemixIcon name={detail.icon}/><span><small>{detail.label}</small><b>{detail.value}</b></span></div>)}</div>
+          <div class="cx-tabs"><span class="cx-tab-overview" data-cx-target="overview">Overview</span><span class="cx-tab-tasks" data-cx-target="tasks">Tasks <i>3</i></span><span>Files</span><span>Activity</span><span>Notes</span></div>
+          <div class="cx-tab-panels"><div class="cx-overview-panel"><b>Description</b><div class="cx-description"><p>My maintenance payment appears twice. Could you check the attached receipt?</p><p>One payment was made on 30 October. The second charge appears on my latest statement.</p><span><RemixIcon name="attachment-line" />payment-receipt.pdf</span></div><b>Costs incurred</b><div class="cx-cost-row"><span>Refund to verify</span><span>₹2,400</span></div></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="cx-cursor" data-cx-cursor src="/images/redesign/figma-cursor.svg" width="24" height="28" alt="" />
+  </div>
+  {controls&&<button class="cx-playback fc-playback" type="button" data-cx-toggle aria-label="Pause animation" title="Pause animation"><span class="fc-pause-icon"><RemixIcon name="pause-line" /></span><span class="fc-play-icon"><RemixIcon name="play-line" /></span></button>}
+</div>
+<script>
+  import { initializeCXCovers } from "../../scripts/cx-platform-cover";
+  initializeCXCovers();
+</script>

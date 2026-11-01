@@ -5,6 +5,7 @@
 // caption panel overhanging its lower edge — but positioned by the stack rather
 // than by world coordinates, so it carries no absolute placement of its own.
 import type { Story } from "../../data/meanwhile/layout";
+import RemixIcon from "../RemixIcon.astro";
 import { CATEGORY_META, CATEGORY_COLOUR } from "../../data/meanwhile/layout";
 
 interface Props {
@@ -67,7 +68,7 @@ const flag = story.country?.flag ?? "🌍";
       class="open"
       aria-label={`Read: ${story.headline}`}
     >
-      <span aria-hidden="true">↗</span>
+      <RemixIcon name="arrow-right-up-line" />
     </a>
     <h3 class="cap-head">{story.headline}</h3>
     <span class="chip">{story.source}</span>

@@ -8,7 +8,7 @@ export const showcaseTitle = showcaseTitleLead + showcaseTitleTail;
 export const showcaseImage = "/images/redesign/case-huemn.png";
 export const writingImage = "/images/redesign/writing-thumb.png";
 
-export const caseStudies = Array.from({ length: 2 }, (_, index) => index);
+export const caseStudies = Array.from({ length: 3 }, (_, index) => index);
 export const archiveImages = Array.from({ length: 7 }, (_, index) =>
   `/images/redesign/archive-${String(index + 1).padStart(2, "0")}.png`,
 );

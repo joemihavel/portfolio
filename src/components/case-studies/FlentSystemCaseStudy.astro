@@ -1,0 +1,60 @@
+---
+import FlentSystemCover from "./FlentSystemCover.astro";
+import FlentFoundations from "./FlentFoundations.astro";
+import { flentSystem } from "../../data/flent-system";
+import "../../styles/secured-case-study.css";
+interface Props { next: { href: string; title: string; comingSoon?: boolean }; }
+const { next } = Astro.props;
+const principles = [
+  ["Design foundations", "Define the visual language and reusable UI patterns."],
+  ["AI-readable guidance", "Translate those decisions into instructions an AI coding agent could follow."],
+  ["Working components", "Provide a browsable component reference and test the system through an actual application."],
+];
+---
+
+<div class="secured-content flent-system-content" data-secured-case>
+  <section id="overview" class="about-section secured-section" aria-labelledby="system-title">
+    <FlentSystemCover />
+    <div class="secured-intro"><h1 id="system-title">Scaling design quality <br />beyond the design team</h1><p class="secured-measure">{flentSystem.summary}</p></div>
+    <dl class="secured-details"><div><dt>Role:</dt><dd>Sole Product Designer</dd></div><div><dt>Team</dt><dd>Me (Independent work)</dd></div><div><dt>Timeline</dt><dd>Ongoing</dd></div></dl>
+  </section>
+  <section id="problem" class="about-section secured-section" aria-labelledby="system-problem">
+    <h2 id="system-problem">01 / The Problem</h2>
+    <div class="secured-stack"><h3>Everyone could build. But nothing felt consistent.</h3><p>At Flent, people across the organization use AI to build tools for their own workflows. While this made development more accessible, it also introduced inconsistencies in components, typography, and interaction patterns. People were repeatedly making the same design decisions, often using different libraries or whatever their AI agents generated.</p><p>The challenge: How could we make consistent UI easier to build without requiring a designer's involvement every time?</p></div>
+  </section>
+  <section id="approach" class="about-section secured-section" aria-labelledby="system-approach">
+    <h2 id="system-approach">02 / The Approach</h2>
+    <div class="secured-stack secured-gap-12"><h3>A design system built for AI workflows.</h3><p>A traditional Figma library wouldn't be enough. Most people were building directly with AI coding agents, not designing screens first. So I decided to make the design system usable within their development workflow. The goal was to reduce the need to recreate or repeatedly correct common UI patterns. I focused on three things:</p><div class="system-principles">{principles.map(([title, text], index) => <div class="secured-card"><img class="secured-icon" src={`/images/flent-system/${["foundations-icon.svg", "guidance-icon.svg", "components-icon.png"][index]}`} width="16" height="16" alt="" /><p><span>{title}</span> — {text}</p></div>)}</div></div>
+  </section>
+  <section id="what-i-built" class="about-section secured-section" aria-labelledby="system-built">
+    <h2 id="system-built">03 / What I Built</h2>
+    <div class="secured-stack secured-gap-24"><FlentFoundations /><p>I created a design system covering 16 sections and 29 components, including typography, colours, spacing, inputs, navigation, and feedback patterns.</p></div>
+    <div class="secured-stack secured-gap-24"><figure class="secured-media"><span class="secured-media-art system-workflow"><img src="/images/flent-system/ai-workflow.png" width="1468" height="758" loading="lazy" alt="Component conventions in the AI-assisted development workflow" /></span></figure><p>I then documented the conventions in a SKILL.md file and built a Storybook library to make the components accessible during AI-assisted development.</p><p><a href={flentSystem.storybook} target="_blank" rel="noopener noreferrer">Storybook link → Click here</a></p></div>
+  </section>
+  <section id="testing" class="about-section secured-section" aria-labelledby="system-testing">
+    <h2 id="system-testing">04 / Testing the System</h2>
+    <figure class="secured-media"><span class="secured-media-art system-testing"><img src="/images/flent-system/homeowner-onboarding.gif" width="800" height="410" loading="lazy" data-animated="true" data-poster="/images/flent-system/homeowner-onboarding-poster.png" alt="Animated walkthrough of the Flent homeowner onboarding form" /></span><button type="button" class="secured-motion-toggle" data-case-motion aria-label="Pause animation: Homeowner onboarding form walkthrough">Pause</button></figure>
+    <p>I wanted to validate the system beyond individual components. Since we frequently used Typeform internally, I built a similar form platform using AI-assisted development and the shared design guidelines. This tested how components worked together across inputs, selections, navigation, validation, and feedback. The result was a functional application following the established design language.</p>
+  </section>
+  <section id="learnings" class="about-section secured-section" aria-labelledby="system-learnings">
+    <h2 id="system-learnings">05 / Results &amp; Learnings</h2><div class="secured-stack"><p><strong>Early team adoption :</strong> Some teammates began using the system, making shared design decisions accessible beyond the design team.</p><p><strong>AI accelerated my design-to-build workflow :</strong> I could move from ideas to working interfaces, test interactions, and iterate without a traditional design-to-development handoff.</p></div>
+    <div class="secured-stack"><span class="system-reaction" data-figma-node="70:3742"><img src="/images/flent-system/deep-learning.png" width="462" height="540" loading="lazy" alt="Deep learning: someone reading a book at the bottom of a swimming pool" /></span><div class="secured-stack secured-gap-8"><h3>My biggest learning?</h3><p>AI makes building faster, but good design still requires clear direction, strong foundations, and human judgment. The better the system guiding AI, the less time I spend correcting its output.</p></div></div>
+  </section>
+  <nav class="case-pagination secured-pagination" aria-label="More case studies"><a href="/#selected-work">← All work</a>{next.comingSoon ? <button type="button" disabled>Next case study · Coming soon</button> : <a href={next.href}>Next: {next.title} →</a>}</nav>
+</div>
+<script>
+  import { initializeCaseStudy } from "../../scripts/secured-case-study";
+  initializeCaseStudy();
+</script>
+<style is:global>
+  .flent-system-content .system-principles { display:grid; gap:8px; }
+  .flent-system-content .system-principles .secured-card { flex-direction:row; align-items:flex-start; gap:10px; padding:16px 24px; }
+  .flent-system-content .system-principles .secured-card > span { flex:none; width:16px; color:var(--folio-ink); }
+  .system-workflow { aspect-ratio:641/328; background:#131313; }
+  .system-workflow > img { width:100%; height:110%; left:0; top:-5%; object-fit:contain; }
+  .system-testing { aspect-ratio:800/410; background:#FCFBF7; }
+  .system-testing > img { width:100%; height:100%; inset:0; object-fit:contain; }
+  .flent-system-content .system-reaction { display:block; position:relative; overflow:hidden; width:85px; height:115px; }
+  .flent-system-content .system-reaction > img { position:absolute; width:115.75%; max-width:none; height:100%; left:-7.29%; top:.33%; object-fit:fill; }
+  @media(max-width:700px) { .flent-system-content .system-principles .secured-card { padding:16px; } }
+</style>

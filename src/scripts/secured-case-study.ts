@@ -4,18 +4,12 @@ let registered = false;
 function setup() {
   cleanup?.();
   const root = document.querySelector<HTMLElement>("[data-secured-case]");
-  const viewer = document.querySelector<HTMLDialogElement>("[data-case-viewer]");
-  if (!root || !viewer) return;
+  if (!root) return;
 
   const controller = new AbortController();
   const { signal } = controller;
   const figures = [...root.querySelectorAll<HTMLElement>(".secured-media")];
-  const content = viewer.querySelector<HTMLElement>("[data-case-viewer-content]")!;
-  const viewerMotion = viewer.querySelector<HTMLButtonElement>("[data-case-viewer-motion]")!;
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-  let previousFocus: HTMLElement | null = null;
-  let previousOverflow = "";
-  let locked = false;
 
   const play = (video: HTMLVideoElement) => {
     video.muted = true;
@@ -65,46 +59,7 @@ function setup() {
     }
   };
 
-  const render = (figure: HTMLElement) => {
-    const art = figure.querySelector<HTMLElement>(".secured-media-art")!.cloneNode(true) as HTMLElement;
-    const paused = reducedMotion.matches || figure.querySelector<HTMLElement>("[data-case-motion]")?.dataset.paused === "true";
-    art.querySelectorAll<HTMLVideoElement>("video").forEach(video => {
-      video.autoplay = !paused;
-      if (paused) video.removeAttribute("src");
-    });
-    art.querySelectorAll<HTMLImageElement>("img").forEach(image => {
-      image.loading = "eager";
-      image.alt = "";
-      if (!reducedMotion.matches && image.dataset.animatedSrc) image.src = image.dataset.animatedSrc;
-    });
-    content.replaceChildren(art);
-    viewer.setAttribute("aria-label", figure.querySelector("button")?.getAttribute("aria-label")?.replace(/^Enlarge: /, "") || "Expanded project image");
-    viewerMotion.hidden = !art.querySelector("img[data-animated], video, [data-cover-screen]");
-    viewerMotion.dataset.paused = String(paused);
-    viewerMotion.textContent = paused ? "Play" : "Pause";
-    setPaused(content, paused);
-  };
-
-  const unlock = () => {
-    if (!locked) return;
-    document.body.style.overflow = previousOverflow;
-    locked = false;
-    document.dispatchEvent(new CustomEvent("folio:overlay", { detail: { active: false } }));
-    content.replaceChildren();
-    if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
-  };
-
   figures.forEach(figure => {
-    figure.querySelector<HTMLButtonElement>("[data-case-enlarge]")?.addEventListener("click", event => {
-      previousFocus = event.currentTarget as HTMLElement;
-      previousOverflow = document.body.style.overflow;
-      locked = true;
-      render(figure);
-      viewer.showModal();
-      document.body.style.overflow = "hidden";
-      document.dispatchEvent(new CustomEvent("folio:overlay", { detail: { active: true } }));
-      viewer.querySelector<HTMLButtonElement>("[data-case-close]")?.focus({ preventScroll: true });
-    }, { signal });
     figure.querySelector<HTMLButtonElement>("[data-case-motion]")?.addEventListener("click", event => {
       const button = event.currentTarget as HTMLButtonElement;
       setPaused(figure, button.dataset.paused !== "true");
@@ -134,39 +89,14 @@ function setup() {
     motionObserver.observe(video);
   });
 
-  viewerMotion.addEventListener("click", () => {
-    const paused = viewerMotion.dataset.paused !== "true";
-    setPaused(content, paused);
-    viewerMotion.dataset.paused = String(paused);
-    viewerMotion.textContent = paused ? "Play" : "Pause";
-  }, { signal });
-  root.querySelectorAll<HTMLButtonElement>("[data-case-inline-motion]").forEach(button => {
-    if (reducedMotion.matches) setPaused(button, true);
-    button.addEventListener("click", () => {
-      const paused = button.querySelector<HTMLImageElement>("img")?.dataset.paused !== "true";
-      setPaused(button, paused);
-      button.setAttribute("aria-label", `${paused ? "Play" : "Pause"} reaction animation`);
-    }, { signal });
-  });
-  viewer.querySelector("[data-case-close]")?.addEventListener("click", () => viewer.close(), { signal });
-  viewer.addEventListener("close", unlock, { signal });
-  viewer.addEventListener("keydown", event => {
-    if (event.key === "Escape") {
-      event.preventDefault();
-      event.stopPropagation();
-      viewer.close();
-      return;
-    }
-  }, { signal });
-  viewer.addEventListener("click", event => {
-    if (event.target !== viewer) return;
-    const bounds = viewer.getBoundingClientRect();
-    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) viewer.close();
-  }, { signal });
+  const applyMotionPreference = () => {
+    setPaused(root, reducedMotion.matches);
+    figures.forEach(figure => setPaused(figure, reducedMotion.matches));
+  };
+  if (reducedMotion.matches) applyMotionPreference();
+  reducedMotion.addEventListener("change", applyMotionPreference, { signal });
 
   cleanup = () => {
-    if (viewer.open) viewer.close();
-    unlock();
     motionObserver.disconnect();
     videos.forEach(video => video.pause());
     controller.abort();
