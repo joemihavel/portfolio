@@ -1,6 +1,6 @@
 import { archiveScreens } from './archive';
 
-export const resumeHref = 'https://drive.google.com/file/d/1aG208AVmbddAnotep7oDlV5xiJj-tm5d/view?usp=sharing';
+export const resumeHref = 'https://drive.google.com/file/d/1x8DyzQpMKW_ShBDdDFTrjDVOG-uYEBR8/view?usp=sharing';
 
 export const showcaseTitleLead = "Designed and developed an interactive Indian experience";
 export const showcaseTitleTail = " to over 300 studios";
