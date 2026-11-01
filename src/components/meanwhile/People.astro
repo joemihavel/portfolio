@@ -819,7 +819,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
 
     /** The hero and the corner labels — everything a card must stay off. */
     const obstacles = (): Rect[] =>
-      [heroRect(), rectOf(".hero-back"), rectOf(".vis-trigger")].filter(Boolean) as Rect[];
+      [heroRect(), rectOf(".vis-trigger")].filter(Boolean) as Rect[];
 
     let slots: Slot[] = [];
     const measure = () => {
@@ -829,7 +829,7 @@ const countries = (COUNTRIES as { code: string; name: string }[])
       world.style.setProperty("--card-w", `${Math.round(w)}px`);
       // The corner chrome is measured rather than assumed, so the reserved
       // area follows it if either label changes size.
-      const blocked = [rectOf(".hero-back"), rectOf(".vis-trigger")].filter(Boolean) as Rect[];
+      const blocked = [rectOf(".vis-trigger")].filter(Boolean) as Rect[];
       slots = arrange({ vw, vh, hero: heroRect(), cardW: w, cardH: h, blocked });
       return slots;
     };

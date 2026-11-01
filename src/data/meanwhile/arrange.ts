@@ -67,8 +67,7 @@ export interface ArrangeOptions {
   edge?: number;
   gap?: number;
   /**
-   * Anything else a card must not cover — the back link and the visitor count
-   * live in the top corners, and a card landing on them made both unreadable.
+   * Anything else a card must not cover, such as the visitor count.
    */
   blocked?: Rect[];
 }

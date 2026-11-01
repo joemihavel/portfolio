@@ -29,8 +29,7 @@ const current = days.find((d) => d.day <= today) ?? days[0];
 >
   {
     /* No portfolio header here on purpose: the canvas is the whole page, and a
-       second navbar over it fights the brief's "the canvas is the hero". The
-       way home is the back link inside the canvas HUD. */
+       second navbar over it fights the brief's "the canvas is the hero". */
   }
   {
     current ? (
@@ -61,9 +60,6 @@ const current = days.find((d) => d.day <= today) ?? days[0];
           <p class="mt-2 text-[14px] text-muted">
             Run <code>node scripts/ingest.mjs</code> to collect today's good things.
           </p>
-          <a href="/" class="link-draw mt-6 inline-block text-[13px] text-accent">
-            ← Back to joemihavel.com
-          </a>
         </div>
       </main>
     )

@@ -17,19 +17,6 @@ const { day } = Astro.props;
 
 <section class="hero" id="mw-hero">
 
-  <!-- Uses the portfolio's own idioms so it reads as part of that site rather
-       than as this one's chrome: bracketed label, the arrow that travels, and
-       the word swap from the header nav. -->
-  <a href="/" class="hero-back" id="mw-back" aria-label="Go back">
-    <span class="hero-back-brk" aria-hidden="true">[</span>
-    <span class="hero-back-arrow" aria-hidden="true">
-      <span class="hero-back-tail"></span>
-      <span class="hero-back-head">←</span>
-    </span>
-    <span class="hero-back-label">back</span>
-    <span class="hero-back-brk" aria-hidden="true">]</span>
-  </a>
-
   <Visitors />
 
   <div class="hero-inner">
@@ -83,80 +70,13 @@ const { day } = Astro.props;
 
 <style>
   /* ------------------------------------------------------------------ hero */
-  .hero-inner,
-  .hero-back { position: relative; z-index: 1; }
+  .hero-inner { position: relative; z-index: 1; }
 
   /* The brush is set on the page, not the hero: an element with
      pointer-events:none is never hovered, so a cursor rule on it does nothing. */
   :global(body) {
     cursor: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%3E%3Cg%20transform='rotate(45%2014%2014)'%3E%3Crect%20x='12.4'%20y='2.5'%20width='3.2'%20height='9'%20rx='1.6'%20fill='%23222'/%3E%3Crect%20x='11.2'%20y='11'%20width='5.6'%20height='3.4'%20rx='1'%20fill='%23b9b9b9'/%3E%3Cpath%20d='M11.4%2014.2%20h5.2%20l-2.6%206.4%20z'%20fill='%23e0483a'/%3E%3C/g%3E%3C/svg%3E") 9 19, crosshair;
   }
-  /* Matched to the portfolio header: same 15px uppercase sans, same page
-     gutters (24 / 48 / 100px) and the same vertical padding, so it lands where
-     the wordmark sits on every other page. */
-  .hero-back {
-    pointer-events: auto;
-    position: absolute;
-    top: 20px;
-    left: 24px;
-    display: inline-flex;
-    align-items: center;
-    font-size: 15px;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: var(--pixel-secondary);
-    transition: color 0.3s ease;
-  }
-  @media (min-width: 768px) {
-    .hero-back { left: 48px; }
-  }
-  @media (min-width: 1024px) {
-    .hero-back { top: 24px; left: 100px; }
-  }
-  .hero-back:hover { color: var(--text-primary); }
-
-  /* Brackets ease outward, the way the header's do. */
-  .hero-back-brk {
-    color: var(--pixel-primary);
-    transition: transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1), color 0.3s ease;
-  }
-  .hero-back-brk:first-of-type { margin-right: 0.4em; }
-  .hero-back-brk:last-of-type { margin-left: 0.4em; }
-  .hero-back:hover .hero-back-brk:first-of-type { transform: translateX(-3px); }
-  .hero-back:hover .hero-back-brk:last-of-type { transform: translateX(3px); }
-  .hero-back:hover .hero-back-brk { color: var(--accent); }
-
-  /* The arrow grows a tail as it moves, so it reads as travelling rather than
-     as a glyph being nudged. */
-  .hero-back-arrow {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    width: 16px;
-    height: 11px;
-    margin-right: 0.35em;
-  }
-  .hero-back-head {
-    position: absolute;
-    left: 0;
-    line-height: 1;
-    transition: transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-  .hero-back-tail {
-    position: absolute;
-    left: 4px;
-    top: 50%;
-    height: 1px;
-    width: 11px;
-    background: currentColor;
-    transform: scaleX(0);
-    transform-origin: right center;
-    transition: transform 0.36s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-  .hero-back:hover .hero-back-head { transform: translateX(-3px); }
-  .hero-back:hover .hero-back-tail { transform: scaleX(1); }
-
-  .hero-back-label { white-space: nowrap; }
   .hero {
     position: fixed;
     inset: 0;
@@ -176,7 +96,6 @@ const { day } = Astro.props;
   @media (prefers-reduced-motion: reduce) {
     :global(body) { cursor: auto; }
     .hero-paint { display: none; }
-    .hero-back, .hero-back-brk, .hero-back-head, .hero-back-tail { transition: none; }
   }
 
   .hero-inner {
@@ -416,7 +335,7 @@ const { day } = Astro.props;
 
   @media (prefers-reduced-motion: reduce) {
     .hero-inner, .deck-scrim, .deck-bar, .deck-end, .cta::after, .cta-arrow,
-    .deck-stack :global(.card), .deck-next, .hero-back-arrow {
+    .deck-stack :global(.card), .deck-next {
       transition: none !important;
     }
   }
@@ -788,35 +707,8 @@ const { day } = Astro.props;
     document.addEventListener("pointerleave", () => { last = null; });
   };
 
-  /**
-   * Returns to wherever you came from.
-   *
-   * The href stays "/" so it is a real link — middle-click, open-in-new-tab and
-   * a visitor arriving straight here all still work. It only becomes a history
-   * step when there is somewhere on this site to step back to, which is what
-   * makes it "back" rather than "home".
-   */
-  const initBack = () => {
-    const back = document.getElementById("mw-back") as HTMLAnchorElement | null;
-    if (!back) return;
-
-    back.addEventListener("click", (e) => {
-      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
-      const from = document.referrer;
-      if (!from) return;
-      try {
-        if (new URL(from).origin !== location.origin) return;
-      } catch {
-        return;
-      }
-      e.preventDefault();
-      history.back();
-    });
-  };
-
   document.addEventListener("astro:page-load", () => {
     initDeck();
     initPaint();
-    initBack();
   });
 </script>
