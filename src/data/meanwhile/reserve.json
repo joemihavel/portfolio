@@ -576,6 +576,18 @@
     "score": 4
   },
   {
+    "id": "s_fly53",
+    "headline": "Scientists discover the immune system’s hidden sense of touch",
+    "summary": "Scientists at McGill University have discovered a surprising new ability of immune cells that could change how we understand long-term immunity. Researchers found that T cells can actually sense how stiff their…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261026225617.htm",
+    "published_at": "2026-10-28T00:54:54.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_6wrsb8",
     "headline": "Tiny magnetic vortices could help computers work more like your brain",
     "summary": "Scientists have filmed tiny magnetic vortices called skyrmions melting out of an organized lattice for the first time, revealing new ways to manipulate these unusual structures. The breakthrough could help make…",
@@ -5124,18 +5136,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260811011140.htm",
     "published_at": "2026-08-11T13:12:27.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_12mahg0",
-    "headline": "Dogs can tell fear from sadness — and scientists saw it in their brains",
-    "summary": "Dogs may understand our emotions more deeply than scientists realized. Brain scans show that happy human faces activate regions in dogs linked to higher-level processing and reward, suggesting that smiles carry special…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260811011132.htm",
-    "published_at": "2026-08-11T14:09:01.000Z",
     "read_minutes": 2,
     "score": 2
   }
