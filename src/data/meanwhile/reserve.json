@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_1q42dfr",
+    "headline": "IceCube detects ghost particles with 10 billion times the energy of solar neutrinos",
+    "summary": "Mysterious particles called neutrinos constantly stream through our bodies, and scientists are now detecting incredibly powerful versions arriving from distant cosmic sources using a massive observatory buried in…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261101010533.htm",
+    "published_at": "2026-11-02T13:42:07.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_e740l",
     "headline": "Scientists discover a hidden 100-million-year-old volcanic system",
     "summary": "Scientists have uncovered a long-lost volcanic system in Iran that dates back roughly 100 million years, revealing a hidden chapter in Earth's tectonic history. The discovery sheds new light on the disappearance of an…",
@@ -564,6 +576,18 @@
     "score": 5
   },
   {
+    "id": "s_1czqioc",
+    "headline": "NASA's Hubble and Webb discover ancient worlds that remember their past",
+    "summary": "NASA’s Hubble and James Webb Space Telescopes have uncovered surprising clues about the solar system’s origins by studying 27 tiny, distant objects beyond Neptune. Scientists discovered that these ancient building…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261031221209.htm",
+    "published_at": "2026-11-02T03:07:01.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_2ga08m",
     "headline": "NASA discovers Jupiter’s invisible shield is more complex than Earth’s",
     "summary": "NASA’s Juno spacecraft has discovered that Jupiter uses a surprisingly complex system of powerful plasma waves and multiple shock regions to defend against the solar wind. The findings reveal major differences between…",
@@ -572,6 +596,18 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/10/261028232715.htm",
     "published_at": "2026-10-29T12:26:25.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_o3kp3i",
+    "headline": "Dinosaur blood—oldest discovery rewrites what fossils can reveal about the past",
+    "summary": "An international research team led by Curtin University has for the first time uncovered unequivocal evidence of fossilized red blood cells and amino acids of collagen, reshaping our understanding of fossil preservation…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-10-dinosaur-blood-oldest-discovery-rewrites.html",
+    "published_at": "2026-11-02T19:00:13.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2416,6 +2452,18 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/10/261028234813.htm",
     "published_at": "2026-10-31T04:31:41.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_fibgql",
+    "headline": "Exactly solvable model reveals how trapped light can create magnetic order in one-dimensional spin chains",
+    "summary": "A research team wanted to better understand how the forces between particles inside a material change. They discovered that by confining one-dimensional classical spin chains inside a mirror box cavity with light, they…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-11-solvable-reveals-magnetic-dimensional-chains.html",
+    "published_at": "2026-11-02T22:00:13.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5084,58 +5132,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260811053042.htm",
     "published_at": "2026-08-14T09:51:50.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_13dtsvr",
-    "headline": "Scientists discover a hidden brain rhythm that could improve Parkinson’s treatment",
-    "summary": "Scientists have pinpointed a brain network—and its distinctive electrical rhythm—that appears to drive the benefits of deep brain stimulation for Parkinson’s disease. The discovery could lead to more precise…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260811011148.htm",
-    "published_at": "2026-08-12T13:20:59.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_13ceyr9",
-    "headline": "Black holes older than the Big Bang could explain dark matter",
-    "summary": "Some black holes roaming the Universe today may actually be older than the Big Bang. A new cosmic “bounce” model suggests the Universe expanded from an earlier contracting phase, allowing ancient black holes to survive…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260811011146.htm",
-    "published_at": "2026-08-11T10:14:58.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_13aapki",
-    "headline": "3,500-year-old skeletons challenge what scientists thought they knew about syphilis",
-    "summary": "Ancient remains from Vietnam suggest diseases like yaws may have been passed from mother to child thousands of years ago, a form of transmission often assumed to indicate syphilis. The discovery could overturn how…",
-    "category": "science",
-    "country": {
-      "code": "VN",
-      "name": "Vietnam",
-      "flag": "🇻🇳"
-    },
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260811011143.htm",
-    "published_at": "2026-08-12T13:05:58.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1386gdr",
-    "headline": "MIT neuroscientists discover the brain can reason without words",
-    "summary": "MIT neuroscientists have found striking evidence that language and logical reasoning are powered by separate systems in the brain. Even people with severe language impairments caused by stroke were able to solve…",
-    "category": "culture",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260811011140.htm",
-    "published_at": "2026-08-11T13:12:27.000Z",
     "read_minutes": 2,
     "score": 2
   }
