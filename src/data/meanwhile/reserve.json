@@ -2528,6 +2528,18 @@
     "score": 3
   },
   {
+    "id": "s_1ekso36",
+    "headline": "Scientists turn viruses into weapons against deadly superbugs",
+    "summary": "Scientists are advancing a promising new way to fight antibiotic-resistant infections by using viruses that specifically target and kill harmful bacteria. An international team has released the first coordinated…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261102202828.htm",
+    "published_at": "2026-11-05T02:40:33.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_1gnvv4f",
     "headline": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
     "summary": "The principle \"Work smarter, not harder!\" apparently also applies to controlling quantum materials with light. Many of their fascinating properties depend on how the atoms are arranged in the crystal. Ultrashort laser…",
@@ -5120,18 +5132,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260819041226.htm",
     "published_at": "2026-08-19T09:55:34.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_q4sum3",
-    "headline": "Tiny quantum engines reveal useful energy hiding in “waste heat”",
-    "summary": "A tiny machine made from just an atom and particles of light may sound impossibly simple, but it raises a surprisingly difficult question: what counts as heat, and what energy can still do useful work? University of…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260819041222.htm",
-    "published_at": "2026-08-19T11:49:52.000Z",
     "read_minutes": 2,
     "score": 2
   }
