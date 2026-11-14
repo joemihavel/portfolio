@@ -576,6 +576,18 @@
     "score": 5
   },
   {
+    "id": "s_d4bkbq",
+    "headline": "Astronomers Found a Mysterious Object Orbiting Far Beyond Pluto. It Could Be a New Dwarf Planet Hidden in Our Solar System",
+    "summary": "The dwarf planet candidate, called ED138, appeared in telescope images and takes roughly 280 years to orbit the sun. Astronomers need to determine its size to properly classify it",
+    "category": "planet",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+    "published_at": "2026-11-12T17:00:02.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1t6qni3",
     "headline": "A hidden limit of space and time could unlock electronics 100,000 times faster",
     "summary": "Scientists have discovered a surprising quantum limit that prevents electrons from being tracked with unlimited precision in both space and time. The breakthrough could pave the way for manipulating chemical reactions…",
@@ -608,18 +620,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-11-robotic-tools-hidden-microbial-world.html",
     "published_at": "2026-11-13T00:40:01.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_d4bkbq",
-    "headline": "Astronomers Found a Mysterious Object Orbiting Far Beyond Pluto. It Could Be a New Dwarf Planet Hidden in Our Solar System",
-    "summary": "The dwarf planet candidate, called ED138, appeared in telescope images and takes roughly 280 years to orbit the sun. Astronomers need to determine its size to properly classify it",
-    "category": "planet",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
-    "published_at": "2026-11-12T17:00:02.000Z",
     "read_minutes": 2,
     "score": 4
   },
