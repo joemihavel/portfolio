@@ -576,6 +576,30 @@
     "score": 5
   },
   {
+    "id": "s_1l8874k",
+    "headline": "The Bloomsbury Group's Vanessa Bell and Duncan Grant Tangled Their Art and Lives Together for Decades. A Final Sketch of Bell on Her Deathbed Just Resurfaced After 60 Years",
+    "summary": "The two artists had a thoroughly complicated relationship—and a daughter—but never ceased to paint and draw each other. The new discovery points to an artistic bond that continued through health and sickness",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-bloomsbury-groups-vanessa-bell-and-duncan-grant-tangled-their-art-and-lives-together-for-decades-a-final-sketch-of-bell-on-her-deathbed-just-resurfaced-after-60-years-180989874/",
+    "published_at": "2026-11-16T21:28:51.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1vxvxck",
+    "headline": "These Moths Use Their Genitals to Fend Off Bats—but Not in the Way You Think. They Emit Ultrasound to Scramble the Predators' Sonar",
+    "summary": "New research suggests male hawkmoths have three distinct anti-bat, ultrasound-producing systems. These may have evolved independently up to seven times between 5 million and 30 million years ago",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/these-moths-use-their-genitals-to-fend-off-bats-but-not-in-the-way-you-think-they-emit-ultrasound-to-scramble-the-predators-sonar-180989819/",
+    "published_at": "2026-11-06T16:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1jd22rg",
     "headline": "These cranberry bogs come with a side of solar",
     "summary": "Two Massachusetts projects are the nation’s first to grow cranberries beneath solar panels, in another example of how agriculture and clean energy can coexist.",
@@ -632,18 +656,6 @@
     "source": "Phys.org",
     "url": "https://phys.org/news/2026-11-robotic-tools-hidden-microbial-world.html",
     "published_at": "2026-11-13T00:40:01.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1vxvxck",
-    "headline": "These Moths Use Their Genitals to Fend Off Bats—but Not in the Way You Think. They Emit Ultrasound to Scramble the Predators' Sonar",
-    "summary": "New research suggests male hawkmoths have three distinct anti-bat, ultrasound-producing systems. These may have evolved independently up to seven times between 5 million and 30 million years ago",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/these-moths-use-their-genitals-to-fend-off-bats-but-not-in-the-way-you-think-they-emit-ultrasound-to-scramble-the-predators-sonar-180989819/",
-    "published_at": "2026-11-06T16:00:00.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2588,14 +2600,14 @@
     "score": 4
   },
   {
-    "id": "s_1biiet1",
-    "headline": "Dismantled to Survive the Nazi Blitz, Coventry Cathedral's Stained Glass Is 'a Medieval Jigsaw Puzzle.' Its 12,000 Fragments Are Now Digitized for Public View",
-    "summary": "First shattered during the Reformation, the 15th-century stained glass is rife with religious imagery, comical animal scenes and even portraits of the original donors who funded its construction",
-    "category": "animals",
+    "id": "s_1wq17vf",
+    "headline": "A material just one atom thick reveals a strange quantum secret",
+    "summary": "Researchers at the University of Osaka have discovered a remarkable quantum state forming at the boundary between a one-atom-thick material and a metal. They observed electrons behaving as though they were unusually…",
+    "category": "science",
     "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/dismantled-to-survive-the-nazi-blitz-coventry-cathedrals-stained-glass-is-a-medieval-jigsaw-puzzle-its-12000-fragments-have-been-digitized-for-the-public-180989853/",
-    "published_at": "2026-11-10T17:27:06.000Z",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261115085554.htm",
+    "published_at": "2026-11-17T01:25:39.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -2608,6 +2620,42 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/11/261110042549.htm",
     "published_at": "2026-11-12T08:38:42.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_if07gt",
+    "headline": "Elusive optical effect paves the way for advanced lidar and nanophotonic technologies",
+    "summary": "An international research team, led by scientists from Skoltech, has experimentally demonstrated for the first time the photonic spin Hall shift for light scattered off an optically small particle. This work, published…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-11-elusive-optical-effect-paves-advanced.html",
+    "published_at": "2026-11-16T19:20:05.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_61osgu",
+    "headline": "These Adorable Hatchlings Are From the U.S. West Coast's First Known Natural Sea Turtle Nests. Now, They've Returned to the Wild",
+    "summary": "Two nests were spotted in September, and authorities moved the eggs to an aquarium to protect them from an incoming tropical storm. Over the weekend, dozens of hatchlings emerged and have now been released on the same…",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/these-adorable-hatchlings-are-from-the-us-west-coasts-first-known-natural-sea-turtle-nests-now-theyve-returned-to-the-wild-180989876/",
+    "published_at": "2026-11-16T20:08:45.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_1biiet1",
+    "headline": "Dismantled to Survive the Nazi Blitz, Coventry Cathedral's Stained Glass Is 'a Medieval Jigsaw Puzzle.' Its 12,000 Fragments Are Now Digitized for Public View",
+    "summary": "First shattered during the Reformation, the 15th-century stained glass is rife with religious imagery, comical animal scenes and even portraits of the original donors who funded its construction",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/dismantled-to-survive-the-nazi-blitz-coventry-cathedrals-stained-glass-is-a-medieval-jigsaw-puzzle-its-12000-fragments-have-been-digitized-for-the-public-180989853/",
+    "published_at": "2026-11-10T17:27:06.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5056,58 +5104,6 @@
     "source": "Mongabay",
     "url": "https://news.mongabay.com/short-article/2026/08/only-a-few-hundred-timor-green-pigeons-may-remain-there-is-still-time-to-save-them/",
     "published_at": "2026-08-17T11:10:13.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_wkvm41",
-    "headline": "Bringing the thrill of live music to deaf audiences – with the help of air guitar",
-    "summary": "Luke Holdsworth was born deaf and is now one of the UK’s most respected BSL interpreters at live concerts",
-    "category": "culture",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Positive News",
-    "url": "https://www.positive.news/society/bringing-the-thrill-of-live-music-to-deaf-audiences-with-the-help-of-air-guitar/",
-    "published_at": "2026-08-13T05:00:59.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1xor8kr",
-    "headline": "New Radiation-Free Lung Scan Can Spot Disease Sooner in Children – And it’s Much Safer",
-    "summary": "For caregivers of children living with chronic or rare lung diseases, monitoring their condition presents an uncomfortable tradeoff: Repeated scans can be valuable, but they can also expose patients to radiation. Now, a…",
-    "category": "science",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/new-radiation-free-lung-scan-could-help-doctors-spot-disease-in-children-earlier/",
-    "published_at": "2026-08-14T20:43:35.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_enkj6",
-    "headline": "Antiviral Chewing Gum Cuts Risk of Certain Head and Neck Cancers to Almost Zero in New Study",
-    "summary": "Research from the University of Pennsylvania shows that antiviral and antibacterial chewing gums reduce the levels of three microbes known to be associated with oral cancer, paving the way for more effective and…",
-    "category": "science",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/chewing-gum-cuts-risk-of-certain-head-neck-cancers-to-near-zero/",
-    "published_at": "2026-08-12T22:51:33.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_fh7vdx",
-    "headline": "Voyager 2 was Running Low on Power Until NASA Engineered a ‘Big Bang’ to Buy Another Year",
-    "summary": "NASA engineers found a way to free up power aboard Voyager 2, helping the nearly 50-year-old spacecraft continue its scientific work. The Jet Propulsion Laboratory team decided to simultaneously shut down certain…",
-    "category": "people",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/voyager-2-was-running-low-on-power-until-nasa-engineered-big-bang-to-buy-another-year/",
-    "published_at": "2026-08-10T21:42:21.000Z",
     "read_minutes": 2,
     "score": 2
   }
