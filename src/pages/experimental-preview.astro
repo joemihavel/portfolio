@@ -10,7 +10,7 @@ import { writingPages } from "../data/writing";
 import { caseStudies, experiments, showcaseImage, showcaseTitle, showWriting, writingImage, writingItems } from "../data/portfolio-content";
 
 const casePositions = [
-  [70, 130, 520, 0], [700, 130, 520, 0], [1330, 130, 520, 0],
+  [70, 130, 520, 0], [700, 130, 520, 0],
 ];
 const archiveColumnY = [130, 190, 150];
 const archivePositions: number[][] = [];
@@ -24,7 +24,7 @@ const archiveNoteY = 950 + archiveGroupHeight + 200;
 const experimentPositions = experiments.map((_, index) => [70 + index * 530, 130, 440, 0]);
 const writingPositions = [[80, 140, 400, 0], [600, 140, 400, 0], [80, 650, 400, 0], [600, 650, 400, 0]];
 const groups = [
-  { id: "case-studies", label: "Case Studies", count: caseStudies.length, position: [2500, 1030, 1980, 650] },
+  { id: "case-studies", label: "Case Studies", count: caseStudies.length, position: [2500, 1030, 1350, 650] },
   { id: "archive", label: "Archive", count: archiveScreens.length, position: [200, 950, 1500, archiveGroupHeight] },
   { id: "experiments", label: "Experiments", count: experiments.length, position: [1880, 260, experiments.length * 530 + 60, 650] },
   ...(showWriting ? [{ id: "writing", label: "Writing", count: writingItems.length, position: [1770, 2350, 1120, 1160] }] : []),
