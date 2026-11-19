@@ -576,14 +576,50 @@
     "score": 5
   },
   {
-    "id": "s_e1gnfk",
-    "headline": "Colleges Are Getting Creative to Help Students With Kids",
-    "summary": "This story was originally published by Open Campus. Walking by New River’s advising office one day, Stephanie Addikis noticed that the coloring books and Legos that she had helped stock in a nearby box were ……",
-    "category": "planet",
+    "id": "s_1kg66ld",
+    "headline": "Two of the ‘Last Wild Ecosystems’ Untouched by Humans Are Declared New Sanctuaries",
+    "summary": "Some of the “very last wild and healthy ecosystems” unblemished by humans have been discovered in the remote atolls of the Pacific Ocean teeming with life. Scientists wrote in a new study that, although humans have left…",
+    "category": "animals",
     "country": null,
-    "source": "Reasons to be Cheerful",
-    "url": "https://reasonstobecheerful.world/rural-colleges-student-parents-support/",
-    "published_at": "2026-11-09T16:39:10.000Z",
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/two-of-last-wild-ecosystems-untouched-by-humans-declared-new-sanctuaries/",
+    "published_at": "2026-11-14T16:16:07.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_9x9218",
+    "headline": "Oh Whale! Revisits the Exploding Whale That Became One of the Internet’s First Viral Videos",
+    "summary": "JoyDrops champions awards-eligible documentary shorts about joy, a counterweight to a category often dominated by tragedy. Good News Network has partnered with JoyDrops to spotlight these films and talk with the…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/oh-whale-revisits-the-exploding-whale-that-became-one-of-the-internets-first-viral-videos/",
+    "published_at": "2026-11-11T19:32:59.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1d5rrml",
+    "headline": "A Gene Variant Inherited From Neanderthals Might Affect Modern Humans' Brain Size and Provide Protection Against Schizophrenia",
+    "summary": "About 20 percent of people alive today with European ancestry carry at least one copy of the variant, according to a new study. It's associated with a smaller occipital lobe, a region that processes visual information…",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-gene-variant-inherited-from-neanderthals-might-affect-modern-humans-brain-size-and-provide-protection-against-schizophrenia-180989893/",
+    "published_at": "2026-11-18T19:57:10.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_3mr1qn",
+    "headline": "See Stunning Images of the Universe Captured by Europe's Euclid Space Telescope, Which Is Building the Biggest 3D Map of the Cosmos",
+    "summary": "The 1.7 million gigabytes of data include more than 900 million galaxies, more than 60 million potential quasars and about 15,000 candidates of an elusive cosmic phenomenon that can help scientists understand dark…",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
+    "published_at": "2026-11-18T16:32:47.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -608,6 +644,30 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
     "published_at": "2026-11-12T17:00:02.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_jct3m0",
+    "headline": "Voyager 1 Is the Farthest Human-Made Object in the Universe—and the Spacecraft Is About to Reach One Light-Day From Earth",
+    "summary": "The probe and its twin, Voyager 2, have been hurtling through space for almost 50 years, stretching humanity's reach into interstellar space. The upcoming milestone is a testament to scientific endeavor and ingenuity",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/voyager-1-is-the-farthest-human-made-object-in-the-universe-and-the-spacecraft-is-about-to-reach-one-light-day-from-earth-180989845/",
+    "published_at": "2026-11-10T14:00:00.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_e1gnfk",
+    "headline": "Colleges Are Getting Creative to Help Students With Kids",
+    "summary": "This story was originally published by Open Campus. Walking by New River’s advising office one day, Stephanie Addikis noticed that the coloring books and Legos that she had helped stock in a nearby box were ……",
+    "category": "planet",
+    "country": null,
+    "source": "Reasons to be Cheerful",
+    "url": "https://reasonstobecheerful.world/rural-colleges-student-parents-support/",
+    "published_at": "2026-11-09T16:39:10.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -5036,74 +5096,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260814235839.htm",
     "published_at": "2026-08-16T12:02:14.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_165ydq",
-    "headline": "Warming waters draw summer 'feeding frenzies' by whales off Greenland",
-    "summary": "The effects of global warming depend on species: The losers are legion, but a lucky few are winners. Now, researchers have shown that baleen whales are taking advantage of a newly opened-up fish bonanza in the Greenland…",
-    "category": "animals",
-    "country": null,
-    "source": "Phys.org",
-    "url": "https://phys.org/news/2026-08-summer-frenzies-whales-greenland.html",
-    "published_at": "2026-08-20T04:00:01.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_hvh6i4",
-    "headline": "You Can Now See One of the Oldest Surviving Copies of 'The Odyssey' at the Metropolitan Museum of Art",
-    "summary": "The papyrus fragment contains three lines that don't appear in standard modern-day translations of Homer's epic poem",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/you-can-now-see-one-of-oldest-surviving-copies-of-the-odyssey-at-metropolitan-museum-of-art-180989360/",
-    "published_at": "2026-08-19T13:19:26.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1coi0n0",
-    "headline": "Listen Up, Parents: Running With a Stroller Might Make You Less Prone to Overuse Injuries",
-    "summary": "Runners often experience conditions like shin splints, runner’s knee and plantar fasciitis, which causes pain in the bottom of the heel. But pushing a stroller’s handlebar seems to make you distribute your weight…",
-    "category": "culture",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/listen-up-parents-running-with-a-stroller-might-make-you-less-prone-to-overuse-injuries-180989345/",
-    "published_at": "2026-08-17T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1yuhc4s",
-    "headline": "US Army Corps approves a pipeline project it knows harms Indigenous lands",
-    "summary": "The proposal to replace an aging segment of the Line 5 pipeline in the Great Lakes still needs state approval. Tribal nations say the federal review violates treaty rights.",
-    "category": "planet",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Grist",
-    "url": "https://grist.org/energy/us-army-corps-approves-line-5-tunnel-project-harms-indigenous-lands/",
-    "published_at": "2026-08-19T08:30:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_p7p9as",
-    "headline": "The climate movement gave this Texas tribe millions and a global platform. No one checked its story.",
-    "summary": "The Carrizo/Comecrudo Tribe turned family lore into money, media, and a place at the United Nations.",
-    "category": "planet",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "Grist",
-    "url": "https://grist.org/indigenous/texas-carrizo-comecrudo-juan-mancias-climate-indigenous-identity/",
-    "published_at": "2026-08-13T08:45:00.000Z",
     "read_minutes": 2,
     "score": 2
   }
