@@ -576,6 +576,18 @@
     "score": 5
   },
   {
+    "id": "s_gp68l8",
+    "headline": "Students Fighting to Save Poached Plant Species That Only Exists Near Their Campus",
+    "summary": "Scientists at Santa Clara University are sparing no effort to save a one-of-a-kind wildflower as unique as their county. Commonly known as the Santa Clara Valley “liveforever,” this flowering succulent is a vital food…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
+    "published_at": "2026-11-18T19:30:50.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1kg66ld",
     "headline": "Two of the ‘Last Wild Ecosystems’ Untouched by Humans Are Declared New Sanctuaries",
     "summary": "Some of the “very last wild and healthy ecosystems” unblemished by humans have been discovered in the remote atolls of the Pacific Ocean teeming with life. Scientists wrote in a new study that, although humans have left…",
@@ -588,26 +600,38 @@
     "score": 4
   },
   {
-    "id": "s_9x9218",
-    "headline": "Oh Whale! Revisits the Exploding Whale That Became One of the Internet’s First Viral Videos",
-    "summary": "JoyDrops champions awards-eligible documentary shorts about joy, a counterweight to a category often dominated by tragedy. Good News Network has partnered with JoyDrops to spotlight these films and talk with the…",
-    "category": "animals",
+    "id": "s_vezakz",
+    "headline": "Maui Is Becoming a Living Laboratory for Regenerative Tourism",
+    "summary": "On August 8, 2023, fast-moving wildfires swept through several parts of West Maui. The town of Lahaina, which holds a deep place in Hawaiian history and once served as the capital of the Hawaiian Kingdom, suffered the…",
+    "category": "planet",
     "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/oh-whale-revisits-the-exploding-whale-that-became-one-of-the-internets-first-viral-videos/",
-    "published_at": "2026-11-11T19:32:59.000Z",
+    "source": "Reasons to be Cheerful",
+    "url": "https://reasonstobecheerful.world/maui-living-laboratory-regenerative-tourism/",
+    "published_at": "2026-11-13T08:00:12.000Z",
     "read_minutes": 2,
     "score": 4
   },
   {
-    "id": "s_1d5rrml",
-    "headline": "A Gene Variant Inherited From Neanderthals Might Affect Modern Humans' Brain Size and Provide Protection Against Schizophrenia",
-    "summary": "About 20 percent of people alive today with European ancestry carry at least one copy of the variant, according to a new study. It's associated with a smaller occipital lobe, a region that processes visual information…",
-    "category": "science",
+    "id": "s_e1gnfk",
+    "headline": "Colleges Are Getting Creative to Help Students With Kids",
+    "summary": "This story was originally published by Open Campus. Walking by New River’s advising office one day, Stephanie Addikis noticed that the coloring books and Legos that she had helped stock in a nearby box were ……",
+    "category": "planet",
     "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-gene-variant-inherited-from-neanderthals-might-affect-modern-humans-brain-size-and-provide-protection-against-schizophrenia-180989893/",
-    "published_at": "2026-11-18T19:57:10.000Z",
+    "source": "Reasons to be Cheerful",
+    "url": "https://reasonstobecheerful.world/rural-colleges-student-parents-support/",
+    "published_at": "2026-11-09T16:39:10.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_e6l813",
+    "headline": "Mercury-bound X-ray telescope delivers first images after eight years in space",
+    "summary": "The first data from a U.K.-built instrument heading to Mercury have provided observations of one of the brightest X-ray sources in the sky from aboard the ESA/JAXA BepiColombo spacecraft in the inner solar system.",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-11-mercury-bound-ray-telescope-images.html",
+    "published_at": "2026-11-20T00:00:10.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -648,6 +672,30 @@
     "score": 4
   },
   {
+    "id": "s_9x9218",
+    "headline": "Oh Whale! Revisits the Exploding Whale That Became One of the Internet’s First Viral Videos",
+    "summary": "JoyDrops champions awards-eligible documentary shorts about joy, a counterweight to a category often dominated by tragedy. Good News Network has partnered with JoyDrops to spotlight these films and talk with the…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/oh-whale-revisits-the-exploding-whale-that-became-one-of-the-internets-first-viral-videos/",
+    "published_at": "2026-11-11T19:32:59.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1d5rrml",
+    "headline": "A Gene Variant Inherited From Neanderthals Might Affect Modern Humans' Brain Size and Provide Protection Against Schizophrenia",
+    "summary": "About 20 percent of people alive today with European ancestry carry at least one copy of the variant, according to a new study. It's associated with a smaller occipital lobe, a region that processes visual information…",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/a-gene-variant-inherited-from-neanderthals-might-affect-modern-humans-brain-size-and-provide-protection-against-schizophrenia-180989893/",
+    "published_at": "2026-11-18T19:57:10.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_jct3m0",
     "headline": "Voyager 1 Is the Farthest Human-Made Object in the Universe—and the Spacecraft Is About to Reach One Light-Day From Earth",
     "summary": "The probe and its twin, Voyager 2, have been hurtling through space for almost 50 years, stretching humanity's reach into interstellar space. The upcoming milestone is a testament to scientific endeavor and ingenuity",
@@ -656,18 +704,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/voyager-1-is-the-farthest-human-made-object-in-the-universe-and-the-spacecraft-is-about-to-reach-one-light-day-from-earth-180989845/",
     "published_at": "2026-11-10T14:00:00.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_e1gnfk",
-    "headline": "Colleges Are Getting Creative to Help Students With Kids",
-    "summary": "This story was originally published by Open Campus. Walking by New River’s advising office one day, Stephanie Addikis noticed that the coloring books and Legos that she had helped stock in a nearby box were ……",
-    "category": "planet",
-    "country": null,
-    "source": "Reasons to be Cheerful",
-    "url": "https://reasonstobecheerful.world/rural-colleges-student-parents-support/",
-    "published_at": "2026-11-09T16:39:10.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -5052,50 +5088,6 @@
     "source": "ScienceDaily",
     "url": "https://www.sciencedaily.com/releases/2026/08/260819041231.htm",
     "published_at": "2026-08-20T01:32:04.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_q67oql",
-    "headline": "Researchers reveal deeper workings of brain’s information hub",
-    "summary": "The brain has a remarkably flexible system for handling uncertainty and changing situations. Researchers found that the frontoparietal cortex constantly shifts how it communicates with other brain regions depending on…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260819041224.htm",
-    "published_at": "2026-08-20T00:38:34.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_s8eii0",
-    "headline": "The bacteria that make cheese taste so good may also benefit your gut",
-    "summary": "Scientists studying three artisan British cheeses found that the microbes responsible for their distinctive flavors may also offer surprising benefits for gut health. As the cheeses matured, helpful bacteria transformed…",
-    "category": "science",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260816044847.htm",
-    "published_at": "2026-08-17T22:18:03.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1o4hjjd",
-    "headline": "A little movement in midlife could pay off for your brain years later",
-    "summary": "Exercise and healthy blood sugar levels in midlife may help slow cognitive decline decades later. Physical activity appeared especially beneficial for Mexican American adults, suggesting that some brain-protective…",
-    "category": "science",
-    "country": {
-      "code": "US",
-      "name": "United States",
-      "flag": "🇺🇸"
-    },
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814235839.htm",
-    "published_at": "2026-08-16T12:02:14.000Z",
     "read_minutes": 2,
     "score": 2
   }
