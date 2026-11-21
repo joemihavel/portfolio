@@ -144,6 +144,18 @@
     "score": 6
   },
   {
+    "id": "s_5stmjs",
+    "headline": "Chihuahuas Seem to Carry a Tiny Bit of Coyote DNA—but That's Probably Not Why They Have Fearless Personalities",
+    "summary": "New research suggests that coyote DNA makes up about 0.1 percent of the Chihuahua genome, likely the result of interbreeding between coyotes and the domesticated dog's ancestors long ago",
+    "category": "animals",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/chihuahuas-seem-to-carry-a-tiny-bit-of-coyote-dna-but-thats-probably-not-why-they-have-fearless-personalities-180989886/",
+    "published_at": "2026-11-18T15:00:00.000Z",
+    "read_minutes": 2,
+    "score": 5
+  },
+  {
     "id": "s_1q42dfr",
     "headline": "IceCube detects ghost particles with 10 billion times the energy of solar neutrinos",
     "summary": "Mysterious particles called neutrinos constantly stream through our bodies, and scientists are now detecting incredibly powerful versions arriving from distant cosmic sources using a massive observatory buried in…",
@@ -576,18 +588,6 @@
     "score": 5
   },
   {
-    "id": "s_gp68l8",
-    "headline": "Students Fighting to Save Poached Plant Species That Only Exists Near Their Campus",
-    "summary": "Scientists at Santa Clara University are sparing no effort to save a one-of-a-kind wildflower as unique as their county. Commonly known as the Santa Clara Valley “liveforever,” this flowering succulent is a vital food…",
-    "category": "animals",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
-    "published_at": "2026-11-18T19:30:50.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_1kg66ld",
     "headline": "Two of the ‘Last Wild Ecosystems’ Untouched by Humans Are Declared New Sanctuaries",
     "summary": "Some of the “very last wild and healthy ecosystems” unblemished by humans have been discovered in the remote atolls of the Pacific Ocean teeming with life. Scientists wrote in a new study that, although humans have left…",
@@ -596,6 +596,54 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/two-of-last-wild-ecosystems-untouched-by-humans-declared-new-sanctuaries/",
     "published_at": "2026-11-14T16:16:07.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1lqk781",
+    "headline": "Excitons mimic light in atom-thin material, confirming decade-old quantum prediction",
+    "summary": "Combining their skills in theory and experiment, Yale researchers have observed for the first time a type of energy-carrying composite particle move in a highly unexpected way. It's a finding that could lead to advances…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-11-excitons-mimic-atom-thin-material.html",
+    "published_at": "2026-11-20T16:40:08.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_cigpnj",
+    "headline": "For the First Time, Astronomers Witnessed a Giant Star Gobble Up Its Smaller Stellar Companion",
+    "summary": "The merger caused an eruption in late 2025, which researchers rushed to document using several ground- and space-based telescopes. With older data and the help of computer simulations, the team reconstructed the entire…",
+    "category": "culture",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/for-the-first-time-astronomers-witnessed-a-giant-star-gobble-up-its-smaller-stellar-companion-180989905/",
+    "published_at": "2026-11-20T19:21:50.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1l8874k",
+    "headline": "The Bloomsbury Group's Vanessa Bell and Duncan Grant Tangled Their Art and Lives Together for Decades. A Final Sketch of Bell on Her Deathbed Just Resurfaced After 60 Years",
+    "summary": "The two artists had a thoroughly complicated relationship—and a daughter—but never ceased to paint and draw each other. The new discovery points to an artistic bond that continued through health and sickness",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-bloomsbury-groups-vanessa-bell-and-duncan-grant-tangled-their-art-and-lives-together-for-decades-a-final-sketch-of-bell-on-her-deathbed-just-resurfaced-after-60-years-180989874/",
+    "published_at": "2026-11-16T21:28:51.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_gp68l8",
+    "headline": "Students Fighting to Save Poached Plant Species That Only Exists Near Their Campus",
+    "summary": "Scientists at Santa Clara University are sparing no effort to save a one-of-a-kind wildflower as unique as their county. Commonly known as the Santa Clara Valley “liveforever,” this flowering succulent is a vital food…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
+    "published_at": "2026-11-18T19:30:50.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -644,18 +692,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
     "published_at": "2026-11-18T16:32:47.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1l8874k",
-    "headline": "The Bloomsbury Group's Vanessa Bell and Duncan Grant Tangled Their Art and Lives Together for Decades. A Final Sketch of Bell on Her Deathbed Just Resurfaced After 60 Years",
-    "summary": "The two artists had a thoroughly complicated relationship—and a daughter—but never ceased to paint and draw each other. The new discovery points to an artistic bond that continued through health and sickness",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-bloomsbury-groups-vanessa-bell-and-duncan-grant-tangled-their-art-and-lives-together-for-decades-a-final-sketch-of-bell-on-her-deathbed-just-resurfaced-after-60-years-180989874/",
-    "published_at": "2026-11-16T21:28:51.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -5048,46 +5084,6 @@
     "source": "Anthropocene",
     "url": "https://www.anthropocenemagazine.org/2026/06/swapping-beef-for-salmon-once-a-week-could-significantly-cut-emissions-study-finds/?utm_source=rss&utm_medium=rss&utm_campaign=beef-or-fish-a-single-weekly-salmon-swap-could-bring-down-uk-dietary-emissions-at-the-scale-of-international-flights",
     "published_at": "2026-06-26T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1okfk1o",
-    "headline": "Icy winters are no match for these floating solar panels",
-    "summary": "Using foam and aquarium pumps, engineers designed a floating photovoltaic system that keeps working efficiently through Canadian winter conditions",
-    "category": "planet",
-    "country": {
-      "code": "CA",
-      "name": "Canada",
-      "flag": "🇨🇦"
-    },
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/06/icy-winters-are-no-match-for-this-floating-solar-system/?utm_source=rss&utm_medium=rss&utm_campaign=icy-winters-are-no-match-for-this-floating-solar-system",
-    "published_at": "2026-06-25T12:00:38.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_qvmqzl",
-    "headline": "Pollen has a surprising problem — and honeybees have found a way around it",
-    "summary": "Honeybees can apparently detect when their food has the wrong balance of essential nutrients and adjust how much they eat to avoid potentially harmful excesses. They also transform pollen into remarkably well-balanced…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260819041237.htm",
-    "published_at": "2026-08-19T11:25:45.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_qre8m3",
-    "headline": "MIT physicists discover electrons rebuilding like ice inside a quantum material",
-    "summary": "MIT physicists found that two electronic phases inside the same quantum material emerge through surprisingly different mechanisms—one smoothly and the other in expanding pockets resembling growing ice crystals. The…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260819041231.htm",
-    "published_at": "2026-08-20T01:32:04.000Z",
     "read_minutes": 2,
     "score": 2
   }
