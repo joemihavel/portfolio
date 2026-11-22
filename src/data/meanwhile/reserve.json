@@ -588,6 +588,34 @@
     "score": 5
   },
   {
+    "id": "s_gp68l8",
+    "headline": "Students Fighting to Save Poached Plant Species That Only Exists Near Their Campus",
+    "summary": "Scientists at Santa Clara University are sparing no effort to save a one-of-a-kind wildflower as unique as their county. Commonly known as the Santa Clara Valley “liveforever,” this flowering succulent is a vital food…",
+    "category": "animals",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
+    "published_at": "2026-11-18T19:30:50.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1u4wpnm",
+    "headline": "West Coast’s First Ever Sea Turtle Hatchlings Released into the Pacific (LOOK)",
+    "summary": "Olive ridley sea turtle hatchlings saved from an approaching storm in California were released into the wild over the weekend. It was late September when a female turtle climbed out of the sea, dug a nest on the beach…",
+    "category": "animals",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/west-coasts-first-ever-sea-turtle-hatchlings-released-into-the-pacific-look/",
+    "published_at": "2026-11-17T19:30:43.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_1kg66ld",
     "headline": "Two of the ‘Last Wild Ecosystems’ Untouched by Humans Are Declared New Sanctuaries",
     "summary": "Some of the “very last wild and healthy ecosystems” unblemished by humans have been discovered in the remote atolls of the Pacific Ocean teeming with life. Scientists wrote in a new study that, although humans have left…",
@@ -612,14 +640,26 @@
     "score": 4
   },
   {
-    "id": "s_cigpnj",
-    "headline": "For the First Time, Astronomers Witnessed a Giant Star Gobble Up Its Smaller Stellar Companion",
-    "summary": "The merger caused an eruption in late 2025, which researchers rushed to document using several ground- and space-based telescopes. With older data and the help of computer simulations, the team reconstructed the entire…",
-    "category": "culture",
+    "id": "s_1d5rrml",
+    "headline": "A Gene Variant Inherited From Neanderthals Might Affect Modern Humans' Brain Size and Provide Protection Against Schizophrenia",
+    "summary": "About 20 percent of people alive today with European ancestry carry at least one copy of the variant, according to a new study. It's associated with a smaller occipital lobe, a region that processes visual information…",
+    "category": "science",
     "country": null,
     "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/for-the-first-time-astronomers-witnessed-a-giant-star-gobble-up-its-smaller-stellar-companion-180989905/",
-    "published_at": "2026-11-20T19:21:50.000Z",
+    "url": "https://www.smithsonianmag.com/smart-news/a-gene-variant-inherited-from-neanderthals-might-affect-modern-humans-brain-size-and-provide-protection-against-schizophrenia-180989893/",
+    "published_at": "2026-11-18T19:57:10.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_3mr1qn",
+    "headline": "See Stunning Images of the Universe Captured by Europe's Euclid Space Telescope, Which Is Building the Biggest 3D Map of the Cosmos",
+    "summary": "The 1.7 million gigabytes of data include more than 900 million galaxies, more than 60 million potential quasars and about 15,000 candidates of an elusive cosmic phenomenon that can help scientists understand dark…",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
+    "published_at": "2026-11-18T16:32:47.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -636,14 +676,14 @@
     "score": 4
   },
   {
-    "id": "s_gp68l8",
-    "headline": "Students Fighting to Save Poached Plant Species That Only Exists Near Their Campus",
-    "summary": "Scientists at Santa Clara University are sparing no effort to save a one-of-a-kind wildflower as unique as their county. Commonly known as the Santa Clara Valley “liveforever,” this flowering succulent is a vital food…",
-    "category": "animals",
+    "id": "s_cigpnj",
+    "headline": "For the First Time, Astronomers Witnessed a Giant Star Gobble Up Its Smaller Stellar Companion",
+    "summary": "The merger caused an eruption in late 2025, which researchers rushed to document using several ground- and space-based telescopes. With older data and the help of computer simulations, the team reconstructed the entire…",
+    "category": "culture",
     "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
-    "published_at": "2026-11-18T19:30:50.000Z",
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/for-the-first-time-astronomers-witnessed-a-giant-star-gobble-up-its-smaller-stellar-companion-180989905/",
+    "published_at": "2026-11-20T19:21:50.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -684,18 +724,6 @@
     "score": 4
   },
   {
-    "id": "s_3mr1qn",
-    "headline": "See Stunning Images of the Universe Captured by Europe's Euclid Space Telescope, Which Is Building the Biggest 3D Map of the Cosmos",
-    "summary": "The 1.7 million gigabytes of data include more than 900 million galaxies, more than 60 million potential quasars and about 15,000 candidates of an elusive cosmic phenomenon that can help scientists understand dark…",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
-    "published_at": "2026-11-18T16:32:47.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_d4bkbq",
     "headline": "Astronomers Found a Mysterious Object Orbiting Far Beyond Pluto. It Could Be a New Dwarf Planet Hidden in Our Solar System",
     "summary": "The dwarf planet candidate, called ED138, appeared in telescope images and takes roughly 280 years to orbit the sun. Astronomers need to determine its size to properly classify it",
@@ -716,18 +744,6 @@
     "source": "Good News Network",
     "url": "https://www.goodnewsnetwork.org/oh-whale-revisits-the-exploding-whale-that-became-one-of-the-internets-first-viral-videos/",
     "published_at": "2026-11-11T19:32:59.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1d5rrml",
-    "headline": "A Gene Variant Inherited From Neanderthals Might Affect Modern Humans' Brain Size and Provide Protection Against Schizophrenia",
-    "summary": "About 20 percent of people alive today with European ancestry carry at least one copy of the variant, according to a new study. It's associated with a smaller occipital lobe, a region that processes visual information…",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/a-gene-variant-inherited-from-neanderthals-might-affect-modern-humans-brain-size-and-provide-protection-against-schizophrenia-180989893/",
-    "published_at": "2026-11-18T19:57:10.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2742,6 +2758,18 @@
     "published_at": "2026-08-17T19:41:46.000Z",
     "read_minutes": 2,
     "score": 4
+  },
+  {
+    "id": "s_mq07bz",
+    "headline": "Record-setting X-ray laser reliably generates flashes with wavelengths shorter than distances between atoms",
+    "summary": "Researchers from DESY and European XFEL have demonstrated reliable production and transport of X-ray laser flashes with a wavelength of about 0.04 nanometers (or a photon energy of 30,000 electronvolts) at European…",
+    "category": "science",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-11-ray-laser-reliably-generates-wavelengths.html",
+    "published_at": "2026-11-20T21:00:01.000Z",
+    "read_minutes": 2,
+    "score": 3
   },
   {
     "id": "s_61osgu",
@@ -5056,34 +5084,6 @@
     "source": "Anthropocene",
     "url": "https://www.anthropocenemagazine.org/2026/07/recycling-that-rescues-dolphins/?utm_source=rss&utm_medium=rss&utm_campaign=recycling-that-rescues-dolphins",
     "published_at": "2026-07-08T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_q3lak8",
-    "headline": "Ironically, buying green can quietly erase its own efficiency gains, new study finds",
-    "summary": "Researchers show how consumer eco-consciousness can trigger discounts on inefficient products, canceling the gains shoppers thought they'd locked in.",
-    "category": "science",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/06/ironically-buying-green-can-quietly-erase-its-own-efficiency-gains-new-study-finds/?utm_source=rss&utm_medium=rss&utm_campaign=how-buying-green-can-quietly-erase-its-own-efficiency-gains",
-    "published_at": "2026-06-30T13:00:53.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_ypr59k",
-    "headline": "Swapping beef for salmon once a week could significantly cut emissions, study finds",
-    "summary": "A UK study comparing five dietary scenarios through 2050 found the simplest option delivered meaningful, realistic emissions reductions.",
-    "category": "animals",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/06/swapping-beef-for-salmon-once-a-week-could-significantly-cut-emissions-study-finds/?utm_source=rss&utm_medium=rss&utm_campaign=beef-or-fish-a-single-weekly-salmon-swap-could-bring-down-uk-dietary-emissions-at-the-scale-of-international-flights",
-    "published_at": "2026-06-26T12:00:00.000Z",
     "read_minutes": 2,
     "score": 2
   }
