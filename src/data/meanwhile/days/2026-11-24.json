@@ -1,0 +1,1294 @@
+{
+  "day": "2026-11-24",
+  "generated_at": "2026-11-24T16:10:52.533Z",
+  "count": 68,
+  "fresh_count": 68,
+  "stories": [
+    {
+      "id": "s_z0wz6z",
+      "headline": "Every Tuesday, This Chef Cooks for 100 People in Need Using Random Food Bank Ingredients",
+      "summary": "Cooking content can be extremely popular on social media, but watching Toronto-area Chef Maddy Goldberg narrate her made-from-scratch recipes, it suddenly all tastes a little sweeter. That’s because every Tuesday for…",
+      "category": "people",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/every-tuesday-this-chef-cooks-for-100-people-in-need-using-random-food-bank-ingredients/",
+      "published_at": "2026-11-20T12:30:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screengrabs-@maddygoldberg-via-Instagram.jpg",
+        "alt": null,
+        "w": 1100,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_psv20y",
+      "headline": "Teeth Discovered in Two Chinese Caves Are Rewriting the Story of Homo Erectus, an Ancient Human Ancestor That May Have Been More Capable Than We Thought",
+      "summary": "One new study suggests that the species persisted in mainland Asia for 216,000 years longer than previously thought. Another says Homo erectus was capable of living in a tropical rainforest, a discovery that turns a…",
+      "category": "animals",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/teeth-discovered-in-two-chinese-caves-are-rewriting-the-story-of-homo-erectus-an-ancient-human-ancestor-that-may-have-been-more-capable-than-we-thought-180989913/",
+      "published_at": "2026-11-20T13:10:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/4q5gNq_dImBOTRpFbBUxjN9Sa04=/fit-in/1600x0/filters:focal(2592x1728:2593x1729)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/09/e4/09e4beed-edb1-4b6d-87ae-97771d6e8d21/img9-excavating_in_baxian.jpg",
+        "alt": "Scientists discovered the teeth in two limestone caves, called&amp;nbsp;Baxian and Naxian, in southern China.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1lrguxq",
+      "headline": "First of 3 Consecutive Supermoons to Begin Tonight – Look to the East for the Beaver Moon",
+      "summary": "The next 3 consecutive full moons will weigh in as supermoons—and the first one is set to dazzle tonight and tomorrow. The Moon’s brightest period will come at 9:40 a.m. US Eastern Time on Tuesday, but dark periods…",
+      "category": "tiny",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/first-of-3-consecutive-supermoons-to-begin-tonight-look-to-the-east-for-the-beaver-moon/",
+      "published_at": "2026-11-23T12:30:42.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2025/11/moon-and-supermoon-comparison.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1hzy33c",
+      "headline": "Largest Electric Bus Fleet in New York to Serve Bronx Neighborhood Elevated Asthma Rates",
+      "summary": "The largest fleet of electric school buses in New York State is up and running in a South Bronx neighborhood where childhood asthma rates are more than twice the national average. Family-owned school bus company GVC has…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/largest-electric-bus-fleet-in-new-york-to-serve-bronx-neighborhood-riddled-with-asthma/",
+      "published_at": "2026-11-17T14:00:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/GVCs-Michael-Townsend-scissors-still-in-hand-applauds-during-the-ribbon-cutting-ceremony-credit-Con-Edison-released.jpg",
+        "alt": null,
+        "w": 1287,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_wpz5pq",
+      "headline": "This tiny spider named after Stephen Colbert has a genome 50% larger than a human’s",
+      "summary": "A tiny California trapdoor spider named after Stephen Colbert has a genome roughly 50% larger than a human's, despite being only about the size of a quarter. Scientists discovered that its enormous genome contains 4.6…",
+      "category": "science",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261122060343.htm",
+      "published_at": "2026-11-23T03:54:27.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/trapdoor-spider-aptostichus-stephencolberti.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_712vqu",
+      "headline": "NASA’s Voyager 1 is now so far away that light takes 24 hours to reach it",
+      "summary": "NASA’s Voyager 1 has reached an extraordinary milestone, traveling 16.1 billion miles from Earth to become the first spacecraft so distant that its signals take a full day to reach us. Nearly 50 years after launch, the…",
+      "category": "achievement",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261120075554.htm",
+      "published_at": "2026-11-20T12:55:54.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/nasa-voyager-spacecraft-radio-signal.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_g7xi3f",
+      "headline": "Kiwi return to Wellington hills after 150 years in Māori-led conservation milestone",
+      "summary": "For the first time in more than 150 years, wild kiwi are roaming the hills surrounding Aotearoa New Zealand’s capital city, Wellington. The milestone follows the reintroduction of more than 250 kiwi to the landscape, an…",
+      "category": "planet",
+      "country": {
+        "code": "NZ",
+        "name": "New Zealand",
+        "flag": "🇳🇿"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/11/kiwi-return-to-wellington-hills-after-150-years-in-maori-led-conservation-milestone/",
+      "published_at": "2026-11-24T11:19:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/24111922/Little-spotted_kiwi_Apteryx_owenii_4000-scaled.jpg",
+        "alt": null,
+        "w": 2560,
+        "h": 1714
+      }
+    },
+    {
+      "id": "s_ms9u7s",
+      "headline": "Almost 90 Years After Discovering a Ship Burial That Rewrote British History, Archaeologists Returned to Sutton Hoo. This Time, They Uncovered a Ghostly 'Sand Body'",
+      "summary": "Researchers with the \"Time Team\" series also found grave goods, including beads, tweezers, a knife and a brooch as well as evidence that a second person might have been buried in the same grave",
+      "category": "culture",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/almost-90-years-after-discovering-a-ship-burial-that-rewrote-british-history-archaeologists-returned-to-sutton-hoo-this-time-they-uncovered-a-ghostly-sand-body-180989932/",
+      "published_at": "2026-11-24T12:15:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/jy-9VQn-edw33ePulHGqz8NyIFM=/fit-in/1600x0/filters:focal(512x290:513x291)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a8/96/a896c997-4029-484b-8f3b-cc8773d34451/9zvebhiml7gewe85rrdy2x-1024-80png.webp",
+        "alt": "Archaeologists discovered the sand body in the&amp;nbsp;in Garden Field cemetery at Sutton Hoo.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_b9ta2w",
+      "headline": "Warren Buffett Gives Away $5.5 Billion in Thanksgiving Gift, Saying Kindness Is Priceless",
+      "summary": "Warren Buffett marked another Thanksgiving by converting thousands of Berkshire Hathaway shares into a charitable donation valued at about $5.5 billion. In a short annual Thanksgiving message released with the donation…",
+      "category": "people",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/warren-buffett-gives-away-5-5-billion-thanksgiving-gift/",
+      "published_at": "2026-11-17T15:55:24.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit.jpg",
+        "alt": null,
+        "w": 1281,
+        "h": 1090
+      }
+    },
+    {
+      "id": "s_11zajew",
+      "headline": "Solar above, fish below: Double-decker farms could rival US power use",
+      "summary": "Floating solar panels over the world’s fish and shrimp ponds could generate 4,100 terawatt-hours of electricity, avoiding up to 2.5 billion tons of emissions.",
+      "category": "animals",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/11/solar-above-fish-below-double-decker-farms-could-rival-us-power-use/?utm_source=rss&utm_medium=rss&utm_campaign=solar-above-fish-below-double-decker-farms-could-rival-us-power-use",
+      "published_at": "2026-11-06T13:00:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2026/11/aquavoltaics.jpg",
+        "alt": "Solar above, fish below: Double-decker farms could rival US power use",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_v26sos",
+      "headline": "Fall hunger is real: four reasons your appetite changes with the season",
+      "summary": "Maybe you’ve noticed it creeping in over the last few weeks. You finish lunch, and an hour later you’re already drifting back toward the kitchen. The bowl of soup that would have filled you up in May barely makes a…",
+      "category": "tiny",
+      "country": null,
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/11/fall-hunger-is-real-four-reasons-your-appetite-changes-with-the-season/",
+      "published_at": "2026-11-24T00:00:52.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/lentil-soup-Depositphotos_41548517_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_7bb0ww",
+      "headline": "Pub Owner Spends Thousands on Stunning Holiday Display–All to Cheer Up Depressed Locals",
+      "summary": "A pub owner took advantage of the Christmas season, spending thousands on a festive light display to cheer up his town’s locals. Christian Ogley says this year has been particularly tough for residents in the…",
+      "category": "communities",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/pub-owner-spends-thousands-on-stunning-holiday-display-all-to-cheer-up-depressed-locals/",
+      "published_at": "2026-11-21T15:53:53.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Christian-Ogley-w-Christmas-lights-on-his-pub-SWNS.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 748
+      }
+    },
+    {
+      "id": "s_wp9qnh",
+      "headline": "Two monster black holes from the dawn of time defy explanation",
+      "summary": "Astronomers have discovered the oldest known compact pair of quasars, powered by two enormous black holes that existed just 900 million years after the Big Bang. Weighing an astonishing 1.5 billion and 400 million times…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261122060342.htm",
+      "published_at": "2026-11-23T11:21:06.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/napowawaenakaulua.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_fm2cfl",
+      "headline": "Hera surveys asteroids with superhuman vision",
+      "summary": "The European Space Agency's Hera mission for planetary defense surveys its target asteroids with a combination of instruments, peering beyond the limits of the human eye. The larger Didymos asteroid—dominated by its…",
+      "category": "achievement",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-11-hera-surveys-asteroids-superhuman-vision.html",
+      "published_at": "2026-11-23T22:00:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/thermal-infrared-image.jpg",
+        "alt": null,
+        "w": 1280,
+        "h": 597
+      }
+    },
+    {
+      "id": "s_6fwbvc",
+      "headline": "After 8 years in space, a groundbreaking X-ray telescope finally opens its eyes",
+      "summary": "After eight years and 10 billion kilometers in space, a groundbreaking X-ray telescope heading to Mercury has captured its first cosmic observations and is performing even better than scientists expected. The instrument…",
+      "category": "planet",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261120075547.htm",
+      "published_at": "2026-11-21T02:11:14.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/bepicolombo-spacecraft-approaching-mercury.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_iz2l12",
+      "headline": "A Roman Cup and Hundreds of Other Treasures Unearthed in This 2,000-Year-Old Tomb Reveal the Rich Exchange Network of an Ancient Asian Empire",
+      "summary": "The Xiongnu people dominated Central Asia for some 300 years. Now, a grave discovered in Mongolia has revealed the pastoral culture’s links to the Roman Empire, Han China and the Lelang Commandery",
+      "category": "culture",
+      "country": {
+        "code": "MN",
+        "name": "Mongolia",
+        "flag": "🇲🇳"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-roman-cup-and-hundreds-other-treasures-unearthed-in-this-2000-year-old-tomb-reveal-the-rich-exchange-network-of-an-ancient-asian-empire-180989920/",
+      "published_at": "2026-11-20T20:22:42.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/jpjOTY_PIlh52Gxtdce_0B2uhOQ=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a7/ab/a7aba059-db30-4732-9a53-4e3e9a6a4738/aerial-view-of-tomb.png",
+        "alt": "An aerial view of the tomb, which is the largest of its kind ever discovered in Mongolia",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1w9nvmc",
+      "headline": "Determined Volunteer Rescues Lost Toddler in the Desert: ‘She may not be our child, but she could be’",
+      "summary": "An Arizona community is celebrating a local grandfather who found a missing toddler in the middle of the cold desert night. Honored by the sheriff’s office as an outstanding citizen, Jay Stewart said he felt what…",
+      "category": "people",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/determined-volunteer-rescues-lost-toddler-in-the-desert-she-may-not-be-our-child-but-she-could-be/",
+      "published_at": "2026-11-23T18:00:29.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Pinal-County-Sheriffs-Office.jpg",
+        "alt": null,
+        "w": 1311,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_5stmjs",
+      "headline": "Chihuahuas Seem to Carry a Tiny Bit of Coyote DNA—but That's Probably Not Why They Have Fearless Personalities",
+      "summary": "New research suggests that coyote DNA makes up about 0.1 percent of the Chihuahua genome, likely the result of interbreeding between coyotes and the domesticated dog's ancestors long ago",
+      "category": "animals",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/chihuahuas-seem-to-carry-a-tiny-bit-of-coyote-dna-but-thats-probably-not-why-they-have-fearless-personalities-180989886/",
+      "published_at": "2026-11-18T15:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/V9AvwBPl695KALiHiGNnTrbgIG4=/fit-in/1600x0/filters:focal(2736x1824:2737x1825)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f7/10/f7100427-9e10-4c58-9f52-143bcffb6946/pexels-delot-33471285.jpg",
+        "alt": "Chihuahuas are the smallest recognized dog breed.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_2he8ue",
+      "headline": "Automatic abortion pardons clear women’s records in England and Wales",
+      "summary": "Women in England and Wales who were arrested, cautioned or convicted for ending their own pregnancies no longer carry those records. Automatic abortion pardons took effect on November 16, and police and courts must now…",
+      "category": "tiny",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/11/automatic-abortion-pardons-clear-womens-records-in-england-and-wales/",
+      "published_at": "2026-11-23T00:00:10.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/royal-courts-justice-london-london-Depositphotos_507492434_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_16ruh0o",
+      "headline": "Community Steps Up to Replace Teen Business Owner’s Stolen Landscaping Equipment",
+      "summary": "When a Kansas business owner suffered the theft of some $20,000 in landscaping machinery, his community raised money to replace all of it. Sonny Gallardo started a landscape company when he was just in 6th grade. The…",
+      "category": "communities",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/community-steps-up-to-replace-teen-business-owners-stolen-landscaping-equipment/",
+      "published_at": "2026-11-20T16:00:53.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Sonny-Gallardo-on-his-first-riding-lawnmower-credit-Monica-Gallardo-via-GoFundMe.jpg",
+        "alt": null,
+        "w": 843,
+        "h": 516
+      }
+    },
+    {
+      "id": "s_156uz2y",
+      "headline": "CERN scientists finally find evidence of a particle decay so rare it took 40 years to detect",
+      "summary": "Scientists at CERN have found the first evidence of an incredibly rare particle decay after more than 40 years of searching, detecting a process expected to occur just once in every 10 billion beauty particles. The…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261119194530.htm",
+      "published_at": "2026-11-20T12:23:23.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/high-energy-atomic-particle-physics.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1bkw2e",
+      "headline": "Empire State Building Lit Up with Gold Marks Historic Milestone of NASA’s Voyager 1 This Week",
+      "summary": "This week the Empire State Building was illuminated in gold to celebrate NASA’s Voyager 1 spacecraft passing one light-day away from Earth. It now takes the farthest man-made object from Earth 24 hours to send a signal…",
+      "category": "achievement",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/empire-state-building-lit-up-with-gold-to-celebrate-nasa-spacecraft-passing-one-light-day-from-earth/",
+      "published_at": "2026-11-19T14:00:49.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/NYC-at-night-Empire-State-Building-lit-up-in-gold-SWNS.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 756
+      }
+    },
+    {
+      "id": "s_1x4z7ae",
+      "headline": "‘We had to reinvent the system completely,’ Brazilian philanthropy leader says",
+      "summary": "In November 2025, Indigenous and Afro-descendent peoples, frontline defenders and civil society movements mobilized in unprecedented numbers in Belém, Brazil, to advocate for their demands at the 30th U.N. Climate…",
+      "category": "planet",
+      "country": {
+        "code": "BR",
+        "name": "Brazil",
+        "flag": "🇧🇷"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/11/we-had-to-reinvent-the-system-completely-brazilian-philanthropy-leader-says/",
+      "published_at": "2026-11-23T12:50:10.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/23123621/1.-Banner-image-Munduruku.jpg",
+        "alt": null,
+        "w": 2400,
+        "h": 1350
+      }
+    },
+    {
+      "id": "s_1rln4st",
+      "headline": "Hours Before It Was Expected to Sell for Up to $3.5 Million, This Frida Kahlo Painting Was Whisked From the Auction Block",
+      "summary": "The 1952 painting, \"Congreso de los pueblos por la paz,\" allegedly disappeared from Kahlo's house-museum in Mexico City under suspicious circumstances. Heritage groups argue that it rightfully belongs to the Mexican…",
+      "category": "culture",
+      "country": {
+        "code": "MX",
+        "name": "Mexico",
+        "flag": "🇲🇽"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/hours-before-it-was-expected-to-sell-for-up-to-3-million-this-frida-kahlo-painting-was-whisked-from-the-auction-block-180989890/",
+      "published_at": "2026-11-18T18:30:48.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/OvPII7ybbfO1hVuSKAMWmSPacfA=/fit-in/1600x0/filters:focal(512x346:513x347)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/12/90/12906235-3c2d-479a-aad5-09aad4edb6aa/gettyimages-1250792563.jpg",
+        "alt": "Frida Kahlo,&amp;nbsp;Congreso de los Pueblos por la Paz,&amp;nbsp;1952",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_xhp2v0",
+      "headline": "One-of-a-Kind Refuge to 200,000 Walrus Protected Forever in Alaska",
+      "summary": "American conservationists have secured protections for a truly unique-in-the-world ecosystem along the state’s Bering Sea coastline. Home to the largest concentrations of Pacific walrus found anywhere in North America…",
+      "category": "animals",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/one-of-a-kind-refuge-to-200000-walrus-protected-forever-in-alaska/",
+      "published_at": "2026-11-23T16:04:07.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Florian-Schulz-permission-given-to-GNN-from-Conservation-Fund.jpg",
+        "alt": null,
+        "w": 1273,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_gqp5yk",
+      "headline": "Siblings Build 430-Step ‘Sky Ladder’ for Their Mother Who Refuses to Live in the City",
+      "summary": "The children of an elderly Chinese mother have touched the hearts of millions by painstakingly building a new staircase by hand up the side of a mountain to help her reach her home more easily. Her youngest daughter…",
+      "category": "communities",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/siblings-build-430-step-sky-ladder-for-their-mother-who-refuses-to-live-in-the-city/",
+      "published_at": "2026-11-18T16:30:42.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/86-year-old-mother-Chen-family-photo.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_1q3av70",
+      "headline": "Earth's next ice age may have already begun. Global warming stopped it",
+      "summary": "Scientists have uncovered surprising evidence that Earth’s next ice age may have already begun, only to be stopped by global warming. By studying ancient plants preserved beneath the Barnes Ice Cap in the Canadian…",
+      "category": "science",
+      "country": {
+        "code": "CA",
+        "name": "Canada",
+        "flag": "🇨🇦"
+      },
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261123005350.htm",
+      "published_at": "2026-11-24T09:29:15.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/new-ice-age-frozen-planet-earth.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_kjqsmy",
+      "headline": "Ancient Humans May Have Hunted Hippos With Poisoned Spear Tips on the Arabian Peninsula 125,000 Years Ago",
+      "summary": "A new study suggests people hunted and processed game near a large, lush freshwater lake in what is now southern Saudi Arabia, challenging the assumption that humans just passed through the region",
+      "category": "planet",
+      "country": {
+        "code": "SA",
+        "name": "Saudi Arabia",
+        "flag": "🇸🇦"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/ancient-humans-may-have-hunted-hippos-with-poisoned-spear-tips-on-the-arabian-peninsula-125000-years-ago-180989880/",
+      "published_at": "2026-11-17T13:10:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/Zt5FWgtFvr9z3Y05lFAiY7MT6pA=/fit-in/1600x0/filters:focal(756x634:757x635)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/00/aa/00aa25c6-9427-4b2a-91ea-a5c5ea84584d/image_5_1.png",
+        "alt": "A stone point unearthed at the&amp;nbsp;Uruq Aljelibah site",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1iwtev6",
+      "headline": "From a Small Island in Denmark, This Man Lived Through the Transition From Hunter-Gathering to Farming 6,000 Years Ago",
+      "summary": "A new analysis of the Rødhals Man suggests he witnessed the Neolithic Revolution in his lifetime, growing up eating mostly foraged seafood before shifting to more land-based, likely farmed, foods as an adult",
+      "category": "culture",
+      "country": {
+        "code": "DK",
+        "name": "Denmark",
+        "flag": "🇩🇰"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/from-a-small-island-in-denmark-this-man-lived-through-the-transition-from-hunter-gathering-to-farming-6000-years-ago-180989889/",
+      "published_at": "2026-11-18T13:15:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/UAO5VUFeaDQtNOfB3I7djk10OJk=/fit-in/1600x0/filters:focal(384x283:385x284)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/8d/29/8d29fd53-ba3a-4f34-adab-0dbcc55e5ef1/rdhalsmannen.jpg",
+        "alt": "The&amp;nbsp;R&amp;oslash;dhals Man&amp;#39;s remains were discovered in 1956&amp;nbsp;on the island of Sejer&amp;oslash;, Denmark.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1nwt8mw",
+      "headline": "Breath of a Whale Captured by Drone Allows Full Genome Sequencing Without Intrusion",
+      "summary": "The exhale from a whale’s blowhole has been captured by drones, and used to complete the genome sequencing of one of the ocean giants for the first time. Researchers from the University of St. Andrews in Scotland were…",
+      "category": "animals",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/breath-of-whale-captured-via-drone-to-complete-genome-sequence/",
+      "published_at": "2026-11-21T17:30:30.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Whale-spout-by-NorthCoastCetaceanSociety-via-SWNS-.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 769
+      }
+    },
+    {
+      "id": "s_13mymiv",
+      "headline": "The City That Kicked Out Cars Before It Was Cool",
+      "summary": "As a taxi driver, Juan Barbosa should in theory be one of the strongest opponents of a crackdown on cars. But, puffing on a cigarette beside his vehicle on a sultry August afternoon, the inhabitant of Pontevedra, Spain…",
+      "category": "communities",
+      "country": {
+        "code": "ES",
+        "name": "Spain",
+        "flag": "🇪🇸"
+      },
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/pontevedra-car-free-city/",
+      "published_at": "2026-11-23T08:00:33.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/shutterstock_2220850897-scaled.jpg",
+        "alt": null,
+        "w": 1800,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_1n73yzy",
+      "headline": "Diverse diets may reflect choice, not scarcity, among Australian hunters 45,000 years ago",
+      "summary": "A decade-long project in remote northwestern Australia suggests archaeologists should rethink a long-held assumption about the diets of humans almost 50,000 years ago.",
+      "category": "science",
+      "country": {
+        "code": "AU",
+        "name": "Australia",
+        "flag": "🇦🇺"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-11-diverse-diets-choice-scarcity-australian.html",
+      "published_at": "2026-11-24T15:00:08.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/archaeologys-assumptio.jpg",
+        "alt": null,
+        "w": 1280,
+        "h": 894
+      }
+    },
+    {
+      "id": "s_pfv2vg",
+      "headline": "Farmer Finds Unknown Seeds in His Attic – and Grows an Ancient ‘Miracle’ Grain",
+      "summary": "From the sun-soaked plains of Parma comes the story of an Italian farmer who accidentally brought on a Biblical resurrection with very modern implications for our food system. Claudio Grossi doubted whether the…",
+      "category": "planet",
+      "country": {
+        "code": "IT",
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/farmer-finds-unknown-seeds-in-his-attic-and-grows-an-ancient-miracle-grain/",
+      "published_at": "2026-11-16T19:30:28.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-ripe-ear-of-Triticum-turgidum-with-its-characteristic-varied-coloration-credit-CC-3.0.-BY-SA-Sten-Porse.jpg",
+        "alt": null,
+        "w": 1355,
+        "h": 739
+      }
+    },
+    {
+      "id": "s_13ya2c8",
+      "headline": "Peggy Guggenheim's First Art Gallery Lasted Just 18 Months. But Its 21 Exhibitions Showed a Multitude of Modern Art Masterpieces",
+      "summary": "A new exhibition at the Royal Academy of the Arts in London revisits Guggenheim Jeune, the short-lived art gallery where the American socialite introduced a skeptical British public to surrealism and abstraction",
+      "category": "culture",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/peggy-guggenheims-first-art-gallery-lasted-just-18-months-but-its-21-exhibitions-showed-a-multitude-of-modern-art-masterpieces-180989930/",
+      "published_at": "2026-11-23T21:39:51.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/eOdpVmK-iVsbEbtplct1rGfC2qg=/fit-in/1600x0/filters:focal(2003x1526:2004x1527)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/7e/d6/7ed68dc0-1f00-4645-b26b-31b0549eb54f/key_88.jpg",
+        "alt": "Salvador Dal&amp;iacute;,&amp;nbsp;Untitled, 1931, is among the Surrealist works on view at the Royal Academy&amp;rsquo;s new exhibition.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1u4wpnm",
+      "headline": "West Coast’s First Ever Sea Turtle Hatchlings Released into the Pacific (LOOK)",
+      "summary": "Olive ridley sea turtle hatchlings saved from an approaching storm in California were released into the wild over the weekend. It was late September when a female turtle climbed out of the sea, dug a nest on the beach…",
+      "category": "animals",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/west-coasts-first-ever-sea-turtle-hatchlings-released-into-the-pacific-look/",
+      "published_at": "2026-11-17T19:30:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Turtle-hatchlings-rush-for-the-sea-on-Seal-Beach-credit-Robin-Riggs-Aquarium-of-the-Pacific-%C2%A9.jpg",
+        "alt": null,
+        "w": 900,
+        "h": 600
+      }
+    },
+    {
+      "id": "s_gco30y",
+      "headline": "Extreme rainfalls flood Sri Lanka’s coastal city as wetlands, drains vanish",
+      "summary": "COLOMBO — On Nov. 6, a 129-millimeter (5-inch) downpour flooded parts of Sri Lanka’s commercial capital within minutes, stranding commuters and submerging a large number of vehicles. Siva Sivasagunthan, a three-wheeler…",
+      "category": "communities",
+      "country": {
+        "code": "LK",
+        "name": "Sri Lanka",
+        "flag": "🇱🇰"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/11/extreme-rainfalls-flood-sri-lankas-coastal-city-as-wetlands-drains-vanish/",
+      "published_at": "2026-11-21T03:14:33.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/21030127/1-People-and-floods.jpg",
+        "alt": null,
+        "w": 1440,
+        "h": 960
+      }
+    },
+    {
+      "id": "s_1j4os90",
+      "headline": "Star's record eruption shows how key elements can spread through space",
+      "summary": "An international team of astronomers led by Wouter Vlemmings and Miora Andriantsaralaza, both from Chalmers, have imaged a nearby star in unprecedented detail, using the telescope ALMA in Chile.",
+      "category": "science",
+      "country": {
+        "code": "CL",
+        "name": "Chile",
+        "flag": "🇨🇱"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-11-star-eruption-key-elements-space.html",
+      "published_at": "2026-11-23T20:20:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/2026/stars-record-eruption.jpg",
+        "alt": null,
+        "w": 1280,
+        "h": 720
+      }
+    },
+    {
+      "id": "s_2t92pg",
+      "headline": "Indigenous peoples leave collapsed climate talks with promises on hold",
+      "summary": "ANATALYA, Türkiye — A year ago, a record number of Indigenous people attended the United Nations climate summit in Belém, Brazil. Although there as observers, without a seat at the negotiating table, they left with…",
+      "category": "planet",
+      "country": {
+        "code": "TR",
+        "name": "Türkiye",
+        "flag": "🇹🇷"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/11/indigenous-peoples-leave-collapsed-climate-talks-with-promises-on-hold/",
+      "published_at": "2026-11-24T14:24:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/11/08145538/ACASCIO_Jepirachi_01.jpg",
+        "alt": null,
+        "w": 1280,
+        "h": 853
+      }
+    },
+    {
+      "id": "s_129jvt1",
+      "headline": "Inside Bolivia's Newly Restored 'Sistine Chapel of the Andes,' Centuries-Old Murals Tell Biblical Stories With Andean Imagery",
+      "summary": "Located nearly 13,000 feet above sea level on Bolivia’s high plateau, the Santiago de Curahuara de Carangas church depicts guinea pigs at the Last Supper and magi riding llamas",
+      "category": "culture",
+      "country": {
+        "code": "BO",
+        "name": "Bolivia",
+        "flag": "🇧🇴"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/inside-bolivia-newly-restored-sistine-chapel-of-the-andes-centuries-old-murals-tell-biblical-stories-with-andean-imagery-180989925/",
+      "published_at": "2026-11-23T18:59:43.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/ruMGEBAWdsEehhmKmRoNCyt6Z2U=/fit-in/1600x0/filters:focal(512x346:513x347)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a3/4d/a34d87ee-754a-4713-98e1-5b7a65b211d3/gettyimages-558033311.jpg",
+        "alt": "Restorers are finishing a six-month renovation at the Santiago de Curahuara de Carangas Church, which will reopen with a celebratory mass on December 15.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1verqdi",
+      "headline": "China’s mangroves have bounced back. Birds have returned too",
+      "summary": "Between 1998 and 2020, mangrove cover in China more than doubled, while the number of bird species recorded in those areas rose from 148 to 397, according to findings published in The Innovation. The recovery follows…",
+      "category": "animals",
+      "country": {
+        "code": "CN",
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/11/chinas-mangroves-have-bounced-back-birds-have-returned-too/",
+      "published_at": "2026-11-23T18:57:25.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/23180333/Mangroves_at_sunset.jpg",
+        "alt": null,
+        "w": 1920,
+        "h": 1280
+      }
+    },
+    {
+      "id": "s_1a06bmb",
+      "headline": "US homelessness decline hits its steepest one-year drop in a decade",
+      "summary": "Homelessness in the United States fell by more than six percent in 2025, the steepest one-year homelessness decline in more than a decade, which works out to roughly 49,000 fewer people without housing. It was the…",
+      "category": "communities",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "The Optimist Daily",
+      "url": "https://www.optimistdaily.com/2026/11/us-homelessness-decline-hits-its-steepest-one-year-drop-in-a-decade/",
+      "published_at": "2026-11-18T00:00:36.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.optimistdaily.com/wp-content/uploads/los-angeles-california-august-2021-Depositphotos_502426064_S.jpg",
+        "alt": null,
+        "w": 1000,
+        "h": 667
+      }
+    },
+    {
+      "id": "s_pna80a",
+      "headline": "Common medications may secretly rewire your gut, with effects lasting for years",
+      "summary": "Medications taken years or even long ago may leave lasting changes in your gut microbiome, according to a study of more than 2,500 people. Researchers discovered that common drugs, including antidepressants, blood…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261120071501.htm",
+      "published_at": "2026-11-22T21:35:19.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/bacteria-intestinal-microbiome-in-digestive-tract.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1xhcmts",
+      "headline": "Kuala Lumpur otters raise river revival hopes",
+      "summary": "KUALA LUMPUR — Beneath a tangle of highway in the Malaysian capital, a family of otters rolls around in a patch of riverside sand, delighting the few passersby who notice them. Small groups of otters are now being seen…",
+      "category": "planet",
+      "country": {
+        "code": "MY",
+        "name": "Malaysia",
+        "flag": "🇲🇾"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/11/kuala-lumpur-otters-raise-river-clean-up-hopes/",
+      "published_at": "2026-11-23T02:53:11.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/19095539/D3X92TK-Smooth-coated-otters--1200x800.jpg",
+        "alt": null,
+        "w": 1200,
+        "h": 800
+      }
+    },
+    {
+      "id": "s_xowuqz",
+      "headline": "Rembrandt's 'Night Watch' Is Teeming With Life. Researchers Reveal a Hidden World of Microbes All Over the Masterpiece",
+      "summary": "Samples swabbed from the 17th-century painting reveal myriad microorganisms, including one perplexing bacterium that was first discovered at a Japanese sugar refinery in 2013",
+      "category": "culture",
+      "country": {
+        "code": "JP",
+        "name": "Japan",
+        "flag": "🇯🇵"
+      },
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/rembrandt-night-watch-is-teeming-with-life-researchers-reveal-a-hidden-world-of-microbes-all-over-the-masterpiece-180989917/",
+      "published_at": "2026-11-20T19:21:53.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/ZexF5OS4UKDtiXWtU9fagZR29OI=/fit-in/1600x0/filters:focal(943x575:944x576)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/72/ea/72ea9a01-babf-4508-8e33-cbcd0fce540f/r1.jpg",
+        "alt": "ARTIS-Micropia microbiologist Eline van Bloois (left) and a Rijksmuseum conservator take samples from&amp;nbsp;The Night Watch.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_1x7h782",
+      "headline": "New quasar record tightens constraints on black hole formation scenarios",
+      "summary": "A team of astronomers led by Julien Wolf, a postdoctoral researcher at the Max Planck Institute for Astronomy (MPIA) in Heidelberg, Germany (now at the European Southern Observatory in Garching bei München, Germany)…",
+      "category": "animals",
+      "country": {
+        "code": "DE",
+        "name": "Germany",
+        "flag": "🇩🇪"
+      },
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-11-quasar-tightens-constraints-black-hole.html",
+      "published_at": "2026-11-24T08:00:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/new-quasar-record-tigh.jpg",
+        "alt": null,
+        "w": 1799,
+        "h": 1012
+      }
+    },
+    {
+      "id": "s_usz79y",
+      "headline": "310 million-year-old fossil reveals scorpion that looked much like modern relatives",
+      "summary": "As the month of Scorpio rolls over, Flinders University researchers have been taking a close look at a rare prehistoric scorpion.",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-11-million-year-fossil-reveals-scorpion.html",
+      "published_at": "2026-11-23T20:40:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/310m-year-old-fossil-a.jpg",
+        "alt": null,
+        "w": 2880,
+        "h": 2037
+      }
+    },
+    {
+      "id": "s_wdf2ud",
+      "headline": "Philippine corn farmers investigate links between chemical farming and soil erosion",
+      "summary": "LAKE SEBU, Philippines — To the untrained eye, a handful of soil might appear to be a monotone brown. But to farmer Welna Sumulde, who grew up among generations of Indigenous T’boli farmers on the Philippines island of…",
+      "category": "planet",
+      "country": {
+        "code": "PH",
+        "name": "Philippines",
+        "flag": "🇵🇭"
+      },
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/2026/11/philippine-corn-farmers-investigate-links-between-chemical-farming-and-soil-erosion/",
+      "published_at": "2026-11-20T18:27:41.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/20171832/image4.jpg",
+        "alt": null,
+        "w": 2401,
+        "h": 1351
+      }
+    },
+    {
+      "id": "s_9ypwb7",
+      "headline": "This Philosopher Was One of the First People to Donate His Body to Science. Nearly 200 Years Later, Researchers Are Still Learning From It",
+      "summary": "Jeremy Bentham, the founder of utilitarianism, had his corpse publicly dissected and turned into an \"auto-icon,\" a lifelike display featuring his skeleton dressed in one of his suits",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/he-was-one-of-the-first-people-to-donate-his-body-to-science-nearly-200-years-later-researchers-are-still-learning-from-it-180989901/",
+      "published_at": "2026-11-19T15:31:07.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/3ahQ0Vo1IIAha5HPjqmn-D3N_NI=/fit-in/1600x0/filters:focal(1343x819:1344x820)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/60/1c/601c48e3-09b6-429c-aebf-de184abcdae7/image001_4.jpg",
+        "alt": "Jeremy Bentham&amp;#39;s mummified head undergoes a CT scan.",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_gp68l8",
+      "headline": "Students Fighting to Save Poached Plant Species That Only Exists Near Their Campus",
+      "summary": "Scientists at Santa Clara University are sparing no effort to save a one-of-a-kind wildflower as unique as their county. Commonly known as the Santa Clara Valley “liveforever,” this flowering succulent is a vital food…",
+      "category": "animals",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
+      "published_at": "2026-11-18T19:30:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Santa-Clara-Valley-Habitat-Authority.jpg",
+        "alt": null,
+        "w": 1400,
+        "h": 643
+      }
+    },
+    {
+      "id": "s_19lgpfl",
+      "headline": "First Human Trial to Slash Bad Cholesterol by 50% With One Injection of CRISPR Gene-Editing Therapy",
+      "summary": "A one-time infusion of CRISPR gene editing therapy slashed dangerous cholesterol by 52%, with the patients still experiencing the benefit 12 months after initial treatment, and without side effects. The Cleveland Clinic…",
+      "category": "science",
+      "country": null,
+      "source": "Good News Network",
+      "url": "https://www.goodnewsnetwork.org/first-human-trial-to-slash-bad-cholesterol-by-50pt-with-one-crispr-injection/",
+      "published_at": "2026-11-21T14:24:30.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/DNA-strand-break-CRISPR-by-Sangharsh-Lohakare-8o_LkMpo8ug-unsplash.jpeg",
+        "alt": null,
+        "w": 1400,
+        "h": 750
+      }
+    },
+    {
+      "id": "s_11jgwm1",
+      "headline": "As Texas embraces carbon storage, a Black community questions the risks",
+      "summary": "Texas now issues permits for companies to store carbon dioxide underground. East Texas residents fear safety risks, and skeptics doubt the climate benefits.",
+      "category": "planet",
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      "source": "Grist",
+      "url": "https://grist.org/accountability/as-texas-embraces-carbon-storage-a-black-community-questions-the-risks/",
+      "published_at": "2026-11-15T14:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://grist.org/wp-content/uploads/2026/11/CarbonStorageTX.jpg",
+        "alt": null,
+        "w": 1600,
+        "h": 900
+      }
+    },
+    {
+      "id": "s_4mdqt7",
+      "headline": "This strange creature lived 309 million years ago, long before the dinosaurs",
+      "summary": "More than 300 million years ago, long before dinosaurs roamed Earth, the Chicago area was a steamy, swampy landscape teeming with bizarre creatures. Now, scientists at the Field Museum have identified a previously…",
+      "category": "culture",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261117033928.htm",
+      "published_at": "2026-11-18T23:24:05.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/jeanerpeton-model.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1owxrg0",
+      "headline": "Earth's core may be leaking a 4.5-billion-year-old secret",
+      "summary": "Scientists have discovered an unusual carbon signature in Hawaiian volcanic rocks that suggests some of Earth's carbon originated in ancient meteorites and later escaped from deep within the planet's core. The discovery…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261123005336.htm",
+      "published_at": "2026-11-23T05:53:36.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/melt-inclusions-in-olivine-crystals-from-kilauea-iki-eruption.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_d7vsaz",
+      "headline": "NASA spacecraft data reveal how solar system's tail shifts over 14 years",
+      "summary": "A Southwest Research Institute-led study is the first to map out the distinct motion paths of the heliotail lobes across a 14-year period using data from NASA's Interstellar Boundary Explorer (IBEX) spacecraft. By…",
+      "category": "planet",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-11-nasa-spacecraft-reveal-solar-tail.html",
+      "published_at": "2026-11-23T23:20:08.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/swri-led-study-tracks.jpg",
+        "alt": null,
+        "w": 2808,
+        "h": 1571
+      }
+    },
+    {
+      "id": "s_cigpnj",
+      "headline": "For the First Time, Astronomers Witnessed a Giant Star Gobble Up Its Smaller Stellar Companion",
+      "summary": "The merger caused an eruption in late 2025, which researchers rushed to document using several ground- and space-based telescopes. With older data and the help of computer simulations, the team reconstructed the entire…",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/for-the-first-time-astronomers-witnessed-a-giant-star-gobble-up-its-smaller-stellar-companion-180989905/",
+      "published_at": "2026-11-20T19:21:50.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/DDw9DZlEAsE1zd5rsEgj_ofn4cI=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d4/ae/d4ae9780-62b1-4a07-a549-2e0b1b938e7f/smithsonian_feature_images_33.png",
+        "alt": "An artistic representation of the steps of the recent stellar merger",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_w3drpq",
+      "headline": "Mysterious new viruses reveal a missing link in evolution",
+      "summary": "Scientists have discovered previously unknown viruses that could help explain how some of life’s earliest biological structures evolved. The surprising findings challenge a longstanding evolutionary theory and suggest…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261122060334.htm",
+      "published_at": "2026-11-23T10:45:53.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/abelardo-aguilar.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_1rrwajq",
+      "headline": "New net-zero community will become Michigan’s first virtual power plant",
+      "summary": "The development in Ann Arbor will share its solar and battery power with the grid, as part of a pilot that aims to lower energy costs and provide reliability.",
+      "category": "planet",
+      "country": null,
+      "source": "Grist",
+      "url": "https://grist.org/cities/new-net-zero-community-will-become-michigans-first-virtual-power-plant/",
+      "published_at": "2026-11-21T14:00:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://grist.org/wp-content/uploads/2026/11/MIpowerplant.jpg",
+        "alt": null,
+        "w": 1300,
+        "h": 731
+      }
+    },
+    {
+      "id": "s_5frxow",
+      "headline": "Look Up This Week to See November's Full Beaver Moon—the First of Four Back-to-Back Supermoons Over the Coming Months",
+      "summary": "The next one will occur on Christmas Eve, which, according to a stricter supermoon definition, is a rare coincidence that hasn't happened since 1787",
+      "category": "culture",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/look-up-this-week-to-see-novembers-full-beaver-moon-the-first-of-four-back-to-back-supermoons-over-the-coming-months-180989927/",
+      "published_at": "2026-11-23T20:43:21.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://th-thumbnailer.cdn-si-edu.com/rC8HCEBHGNmuLMgfeex6vWNcJpE=/fit-in/1600x0/filters:focal(3000x2000:3001x2001)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f8/c4/f8c45354-6b19-4ade-b22a-87ba999c13a9/supermoonn.jpg",
+        "alt": "A supermoon photographed over the Neva River in Russia",
+        "w": null,
+        "h": null
+      }
+    },
+    {
+      "id": "s_wqq7r6",
+      "headline": "Ultracold atoms reveal first direct view of bound-pair motion in a fracton system",
+      "summary": "Particles can generally move between neighboring sites in a crystal, a solid in which atoms are arranged in a regular, repeating pattern, or an optical lattice, an arrangement of laser-based traps that confines atoms. A…",
+      "category": "science",
+      "country": null,
+      "source": "Phys.org",
+      "url": "https://phys.org/news/2026-11-ultracold-atoms-reveal-view-bound.html",
+      "published_at": "2026-11-24T11:20:01.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://scx2.b-cdn.net/gfx/news/hires/2026/study-with-ultracold-a.jpg",
+        "alt": null,
+        "w": 1066,
+        "h": 1560
+      }
+    },
+    {
+      "id": "s_1w1n0b6",
+      "headline": "Five Fixes for Fresh Water Access",
+      "summary": "Wool that desalinates saltwater, paint that harvests dew, sponges that pull water from air: five fixes for the 2.1 billion people without safe water.",
+      "category": "planet",
+      "country": null,
+      "source": "Anthropocene",
+      "url": "https://www.anthropocenemagazine.org/2026/11/five-fixes-for-fresh-water-access/?utm_source=rss&utm_medium=rss&utm_campaign=five-fixes-for-fresh-water-access",
+      "published_at": "2026-11-14T00:04:04.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.anthropocenemagazine.org/wp-content/uploads/2024/10/dripping-water2-1.gif",
+        "alt": "The air contains 6x more water than all the world&#039;s rivers. Here’s how to harvest it.",
+        "w": 795,
+        "h": 525
+      }
+    },
+    {
+      "id": "s_1d5rrml",
+      "headline": "A Gene Variant Inherited From Neanderthals Might Affect Modern Humans' Brain Size and Provide Protection Against Schizophrenia",
+      "summary": "About 20 percent of people alive today with European ancestry carry at least one copy of the variant, according to a new study. It's associated with a smaller occipital lobe, a region that processes visual information…",
+      "category": "science",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/a-gene-variant-inherited-from-neanderthals-might-affect-modern-humans-brain-size-and-provide-protection-against-schizophrenia-180989893/",
+      "published_at": "2026-11-18T19:57:10.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_4fxati",
+      "headline": "Data centers’ electricity use is soaring — especially in these states",
+      "summary": "In at least four states, hyperscale facilities account for 10 percent or more of the electricity sold.",
+      "category": "planet",
+      "country": null,
+      "source": "Grist",
+      "url": "https://grist.org/energy/data-centers-use-2-of-us-electricity-in-some-states-the-share-is-far-higher/",
+      "published_at": "2026-11-20T09:45:00.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://grist.org/wp-content/uploads/2026/11/oregon-data-center.jpg",
+        "alt": null,
+        "w": 2000,
+        "h": 1335
+      }
+    },
+    {
+      "id": "s_3mr1qn",
+      "headline": "See Stunning Images of the Universe Captured by Europe's Euclid Space Telescope, Which Is Building the Biggest 3D Map of the Cosmos",
+      "summary": "The 1.7 million gigabytes of data include more than 900 million galaxies, more than 60 million potential quasars and about 15,000 candidates of an elusive cosmic phenomenon that can help scientists understand dark…",
+      "category": "science",
+      "country": null,
+      "source": "Smithsonian",
+      "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
+      "published_at": "2026-11-18T16:32:47.000Z",
+      "read_minutes": 2,
+      "image": null
+    },
+    {
+      "id": "s_vezakz",
+      "headline": "Maui Is Becoming a Living Laboratory for Regenerative Tourism",
+      "summary": "On August 8, 2023, fast-moving wildfires swept through several parts of West Maui. The town of Lahaina, which holds a deep place in Hawaiian history and once served as the capital of the Hawaiian Kingdom, suffered the…",
+      "category": "planet",
+      "country": null,
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/maui-living-laboratory-regenerative-tourism/",
+      "published_at": "2026-11-13T08:00:12.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/L1060171.jpg",
+        "alt": null,
+        "w": 1800,
+        "h": 1200
+      }
+    },
+    {
+      "id": "s_p42ndc",
+      "headline": "Einstein’s relativity just upended a fundamental rule of chemistry",
+      "summary": "A surprising discovery at Brown University is challenging one of chemistry's most fundamental textbook explanations. Researchers found direct evidence that Einstein's theory of relativity changes how heavy atoms form…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261120075602.htm",
+      "published_at": "2026-11-20T12:56:02.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/einstein-equations-gravity-spacetime.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_e1gnfk",
+      "headline": "Colleges Are Getting Creative to Help Students With Kids",
+      "summary": "This story was originally published by Open Campus. Walking by New River’s advising office one day, Stephanie Addikis noticed that the coloring books and Legos that she had helped stock in a nearby box were ……",
+      "category": "planet",
+      "country": null,
+      "source": "Reasons to be Cheerful",
+      "url": "https://reasonstobecheerful.world/rural-colleges-student-parents-support/",
+      "published_at": "2026-11-09T16:39:10.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/IMG_9218-1200x964-1-e1794235774453.jpeg",
+        "alt": null,
+        "w": 1200,
+        "h": 828
+      }
+    },
+    {
+      "id": "s_15fkd3q",
+      "headline": "Something strange is living beneath the skin of deep-sea pigs",
+      "summary": "Scientists have discovered a strange bacterium hiding beneath the skin of deep-sea creatures known as sea pigs, revealing an unexpected biological partnership. The microbe has an unusually tiny genome, yet more than a…",
+      "category": "science",
+      "country": null,
+      "source": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261118065512.htm",
+      "published_at": "2026-11-19T10:33:03.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://www.sciencedaily.com/images/1920/walking-sea-pig.webp",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "id": "s_cmkb50",
+      "headline": "Mongabay Kids launches Wild Guardians: A free education initiative to engage children with nature",
+      "summary": "Mongabay Kids has launched Wild Guardians, a free multimedia educational series that connects upper elementary students with nature and inspires them to become stewards of wild things and wild places. Wild Guardians…",
+      "category": "planet",
+      "country": null,
+      "source": "Mongabay",
+      "url": "https://news.mongabay.com/short-article/2026/11/mongabay-kids-launches-wild-guardians-a-free-education-initiative-to-engage-children-with-nature/",
+      "published_at": "2026-11-23T19:22:18.000Z",
+      "read_minutes": 2,
+      "image": {
+        "src": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/23191716/Exploring-and-protecting-waterways-still.jpg",
+        "alt": null,
+        "w": 1920,
+        "h": 1080
+      }
+    }
+  ]
+}

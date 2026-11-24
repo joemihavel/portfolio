@@ -588,6 +588,54 @@
     "score": 5
   },
   {
+    "id": "s_1x4wsea",
+    "headline": "Over 100 Cave Bear Skeletons Found in ‘Sensational’ Discovery by Alpine Guide",
+    "summary": "The “sensational” discovery of a cave containing the skeletons of over 100 extinct cave bears has been revealed by local authorities. Kept secret to prevent looting, the incredible assemblage of thousands of bones will…",
+    "category": "science",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/over-100-cave-bear-skeletons-found-in-sensational-discovery-by-alpine-guide/",
+    "published_at": "2026-11-19T12:30:10.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1i1eo3w",
+    "headline": "Interstellar solar sails hit a bizarre problem at 75% of light speed",
+    "summary": "Scientists have discovered a surprising obstacle to interstellar travel: at extreme speeds, the light propelling futuristic solar sails could actually begin slowing them down. Once a spacecraft reaches 75% of the speed…",
+    "category": "planet",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261120071305.htm",
+    "published_at": "2026-11-22T11:59:29.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1o8xk60",
+    "headline": "A nearly 100-million-year-old hairy snail pays tribute to the Prodigy's lead singer",
+    "summary": "Myanmar amber (more commonly known as \"burmite\") is one of the most important sources of information about biodiversity during the Mesozoic Era. This amber dates back to the age of the dinosaurs and is approximately 99…",
+    "category": "planet",
+    "country": null,
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-11-million-year-hairy-snail-pays.html",
+    "published_at": "2026-11-23T23:00:07.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1l8874k",
+    "headline": "The Bloomsbury Group's Vanessa Bell and Duncan Grant Tangled Their Art and Lives Together for Decades. A Final Sketch of Bell on Her Deathbed Just Resurfaced After 60 Years",
+    "summary": "The two artists had a thoroughly complicated relationship—and a daughter—but never ceased to paint and draw each other. The new discovery points to an artistic bond that continued through health and sickness",
+    "category": "science",
+    "country": null,
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/the-bloomsbury-groups-vanessa-bell-and-duncan-grant-tangled-their-art-and-lives-together-for-decades-a-final-sketch-of-bell-on-her-deathbed-just-resurfaced-after-60-years-180989874/",
+    "published_at": "2026-11-16T21:28:51.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
     "id": "s_gp68l8",
     "headline": "Students Fighting to Save Poached Plant Species That Only Exists Near Their Campus",
     "summary": "Scientists at Santa Clara University are sparing no effort to save a one-of-a-kind wildflower as unique as their county. Commonly known as the Santa Clara Valley “liveforever,” this flowering succulent is a vital food…",
@@ -660,18 +708,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
     "published_at": "2026-11-18T16:32:47.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
-    "id": "s_1l8874k",
-    "headline": "The Bloomsbury Group's Vanessa Bell and Duncan Grant Tangled Their Art and Lives Together for Decades. A Final Sketch of Bell on Her Deathbed Just Resurfaced After 60 Years",
-    "summary": "The two artists had a thoroughly complicated relationship—and a daughter—but never ceased to paint and draw each other. The new discovery points to an artistic bond that continued through health and sickness",
-    "category": "science",
-    "country": null,
-    "source": "Smithsonian",
-    "url": "https://www.smithsonianmag.com/smart-news/the-bloomsbury-groups-vanessa-bell-and-duncan-grant-tangled-their-art-and-lives-together-for-decades-a-final-sketch-of-bell-on-her-deathbed-just-resurfaced-after-60-years-180989874/",
-    "published_at": "2026-11-16T21:28:51.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2758,6 +2794,22 @@
     "published_at": "2026-08-17T19:41:46.000Z",
     "read_minutes": 2,
     "score": 4
+  },
+  {
+    "id": "s_j49lgl",
+    "headline": "This Tiny, Unassuming Fungus Is a 'Dark Magic Mushroom'—the First Found to Contain Both Psychedelic Compounds and Deadly Toxins",
+    "summary": "Researchers collected the mushroom from a moss-covered palm trunk in the central Florida wetland. Its relatives are known to produce amatoxins, but the fungus surprisingly turned blue when handled, a telltale sign that…",
+    "category": "planet",
+    "country": {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸"
+    },
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/this-tiny-unassuming-fungus-is-a-dark-magic-mushroom-the-first-found-to-contain-both-psychedelic-compounds-and-deadly-toxins-180989885/",
+    "published_at": "2026-11-17T21:06:13.000Z",
+    "read_minutes": 2,
+    "score": 3
   },
   {
     "id": "s_mq07bz",
@@ -5032,58 +5084,6 @@
     "source": "Anthropocene",
     "url": "https://www.anthropocenemagazine.org/2026/07/researchers-use-hemp-rock-dust-and-biochar-to-scrub-forever-chemicals-from-farm-soils/?utm_source=rss&utm_medium=rss&utm_campaign=global-farmlands-are-straining-under-a-toxic-chemical-load-researchers-think-they-have-a-solution",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1gq6nyx",
-    "headline": "A new entrant in the plant-protein race: The marigold",
-    "summary": "With as much protein as quinoa, marigolds are a surprising untapped nutritional resource, research finds. What’s more their emulsifying and foaming properties make them a boon for the food industry.",
-    "category": "science",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/07/a-new-entrant-in-the-plant-protein-race-the-marigold/?utm_source=rss&utm_medium=rss&utm_campaign=a-new-entrant-in-the-plant-protein-race-the-marigold",
-    "published_at": "2026-07-17T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1kd1ih7",
-    "headline": "This tiny bottle cap traveled 1,500 kilometers. It had 307 hitchhikers aboard.",
-    "summary": "Scientists cracked the case of a single plastic cap using isotope chemistry and ocean current models, revealing how trash is turning into rafts for invasive species.",
-    "category": "animals",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/07/this-tiny-bottle-cap-traveled-1500-kilometers-it-had-307-hitchhikers-aboard/?utm_source=rss&utm_medium=rss&utm_campaign=this-tiny-bottle-cap-traveled-1500-kilometers-it-had-307-hitchhikers-aboard",
-    "published_at": "2026-07-15T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_1aorb5n",
-    "headline": "The climate fix isn’t cutting all meat—It’s targeting the people who eat the most.",
-    "summary": "A Scottish study finds that shifting heavy meat eaters toward modest cuts, rather than trimming everyone's diet evenly, could prevent 60,000 diabetes cases and deliver outsized climate gains.",
-    "category": "planet",
-    "country": {
-      "code": "GB",
-      "name": "United Kingdom",
-      "flag": "🇬🇧"
-    },
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/07/the-climate-fix-isnt-cutting-all-meat-its-targeting-the-people-who-eat-the-most/?utm_source=rss&utm_medium=rss&utm_campaign=the-climate-fix-isnt-cutting-all-meat-its-targeting-the-people-who-eat-the-most",
-    "published_at": "2026-07-10T12:00:00.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_gdouqp",
-    "headline": "Recycling that rescues dolphins",
-    "summary": "Tying plastic bottles to gillnets cut dolphin deaths by nearly 90% in a new study, without reducing the fish catch.",
-    "category": "animals",
-    "country": null,
-    "source": "Anthropocene",
-    "url": "https://www.anthropocenemagazine.org/2026/07/recycling-that-rescues-dolphins/?utm_source=rss&utm_medium=rss&utm_campaign=recycling-that-rescues-dolphins",
-    "published_at": "2026-07-08T12:00:00.000Z",
     "read_minutes": 2,
     "score": 2
   }
