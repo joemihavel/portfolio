@@ -588,18 +588,6 @@
     "score": 5
   },
   {
-    "id": "s_19lgpfl",
-    "headline": "First Human Trial to Slash Bad Cholesterol by 50% With One Injection of CRISPR Gene-Editing Therapy",
-    "summary": "A one-time infusion of CRISPR gene editing therapy slashed dangerous cholesterol by 52%, with the patients still experiencing the benefit 12 months after initial treatment, and without side effects. The Cleveland Clinic…",
-    "category": "science",
-    "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/first-human-trial-to-slash-bad-cholesterol-by-50pt-with-one-crispr-injection/",
-    "published_at": "2026-11-21T14:24:30.000Z",
-    "read_minutes": 2,
-    "score": 4
-  },
-  {
     "id": "s_1x4wsea",
     "headline": "Over 100 Cave Bear Skeletons Found in ‘Sensational’ Discovery by Alpine Guide",
     "summary": "The “sensational” discovery of a cave containing the skeletons of over 100 extinct cave bears has been revealed by local authorities. Kept secret to prevent looting, the incredible assemblage of thousands of bones will…",
@@ -632,6 +620,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
     "published_at": "2026-11-18T16:32:47.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_19lgpfl",
+    "headline": "First Human Trial to Slash Bad Cholesterol by 50% With One Injection of CRISPR Gene-Editing Therapy",
+    "summary": "A one-time infusion of CRISPR gene editing therapy slashed dangerous cholesterol by 52%, with the patients still experiencing the benefit 12 months after initial treatment, and without side effects. The Cleveland Clinic…",
+    "category": "science",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/first-human-trial-to-slash-bad-cholesterol-by-50pt-with-one-crispr-injection/",
+    "published_at": "2026-11-21T14:24:30.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2808,18 +2808,6 @@
     "score": 4
   },
   {
-    "id": "s_bv6grj",
-    "headline": "Physicists trap antimatter in a breakthrough that could explain why the universe exists",
-    "summary": "Positrons are the antimatter counterpart of an electron. Physicists trapped a positron and cooled it to temperatures near absolute zero. Positron is suspended in a wall-free trap, safely separated from ordinary matter…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm",
-    "published_at": "2026-11-25T10:06:22.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
     "id": "s_p42ndc",
     "headline": "Einstein’s relativity just upended a fundamental rule of chemistry",
     "summary": "A surprising discovery at Brown University is challenging one of chemistry's most fundamental textbook explanations. Researchers found direct evidence that Einstein's theory of relativity changes how heavy atoms form…",
@@ -2840,6 +2828,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/look-up-this-week-to-see-novembers-full-beaver-moon-the-first-of-four-back-to-back-supermoons-over-the-coming-months-180989927/",
     "published_at": "2026-11-23T20:43:21.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
+    "id": "s_bv6grj",
+    "headline": "Physicists trap antimatter in a breakthrough that could explain why the universe exists",
+    "summary": "Positrons are the antimatter counterpart of an electron. Physicists trapped a positron and cooled it to temperatures near absolute zero. Positron is suspended in a wall-free trap, safely separated from ordinary matter…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm",
+    "published_at": "2026-11-25T10:06:22.000Z",
     "read_minutes": 2,
     "score": 3
   },
