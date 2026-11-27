@@ -588,14 +588,14 @@
     "score": 5
   },
   {
-    "id": "s_1x4wsea",
-    "headline": "Over 100 Cave Bear Skeletons Found in ‘Sensational’ Discovery by Alpine Guide",
-    "summary": "The “sensational” discovery of a cave containing the skeletons of over 100 extinct cave bears has been revealed by local authorities. Kept secret to prevent looting, the incredible assemblage of thousands of bones will…",
+    "id": "s_w1yxl8",
+    "headline": "A black hole the size of an atom could destroy an entire star",
+    "summary": "MIT scientists have discovered that tiny black holes left over from the Big Bang could slowly devour stars from within, eventually triggering spectacular explosions visible across galaxies. Detecting these unusual…",
     "category": "science",
     "country": null,
-    "source": "Good News Network",
-    "url": "https://www.goodnewsnetwork.org/over-100-cave-bear-skeletons-found-in-sensational-discovery-by-alpine-guide/",
-    "published_at": "2026-11-19T12:30:10.000Z",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261122060332.htm",
+    "published_at": "2026-11-24T20:58:15.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -620,6 +620,18 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/see-stunning-images-of-the-universe-captured-by-europes-euclid-space-telescope-which-is-buildling-the-biggest-3d-map-of-the-cosmos-180989884/",
     "published_at": "2026-11-18T16:32:47.000Z",
+    "read_minutes": 2,
+    "score": 4
+  },
+  {
+    "id": "s_1x4wsea",
+    "headline": "Over 100 Cave Bear Skeletons Found in ‘Sensational’ Discovery by Alpine Guide",
+    "summary": "The “sensational” discovery of a cave containing the skeletons of over 100 extinct cave bears has been revealed by local authorities. Kept secret to prevent looting, the incredible assemblage of thousands of bones will…",
+    "category": "science",
+    "country": null,
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/over-100-cave-bear-skeletons-found-in-sensational-discovery-by-alpine-guide/",
+    "published_at": "2026-11-19T12:30:10.000Z",
     "read_minutes": 2,
     "score": 4
   },
@@ -2808,6 +2820,18 @@
     "score": 4
   },
   {
+    "id": "s_bv6grj",
+    "headline": "Physicists trap antimatter in a breakthrough that could explain why the universe exists",
+    "summary": "Positrons are the antimatter counterpart of an electron. Physicists trapped a positron and cooled it to temperatures near absolute zero. Positron is suspended in a wall-free trap, safely separated from ordinary matter…",
+    "category": "science",
+    "country": null,
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm",
+    "published_at": "2026-11-25T10:06:22.000Z",
+    "read_minutes": 2,
+    "score": 3
+  },
+  {
     "id": "s_p42ndc",
     "headline": "Einstein’s relativity just upended a fundamental rule of chemistry",
     "summary": "A surprising discovery at Brown University is challenging one of chemistry's most fundamental textbook explanations. Researchers found direct evidence that Einstein's theory of relativity changes how heavy atoms form…",
@@ -2828,18 +2852,6 @@
     "source": "Smithsonian",
     "url": "https://www.smithsonianmag.com/smart-news/look-up-this-week-to-see-novembers-full-beaver-moon-the-first-of-four-back-to-back-supermoons-over-the-coming-months-180989927/",
     "published_at": "2026-11-23T20:43:21.000Z",
-    "read_minutes": 2,
-    "score": 3
-  },
-  {
-    "id": "s_bv6grj",
-    "headline": "Physicists trap antimatter in a breakthrough that could explain why the universe exists",
-    "summary": "Positrons are the antimatter counterpart of an electron. Physicists trapped a positron and cooled it to temperatures near absolute zero. Positron is suspended in a wall-free trap, safely separated from ordinary matter…",
-    "category": "science",
-    "country": null,
-    "source": "ScienceDaily",
-    "url": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm",
-    "published_at": "2026-11-25T10:06:22.000Z",
     "read_minutes": 2,
     "score": 3
   },
@@ -5064,22 +5076,6 @@
     "source": "Mongabay",
     "url": "https://news.mongabay.com/2026/08/on-the-great-barrier-reef-management-by-traditional-owners-is-growing/",
     "published_at": "2026-08-18T18:35:11.000Z",
-    "read_minutes": 2,
-    "score": 2
-  },
-  {
-    "id": "s_jro8hd",
-    "headline": "Indonesia leads global tally of abuses linked to Chinese transition-mineral investments",
-    "summary": "JAKARTA — Indonesia recorded more allegations of human rights and environmental abuses linked to Chinese investments in transition minerals than any other country between 2023 and 2025, a new report says. It identifies…",
-    "category": "planet",
-    "country": {
-      "code": "ID",
-      "name": "Indonesia",
-      "flag": "🇮🇩"
-    },
-    "source": "Mongabay",
-    "url": "https://news.mongabay.com/2026/08/indonesia-leads-global-tally-of-abuses-linked-to-chinese-transition-mineral-investments/",
-    "published_at": "2026-08-18T10:59:25.000Z",
     "read_minutes": 2,
     "score": 2
   }
